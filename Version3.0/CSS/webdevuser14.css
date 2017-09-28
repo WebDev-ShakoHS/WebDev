@@ -1,7 +1,6 @@
 body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #123456;
-	text-align: center;
+	font-family: "Comic Sans MS", "Marker Felt", fantasy;
+	color: #003366;
 }
 
 h1 {
@@ -9,19 +8,16 @@ h1 {
 	text-align: center;
 }
 
-h2{
-        font-size: 1.1em;
-        text-align: center;
+h2 {
+	font-size: 1.1em;
+	text-align: center;
 }
 
 table {
-	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	color: #ffffff;
-	cellspacing: 0px;
 }
 
 tr {
@@ -34,4 +30,8 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+p {
+	text-align: center;
 }
