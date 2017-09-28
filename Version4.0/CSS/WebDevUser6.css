@@ -1,7 +1,6 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #123456;
-	text-align: center;
+	color: #003366;
 }
 
 h1 {
@@ -14,13 +13,15 @@ h2{
         text-align: center;
 }
 
+p{
+		text-align: center;
+}
+
 table {
-	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	color: #ffffff;
 	cellspacing: 0px;
 }
 
