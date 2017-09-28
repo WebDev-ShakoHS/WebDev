@@ -23,7 +23,7 @@ table {
 tr {
 	border: 5px solid #FFFFFF;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#000000; 
 }
 
 th {
@@ -35,12 +35,20 @@ th {
 td {
 	
 	color:#0F0FA0;
-	background-color:#696969;'
+	background-color:#FF0000;'
 
 }
 
 button {
-	margin = auto;
+	margin-left: auto;
+	margin-right: auto;
 	display:block;
 	
+}
+
+.nav {
+  text-align: center;
+}
+.nav > ul {
+  display: inline-block;
 }
