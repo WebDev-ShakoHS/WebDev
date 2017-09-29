@@ -126,7 +126,8 @@ function stopTest()
  endTime=new Date();
  var responseTime=(endTime.getTime()-startTime.getTime())/1000;
 
- document.body.style.background="white"; 
+ document.body.style.background="white";
+ document.body.style.backgroundImage="url(\"https://cdn.discordapp.com/attachments/294643774435491841/363153834530439168/latest.png\")";
  alert("your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
  startPressed=false;
  bgChangeStarted=false;
