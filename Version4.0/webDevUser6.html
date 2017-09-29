@@ -1,18 +1,226 @@
 <html lang="en">
-<!--Version 4.0 
-	Name:
-	Date Completed:
+<!--Version 4.0
+	Name: Marcus Jakuubowsky
+	Date Completed: 
  -->
 <head>
+<!-- your webpage info goes here -->
+<link href="CSS/WebDevUser6.css" rel="stylesheet" type="text/css">
+<style>  
+  td {color: #FF0000;}
+</style>
+    <title>My First Website</title>
+	
+	<meta name="author" content="your name" />
+	<meta name="description" content="" />
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+<input type="button" onDblClick="alert('GO Sabers!');" value="Double Click Me!">
+</head>
+<body>
+<script language="JavaScript">
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.10)
+ responseString="Well done!";
+ if (responseTime >= 0.10 && responseTime < 0.20)
+ responseString="Nice!";
+ if (responseTime >=0.20 && responseTime < 0.30)
+ responseString="Could be better...";
+ if (responseTime >=0.30 && responseTime < 0.60)
+ responseString="Keep practising!";
+ if (responseTime >=0.60 && responseTime < 1)
+ responseString="Have you been drinking?";
+ if (responseTime >=1)
+ responseString="Did you fall asleep?";
+
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+<option>chocolate
+<option>mediumslateblue
+<option>tomato
+<option>darkslategray
+<option>limegreen
+<option>cornflowerblue
+<option>darkolivegreen
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+<!-- webpage content goes here in the body -->
+
+	<div id="page">
+		<div id="logo">
+			<h1><a href="/" id="logoLink">Welcome to My First Web Development Website</a></h1>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#/home.html">Home</a></li>
+				<li><a href="WebDevUser6_AboutMe.html">About</a></li>
+				<li><a href="#/contact.html">Contact</a></li>
+			</ul>	
+		</div>
+		<div id="content">
+			<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Home</font></font></h2>
+			<p>
+This is an interesting class			</p>
+			<p>I can't wait to learn more</p>
+		</div>
+		<h2>My Top 5 Favorite Songs</h2>
+ 		<table>
+ 		<tr><th>Rank</th><th>Artist</th><th>Song</th></tr>
+ 		<tr><td style="color:#00FF00; background-color:sienna;">1</td><td>Rush</td><td>Fly By Night</td></tr>
+ 		<tr><td>2</td><td>BNL</td><td>One Week</td></tr>
+ 		<tr><td>3</td><td>Dave Matthews Band</td><td>Grey Street</td></tr>
+ 		<tr><td>4</td><td>Modest Mouse</td><td>One Chance</td></tr>
+ 		<tr><td>5</td><td>New Radicals</td><td>Someday We'll Know</td></tr>
+ 		</table>
+ 		<br />
+ 		<h2>My Favorite Book Series</h2>
+ 		<table>
+ 			<tr>
+ 				<th>Series Name</th>
+ 				<th>Author</th>
+ 				<th>Book Cover</th>
+ 			</tr>
+ 			<tr>
+ 				<td>
+ 					<ol>
+ 						<li>Red Rising Trilogy</li>
+ 					</ol>
+ 				</td>
+ 				<td>Pierce Brown</td>
+ 				<td><img src="images/RedRisingTrilogy.jpg" alt="Picture of Red Rising Trilogy Covers" width="200" height="70" /></td>
+ 			</tr>
+ 			<tr>
+ 				<td>
+ 					<ol start="2">
+ 						<li>Inheritance Cycle</li>
+ 					</ol>
+ 				</td>
+ 				<td>Christopher Paolini</td>
+ 				<td><img src="images/InheritanceCycle.png" alt="Picture of Inheritance Cycle Covers" width="200" height="70" /></td>
+ 			</tr>
+ 			<tr>
+ 				<td>
+ 					<ol start="3">
+ 						<li>Seven Realms Series</li>
+ 					</ol>
+ 				</td>
+ 				<td>Cinda Williams Chima</td>
+ 				<td><img src="images/SevenRealmsSeries.png" alt="Picture of Seven Realsm Series Covers" width="200" height="70"/></td>
+ 			</tr>
+ 			<tr>
+ 				<td>
+ 					<ol start="4">
+ 						<li>Ranger's Apprentice</li>
+ 					</ol>
+ 				</td>
+ 				<td>John Flanagan</td>
+ 				<td><img src="images/RangerApprenticeSeries.jpg" alt="Picture of Ranger Apprentice Series Covers" width="200" height="200" /></td>
+ 			</tr>
+ 		</table>
+ 		<br />
+ 		<br />
+		<div id="footer">
+			<p>
+				Webpage made by <a href="/" target="_blank">MJ</a>
+			</p>
+		</div>
+	</div>
+
 
 <title> Web Development User #6 </title>
 
-</head>
 
-<body>
 
-<center> My name is User #6</center>
+
+
+<center> My name is Marcus Jakubowksy</center>
 
 </body>
-
 </html>
