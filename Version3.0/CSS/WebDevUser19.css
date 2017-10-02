@@ -10,6 +10,7 @@ h1 {
 
 h2{
         font-size: 1.1em;
+		text-align: center;
 }
 
 table {
@@ -30,4 +31,8 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+td {
+	color: #00FF00;
+	background-color:sienna;
 }

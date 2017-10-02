@@ -1,0 +1,33 @@
+body {
+	font-family: "Arial", "Comic Sans MS", fantasy;
+	color: #003366;
+	background-image: url("https://cdn.discordapp.com/attachments/294643774435491841/363153834530439168/latest.png")
+} 
+
+h1 {
+	font-size: 2.0em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+table {
+	text-align: left;
+	border-collapse: collapse;
+}
+
+tr {
+	text-align: center;
+	background-color :aqua;
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+
+td {
+	background-color: #424242
+}
