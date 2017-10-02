@@ -1,6 +1,7 @@
 body {
 	font-family: "Comic Sans MS", "Marker Felt", fantasy;
 	color: #003366;
+	background-image: url("https://cdn.discordapp.com/attachments/294643774435491841/363153834530439168/latest.png") /* 10.b */
 }
 
 h1 {
@@ -8,9 +9,8 @@ h1 {
 	text-align: center;
 }
 
-h2 {
-	font-size: 1.1em;
-	text-align: center;
+h2	{
+    font-size: 1.1em;
 }
 
 table {
@@ -30,8 +30,4 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
-}
-
-p {
-	text-align: center;
 }
