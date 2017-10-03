@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--Version 1.0 
+	Name: Colin Bolduc
+	Date Completed: 9/13/17
+ --><head>
+<style>  
+  td {color: #e68a00;}
+</style>
+<link href="CSS/User#2-CB-v3.css" rel="stylesheet" type="text/css"> 
+    <title>Colin Bolduc's Website Portfolio</title>
+	
+	<meta name="author" content="your name" />
+	<meta name="description" content="" />
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+</head>
+<body>
+
+<!-- webpage content goes here in the body -->
+
+	<div id="page">
+		<div id="logo">
+			<h1><a href="/" id="logoLink">Games</a></h1>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="webDevUser2.html">Home</a></li>
+				<li><a href="WebDevUser2_AboutMe.html">About</a></li>
+				<li><a href="#/contact.html">Contact</a></li>
+			</ul>	
+		</div>
+		<div id="content">
+        <table border="0" width="350" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img border="0" src="images/gameroulette.jpg" width="152" height="216"></td>
+    <td>
+
+<form name="fire">
+Load number of bullets (1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
+
+<p>
+<input name="message" type="button" value="Play Roulette!" onClick="fireit()">
+</p>
+
+</form>
+
+<script>
+
+//Russian Roulette Game- by javascriptkit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Credit must stay intact for use
+
+function fireit(){
+var theone=Math.floor(Math.random()*6)
+
+if (theone<=document.fire.bullets.value-1)
+alert("Bang. You\'re dead!")
+else{
+document.fire.message.value="Whew. Got lucky!"
+setTimeout("document.fire.message.value='Play Roulette'",500)
+}
+}
+
+</script>
+
+<p align="center">This free script provided by<br />
+<a href="http://javascriptkit.com">JavaScript
+Kit</a></p>
+
+</td>
+  </tr>
+</table>
+			<h2>Home</h2>
+			<p>
+				My name is Colin Bolduc
+			</p>
+			<p> 
+				Senior
+			</p>
+		</div>
+		<div id="footer">
+			<p>
+				Webpage made by <a href="/" target="_blank">Colin Bolduc</a>
+			</p>
+		</div>
+	</div>
+</body>
+
+
+<title> Web Development Colin Bolduc </title>
+
+
+
+<body>
+
+<center> My name is Colin Bolduc</center>
+
+</body>
+
