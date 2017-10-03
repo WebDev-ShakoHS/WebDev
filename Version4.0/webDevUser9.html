@@ -1,17 +1,188 @@
-<html lang="en">
-<!--Version 4.0 
-	Name:
-	Date Completed:
+<!--Version 3.0 
+	Name:Ben
+	Date Completed: 9/19/2017
  -->
 <head>
+    <title>Dis Bois First Website</title>
+	
+	<meta name="author" content="your name" />
+	<meta name="description" content="" />
 
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="CSS/webdevuser9.css" rel="stylesheet" type="text/css">
+	<style>  
+  td {color: #FF0000;}
+</style>
+<script>
+ alert('Go Sabers!');
+</script>
+</head>
+<body>
+<script language="JavaScript">
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.10)
+ responseString="Well done!";
+ if (responseTime >= 0.10 && responseTime < 0.20)
+ responseString="Nice!";
+ if (responseTime >=0.20 && responseTime < 0.30)
+ responseString="Could be better...";
+ if (responseTime >=0.30 && responseTime < 0.60)
+ responseString="Keep practising!";
+ if (responseTime >=0.60 && responseTime < 1)
+ responseString="Have you been drinking?";
+ if (responseTime >=1)
+ responseString="Did you fall asleep?";
+
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+<option>chocolate
+<option>mediumslateblue
+<option>tomato
+<option>darkslategray
+<option>limegreen
+<option>cornflowerblue
+<option>darkolivegreen
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+
+<!-- webpage content goes here in the body -->
+
+	<div id="page">
+		<div id="logo">
+			<h1><a href="/" id="logoLink">Dis Bois First Website</a></h1>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#/home.html">Home</a></li>
+				<li><a href="webdevuser9_aboutme.html">About</a></li>
+				<li><a href="webdevuser9_contact.html">Contact</a></li>
+				<li><a href="#/eat_cantaloupe.html">Eat Cantaloupe</a></li>
+			</ul>	
+		</div>
+		<div id="content">
+			<h2>Home</h2>
+			<p>
+				This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+			</p>
+			<p>
+				Thats a lie actually i copied most of the code of the internet.
+			</p>
+			<p> 
+				I can use my skills here to create websites for my business, my friends and family, my dog, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about). 
+			</p>
+		</div>
+		<h2 align="center">My Current Top 5 Favorite Songs</h2>
+ <table align="center" border="1">
+ <tr><th>Rank</th><th>Artist</th><th>Song</th></tr>
+ <tr><td style="color:#00FF00; background-color:sienna;">1</td><td>Skrillex</td><td>Bangarang</td></tr>
+ <tr><td>2</td><td>Teddy Killerz</td><td>Ragga Bomb Remix</td></tr>
+ <tr><td>3</td><td>Linkin Park</td><td>Numb</td></tr>
+ <tr><td>4</td><td>Dr</td><td>I Keep Holding On</td></tr>
+ <tr><td>5</td><td>Knife Party</td><td>404</td></tr>
+ </table>
+ <center><img src="images/WebDevUser9.jpg" width="389" height="527" alt="Picture of Skrillex" /><center/>
+		<div id="footer">
+			<p>
+				Webpage made by <a href="/" target="_blank">[Ben]</a>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
 <title> Web Development User #9 </title>
 
 </head>
 
 <body>
 
-<center> My name is User #9</center>
+<center> My name is Ben</center>
 
 </body>
 
