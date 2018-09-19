@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'cordalight';
+        src: url('CordaLig-webfont.woff2') format('woff2'),
+            url('CordaLig-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}
+.formatTable {
+    font-family:Montserrat;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    border-collapse: collapse;
+    color:#459bf2;
+        text-shadow: 0 1px 0 #016ee4,
+            0 2px 0 #0d60ba,
+            0 3px 0 #184f8c,
+            0 4px 0 #17395e,
+            0 5px 0 #14212f,
+            0 6px 1px rgba(0,0,0, .1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 4px 4px rgba(0,0,0,.2),
+            0 4px 6px rgba(0,0,0, .3),
+            0 5px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+}         
+.footerStyle{
+    font-family:"cordalight";
+    font-size: 30px;
+    align-items:stretch;
+    vertical-align: baseline;
+}
+body {
+    font-family: Open Sans, serif;
+    color:#ffffff;
+    background: #151515;
+}
+input{
+    color:#ffffff;
+    outline-color:#8e8989;
+    outline-width:3px;
+    border-style:groove;
+    font-size:14px;
+    font-family: Open Sans, serif;
+    background-color:#1e1e1e;
+}
+
+p{
+}
+button{
+    font-family: Open Sans, serif;
+    border-style:groove;
+    background-color:#161616;
+    outline:none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.btn{
+    color: #b7b7b7;
+    text-shadow: 0 1px 0 #828282,
+            0 2px 0 #757575,
+            0 3px 0 #3d3d3d,
+            0 4px 0 #161616,
+            0 5px 0 #0c0c0c,
+            0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+    border-width: 0.6px;
+    border-color:#b5bcc8;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.iconButtons{
+    color:#b7b7b7;
+    font-size:60px;
+    padding:0.4em;
+    position:relative;
+    left:3.4%;
+}
+button:hover {
+    background-color: #0e100e;
+    color: #ffffff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.46), 0 17px 50px 0 rgba(0,0,0,0.35);
+    transform: translateY(2px);
+}
+button:active {
+    background-color:#1c1c1c;
+    transform: translateY(4px);
+}
+.format{
+
+    color:#e50000;
+    text-shadow: 0 1px 0 #980000,
+           0 2px 0 #7d0606,
+           0 3px 0 #6b0000,
+           0 4px 0 #510000,
+           0 5px 0 #3d0000,
+           0 6px 1px rgba(0,0,0, .1),
+           0 0 5px rgba(0,0,0,.1),
+           0 1px 3px rgba(0,0,0,.3),
+           0 4px 4px rgba(0,0,0,.2),
+           0 4px 6px rgba(0,0,0, .3),
+           0 5px 10px rgba(0,0,0,.2),
+           0 20px 20px rgba(0,0,0,.15);
+}
+.loginForm{
+    text-shadow: 0 0 220px;
+    animation: form 8s ease infinite;
+    border-color:#feb73e;
+    font-size: 30px; position:fixed; 
+    left:80%;
+    background-color:#1a1a1a; 
+    border-style:groove;
+    border-width:0.6px;
+    padding:.4em;
+}
+
+@keyframes form{
+    0% {color:#ffffff;border-color:#ffffff;}
+    34% {color: #feb73e;border-color:#feb73e;}
+    67% {color: #83d902;border-color:#83d902;}
+    100%{color: #ffffff;border-color:#ffffff;}
+}
+footer{
+    text-align:center;
+    color:#ffffff;
+    clear:left;
+    padding:20px;
+}
+#page {
+    margin: 40px auto;
+    padding: 0 1em;
+    max-width: 61.75em;
+}
