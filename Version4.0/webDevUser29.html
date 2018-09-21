@@ -1,17 +1,215 @@
 <html lang="en">
-<!--Version 2.0
-	Name:
-	Date Completed:
+<!--Version 3.0
+	Name:Jonathan Winkley
+	Date Completed:9/19/18
  -->
 <head>
 
-<title> Web Development User #29 </title>
+    <link href="CSS/user29/WebDevUser29.css" rel="stylesheet" type="text/css"> 
+
+<!-- your webpage info goes here -->
+
+    <style>  
+  td {color: #FF0000;}
+</style>
+    
+  <button type="button"
+style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
+Click Me!</button>
+    
+    <script language="JavaScript">
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.10)
+ responseString="Well done!";
+ if (responseTime >= 0.10 && responseTime < 0.20)
+ responseString="Nice!";
+ if (responseTime >=0.20 && responseTime < 0.30)
+ responseString="Could be better...";
+ if (responseTime >=0.30 && responseTime < 0.60)
+ responseString="Keep practising!";
+ if (responseTime >=0.60 && responseTime < 1)
+ responseString="Have you been drinking?";
+ if (responseTime >=1)
+ responseString="Did you fall asleep?";
+
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+<option>chocolate
+<option>mediumslateblue
+<option>tomato
+<option>darkslategray
+<option>limegreen
+<option>cornflowerblue
+<option>darkolivegreen
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+
+    <title>Web Dev Hour 7</title>
+
+        
+
+        <meta name="author" content="Jonathan Winkley" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link rel="stylesheet" href="style.css" type="text/css" />
+
+        
 
 </head>
 
 <body>
 
-<center> My name is User #29 </center>
+
+<!-- webpage content goes here in the body -->
+
+        <div id="page">
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink">My First Website</a></h1>
+                        <h2><a href="/" id="logoLink">Now with more code1</a></h2>
+                        <h3><a href="/" id="logoLink">Added in an about me section!</a></h3>
+
+                </div>
+            
+                <div id="nav">
+
+                        <ul>
+
+                                <li><a href="webDevUser29_aboutme.html">About</a></li>
+
+                                <li><a href="#/contact.html">Contact</a></li>
+
+                        </ul>        
+
+                </div>
+
+                <div id="content">
+
+                        <h2>Home</h2>
+
+                        <p>
+
+                                This is my first webpage! I copied all the HTML and CSS in order to make it. Watch out world of web design here I come!
+
+                        </p>
+
+                        <p>
+
+                                I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
+
+                        </p>
+
+                </div>
+           <center> <img src="images/user29/glass_pane.jpg" alt="The ingredient most used in this recipe, a glass pane"> </center>
+<h2>Minecraft Ender Crystal Recipe</h2>
+ <table>
+ <tr><th>Amount</th><th>Ingredient</th></tr>
+ <tr><td style="color:#00FF00; background-color:sienna;">7</td><td>glass pane</td></tr>
+ <tr><td>1</td><td>eye of ender</td></tr>
+ <tr><td>1</td><td>ghast tear</td></tr>
+ </table>
+                <div id="footer">
+
+                        <p>
+
+                                Webpage made by <a href="/" target="_blank">[Jonathan Winkley]</a>
+
+                        </p>
+
+                </div>
+
+        </div>
 
 </body>
 
