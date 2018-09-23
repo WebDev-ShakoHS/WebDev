@@ -1,17 +1,228 @@
-<html lang="en">
-<!--Version 5.0
+</html><html lang="en">
+<!--Version 4.0 
 	Name:
 	Date Completed:
  -->
 <head>
+    <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css"> >
 
 <title> Web Development User #1 </title>
 
 </head>
 
+<script>
+
+</script>
+    
 <body>
 
-<center> My name is User #1</center>
+<center> My name is Saabir Barre</center>
+
+</body>
+
+</html>
+<!-- your webpage info goes here -->
+
+
+    <title>My First Website</title>
+
+        
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link rel="stylesheet" href="style.css" type="text/css" />
+
+        
+
+</head>
+<script language="JavaScript">
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.10)
+ responseString="Well done!";
+ if (responseTime >= 0.10 && responseTime < 0.20)
+ responseString="Nice!";
+ if (responseTime >=0.20 && responseTime < 0.30)
+ responseString="Could be better...";
+ if (responseTime >=0.30 && responseTime < 0.60)
+ responseString="Keep practising!";
+ if (responseTime >=0.60 && responseTime < 1)
+ responseString="Have you been drinking?";
+ if (responseTime >=1)
+ responseString="Did you fall asleep?";
+
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+<option>chocolate
+<option>mediumslateblue
+<option>tomato
+<option>darkslategray
+<option>limegreen
+<option>cornflowerblue
+<option>darkolivegreen
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+<body> 
+<h1>HI! How are you today this is H1</h1>
+<h2>HI! How are you today this is H2</h2>
+<h3>HI! How are you today this is H3</h3>
+<h4>HI! How are you today this is H4</h4>
+<h5>HI! How are you today this is H5</h5>
+<h6>HI! How are you today this is H6</h6>
+
+
+<!-- webpage content goes here in the body -->
+
+
+        <div id="page">
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink">My First Website</a></h1>
+
+                </div>
+
+                <div id="nav">
+
+                        <ul>
+
+                                <li><a href="#/home.html">Home</a></li>
+
+                                <li><a href="#/about.html">About</a></li>
+
+                                <li><a href="#/contact.html">Contact</a></li>
+
+                        </ul>        
+
+                </div>
+
+                <div id="content">
+
+                        <h2>Home</h2>
+
+                        <p>
+
+                                This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+
+                        </p>
+
+                        <p>
+
+                                I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
+
+                        </p>
+
+                </div>
+            <img src="https://www.forgotlyrics.com/artists/l/lil-uzi-vert.jpg" alt="Lil Uzi Vert" />
+ <table>
+ <tr><th>Rank</th><th>Artist</th><th>Song</th></tr>
+ <tr><td>1</td><td>Drake</td><td>Gods plan</td></tr>
+ <tr><td>2</td><td>Tay k</td><td>The race</td></tr>
+ <tr><td>3</td><td>xxtentacion</td><td>Look at me</td></tr>
+ <tr><td>4</td><td>Playboi carti</td><td>Magnolia</td></tr>
+ <tr><td>5</td><td>Lil uzi vert</td><td>Money Longer</td></tr>
+ </table>
+                <div id="footer">
+
+                        <p>
+
+                                Webpage made by <a href="/" target="_blank">[Saabir Barre]</a>
+
+                        </p>
+
+                </div>
+
+        </div>
 
 </body>
 

@@ -1,18 +1,259 @@
 <html lang="en">
-<!--Version 4.0
-	Name:
-	Date Completed:
+<!--Version 3.0
+	Name: Brandon Neri
+	Date Completed: 9/18/2018
  -->
 <head>
 
-<title> Web Development User #16 </title>
+<!-- your webpage info goes here -->
 
+    <title>Brandon's Portfolio</title>
+        <meta name="Brandon Neri" content="Brandon" />
+        <meta name="Website for Web Development" content="2018" />
+        
+		<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+    <link rel="stylesheet" href="CSS/user16.css" type="text/css" />
+	<button type="button" style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
+	Click Me!
+	</button>
 </head>
-
 <body>
+<script LANGUAGE="JavaScript">
+<!--
 
-<center> My name is User #16</center>
+/*
+Submitted by David Gardner (davidgardner7@yahoo.com)
+Featured on JavaScript Kit (http://javascriptkit.com)
+For this and over 400+ free scripts, visit http://javascriptkit.com
+*/
 
+function getpet () {
+
+        var toyear = 1997;
+        var birthyear = document.frm.inyear.value;
+        var birthpet="Ox"
+
+        x = (toyear - birthyear) % 12
+        if ((x == 1) || (x == -11)) {
+            birthpet="Mouse"      }
+            else  {
+             if (x == 0)             {
+             birthpet="Ox"           }
+             else  {
+              if ((x == 11) || (x == -1)) {
+              birthpet="Tiger"          }
+              else  {
+               if ((x == 10) || (x == -2)) {
+               birthpet="Rabbit"         }
+               else  {
+                if ((x == 9) || (x == -3))  {
+                birthpet="Dragon"         }
+                else  {
+                 if ((x == 8) || (x == -4))  { 
+                 birthpet="Snake"          }
+                 else  {
+                  if ((x == 7) || (x == -5))  { 
+                  birthpet="Horse"          }
+                  else  {
+                   if ((x == 6) || (x == -6))  { 
+                   birthpet="Sheep"          }
+                   else  {
+                    if ((x == 5) || (x == -7))  {  
+                    birthpet="Monkey"         }
+                    else  {
+                     if ((x == 4) || (x == -8))  {
+                     birthpet="Chicken"        }
+                     else  {
+                      if ((x == 3) || (x == -9))  {
+                      birthpet="Dog"            }
+                      else  {
+                       if ((x == 2) || (x == -10))  {
+                       birthpet="Pig"             }  
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+        document.frm.birth.value = birthpet;
+
+}
+// -->
+</script>
+
+
+    <p>Enter your birth year. For example: "1975" </p>
+    <form NAME="frm">
+      <p><input TYPE="text" SIZE="4" NAME="inyear" value="1975"> <input TYPE="button" VALUE="My pet, please"
+      onClick="getpet()"> <br>
+      </p>
+      <p><input TYPE="text" SIZE="9" NAME="birth"> </font></p>
+    </form>
+
+<p align="center"><font face="arial" size="-2">This free script provided by</font><br>
+<font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
+Kit</a></font></p>
+<script language="JavaScript">
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.10)
+ responseString="Well done!";
+ if (responseTime >= 0.10 && responseTime < 0.20)
+ responseString="Nice!";
+ if (responseTime >=0.20 && responseTime < 0.30)
+ responseString="Could be better...";
+ if (responseTime >=0.30 && responseTime < 0.60)
+ responseString="Keep practising!";
+ if (responseTime >=0.60 && responseTime < 1)
+ responseString="Have you been drinking?";
+ if (responseTime >=1)
+ responseString="Did you fall asleep?";
+
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+<option>chocolate
+<option>mediumslateblue
+<option>tomato
+<option>darkslategray
+<option>limegreen
+<option>cornflowerblue
+<option>darkolivegreen
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+<!-- webpage content goes here in the body -->
+	<h1 style = "color:red">Header 1</h1>
+	<h2 style = "color:orange">Header 2</h2>
+	<h3 style = "color:yellow">Header 3</h3>
+	<h4 style = "color:green">Header 4</h4>
+	<h5 style = "color:blue">Header 5</h5>
+	<h6 style = "color:purple">Header 6</h6>
+	<a href="webDevUser16About.html">Click Here free V-Bucks</a>
+	
+        <div id="page"> 
+                <div id="logo">
+                        <h3><a href="/" id="logoLink">Sub Title Link</a></h3>
+                        <img src="images/user16/meme.jpg" alt="dont try computer science, its addicting." class="center">
+                </div>
+                <div id="nav">
+                        <ul>
+                                <li><a href="#/home.html">Home</a></li>
+                                <li><a href="#/about.html">About</a></li>
+                                <li><a href="#/contact.html">Contact</a></li>
+                        </ul>        
+                </div>
+                <div id="content">
+                        <h2>Home</h2>
+                        <p>
+                                This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+                        </p>
+                        <p>
+                                I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
+                        </p>
+                </div>
+                <h2>My Top 5 Aliens</h2>
+ 				<table>
+					<tr><th>Rank</th><th>Presidents</th><th>Year</th></tr>
+					<tr style = "color:red"><td>1</td><td>Donald Trump</td><td>2018</td></tr>
+					<tr><td>2</td><td>Vladimir Putin</td><td>2001</td></tr>
+ 					<tr><td>3</td><td>Kim Jong-un</td><td>2016</td></tr>
+ 					<tr><td>4</td><td>DJ Khalid</td><td>Never</td></tr>
+ 					<tr><td>5</td><td>Drake</td><td>Someday</td></tr>
+				</table>
+                <div id="footer">
+                        <p>
+                                Webpage made by <a href="/" target="_blank">[Brandon Neri]</a>
+                        </p>
+                </div>
+        </div>
 </body>
-
 </html>
