@@ -9,6 +9,20 @@
         <meta name="Brandon Neri" content="" />
         <meta name="Website for Web Development" content="2018" />     
     <link rel="stylesheet" href="CSS/user16.css" type="text/css" />
+    <script>
+        var space = " ";
+        var pos = 0;
+        var msg = "U.S. Trust";
+
+        function Scroll(){
+                document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
+
+                pos++;
+                if (pos > msg.length) pos = 0;
+                window.setTimeout("Scroll()", 0);
+        }
+        Scroll();
+    </script>
 </head>
 
 <body>
@@ -44,6 +58,13 @@
                 <div id="footer">
                         <p><center>This totally ledgit website is made and sponsered by the Democratic National Community</center></p>
                         <a href="https://fafsa.ed.gov/"><center>Click Here free V-Bucks</center></a>
+                        <script>
+                                function changeText() {
+                                        document.getElementById("textChange").innerHTML="Sike Just Scammed You Again Noob";
+                                }
+                        </script>
+                        <center><p id="textChange"> LIKE TO BE SCAMMED???</p></center>
+                        <center><button type="button" onclick="changeText()">CLICK HERE!</button></center>
                 </div>
         </div>
 </body>
