@@ -1,0 +1,59 @@
+body {
+	font-family: "Arial", "Comic Sans MS", fantasy;
+	background-color: rgb(255, 255, 255);
+	align-items: center;
+	margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+	font-size: 10em;
+	text-align: center;
+}
+
+p {
+	font-size: 1em;
+	text-align: center;
+}
+
+form{
+	align-content: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr {
+	border: 1px solid #000000;
+	text-align: center;
+	background-color:rgb(161, 208, 255); 
+}
+
+td {
+	border: 1px solid #000000;
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #af1616;
+	text-decoration-color: #af1616
+}
+
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+}
