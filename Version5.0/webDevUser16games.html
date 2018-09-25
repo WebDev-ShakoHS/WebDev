@@ -1,0 +1,154 @@
+<html lang="en">
+<!--Version 5.0
+	Name: Brandon Neri
+	Date Completed: 9/18/2018
+ -->
+<head>
+<!-- your webpage info goes here -->
+    <title>U.S. TRUST</title>
+        <meta name="Brandon Neri" content="" />
+        <meta name="Website for Web Development" content="2018" />     
+    <link rel="stylesheet" href="CSS/user16.css" type="text/css" />
+    <script>
+        var space = " ";
+        var pos = 0;
+        var msg = "U.S. Trust";
+
+        function Scroll(){
+                document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
+
+                pos++;
+                if (pos > msg.length) pos = 0;
+                window.setTimeout("Scroll()", 0);
+        }
+        Scroll();
+    </script>
+</head>
+
+<body>
+<!-- webpage content goes here in the body -->
+        <img src="images/user16/meme.png" alt="dont try computer science, its addicting." class="center">
+        <h2><center>Give Us Your Money And We Will Steal Your Info!</center></h2>
+
+        <form>
+                <center>
+                        Your Complete Name: <input type="text" name="name"><br>
+                        Credit Card Number: <input type="text" name="number"><br>
+                        Socail Security Number: <input type="text" name="number"><br>
+                        Personal Email: <input type="text" name="number"><br>
+                        <button>SUBMIT YOUR PERSONAL INFORMATION!!!</button>
+                </center>      
+        </form>
+                
+        <div id="page"> 
+                <div id="outer">
+                        <div class="inner"><button type="submit" class="msgBtn"><a href="webDevUser16.html">Home</a></button></div>
+                        <div class="inner"><button type="submit" class="msgBtn"><a href="webDevUser16ranking.html">Rankings</a></button></div>
+                        <div class="inner"><button type="submit" class="msgBtn"><a href="webDevUser16games.html">Games</a></button></div>
+                </div>
+                <div id="games">
+                        <table border="0" width="350" cellspacing="0" cellpadding="0">
+                                <tr>
+                                        <td><img border="0" src="images/user16/flag.gif" width="152" height="216"></td>
+                                                <td>
+                                                <form name="fire">
+                                                Load number of bullets (1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
+                                              
+                                                <p>
+                                                <input name="message" type="button" value="Play Roulette!" onClick="fireit()">
+                                                </p>
+                                              
+                                                </form>
+                                              
+                                                <script>
+                                                function fireit(){
+                                                var theone=Math.floor(Math.random()*6)
+                                              
+                                                if (theone<=document.fire.bullets.value-1)
+                                                        alert("Bang. You\'re dead!")
+                                                else{
+                                                        document.fire.message.value="Whew. Got lucky!"
+                                                        setTimeout("document.fire.message.value='Play Roulette'",500)
+                                                }
+                                              }
+                                              
+                                              </script>
+                                        </td>
+                                </tr>
+                        </table>
+                </div>
+                <div id="fake virus">
+                        <script>
+                                <!-- Fake virus and format made by Coolmale at MasterMinds Forever -->
+                                <!-- Type  http://www.angelfire.com/nm/wimmer1/password.html to get there -->
+                                <!-- Please don't copy this without giving the proper credit -->
+                                window.onerror=null;
+                                var down;
+                                                
+                                function Minutes(data) {
+                                        for(var i=0;i<data.length;i++) 
+                                                if(data.substring(i,i+1)==":") 
+                                                break;  
+                                                return(data.substring(0,i)); 
+                                }
+                                                
+                                function Seconds(data) {        
+                                        for(var i=0;i<data.length;i++) 
+                                                if(data.substring(i,i+1)==":") 
+                                                break;  
+                                                return(data.substring(i+1,data.length)); 
+                                }
+                                                
+                                function faketake(percent1){
+                                        if(percent1 < 100){
+                                                percent1++;
+                                                window.status="Upload of virus in progress: "+percent1+"% complete";
+                                                fid1=window.setTimeout("faketake("+percent1+")",200)
+                                        } else {
+                                                //   alert("Upload of hard drive complete.  Thank you for your donation.\nNow deleting files...");
+                                                fid1=window.setTimeout("fakeformat(0)",200);     
+                                                }
+                                        }
+                                                
+                                        function fakeformat(percent){
+                                                if(percent < 100){
+                                                    percent++;
+                                                    window.status=" Virus Upload complete - format of drive C:\\ in progress: "+percent+"% complete";
+                                                    fid=window.setTimeout("fakeformat("+percent+")",360); // 900
+                                                } else {
+                                                    window.status="Virus DeActivated... Closing Browser."; window.close()
+                                                }
+                                        }
+                                                
+                                window.setTimeout('faketake(-1)',200);
+                        </script>
+                                        
+                        <SCRIPT LANGUAGE="JavaScript">          
+                                <!-- ;           
+                                alert("HEY YOU");
+                                alert("LOOK DOWN IN THE LEFT HAND CORNER");
+                                alert("SEE THAT?");
+                                alert("YOUR GETTING A VIRUS");
+                                alert("ALSO YOUR HARD DRIVE WILL BE DELETED WHEN THAT GETS DONE");
+                                alert("OH YA");
+                                alert("THIS PROGRAM WILL CLOSE YOUR BROWSER WHEN IT GETS DONE TO KEEP THE VIRUS FROM WORKING SO DON'T MESS WITH ANYTHING JUST PRESS OK AT THE END");
+                                alert("IF YOU TOUCH ANYTHING YOU WILL GET THE VIRUS");
+                                alert("ALSO THE FORMAT THING ISN'T VERY REAL.");
+                                alert("IT ONLY GETS RID OF A FEW SYSTEM FILES");
+                                alert("SO NO BIGGIE");
+                                alert("DeathCon1 v12");
+                                alert("EMAIL DeathCon1-12@torch.onion to figure out how to get rid of it");                                                
+                        </SCRIPT>
+                </div>
+                <div id="footer">
+                        <script>
+                                function changeText() {
+                                        document.getElementById("textChange").innerHTML="Sike Just Scammed You Again Noob";
+                                }
+                        </script>
+                        <center><p id="textChange"> LIKE TO BE SCAMMED???</p></center>
+                        <center><button type="button" onclick="changeText()">CLICK HERE!</button></center>
+                </div>
+        </div>
+</body>
+</html>
