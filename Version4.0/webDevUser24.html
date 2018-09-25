@@ -1,17 +1,218 @@
 <html lang="en">
-<!--Version 2.0
-	Name:
-	Date Completed:
+<!--Version 3.0
+	Name: Avery Schaefer
+	Date Completed: 9/18/18
  -->
 <head>
 
-<title> Web Development User #24 </title>
+<!-- your webpage info goes here -->
+
+
+    <title>My First Website</title>
+
+        <link href="CSS/user24.css" rel="stylesheet" type="text/css">
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->       
+        
 
 </head>
-
+<button type="button"
+style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
+Click Me!</button>
 <body>
 
-<center> My name is User #24</center>
+
+<!-- webpage content goes here in the body -->
+<script language="JavaScript">
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.10)
+ responseString="Well done!";
+ if (responseTime >= 0.10 && responseTime < 0.20)
+ responseString="Nice!";
+ if (responseTime >=0.20 && responseTime < 0.30)
+ responseString="Could be better...";
+ if (responseTime >=0.30 && responseTime < 0.60)
+ responseString="Keep practicing!";
+ if (responseTime >=0.60 && responseTime < 1)
+ responseString="Have you been drinking?";
+ if (responseTime >=1)
+ responseString="Did you fall asleep?";
+
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+<option>chocolate
+<option>mediumslateblue
+<option>tomato
+<option>darkslategray
+<option>limegreen
+<option>cornflowerblue
+<option>darkolivegreen
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+
+        <div id="page">
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink">My First Website (H1) </a></h1>
+
+                </div>
+				
+                <div id="nav">
+
+                        <ul>
+
+                                <li><a href="#/home.html">Home</a></li>
+
+                                <li><a href="WebDevUser24_AboutMe.html">About</a></li>
+
+                                <li><a href="#/contact.html">Contact</a></li>
+
+                        </ul>        
+
+                </div>
+
+                <div id="content">
+
+                        <h2>Home (H2) </h2>
+
+                        <h3>
+
+                                This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come! (H3)
+
+                        </h3>
+
+                        <h4>
+
+                                I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about). (H4)
+
+                        </h4>
+
+                </div>
+
+                <h2>My Top 5 Favorite Songs</h2>
+ 					<table>
+ 						<tr><th>Rank</th><th>Artist</th><th>Song</th></tr>
+						<tr><td>1</td><td>Metallica</td><td>For Whom The Bell Tolls</td></tr>
+ 						<tr><td>2</td><td>AC/DC</td><td>Thunderstruck</td></tr>
+ 						<tr><td>3</td><td>Lorne Balfe</td><td>Free Fall</td></tr>
+ 						<tr><td>4</td><td>Green Day</td><td>Basket Case</td></tr>
+ 						<tr><td>5</td><td>Imagine Dragons</td><td>Friction</td></tr>
+ 					</table>
+
+ 				<img src="images/user24/RIDE-copy.jpg" alt="Picture of For Whom The Bell Tolls Album" />
+ 				<img src="images/user24/AC-DC-copy.jpg" alt="Picture of Thunderstruck Album" />
+ 				<img src="images/user24/Fallin-copy.jpg" alt="Picture of Free Fall Album" />
+ 				<img src="images/user24/Dookie-copy.jpg" alt="Picture of Basket Case Album" />
+ 				<img src="images/user24/smoke+mirrors-copy.jpeg" alt="Picture of Friction Album" />
+
+                <div id="footer">
+
+                        <h5>
+
+                                Webpage made by Avery Schaefer (H5)</a>
+
+                        </h5>
+
+                        <h6>
+
+                        		This is H6 style
+
+                        </h6>
+                </div>
+
+        </div>
 
 </body>
 
