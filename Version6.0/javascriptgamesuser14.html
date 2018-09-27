@@ -1,43 +1,13 @@
-<html lang="en">
-<!--Version 3.0 
-	Name: Michael Morgovsky
-	Date Completed: 9/18/18
- -->
+<html>
 <head>
-<script src="JS/webDevUser14_script.js"></script>
-<!-- your webpage info goes here -->
 <style>  
   td {color: #FF0000;}
+  body {background-image: linear-gradient(to right, #00FFFF , #FF0000)}
 </style>
-<button type="button"
-style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
-Click Me!</button>
-<link href="CSS/WebDevUser14.css" rel="stylesheet" type="text/css">
-    <title>My First Website</title>
-        <h1>I'm</h1>
-        <h2>eating</h2>
-        <h3>beans</h3>
-        <h4>while</h4>
-        <h5>watching</h5>
-        <h6>Cars 2</h6>
-
-        <meta name="author" content="your name" />
-
-        <meta name="description" content="" />
-
-	
-<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
-
-        <link rel="stylesheet" href="style.css" type="text/css" />
-
-        
-
+<script src="JS/webDevUser14_script.js"></script>
 </head>
-
 <body>
-<center><p id="textChange"> My name is User ##</p></center>
-<button type="button" onclick="changeText()">Click if you like</button>
-
+<h1><a href="webDevUser14.html">Go Back</a>
 <script language="JavaScript">
 
 var startTime=new Date();
@@ -150,176 +120,7 @@ Change background color in:
 <input type="button" value="start" onClick="startit()">
 <input type="button" value="stop" onClick="stopTest()">
 </form>
-<script LANGUAGE="JavaScript">
 
-/*
-By Wee Family  psweesam@singnet.com.sg
-Featured on JavaScript Kit (http://javascriptkit.com)
-For this and over 400+ free scripts, visit http://javascriptkit.com
-*/
-
-function calc() {
-first = document.loveform.name1.value.toUpperCase();
-firstlength = document.loveform.name1.value.length;
-second = document.loveform.name2.value.toUpperCase();
-secondlength = document.loveform.name2.value.length;
-var LoveCount=0;
-
-for (Count=0; Count < firstlength; Count++) {
-
-
-
-letter1=first.substring(Count,Count+1);
-
-if (letter1=='L') LoveCount+=2; 
-if (letter1=='O') LoveCount+=2; 
-if (letter1=='V') LoveCount+=2;
-if (letter1=='E') LoveCount+=2; 
-if (letter1=='Y') LoveCount+=3; 
-if (letter1=='O') LoveCount+=1; 
-if (letter1=='U') LoveCount+=3;
-}
-
-
-for (Count=0; Count < secondlength; Count++) {
-letter2=second.substring(Count,Count+1);
-if (letter2=='L') LoveCount+=2;
-if (letter2=='O') LoveCount+=2; 
-if (letter2=='V') LoveCount+=2; 
-if (letter2=='E') LoveCount+=2;
-if (letter2=='Y') LoveCount+=3;
-if (letter2=='O') LoveCount+=1;
-if (letter2=='U') LoveCount+=3;
-}
-
-amount=0;
-
-if (LoveCount> 0) amount=  5-((firstlength+secondlength)/2)
-if (LoveCount> 2) amount= 10-((firstlength+secondlength)/2)
-if (LoveCount> 4) amount= 20-((firstlength+secondlength)/2)
-if (LoveCount> 6) amount= 30-((firstlength+secondlength)/2)
-if (LoveCount> 8) amount= 40-((firstlength+secondlength)/2)
-
-if (LoveCount>10) amount= 50-((firstlength+secondlength)/2)
-
-if (LoveCount>12) amount= 60-((firstlength+secondlength)/2)
-if (LoveCount>14) amount= 70-((firstlength+secondlength)/2)
-if (LoveCount>16) amount= 80-((firstlength+secondlength)/2)
-if (LoveCount>18) amount= 90-((firstlength+secondlength)/2)
-if (LoveCount>20) amount=100-((firstlength+secondlength)/2)
-if (LoveCount>22) amount=110-((firstlength+secondlength)/2)
-if (firstlength==0 || secondlength==0) amount= "Err";
-if (amount < 0) amount= 0;
-if (amount >99) amount=99;
-
-document.loveform.output.value=amount+"%";
-
-
-
-}
-
-
-</script>
-
-
-<center><table width=600 cellpadding=1 cellspacing=0 border=0><tr>
-<td align=center valign=top>
-</TD>
-</TR></TABLE>
-</CENTER> 
-
-<DIV align="center"><CENTER>
-<P><STRONG>The love Test</p>
-
-
-Test the love between two people by entering their names below and then calculate their compatibility.
-
-<FORM name="loveform">
-
-  <P><INPUT value="Dear Daniel" name="name1" type="text" size="20">  + <INPUT
-
-  value="Hello Kitty" name="name2" type="text" size="20">  = <INPUT value name="output" type="text" size="6"> <BR>
-
-  <BR>
-
-  <INPUT value="Calculate!" name="calculate" type="button" value="calculate"
-
-  onclick="calc()"> </P>
-
-
-
-</FORM>
-
-  </CENTER></DIV>
-
-<p align="center"><font face="arial" size="-2">This free script provided by</font><br>
-<font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
-Kit</a></font></p>
-<a href="AboutMeUser14.html">link for more info about me</a>
-
-<!-- webpage content goes here in the body -->
-
-
-        <div id="page">
-
-                <div id="logo">
-
-                        <h1><a href="/" id="logoLink">My First Website</a></h1>
-
-                </div>
-
-                <div id="nav">
-
-                        <ul>
-
-                                <li><a href="#/home.html">Home</a></li>
-
-                                <li><a href="#/about.html">About</a></li>
-
-                                <li><a href="#/contact.html">Contact</a></li>
-
-                        </ul>        
-
-                </div>
-
-                <div id="content">
-
-                        <h2>Home</h2>
-
-                        <p>
-
-                                This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
-
-                        </p>
-
-                        <p>
-
-                                I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
-
-                        </p>
-
-                </div>
-<h2>My Top 5 Favorite Songs</h2>
- <table>
- <tr><th>Rank</th><th>Artist</th><th>Song</th></tr>
- <tr><td>1</td><td style="color:#00FF00; background-color:sienna;">Iron Maiden</td><td>Hallowed Be Thy Name</td></tr>
- <tr><td>2</td><td>Dio</td><td>Holy Diver</td></tr>
- <tr><td>3</td><td>Helloween</td><td>Eagle Fly Free</td></tr>
- <tr><td>4</td><td>KISS</td><td>Detroit Rock City</td></tr>
- <tr><td>5</td><td>Metallica</td><td>The Unforgiven<td></tr>
- </table>
- <img src="images/user14/Iron.jpg" alt="Picture of Iron Maiden's Number of the Beast album">
-                <div id="footer">
-
-                        <p>
-
-                                Webpage made by <a href="/" target="_blank">[Michael Morgovsky]</a>
-
-                        </p>
-
-                </div>
-
-        </div>
 <script language="javascript" type="text/javascript">
 
 //By Sandeep Gangadharan (http://www.sivamdesign.com/home/)
@@ -451,5 +252,4 @@ return true;
 <a href="http://javascriptkit.com"><font face="arial,helvetica" size="1">JavaScript Kit</font></a>
 </p>
 </body>
-
 </html>
