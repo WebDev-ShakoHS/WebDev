@@ -1,18 +1,218 @@
 <html lang="en">
 <!--Version 4.0
-	Name:
-	Date Completed:
+	Name:Ruth
+	Date Completed:19/18
  -->
 <head>
+<!-- your webpage info goes here -->
+<button type="button"
+style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
+Click Me!</button>
+<link href="useWebDevUser12.css" rel="stylesheet" type="text/css"> 
+    <title>My First Website</title>
 
-<title> Web Development User #12 </title>
+        
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+
+        <link rel="stylesheet" href="CSS/user12/WebDevUser12.css" type="text/css" />
 
 </head>
 
 <body>
+<script language="JavaScript">
 
-<center> My name is User #12</center>
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.10)
+ responseString="Well done!";
+ if (responseTime >= 0.10 && responseTime < 0.20)
+ responseString="Nice!";
+ if (responseTime >=0.20 && responseTime < 0.30)
+ responseString="Could be better...";
+ if (responseTime >=0.30 && responseTime < 0.60)
+ responseString="Keep practising!";
+ if (responseTime >=0.60 && responseTime < 1)
+ responseString="Have you been drinking?";
+ if (responseTime >=1)
+ responseString="Did you fall asleep?";
+
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+<option>chocolate
+<option>mediumslateblue
+<option>tomato
+<option>darkslategray
+<option>limegreen
+<option>cornflowerblue
+<option>darkolivegreen
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+
+<!-- webpage content goes here in the body -->
+
+
+        <div id="page">
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink">Trash.com</a></h1>
+
+                </div>
+<img src="https://cdn.pixabay.com/photo/2011/08/14/18/20/garbage-can-8665_960_720.png" alt="Picture of a epic mini trash can"/>
+                <div id="nav">
+
+                        <ul>
+
+                                <li><a href="#/home.html">Home</a></li>
+
+                                <li><a href="css/user12/webdevuser12_aboutme.html">About</a></li>
+
+                                <li><a href="#/contact.html">Contact</a></li>
+
+                        </ul>        
+
+                </div>
+
+                <div id="content">
+
+                        <h2>Garbage</h2>
+
+                        <p>
+
+                                In this website, you will learn about garbage and all the bad things about it.
+                        </p>
+
+                        <p>
+
+                                Garbage is a necessary thing to all places humans inhabit.
+
+                        </p>
+                       
+                         <p>
+                         If you have trash that is paper or wholesome memes, this is the place to disguard just that!
+                         </p>
+                         
+                         <h4>Compost</h4>
+                         <p>
+                         uneditable food and old stale memes need a forever home eventually, and this is the perfect place to store them!
+                         <p>
+                         <h5>gas/methane</h5>
+                         <h6> At trash.com</h6>
+
+                </div>
+<h2>My Top 5 Favorite Garbage Places</h2>
+ <table>
+ <tr><th>Rank</th><th>Name</th><th>Adress</th></tr>
+ <tr><td>1</td><td>1-800-GOT-JUNK? Twin Cities</td><td>Minneapolis, MN</td></tr>
+ <tr><td>2</td><td>Waste Management - Twin Cities Recycling</td><td>1800 Broadway St NE, Minneapolis, MN 55413</td></tr>
+ <tr><td>3</td><td>Aspen Waste Systems</td><td>2951 Weeks Ave SE, Minneapolis, MN 55414</td></tr>
+ <tr><td>4</td><td>South Transfer Station</td><td>2850 20th Ave S, Minneapolis, MN 55407</td></tr>
+ <tr><td>5</td><td>Hennepin Hazardous Waste Dropoff and Transfer Station   </td><td> 8100 Jefferson Hwy, Brooklyn Park, MN 55445</td></tr>
+ </table>
+                <div id="footer">
+
+                        <p>
+
+                                Webpage made by <a href="/" target="_blank">[Ruth Mesfin]</a>
+
+                        </p>
+
+                </div>
+
+        </div>
 
 </body>
 
 </html>
+
