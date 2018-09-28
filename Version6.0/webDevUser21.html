@@ -1,18 +1,78 @@
 <html lang="en">
-<!--Version 2.0
-	Name:
-	Date Completed:
- -->
-<head>
+    <!--Version 6.0
+     Name: Samyu Ravikumar
+     Date Completed: 9/19/18
+     -->
+    <head>
+        <script src="JS/webDevUser21_script.js"></script>
+        <!-- your webpage info goes here -->
+        <title>My First Website</title>
+        
+        <meta name="author" content="Samyu Ravikumar" />
+        <meta name="description" content="" />
+        <!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->
+        <link rel="stylesheet" href="CSS/webDevUser21.css" type="text/css" />
+    
+    
+    </head>
+    <body>
+    
+        <!-- webpage content goes here in the body -->
+        <div id="page">
+            <div class="header">
+                <h1>Samyu Ravikumar</h1>
+            </div>
+            <div id="Home" class="tabcontent">
+                <a href="#/home.html">Home</a>
 
-<title> Web Development User #21 </title>
+            </div>
+            
+            <div id="Paris" class="tabcontent">
+                <a href="dessertsUser21.html">Top Desserts</a>
 
-</head>
+            </div>
+            
+            <div id="Tokyo" class="tabcontent">
+                <a href="JS/javaUser21.html">JavaScript Games</a>
+            </div>
+            
+<!--            <div id="Oslo" class="tabcontent">-->
+<!--                <h1>Oslo</h1>-->
+<!---->
+<!--            </div>-->
+            <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen"><a href="#/home.html">Home</a></button>
+            <button class="tablink" onclick="openCity('Paris', this, 'green')"><a href="dessertsUser21.html">Top Desserts</a></button>
+            <button class="tablink" onclick="openCity('Tokyo', this, 'blue')"><a href="JS/javaUser21.html">Games</a></button>
+<!--            <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>-->
 
-<body>
+            
+<!--            -->
+<!--            <div id="nav">-->
+<!--                <ul>-->
+<!--                    <li><a href="#/home.html">Home</a></li>-->
+<!--                    <li><a href="dessertsUser21.html">My Top Desserts</a></li>-->
+<!--                    <li><a href="JS/javaUser21.html">JavaScript Games</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+    <br>
+            <div id="content">
+                <h2>Home</h2>
+                <p>
+                This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+                </p>
+                <p>
+                I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
+                </p>
 
-<center> My name is User #21</center>
-
-</body>
-
+            </div>
+                
+                
+                <div id="footer">
+                    <p>
+                    Webpage made by <a href="/" target="_blank">Samyu Ravikumar</a>
+                    </p>
+                </div>
+                </div>
+    </body>
 </html>
+
