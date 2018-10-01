@@ -1,179 +1,106 @@
-<html lang="en">
-<!--Version 5.0
-	Name: Trang Nguyen
-	Date Completed:
- -->
-<head>
-<script src="JS/webDevUser18_script.js"></script>
-<!-- your webpage info goes here -->
-<style>  
-  td {color: #FF0000;}
-</style>
-<button type="button"
-style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
-Click Me!</button>
-<link href="CSS/user18/WebDevUser18.css" rel="stylesheet" type="text/css">
-    <title>My First Website</title>
-         <h1>Mainheart</h1>
-         <h2>Teached</h2>
-         <h3>CPS</h3>
-         <h4>WEBDEV</h4>
-         <h5>and</h5>
-         <h6>MOBiLE OS</h6>
- <title> Web Development User #18 </title>
-        <meta name="author" content="your name" />
-         <meta name="description" content="" />
- 	
-<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
-         <link rel="stylesheet" href="style.css" type="text/css" />
-         
- </head>
- <body>
- <center><p id="textChange"> My name is User 18</p></center>
- <button type="button" onclick="changeText()">Click if you like</button>
- <script language="JavaScript">
- var startTime=new Date();
-var endTime=new Date();
-var startPressed=false;
-var bgChangeStarted=false;
-var maxWait=20;
-var timerID;
- function startTest()
-{
- document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
- bgChangeStarted=true;
- startTime=new Date();
+function changeText() {
+ document.getElementById("textChange").innerHTML="Thanks for liking my Webpage";
 }
- function remark(responseTime)
-{
- var responseString="";
- if (responseTime < 0.10)
- responseString="Well done!";
- if (responseTime >= 0.10 && responseTime < 0.20)
- responseString="Nice!";
- if (responseTime >=0.20 && responseTime < 0.30)
- responseString="Could be better...";
- if (responseTime >=0.30 && responseTime < 0.60)
- responseString="Keep practising!";
- if (responseTime >=0.60 && responseTime < 1)
- responseString="Have you been drinking?";
- if (responseTime >=1)
- responseString="Did you fall asleep?";
-  return responseString;
+ var space = " ";
+var pos = 0;
+var msg = "Trang Nguyen";
+
+ function Scroll(){
+document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
+
+
+ pos++;
+if (pos > msg.length) pos = 0;
+window.setTimeout("Scroll()", 0);
 }
- function stopTest()
-{
- if(bgChangeStarted)
- {
- endTime=new Date();
- var responseTime=(endTime.getTime()-startTime.getTime())/1000;
-  document.body.style.background="white"; 
- alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
- startPressed=false;
- bgChangeStarted=false;
- }
- else
- {
- if (!startPressed)
- {
- alert("press start first to start test");
- }
- else
- { 
- clearTimeout(timerID);
- startPressed=false; 
- alert("cheater! you pressed too early!");
- } 
- }
+Scroll();
+
+
+<!--
+
+/*
+Submitted by David Gardner (davidgardner7@yahoo.com)
+Featured on JavaScript Kit (http://javascriptkit.com)
+For this and over 400+ free scripts, visit http://javascriptkit.com
+*/
+
+function getpet () {
+
+        var toyear = 1997;
+        var birthyear = document.frm.inyear.value;
+        var birthpet="Ox"
+
+        x = (toyear - birthyear) % 12
+        if ((x == 1) || (x == -11)) {
+            birthpet="Mouse"      }
+            else  {
+             if (x == 0)             {
+             birthpet="Ox"           }
+             else  {
+              if ((x == 11) || (x == -1)) {
+              birthpet="Tiger"          }
+              else  {
+               if ((x == 10) || (x == -2)) {
+               birthpet="Rabbit"         }
+               else  {
+                if ((x == 9) || (x == -3))  {
+                birthpet="Dragon"         }
+                else  {
+                 if ((x == 8) || (x == -4))  { 
+                 birthpet="Snake"          }
+                 else  {
+                  if ((x == 7) || (x == -5))  { 
+                  birthpet="Horse"          }
+                  else  {
+                   if ((x == 6) || (x == -6))  { 
+                   birthpet="Sheep"          }
+                   else  {
+                    if ((x == 5) || (x == -7))  {  
+                    birthpet="Monkey"         }
+                    else  {
+                     if ((x == 4) || (x == -8))  {
+                     birthpet="Chicken"        }
+                     else  {
+                      if ((x == 3) || (x == -9))  {
+                      birthpet="Dog"            }
+                      else  {
+                       if ((x == 2) || (x == -10))  {
+                       birthpet="Pig"             }  
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+        document.frm.birth.value = birthpet;
+
 }
- var randMULTIPLIER=0x015a4e35;
-var randINCREMENT=1;
-var today=new Date();
-var randSeed=today.getSeconds();
-function randNumber()
-{
- randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
- return((randSeed >> 15) & 0x7fff) / 32767;
-}
- function startit()
-{
- if(startPressed)
- {
- alert("Already started. Press stop to stop");
- return;
- }
- else
- {
- startPressed=true; 
- timerID=setTimeout('startTest()', 6000*randNumber());
- }
-}
- </script>
-<p>Test your Response time!</p>
-Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
- <form name="response">
-Change background color in: 
-<select name="bgColorChange">
-<option selected>deeppink
-<option>aliceblue
-<option>crimson
-<option>darkkhaki
-<option>cadetblue
-<option>darkorchid
-<option>coral
-<option>chocolate
-<option>mediumslateblue
-<option>tomato
-<option>darkslategray
-<option>limegreen
-<option>cornflowerblue
-<option>darkolivegreen
-</select>
-<input type="button" value="start" onClick="startit()">
-<input type="button" value="stop" onClick="stopTest()">
-</form>
-   </CENTER></DIV>
- <p align="center"><font face="arial" size="-2">This free script provided by</font><br>
+// -->
+</script>
+
+
+    <p>Enter your birth year. For example: "1975" </p>
+    <form NAME="frm">
+      <p><input TYPE="text" SIZE="4" NAME="inyear" value="1975"> <input TYPE="button" VALUE="My pet, please"
+      onClick="getpet()"> <br>
+      </p>
+      <p><input TYPE="text" SIZE="9" NAME="birth"> </font></p>
+    </form>
+
+<p align="center"><font face="arial" size="-2">This free script provided by</font><br>
 <font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
 Kit</a></font></p>
-<a href="AboutMeUser18.html">link for more info about me</a>
- <!-- webpage content goes here in the body -->
-         <div id="page">
-                 <div id="logo">
-                         <h1><a href="/" id="logoLink">My First Website</a></h1>
-                 </div>
-                 <div id="nav">
-                         <ul>
-                                 <li><a href="#/home.html">Home</a></li>
-                                 <li><a href="#/about.html">About</a></li>
-                                 <li><a href="#/contact.html">Contact</a></li>
-                         </ul>        
-                 </div>
-                 <div id="content">
-                         <h2>Home</h2>
-                         <p>
-                                 This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
-                         </p>
-                         <p>
-                                 I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
-                         </p>
-                 </div>
-<center><h2>My Top 5 Favorite Songs/Hobbie</h2><center/>
- <table>
- <tr><th>Rank</th><th>Name</th><th>Type</th></tr>
- <tr><td>1</td><td>Sword Art Online</td><td>Anime</td></tr>
- <tr><td>2</td><td>RPG Games</td><td>Game</td></tr>
- <tr><td>3</td><td>BMW/Honda/Audi/Lexus</td><td>Cars</td></tr>
- <tr><td>4</td><td>Sister (Trisha)</td><td>Family</td></tr>
- <tr><td>5</td><td>Reality</td><td>Lost Frequencies (music)</td></tr>
- </table>
- <img src="images/user18/BMW X6.jpg" alt="Pic of BMW X6 car">
-                <div id="footer">
-                         <p>
-                                 Webpage made by <a href="/" target="_blank">[Trang Nguyen]</a>
-                         </p>
-                 </div>
-         </div>
+
+
+
+
+
+
 <script language="javascript" type="text/javascript">
  //By Sandeep Gangadharan (http://www.sivamdesign.com/home/)
 //For this script and more, visit http://javascriptkit.com
@@ -298,5 +225,3 @@ return true;
 <p><font face="arial" size="1">This free script provided by</font>
 <a href="http://javascriptkit.com"><font face="arial,helvetica" size="1">JavaScript Kit</font></a>
 </p>
-</body>
- </html> 
