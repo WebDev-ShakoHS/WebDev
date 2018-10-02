@@ -1,0 +1,33 @@
+body {
+	font-family: "Times New Roman";
+	color: #000000;
+    text-align: center
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2{
+    font-size: 1.3em;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr {
+	border: 1px solid #000000;
+	text-align: center;
+	background-color:#999999; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
