@@ -1,0 +1,36 @@
+<form name="fire">
+Load number of bullets (1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
+
+<p>
+<input name="message" type="button" value="Play Roulette!" onClick="fireit()">
+</p>
+
+</form>
+<style>  
+  td {color: #FF0000;}
+    body {background: linear-gradient(red,white,blue)}
+</style>
+<script>
+
+//Russian Roulette Game- by javascriptkit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Credit must stay intact for use
+
+function fireit(){
+var theone=Math.floor(Math.random()*6)
+
+if (theone<=document.fire.bullets.value-1)
+alert("Bang. You\'re dead!")
+else{
+document.fire.message.value="Whew. Got lucky!"
+setTimeout("document.fire.message.value='Play Roulette'",500)
+}
+}
+
+</script>
+
+ <div id="nav">
+        <ul>
+            <h2><a href="webDevUser19.html">Back</a></h2>
+        </ul>
+    </div>
