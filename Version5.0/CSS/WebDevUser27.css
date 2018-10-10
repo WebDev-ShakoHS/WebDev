@@ -1,6 +1,27 @@
 body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	font-family: "monospace", "Comic Sans MS", fantasy;
+	color: blue;
+}
+
+#small {
+    background-color: hsla(0,0%,0%,1);
+    margin: 0px;
+    font-family: fantasy, cursive;
+    height: 20px;
+}
+
+canvas {
+    width: 100%;
+    height: 700px;
+}
+
+#ice {
+  left: 50%;
+  position: absolute;
+  top: 25%;
+  transform: translate( -50%, -50%);
+  font-size:3em;
+  color:hsla(255, 255%, 255%, .1);
 }
 
 h1 {
@@ -11,6 +32,15 @@ h1 {
 h2{
         font-size: 1.1em;
         text-align: center;
+}
+
+img {
+    margin-left: 20%;
+}
+
+button {
+    font-family: monospace;
+    color: chocolate;
 }
 
 ul{
