@@ -1,18 +1,218 @@
 <html lang="en">
-<!--Version 4.0
+<!--Version 3.0 
 	Name: Dylan Neubauer
 	Date Completed: 9.19.18
  -->
 <head>
-
+<link href="CSS/WebDevUser17.css" rel="stylesheet" type="text/css">
 <title> Web Development User #17 </title>
-
 </head>
-
 <body>
+<!-- webpage content goes here in the body -->
+        <div id="page">
+                <div id="logo">
+                        <h1><a href="/" id="logoLink">My First Website</a></h1>
+                </div>
+                <div id="nav">
+                        <center>
+                                    <h3><a href="WebDevUser17.html">Home</a></h3>
+                                    <h3><a href="WebDevUser17_AboutMe.html">About</a></h3>
+                                    <h3><a href="#/contact.html">Contact</a></h3>   
+                        </center>  
+                </div>
+                <div id="content">
+                        <h1>Home</h1>
+                        <p>
+                                This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+                        </p>
+                        <p>
+                                I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
+                        </p>
+                        <button type="button"
+                                style="background-color:yellow;" onClick="alert('GO Sabers!');" >Click Me!</button>
+<p>
+<script language="JavaScript">
 
-<center> My name is User #17</center>
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
 
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.10)
+ responseString="Well done!";
+ if (responseTime >= 0.10 && responseTime < 0.20)
+ responseString="Nice!";
+ if (responseTime >=0.20 && responseTime < 0.30)
+ responseString="Could be better...";
+ if (responseTime >=0.30 && responseTime < 0.60)
+ responseString="Keep practicing!";
+ if (responseTime >=0.60 && responseTime < 1)
+ responseString="Have you been drinking?";
+ if (responseTime >=1)
+ responseString="Did you fall asleep?";
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+<option>chocolate
+<option>mediumslateblue
+<option>tomato
+<option>darkslategray
+<option>limegreen
+<option>cornflowerblue
+<option>darkolivegreen
+</select>
+<input type="button" value="Start" onClick="startit()">
+<input type="button" value="Stop" onClick="stopTest()">
+</form></p>
+
+<p><form name="count">
+<input type="text" size="69" name="count2">
+</form>
+
+
+<script>
+
+/*
+Count down until any date script-
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free scripts here!
+*/
+
+
+//change the text below to reflect your own,
+var before="October 16th!"
+var current="Today is October 16th."
+var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+function countdown(yr,m,d){
+theyear=yr;themonth=m;theday=d
+var today=new Date()
+var todayy=today.getYear()
+if (todayy < 1000)
+todayy+=1900
+var todaym=today.getMonth()
+var todayd=today.getDate()
+var todayh=today.getHours()
+var todaymin=today.getMinutes()
+var todaysec=today.getSeconds()
+var todaystring=montharray[todaym]+" "+todayd+", "+todayy+" "+todayh+":"+todaymin+":"+todaysec
+futurestring=montharray[m-1]+" "+d+", "+yr
+dd=Date.parse(futurestring)-Date.parse(todaystring)
+dday=Math.floor(dd/(60*60*1000*24)*1)
+dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1)
+dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1)
+dsec=Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1)
+if(dday==0&&dhour==0&&dmin==0&&dsec==1){
+document.forms.count.count2.value=current
+return
+}
+else
+document.forms.count.count2.value="Only "+dday+ " days, "+dhour+" hours, "+dmin+" minutes, and "+dsec+" seconds left until "+before
+setTimeout("countdown(theyear,themonth,theday)",1000)
+}
+//enter the count down date using the format year/month/day
+countdown(2018,10,16)
+</script></p>
+                </div>
+                <div id="footer">
+                    <center> <img src=images/user17/cro.jpg alt="Cro, German Rapper"> </center> 
+<h2>My Top 5 Favorite Songs</h2>
+ <table>
+ <tr><th>Rank</th><th>Artist</th><th>Song</th></tr>
+ <tr><td>1</td><td>Cro</td><td>10419</td></tr>
+ <tr><td>2</td><td>Bausa</td><td>Danke</td></tr>
+ <tr><td>3</td><td>Alpa Gun</td><td>Immernoch Ausländer</td></tr>
+ <tr><td>4</td><td>Cro</td><td>Du</td></tr>
+ <tr><td>5</td><td>BRKN</td><td>Song über Irgendwas</td></tr>
+ </table>
+                    <h1>Berlin, Berlin</h1>
+                    <h2>Berlin, Berlin</h2>
+                    <h3>Berlin, Berlin</h3>
+                    <h4>Du bist meine Stadt, du bist mein...</h4>
+                    <h5>Berlin, Berlin</h5>
+                    <h6>Berlin von Alpa Gun</h6>
+                </div>
+        </div>
 </body>
-
+<body>
+<center> My name is Dylan Neubauer</center>
+</body>
 </html>
