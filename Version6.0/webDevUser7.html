@@ -1,17 +1,282 @@
 <html lang="en">
-<!--Version 6.0
-	Name:
-	Date Completed:
+<!--Version 4.0 
+	Name: Connor Hagen
+	Date Completed: 10/1/2018
  -->
 <head>
+<!-- your webpage info goes here -->
+<button type="button"
+style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:10%;margin-bottom:0%;" onClick="alert('The image below is way too big!');" >
+Click Me!</button>
 
-<title> Web Development User #7 </title>
+    <title>This Has Gotten Back Into My Hand</title>
 
+        
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link rel="stylesheet" href="style.css" type="text/css" />
+
+        <link href="CSS/user7/WebDevUser7.css" rel="stylesheet" type="text/css">
+<style>  
+  td {color: #FF0000;}
+</style>
 </head>
-
 <body>
+<img src="images/user7/WebDevUser7.jpg">
 
-<center> My name is User #7</center>
+<!-- webpage content goes here in the body -->
+<SCRIPT LANGUAGE="javascript">
+
+/*
+Script by Mike Mcgrath- http://website.lineone.net/~mike_mcgrath
+Featured on JavaScript Kit (http://javascriptkit.com)
+For this and over 400+ free scripts, visit http://javascriptkit.com
+*/
+
+var alpha=new Array();
+var alpha_index=0;
+
+var bravo=new Array();
+var bravo_index=0;
+
+var running=0;
+var failnum=0;
+var advising=0;
+
+function pick()
+{
+  var choice="";
+  var blank=0;
+ 
+  for (i=0; i<words[index].length; i++)
+  {
+    t=0;
+    for(j=0; j<=alpha_index; j++) 
+    if(words[index].charAt(i)==alpha[j] || words[index].charAt(i)==alpha[j].toLowerCase()) t=1;
+    
+    if (t) choice+=words[index].charAt(i)+" ";
+    else 
+    {
+      choice+="_ ";
+      blank=1;
+    }
+  }   
+    
+  document.f.word.value=choice;
+    
+  if (!blank)
+  {
+    document.f.tried.value="   === You Win! ===";
+    document.f.score.value++;
+    running=0;
+  }
+} 
+
+
+function new_word(form)
+{
+  if(!running)
+  {
+    running=1;
+    failnum=0;
+    form.lives.value=failnum;
+    form.tried.value="";
+    form.word.value="";
+    index=Math.round(Math.random()*10000) % 100;
+    alpha[0]=words[index].charAt(0);
+    alpha[1]=words[index].charAt(words[index].length-1);
+    alpha_index=1;
+    bravo[0]=words[index].charAt(0);
+    bravo[1]=words[index].charAt(words[index].length-1);
+    bravo_index=1;
+    pick();
+  }
+  else advise("A word is already in play!");
+}
+
+function seek(letter)
+{
+  if (!running) advise(".....Click GO to start !");
+  else
+  {
+    t=0;
+    for (i=0; i<=bravo_index; i++)
+    {
+      if (bravo[i]==letter || bravo[i]==letter.toLowerCase()) t=1;
+    }
+
+    if (!t) 
+	  {
+	    document.f.tried.value+=letter+" "
+	    bravo_index++;
+	    bravo[bravo_index]=letter;
+	    
+      for(i=0;i<words[index].length;i++)
+   	  if(words[index].charAt(i)==letter || words[index].charAt(i)==letter.toLowerCase()) t=1;
+  	  
+      if(t)
+      {
+  	    alpha_index++;
+	      alpha[alpha_index]=letter;
+	    }
+	    else failnum++;
+	
+      document.f.lives.value=failnum;
+	    if (failnum==6) 
+      {
+        document.f.tried.value="You lose - Try again!";
+        document.f.word.value=words[index];
+        document.f.score.value--;
+        running=0;
+      }
+			else pick();
+	  }
+	  else advise("Letter "+letter+" is already used!");
+  }
+}
+
+function advise(msg)
+{
+  if (!advising)
+  {
+    advising=-1;
+    savetext=document.f.tried.value;  
+    document.f.tried.value=msg;
+    window.setTimeout("document.f.tried.value=savetext; advising=0;",1000);
+  }
+}
+
+var words = new Array("","acrimonious","allegiance","ameliorate","annihilate","antiseptic","articulate","authoritative","benefactor","boisterous","breakthrough","carcinogenic","censorious","chivalrous","collarbone","commendable","compendium","comprehensive","conclusive","conscientious","considerate","deferential","denouement","determinate","diffidence","disruption","earthenware","elliptical","entanglement","escutcheon","extinguish","extradition","fastidious","flamboyant","forethought","forthright","gregarious","handmaiden","honeysuckle","hypocritical","illustrious","infallible","lumberjack","mischievous","mollycoddle","nimbleness","nonplussed","obliterate","obsequious","obstreperous","opalescent","ostensible","pandemonium","paraphernalia","pawnbroker","pedestrian","peremptory","perfunctory","pernicious","perpetrate","personable","pickpocket","poltergeist","precipitous","predicament","preposterous","presumptuous","prevaricate","propensity","provisional","pugnacious","ramshackle","rattlesnake","reciprocate","recrimination","redoubtable","relinquish","remonstrate","repository","reprehensible","resolution","resplendent","restitution","retaliation","retribution","saccharine","salubrious","skulduggery","skyscraper","soothsayer","tearjerker","transcribe","turpentine","unassuming","underscore","undertaker","underwrite","unobtrusive","vernacular","waterfront","watertight");
+
+</SCRIPT>
+
+
+<FORM NAME="f">
+
+<TABLE BGCOLOR=#C0C0C0 BORDER=1>
+ <TR>
+  <TD COLSPAN=4 ALIGN=RIGHT>
+   Score : <INPUT TYPE=TEXT NAME="score" VALUE="0" onfocus="score.blur();" SIZE=2>
+   <BR>
+   Fails (6): <INPUT TYPE=TEXT NAME="lives" VALUE="0" onfocus="lives.blur();" SIZE=2>  
+  </TD>
+  <TD COLSPAN=7 ALIGN=CENTER>
+   <INPUT TYPE=TEXT NAME="word" VALUE="    --- Hangman ---" onfocus="word.blur();" SIZE=25> 
+    <BR>
+   <INPUT TYPE=TEXT NAME="tried" VALUE="Click GO to get a word." onfocus="tried.blur();" SIZE=25>  
+  </TD>
+  <TD COLSPAN=2 ALIGN=CENTER>
+   <INPUT TYPE=BUTTON onclick="new_word(this.form);" VALUE=" GO ">   
+  </TD>
+ </TR>
+ <TR>
+  <TD><INPUT TYPE=BUTTON VALUE=" A "   onclick="seek('A');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" B "   onclick="seek('B');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" C "   onclick="seek('C');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" D "   onclick="seek('D');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" E "   onclick="seek('E');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" F "   onclick="seek('F');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" G "   onclick="seek('G');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" H "   onclick="seek('H');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" I   " onclick="seek('I');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" J  "  onclick="seek('J');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" K "   onclick="seek('K');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" L  "  onclick="seek('L');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" M "   onclick="seek('M');"></TD>
+ </TR>
+ <TR>
+  <TD><INPUT TYPE=BUTTON VALUE=" N "   onclick="seek('N');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" O "   onclick="seek('O');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" P "   onclick="seek('P');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" Q "   onclick="seek('Q');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" R "   onclick="seek('R');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" S "   onclick="seek('S');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" T "   onclick="seek('T');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" U "   onclick="seek('U');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" V "   onclick="seek('V');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" W "   onclick="seek('W');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" X  "  onclick="seek('X');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" Y "   onclick="seek('Y');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" Z  "  onclick="seek('Z');"></TD>
+ </TR>
+</TABLE>
+
+</FORM>
+
+<p align="center"><font face="arial" size="-2">This free script provided by</font><br>
+<font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
+Kit</a></font></p>
+
+        <div id="page">
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink">Behold, for this site is the cornerstone of the world's grandest display of web development yet known to man!</a></h1>
+                    <h2> Also by the way I can produce more headings!</h2>
+                    <h3> Muahahahahahaha! None can stop this rampage down the webpage!</h3>
+                    <h4> No, what!? Why have I become diminished!</h4>
+                    <h5> I was meant to rule this land, this accursed basin of web development!</h5>
+                    <h6> Oh nay, nay, I am defeated... Browse on, humble internetgoer... Browse... On...*perishes*</h6>
+
+                </div>
+
+                <div id="nav">
+
+                        <ul>
+
+                                <li><a href="#/home.html">Home</a></li>
+
+                                <li><a href="#/about.html">About</a></li>
+
+                                <li><a href="#/contact.html">Contact</a></li>
+
+                        </ul>        
+
+                </div>
+
+                <div id="content">
+
+                        <h2>Home</h2>
+
+                        <p>
+
+                                This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+
+                        </p>
+
+                        <p>
+
+                                I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
+
+                        </p>
+
+                </div>
+<h2>My Top 5 Recently Discovered Songs</h2>
+ <table>
+ <tr><th>Rank</th><th>Artist</th><th>Song</th></tr>
+     <tr><td>1</td><td style="color:#00FF00; background-color:sienna;">Cold Kingdom</td><td>Surrender</td></tr>
+ <tr><td>2</td><td>Kamelot</td><td>Insomnia</td></tr>
+ <tr><td>3</td><td>Gemini Syndrome</td><td>Remember We Die</td></tr>
+ <tr><td>4</td><td>Outtrigger</td><td>Superman is Dead</td></tr>
+ <tr><td>5</td><td>Darkhaus</td><td>All of Nothing</td></tr>
+ </table>
+                <div id="footer">
+
+                        <p>
+
+                                Webpage made by <a href="/" target="_blank">[your name]</a>
+
+                        </p>
+
+                </div>
+
+        </div>
 
 </body>
 
