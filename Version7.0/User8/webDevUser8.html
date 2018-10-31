@@ -1,0 +1,109 @@
+<html lang="en">
+<!--Version 3.0
+	Name:Garrett Harinen
+	Date Completed:9/18/18
+ -->
+<head>
+<style>  
+
+    article {
+		width: 600px;
+		margin: auto;
+	}
+	blockquote.co {
+		float: right;
+		background: #e3e3e3;
+		font-size: 2em;
+		width: 35%;
+		text-align: center;
+        background-color: bisque;
+	}
+        <link href="/Users/201078/Documents/GarrettWebDev/Version3.0/CSS/User8/WebDevUser8.css" rel="stylesheet" type="text/css">
+
+</style>
+
+<!-- your webpage info goes here -->
+    <title>
+    </title>
+
+        <meta name="author" content="your favorite student" />
+
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link rel="stylesheet" href="style.css" type="text/css" />     
+</head>
+<body>
+<!-- webpage content goes here in the body -->
+        <div id="page">
+                <div id="logo">
+                        <h1><a href="/" id="logoLink">Church of the Flying Spaghetti Monster</a></h1>
+                </div>
+                <div id="nav">
+
+                        <ul>
+                                <li><a href="#/homeuser8.html">Home</a></li>
+
+                                <li><a href="#/aboutuser8.html">My top songs</a></li>
+
+                                <li><a href="#/contactuser8.html">JavaScript Games</a></li>
+
+                        </ul>        
+
+                </div>
+                <div id="content">
+
+<article>
+	<h1>About the Church of the Flying Spaghetti Monster</h1>
+
+	<p>
+		The Church of the Flying Spaghetti Monster, <span class=co>after having existed in secrecy for hundreds of years,</span> came into the mainstream just a few years ago. 
+		
+	</p>	
+    <p>
+We believe religion – say Christianity, Islam, Pastafarianiasm – does not require literal belief in order to provide spiritual enlightenment. Much of the transcendent experience of religion can be attributed to the community. And while some members of religion are indoctrinated True Believers, many are not. There are many levels of Belief and each is no more or less legitimate than the other.	
+	</p>
+    <p>
+		With millions, if not thousands, of devout worshipers,  <span class=co>the Church of the FSM is widely considered a legitimate religion</span>, even by its opponents – mostly fundamentalist Christians, who have accepted that our God has larger balls than theirs.
+	</p>
+	<p>
+		That is to say, you do not have to Believe to be part of our Church, but we hope in time you will see the Truth. But skeptics, as well as members of other religions, are always welcome.	
+	</p>
+	<p>
+		Some claim that the church is purely a thought experiment or satire, illustrating that Intelligent Design is not science, just a pseudoscience manufactured by Christians to push Creationism into public schools. These people are mistaken — <span class=co>The Church of FSM is legit</span>, and backed by hard science. Anything that comes across as humor or satire is purely coincidental.
+	</p>
+</article>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+(function() {
+	var co = $('article').find('span.co').each(function() {
+		var $this = $(this);
+		$('<blockquote></blockquote>', {
+			class: 'co',
+			text: $this.text()
+		}).prependTo( $this.closest('p') );
+		
+	});
+	
+})();
+</script>
+                </div>
+
+                <div id="footer">
+
+                        <p>
+
+                                Webpage made by <a href="/" target="_blank">[your favorite student]</a>
+
+                        </p>
+
+                </div>
+
+        </div>
+
+</body>
+
+</html>
