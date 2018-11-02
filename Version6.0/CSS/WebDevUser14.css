@@ -34,5 +34,5 @@ th {
 }
 
 gradient {
-  background: linear-gradient(to right, #00FFFF , #FF0000);
+  background-image: linear-gradient(to right, #00FFFF , #FF0000);
 }
