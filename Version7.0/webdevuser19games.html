@@ -5,7 +5,7 @@
         </ul>
     </div>
 <form name="fire">
-Load number of bullets (1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
+Load number of Coins(1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
 
 <p>
 <input name="message" type="button" value="Play Roulette!" onClick="fireit()">
@@ -15,6 +15,9 @@ Load number of bullets (1-6):<br /><input name="bullets" type="text" size=3 valu
 <style>  
   td {color: #FF0000;}
     body {background: linear-gradient(red,white,blue)}
+    p {
+        color: white;
+    }
 </style>
 <body>
     <SCRIPT>
@@ -729,4 +732,215 @@ setTimeout("document.fire.message.value='Play Roulette'",500)
 }
 
 </script>
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Slides and Structure</title>
+	<style>
+	body {
+		width: 600px;
+		margin: auto;
+		font-family: sans-serif;
+	}
+	#contact { 
+		background: #e3e3e3; 
+		padding: 1em 2em; 
+		position: relative;
+	}
+	.js #contact {
+		position: absolute;
+		top: 0;
+		width: inherit;
+		display: none;
+	}	
+	#contact h2 { margin-top: 0; }
+	#contact ul { padding: 0; }
+	#contact li { 
+		list-style: none;
+		margin-bottom: 1em;
+	}
+    #donate { 
+		background: red; 
+		padding: 1em 2em; 
+		position: relative;
+	}
+	.js #donate {
+		position: absolute;
+		top: 0;
+		width: inherit;
+		display: none;
+	}	
+	#donate h2 { margin-top: 0; }
+	#donate ul { padding: 0; }
+	#donate li { 
+		list-style: none;
+		margin-bottom: 1em;
+	}
+	/* Close button on form */
+	.close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		font-weight: bold;
+		font-family: sans-serif;
+		cursor: pointer;
+	}	
+	/* Form inputs */
+	input, textarea { width: 100%; line-height: 2em;}
+	input[type=submit] { width: auto;  }
+	label { display: block; text-align: left; }
+        
+        p{
+            font-family: sans-serif;
+            color:white;
+            font-weight: 600;
+            
+        }
+	</style>
+</head>
+<body>
 
+
+<article>
+	<h1></h1>
+	<p>
+        You're Welcome
+	</p>
+</article>
+
+<div id="contact">
+	<h2>Rate my Games!</h2>
+	<form action="#">
+		<ul>
+			<li>
+				<label for="name">Rating: </label>
+	 			<input name="number" id="name">
+			</li>
+
+			<li>
+
+				<input type="submit" value="Submit">
+			</li>
+		</ul>
+	</form>
+</div>
+<div id="donate">
+	<h2>Donate</h2>
+	<form action="#">
+		<ul>
+			<li>
+				<label for="name">Cardholder Name: </label>
+	 			<input name="name" id="name">
+			</li>
+
+			<li>
+				<label for="email">Credit Card #: </label>
+		 		<input type=password name="email" id="email">
+			</li>
+
+			<li>
+				<label for="comments">Amount($)</label>
+				<input type=number name="comments" id="comments">
+			</li>
+			<li>
+				<input type="submit" value="Submit">
+			</li>
+		</ul>
+	</form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+(function() {
+	
+$('html').addClass('js');
+var contactForm = {
+	container: $('#contact'),
+	config: {
+		effect: 'slideToggle',
+		speed: 500
+	},
+	init: function(config) {
+		$.extend(this.config, config);
+		$('<button></button>', {
+			text: 'Rate My GAMES!'
+		})
+			.insertAfter( 'article:first' )
+			.on( 'click', this.show );
+	},
+	show: function() {
+		var cf = contactForm,
+			container = cf.container,
+			config = cf.config;
+		if ( container.is(':hidden') ) {
+			contactForm.close.call(container);
+			container[config.effect](config.speed);
+		}
+	},
+	close: function() {
+		var $this = $(this), // #contact
+			config = contactForm.config;
+		if ( $this.find('span.close').length ) return;
+		$('<span class=close>X</span>')
+			.prependTo(this)
+			.on('click', function() {
+				// this = span
+				$this[config.effect](config.speed);
+			})
+	}
+};
+contactForm.init({
+	// effect: 'fadeToggle',
+	speed: 300
+});
+})();
+(function() {
+	
+$('html').addClass('js');
+var donateForm = {
+	container: $('#donate'),
+	config: {
+		effect: 'slideToggle',
+		speed: 500
+	},
+	init: function(config) {
+		$.extend(this.config, config);
+		$('<button></button>', {
+			text: 'Donate'
+		})
+			.insertAfter( 'article:first' )
+			.on( 'click', this.show );
+	},
+	show: function() {
+		var df = donateForm,
+			container = df.container,
+			config = df.config;
+		if ( container.is(':hidden') ) {
+			donateForm.close.call(container);
+			container[config.effect](config.speed);
+		}
+	},
+	close: function() {
+		var $this = $(this), // #contact
+			config = donateForm.config;
+		if ( $this.find('span.close').length ) return;
+		$('<span class=close>X</span>')
+			.prependTo(this)
+			.on('click', function() {
+				// this = span
+				$this[config.effect](config.speed);
+			})
+	}
+};
+donateForm.init({
+	// effect: 'fadeToggle',
+	speed: 300
+});
+})();
+</script>
+
+</body>
+</html>
