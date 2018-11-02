@@ -84,7 +84,7 @@
 style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
 Click Me!</button>
 <body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <center><p id="textChange"> My name is User 24</p></center>
 
 
@@ -109,7 +109,30 @@ Click Me!</button>
                         </ul>        
 
                 </div>
+                    <div id="contact">
+    <h2>Contact Me</h2>
+    <form action="#">
+        <ul>
+            <li>
+                <label for="name">Name: </label>
+                <input name="name" id="name">
+            </li>
 
+            <li>
+                <label for="email">Email Address: </label>
+                <input name="email" id="email">
+            </li>
+
+            <li>
+                <label for="comments">What's Up?</label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </li>
+            <li>
+                <input type="submit" value="Submit">
+            </li>
+        </ul>
+    </form>
+</div>
                         <h2>Home (H2) </h2>
 
                         <h3>
@@ -148,33 +171,9 @@ Click Me!</button>
                             })();
                         </script>
 
-<div id="contact">
-    <h2>Contact Me</h2>
-    <form action="#">
-        <ul>
-            <li>
-                <label for="name">Name: </label>
-                <input name="name" id="name">
-            </li>
-
-            <li>
-                <label for="email">Email Address: </label>
-                <input name="email" id="email">
-            </li>
-
-            <li>
-                <label for="comments">What's Up?</label>
-                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-            </li>
-            <li>
-                <input type="submit" value="Submit">
-            </li>
-        </ul>
-    </form>
-</div>
-
 <script type="text/javascript">
-    (function() {   
+    (function() {
+    
 $('html').addClass('js');
 var contactForm = {
     container: $('#contact'),
@@ -211,14 +210,12 @@ var contactForm = {
             })
     }
 };
-reviewForm.init({
+contactForm.init({
     // effect: 'fadeToggle',
     speed: 300
 });
-})(); //contact box
+})();
 </script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
                 <div id="footer">
 
