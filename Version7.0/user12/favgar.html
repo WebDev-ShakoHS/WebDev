@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset=utf-8>
+	<title>Trash</title>
+   
+    Scrolling Music
+     <script>$('audio')[0].play();</script>
+    <audio controls>
+<source src="All%20Star%20short.mp3" type='audio/mp4'></audio>
+   
+    <meta charset=utf-8>
+    
+    <title>Trash</title>
+    <div id="page">
+            
+        <div id="logo">
+    
+    <h1>Trash.com</h1>
+        </div>
+    </div>
+  
+<ul>
+
+<li><a href="../webDevUser12.html">Home</a></li>
+<li><a href="favgar.html">My Top 5 Favorite Garbage Places/ Contact Me</a></li>
+<li><a href="javagame.html"> Random Game</a></li>
+
+</ul> 
+	<style>
+	body {
+		width: 600px;
+		margin: 100px auto 0;
+	}
+	* { margin: 0; padding: 0; }
+	</style>
+	<link href="ominiuser12.css" rel="stylesheet" type="text/css"/>
+<style>
+    #wannabuy { 
+		padding: 1em 2em; 
+		position: relative;
+	}
+    .js #wannabuy {
+		position: absolute;
+		top: 0;
+		width: inherit;
+		display: none;
+	}	
+    #wannabuy h2 { margin-top: 0; }
+	#wannabuy ul { padding: 0; }
+	#wannabuy li { 
+		list-style: none;
+		margin-bottom: 1em;
+	}
+    
+	body {
+		width: 600px;
+		margin: auto;
+	}
+	#contact {  
+
+		background:darkcyan ; 
+		padding: 1em 2em; 
+		position: relative;
+	}
+    
+	.js #contact {
+		position: absolute;
+		top: 0;
+		width: inherit;
+		display: none;
+	}	
+	#contact h2 { margin-top: 0; }
+	#contact ul { padding: 0; }
+	#contact li { 
+		list-style: none;
+		margin-bottom: 1em;
+	}
+	/* Close button on form */
+	.close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		font-weight: bold;
+		font-family: sans-serif;
+		cursor: pointer;
+	}	
+	/* Form inputs */
+	input, textarea { width: 100%; line-height: 2em;}
+	input[type=submit] { width: auto;  }
+	label { display: block; text-align: left; }
+</style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<body>
+<div class="slider">
+	<ul>
+		<li><img src="minicar.jpg" alt="image"></li>
+        
+		<li><img src="trashbin.jpg" alt="image"></li>
+        
+		<li><img src="trashwdude.jpg" alt="image"></li>
+        
+		<li><img src="Kingtruck.jpg" alt="image"></li>
+        
+		<li><img src="luggjunk.jpg" alt="image"></li>\
+	</ul>
+</div>
+
+<div id="slider-nav">
+	<button data-dir="prev">Previous</button>
+	<button data-dir="next">Next</button>
+</div>
+    
+<article>
+<h2>My Top 5 Favorite Garbage Places</h2>
+ <table>
+ <tr><th>Rank</th><th>Name</th><th>Adress</th></tr>
+ <tr><td>1</td><td>1-800-GOT-JUNK? Twin Cities</td><td>Minneapolis, MN</td></tr>
+ <tr><td>2</td><td>Waste Management - Twin Cities Recycling</td><td>1800 Broadway St NE, Minneapolis, MN 55413</td></tr>
+ <tr><td>3</td><td>Aspen Waste Systems</td><td>2951 Weeks Ave SE, Minneapolis, MN 55414</td></tr>
+ <tr><td>4</td><td>Junk King Minneapolis</td><td>27212 Washington Ave S, Eden Prairie, MN 55344</td></tr>
+ <tr><td>5</td><td>Junkluggers Minneapolis  </td><td> 88201 Brooklyn Blvd #100, Minneapolis, MN 55445</td></tr>
+ </table>
+
+<p>
+    
+   I thought 1-800-GOT-JUNK? had a funny name so I put that at the top, and the rest are rank on what google thought I would like.
+   I also reccomened you google if you can't find what your looking for :/ I notice that most of these are in Minneapolis, so thats pretty cool.
+</p>
+<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<h2> Contact Me!!</h2>
+ </article>
+
+<div id="contact">
+	<h2>Contact Me</h2>
+	<form action="#">
+		<ul>
+			<li>
+				<label for="name">Name: </label>
+	 			<input name="name" id="name">
+			</li>
+
+			<li>
+				<label for="email">Email Address: </label>
+		 		<input name="email" id="email">
+			</li>
+
+			<li>
+				<label for="comments">What's the Trash?</label>
+				<textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+			</li>
+			<li>
+				<input type="submit" value="Submit">
+			</li>
+		</ul>
+	</form>
+</div>
+
+<script>
+(function() {
+	
+$('html').addClass('js');
+    
+    
+    
+var contactForm = {
+	container: $('#contact'),
+	config: {
+		effect: 'slideToggle',
+		speed: 500
+	},
+	init: function(config) {
+		$.extend(this.config, config);
+		$('<button></button>', {
+			text: 'Contact Me'
+		})
+			.insertAfter( 'article:first' )
+			.on( 'click', this.show );
+	},
+	show: function() {
+		var cf = contactForm,
+			container = cf.container,
+			config = cf.config;
+		if ( container.is(':hidden') ) {
+			contactForm.close.call(container);
+			container[config.effect](config.speed);
+		}
+	},
+	close: function() {
+		var $this = $(this), // #contact
+			config = contactForm.config;
+		if ( $this.find('span.close').length ) return;
+		$('<span class=close>X</span>')
+			.prependTo(this)
+			.on('click', function() {
+				// this = span
+				$this[config.effect](config.speed);
+			})
+	}
+};
+contactForm.init({
+	// effect: 'fadeToggle',
+	speed: 300
+});
+    
+})();
+    </script>    
+    
+    
+    
+<script>
+            $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 50) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});</script>
+    
+<p>
+Webpage made by <a href="/" target="_blank"> Ruth Mesfin </a>
+
+</p>
+
+<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    <script src="user12slider2.js"></script>
+    
+</body>
+</html>
