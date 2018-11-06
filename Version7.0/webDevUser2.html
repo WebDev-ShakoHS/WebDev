@@ -1,18 +1,233 @@
 <html lang="en">
-<!--Version 8.0
-	Name:
-	Date Completed:
+<!--Version 7.0 
+	Name: Trent
+	Date Completed: 9/18/18
  -->
 <head>
+<!-- your webpage info goes here -->
+    <title>My First Website</title>        
+        <meta name="author" content="your name" />
+        <meta name="description" content="" />
 
-<title> Web Development User #2 </title>
-
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+        <link rel="stylesheet" href="style.css" type="text/css" />
+<link href="JS/user2.js" rel="stylesheet" type="text/javascript"> 
+<link href="images/user2/webdevuser2.css" rel="stylesheet" type="text/css"> 
+<script src="JS/webDevUser19_script.js"></script>
+<link rel="stylesheet" href="images/user2/slider.css">
 </head>
+<body background="images/user2/ori.jpg">
+<center><p id="textChange"> My name is Trent</p></center>
+<button type="button" onclick="changeText()">Click if you like</button>
 
-<body>
+<script>
+function changeText() {
+ document.getElementById("textChange").innerHTML="Thanks for liking my Webpage";
+}
+</script>
+<!-- webpage content goes here in the body -->
 
-<center> My name is User #2</center>
+        <div id="page">
+                <div id="logo">
+                        <h1><a href="/" id="logoLink">My First Website v7.0</a></h1>
+                </div>
+               
+                <div id="nav">
+                        <ul>
+                                <li><a href="#/home.html">Home</a></li>
+                                <li><a href="#/My Top Games.html">My top games</a></li>
+                                <li><a href="#/JavaScript Games.html">Javacript Games</a></li>
+                        </ul>        
+                </div>
+                <div id="content">
+                        <h2>Home</h2>
+                       
+                        <p>
+                                This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+                        </p>
+                        <p>
+                                I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
+                        </p>
+                </div>
+<table class=crystal border="0" bgcolor="#000000" cellspacing="0" cellpadding="3">
+  <tr>
+    <td width="100%">
+<p>Crystal Ball</p>
+
+<p>Please enter a yes/no question and it will respond</p>
+<p>Warning: the crystal ball has a tendency to be sarcastic!</p>
+<table width="40%" border="0">
+<tr>
+<td>
+<form name="input1" method="post">
+<input name="textfield" size=63>
+</form>
+</td>
+</tr>
+</table>
+<table width="8%" border="0">
+<tr>
+<td>
+<form method="post">
+<input type="button" name="button1" value="Ask Me!"
+onClick="getAnswers()">
+</form>
+</td>
+</tr>
+</table>
+
+<script language="JavaScript">
+
+//Crystal Ball Script - By Michael McDermott (mcdemf1@wfu.edu)
+//http://www.wfu.edu/~mcdemf1
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+
+
+function getAnswers() {
+
+time = new Date()
+randominteger = time.getSeconds()
+
+if (document.input1.textfield.value == "") { 
+alert("You dummy! You didn't enter anything into the Crystal Ball!!!")
+return
+}
+
+if (randominteger <= 3) answer="Did you really think so? Hahaha, I'm laughing now at your pitiful chances."
+if ((randominteger >= 4) && (randominteger <= 6)) answer ="Yeah, it it's got a 65% chance of happening."
+if ((randominteger >= 7) && (randominteger <= 9)) answer ="Oh come on! No way!"
+if ((randominteger >= 10) && (randominteger <= 12)) answer ="As sure as I'm made of glass, this is likely to happen."
+if ((randominteger >= 13) && (randominteger <= 15)) answer ="Why are you asking A CRYSTAL BALL? Do you really believe the answers?"
+if ((randominteger >= 16) && (randominteger <= 18)) answer ="Give me a break, give me a break, break me off a piece of that NO!"
+if ((randominteger >= 19) && (randominteger <= 21)) answer ="Good chances lie on the horizon."
+if ((randominteger >= 22) && (randominteger <= 24)) answer ="Ask me again, I am restless and overworked."
+if ((randominteger >= 25) && (randominteger <= 27)) answer ="Do you know how the Crystal Ball works? There's your answer."
+if ((randominteger >= 28) && (randominteger <= 30)) answer ="As the sun is hot, your answer is YES."
+if ((randominteger >= 31) && (randominteger <= 33)) answer ="Did you get drunk last weekend? There's your answer."
+if ((randominteger >= 34) && (randominteger <= 36)) answer ="Forget about it"
+if ((randominteger >= 37) && (randominteger <= 39)) answer ="Yeah, it could happen. 80% chance."
+if ((randominteger >= 40) && (randominteger <= 42)) answer ="Hitler has a better chance of raising from the dead."
+if ((randominteger >= 43) && (randominteger <= 45)) answer ="If you really think so, then it shall be."
+if ((randominteger >= 46) && (randominteger <= 48)) answer ="Who said ambiguous answers were bad? Not me, so YES!"
+if ((randominteger >= 49) && (randominteger <= 51)) answer ="You think I'm going to answer that after a day of hard work? Ask again later."
+if ((randominteger >= 52) && (randominteger <= 54)) answer ="If you own a pet, yes. Otherwise, no."
+if ((randominteger >= 55) && (randominteger <= 57)) answer ="The sun will rise in the east and set in the west. Thank you Captain Obvious. YES!"
+if ((randominteger >= 58) && (randominteger <= 60)) answer ="I'm laughing hard, very hard. You'd better ask again."
+
+var newWindow = window.open("","Results","width=300,height=300")
+newWindow.document.write("<html><body bgcolor='#000000' text='#FFFFCC' link='#00FFFF' alink='#000066' vlink='#6666FF'>")
+newWindow.document.write("<P align='center'>Your Question:</P><P></P>")
+newWindow.document.write("<P align='center'>" + document.input1.textfield.value + "</P>")
+newWindow.document.write("<P></P><P></P><P></P><P align='center'>The Great Crystal Ball Has Answered:</P><P></P>")
+newWindow.document.write("")
+newWindow.document.write("<P align='center'>" + answer + "</P>")
+newWindow.document.write("<P></P><P></P><P align='center'><A HREF='javascript:window.close()'>Close Me</A></P>")
+}
+
+</script>
+
+</td>
+  </tr>
+</table>
+
+    
+                <h2><a href="file:///Users/229013/WebDev/Version7.0/images/user2/slider.html">My Top 5 Favorite Songs</a></h2>
+ <table class=sunflower>
+ <tr><th>Rank</th><th>Artist</th><th>Song</th></tr>
+ <tr style="background-color:red"><td>1</td><td>Logic</td><td>Innermission</td></tr>
+ <tr><td>2</td><td>Logic</td><td>Young SinatraIII</td></tr> 
+ <tr><td>3</td><td>Eminem</td><td>Stepping Stones</td></tr>
+ <tr><td>4</td><td>Hopsin</td><td>Ill mind of hopsin 7</td></tr>
+ <tr><td>5</td><td>Post Malone</td><td>Blame it on me</td></tr>
+ </table>
+<article>
+    <p> <span class=lo>Logic</span> is potentially my favorite artist</p>
+    <p>Im really into the Hip-Hop <span class=lo>Genre</span></p>
+    <p>Some <span class=lo> Honorable Mentions</span> are Sunflower, by Post Malone. Summer on Lock, by Royce da 5'9". and Renegade, by Jay-z</p>
+</article>
+        </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script>
+
+(function() {
+    var lo= $('article').find('span.lo').each(function() {
+        var $this = $(this);
+        $('<blockquote></blockquote>' , {
+            class: 'lo',
+            text: $this.text()
+        }).prependTo( $this.closest('p') );
+    });
+})();
+
+</script>
+<div id="contact">
+	<h2>Logic</h2>
+	<form action="#">
+		<ul>
+			<li>
+				<h1>Childhood </h1>
+	 			<p> Sir Robert Bryson Hall II was born at 7:36 a.m. in Shady Grove Hospital on January 22, 1990 in Rockville, Maryland. He was born to Robert Bryson Hall, an African-American Maryland native, and a Caucasian mother. Logic spent much of his youth in the West Deer Park neighborhood in Gaithersburg, Maryland. His father suffered from a cocaine addiction and his mother suffered from alcoholism.</p>
+			</li>
+
+			<li>
+				<h1>Early Career </h1>
+                <p> At the age of 13, Logic met Solomon Taylor, who would soon become his mentor. Logic became interested in rap and hip hop after watching the movie Kill Bill: Volume 1, directed by Quentin Tarantino. The film's score was produced by RZA, a member of the hip hop group Wu-Tang Clan. Following this, Logic began listening to the group, and soon expressed a deep affection for hip hop. Logic bought The Roots album Do You Want More?!!!??!, later that year, which prompted Taylor to bring Logic a large number of CDs containing instrumental beats, for him to write lyrics over. In 2009, Logic performed under the stage name "Psychological" with Logic describing the name as "one name that really stuck [with me]."</p>
+			</li>
+
+			<li>
+				<h1>Personal Life</h1>
+				<p>To properly delve into music as a full-time occupation, Logic terminated a five-year romantic relationship in 2009. He had then stated, "You can put your everything into a relationship, but that doesn't mean you're going to get back what you give. When I created my first mix tape, I realized everything I put in my music — the hours, the lyricism, the time, the grind, pain, sweat, blood, tears — I get it back. I see it."[71] He further commented, saying "The thing is, I feel like so many artists, well, not really artists but so many people think they can rap and they just want a deal and the glitz and the glamour and the women but they don't understand that all I do and want to do is rhyme... I think I've sacrificed so much from my relationships to my friendships to my family; I've literally sacrificed my entire life, and I'm honest." On October 22, 2015, Logic married Jessica Andrea, a singer and Logic's then-girlfriend of two years. On March 20, 2018, he announced that after two years of marriage, he and Andrea had officially separated. He filed for divorce on April 19, 2018. Nevertheless, they remain friends and did not cite anger as the reason for their split.</p>
+			</li>
+		</ul>
+	</form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script>
+(function() {
+
+$('html').addClass('js');
+var contactForm = {
+    container: $('#contact'),
+    config: {
+        effect: 'slideToggle',
+        speed: 500
+    },
+    init: function(config) {
+        $.extend(this.config, config);
+        $('<button></button>', {
+            text: 'Logic Info'
+        })
+            .insertAfter( 'article:first' )
+            .on( 'click', this.show );
+    },
+    show: function() {
+        var cf = contactForm,
+            container = cf.container,
+            config = cf.config;
+        if ( container.is(':hidden') ) {
+            contactForm.close.call(container);
+            container[config.effect](config.speed);
+        }
+    },
+    close: function() {
+        var $this = $(this), // #contact
+            config = contactForm.config;
+        if ( $this.find('span.close').length ) return;
+        $('<span class=close>X</span>')
+            .prependTo(this)
+            .on('click', function() {
+                // this = span
+                $this[config.effect](config.speed);
+            })
+    }
+};
+contactForm.init({
+    effect: 'fadeToggle',
+    speed: 2000
+});
+})();
+</script>
 
 </body>
-
 </html>
+
