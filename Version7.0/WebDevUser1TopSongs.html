@@ -1,0 +1,99 @@
+<html lang="en">
+<!--Version 2.0
+	Name:
+	Date Completed:
+ -->
+<head>
+	<style>
+	body {
+            width: 600px;
+            margin: 100px auto 0;
+        }
+        * { margin: 0; padding: 0; }
+    </style>
+    <link rel="stylesheet" href="CSS/user1slider/slider.css">
+    
+</head>   
+<link href="CSS/webDevUser1CSS/SampleCSS.css" rel="stylesheet" type="text/css">
+        <!-- your webpage info goes here -->
+<style>
+    body {
+            width: 600px;
+            margin: 100px auto 0;
+        }
+        * { margin: 0; padding: 0; }
+    
+    html {
+    min-height: 100%;
+}
+ 
+body {
+    background: -webkit-linear-gradient(left, #93B874, #C9DCB9); 
+    background: -o-linear-gradient(right, #93B874, #C9DCB9);
+    background: -moz-linear-gradient(right, #93B874, #C9DCB9); 
+    background: linear-gradient(to right, #93B874, #C9DCB9); 
+    background-color: #93B874; 
+}
+    </style>
+
+<body>
+
+    <title>Saabir Barre is the best</title>
+    <h2><a href="file:///users/930411/Desktop/WebDev .html links/WebDevUser1.html">Go back</a></h2>
+    
+
+         <style>  
+  td {color:#00FF00; background-color:sienna;}
+
+</style>
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+                 
+<h2>My Top 5 Favorite Songs</h2>
+ <table>
+ <tr><th>Rank</th><th>Artist</th><th>Song</th></tr>
+ <tr><td>1</td><td>Drake</td><td>Gods plan</td></tr>
+ <tr><td>2</td><td>Tay k</td><td>The race</td></tr>
+ <tr><td>3</td><td>xxtentacion</td><td>Look at me</td></tr>
+ <tr><td>4</td><td>Playboi carti</td><td>Magnolia</td></tr>
+ <tr><td>5</td><td>Lil uzi vert</td><td>Money Longer</td></tr>
+ </table>
+
+<div class="slider">
+	<ul>
+		<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Drake_at_the_Velvet_Underground_-_2017_%2835986086223%29_%28cropped%29.jpg/220px-Drake_at_the_Velvet_Underground_-_2017_%2835986086223%29_%28cropped%29.jpg" alt="Drake"></li>
+		<li><img src="https://t2.genius.com/unsafe/220x220/https%3A%2F%2Fimages.genius.com%2F7df1200715e32e2ae7579a50eb7196fa.718x718x1.png" alt="Tay K"></li>
+		<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Xxxtentacion.jpg/220px-Xxxtentacion.jpg" alt="xxtentacion"></li>
+		<li><img src="https://assets.audiomack.com/ltorres2000/carti-supersonic-275-275-1519179519.jpg" alt="Playboi Carti"></li>
+        <li><img src="https://assets.audiomack.com/dj-warface/426f18c4e6d96e1931291f6ee6955c3f-275-275.jpeg" alt="Lil Uzi Vert"></li>
+	</ul>
+</div>
+
+<div id="slider-nav">
+    <button data-dir="prev">Previous</button>
+    <button data-dir="next">Next</button>
+</div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="JS/user1sliderjava/slider.js"></script>
+    
+  
+<script>
+(function() {
+	var container = $('div.slider').css('overflow', 'hidden').children('ul'),
+		slider = new Slider( container, $('#slider-nav') );
+	slider.nav.find('button').on('click', function() {
+		slider.setCurrent( $(this).data('dir') );
+		slider.transition();
+	});		
+})();
+    
+</script> 
+</body>
+    </body>
+</html>
