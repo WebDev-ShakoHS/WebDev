@@ -1,0 +1,27 @@
+body {
+    
+    margin: auto;
+    text-align: left;
+    background: gold
+}
+
+dl {
+    
+}
+
+dd {
+    margin: 0;
+    
+    padding: 1em 0;
+}
+
+dt {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 2.5em;
+    background: silver;
+    border-bottom: 1px solid gold;
+    font-family: monospace
+}
+

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset=uft-8>
+    <title>Coding Excitement</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <dl>
+        <dt>Why did the baby cross the road?</dt>
+        <dd>It was stapled to the chicken :)</dd>
+        <dt>Who made the toilet?</dt>
+        <dd>Thomas Crapper</dd>
+        <dt>What is the most reactive element with water?</dt>
+        <dd>Francium</dd>
+        <dt>What is 'hello' in morse code?</dt>
+        <dd>.... . .-.. .-.. ---</dd>
+        <dt>Where does turkey meat come from?</dt>
+        <dd>Turkeys</dd>
+        </dl>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        (function() {
+        $('dd').filter(':nth-child(n+4)').addClass('hide');
+            $('dl').on('mouseenter','dt',function() {
+                $(this)
+                    .next()
+                        .slideDown(200)
+                        .siblings('dd')
+                            .slideUp(200)
+            });
+        })();
+        </script>
+        
+
+
+
