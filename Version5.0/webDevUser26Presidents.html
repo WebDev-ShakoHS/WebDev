@@ -1,31 +1,110 @@
 <html lang="en">
-<!--Version 5.0
+<!--Version 7.0
 	Name:
 	Date Completed: 09/27/18
  -->
- <link rel="stylesheet" href="CSS/SampleCSS.css" type="text/css" />
- <h1><a href="WebDevUser26.html">Home</a></h1>
- <h2>President Rankings</h2>
-
 
 <head>
 
-<title> U.S. President Ranking </title>
+	<link rel="stylesheet" href="CSS/SampleCSS.css" type="text/css" />
+	<link rel="stylesheet" href="user26slider.css">
+
+	<title> U.S. President Ranking </title>
+
+	<style>
+		img {
+			position: absolute;
+			left: 33%;
+			top: 25%;
+			width: 500px;
+			height: 250px;
+		}
+
+		.left_button {
+			position: absolute;
+			left: 47%;
+			top: 60%;
+		}
+
+		.right_button {
+			position: absolute;
+			left: 48.5%;
+			top: 60%;
+		}
+	</style>
 
 </head>
 
-<body background="images/user26/WebDevUser26.jpg">
+<body>
+	<h1><a href="WebDevUser26.html">Home</a></h1>
+	<h2>President Rankings</h2>
 
- <table>
- <tr><th>Rank</th><th>Name</th><th>Era</th></tr>
- <tr><td>1</td><td>Washington</td><td>1789-?</td></tr>
- <tr><td>2</td><td>Lincoln</td><td>1861-1865</td></tr>
- <tr><td>3</td><td>Kennedy</td><td>1960s or sum</td></tr>
- <tr><td>4</td><td>Obama</td><td>2008-2016</td></tr>
- <tr><td>5</td><td>Trump</td><td>2016-soon</td></tr>
- </table>
+	<img class="mySlides" src="images/user26/GeorgeWashington.jpeg">
+	<img class="mySlides" src="images/user26/AbrahamLincoln.jpeg">
+	<img class="mySlides" src="images/user26/Kennedy.jpeg">
+	<img class="mySlides" src="images/user26/Obama.jpg">
+	<img class="mySlides" src="images/user26/WebDevUser26.jpg">
+
+	<div class="left_button">
+		<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	</div>
+	<div class="right_button">
+		<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) { slideIndex = 1 }
+			if (n < 1) { slideIndex = x.length };
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			x[slideIndex - 1].style.display = "block";
+		}
+	</script>
+	<table>
+		<tr>
+			<th>Rank</th>
+			<th>Name</th>
+			<th>Era</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Washington</td>
+			<td>1789-?</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Lincoln</td>
+			<td>1861-1865</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Kennedy</td>
+			<td>1960s or sum</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Obama</td>
+			<td>2008-2016</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Trump</td>
+			<td>2016-soon</td>
+		</tr>
+	</table>
 
 </body>
 
 </html>
-

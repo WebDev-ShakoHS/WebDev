@@ -1,18 +1,68 @@
 <html lang="en">
-<!--Version 8.0
-	Name:
-	Date Completed:
+<!--Version 5.0
+	Name: Nihad Syed
+	Date Completed: 09/27/18
  -->
+
 <head>
-
-<title> Web Development User #26 </title>
-
+        <!-- your webpage info goes here -->
+        <title>My First Website</title>
+        <meta name="author" content="your name" />
+        <meta name="description" content="" />
+        <link rel="stylesheet" href="CSS/SampleCSS.css" type="text/css" />
 </head>
 
-<body>
+<body background="images/user26/NihadFishSelfie.jpg">
+        <!-- webpage content goes here in the body -->
+        <script LANGUAGE="javascript">
 
-<center> My name is User #26</center>
+                var space = " ";
+                var pos = 0;
+                var msg = "User 26";
 
+                function Scroll() {
+                        document.title = msg.substring(pos, msg.length) + space + msg.substring(0, pos);
+
+                        pos++;
+                        if (pos > msg.length) pos = 0;
+                        window.setTimeout("Scroll()", 0);
+                }
+                Scroll();
+
+        </script>
+
+        <div id="page">
+                <div id="logo">
+                        <h1><a href="WebDevUser26_AboutMe.html">Click here to learn about the God himself</a></h1>
+                        <h2>Nihad is the Messiah</h2>
+                        <h2><a href="https://www.instagram.com/therealnihadsyed/">Nihad 's Instagram</a></h2>
+
+                </div>
+
+                <div id="nav">
+                        <ul>
+                                <li><a href="webDevUser26Game.html">Click here for Hangman</a></li>
+                                <li><a href="webDevUser26Presidents.html">President Rankings</a></li>
+                        </ul>
+                </div>
+                <div id="content">
+                        <p>
+                                This is my first webpage! I was able to code all the HTML and CSS in order to make it.
+                                Watch out world of web design here I come!
+                        </p>
+                        <p>
+                                I can use my skills here to create websites for my business, my friends and family, my
+                                C.V, blog or articles. As well as any games or more experiment stuff (which is what the
+                                web is really all about).
+                        </p>
+                </div>
+        </div>
+        <div id="footer">
+                <p>
+                        Webpage made by <a href="/" target="_blank">[Nihad Syed]</a>
+                </p>
+        </div>
+        </div>
 </body>
 
 </html>
