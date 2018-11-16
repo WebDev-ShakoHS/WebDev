@@ -9,13 +9,14 @@ h1 {
 }
 
 h2{
+        text-align: center;
         font-size: 1.1em;
 }
 
 table {
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
+	text-align: center;
 	border-collapse: collapse;
 	cellspacing: 0px;
 }
