@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>Image Slideshow</title>
+		<style>
+		#lnkdiv1 {
+			text-align: center;
+		}
+		body {
+			width: 600px;
+			margin: 100px auto 0;
+		}
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		</style>
+		<link rel='stylesheet' href='CSS/user03/WebDevUser03.css'>
+		<link rel="stylesheet" href="CSS/user03/WebDevUser03_slider.css">
+	</head>
+	<body>
+		<h1 style='text-align: center; font-family: sans-serif;'>Lesson 14</h1>
+		<div id='lnkdiv1'>
+		    <a id='lnk1' href='WebDevUser03.html'>Back</a>
+		</div>
+		<div class="slider">
+			<ul>
+				<li><img src="IMAGES/user03/WebDevUser03_slider01.gif" alt="image"></li>
+				<li><img src="IMAGES/user03/WebDevUser03_slider02.png" alt="image"></li>
+				<li><img src="IMAGES/user03/WebDevUser03_slider03.png" alt="image"></li>
+				<li><img src="IMAGES/user03/WebDevUser03_slider04.png" alt="image"></li>
+				<li><img src="IMAGES/user03/WebDevUser03_slider05.png" alt="image"></li>
+				<li><img src="IMAGES/user03/WebDevUser03_slider06.gif" alt="image"></li>
+				<li><img src="IMAGES/user03/WebDevUser03_slider07.gif" alt="image"></li>
+				<li><img src="IMAGES/user03/WebDevUser03_slider08.gif" alt="image"></li>
+			</ul>
+		</div>
+		<div id="slider-nav">
+			<button data-dir="prev">Previous</button>
+			<button data-dir="next">Next</button>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="JS/user03/WebDevUser03_slider.js"></script>
+	</body>
+</html>
