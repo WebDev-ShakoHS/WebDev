@@ -1,0 +1,253 @@
+/* Brandon Neri Hour 7       */
+/* Web Development           */
+/* Stylesheet: page3.html    */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F23C50;
+    font-family: sans-serif;
+}
+
+h2 {
+    margin-top: 1%;
+    text-align: center;
+    color: #FFCB05;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    -webkit-text-stroke: 2px #E9F1DF;
+}
+
+h1 {   
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    -webkit-text-stroke: 2px #FFCB05;
+    text-align: center;
+
+}
+
+h3 {
+    color: #FFCB05;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    -webkit-text-stroke: 1px black;
+}
+
+.body-content {
+    position: relative;
+    border-top: #F23C50 4px solid;
+}
+
+.demoInputBox {
+    border: solid 1px #F23C50;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+}
+
+.btnAction {
+    background: #F23C50;
+    border: solid 1px #F23C50;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#btn-contact {
+    width: 100%;
+    background: #F23C50;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 18px;
+    color: #FFF;
+    border-radius: 20px;
+}
+
+#btn-contact2 {
+    width: 100%;
+    background: #F23C50;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 18px;
+    color: #FFF;
+    border-radius: 20px;
+}
+
+#btn-contact3 {
+    width: 100%;
+    background: #F23C50;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 18px;
+    color: #FFF;
+    border-radius: 20px;
+}
+
+#mail-status {
+    height: 40px;
+}
+
+.box1 {
+    width: 400px;
+    height: 400px;
+    background: #FFCB05;
+    position: absolute;
+    left: 4.5%;
+    top: 30%;
+    overflow: hidden;
+    padding: 1em;
+    border-radius: 40px;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+
+.box2 {
+    width: 400px;
+    height: 400px;
+    background: #FFCB05;
+    position: absolute;
+    left: 34.7%;
+    top:30%;
+    overflow: hidden;
+    padding: 1em;
+    border-radius: 40px;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+
+.box3 {
+    width: 400px;
+    height: 400px;
+    background: #FFCB05;
+    position: absolute;
+    left: 65%;
+    top: 30%;
+    overflow: hidden;
+    padding: 1em;
+    border-radius: 40px;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+button {
+    background-color: #ddd;
+    position: relative;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.wantedlist {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+}
+
+.toggle {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+}
+
+.toggle a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #FFCB05;
+    z-index: 1;
+    transition: 0.5s
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    padding: 10px;
+    display: inline-block;
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #262626;
+    font-family: sans-serif;
+}
+
+ul li a:hover {
+    color: #F23C50;
+}
+
+.menu.active {
+    left: 0px;
+    overflow: auto;
+}
+article {
+        width: 700px;
+        margin: auto;
+}
+
+blockquote.co {
+        float: right;
+        background: #e3e3e3;
+        border-radius: 36px;
+        font-size: 2em;
+        width: 35%;
+        text-align: center;
+        color: black;
+}
