@@ -1,0 +1,150 @@
+/* Brandon Neri Hour 7       */
+/* Web Development           */
+/* Stylesheet: page1.html    */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F23C50;
+    font-family: sans-serif;
+}
+
+h2{
+    margin-top: 1%;
+    text-align: center;
+    color: #FFCB05;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    -webkit-text-stroke: 2px #E9F1DF;
+}
+
+#slider-nav { 
+	display: none; 
+	margin-top: 1em;
+}
+
+#slider-nav button {
+	padding: 1em;
+	margin-right: 1em;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.slider {
+	width: inherit;
+	height: 300px;
+	overflow: scroll;
+}
+
+.slider ul {
+	width: 10000px;
+	list-style: none;
+}
+
+.slider li {
+	float: left;
+}
+
+.row {
+    background-color: #FFCB05;
+    align-items: center;
+}
+
+.column {
+    align-items: center;
+}
+
+p{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    color: #FFCB05;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+img {
+    width: 20%;
+    margin-left: 40%;
+}
+
+.rotate {
+    transform: rotate(90deg);
+    float: left;
+}
+
+.toggle {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+}
+
+.toggle a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #FFCB05;
+    z-index: 1;
+    transition: 0.5s
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    padding: 10px;
+    display: inline-block;
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #262626;
+    font-family: sans-serif;
+}
+
+ul li a:hover {
+    color: #F23C50;
+}
+
+.menu.active {
+    left: 0px;
+    overflow: auto;
+}
+
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+    margin-right: 8%;
+}
+
+img {
+      width: 200px;
+}
