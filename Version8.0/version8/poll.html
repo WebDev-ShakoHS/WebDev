@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <title>Poll</title>
+	<head>
+	    <style>
+        body {
+            background: lightgreen;
+            color:black;
+        }
+    </style>
+	    
+	    
+	    
+<!-- POLL -->
+    <script>
+function getVote(int) {
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+	</head>
+	<body>
+	    <div id="poll">
+<h3>What's 9 + 10 = </h3>
+<form>
+19:
+<input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+<br>21:
+<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+</form>
+</div>
+		<a href="webDevUser4.html">Return Home</a>
+	</body>
+</html>
