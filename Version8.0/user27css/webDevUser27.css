@@ -1,0 +1,83 @@
+#slider-nav {
+    display: none;
+    margin-top: 1em;
+    width: 800px;
+}
+
+#slider-nav button {
+    padding: 1em;
+    margin-right: 1em;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: gray;
+}
+
+.slider {
+    width: 800px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.slider ul {
+    height: 10000px;
+    list-style: none;
+}
+
+.slider li {
+    height: 700px;
+}
+
+#d1-2 {
+    width: 800px;
+    margin: 100px auto 0;
+}
+
+.para {
+    position: relative;
+    margin-left: 10px;
+}
+
+.bacon {
+    height: 700px;
+    width: 800px;
+}
+
+.grim {
+    height: 700px;
+    width: 800px;
+}
+
+.boom {
+    height: 700px;
+    width: 800px;
+}
+
+.report {
+    height: 700px;
+    width: 800px;
+}
+
+.beautiful {
+    height: 700px;
+    width: 800px;
+}
+
+.d_2 {
+    width: 800px;
+    margin: 100px auto 0;
+    margin-left: 590px;
+    font-size: 3em;
+}
+
+html {
+    background-color: azure;
+    font-family: fantasy, serif;
+}
+
+#small {
+    background-color: hsla(0,0%,0%,1);
+    font-family: monospace, "Comic Sans MS", fantasy;
+    color: blue;
+}
