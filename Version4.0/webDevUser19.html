@@ -1,18 +1,222 @@
 <html lang="en">
-<!--Version 4.0
-	Name:
-	Date Completed:
+
+<!--Version 4.0 
+	Name:Peter
+	Date Completed: 9/12/2018
  -->
-<head>
-
-<title> Web Development User #19 </title>
-
+<!-- your webpage info goes here -->
+    <title>My First Website</title>
+        
+        <meta name="author" content="your name" />
+        <meta name="description" content="" />
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        
 </head>
+<button type="button"
+style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
+Click Me!</button>
+<style>  
+  td {color: #FF0000;}
+</style>
+<link href="CSS/WebDevUser19.css" rel="stylesheet" type="text/css">
+<body><script language="JavaScript">
 
-<body>
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
 
-<center> My name is User #19</center>
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
 
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.10)
+ responseString="Well done!";
+ if (responseTime >= 0.10 && responseTime < 0.20)
+ responseString="Nice!";
+ if (responseTime >=0.20 && responseTime < 0.30)
+ responseString="Could be better...";
+ if (responseTime >=0.30 && responseTime < 0.60)
+ responseString="Keep practising!";
+ if (responseTime >=0.60 && responseTime < 1)
+ responseString="Have you been drinking?";
+ if (responseTime >=1)
+ responseString="Did you fall asleep?";
+
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+<option>chocolate
+<option>mediumslateblue
+<option>tomato
+<option>darkslategray
+<option>limegreen
+<option>cornflowerblue
+<option>darkolivegreen
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+<table border="0" width="350" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img border="0" src="roulette.jpg" width="152" height="216"></td>
+    <td>
+
+<form name="fire">
+Load number of bullets (1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
+
+<p>
+<input name="message" type="button" value="Play Roulette!" onClick="fireit()">
+</p>
+
+</form>
+
+<script>
+
+//Russian Roulette Game- by javascriptkit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Credit must stay intact for use
+
+function fireit(){
+var theone=Math.floor(Math.random()*6)
+
+if (theone<=document.fire.bullets.value-1)
+alert("Bang. You\'re dead!")
+else{
+document.fire.message.value="Whew. Got lucky!"
+setTimeout("document.fire.message.value='Play Roulette'",500)
+}
+}
+
+</script>
+
+<p align="center">This free script provided by<br />
+<a href="http://javascriptkit.com">JavaScript
+Kit</a></p>
+
+</td>
+  </tr>
+</table>
+
+<!-- webpage content goes here in the body -->
+        <div id="page">
+                <div id="logo">
+                        <h1><a href="/" id="logoLink">My Name is Peder</a></h1>
+                </div>
+                <div id="nav">
+                        <ul>
+                                <li><a href="#/Home.html">Home</a></li>
+                                <li><a href="#/Songs.html">About</a></li>
+                                <li><a href="#/Games.html">Contact</a></li>
+                        </ul>        
+                </div>
+                <div id="content">
+                        <h2>My</h2>
+                        <h3>Name</h3>
+                        <h4>Is</h4>
+                        <h5>Peder</h5>
+                        <h6>!</h6>
+                        <p>
+                                This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+                        </p>
+                        <p>
+                                I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
+                        </p>
+                        
+                </div>
+                <img src="images/user19/aerosmith_user19.jpg" alt="aerosmith_user19.jpg" />
+ <table>
+                <h2>My Top 5 Favorite Songs</h2>
+                
+ <tr><th>Rank</th><th>Artist</th><th>Song</th></tr>
+ <tr><td style="color:#00FF00; background-color:sienna;">1</td><td>Scorpions</td><td>Wind Of Change</td></tr>
+ <tr><td>2</td><td>GN'R</td><td>Paridise City</td></tr>
+ <tr><td>3</td><td>Def Leppard</td><td>Photograph</td></tr>
+ <tr><td>4</td><td>GN'R</td><td>November Rain</td></tr>
+ <tr><td>5</td><td>Aerosmith</td><td>Dream On</td></tr>
+ </table>
+ 
+                <div id="footer">
+                		<h3>
+                        <p>
+                                Webpage made by <a href="/" target="_blank">Peder</a>
+                        </p>
+                </div>
+        </div>
 </body>
-
 </html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>Dom Hjelm The First</title>
+	<style>
+    article {
+    	width: 600px;
+    	margin:auto;
+	}
+		
+    blockquote.co {
+		float: right;
+    	background: green;
+		font-size: 2em;
+    	width: 35%;
+		text-align: center;
+	}
+	
+</style>
+</head>
+<body>
+	
+<article>
+    <h1>Dom Hjelm I</h1>
+    <p>
+        The person needs a hamburger.
+    </p>
+	<img src="Einstein.jpg" alt= "image">
+    <p>
+<span class=co> The person needs a hamburger. </span> 
+<span class=co>The person needs a hamburger. The person needs a hamburger. The person needs a hamburger.</span>
+
+		<span class=co>The person needs a hamburger.</span> 
+
+</p>
+</article>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        
+<script>
+(function()	{
+	var co = $('span.co').each(function(){
+
+		var $this = $(this);
+		
+		$('<blockquote></blockquote>', {
+			class: 'co',
+			text: $this.text()
+		}).prependTo( $this.closest('p') );
+	});
+})();
+</script>
+</body>
+</html>
+
