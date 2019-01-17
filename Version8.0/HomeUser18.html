@@ -1,0 +1,72 @@
+<html>
+<head>
+    
+<style>  
+  td {color: #FF0000;}
+  body {background-image: linear-gradient(to right, #7CFC00 , #000000)}
+    
+  blockquote.co {
+		float: right;
+		background: #e3e3e3;
+		font-size: 2em;
+		width: 35%;
+		text-align: center;
+	}
+</style>
+    
+<script src="JS/webDevUser18_script.js"></script>
+    
+<link href="CSS/user18/WebDevUser18.css" rel="stylesheet" type="text/css">
+    
+</head>
+    
+<body>
+    
+    <title>My First Website</title>
+    <h1><a href="webDevUser18.html">Go Back</a>
+        <h1>Mainheart</h1>
+         <h2>Teached</h2>
+         <h3>CPS</h3>
+         <h4>WEBDEV</h4>
+         <h5>and</h5>
+         <h6>MOBiLE OS</h6>
+         <meta name="author" content="your name" />
+         <meta name="description" content="" />
+        
+<button type="button"
+style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%;" onClick="alert('GO Sabers!');" > 
+Click Me!</button>
+        
+      
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+
+<center>
+    <h2>Home</h2>
+</center>
+<article>
+     <p>
+    This is my first webpage! I was able to code all the HTML and CSS and the ONE and most SPECIAL one is <span class=co>JQUERY!!!</span> order to make it. Watch out world of web design here I come!
+    </p>
+     <p>
+       
+    </p>
+</article>
+        
+<script>
+(function() {
+	var co = $('article').find('span.co').each(function() {
+		var $this = $(this);
+		$('<blockquote></blockquote>', {
+			class: 'co',
+			text: $this.text()
+		}).prependTo( $this.closest('p') );
+		
+	});
+	
+})();
+</script>        
+        
+        
+ </body>
+</html> 
