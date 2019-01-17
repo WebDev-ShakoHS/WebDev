@@ -1,0 +1,45 @@
+<html>
+<head>
+    
+<style>  
+  td {color: #FF0000;}
+  body {background-image: linear-gradient(to right, #7CFC00 , #000000)}
+    
+  blockquote.co {
+		float: right;
+		background: #e3e3e3;
+		font-size: 2em;
+		width: 35%;
+		text-align: center;
+	}
+</style>
+    
+<script src="JS/webDevUser18_script.js"></script>
+    
+<link href="CSS/user18/WebDevUser18.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <h1><a href="webDevUser18.html">Go Back</a></h1>
+    
+<h1>Get your own DREAM cars!</h1>
+<h2>Fill out this form so we can find the car you like and delivery to you!</h2>
+
+<div id="form">
+    <form method='post' action='process.php'>
+        <center><input type="text" placeholder="Your Name" name='firstName'></center>
+        <center><input type="text" placeholder="Car Brand" name='carBrand'></center>
+        <center><input type="text" placeholder="Car Model" name='carModel'></center>
+        <center><input type="text" placeholder="Car Year" name='carYear'></center>
+        <center><input type='submit' value='Enter Entry' name='enter'></center>
+    </form>
+</div>
+
+<form method='post' action='read.php'>
+    <input type='submit' value='Random Car List' name='view'>
+</form>
+    
+</body>    
+</html>
