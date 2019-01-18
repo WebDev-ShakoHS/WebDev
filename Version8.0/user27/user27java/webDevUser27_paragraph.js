@@ -56,7 +56,6 @@
                 
             })();
 
-
 var space = " ";
 var pos = 0;
 var msg = "Coolsvile";

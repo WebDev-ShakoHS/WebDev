@@ -42,10 +42,6 @@
     
 })(jQuery);
 
-function changeText() {
-    document.getElementById("textChange").innerHTML = "Thanks for liking my Webpage";
-}
-
 var space = " ";
 var pos = 0;
 var msg = "OOooOOFFf";
