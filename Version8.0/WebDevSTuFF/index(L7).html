@@ -1,0 +1,102 @@
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Appending Content</title>
+	<style>
+	article {
+		width: 600px;
+		margin: auto;
+	}
+	blockquote.co {
+		float: right;
+		background: #e3e3e3;
+		font-size: 2em;
+		width: 35%;
+		text-align: center;
+	}
+        
+    body {background-image: linear-gradient(to right, #7CFC00 , #000000)}
+        
+	</style>
+</head>
+<body>
+
+    
+    
+<article>
+	<h1>My Awesome Post</h1>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+	</p>
+	<p>
+		<span class=co>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+	</p>
+	<p>
+		Consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. <span class=co>Hello from JavaScript.</span> sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+	</p>
+    <p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+	</p>
+    <p>
+		Consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.<span class=co><img src="TGS%20LOGO.png" width="20%" height="20%"></span> sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+	</p>
+    <p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+	</p>
+     <p>
+		Consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. <span class=co>LIFE SUCK</span> sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+	</p>
+</article>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script>
+(function() {
+	var co = $('article').find('span.co').each(function() {
+		var $this = $(this);
+		$('<blockquote></blockquote>', {
+			class: 'co',
+			text: $this.text()
+		}).prependTo( $this.closest('p') );
+		
+	});
+	
+})();
+</script>
+
+</body>
+</html>

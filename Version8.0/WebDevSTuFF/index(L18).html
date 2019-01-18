@@ -1,0 +1,63 @@
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Mustache</title>
+<style>
+h2 span { color: lightgray; font-size: .8em; }
+</style>
+    
+<style>
+        h2 { color: lightgreen;}
+</style>
+    
+</head>
+<body>
+
+<ul class="tweets">
+	<script id="template" type="text/x-handlebars-template">
+		{{#each this}}
+		<li>
+			<h2>{{fullName author}}</h2>
+			<p>{{{tweet}}}</p>
+
+			{{#if quote}}
+				<h5>{{quote}}</h5>
+			{{else}}
+				<h5>Author does not have a quote.</h5>
+			{{/if}}
+		</li>
+		{{/each}}
+	</script>
+</ul>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="handlebars-v4.0.12.js"></script>
+    
+<script>
+(function() {
+	var context = [
+		{
+			author: { first: 'Trang', last: 'N', age: 18 },
+			tweet: 'Thankgiving...',
+			quote: 'Uncle too poor to buy a turkey, so he bought a chicken instead.'
+		},
+		{
+			author: { first: 'Trisha', last: 'N', age: 4 },
+			tweet: '<strong>World</strong> crazest sister',
+		},
+        {
+			author: { first: 'Nguyen', last: 'Nguyen', age: 0 },
+			tweet: '<strong>Always</strong> Nguyen Nguyen everywhere',
+		},
+	],
+		template = Handlebars.compile( $('#template').html() );
+	Handlebars.registerHelper('fullName', function( author ) {
+		return author.first + ' ' + author.last + ' - ' + author.age;
+	});
+	$('ul.tweets').append( template(context) );
+})();
+</script>
+
+
+</body>
+</html>

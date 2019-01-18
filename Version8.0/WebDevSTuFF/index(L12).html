@@ -1,0 +1,56 @@
+<html>
+<head>
+   <meta charset=utf-8>
+    <title>Animate</title>
+    <style>
+        .box {
+            width: 400px;
+            background: #7CFC00;
+            padding: 2em;
+            position: relative; 
+        }
+    
+    </style>
+</head>
+<body>
+
+<div class=box>
+    <h2>Some Content Here</h2>
+	<p>
+	Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word Word
+	</p>
+</div>
+
+<p><button>Down</button></p>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+    var box = $('div.box');    
+        w = $(window).width() / 2 - box.outerWidth() / 2,
+        h = $(window).height() / 2 - box.outerHeight() / 2,
+        w2 = $(window).width() / 2 - box.innerWidth() / -2;
+    $('button').on('click', function() {
+        box.animate({
+            'left': w,
+            'position': 'absolute'
+        })
+        .animate({
+            'top': h
+        }, { duration : 2000, queue: false
+        })
+        .animate({
+            'left': w2,
+            'position': 'absolute'
+        });
+    });
+})();
+
+
+</script>
+
+</body>
+</html>
