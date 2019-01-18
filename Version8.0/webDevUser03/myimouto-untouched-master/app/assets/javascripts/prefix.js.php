@@ -1,1 +1,0 @@
-PREFIX = '<?= Rails::application()->router()->rootPath() ?>';

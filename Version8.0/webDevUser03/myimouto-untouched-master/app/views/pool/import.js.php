@@ -1,1 +1,0 @@
-Element::update('posts', '<?= escape_javascript render('import_list') ?>');
