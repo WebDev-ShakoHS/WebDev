@@ -29,18 +29,18 @@ fclose($fp);
 <tr>
 <td>19:</td>
 <td>
-<img src="poll.gif"
+<!--<img src="poll.gif"
 width='<?php echo(100*round($yes/($no+$yes),2)); ?>'
-height='20'>
+height='20'>-->
 <?php echo(100*round($yes/($no+$yes),2)); ?>%
 </td>
 </tr>
 <tr>
 <td>21:</td>
 <td>
-<img src="poll.gif"
+<!--<img src="poll.gif"
 width='<?php echo(100*round($no/($no+$yes),2)); ?>'
-height='20'>
+height='20'>-->
 <?php echo(100*round($no/($no+$yes),2)); ?>%
 </td>
 </tr>
