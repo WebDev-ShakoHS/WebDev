@@ -4,20 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "9d9c450c955b540a9b8c5f635752e4cc",
     "content-hash": "8fd61aada2394352d297c799d112d66a",
     "packages": [
         {
             "name": "kriswallsmith/assetic",
-            "version": "v1.4.0",
+            "version": "v1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1"
+                "reference": "9928f7c4ad98b234e3559d1049abd13387f86db5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
-                "reference": "e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/9928f7c4ad98b234e3559d1049abd13387f86db5",
+                "reference": "9928f7c4ad98b234e3559d1049abd13387f86db5",
                 "shasum": ""
             },
             "require": {
@@ -25,21 +26,21 @@
                 "symfony/process": "~2.1|~3.0"
             },
             "conflict": {
-                "twig/twig": "<1.27"
+                "twig/twig": "<1.23"
             },
             "require-dev": {
+                "cssmin/cssmin": "3.0.1",
+                "joliclic/javascript-packer": "1.1",
+                "kamicane/packager": "1.0",
                 "leafo/lessphp": "^0.3.7",
                 "leafo/scssphp": "~0.1",
-                "meenie/javascript-packer": "^1.1",
-                "mrclay/minify": "<2.3",
-                "natxet/cssmin": "3.0.4",
+                "mrclay/minify": "~2.2",
                 "patchwork/jsqueeze": "~1.0|~2.0",
-                "phpunit/phpunit": "~4.8 || ^5.6",
+                "phpunit/phpunit": "~4.8",
                 "psr/log": "~1.0",
                 "ptachoire/cssembed": "~1.0",
                 "symfony/phpunit-bridge": "~2.7|~3.0",
-                "twig/twig": "~1.23|~2.0",
-                "yfix/packager": "dev-master"
+                "twig/twig": "~1.8|~2.0"
             },
             "suggest": {
                 "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
@@ -81,7 +82,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2016-11-11T18:43:20+00:00"
+            "time": "2015-11-12 13:51:40"
         },
         {
             "name": "leafo/scssphp",
@@ -127,7 +128,7 @@
             ],
             "description": "scssphp is a compiler for SCSS written in PHP.",
             "homepage": "http://leafo.net/scssphp/",
-            "time": "2013-09-16T23:00:25+00:00"
+            "time": "2013-09-16 23:00:25"
         },
         {
             "name": "michelf/php-markdown",
@@ -178,7 +179,7 @@
             "keywords": [
                 "markdown"
             ],
-            "time": "2013-04-11T18:53:11+00:00"
+            "time": "2013-04-11 18:53:11"
         },
         {
             "name": "railsphp/actsasversioned",
@@ -204,7 +205,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2013-10-02T19:31:11+00:00"
+            "time": "2013-10-02 19:31:11"
         },
         {
             "name": "railsphp/railsphp",
@@ -238,7 +239,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2016-08-21T23:25:36+00:00"
+            "time": "2016-08-21 23:25:36"
         },
         {
             "name": "railsphp/willpaginate",
@@ -265,29 +266,29 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Pagination helper for RailsPHP Framework",
-            "time": "2014-05-26T12:38:37+00:00"
+            "time": "2014-05-26 12:38:37"
         },
         {
             "name": "symfony/process",
-            "version": "v3.4.21",
+            "version": "v3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "0d41dd7d95ed179aed6a13393b0f4f97bfa2d25c"
+                "reference": "04c2dfaae4ec56a5c677b0c69fac34637d815758"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/0d41dd7d95ed179aed6a13393b0f4f97bfa2d25c",
-                "reference": "0d41dd7d95ed179aed6a13393b0f4f97bfa2d25c",
+                "url": "https://api.github.com/repos/symfony/process/zipball/04c2dfaae4ec56a5c677b0c69fac34637d815758",
+                "reference": "04c2dfaae4ec56a5c677b0c69fac34637d815758",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8"
+                "php": ">=5.5.9"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -314,7 +315,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-02T21:24:08+00:00"
+            "time": "2016-07-28 11:13:48"
         },
         {
             "name": "symfony/yaml",
@@ -364,7 +365,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-05-30T08:10:17+00:00"
+            "time": "2016-05-30 08:10:17"
         },
         {
             "name": "toopay/assetic-minifier",
@@ -413,7 +414,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-05-18T15:19:21+00:00"
+            "time": "2014-05-18 15:19:21"
         },
         {
             "name": "zendframework/zend-console",
@@ -463,7 +464,7 @@
                 "console",
                 "zf2"
             ],
-            "time": "2015-01-13T22:22:54+00:00"
+            "time": "2015-01-13 22:22:54"
         },
         {
             "name": "zendframework/zend-crypt",
@@ -514,7 +515,7 @@
                 "crypt",
                 "zf2"
             ],
-            "time": "2015-01-13T22:22:54+00:00"
+            "time": "2015-01-13 22:22:54"
         },
         {
             "name": "zendframework/zend-db",
@@ -567,7 +568,7 @@
                 "db",
                 "zf2"
             ],
-            "time": "2015-03-03T15:56:14+00:00"
+            "time": "2015-03-03 15:56:14"
         },
         {
             "name": "zendframework/zend-loader",
@@ -612,7 +613,7 @@
                 "loader",
                 "zf2"
             ],
-            "time": "2015-02-10T14:55:30+00:00"
+            "time": "2015-02-10 14:55:30"
         },
         {
             "name": "zendframework/zend-log",
@@ -674,7 +675,7 @@
                 "logging",
                 "zf2"
             ],
-            "time": "2015-01-13T22:22:54+00:00"
+            "time": "2015-01-13 22:22:54"
         },
         {
             "name": "zendframework/zend-mail",
@@ -729,7 +730,7 @@
                 "mail",
                 "zf2"
             ],
-            "time": "2015-05-11T15:50:41+00:00"
+            "time": "2015-05-11 15:50:41"
         },
         {
             "name": "zendframework/zend-math",
@@ -780,7 +781,7 @@
                 "math",
                 "zf2"
             ],
-            "time": "2015-01-13T22:22:54+00:00"
+            "time": "2015-01-13 22:22:54"
         },
         {
             "name": "zendframework/zend-mime",
@@ -830,7 +831,7 @@
                 "mime",
                 "zf2"
             ],
-            "time": "2015-05-07T16:16:34+00:00"
+            "time": "2015-05-07 16:16:34"
         },
         {
             "name": "zendframework/zend-servicemanager",
@@ -880,7 +881,7 @@
                 "servicemanager",
                 "zf2"
             ],
-            "time": "2015-01-13T22:22:54+00:00"
+            "time": "2015-01-13 22:22:54"
         },
         {
             "name": "zendframework/zend-stdlib",
@@ -935,7 +936,7 @@
                 "stdlib",
                 "zf2"
             ],
-            "time": "2015-02-10T14:55:30+00:00"
+            "time": "2015-02-10 14:55:30"
         },
         {
             "name": "zendframework/zend-validator",
@@ -999,7 +1000,7 @@
                 "validator",
                 "zf2"
             ],
-            "time": "2015-03-12T13:58:47+00:00"
+            "time": "2015-03-12 13:58:47"
         }
     ],
     "packages-dev": [],
