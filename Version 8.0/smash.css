@@ -1,0 +1,42 @@
+body {
+    background-color: #2D3D46;
+    
+}
+p {
+    color: #921B35
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: sans-serif;
+    color: #921B35;
+}
+
+h2 {
+      padding-top: 50px;
+      text-align: center;
+       font-family: sans-serif;
+        color: #921B35;
+}
+
+.bayo {
+display: block;
+  margin-left: 600px;
+  margin-right: 600px;
+  width: 50%;
+}
+.gw {
+display: block;
+  margin-left: 600px;
+  margin-right: 600px;
+  width: 50%;
+
+}
+.rob {
+display: block;
+  margin-left: 600px;
+  margin-right: 600px;
+  width: 50%;
+
+}
