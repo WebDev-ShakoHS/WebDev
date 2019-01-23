@@ -1,0 +1,55 @@
+body {
+    font-family: "Serif", "Times New Roman Georgia", fantasy;
+    color: #0000ff;
+    background-color: #000000;
+}
+h2 {
+    text-align: center;
+    
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: blue;
+    width: 500px;
+    height: 500px;
+    padding-bottom: 20px;
+}
+#contact { 
+	background: black; 
+	padding: 1em 2em; 
+	position: relative;
+    border: 1px solid blue;
+    color: blue;
+}
+.js #contact {
+    position: absolute;
+	top: auto;
+    width: inherit;
+	display: none;
+}	
+#contact h2 { margin-top: 0; }
+#contact ul { padding: 0; }
+#contact li { 
+    list-style: none;
+	margin-bottom: 1em;
+}
+	/* Close button on form */
+.close {
+    position: absolute;
+	right: 10px;
+    top: 10px;
+	font-weight: bold;
+    font-family: sans-serif;
+	cursor: pointer;
+}	
+button {
+    margin-left: 675px;
+}
