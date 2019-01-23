@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {//Check it is coming from a form
     $mysql_host = "localhost";
     $mysql_username = "nihadsyed28";
     $mysql_password = "Bblue11$";
-    $mysql_database = "shoes";
+    $mysql_database = "nihadName";
 	
 	//delcare PHP variables
 	

@@ -41,25 +41,8 @@ INSERT INTO `application` (`first_name`, `last_name`, `fav_color`) VALUES
 ('Trang', 'N', 'Green'),
 ('bg', '', ''),
 ('Ruth', 'Mesfin', 'Purple'),
-('Jonny', 'Appleseed', 'your mum ðŸ¤£'),
-('Jonny', 'Appleseed', 'your mum ðŸ¤£'),
-('Garbage', 'Garbage', 'Garbage'),
-('ur mum gay', 'ur mum gay', 'ur mum gay'),
-('ur mum gay1', 'ur mum gay1', 'ur mum gay1'),
-('ur mum gay12', 'ur mum gay12', 'ur mum gay12'),
-('ur mum gay123', 'ur mum gay123', 'ur mum gay123'),
-('ur mum gay1234', 'ur mum gay1234', 'ur mum gay1234'),
-('ur mum gay12345', 'ur mum gay12345', 'ur mum gay12345'),
-('ur mum gay123456', 'ur mum gay123456', 'ur mum gay123456'),
-('ur mum gay1234567', 'ur mum gay1234567', 'ur mum gay1234567'),
-('ur mum gay12345678', 'ur mum gay12345678', 'ur mum gay12345678'),
-('ur mum gay123456789', 'ur mum gay123456789', 'ur mum gay123456789'),
-('ur mum gay1234567891', 'ur mum gay1234567891', 'ur mum gay1234567891'),
-('ur mum gay12345678912', 'ur mum gay12345678912', 'ur mum gay12345678912'),
-('ur mum gay123456789123', 'ur mum gay123456789123', 'ur mum gay123456789123'),
-('ur mum gay1234567891234', 'ur mum gay1234567891234', 'ur mum gay1234567891234'),
-('ur mum gay12345678912345', 'ur mum gay12345678912345', 'ur mum gay12345678912345'),
-('ur mum gay', 'ur mum gay12345678912345', 'ur mum gay12345678912345');
+('Garbage', 'Garbage', 'Garbage');
+
 
 -- --------------------------------------------------------
 

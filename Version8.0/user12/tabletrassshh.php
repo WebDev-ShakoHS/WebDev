@@ -1,10 +1,11 @@
 <?php
+echo "<h1>HI</h1>"
 
 $con = mysql_connect("localhost","lightlylife","Rose12131");
      if(!$con){
            die("Database Connection failed".mysql_error());
 }else{
-$db_select = mysql_select_db("ghost", $con);
+$db_select = mysql_select_db($con,"ghost");
      if(!$db_select){
            die("Database selection failed".mysql_error());
 }else{ 
@@ -30,7 +31,7 @@ $records = mysql_query("SELECT * FROM trashpick");
     </head>
 
     <body>
-        <a href="/V8.0/webDevUser12.html">Return to Website</a>
+        <a href="/Version8.0/webDevUser12.html">Return to Website</a>
         <table width="400" border="2" cellpadding="2" cellspacing='1'>
 
            <tr bgcolor="#2ECCFA">
