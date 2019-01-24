@@ -9,11 +9,11 @@
 <title>My First Website</title>
         <script src="JS/webDevUser22_script.js"></script>
         <meta name="author" content="your name" />
-        <meta name="description" content="" />      
+        <meta name="description" content="" />
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
         <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
     <body>
-        <div id="content">
 <center><p id="textChange"> My name is User #22</p></center>
 <button type="button" onclick="changeText()">Click if you like</button>
     <script language="JavaScript">
@@ -130,23 +130,24 @@ Change background color in:
     <button type="button"
 style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
 Click Me!</button>
-    <div id="nav">
-            <ul>
-                <li><a href="/Users/226546/Desktop/WebDev/Version7.0/webDevUser22slider.html">Slider</a></li>
-                <li><a href="/Users/226546/Desktop/WebDev/Version7.0/webDevUser22about.html">About</a></li>
-                <li><a href="/Users/226546/Desktop/WebDev/Version7.0/webDevUser22contact.html">Contact</a></li>
-            </ul>        
-    </div>
 <!-- webpage content goes here in the body -->
         <div id="page">
                 <div id="logo">
-                    <h1><a href="/" id="logoLink">My First Website</a></h1>
+                        <h1><a href="/" id="logoLink">My First Website</a></h1>
                     <h2>No</h2>
                     <h3>Yes</h3>
                     <h4>Chicken</h4>
                     <h5>Curry</h5>
                     <h6>Stick</h6>
                 </div>
+                <div id="nav">
+                        <ul>
+                                <li><a href="#/home.html">Home</a></li>
+                                <li><a href="#/about.html">About</a></li>
+                                <li><a href="#/contact.html">Contact</a></li>
+                        </ul>        
+                </div>
+                <div id="content">
                     
                         <h2>Home</h2>
                         <p>
@@ -173,6 +174,14 @@ Click Me!</button>
                         </p>
                 </div>
         </div>
-</body>
 
+        <?php
+        $current_file_name = basename($_SERVER['PHP_SELF']);
+        echo $current_file_name."\n";
+        ?>
+
+        <?php
+        header('Location: https://en.wikipedia.org/');
+        ?>
+</body>
 </html>
