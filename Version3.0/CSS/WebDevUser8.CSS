@@ -1,6 +1,6 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	color: #FFA500;
 }
 
 h1 {
@@ -52,5 +52,5 @@ h2{
 .b th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #0000FF;
+	background-color: aqua;
 }
