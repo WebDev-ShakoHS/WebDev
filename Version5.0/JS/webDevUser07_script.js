@@ -17,4 +17,5 @@ window.setTimeout("Scroll()", 0);
 Scroll();
 
 function disappear() { 
-    document.getElementById("mario").style.display="none" }
+    document.getElementById("mario").style.display="none"; 
+}
