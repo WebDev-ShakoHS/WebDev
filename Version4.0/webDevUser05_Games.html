@@ -1,0 +1,210 @@
+<html lang="en"><!--Version 2.0 
+	Name:Yusuf Hendawy
+	Date Completed:9/5/19
+ --><head>
+<!-- your webpage info goes here -->
+
+
+    <title>Yusuf Web</title>
+
+   
+    
+        <meta name="author" content="your name">
+
+        <meta name="description" content="">
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link href="CSS/WebDevUser5/WebDevUser5.css" rel="stylesheet" type="text/css">
+
+        
+
+</head>
+
+<body>
+
+
+<!-- webpage content goes here in the body -->
+<center> <h2>Welcome To The Game</h2>
+ 
+    </center>
+<br>
+    
+    <center><img src="images/user5/th.jpeg" width="900" height="900"></center>
+        <div id="page">
+            
+            <center> <h2>Game you can play</h2>
+ <script language="JavaScript">
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.20)
+ responseString="Well done!";
+ if (responseTime >= 0.20 && responseTime < 0.30)
+ responseString="Nice!";
+ if (responseTime >=0.40 && responseTime < 0.50)
+ responseString="Could be better...";
+ if (responseTime >=0.50 && responseTime < 0.80)
+ responseString="Keep practising!";
+ if (responseTime >=0.80 && responseTime < 1.1)
+ responseString="Have you been day dreaming again?";
+ if (responseTime >=1.1)
+ responseString="Did you fall asleep?";
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+    </center>
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink">Click Stop When the Background changes color</a></h1>
+
+                </div>
+
+                <div id="nav">
+
+                        <ul>
+
+                                <li><a href="#/WELCOME_WELCOME
+.html">Welcome</a></li> 
+
+                                <li><a href="webDevUser05_aboutMe.html">Different Portal</a></li>
+
+                                <li><a href="webDevUser05.html">Back To Home</a></li>
+
+                        </ul>        
+
+                </div>
+
+                <div id="content">
+
+
+                        <p>
+
+                    <h2> Have Fun </h2>
+
+
+                        </p>
+
+                        <p>
+
+                           <h4>    A little game you can play. </h4>
+
+
+                        </p>
+
+                </div>
+
+                <div id="footer">
+
+                        <p>
+
+<h5>   Game made by </h5><h6> Yusuf Hendawy</h6><br>
+<br><br>
+
+                        </p>
+
+                </div>
+
+        </div>
+
+
+
+
+<title> Game Page </title>
+
+
+
+
+
+
+
+
+
+</body></html>
