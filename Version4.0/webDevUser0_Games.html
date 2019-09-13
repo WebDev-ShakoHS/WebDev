@@ -1,0 +1,191 @@
+<html lang="en">
+<!--Version 3.0 
+	Name: Mr. Mainhardt
+	Date Completed:9/9/2019
+ -->
+<head>
+
+<!-- your webpage info goes here -->
+
+
+    <title>WebDev Website</title>
+
+        
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link href="CSS/WebDevUser00.css" rel="stylesheet" type="text/css">
+
+        
+
+</head>
+
+<body>
+    
+
+
+<!-- webpage content goes here in the body -->
+
+
+        <div id="page">
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink">My First Website</a></h1>
+
+                </div>
+
+                <div id="nav">
+
+                        <ul>
+
+                                <li><a href="webDevUser0.html">Home</a></li>
+
+                                <li><a href="webDevUser0_About_Me.html">About</a></li>
+
+                                <li><a href="#/contact.html">Contact</a></li>
+
+                        </ul>        
+
+                </div>
+
+
+            
+
+        </div>
+    
+    
+<script language="JavaScript">var startTime=new Date();var endTime=new Date();var startPressed=false;var bgChangeStarted=false;var maxWait=20;var timerID;function startTest(){ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text; bgChangeStarted=true; startTime=new Date();}function remark(responseTime){ var responseString=""; if (responseTime < 0.20) responseString="Well done!"; if (responseTime >= 0.20 && responseTime < 0.30) responseString="Nice!"; if (responseTime >=0.40 && responseTime < 0.50) responseString="Could be better..."; if (responseTime >=0.50 && responseTime < 0.80) responseString="Keep practising!"; if (responseTime >=0.80 && responseTime < 1.1) responseString="Have you been day dreaming again?"; if (responseTime >=1.1) responseString="Did you fall asleep?"; return responseString;}function stopTest(){ if(bgChangeStarted) { endTime=new Date(); var responseTime=(endTime.getTime()-startTime.getTime())/1000; document.body.style.background="white";  alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime)); startPressed=false; bgChangeStarted=false; } else { if (!startPressed) { alert("press start first to start test"); } else {  clearTimeout(timerID); startPressed=false;  alert("cheater! you pressed too early!"); }  }}var randMULTIPLIER=0x015a4e35;var randINCREMENT=1;var today=new Date();var randSeed=today.getSeconds();function randNumber(){ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31); return((randSeed >> 15) & 0x7fff) / 32767;}function startit(){ if(startPressed) { alert("Already started. Press stop to stop"); return; } else { startPressed=true;  timerID=setTimeout('startTest()', 6000*randNumber()); }}</script><p>Test your Response time!</p>Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"<form name="response">Change background color in: <select name="bgColorChange"><option selected>deeppink<option>aliceblue<option>crimson<option>darkkhaki<option>cadetblue<option>darkorchid<option>coral</select><input type="button" value="start" onClick="startit()"><input type="button" value="stop" onClick="stopTest()"></form>    
+    
+    
+    <script LANGUAGE="JavaScript">
+
+/*
+By Wee Family  psweesam@singnet.com.sg
+Featured on JavaScript Kit (http://javascriptkit.com)
+For this and over 400+ free scripts, visit http://javascriptkit.com
+*/
+
+function calc() {
+first = document.loveform.name1.value.toUpperCase();
+firstlength = document.loveform.name1.value.length;
+second = document.loveform.name2.value.toUpperCase();
+secondlength = document.loveform.name2.value.length;
+var LoveCount=0;
+
+for (Count=0; Count < firstlength; Count++) {
+
+
+
+letter1=first.substring(Count,Count+1);
+
+if (letter1=='M') LoveCount+=2; 
+if (letter1=='A') LoveCount+=2; 
+if (letter1=='I') LoveCount+=2;
+if (letter1=='N') LoveCount+=2; 
+if (letter1=='H') LoveCount+=3; 
+if (letter1=='A') LoveCount+=1; 
+if (letter1=='R') LoveCount+=3;
+}
+
+
+for (Count=0; Count < secondlength; Count++) {
+letter2=second.substring(Count,Count+1);
+if (letter2=='P') LoveCount+=2;
+if (letter2=='A') LoveCount+=2; 
+if (letter2=='C') LoveCount+=2; 
+if (letter2=='K') LoveCount+=2;
+if (letter2=='E') LoveCount+=3;
+if (letter2=='R') LoveCount+=1;
+if (letter2=='S') LoveCount+=3;
+}
+
+amount=0;
+
+if (LoveCount> 0) amount=  5-((firstlength+secondlength)/2)
+if (LoveCount> 2) amount= 10-((firstlength+secondlength)/2)
+if (LoveCount> 4) amount= 20-((firstlength+secondlength)/2)
+if (LoveCount> 6) amount= 30-((firstlength+secondlength)/2)
+if (LoveCount> 8) amount= 40-((firstlength+secondlength)/2)
+
+if (LoveCount>10) amount= 50-((firstlength+secondlength)/2)
+
+if (LoveCount>12) amount= 60-((firstlength+secondlength)/2)
+if (LoveCount>14) amount= 70-((firstlength+secondlength)/2)
+if (LoveCount>16) amount= 80-((firstlength+secondlength)/2)
+if (LoveCount>18) amount= 90-((firstlength+secondlength)/2)
+if (LoveCount>20) amount=100-((firstlength+secondlength)/2)
+if (LoveCount>22) amount=110-((firstlength+secondlength)/2)
+if (firstlength==0 || secondlength==0) amount= "Err";
+if (amount < 0) amount= 0;
+if (amount >99) amount=99;
+
+document.loveform.output.value=amount+"%";
+
+
+
+}
+
+
+</script>
+
+
+<center><table width=600 cellpadding=1 cellspacing=0 border=0><tr>
+<td align=center valign=top>
+</TD>
+</TR></TABLE>
+</CENTER> 
+
+<DIV align="center"><CENTER>
+<P><STRONG>The love Test</p>
+
+
+Test the love between two people by entering their names below and then calculate their compatibility.
+
+<FORM name="loveform">
+
+  <P><INPUT value="Love" name="name1" type="text" size="20">  + <INPUT
+
+  value="Test" name="name2" type="text" size="20">  = <INPUT value name="output" type="text" size="6"> <BR>
+
+  <BR>
+
+  <INPUT value="Calculate!" name="calculate" type="button" value="calculate"
+
+  onclick="calc()"> </P>
+
+
+
+</FORM>
+
+  </CENTER></DIV>
+
+<p align="center"><font face="arial" size="-2">This free script provided by</font><br>
+<font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
+Kit</a></font></p>
+    
+    
+    
+    
+    
+    
+    
+
+            <div id="footer">
+                        <p>
+
+                                Webpage made by <a href="/" target="_blank">[your name]</a>
+
+                        </p>
+
+                </div>
+
+        </div>
+</body>
+
+</html>
