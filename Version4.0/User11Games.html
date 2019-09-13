@@ -1,0 +1,662 @@
+<script language="JavaScript">
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.20)
+ responseString="Well done!";
+ if (responseTime >= 0.20 && responseTime < 0.30)
+ responseString="Nice!";
+ if (responseTime >=0.40 && responseTime < 0.50)
+ responseString="Could be better...";
+ if (responseTime >=0.50 && responseTime < 0.80)
+ responseString="Keep practising!";
+ if (responseTime >=0.80 && responseTime < 1.1)
+ responseString="Have you been day dreaming again?";
+ if (responseTime >=1.1)
+ responseString="Did you fall asleep?";
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Paul (Poke_Paul@hotmail.com) -->
+<!-- Web Site:  http://www.angelfire.com/ak3/MewHiddenLair -->
+
+
+
+<!-- Begin
+now=new Date;
+x=now.getTime() %32768;
+function Random(min,max) {
+x=(1103515245*x+12345) % 32768;
+return Math.floor(x*(max-min+1)/32768+min);
+}
+var num = new Array;
+num[0] = -1;
+num[1] = 1;
+var ctrsmit = new Array;
+ctrsmit[0] = '<|x_x|>';
+ctrsmit[1] = '<|!_!|>';
+var i = 0, will2live = 0;
+function livewill(j) {
+i += j;
+if (i == 0) tLiphe();
+if (i < 6) stat(mood[3]);
+if (oldstats == mood[3] && i >= 6) stat(mood[0]);
+if (alive == true) {
+barzies(i);
+   }
+}
+var bars='';
+function barzies(num) {
+bars='';
+for (var i=0;i!=num;i++) bars += '';
+document.ctrform.will.value = bars;
+}
+var mood = new Array;
+mood[0] = 'Happy';
+mood[1] = 'Mad';
+mood[2] = 'Ticked-Off';
+mood[3] = 'Suicidal';
+mood[4] = 'Elated';
+var Stat = new Array;
+Stat[0] = 'Alive';
+Stat[1] = 'Pokeball cleaned';
+Stat[2] = 'Pokeball not messy';
+Stat[3] = 'In pain';
+Stat[4] = 'Dead';
+Stat[5] = 'Infected!';
+Stat[6] = 'Disinfected!';
+Stat[7] = 'Not infected';
+Stat[8] = 'Drooling';
+var alive = false, aniID, statID, moodID, liveID, crapID, sickID, illID, normguy = '<(^_^)>';
+function gLiphe() {
+normguy = '<(^_^)>';
+stat('Catching...');
+livewill(15);
+statID = setTimeout("stat(Stat[0])",3500);
+setTimeout("alive = true",3500);
+Animate(false,'(-o-)');
+aniID = setTimeout("Animate(false,'<(o_o)>')",2500);
+aniID = setTimeout("Animate(false,'(O_o)>')",3500);
+aniID = setTimeout("Animate(false,'<(o_o)>')",4300);
+aniID = setTimeout("Animate(false,'<(o_O)')",4500);
+aniID = setTimeout("Animate(false,'<(o_o)>')",5300);
+aniID = setTimeout("Animate(false,'(O_o)>')",5500);
+aniID = setTimeout("Animate(false,normguy)",6500);livewill(15);
+setTimeout("independence()",6501)
+}
+function ID(dep) {
+clearTimeout(aniID);
+clearTimeout(statID);
+clearTimeout(liveID);
+clearTimeout(crapID);
+if (dep == true) clearTimeout(independ);
+}
+var f, t = '          ';
+function Animate(auto,ctrex) {
+if (auto == false) f = ctrex;
+if (auto == true) t = spacey.substring(0,Pos());
+document.ctrform.ctr.value = t + ctrex + poopie();
+}
+var indID, independ;
+function independence() {
+independ = setTimeout("Animate(true,f)",400);
+independ = setTimeout("Animate(true,f)",1200);
+independ = setTimeout("Animate(true,f)",2000);
+independ = setTimeout("Animate(true,f)",2800);
+independ = setTimeout("Animate(true,f)",3600);
+indID = setTimeout("independence()",4000);
+}
+var spacey = '                            ', k, l = 10;
+function Pos() {
+k = Random(0,1)
+if (k == 0) {
+if (t.length < 22) return l++;
+else if (t.length >= 22) Pos()
+}
+if (k == 1) {
+if (t.length > 0) return l--;
+else if (t.length == 0) return l++;
+   }
+}
+var poop = false;
+function poopie() {
+if (poop == true) return " <<poo>> ";
+else return '';
+}
+function eatpoop() {
+if (poop == false) {
+document.ctrform.phood.selectedIndex = 0;
+stat(Stat[2]);
+}
+if (poop == true) {
+ID(true);
+eatpoopie();
+   }
+}
+function eatpoopie() {
+poop = false;
+eat(false,'<<poo>>');
+aniID = setTimeout("Animate(false,'<(¯o>)>')",750);
+if (sick == false) setTimeout("befect()",4000);
+}
+var pasto,healthy,eaty='<(¯o¯)>',eati='<(¯-¯)>',eaty2;
+function eat(health,pasti) {
+healthy = health;
+pasto = pasti;
+if (sick == true) {
+eaty = '<(¡o¡)>';
+eaty2 = '<(¡o)>';
+eati = '<(¡-¡)>';
+}
+else {
+eaty = '<(¯o¯)>';
+eaty2 = '<(¯o)>';
+eati = '<(¯-¯)>';
+}
+Animate(false,eati +'  '+ pasto);
+aniID = setTimeout("Animate(false,eaty +'  '+ pasto)",150);
+aniID = setTimeout("Animate(false,eaty +' '+ pasto)",300);
+aniID = setTimeout("Animate(false,eaty + pasto)",450);
+aniID = setTimeout("Animate(false,eaty2+ pasto)",600);
+setTimeout("phood(healthy)",650);
+}
+function pheed(antipasto) {
+if (antipasto == 0) eat(true,'>o<');
+else if (antipasto == 1) eat(true,'ð');
+else if (antipasto == 2) eatpoop();
+}
+function takeone() {
+ID(true);
+Animate(false,'<(¯=¯)>');
+aniID = setTimeout("Animate(false,'<(>_<)>')",500);
+aniID = setTimeout("Animate(false,'<(¯=¯)>')",1300);
+aniID = setTimeout("Animate(false,'<(>_<)>')",2600);
+aniID = setTimeout("Animate(false,normguy)",4800);
+setTimeout("infekt()",4799);
+setTimeout("poop = true",4799);
+full = 0;
+}
+function cleancage() {
+if (poop == false) stat(Stat[2]);
+if (poop == true) {
+poop = false;
+Animate(false,normguy);
+stat(Stat[1]);
+clearTimeout(sickID);
+ickcount = 0;
+   }
+}
+function tLiphe() {
+normguy = '<(×_×)>';
+poop = false;
+clearTimeout(sickID);
+clearTimeout(illID);
+clearTimeout(indID);
+ID(true);
+sick = false;
+full = 0;
+l = 1;
+i = 0;
+aniID = setTimeout("Animate(false,normguy)",1);
+statID = setTimeout("stat(Stat[4])",1);
+barzies(0);
+bruised = 0;
+poked = false;
+alive = false;
+}
+var oldstats, ick = '';
+function stat(stats) {
+ick = '';
+oldstats = stats;
+if (sick == true) ick = '[sick] ';
+document.ctrform.ctrstatus.value = ick + oldstats;
+}
+var j;
+function smite() {
+if (sick == false) normguy = '<(<¬>_<¬>)>';
+ID(true);
+statID = setTimeout("stat(Stat[3])",10);
+aniID = setTimeout("Animate(false,ctrsmit[Random(0,1)])",10);
+liveID = setTimeout("livewill(num[0])",20);
+aniID = setTimeout("Animate(false,normguy)",1300);
+statID = setTimeout("stat(mood[1])",1300);
+}
+var full = 0;
+function phood(salubrious) {
+if (sick == false) normguy = '<(^_^)>';
+ID(true);
+full++;
+if (salubrious == true) livewill(num[1]);
+aniID = setTimeout("Animate(false,eaty)",200);
+aniID = setTimeout("Animate(false,eati)",700);
+aniID = setTimeout("Animate(false,eaty)",1200);
+aniID = setTimeout("Animate(false,eati)",1700);
+aniID = setTimeout("Animate(false,eaty)",2200);
+aniID = setTimeout("Animate(false,eati)",2700);
+aniID = setTimeout("Animate(false,normguy)",3200);
+if (full == 3) setTimeout("takeone()",6000);
+if (full >= 3) full = 0;
+}
+var sick = false, ickcount = 0;
+function infekt() {
+ickcount++;
+if (ickcount != 2) sickID = setTimeout("infekt()",30000);
+if (ickcount == 2) befect();
+}
+function befect() {
+sick = true;
+setTimeout("stat(Stat[5])",500);
+ickcount = 0;
+besick();
+normguy = '<(¡_¡)>';
+}
+function besick() {
+livewill(num[0]);
+Animate(false,normguy);
+if (sick == true) illID = setTimeout("besick()",2000);
+}
+function dnfekt() {
+if (sick == false) stat(Stat[7]);
+if (sick == true) {
+if (poop == false) clearTimeout(sickID);
+normguy = '<(^_^)>';
+eat(false,'¤');
+sick = false;
+setTimeout("stat(Stat[6])",4000);
+ickcount = 0;
+if (poop == true) infekt();
+   }
+}
+function scratchyscratchy() {
+normguy = '<(^_^)>';
+ID(true);
+statID = setTimeout("stat(Stat[8] +'(scratch scratch)')",710);
+aniID = setTimeout("Animate(false,'¦ p')",200);
+aniID = setTimeout("Animate(false,'¦ P¨')",800);
+aniID = setTimeout("Animate(false,'¦ p ¨')",1400);
+aniID = setTimeout("Animate(false,'¦ P¨¨')",2000);
+aniID = setTimeout("Animate(false,'¦ p ¨¨')",2600);
+aniID = setTimeout("Animate(false,'¦ P¨¨¨')",3400);
+aniID = setTimeout("Animate(false,'¦ p ¨¨¨')",4200);
+aniID = setTimeout("Animate(false,'¦ P ¨¨¨¨')",5000);
+aniID = setTimeout("Animate(false,': P¨')",5600);
+aniID = setTimeout("Animate(false,normguy)",6600);
+statID = setTimeout("stat(mood[0])",6600);
+liveID = setTimeout("livewill(num[1])",6600);
+}
+var bruised = 0, poked = false;
+function poke() {
+if (bruised >= 7) {
+normguy='o_-';
+aniID = setTimeout("Animate(false,'(O_-)')",1);
+liveID = setTimeout("livewill(num[0])",1);
+if (poked == false) statID = setTimeout("stat('You poked his eye out!!')",10);
+aniID = setTimeout("Animate(false,normguy)",300);
+poked = true;
+}
+if (bruised < 7) {
+bruised++;
+normguy = '<(^_^)>'
+aniID = setTimeout("Animate(false,' <(^o^)>')",1);
+liveID = setTimeout("livewill(num[1])",1);
+statID = setTimeout("stat('PikaPi...')",10);
+aniID = setTimeout("Animate(false,normguy)",300);
+   }
+}
+//  End -->
+</script>
+
+<center>
+<form name="ctrform">
+<table BORDER="4" CELLSPACING="5" CELLPADDING="5" bgcolor="red">
+<tr><td><font color="blue"><br>
+<table>
+<tr>
+<th>Life</th>
+<th>Status</th>
+</tr>
+<tr>
+<td><div align="center"><center><p><input type="text" size="20" name="will"></td>
+<td align="center"><input type="text" size="25" name="ctrstatus"></td>
+</tr>
+<tr align="center">
+<th>Pikachu</th>
+<th>Options</th>
+</tr>
+<tr align="center">
+<td><input type="text" name="ctr" size="30" onFocus="if (alive == true) tLiphe()"></td>
+<td><div align="center"><center><p><input type="button" value="Catch a Pikachu"
+onClick="if (alive == false) gLiphe()"></td>
+</tr>
+</table>
+<div align="center"><center>
+<table>
+<tr>
+<td><input type="button" value="Smack" onClick="if (alive == true) smite()"></td></tr><tr>
+<td><input type="button" value="Clean Pokéball" onClick="if (alive == true) cleancage()"></td></tr><tr>
+<td><input type="button" value="Give Medicine" onClick="if (alive == true) dnfekt()"></td>
+</tr>
+<tr>
+<td><input type="button" value="Give Food"
+onClick="if (alive == true) pheed(document.ctrform.phood.selectedIndex)">
+<select name="phood" size="1">
+<option>Rare Candy</option>
+<option>Apple</option>
+</select></td>
+</tr>
+<tr>
+<td><input type="button" value="Scratch" onClick="if (alive == true) scratchyscratchy()"></td>
+</tr>
+<tr>
+<td><input type="button" value="Poke Pikachu" onClick="if (alive == true) poke()"><br></td>
+</tr>
+</table>
+</center>
+</div>
+</td>
+</tr>
+</table>
+</form>
+</center>
+    
+    <SCRIPT LANGUAGE="JavaScript">
+<!--  Begin
+var crlf = "\r\n";
+var x = 1;
+var y = 1;
+var dx = 1;
+var dy = 1;
+var s = "";
+var u = 0;
+var oops_flag = false;
+var score = 0;
+function move1() {
+x += dx;
+if (x > 31) {
+x -= 2 * Math.abs(dx);
+if (dx > 0) dx = -dx;
+}
+if (x <  0) {
+x += 2 * Math.abs(dx);
+if (dx < 0) dx = -dx;
+}
+y += dy;
+if (y > 14) {
+y -= 2 * Math.abs(dy);
+if (dy > 0) dy = -dy;
+if (Math.abs(x - 2*u - 1) > 2) {
+oops_flag = true;
+}
+else {
+score += 1;
+   }
+}
+if (y <  0) { y += 2 * Math.abs(dy);
+if (dy < 0) dy = -dy; }
+}
+function display1() {
+var s1 = ""
+var i,j;
+if (oops_flag) return "Oops!! That one got by you!  Feel free to play again!";
+for (j=0;j<15;j++) {
+for (i=0;i<32;i++) {
+if (j == y && i == x) s1 += "o";
+else s1 += ".";
+}
+s1 += crlf;
+}
+var s2 = "";
+for (i=0;i<16;i++) {
+if (u == i) s2 += "==";
+ else s2 += "..";
+}
+return (s1+s2);
+}
+var timerID = null;
+var timerRunning = false;
+var myform;
+function stopclock (){
+if(timerRunning) clearTimeout(timerID);
+timerRunning = false;
+}
+function startclock (form) {
+myform = form;
+oops_flag = false;
+if (navigator.userAgent.indexOf("Mac") > 2) crlf = "\n";
+stopclock();
+dotime();
+}
+function dotime() {
+move1();
+if (myform != null) {
+myform.text3.value = display1();
+myform.score.value = " " + score;
+}
+if (!oops_flag) timerID = setTimeout("dotime()",200);
+timerRunning = true;
+}
+// End -->
+</SCRIPT>
+    
+    <center><h1>Pong</h1>
+Press start to play.  Move the paddle by putting your cursor on the dashes.
+<p>
+<form name=form>
+<textarea name=text3 rows=16 cols=34 wrap>[game field]</textarea><p>
+<p>
+<a href="" onMouseOver="u =0">\\\</a>
+<a href="" onMouseOver="u =1">\\\</a>
+<a href="" onMouseOver="u =2">\\\</a>
+<a href="" onMouseOver="u =3">\\\</a>
+<a href="" onMouseOver="u =4">\\\</a>
+<a href="" onMouseOver="u =5">\\\</a>
+<a href="" onMouseOver="u =6">\\\</a>
+<a href="" onMouseOver="u =7">\\\</a>
+<a href="" onMouseOver="u =8">\\\</a>
+<a href="" onMouseOver="u =9">\\\</a>
+<a href="" onMouseOver="u = 10">\\\</a>
+<a href="" onMouseOver="u = 11">\\\</a>
+<a href="" onMouseOver="u = 12">\\\</a>
+<a href="" onMouseOver="u = 13">\\\</a>
+<a href="" onMouseOver="u = 14">\\\</a>
+<a href="" onMouseOver="u = 15">\\\</a>
+<a href="" onMouseOver="u = 15">\\\</a><p>
+<input type=button name=button1 value="Start" onCLick="startclock(this.form)">
+Score: <input type=text name=score size=10 value=0>
+</form>
+</center>
+    
+
+</script>
+    
+    <SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Mike McGrath (mike_mcgrath@lineone.net) -->
+<!-- Web Site:  http://home.clara.net/mikem  -->
+
+<!-- Begin
+var gameOver; var cardCount;
+function Shuffle(max){
+var num=Math.random()*max;
+return Math.round(num)+1;
+}
+function getSuit(){
+suit = Shuffle(4);
+if(suit == 1) return "Spades";
+if(suit == 2) return "Clubs";
+if(suit == 3) return "Diamonds";
+else return "Hearts";
+}
+function cardName(card){
+if(card == 1) return "Ace";
+if(card == 11) return "Jack";
+if(card == 12) return "Queen";
+if(card == 13) return "King";
+return "" + card;
+}
+function cardValue(card,strWho){
+if(card == 1) {
+	if(strWho =="You" && document.display.you.value >10){
+	document.display.say2.value=document.display.say2.value+" Low"; return 1;}
+	else return 11; }
+ if(card > 10) return 10;
+return card;
+}
+function PickACard(strWho){
+card = Shuffle(12);
+suit = getSuit();
+if(strWho =="You")
+document.display.say2.value=(cardName(card) + " of " + suit);
+else
+document.display.say1.value=(cardName(card) + " of " + suit);
+return cardValue(card,strWho);
+}
+function NewHand(form){
+if(gameOver !=0)
+{form.say1.value=("Hand in Play!"); form.say2.value=(""); return;}
+else
+{form.dealer.value = 0; form.you.value = 0; cardCount=0;
+form.dealer.value = eval(form.dealer.value) + PickACard("Dealer");
+form.you.value = eval(form.you.value) + PickACard("You");
+gameOver= -1; cardCount+=1;}
+}
+function Dealer(form){
+if (gameOver ==0)
+{form.say1.value=("Deal the Cards!"); form.say2.value=(""); return;}
+else
+if(form.you.value<10)
+{form.say1.value=("Not Below Ten!"); form.say2.value=("Take a Hit!"); return;}
+else
+if (cardCount <2)
+{form.say1.value=("Minimum 2 Cards!"); form.say2.value=("Hit Again!"); return;}
+else
+while(form.dealer.value < 17)
+{form.dealer.value = eval(form.dealer.value) + PickACard("Dealer");}
+}
+function User(form){
+if (gameOver ==0)
+{form.say1.value=("Deal the Cards!"); form.say2.value=(""); return;}
+else
+{cardCount+=1; form.say1.value=("You Get...");
+form.you.value = eval(form.you.value) + PickACard("You");}
+if(form.you.value > 21)
+{form.say1.value=("You Busted!");
+gameOver=0; form.numgames.value=eval(form.numgames.value)-1;}
+}
+function LookAtHands(form){
+if (gameOver ==0 || form.you.value<10 || cardCount <2){return;}
+else
+if(form.dealer.value > 21)
+{form.say1.value=("House Busts!"); form.say2.value=("You Win! $$$$$$");
+gameOver=0; form.numgames.value=eval(form.numgames.value)+1;}
+ else
+if(form.you.value > form.dealer.value)
+{form.say1.value=("You Win!"); form.say2.value=("$$$$$$$$$$$$$$$");
+gameOver=0; form.numgames.value=eval(form.numgames.value)+1;}
+ else
+ if(form.dealer.value == form.you.value)
+{form.say1.value=("Game Tied!"); form.say2.value=("Try Again!");
+gameOver=0; form.numgames.value=eval(form.numgames.value)-1;}
+ else
+{form.say1.value=("House Wins!"); form.say2.value=("Tough Luck!");
+gameOver=0; form.numgames.value=eval(form.numgames.value)-1;}
+}
+function setBj(){
+gameOver=0; cardCount=0;
+document.display.dealer.value="";
+document.display.you.value="";
+document.display.numgames.value="0";
+document.display.say1.value="    Hit 'Deal'";
+document.display.say2.value="    To Start!";
+}
+// End -->
+</script>
+    
+
+
