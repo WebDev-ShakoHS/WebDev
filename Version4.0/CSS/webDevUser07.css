@@ -1,0 +1,62 @@
+body {
+	font-family: "Times", "Times New Roman", monospace;
+	color: #ffffff;
+    
+    background-image: url(stars.jpg)
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2{
+        font-size: 1.1em;
+        text-align: center;
+}
+
+.a {
+	font-family: "Times", "Times New Roman", monospace;
+	color: #003366;
+    
+    margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px ; 
+}
+
+.a tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+.a th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+
+.b {
+    font-family: "Times", "Times New Roman", monospace;
+	color: #003366;
+    
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px ; 
+}
+
+.b tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+.b tr {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
