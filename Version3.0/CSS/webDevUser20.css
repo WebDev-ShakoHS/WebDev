@@ -12,27 +12,28 @@ h2{
         font-size: 1.1em;
 }
 
-table.a {
+.a {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
+    width:"100%"
 	border-collapse: collapse;
 	cellspacing: 0px;
 }
 
-tr.a {
+.a {
 	border: 1px solid #ffffff;
 	text-align: center;
 	background-color:#9FB6CD; 
 }
 
-th.a {
+.a {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
 }
 
-table.a.b {
+.b {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
@@ -40,13 +41,13 @@ table.a.b {
 	cellspacing: 0px;
 }
 
-tr.a.b {
+.b {
 	border: 1px solid #ffffff;
 	text-align: center;
 	background-color:#9FB6CD; 
 }
 
-th.a.b {
+.b {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
