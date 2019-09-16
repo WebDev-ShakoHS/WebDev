@@ -3,7 +3,7 @@
 
 function changeText() {
  document.getElementById("textChange").innerHTML = "Thanks for liking my Webpage";
-    document.body.style.backgroundColor = "#fff222";
+    document.body.style.backgroundColor = "#903b6f";
         document.getElementById('abc').play();
 
 }
