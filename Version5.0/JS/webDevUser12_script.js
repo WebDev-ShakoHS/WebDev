@@ -1,6 +1,6 @@
 function changeText() {
  document.getElementById("textChange").innerHTML = "According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees dont care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Lets shake it up a little. Barry! Breakfast is ready! Coming! Hang on a second. Hello?"
- document.body.style.backgroundColor = "yellow"; 
+ document.body.style.backgroundColor = "salmon"; 
 }
 
 var space = " ";
