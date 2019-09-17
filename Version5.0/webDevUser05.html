@@ -6,6 +6,7 @@
 <head>
 <script src="JS/WebdevUser05_script.js"></script>
 <title> Web Development User #5 </title>
+    <link rel="stylesheet" href="../version6.0/user05/CSS/Dark.css">
 <style> 
    ul li{color: aqua:}
     .emphasis {font-weight: 200;
@@ -15,11 +16,10 @@
     </style>
     <script src="JS/jquery-1.7.1.js"></script>
     <script>
-    $(document).readu(function(){
+    $(document).ready(function(){
     $('lisfirst-child').addClass('emphasis');
     });
     </script>
-    
 </head>
 
 <body>
@@ -44,29 +44,33 @@
         </ul>
     
     </ul>
+    
+    <button data-file="light">Light</button>
+    <button data-file="dark">Dark</button>
+    <script>
+        (function(){ 
+            var link = $('link')
+            $('button').on("hover", function(){
+                var $this = $(this),
+                    stylesheet = $this.data('file');
+                link.attr('href', "../version6.0/user05/CSS/" + stylesheet + '.css');
+                
+                $this
+                    .siblings('button')
+                .removeAttr('disabled')
+                .end()
+                .attr('disabled', 'disabled');
+                
+                              
+            });
+         
+         })();
+    </script>
 <center><p id="textChange"> My name is Yusuf Hendawy ##</p></center>
 <button type="button" onclick="changeText()">Click if you like</button>
 <center> My name is Yusuf</center>
-    <button onclick="playVid()" type="button">Play Video</button>
-<button onclick="pauseVid()" type="button">Pause Video</button><br> 
-
-<video id="myVideo" width="320" height="176">
-  <source src="JOurney.mp4" type="video/mp4">
-  <source src="JOurney.ogg" type="video/ogg">
-  Your browser does not support HTML5 video.
-</video>
-
-<script> 
-var vid = document.getElementById("myVideo"); 
-
-function playVid() { 
-  vid.play(); 
-} 
-
-function pauseVid() { 
-  vid.pause(); 
-} 
-</script> 
+   
+ 
 
 <p>Video courtesy of <a href="https://www.https://www.youtube.com/watch?v=5d8Kc6-xJE0" target="_blank">This Video...</a>.</p>
  
