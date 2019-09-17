@@ -7,7 +7,7 @@
 
 <title> Web Development User #13 </title>
 <script src="JS/WebDevUser13.js"></script>
-    
+<link rel="stylesheet" href="CSS/User13css/day.css">  
 <style>
     li{
         color: indianred;
@@ -36,11 +36,36 @@
     <li> Walmart</li>
     <li>iTunes</li>
     </ul>
-    <button>Day</button>
-    <button>Night</button>
+    
+    <button data-file="day">Day</button>
+    <button data-file="night">Night</button>
 
     <script src="JS/jquery-1.7.1.js"></script>
 
+    <script>
+    (function(){
+        
+        var link = $('link');
+        $('button').on('click', function() {
+            var $this = $(this),
+                stylesheet = $this.data('file');
+            
+            link.attr('href','CSS/User13css/' + stylesheet + '.css');
+            
+            $this
+                .siblings('button')
+                    .removeAttr('disabled')
+                    .end()
+                    .attr('disabled', 'disabled');
+            
+            
+        });
+        
+        
+        
+    })();
+    
+    </script>
   <script>
     $("ul li").addClass('emphasis');
       $("h1").addClass('titlemania');
