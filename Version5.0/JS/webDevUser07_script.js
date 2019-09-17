@@ -1,6 +1,5 @@
 function changeText() {
- document.getElementById("textChange").innerHTML = "Thanks for liking my Webpage" ;
-    document.body.style.backgroundColor = "blue";    
+ document.getElementById("textChange").innerHTML = "Thanks for liking my Webpage" ;   
 }
 
 var space = " ";
@@ -17,5 +16,5 @@ window.setTimeout("Scroll()", 0);
 Scroll();
 
 function disappear() { 
-    document.getElementById("mario").style.display="none"; 
+    document.getElementById("pointer").style.display="none"; 
 }
