@@ -1,7 +1,6 @@
 function changeText() {
  document.getElementById("textChange").innerHTML="Thanks for liking my Webpage";
-document.body.style.backgroundColor = "blue";
-
+document.body.style.backgroundColor = "green";
 }
 
 var space = " ";
