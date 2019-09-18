@@ -781,17 +781,17 @@ function remark(responseTime)
 {
  var responseString="";
  if (responseTime < 0.20)
- responseString="Well done!";
+ responseString="You get a Gold Star";
  if (responseTime >= 0.20 && responseTime < 0.30)
- responseString="Nice!";
+ responseString="GGs";
  if (responseTime >=0.40 && responseTime < 0.50)
- responseString="Could be better...";
+ responseString="You're pretty good:)";
  if (responseTime >=0.50 && responseTime < 0.80)
- responseString="Keep practising!";
+ responseString="Just Keep Trying, Its Okey";
  if (responseTime >=0.80 && responseTime < 1.1)
- responseString="Have you been day dreaming again?";
+ responseString="Do You Even Know How to Play the Game?";
  if (responseTime >=1.1)
- responseString="Did you fall asleep?";
+ responseString="You're Adopted";
  return responseString;
 }
 
