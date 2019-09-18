@@ -1,18 +1,72 @@
 <html lang="en">
 <!--Version 5.0
-	Name:
-	Date Completed:
+	Name:Shawn Walsh
+	Date Completed:9/13/2019
  -->
 <head>
-
+<script src="JS/WebDevUser21_Script.js"></script>
 <title> Web Development User #21 </title>
-
+    <link rel="stylesheet" href="../Version6.0/user21/CSS/Video Games.css">
+<style>
+    ul li{color: red;}
+    .emphasis {font-weight: bold;}
+    .games {color: blue;}
+    .heading3 {color: purple;}
+    </style>    
+    <script src="JS/jquery-1.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('li:first-child').addClass('emphasis');
+        });
+    </script>
 </head>
 
 <body>
-
-<center> My name is User #21</center>
-
+    <ul>
+        <li>Welcome</li>
+        <li>To</li>
+        <li>Version 5</li>
+    </ul>
+    <h3>Video Game Rating</h3>
+    <ol>
+        <li>Dark Souls 3</li>
+        <li>League Of Legends</li>
+        <li>Bloodborne</li>
+        <li>Overwatch</li>
+        <li>Middle Earth: Shadow Of War</li>
+    </ol>
+<center> My name is Shawn Walsh</center>
+<center><p id="textChange"> My name is Shawn Walsh</p></center>
+<!--
+<button type="button" onclick="changeText()">Click if you like</button>
+-->    
+    
+<button data-file="Video Games">Video Games</button>
+<button data-file="Developers">Developers</button>
+    
+    <script>
+        $('h3').addClass('heading3');
+        $('ol li').addClass('games');
+    </script>
+    <script>
+    (function() {
+        var Link = $('Link');
+        $('button').on('click', function(){
+            var $this = $(this),
+                stylesheet = $this.data('file');
+            
+            Link.attr('href', '../Version6.0/user21/CSS/' + stylesheet + '.css');
+            
+            $this
+                .siblings('button')
+                    .removeAttr('disabled')
+                    .end()
+                    .attr('disabled', 'disabled');
+        });
+    })();
+    </script>
+    
+    
 </body>
 
 </html>
