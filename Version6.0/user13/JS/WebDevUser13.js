@@ -16,7 +16,7 @@ function changeText() {
 
 var space = " ";
 var pos = 0;
-var msg = "User 19";
+var msg = "Freegiftcards.com  ";
 
 function Scroll(){
 document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
