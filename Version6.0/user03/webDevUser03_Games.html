@@ -1,0 +1,1025 @@
+<html lang="en">
+<!--Version 4.0 
+	Name: Gavin Fee
+	Date Completed: 9/12/2019
+ -->
+<head>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- 
+var display_text  = "Sadly, Denmark is an unlikely place "
++ "to find gray elephants and orange kangaroos!  "
++ "     There are more cool stuff like this "
++ "throughout my site!  Check 'em out!!!!!!!!!!"
+var display_text; var place; var meter; 
+var out = " "; var place = 50;
+function scroll_text(){
+for (meter = 0; meter < place; meter++){
+out += " "
+}
+if (place >= 0)
+out += display_text
+else out = display_text.substring(-place,display_text.length)
+document.scroll_form.field.value = out
+out = " "
+place--
+if (place < -(display_text.length)){
+place = 50
+}
+setTimeout('scroll_text()',100)
+}
+// -->
+</SCRIPT> 
+<SCRIPT LANGUAGE="JAVASCRIPT">
+<!-- hide this script tag's contents from old browsers
+function lifetimer(){            
+
+        today = new Date()          
+
+        BirthDay = new Date(document.live.age.value)         
+
+        timeold = (today.getTime() - BirthDay.getTime());         
+
+        sectimeold = timeold / 1000;         
+
+        secondsold = Math.floor(sectimeold);         
+
+        msPerDay = 24 * 60 * 60 * 1000 ;         
+
+        timeold = (today.getTime() - BirthDay.getTime());         
+
+        e_daysold = timeold / msPerDay;         
+
+        daysold = Math.floor(e_daysold);         
+
+        e_hrsold = (e_daysold - daysold)*24;         
+
+        hrsold = Math.floor(e_hrsold);         
+
+        minsold = Math.floor((e_hrsold - hrsold)*60);           
+
+        document.live.time1.value = daysold              
+
+        document.live.time2.value = hrsold               
+
+        document.live.time3.value = minsold              
+
+        window.status = "Well at the moment you are " + secondsold + "............ seconds old.";         
+
+        timerID = setTimeout("lifetimer()",1000)   
+
+}        
+// -- done hiding from old browsers -->
+
+</script>
+<!-- your webpage info goes here -->
+
+
+    <title>Games</title>
+
+        
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link href="CSS/WebDevUser_3/gfee3.css" rel="stylesheet" type="text/css"> 
+
+        
+
+</head>
+
+<body>
+
+
+<!-- webpage content goes here in the body -->
+
+
+        <div id="page">
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink">Games</a></h1>
+
+                </div>
+
+                <div id="nav">
+
+                        <ul>
+
+                                <li><a href="webDevUser03.html">Home</a></li>
+
+                                <li><a href="webDevUser03_AboutMe.html">About</a></li>
+
+                                <li><a href="webDevUser03_Games.html">Games</a></li>
+                            
+                            <li><a href="webDevUser03_FAQ.html">FAQ</a></li>
+                            
+                            
+
+                        </ul>        
+
+                </div>
+
+                <div id="content">
+
+                        <h2>Games</h2>
+
+                        
+
+                </div>
+
+                <div id="footer">
+
+                        <p>
+
+                                Webpage made by <a href="/" target="_blank">Gavin Fee</a>
+
+                        </p>
+
+                </div>
+
+        </div>
+    <center><script language="JavaScript">
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.20)
+ responseString="Well done!";
+ if (responseTime >= 0.20 && responseTime < 0.30)
+ responseString="Nice!";
+ if (responseTime >=0.40 && responseTime < 0.50)
+ responseString="Could be better...";
+ if (responseTime >=0.50 && responseTime < 0.80)
+ responseString="Keep practising!";
+ if (responseTime >=0.80 && responseTime < 1.1)
+ responseString="Have you been day dreaming again?";
+ if (responseTime >=1.1)
+ responseString="Did you fall asleep?";
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+    <center><h1>Test your Response time!</h1></center>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+        </form></center>
+    <h1>Tic Tac Toe</h1>
+   <center> <SCRIPT>
+
+/*
+Code Written by Cory Fogliani (Email: cory@ijustdontcare.com)
+Testers: Cory Fogliani, Chris Gordon
+Featured on JavaScript Kit (http://javascriptkit.com)
+For this and over 400+ free scripts, visit http://javascriptkit.com
+*/
+
+//if IE4/NS6, apply style
+if (document.all||document.getElementById){
+document.write('<style>.tictac{')
+document.write('width:50px;height:50px;')
+document.write('}</style>')
+}
+
+var sqr1
+var sqr2
+var sqr3
+var sqr4
+var sqr5
+var sqr6
+var sqr7
+var sqr8
+var sqr9
+var sqr1T = 0
+var sqr2T = 0
+var sqr3T = 0
+var sqr4T = 0
+var sqr5T = 0
+var sqr6T = 0
+var sqr7T = 0
+var sqr8T = 0
+var sqr9T = 0
+var moveCount = 0
+var turn = 0
+var mode = 1
+
+function vari()
+{
+sqr1 = document.tic.sqr1.value
+sqr2 = document.tic.sqr2.value
+sqr3 = document.tic.sqr3.value
+sqr4 = document.tic.sqr4.value
+sqr5 = document.tic.sqr5.value
+sqr6 = document.tic.sqr6.value
+sqr7 = document.tic.sqr7.value
+sqr8 = document.tic.sqr8.value
+sqr9 = document.tic.sqr9.value
+}
+function check()
+{
+  if(sqr1 == " X " && sqr2 == " X " && sqr3 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  } 
+  else if(sqr4 == " X " && sqr5 == " X " && sqr6 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  } 
+  else if(sqr7 == " X " && sqr8 == " X " && sqr9 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else if(sqr1 == " X " && sqr5 == " X " && sqr9 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else if(sqr1 == " X " && sqr4 == " X " && sqr7 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else if(sqr2 == " X " && sqr5 == " X " && sqr8 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else if(sqr3 == " X " && sqr6 == " X " && sqr9 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else if(sqr1 == " X " && sqr5 == " X " && sqr9 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else if(sqr3 == " X " && sqr5 == " X " && sqr7 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else
+  {
+    winCheck()
+    check2()
+    drawCheck()  
+  } 
+}
+
+function check2()
+{
+  vari()
+  drawCheck()
+  if(sqr1 == " O " && sqr2 == " O " && sqr3 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  } 
+  else if(sqr4 == " O " && sqr5 == " O " && sqr6 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  } 
+  else if(sqr7 == " O " && sqr8 == " O " && sqr9 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr4 == " O " && sqr7 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr2 == " O " && sqr5 == " O " && sqr8 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr3 == " O " && sqr6 == " O " && sqr9 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr3 == " O " && sqr5 == " O " && sqr7 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+}
+
+function player1Check()
+{
+  if(sqr1 == " X " && sqr2 == " X " && sqr3 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  } 
+  else if(sqr4 == " X " && sqr5 == " X " && sqr6 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  } 
+  else if(sqr7 == " X " && sqr8 == " X " && sqr9 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else if(sqr1 == " X " && sqr5 == " X " && sqr9 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else if(sqr1 == " X " && sqr4 == " X " && sqr7 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else if(sqr2 == " X " && sqr5 == " X " && sqr8 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else if(sqr3 == " X " && sqr6 == " X " && sqr9 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else if(sqr1 == " X " && sqr5 == " X " && sqr9 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else if(sqr3 == " X " && sqr5 == " X " && sqr7 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else
+  {
+    player2Check()
+    drawCheck()  
+  } 
+}
+
+function player2Check()
+{
+  vari()
+  drawCheck()
+  if(sqr1 == " O " && sqr2 == " O " && sqr3 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  } 
+  else if(sqr4 == " O " && sqr5 == " O " && sqr6 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  } 
+  else if(sqr7 == " O " && sqr8 == " O " && sqr9 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr4 == " O " && sqr7 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+  else if(sqr2 == " O " && sqr5 == " O " && sqr8 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+  else if(sqr3 == " O " && sqr6 == " O " && sqr9 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+  else if(sqr3 == " O " && sqr5 == " O " && sqr7 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+}
+
+function drawCheck()
+{
+  vari()
+  moveCount = sqr1T + sqr2T + sqr3T + sqr4T + sqr5T + sqr6T + sqr7T + sqr8T + sqr9T 
+  if(moveCount == 9)
+  {
+    reset()
+    alert("Draw") 
+  }
+}
+
+function winCheck()
+{
+  check2()
+  if(sqr1 == " O " && sqr2 == " O " && sqr3T == 0 && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    sqr3T = 1;
+    turn = 0;
+  }
+  else if(sqr2 == " O " && sqr3 == " O " && sqr1T == 0 && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    sqr1T = 1;
+    turn = 0;
+  }
+  else if(sqr4 == " O " && sqr5 == " O " && sqr6T == 0 && turn == 1)
+  {
+    document.tic.sqr6.value = " O "
+    sqr6T = 1;
+    turn = 0;
+  }
+  else if(sqr5 == " O " && sqr6 == " O " && sqr4T == 0 && turn == 1)
+  {
+    document.tic.sqr4.value = " O "
+    sqr4T = 1;
+    turn = 0;
+  }
+  else if(sqr7 == " O " && sqr8 == " O " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr8 == " O " && sqr9 == " O " && sqr7T == 0 && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    sqr7T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr5 == " O " && sqr9 == " O " && sqr1T == 0 && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    sqr1T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " O " && sqr5 == " O " && sqr7T == 0 && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    sqr7T = 1;
+    turn = 0;
+  }
+  else if(sqr7 == " O " && sqr5 == " O " && sqr3T == 0 && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    sqr3T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " O " && sqr3 == " O " && sqr2T == 0 && turn == 1)
+  {
+    document.tic.sqr2.value = " O "
+    sqr2T = 1;
+    turn = 0;
+  }
+  else if(sqr4 == " O " && sqr6 == " O " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else if(sqr7 == " O " && sqr9 == " O " && sqr8T == 0 && turn == 1)
+  {
+    document.tic.sqr8.value = " O "
+    sqr8T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " O " && sqr7 == " O " && sqr4T == 0 && turn == 1)
+  {
+    document.tic.sqr4.value = " O "
+    sqr4T = 1;
+    turn = 0;
+  }
+  else if(sqr2 == " O " && sqr8 == " O " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " O " && sqr9 == " O " && sqr6T == 0 && turn == 1)
+  {
+    document.tic.sqr6.value = " O "
+    sqr6T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr4 == " O " && sqr7 == " O " && sqr1T == 0 && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    sqr1T = 1;
+    turn = 0;
+  }
+  else if(sqr5 == " O " && sqr8 == " O " && sqr2T == 0 && turn == 1)
+  {
+    document.tic.sqr2.value = " O "
+    sqr2T = 1;
+    turn = 0;
+  }
+  else if(sqr6 == " O " && sqr9 == " O " && sqr3T == 0 && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    sqr3T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " O " && sqr4 == " O " && sqr7T == 0 && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    sqr7T = 1;
+    turn = 0;
+  }
+  else if(sqr2 == " O " && sqr5 == " O " && sqr8T == 0 && turn == 1)
+  {
+    document.tic.sqr8.value = " O "
+    sqr8T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " O " && sqr6 == " O " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " O " && sqr9 == " O " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " O " && sqr7 == " O " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else
+  {
+    computer()
+  }
+  check2()
+}
+function computer()
+{
+  check2()
+  if(sqr1 == " X " && sqr2 == " X " && sqr3T == 0 && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    sqr3T = 1;
+    turn = 0;
+  }
+  else if(sqr2 == " X " && sqr3 == " X " && sqr1T == 0 && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    sqr1T = 1;
+    turn = 0;
+  }
+  else if(sqr4 == " X " && sqr5 == " X " && sqr6T == 0 && turn == 1)
+  {
+    document.tic.sqr6.value = " O "
+    sqr6T = 1;
+    turn = 0;
+  }
+  else if(sqr5 == " X " && sqr6 == " X " && sqr4T == 0 && turn == 1)
+  {
+    document.tic.sqr4.value = " O "
+    sqr4T = 1;
+    turn = 0;
+  }
+  else if(sqr7 == " X " && sqr8 == " X " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr8 == " X " && sqr9 == " X " && sqr7T == 0 && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    sqr7T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " X " && sqr5 == " X " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr5 == " X " && sqr9 == " X " && sqr1T == 0 && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    sqr1T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " X " && sqr5 == " X " && sqr7T == 0 && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    sqr7T = 1;
+    turn = 0;
+  }
+  else if(sqr7 == " X " && sqr5 == " X " && sqr3T == 0 && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    sqr3T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " X " && sqr3 == " X " && sqr2T == 0 && turn == 1)
+  {
+    document.tic.sqr2.value = " O "
+    sqr2T = 1;
+    turn = 0;
+  }
+  else if(sqr4 == " X " && sqr6 == " X " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else if(sqr7 == " X " && sqr9 == " X " && sqr8T == 0 && turn == 1)
+  {
+    document.tic.sqr8.value = " O "
+    sqr8T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " X " && sqr7 == " X " && sqr4T == 0 && turn == 1)
+  {
+    document.tic.sqr4.value = " O "
+    sqr4T = 1;
+    turn = 0;
+  }
+  else if(sqr2 == " X " && sqr8 == " X " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " X " && sqr9 == " X " && sqr6T == 0 && turn == 1)
+  {
+    document.tic.sqr6.value = " O "
+    sqr6T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " X " && sqr5 == " X " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr4 == " X " && sqr7 == " X " && sqr1T == 0 && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    sqr1T = 1;
+    turn = 0;
+  }
+  else if(sqr5 == " X " && sqr8 == " X " && sqr2T == 0 && turn == 1)
+  {
+    document.tic.sqr2.value = " O "
+    sqr2T = 1;
+    turn = 0;
+  }
+  else if(sqr6 == " X " && sqr9 == " X " && sqr3T == 0 && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    sqr3T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " X " && sqr4 == " X " && sqr7T == 0 && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    sqr7T = 1;
+    turn = 0;
+  }
+  else if(sqr2 == " X " && sqr5 == " X " && sqr8T == 0 && turn == 1)
+  {
+    document.tic.sqr8.value = " O "
+    sqr8T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " X " && sqr6 == " X " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " X " && sqr9 == " X " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " X " && sqr7 == " X " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else
+  {
+    AI()
+  }
+  check2()
+}
+
+function AI()
+{
+  vari()
+  if(document.tic.sqr5.value == "     " && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    turn = 0
+    sqr5T = 1
+  }
+  else if(document.tic.sqr1.value == "     " && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    turn = 0
+    sqr1T = 1
+  }
+  else if(document.tic.sqr9.value == "     " && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    turn = 0
+    sqr9T = 1
+  }
+  else if(document.tic.sqr6.value == "     " && turn == 1)
+  {
+    document.tic.sqr6.value = " O "
+    turn = 0
+    sqr6T = 1
+  }
+  else if(document.tic.sqr2.value == "     " && turn == 1)
+  {
+    document.tic.sqr2.value = " O "
+    turn = 0
+    sqr2T = 1
+  }
+  else if(document.tic.sqr8.value == "     " && turn == 1)
+  {
+    document.tic.sqr8.value = " O "
+    turn = 0
+    sqr8T = 1
+  }
+  else if(document.tic.sqr3.value == "     " && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    turn = 0
+    sqr3T = 1
+  }
+  else if(document.tic.sqr7.value == "     " && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    turn = 0
+    sqr7T = 1
+  }
+  else if(document.tic.sqr4.value == "     " && turn == 1)
+  {
+    document.tic.sqr4.value = " O "
+    turn = 0
+    sqr4T = 1
+  }
+  check2()
+}
+
+function reset()
+{
+  document.tic.sqr1.value = "     "
+  document.tic.sqr2.value = "     "
+  document.tic.sqr3.value = "     "
+  document.tic.sqr4.value = "     "
+  document.tic.sqr5.value = "     "
+  document.tic.sqr6.value = "     "
+  document.tic.sqr7.value = "     "
+  document.tic.sqr8.value = "     "
+  document.tic.sqr9.value = "     "
+  sqr1T = 0
+  sqr2T = 0
+  sqr3T = 0
+  sqr4T = 0
+  sqr5T = 0
+  sqr6T = 0
+  sqr7T = 0
+  sqr8T = 0
+  sqr9T = 0
+  vari()
+  turn = 0
+  moveCount = 0
+}
+
+function resetter()
+{
+  reset()
+}
+</SCRIPT>
+
+<FORM NAME="tic" method="post">
+<INPUT TYPE="button" NAME="sqr1" class="tictac" value="     " onClick="if(document.tic.sqr1.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr1.value = ' X '; sqr1T = 1; turn = 1; vari(); check();} else if(document.tic.sqr1.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr1.value = ' X '; sqr1T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr1.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr1.value = ' O '; sqr1T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr2" class="tictac" value="     " onClick="if(document.tic.sqr2.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr2.value = ' X '; sqr2T = 1; turn = 1; vari(); check();} else if(document.tic.sqr2.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr2.value = ' X '; sqr2T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr2.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr2.value = ' O '; sqr2T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr3" class="tictac" value="     " onClick="if(document.tic.sqr3.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr3.value = ' X '; sqr3T = 1; turn = 1; vari(); check();} else if(document.tic.sqr3.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr3.value = ' X '; sqr3T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr3.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr3.value = ' O '; sqr3T = 1; turn = 1; vari(); player1Check()} drawCheck()"><br />
+<INPUT TYPE="button" NAME="sqr4" class="tictac" value="     " onClick="if(document.tic.sqr4.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr4.value = ' X '; sqr4T = 1; turn = 1; vari(); check();} else if(document.tic.sqr4.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr4.value = ' X '; sqr4T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr4.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr4.value = ' O '; sqr4T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr5" class="tictac" value="     " onClick="if(document.tic.sqr5.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr5.value = ' X '; sqr5T = 1; turn = 1; vari(); check();} else if(document.tic.sqr5.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr5.value = ' X '; sqr5T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr5.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr5.value = ' O '; sqr5T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr6" class="tictac" value="     " onClick="if(document.tic.sqr6.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr6.value = ' X '; sqr6T = 1; turn = 1; vari(); check();} else if(document.tic.sqr6.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr6.value = ' X '; sqr6T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr6.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr6.value = ' O '; sqr6T = 1; turn = 1; vari(); player1Check()} drawCheck()"><br />
+<INPUT TYPE="button" NAME="sqr7" class="tictac" value="     " onClick="if(document.tic.sqr7.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr7.value = ' X '; sqr7T = 1; turn = 1; vari(); check();} else if(document.tic.sqr7.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr7.value = ' X '; sqr7T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr7.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr7.value = ' O '; sqr7T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr8" class="tictac" value="     " onClick="if(document.tic.sqr8.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr8.value = ' X '; sqr8T = 1; turn = 1; vari(); check();} else if(document.tic.sqr8.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr8.value = ' X '; sqr8T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr8.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr8.value = ' O '; sqr8T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr9" class="tictac" value="     " onClick="if(document.tic.sqr9.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr9.value = ' X '; sqr9T = 1; turn = 1; vari(); check();} else if(document.tic.sqr9.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr9.value = ' X '; sqr9T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr9.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr9.value = ' O '; sqr9T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+    </form></center>
+    <center><h1>Guessing Game</h1></center>
+    <CENTER>
+<TT>Please follow the instructions below carefully. Go through each step first before pressing the below button, or you'll only ruin everything!
+<P>
+<OL>
+<LI>Think of a number between 1 and 10.<P>
+<LI>Multiply the number by 9.<P>
+<LI>Add the digits of your result.<P>
+<LI>Subtract 5 from your new number.<P>
+<LI>Find the letter that corresponds to your number, if 1 = A, 2 = B, 3 = C, etc.<P>
+<LI>Think of a country that begins with your letter.<P>
+<LI>Write down the name of that country.<P>
+<LI>Think of an animal beginning with the second letter of your country.<P>
+<LI>Think of the color of that animal.<P>
+<LI>Write down the animal and its color.<P>
+<LI>Think of an animal that begins with the last letter of your country.<P>
+<LI>Think of a fruit that begins with the last letter of this second animal.<P>
+<LI>Write down the fruit and the animal.<P>
+</OL>
+<P>
+<P>
+When you are finished, touch analyze...
+<FORM name="scroll_form">
+<input type="button" name="button_one" value="Analyze..." onClick="scroll_text()">
+<input type="text" name="field" size="50"><p>
+</form>
+</CENTER>
+<center><h1>How Long Have you Lived?</h1></center>
+    <center><FORM name="live">
+
+Please enter your age::<INPUT TYPE="text" NAME="age" VALUE="" SIZE=20> 
+Example: (november 1,1966) <BR><BR><BR>
+<INPUT TYPE="button" NAME="start" VALUE="Start Timer" ONCLICK="lifetimer(this.form)">
+
+<INPUT TYPE="reset" NAME="resetb" VALUE="Reset Age">
+
+<BR><BR>
+
+<TABLE border=0>
+<TR><TD>You are days old:</TD>
+
+<TD>
+
+<INPUT TYPE="text" NAME="time1" VALUE="" size=8>
+
+</TD>
+
+</TR>
+
+<TR><TD>Plus hours old:</TD>
+
+<TD>
+
+<INPUT TYPE="text" NAME="time2" VALUE="" size=8>
+
+</TD>
+
+</TR>
+
+<TR><TD>Plus minutes old:</TD>
+
+<TD><INPUT TYPE="text" NAME="time3" VALUE="" size=8></TD>
+
+</TR>
+</TABLE>
+    </FORM></center>
+</body>
+
+</html>
+
+<title> Web Development User #3 </title>
+
+</head>
+
+<body>
+<button type="button"
+style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
+Click Me!</button>
+<center> my name is Gavin Fee</center>
+
+</body>
+
+</html>

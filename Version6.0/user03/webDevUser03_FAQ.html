@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <title>FAQ</title>
+	<meta charset=utf-8>
+	<title>jQuery Events 201</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul>
+
+                                <li><a href="webDevUser03.html">Home</a></li>
+
+                                <li><a href="webDevUser03_AboutMe.html">About</a></li>
+
+                            <li><a href="webDevUser03_Games.html">Games</a></li>
+                            
+                            <li><a href="webDevUser03_FAQ.html">FAQ</a></li>
+                            
+                        
+                            
+
+                        </ul>     
+<link href="CSS/WebDevUser_3/gfee3.css" rel="stylesheet" type="text/css">    
+<center><dl class="faq">
+	<dt class="faq">What are your hours?</dt>
+	<dd class="faq">We are open 24/7.</dd>
+	<dt class="faq">Why Are you so cool?</dt>
+	<dd class="faq">Because i'm the the second coming of Jesus Christ himself.</dd>
+	<dt class="faq">Why is this website the greatest thing ive set my eyes on?</dt>
+	<dd class="faq">Becasue I made it :)</dd>
+	<dt class="faq">Who is currently the Worst NFL Player?</dt>
+	<dd class="faq">Mitchell Trubisky</dd>
+	<dt class="faq">Whos going to win super bowl 54?</dt>
+	<dd class="faq">Thee Chicago Bears</dd>
+    </dl></center>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left: '250px'});
+  });
+});
+</script> 
+</head>
+<body>
+
+<button>Start Animation</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>
