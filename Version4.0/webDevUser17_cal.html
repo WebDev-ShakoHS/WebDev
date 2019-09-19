@@ -5,18 +5,20 @@
  -->
 <head>
     <script src="JS/webDevUser17_script.js"> </script>>
-    
     <link href="CSS/WebDevUser17.css" rel="stylesheet" type="text/css"> 
-    
     <title>LOLCAT CLOCK</title>
-    
   <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
-    
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
-    
-  <link rel="stylesheet" type="text/css" href="style.css">
-    
-    <link rel="stylesheet" href="CSS/Nightmode.css">
+<style>
+    body.cal {
+          font-family: Roboto;
+  background: #ffff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #8E0E00, #1F1C18);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #fffff, #1F1C18);
+    }
+    </style>
     
         <script src="JS/jquery-1.7.1.js"> </script>>
     
@@ -37,39 +39,16 @@
 </head>
 
 <body>
-    
+    <body class="cal">
+        
     <h1><center>My name is David Tesar</center></h1>
     <h1><center><p id="textChange"> My name is Luke Skywalker</p></center></h1>
     <button type="button" onclick="changeText()">LIKE</button>
     <div id="container">
-    <button data-file="day"> DAY MODE </button>
-        
-        <button data-file="night">NIGHT MODE</button>
-        
-        <script>(function() {
-            var link = $('link');
-                $('button').on('click', function() {
-                    var $this = $(this),
-                    stylesheet = $this.data('file');
-                    
-                link.attr('href', stylesheet + '.css');
-                    
-                    $this
-                    .siblings('button')
-                    .removeAttr('disabled')
-                    .end()
-                    .attr('disabled', 'disabled');
-            });
-                
-            })()</script>
-        
-        
-        
-        
-        
-        
-        
-<h1>Tip Calculator</h1>
+    <button> DAY MODE
+    </button><button>NIGHT MODE
+    </button>
+  <h1>Tip Calculator</h1>
   <div id="calculator">
 
 
@@ -211,17 +190,16 @@
     
     
 <!---JQuery starts here--->   
-
+    </body>
     <ul>
         
-<html>
-<body>
-
-    <h2 style="color: blueviolet ;">Vikings</h2>
-
-</body>
-</html>
-        
+<style>
+    <body>
+    {
+        color: blueviolet;
+        border-left-width: medium
+        Vikings
+    }
         <li>Patriots</li>
         <li>Miami</li>
         <li>Ravens</li>
@@ -229,19 +207,13 @@
         <h2><li>Packers</li></h2>
         <li>KU</li>
         <li>Harvard</li>
-<html>
-<body>
-
-    <h2 style="color: whitesmoke;">Yale</h2>
-
-</body>
-</html>
-        
+        <li>Yale</li>
     </ul>
     <script>
-    var lis = jQuery('ul li').addClass('emphasis').addClass('h2').addClass('Vikings');
+    var lis = jQuery('ul li').addClass('emphasis').addClass('h2');
     console.log(lis)
     </script>
+    <li><a href="webDevUser17.html">BACK</a></li>
 </body>
 
 </html>
