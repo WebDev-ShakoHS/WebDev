@@ -1,6 +1,12 @@
 body {
 	font-family: "Georgia", "Comic Sans MS", fantasy;
-	color: #000000;
+	color: black;
+    background-image: url("http://www.maassenphoto.com/Wallpapers/desktop/MorganMaassen_Wallpaper_Desktop_3.jpg");
+}
+
+.clock{
+   : center;
+    
 }
 
 h1 {
@@ -63,3 +69,58 @@ table.tablea th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+li{
+    color:white;
+}
+
+
+
+#faq page
+
+body.faq{
+    width: 500px;
+    text-align: center;
+    background-image: url("http://www.maassenphoto.com/Wallpapers/desktop/MorganMaassen_Wallpaper_Desktop_3.jpg");
+}
+.faq li{
+    text-align: center;
+}
+
+.faq h1{
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+
+.faq dl{
+    color: white;
+    text-align: center;
+    
+}
+
+
+.faq dd{
+    margin: 0;
+    color: black;
+    text-align: center;
+    
+    padding: 1em 0;
+    
+}
+
+.faq dt{
+    margin: auto
+    cursor: pointer;
+    
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+    background: black;
+    border-bottom: 1px solid blue;
+    border-top: 1px solid white;
+       
+}
+
+dt:first-child{border-top: none;}
+dt:last-child{border-bottom: none;}
