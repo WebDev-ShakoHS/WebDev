@@ -1,0 +1,49 @@
+
+body{
+    width: 500px;
+    margin: auto;
+    background-image: url("http://www.maassenphoto.com/Wallpapers/desktop/MorganMaassen_Wallpaper_Desktop_3.jpg");
+  
+}
+
+li{
+    text-align: center;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+
+dl{
+    color: white;
+    text-align: center;
+    
+}
+
+
+dd{
+    margin: 0;
+    color: black;
+    text-align: center;
+    
+    padding: 1em 0;
+    
+}
+
+dt{
+    margin: auto
+    cursor: pointer;
+    
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+    background: black;
+    border-bottom: 1px solid blue;
+    border-top: 1px solid white;
+       
+}
+
+dt:first-child{border-top: none;}
+dt:last-child{border-bottom: none;}
