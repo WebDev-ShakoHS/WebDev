@@ -14,25 +14,10 @@
     .emphasis {color: fuchsia; font-weight:bold;}
     .hey {color: mediumorchid;}
     </style>
-
-    <script src="JS/jquery-1.7.1.js"></script>
-<script>
-    $(document).ready(function() {
-    jQuery('li:first-child').addClass('emphasis');
-    $('h1').addClass('hey');
-    });
-    
-    </script>
     
 </head>
 
 <body>
-
-    <ul>
-        <li><b>yeehaw</b></li>
-    <li><b>yeenaw</b></li>
-    <li><b>yeeyaw</b></li>
-    </ul>
     
     <center><h1>hey...... um..... what if..... o___o haha just kidding.... unless...??????</h1></center>
     
@@ -47,11 +32,11 @@
     <script>
         (function() {
         var link = $('link');
-        $('button').on('hover', function() {
+        $('button').on('click', function() {
             var $this = $(this),
                 stylesheet = $this.data('file');
             
-            link.attr('href', '../Version6.0/user12/CSS/' + stylesheet + '.css');
+            link.attr('href', 'user12/CSS/' + stylesheet + '.css');
             
             $this
                 .siblings('button')
