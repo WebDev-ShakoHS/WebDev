@@ -1,10 +1,13 @@
 body {
-    background: salmon;
-    color: white;
-    font-family: "Comic Sans MS", fantasy;
-    width: 800px;
+	font-family: "Comic Sans MS", fantasy;
+	color: #C11313;
+    width: 500px;
     margin: auto;
     text-align: center;
+}
+
+dl {
+    
 }
 
 dd {
@@ -18,8 +21,8 @@ dt {
     font-weight: bold;
     font-size: 1.3em;
     line-height; 2em;
-    background: #C11313;
-    border-bottom: 1px solid #400C06;
+    background: #FFDFDF;
+    border-bottom: 1px solid #f2bdbd;
     border-top: 1px solid white;
 }
 
