@@ -22,7 +22,7 @@ h2{
   padding: 4px;
 }
 
-.a tr:nth-child(even){background-color: #f2f2f2;}
+.a tr:nth-child(even){background-color: #c3c3c3;}
 
 .a tr:nth-child(odd){background-color: #deb887;}
 
