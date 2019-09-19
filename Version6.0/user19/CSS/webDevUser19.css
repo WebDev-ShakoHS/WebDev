@@ -3,6 +3,44 @@ body {
 	color: 	#2E8B57;
     	background-color: 	#F0F8FF;
 }
+.sb body {
+    
+width: 200px
+text-align: center;
+}
+
+dl {
+
+}
+
+dd {
+margin: 0;
+
+padding: 1em 0;
+}
+
+dt{
+cursor: pointer;
+
+
+font-weight: bold;
+font-size: 1.5em;
+line-height: 2em;
+background: #e3e3e3;
+border-bottom: 1px solid #c5c5c5;
+border-top: 1px sold white;
+    
+    	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+     width: 50%;
+    
+}
+
+dt:first-child { border-top: none; }
+dt:nth-last-child { border-bottom: none; 
+}
+
 
 h1 {
 	font-size: 1.3em;
