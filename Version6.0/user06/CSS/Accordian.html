@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>jQuery Events 201</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<dl>
+	<dt>Im the fresh prince of bell air</dt>
+	<dd>Long Live The Prince.</dd>
+	<dt>Im the fresh prince of bell air</dt>
+	<dd>Long Live The Prince.</dd>
+	<dt>Im the fresh prince of bell air</dt>
+	<dd>Long Live The Prince.</dd>
+	<dt>Im the fresh prince of bell air</dt>
+	<dd>Long Live The Prince.</dd>
+	<dt>Im the fresh prince of bell air</dt>
+	<dd>Long Live The Prince.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>
