@@ -56,3 +56,36 @@ h2{
 	color: #ffffff;
 	background-color: #0B2265;
 }
+
+.faq body {
+width: 500px;
+
+margin: auto;
+text-align: center;
+}
+
+.faq dl {
+
+}
+
+.faq dd {
+margin: 0;
+
+padding: 1em 0;
+}
+
+.faq dt {
+cursor: pointer;
+    width: 50%;
+
+
+font-weight: bold;
+font-size: 1.5em;
+line-height: 2em;
+background: #e3e3e3;
+border-bottom: 1px solid #c5c5c5;
+border-top: 1px sold white;
+}
+
+faq:first-child { border-top: none; }
+faq:nth-last-child { border-bottom: none; }

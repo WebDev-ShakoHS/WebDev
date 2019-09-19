@@ -4,7 +4,7 @@ document.body.style.backgroundColor = "grey";
 }
 var space = " ";
 var pos = 0;
-var msg = "Gavin Fee Version 5.0";
+var msg = "Gavin Fee Version 6.0";
 
 function Scroll(){
 document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
