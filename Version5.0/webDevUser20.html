@@ -6,13 +6,78 @@
 <head>
 
 <title> Web Development User #20 </title>
+    	
+    <style> 
+        li{color:red;} 
+        .emphasis {color : aqua; font-weight: bold}
+    </style>
+    
+<script src="JS/webDevUser20_script.js"></script>
+    
+    <link rel='stylesheet' href='../Version6.0/user20/CSS/light.css'>
 
-</head>
 
+        </head>
+    
 <body>
+    
+    <h3>Best Milk with Cereal</h3>
+    <ol>
+        <li>2% reduced fat milk</li>
+        <li>Fairlife milk</li>
+        <li>1% low fat milk</li>
+        <li>1% chocolate milk</li>
+        
+    
+    </ol>
+    
+    
+    
+    
+    <ul><li>hello</li></ul>
+    <center> My name is User #20</center>
+<center><p id="textChange"> My name is Kidus Tsegaye</p></center>
+    
+    <button type="button" onclick="changeText()">Click to go sicko mode</button> 
+<audio id="f" src="images/ReesesPuffsRap.mp3" preload="auto"></audio>
+    <button onclick="coco()">Reeses Puffs</button>
 
-<center> My name is User #20</center>
+    <ul>
+        <li>helloo</li>
+        <li>helloo2</li>
+        <li>helloo3</li>
+    </ul>
+    
+    <script src = "JS/jquery-1.7.1.js"> </script>
+    <script>
+        $(document).ready(function(){
+            $('li:first-child').addClass('emphasis');
+            })
+        </script>
+    
+    <button data-file='dark'>Dark Mode</button>
+    <button data-file='light'>Light Mode</button>
+    
+    <script>
+        (function() {
+            var link = $('link');
+            $('button').click(function() {
+                var $this = $(this),
+                    stylesheet = $this.data('file');
+                link.attr('href','../Version6.0/user20/CSS/'+ stylesheet + '.css')
+                $this
+                    .siblings('button')
+                        .removeAttr('disabled')
+                        .end()
+                        .attr('disabled','disabled')
+        
+            })
+        })();
+        </script>
 
+    
+    
+    
 </body>
 
 </html>
