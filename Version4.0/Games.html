@@ -1,0 +1,274 @@
+<html lang="en">
+<!--Version 2.0 
+	Name:Oliver
+	Date Completed:9/12/2019
+ -->
+<head>
+<!-- your webpage info goes here -->
+
+
+    <title>About</title>
+    
+
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link href="CSS/WebDevUser10.css" rel="stylesheet" type="text/css"> 
+
+        
+
+</head>
+
+<body>
+
+<!-- webpage content goes here in the body -->
+
+    
+        <div id="page">
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink"About this website</a></h1>
+
+                </div>
+
+                <div id="nav">
+
+                        <ul>
+
+                                <li><a href="webDevUser10.html">Home</a></li>
+
+                                <li><a href="#/about.html">About</a></li>
+
+                                <li><a href="#/contact.html">Contact</a></li>
+
+                        </ul>        
+                    
+ <h1 class="ml1">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters">Welcome to my games website</span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+        <script language="JavaScript">
+            
+        // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml1 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml1 .letter',
+    scale: [0.3,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 600,
+    delay: (el, i) => 70 * (i+1)
+  }).add({
+    targets: '.ml1 .line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700,
+    offset: '-=875',
+    delay: (el, i, l) => 80 * (l - i)
+  }).add({
+    targets: '.ml1',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.20)
+ responseString="Well done!";
+ if (responseTime >= 0.20 && responseTime < 0.30)
+ responseString="Nice!";
+ if (responseTime >=0.40 && responseTime < 0.50)
+ responseString="Could be better...";
+ if (responseTime >=0.50 && responseTime < 0.80)
+ responseString="Keep practising!";
+ if (responseTime >=0.80 && responseTime < 1.1)
+ responseString="Have you been day dreaming again?";
+ if (responseTime >=1.1)
+ responseString="Did you fall asleep?";
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+                
+
+              
+
+        </div>
+
+
+<title> Web Development User #10 </title>
+
+</head>
+    <SCRIPT LANGUAGE="JavaScript">
+<!-- ;
+// numberguess is by Lancer - written 4 Jan 1999
+// lancer@kp.planet.gen.nz
+
+var guessme=Math.round(Math.random()*(99)+1);
+var speech='Guess my number (from 1 to 100)';
+
+function process(mystery) {
+var guess=document.forms.guessquiz.guess.value;
+var speech='"'+guess+ '" does not make sense to me.';
+document.forms.guessquiz.guess.value='';
+
+if (guess==mystery)
+{
+document.forms.guessquiz.prompt.value='Congratulations! '+mystery+' is correct!';
+alert ('Well done - the mystery number is '+mystery+'! \n\nPress this button to reload the page for another game.');
+speech='';
+document.location=document.location;
+}
+
+if (mystery<guess)
+{
+speech='Less than '+ guess;
+}
+
+if (mystery>guess)
+{
+speech='Greater than '+ guess;
+}
+
+if (guess=='')
+{
+speech='You didn\'t guess anything!'
+}
+
+document.forms.guessquiz.prompt.value=speech; document.forms.guessquiz.guess.focus();
+
+}
+
+// end hide -->
+</SCRIPT>
+
+<FORM onSubmit="" NAME="guessquiz">
+<CENTER>
+<TABLE ALIGN="CENTER" BGCOLOR="#888888" BORDER="3" CELLPADDING="5">
+<TR>
+<TD BGCOLOR="#004080">
+<FONT COLOR="#ffffff" FACE="Arial"><B>GUESS MY NUMBER (1 - 100)</B></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<CENTER>
+<INPUT TYPE="text" NAME="prompt" SIZE="31" MAXLENGTH="40" VALUE="Guess my number (from 1 to 100)"><BR>
+<INPUT TYPE="text" NAME="guess" SIZE="3" MAXLENGTH="3" VALUE="">
+<INPUT TYPE="button" VALUE="Guess" onClick='process(guessme)'>
+</CENTER>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</FORM>
+
+<body>
+
+
+</body>
+
+</html>

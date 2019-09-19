@@ -1,17 +1,138 @@
 <html lang="en">
 <!--Version 5.0
-	Name:
-	Date Completed:
+	Name: Michelle Ta
+	Date Completed: 9/13/19
  -->
+
 <head>
-
-<title> Web Development User #16 </title>
-
+<script src="JS/WebDevUser16_script.js"></script>
+<title>Piano for People With Small Hands</title>
+<link href="CSS/WebDevUser16.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../Version6.0/user16/CSS/WebDevUser16_Day.css">
+    
+    <style>
+        li{color: pink;}
+        .emphasis {font-style: italic; font-weight: bold; color: darkmagenta;}
+    </style>
+    
+    <script src="JS/jquery-1.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("li:first-child").addClass("emphasis");
+        });
+    </script>
 </head>
 
 <body>
+<center><p id="textChange"> Welcome to Piano™</p></center>
 
-<center> My name is User #16</center>
+<div id="page">
+<div id="logo">
+
+<h1><a href="/" id="logoLink">Piano™</a></h1>
+
+<button data-file="WebDevUser16_Day">Day</button>
+<button data-file="WebDevUser16_Night">Night</button>
+
+
+<script>
+
+(function() {
+    var link = $("link");
+    $("button").on("click", function() {
+        var $this = $(this),
+            stylesheet = $this.data("file");
+        
+        link.attr("href", "../Version6.0/user16/CSS/" + stylesheet + ".css");
+        
+        $this
+            .siblings("button")
+            .removeAttr("disabled")
+            .end()
+            .attr("disabled", "disabled");
+    });
+})();
+
+</script>
+
+</div>
+
+<div id="nav">
+
+        <ul>
+
+        <li><a href="#/home.html">Home</a></li>
+
+        <li><a href="WebDevUser16_AboutMe.html">About</a></li>
+
+        <li><a href="WebDevUser16_Games.html">Games</a></li>
+
+        </ul>        
+
+</div>
+
+                <div id="content">
+
+                        <h2>Songs That Slap (But Not for the Hands)</h2> 
+
+                        <p>
+
+                        <table>
+                        <tr><th>Rank</th><th>Composers</th><th>Song</th></tr>
+                        <tr><td>1</td><td>Liszt</td><td>La Campanella</td></tr>
+                        <tr><td>2</td><td>Rachmaninoff</td><td>Prelude in c# minor</td></tr>
+                        <tr><td>3</td><td>Beethoven</td><td>Sonata in c# minor</td></tr>
+                        <tr><td>4</td><td>Mendelssohn</td><td>Rondo Capriccioso Op. 14</td></tr>
+                        <tr><td>5</td><td>Bach</td><td>Italian Concerto in F Major</td></tr>
+                        </table>
+
+                        </p>
+                    
+                        <h3>Top 5 Songs</h3>
+                    
+                        <p>
+
+                        <table>
+                        <tr><th>Rank</th><th>Composers</th><th>Song</th></tr>
+                        <tr><td>1</td><td>Chopin</td><td>Nocturne in Eb Major</td></tr>
+                        <tr><td>2</td><td>Debussy</td><td>Pagodes</td></tr>
+                        <tr><td>3</td><td>Khachaturian</td><td>Toccata</td></tr>
+                        <tr><td>4</td><td>Schubert</td><td>Impromptu Gb Major</td></tr>
+                        <tr><td>5</td><td>Ravel</td><td>Sonatine</td></tr>
+                        </table>
+                    
+                        <center><img src="images/user16/user16_piano.jpg" width="500" height="300" alt="Picture of Piano Keyboard"></center>
+
+                        </p>
+            
+                        <h4> List of Composers I Would Fight</h4>
+                            <ul>
+                                <li>Franz Liszt</li>
+                                <li>Sergei Rachmaninoff</li>
+                                <li>Ludwig van Beethoven (on occasion)</li>
+                            </ul>
+    
+                        <h5>ASHdkjasdkjasdakjd</h5>
+                        <h6>ahskdahjsdkhashdkajh</h6>
+                    
+
+</div>
+
+            <div id="footer">
+
+                    <p>
+
+                    Webpage made by <a href="/" target="_blank">Michelle Ta</a>
+
+                    </p>
+
+            </div>
+
+</div>
+
+<button type="button"
+style="background-color:mediumpurple;margin-left:auto;margin-right:93%;display:block;margin-top:0%;margin-bottom:0%;" onClick="alert('Practice for once in your life');" >
+Click For A Surprise :D</button>
 
 </body>
 
