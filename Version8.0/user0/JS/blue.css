@@ -1,0 +1,5 @@
+td, th {
+  border: 1px solid Orange;
+  text-align: left;
+  padding: 8px;
+}

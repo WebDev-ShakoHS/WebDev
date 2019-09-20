@@ -3,15 +3,127 @@
 	Name:
 	Date Completed:
  -->
+
+    <title>Gamer</title>
+
+        
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link rel="stylesheet" href="style.css" type="text/css" />
+<button type="button" onclick="myFunction()">Set background color</button>
+ 
+<script>
+function myFunction() {
+  document.body.style.backgroundColor = "blue";
+}
+
+
+    
+</script>
+    <style>li{color:red;</style>
+   
+
+ <div id="page">
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink"></a>my fovier Game</h1>
+
+                </div>
+
+                <div id="nav">
+
+                        <ul>
+
+                                <li><a href="#/home.html">Home</a></li>
+
+                                <li><a href="#/FAQ.html">FAQ</a></li>
+
+                                <li><a href="#/contact.html">Contact</a></li>
+
+                        </ul>        
+
+                </div>
+
+                <div id="content">
+
+                        <h2>Gamer Home</h2>
+
+                        <!doctype html>
+<html>
 <head>
-
-<title> Web Development User #4 </title>
-
+	<meta charset=utf-8>
+	<title>jQuery Events 201</title>
+	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+tr:nth-child(even) {
+  background-color: SlateBlue;
+}
+</style> 
+    
+
+<dl>
+	<dt>what kind of games do you like?</dt>
+	<dd>chess</dd>
+	<dt>how longe it take to play</dt>
+	<dd> 2to3 hours.</dd>
+	<dt>how many time you try before you won?</dt>
+	<dd>5 time.</dd>
+	<dt>how do feel when you lost the start?</dt>
+	<dd>borning</dd>
+	<dt>how do it feel when you won?</dt>
+	<dd>good.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+
+ 
+
+
+
+<center> My name is User #1</center>
+
+<!-- webpage content goes here in the body -->
+
+
+        <div id="page">
+
 
 <center> My name is User #4</center>
+
 
 </body>
 

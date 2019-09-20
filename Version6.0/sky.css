@@ -1,0 +1,26 @@
+body{
+background:yellow
+}color:blue
+
+width: 500px
+    margin: center;
+    }
+dl{
+    
+    }
+dd{
+    margin:0;
+    padding:1em 0;
+    }
+    dt{
+    cursor:pointer;
+    
+    foint-weight: bold;
+    foimt-size:1.5em;
+    line-height:2em
+    background:#offff;
+    border-bottom:1px solid#c5c5c5;
+    border-top:1px solid white;
+    }
+    dt:first-child{border-top:none;}
+    dt:nth-last-child{border-botton:none;}
