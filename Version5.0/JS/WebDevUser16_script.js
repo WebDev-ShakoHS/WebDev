@@ -18,7 +18,7 @@ Scroll();
 
 
 {
-//var name = prompt ('What Name Have You Adopted As Of Late?','');
-//var color = prompt ('What Color Do You Desire?','');
-//document.write("<CENTER><FONT FACE=Lucida Console, Monaco COLOR="+color+" SIZE=5>Welcome to Piano, "+name+".</FONT><HR NOSHADE WIDTH=450></CENTER><P>")
+var name = prompt ('What Do You Call Yourself?','');
+var color = prompt ('What Color Do You Desire?','');
+document.write("<CENTER><FONT FACE=Lucida Console, Monaco COLOR="+color+" SIZE=5>Welcome to Piano, "+name+".</FONT><HR NOSHADE WIDTH=450></CENTER><P>")
 }
