@@ -1,18 +1,77 @@
 <html lang="en">
 <!--Version 5.0
-	Name:
-	Date Completed:
+	Name: Ben S
+	Date Completed: 9-13-19
  -->
 <head>
 
 <title> Web Development User #13 </title>
-
+<script src="JS/WebDevUser13.js"></script>
+<link rel="stylesheet" href="CSS/User13css/day.css">  
+<style>
+    li{
+        color: indianred;
+    }
+    .emphasis {
+        color: aquamarine;
+    }
+    .titlemania{
+        color: #003b6f;
+        font-family: cursive;
+        text-align: center
+    }
+    </style>
 </head>
 
 <body>
+    <h1>Hola, Como estas</h1>
+<audio id="abc" src="JS/mjh.mp3" preload="auto"></audio>
 
-<center> My name is User #13</center>
+<center><p id="textChange"> My name is Ben</p></center>
+<button type="button" onclick="changeText()">Click if you like</button>
+    <br>
+    <ul>
+    <li> Target</li>
+    <li>Amazon</li>
+    <li> Walmart</li>
+    <li>iTunes</li>
+    </ul>
+    
+    <button data-file="day">Day</button>
+    <button data-file="night">Night</button>
 
+    <script src="JS/jquery-1.7.1.js"></script>
+
+    <script>
+    (function(){
+        
+        var link = $('link');
+        $('button').on('click', function() {
+            var $this = $(this),
+                stylesheet = $this.data('file');
+            
+            link.attr('href','CSS/User13css/' + stylesheet + '.css');
+            
+            $this
+                .siblings('button')
+                    .removeAttr('disabled')
+                    .end()
+                    .attr('disabled', 'disabled');
+            
+            
+        });
+        
+        
+        
+    })();
+    
+    </script>
+  <script>
+    $("ul li").addClass('emphasis');
+      $("h1").addClass('titlemania');
+    </script>  
+    
+    
 </body>
 
 </html>
