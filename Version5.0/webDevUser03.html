@@ -1,0 +1,69 @@
+<html lang="en">
+<!--Version 5.0
+	Name:Gavin Fee
+	Date Completed:9/13/19
+ -->
+<head>
+
+<title> Web Development User #3 </title>
+    <link rel="stylesheet" href="../Version6.0/user03/CSS/Night_User03.css">
+
+          
+    <style>
+         ol{ color: red;}
+        .emphasis { color: green;}
+        .heading {color: lightskyblue;}
+        .text {color: black;}
+    </style>
+    <button>day</button>
+    <button>night</button>
+    <script src="JS/jquery-1.7.1.js"></script>
+    <script src="JS/webDevUser03_script.js"></script>
+</head>
+
+<body>
+
+    <ul>
+    <li>hello</li>
+    <li>hello 2</li>
+    <li>hello 3</li>
+    </ul>
+    
+    <h2>Top 5 Worst NFL Players</h2>
+    <ol>
+    <li>Mitch Trubisky</li>
+    <li>Mitch Trubisky</li>
+    <li>Mitch Trubisky</li>
+    <li>Mitch Trubisky</li>
+    <li>Mitch Trubisky</li>
+    <li>Cody Parkey</li>
+        </ol>
+    
+<center><p id="textChange">Gavin Fee</p></center>
+<button type="button" onclick="changeText()">Click if you like</button>
+     <script>
+    var lis = jQuery ('ul li').addClass('emphasis');
+        $('h2').addClass('heading')
+        $('p').addClass('text')
+    console.log(lis);
+    </script>
+    <script>
+    (function() {
+        var link = $('link');
+        $('button').on('click', function() {
+            var $this = $(this),
+                stylesheet = $this.data('file');
+            
+            link.attr('href ,'../Version6.0/user03/CSS'+
+                      stylesheet + '.css');
+                      
+                      $this
+                      .siblings('button')
+            .removeAttr('disabled')
+            .end()
+            .attr('disabled', 'disabled');
+        });
+    })();
+    </script>
+</body>
+</html>
