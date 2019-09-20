@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>jQuery Events 201</title>
+       <link href="CSS/webDevUser19.css" rel="stylesheet" type="text/css"> 
+    
+<li><a href="webDevuser19.html">Home</a></li>
+
+                                <li><a href="webDevuser19_AboutMe.html">About</a></li>
+
+                                <li><a href="webDevuser19_Games.html">Games</a></li>
+                            
+                                 <li><a href="webDevuser19_SBWinners.html">SB Winners</a></li>
+
+</head>
+<body>
+<h1>Past 10 Super Bowl Champions</h1>
+    <center><img src="images/superbowl52.jpeg" width="300" hight="210" alt="Michael Thomas"></center>
+<center>
+    <dl class="sb">
+	<dt .sb>Super Bowl LIII</dt>
+	<dd .sb>New England Patriots</dd>
+	<dt .sb>Super Bowl LII</dt>
+	<dd .sb>Philadelphia Eagles</dd>
+	<dt .sb>Super Bowl 50</dt>
+	<dd .sb>Denver Broncos</dd>
+	<dt .sb>Super Bowl XLIX</dt>
+	<dd .sb>New England Patriots</dd>
+	<dt .sb>Super Bowl XLVIII</dt>
+	<dd .sb>Seattle Seahawks</dd>
+    <dt .sb>Super Bowl XLVII</dt>
+	<dd .sb>Baltimore Ravens</dd>
+	<dt .sb>Super Bowl XLVI </dt>
+	<dd .sb>New York Giants</dd>
+	<dt .sb>Super Bowl XLV</dt>
+	<dd .sb>Green Bay Packers</dd>
+	<dt .sb>Super Bowl XLIV</dt>
+	<dd .sb>New Orleans Saints</dd>
+	<dt .sb>Super Bowl XLIII</dt>
+	<dd .sb>Pittsburgh Steelers</dd>
+</dl></center>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+    
+    
+    
+    
+    </script>
+ <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({
+      left: '250px',
+      opacity: '0.5',
+      height: '150px',
+      width: '150px'
+    });
+  });
+});
+</script> 
+</head>
+<body>
+
+<button>Start Animation</button>
+
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>

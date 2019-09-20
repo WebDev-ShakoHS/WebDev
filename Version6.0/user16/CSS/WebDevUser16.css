@@ -1,0 +1,31 @@
+body {
+	font-family: "Palatino", "URW", fantasy;
+	color: #583884;
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: left;
+}
+
+        font-size: 1.1em;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#AA91CE; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #866AAF;

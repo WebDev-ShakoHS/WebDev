@@ -1,0 +1,109 @@
+<html>
+<head>
+	<Title>Guide To Dark Souls 3</Title>
+    <link rel="Stylesheet" href="CSS/WebDevUser21_Guide.css">
+    <link rel="stylesheet" href="CSS/Dark Mode.css">
+    <script>
+        $(document).ready(function(){
+            $('li:first-child').addClass('emphasis');
+        });
+    </script>
+    <script src="JS/jquery-1.7.1.js"></script>
+</head>
+<body>
+            <li><a href="webDevUser21.html">Home</a></li>
+
+            <li><a href="WebDevUser21_AboutMe.html">About Me</a></li>
+
+            <li><a href="WebDevUser21_Games.html">Games</a></li>
+    
+<button data-file="Dark Mode">Dark Mode</button>
+<button data-file="Light Mode">Light Mode</button>
+    <script>
+        
+    (function() {
+        var Link = $('Link');
+        $('button').on('click', function(){
+            var $this = $(this),
+                stylesheet = $this.data('file');
+            
+            Link.attr('href', 'CSS/' + stylesheet + '.css');
+            
+            $this
+                .siblings('button')
+                    .removeAttr('disabled')
+                    .end()
+                    .attr('disabled', 'disabled');
+        });
+    })();
+    </script>
+    <script type="text/javascript">
+$(document).ready(function(){
+  var section = new Array('span','.section2');  
+  section = section.join(',');
+  
+  // Reset Font Size
+  var originalFontSize = $(section).css('font-size');
+  $(".resetFont").click(function(){
+    $(section).css('font-size', originalFontSize);  
+  });
+
+  // Increase Font Size
+  $(".increaseFont").click(function(){
+    var currentFontSize = $(section).css('font-size');
+    var currentFontSizeNum = parseFloat(currentFontSize, 10);
+    var newFontSize = currentFontSizeNum*1.2;
+    $(section).css('font-size', newFontSize);
+    return false;
+  });
+
+  // Decrease Font Size
+  $(".decreaseFont").click(function(){
+    var currentFontSize = $(section).css('font-size');
+    var currentFontSizeNum = parseFloat(currentFontSize, 10);
+    var newFontSize = currentFontSizeNum*0.8;
+    $(section).css('font-size', newFontSize);
+    return false;
+  });
+});
+</script>
+    <a class="increaseFont">+</a> | <a class="decreaseFont">-</a>
+| <a class="resetFont">=</a>
+
+<span>Change Font Size</span>
+<dl class="section2">
+	<dt>Best Weapons</dt>
+	<dd>There are a huge variety of weapons in this game and it would probably be very overwhelming to list them all so I will state some of the best weapons. If you like using strength you can get the Exile Greatsword pretty early. If you want to use dexterity you can use the twin sellswords or you can try the uchigatana which is very early. If you like spells a good early one is the farron flash sword and another good one would be great soul arrow. Also something to keep in mind is that there are shields which are helpful if you are struggling with the game but you can also use them to parry which can result in either huge damage, or can lose you a fight.</dd>
+	<dt>Armor</dt>
+	<dd>Armor is not very important in Dark Souls and is mostly cosmetic, however if you want to maximize your survivability, every armor has different resistances, such as some making you take less bleed or poison damage.</dd>
+	<dt>Bosses</dt>
+	<dd>There are tons of bosses in this game and some will be harder for others and it largely depends on what type of character you are playing. For example, if you are playing a mage, High Lord Wolnir will be difficult even though he is probably the second or third easiest boss in the game. The best stat to go for to beat bosses is either strength or intelligence because spells make most bosses easy and strength can chunk most bosses health. If you go for dexterity the game in its entirity will be more difficult but if you get good at it, it will be more enjoyable.</dd>
+	<dt>Areas</dt>
+	<dd>Again, there are a lot of areas some are obnoxious and some are very difficult. One area to watch out for is the Catacombs of Carthus which comes right after Abyss Watchers. This zone is difficult because there are ledges to fall off and almost every enemy can kill you in an instant. Though most of the time, the enemies will die quickly.</dd>
+	<dt>Consumables/Items</dt>
+	<dd>Two important items are estus shards and undead bone shards. Estus shards make it so you have more estus flasks to heal with and undead bone shards make it so each use of an estus flask heals more. There are many consumables that help in fights too such as firebombs or black firebombs, which can be thrown for little damage late in the game but very good damage early in the game. Two items that not many people pay attention are the green blossom and the bludding green blossom which both boost stamina recovery speed which is extremely useful in boss fights. </dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>

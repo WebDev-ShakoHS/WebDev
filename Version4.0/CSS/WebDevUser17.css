@@ -1,0 +1,99 @@
+body {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
+
+}
+body.FAQ{
+ font-family: Roboto;
+  font color:aliceblue; 
+  background: #8E0E00;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #8E0E00, #1F1C18);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #FFF, #1F1C18);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  image-resolution: snap;   
+}
+h1.FAQ {
+  background: #1F030C;
+  color: white;
+  margin: 0;
+  padding: 10px 100px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2{
+        font-size: 1.1em;
+}
+
+table.a {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+    width: 100%;  
+	border-collapse: collapse;
+}
+
+.a tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+.a th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+table.b {
+	margin-left: auto;
+	margin-right: auto;
+    width: 100%; 
+	text-align: left;
+	border-collapse: collapse;
+}
+
+.b tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#aaaaaa; 
+}
+
+.b th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #ed3742;
+}
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto;
+  background: #AD133A;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  color: white;
+}
+
+button:hover {
+  background: #4c2827;
+  border-bottom-color: #111;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>FAQ</title>
+	<link rel="stylesheet" href="CSS/webDevUser20.css">
+</head>
+<body>
+
+         <div id="nav">
+
+                        <ul>
+
+                                <li><a href="webDevUser20.html">Home</a></li>
+
+                                <li><a href="webDevUser20_aboutMe.html">About Me</a></li>
+
+                                <li><a href="webDevUser20_Games.html">Game</a></li>
+                                <li><a href="webDevUser20_faq.html">FAQ</a></li>
+                            
+
+                        </ul>        
+
+                </div>
+    
+<dl class=faq>
+	<dt>What is cereal?</dt>
+	<dd>Cereal is a traditional breakfast food made from processed cereal grains</dd>
+	<dt>What do you eat cereal with?</dt>
+	<dd>Milk</dd>
+	<dt>Where can I get cereal</dt>
+	<dd>Any local grocery store</dd>
+	<dt>Whens the best time to eat cereal?</dt>
+	<dd>Anytime</dd>
+	<dt>Who can eat cereal?</dt>
+	<dd>Anyone</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+    <center><button type="button" onclick="myFunction()">Change Color</button></center>
+
+<script>
+function myFunction()
+{   
+document.body.style.backgroundColor= '#85e3b5';
+}
+</script>
+    
+
+</body>
+</html>
