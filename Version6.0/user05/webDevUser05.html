@@ -1,18 +1,46 @@
-<html lang="en">
-<!--Version 6.0
-	Name:
-	Date Completed:
- -->
+<!doctype html>
+<html>
 <head>
-
-<title> Web Development User #5 </title>
-
+	<meta charset=utf-8>
+	<title>jQuery Events 201</title>
+        <link href="CSS/Version6.css" rel="stylesheet" type="text/css">
+  
 </head>
-
 <body>
 
-<center> My name is User #5</center>
+<dl>
+	<dt>How Do I Visit the Gampe page?</dt>
+	<dd> Click the game button.</dd>
+	<dt>Is There a secret to the webpage?</dt>
+	<dd>Why would I tell you it is a secret.</dd>
+	<dt>What is the purpose of this webpage?</dt>
+	<dd>Just to exist.</dd>
+	<dt>Is it about fish?</dt>
+	<dd>Sure why not.</dd>
+	<dt>What is 2 + 2?</dt>
+	<dd>4.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
 
 </body>
-
 </html>
