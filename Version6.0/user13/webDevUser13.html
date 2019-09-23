@@ -83,7 +83,7 @@ Target                    </h3>
  <tr><td>Itunes</td><td>32 billion</td></tr>
  </table>
 <br>
-                    <img src="User13/giftcardsgalore.jpg" width="25%"  alt="Picture of a Wall of many giftcards">
+                    <div class="container">  <img src="User13/giftcardsgalore.jpg" width="25%"  alt="Picture of a Wall of many giftcards"> </div>
 
 
                     <h2>Giftcards Available</h2>
@@ -105,7 +105,7 @@ Just enter your SSN  <input type="number" id="SSN" name="SSN"
                 </div>
 
                 <div id="footer">
-
+<button>Clickth Me to breakth thy Website!</button>
 <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
 
 
@@ -113,7 +113,11 @@ Just enter your SSN  <input type="number" id="SSN" name="SSN"
 <script> 
 $(document).ready(function(){
   $("button").click(function(){
-    $("div").animate({left: '250px'});
+    var div = $("div");
+    div.animate({height: '300px', opacity: '0.4'}, "slow");
+    div.animate({width: '300px', opacity: '0.8'}, "slow");
+    div.animate({height: '100px', opacity: '0.4'}, "slow");
+    div.animate({width: '100px', opacity: '0.8'}, "slow");
   });
 });
 </script> 
@@ -144,7 +148,29 @@ $(document).ready(function(){
   <script>
       $("h1").addClass('titlemania');
     </script>  
-    
+    <script>(function(){
+        $('div.container').delegate('img', 'click', function(){
+            console.log('You bloody clicked it! Great Job!');
+            $(this).clone().appendTo('.container');
+            
+            
+            
+            
+            
+            
+        });    
+            
+            
+            
+            
+            
+            
+            
+            
+        })();
+                    
+                    
+                    </script>
     
 </body>
 
