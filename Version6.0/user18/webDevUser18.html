@@ -19,7 +19,7 @@
 
  
 
-        <link href="CSS/WebDevUser18.CSS" rel="stylesheet" type="text/css">
+        <link href="CSS/day.css" rel="stylesheet" type="text/css">
 
         
 
@@ -27,9 +27,28 @@
 
 <body>
 
+ <button data-file="day">Day</button>
+    <button data-file="night">Night</button>
 
-<!-- webpage content goes here in the body -->
+    <script src="JS/jquery-1.7.1.js"></script>
 
+<script>
+(function() {    
+    var link = $('link');
+    $('button').on('click', function() {
+      var $this = $(this),
+         stylesheet = $this.data('file');
+   
+    link.attr('href', 'CSS/'+ stylesheet + '.css');
+   
+    $this
+         .siblings('button')
+         .removeAttr('disabled')
+         .end()
+         .attr('disabled', 'disabled');
+});
+    })();
+    </script>
 
         <div id="page">
 
@@ -59,6 +78,7 @@
                 <div id="content">
 
                 </div>
+                    
 <h2>3 Biggest Scams in all of History That I Could Find</h2>
  <table class=a>
  <tr><th>Rank</th><th>Scammer</th><th>Profit</th></tr>
@@ -75,7 +95,7 @@
  <tr><td>3</td><td>Jeffery David</td><td>Insert Type Here</td></tr>
             </table>
 
-<img src="images/User18/ABC.png" alt="Ponzi Scheme" height= "200">
+<img src="ABC.png" alt="Ponzi Scheme" height= "200">
                     <h4> Charles Ponzi</h4>
 <p> He is the lowest of the profiters on the list. Despite this he has developed a method that many today use. I put him on the list instead of the people who used his idea and made more than him. Basically he get's a couple people to pay him to start a new "buisness" or make a new "product" and then tells them they will get some money back after a while, but not the full amount. Then he gets some more people. Specifically more than the last group. He gets these guys into his "product." Then he takes the money from them, pays the people from earlier, and keeps all the extra. He then continues this process untill he runs out of people to convice into helping this "buisness." At this point it is most likley that he will take his cash and run.</p>
 <h4> Abe Alizadeh</h4> 
