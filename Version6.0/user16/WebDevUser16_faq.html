@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>FAQ</title>
+	<link href="CSS/WebDevUser16.css" rel="stylesheet" >
+</head>
+
+<body class = "FAQ">
+<dl>
+	<dt>How long have you played piano?</dt>
+	<dd>11 years. I started in the summer of 2008.</dd>
+	<dt>How do I practice more?</dt>
+	<dd>I'm sure you've been told to log your practice hours or set aside a specific time slot to practice, and while those practices do help, it really comes down to personal enjoyment. Pick songs you WANT to learn.</dd>
+	<dt>How long should I practice?</dt>
+	<dd>It depends. For beginners, I recommend anywhere from 25 to 30 minutes. As for more advanced students, I'd suggest 1 to 2 hours (with breaks).</dd>
+	<dt>What should I practice?</dt>
+	<dd>Scales. For the love of God, Blease practice your scales. If you are unwilling to practice anything else, practice your scales.</dd>
+	<dt>What is the hardest part of playing piano?</dt>
+	<dd>The hardest part of piano, I believe, is interpretation. Different musical eras require nuances that can make or break a song. And the worst part? It's not something you can learn directly from a book.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>

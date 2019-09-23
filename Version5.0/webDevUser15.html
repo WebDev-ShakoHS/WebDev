@@ -1,18 +1,68 @@
 <html lang="en">
 <!--Version 5.0
-	Name:
-	Date Completed:
+	Name: Ty Sibinski
+	Date Completed: 9/13/2019
  -->
 <head>
-
+<script src="JS/WebDevUser15_script.js"></script>
 <title> Web Development User #15 </title>
-
+    <link rel ="stylesheet" href="../Version6.0/user15/CSS/Day.css">
+<style>
+    ul li{color: red;}
+    .emphasis{color: green; font-weight: bold;}
+        .fork{color: saddlebrown;}
+        .potato{color: chocolate;}
+    </style>
+    <script src="JS/jquery-1.7.1.js"></script>
+    <script>
+    $(document).ready(function() { 
+    $('li:first-child').addClass('emphasis');
+    });
+    </script>
 </head>
 
 <body>
+    <h1>List of The Greatest Black Presidents</h1>
+    <ol>
+    <li>Barack Obama</li>
+        <li>Obama</li>
+        <li>President Barack</li>
+        <li>President Obama</li>
+        <li>The 44th President of The United States of America</li>
+        <li>President Barack Obama</li>
+    </ol>
+    
+<audio id="h" src="JS/Obama.mp3" preload="auto"></audio>
+<center> My name is User 15</center>
+<center><p id="textChange"> I am Former President Obama, The 44th President of the United States of America</p></center>
 
-<center> My name is User #15</center>
-
+    <button onclick="obama()">2012 State of The Union Address</button>
+    <script>
+        jQuery('ul li').addClass('emphasis');
+        $('h1').addClass('fork');
+        $('ol li').addClass('potato');
+    </script>
+    <button data-file="Day">Day</button>
+    <button data-file="Night">Night</button>
+    <script>
+    (function(){
+        var link = $('link');
+        
+        $('button').on('click',function() {
+            var $this = $(this),
+                stylesheet = $this.data('file');
+            
+            link.attr('href', '../Version6.0/user15/CSS/' + stylesheet + '.css');
+            $this
+                .siblings('button')
+                    .removeAttr('disabled')
+                    .end()
+            .attr('disabled', 'disabled')
+    
+            
+        });
+    })();
+    </script>
 </body>
 
 </html>

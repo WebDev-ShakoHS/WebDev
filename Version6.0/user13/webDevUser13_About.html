@@ -1,0 +1,91 @@
+<html lang="en">
+<!--Version 6.0 
+	Name:Ben Sebastian
+	Date Completed:9/5/2019
+ -->
+<head>
+
+<title> FreeGiftcards.Net/About</title>
+    <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+<script src="JS/WebDevUser13.js"></script>
+<link rel="stylesheet" href="User13css/day.css">  
+<style>
+   
+    .titlemania{
+        color: #003b6f;
+        font-family: cursive;
+        text-align: center;
+        font-size: 250%;
+    }
+    </style>
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link rel="stylesheet" href="CSS/WebDevUser13.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+<!-- webpage content goes here in the body -->
+
+  <button data-file="day">Day</button>
+    <button data-file="night">Night</button>
+
+     
+                    <marquee>   <h1><a href="webDevUser13.html" id="logoLink">Free Giftcards</a></h1>
+                    </marquee>
+             
+                           
+                <div id="nav">
+
+                                <a class="a2" href="webDevUser13.html">Home</a>
+
+                                <a class="acurrent" href="webDevUser13_About.html">About</a>
+
+                                <a class="a2" href="webDevUser13_Games.html">Games</a>
+                                
+                                <a class="a2" href="webDevUser13_FAQ.html">FAQ</a>
+
+
+                </div>
+<h1>About Us</h1>                
+<br>
+    <p> We at Free Giftcards.org are fully commited to give you free giftcards because you deserve it.</p>
+               
+    <script src="JS/jquery-1.7.1.js"></script>
+
+    <script>
+    (function(){
+        
+        var link = $('link');
+        $('button').on('click', function() {
+            var $this = $(this),
+                stylesheet = $this.data('file');
+            
+            link.attr('href','User13css/' + stylesheet + '.css');
+            
+            $this
+                .siblings('button')
+                    .removeAttr('disabled')
+                    .end()
+                    .attr('disabled', 'disabled');
+            
+            
+        });
+        
+        
+        
+    })();
+    
+    </script>
+  <script>
+      $("h1").addClass('titlemania');
+    </script>  
+</body>
+
+</html>

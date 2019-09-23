@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>jQuery Events 201</title>
+	<link href="CSS/WebDevUser15.css" rel="stylesheet"> 
+</head>
+<body>
+    
+    <div id="nav">
+
+                        <ul>
+
+                                <li><a href="webDevUser15.html">Home</a></li>
+
+                                <li><a href="WebDevUser15_AboutMe.html">About</a></li>
+
+                                <li><a href="WebDevUser15_Games.html">Game</a></li>
+
+                                 <li><a href="webDevuser15-FAQ.html">FAQ</a></li>
+                        </ul>        
+
+                </div>
+    
+
+<dl>
+	<dt>Who is the greatest Black President</dt>
+	<dd><img src="images/obama4.jpg" alt="Obama" width ="200"</dd>
+	<dt>Who is the greatest Black President</dt>
+	<dd><img src="images/obama3.jpg" alt="Obama" width="200"</dd>
+	<dt>Who is the greatest Black President</dt>
+	<dd><img src="images/obama2.jpg" alt="Obama" width="200"></dd>
+	<dt>Who is the greatest Black President</dt>
+	<dd><img src="images/obama1.jpeg" alt="Obama" width="200"></dd>
+    <dt>Who is the greatest White President</dt>
+	<dd><img src="images/whiteobama.jpg" alt="White Obama" width="200"></dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>

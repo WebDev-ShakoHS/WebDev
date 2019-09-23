@@ -1,18 +1,59 @@
 <html lang="en">
 <!--Version 5.0
-	Name:
-	Date Completed:
+	Name:Andrew Tischleder
+	Date Completed:9/15/2019
  -->
 <head>
 
 <title> Web Development User #19 </title>
+    <link rel="stylesheet" href="../Version6.0/user19/CSS/Day_User19.css">
+    <style>
+       ul li{color:red;}
+        .emphasis {color: blue;}
+    </style>
+    <script src="JS/jquery-1.7.1.js"></script>
 
+<script src="JS/WebDevuser19_script.js"></script>
 </head>
 
 <body>
-
-<center> My name is User #19</center>
-
-</body>
+   <ul>   <li>Hello</li>   </ul>
+    <ul> <li>Hello2</li> </ul>
+        <ul> <li>Hello3</li> </ul>
+    <h2>Top 3 Most Irrelevent Sports teams</h2>
+    <ol> 
+    <li>Green Bay Packers</li>
+    <li>That One Soccer Team</li>
+    <li>Detroit Pistons</li></ol>
+    <center>My name is Andrew Tischleder</center>
+<center><p id="textChange"> My name is Andrew Tischleder</p></center>
+<button type="button" onclick="changeText()">Click if you like</button>
+<button>Day</button>
+<button>Night</button>
+    
+    
+    
+    <script>
+    var lis = jQuery ('ul li').addClass('emphasis');
+    console.log(lis);
+    </script>
+    <script>
+        (function() {
+            var link = $('link');
+            $('button').on('click', function() {
+                var $this = $(this),
+                    stylesheet = $this.data('file');
+                
+       link.attr('href','..Version6.0/user19/CSS/'+
+    stylesheet + '.css');
+    
+    $this
+    .siblings('button')
+    .removeAttr('disabled')
+    .end()
+    .attr('disabled', 'disabled');
+            });
+        })();
+</body
 
 </html>
