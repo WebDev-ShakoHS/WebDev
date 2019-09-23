@@ -3,11 +3,26 @@
     <link href="CSS/FAQ.css">
 	<meta charset=utf-8>
 	<title>jQuery Events 201</title>
-	<link rel="stylesheet" href="style.css">
     <link href="CSS/FAQ.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    
+<h3><img src="img/Funny%20cat_Heading.png"></h3>
 
+    <script src="JS/jquery-1.7.1.js"></script>
+    
+<script>
+    
+(function() {
+    
+    $('h3').bind('click', function() {
+        console.log('clicked');
+        $(this).clone(true).appendTo('body');
+    });
+})();
+    
+</script>
+    
 <dl>
     <h1><dt>When did you started?</dt></h1>
 	<dd>I do not know have you see this cat? <img src="img/photo-1518791841217-8f162f1e1131.jpeg"></dd>
