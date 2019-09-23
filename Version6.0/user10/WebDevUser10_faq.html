@@ -1,0 +1,92 @@
+<html lang="en">
+<!--Version 6.0
+	Name:Oliver Pham
+	Date Completed:
+ -->
+<head>
+    	<meta charset=utf-8>
+	<title>jQuery Events 201</title>
+	<link rel="stylesheet" href="../../Version4.0/CSS/WebDevUser10.css">
+</head>
+
+                        <ul>
+
+                                <li><a href="webDevUser10.html">Home</a></li>
+                                <li><a href="WebDevUser10_AboutMe.html">About</a></li>
+                                <li><a href="WebDevUser10_Games.html">Games</a></li>
+                                <li><a href="WebDevUser10_faq.html">FAQ</a></li>
+
+                        </ul>  
+
+    
+    
+<body>
+   
+<div class="faq">
+    
+<h1>FAQ</h1>
+    
+<dl>
+	<dt>Where do you ship to?</dt>
+	<dd><img src= "https://res.cloudinary.com/fen-learning/image/upload/c_limit/infopls_images/images/musa.gif" height="300" width="500" alt="United States"></dd>
+	<dt>Do you sell shoes?</dt>
+	<dd><img src= "https://upload.wikimedia.org/wikipedia/commons/3/37/Yes_4G_Logo.png " height="300" width="500" alt="Yes"</dd>
+	<dt>How do I contact you?</dt>
+	<dd>Email me at oliverpham2003@gmail.com</dd>
+	<dt>When are you avaliable?</dt>
+	<dd><img src= "https://indyschild.com/wp-content/uploads/2017/06/weekend2.jpg" height="300" width="500" alt="Yes"</dd>
+</dl>
+    
+    </div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+    
+<script>
+    $(document).ready(function() {
+
+    $(document).mousemove(function(e) {
+
+
+                pointer = $('<img>').attr({'src':'https://cdn2.iconfinder.com/data/icons/flat-icons-web/40/Mouse_Cursor-128.png'});
+
+                //and append them to document
+                $(document.body).append(pointer); 
+ 
+
+                //show them at mouse position & fade out slowly
+                pointer.css({
+                        'position':'absolute',
+                        top: e.pageY +2 ,    //offsets
+                        left: e.pageX +2   //offsets
+                    }).fadeOut(500);   
+    });
+
+});
+
+
+    </script>
+    
+    
+
+</body>
+
+</html>
