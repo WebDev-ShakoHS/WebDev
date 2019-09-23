@@ -106,16 +106,17 @@ Just enter your SSN  <input type="number" id="SSN" name="SSN"
 
                 <div id="footer">
 
-                        <p>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
 
-                                Webpage made by <a href="/" target="_blank">[your name]</a>
-
-                        </p>
-
-                </div>
 
     <script src="JS/jquery-1.7.1.js"></script>
-
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left: '250px'});
+  });
+});
+</script> 
     <script>
     (function(){
         
