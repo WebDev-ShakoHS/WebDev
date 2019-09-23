@@ -5,28 +5,113 @@
  -->
 <head>
 
-    <!-- your webpage info goes here -->
-    
-
-        
-
-        <meta name="author" content="your name" />
+    <meta charset=utf-8>
+	<title>jQuery Events 201</title>
+<link href="CSS/Style.css" rel="stylesheet" type="text/css">
+         <meta name="author" content="your name" />
 
         <meta name="description" content="" />
 
 
 <!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
 
-        <link href="CSS/WebDevUser8.CSS" rel="stylesheet" type="text/css">
 
+    <style>
+        .emphasis { font-weight: bold;}  
+        ul li { color: red; }
+        .emphasis {color: green; }
         
-
+    </style>    
 </head>
 
 <body>
+<button data-file='Day'>Day</button>
+<button data-file='Night'>Night</button>
+       
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+    
+
+<script>
+(function() {
+	var link = $('link');
+	
+	$('button').on('click', function() {
+		var $this = $(this),
+			newclass = $this.data('file');
+        $('body').toggleClass(newclass)
+		//link.attr('href','CSS/' + stylesheet + '.css');
+		$this
+			.siblings('button')
+				.removeAttr('disabled')
+				.end()
+			.attr('disabled', 'disabled');
+	});
+})();
+</script>
+    
+<!--<script>
+
+    $('ul li > a')
+    
+    $(function() {
+        $('li:first-child').addClass('emphasis');
+    });
+    
+    $(document).ready(function(){
+        $('li:first-child').addClass('emphasis');
+    });
+(function() {
+    $('button').hover(function() {
+        console.log(this);
+    });
+})();
+    
+</script>-->
+
+    
+<ul> 
+    <li>hello</li>
+    <li>hello 2</li>
+    <li>hello 3</li>
+</ul>
+
+<dl>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+</dl>
 
 
-<!-- webpage content goes here in the body -->
+<script>
+    $('ul li').addClass('emphasis');
+</script>
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+
 
 
         <div id="page">
@@ -57,16 +142,11 @@
                     
                     
                     
-                    This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
-
+    This is my first webpage! I was able to code all the HTML and CSS in order to make it. 
                         
                 </div>     
                         
-
-                               
-                        </p>
-
-    </body>      </div>
+                   
      
 
 <h2>My Top 5 Favorite TV Shows</h2>
@@ -78,8 +158,8 @@
  <tr><td>4</td><td>The Flash</td><td>Grant Guston</td></tr>
  <tr><td>5</td><td>Phineas and Ferb</td><td>Vincent Martella</td></tr>
  </table>
-                <div id="footer">
-<img src="images/user08/images:user08:Micheal_Scott.jpg" />
+                
+<img src="Images/Micheal_Scott.jpg" />
   
 <h2>My Top 5 Favorite shoes</h2>
  <table class="b">
@@ -92,13 +172,14 @@
  </table>                      
                         
      <p>
-
+<div id="footer">
                                 Webpage made by <a href="/" target="_blank">[Jackson Miller]</a>
 
                         </p>
-<button type="button"
+<!-- <button type="button"
 style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:13%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
 Click Me!</button>
+-->
                 </div>
 
         </div>
