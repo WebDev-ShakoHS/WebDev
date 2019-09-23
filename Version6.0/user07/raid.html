@@ -1,0 +1,71 @@
+<html lang="en">
+<!--Version 3.0
+	Name: Faith Le
+	Date Completed:9/18/2019
+ -->
+<head>
+    <title> The Raid </title>
+    <link href="CSS/main.css" rel="stylesheet" type="text/css"> 
+    <meta name="author" content="your name" />
+    <meta name="description" content="" />      
+    
+</head>
+
+<body class= "QA">
+    <div id="page">
+        
+        <div id="logo">
+         <h1><a href="/" id="logoLink">My First Website</a></h1>
+        </div>
+
+        <div id="nav">
+            <ul>
+                <li><a href="webDevUser07.html">Home</a></li>
+            </ul>        
+        </div>
+        
+        <div id="content">
+            
+            <center> <img src="Images/area51.jpg" alt="Area 51 Image"> </center>
+            <dl class=QA> 
+                <dt> What is the raid? </dt>
+                    <dd> The plan for many people to go to area 51 and try to break in. </dd>
+                <dt> When is the raid? </dt>
+                    <dd> Friday, September 20, 2019</dd>
+                <dt> How did it start?</dt>
+                    <dd> It origniated from a podcast that was related to 'breaking into area 51', which was meant as a joke. The joke became serious when one listener created a Facebook event that caused many people to become interested. </dd>
+                <dt> How many people are going? </dt>
+                    <dd> 2.1 Million, but recently the creator of the event said he cancelled it. Will people still try to go?</dd>
+                <dt> What type of people are going?</dt>
+                    <dd> 
+                        <ul>
+                            <li> Firm Believers; those that believe in aliens and just want to meet them! </li>
+                            <li> Angered People at the Government; they are upset that the Government has the audacity to withold information from them! </li>
+                            <li> Shinobi; these ninjas believe that they can get past the wall using their special Naruto Run technique</li>
+                            <li> Lonely Tik Tokers; they just want to bring home a cute alien to feel a little more in their hearts</li>
+                        </ul>
+                    </dd>
+            </dl>
+            
+        <script src="JS/jquery-1.7.1.js"></script>
+            
+        <script> 
+            (function() {
+                $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+                $('dl').on('mouseenter', 'dt', function() {
+                    $(this)
+                        .next()
+				        .slideDown(100)
+				        .siblings('dd')
+					       .slideUp(100); 
+                });
+            })();
+        </script>
+            
+        <center> <h5> Personally, I do not believe that this is a good idea, but I am quite curious on what will happen.</h5></center>
+        </div>
+    
+    </div>
+</body>  
+</html>

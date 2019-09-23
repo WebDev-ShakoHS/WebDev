@@ -6,19 +6,64 @@
 <head>
 <script src="JS/webDevUser07_script.js"></script>
 <title> Web Development User #7 </title>
+    
+    <link rel=stylesheet href='../Version6.0/user07/CSS/webDevUser07_aliens.css'>
+    
+    <style> 
+        .emphasis {font-weight:bold}
+        .foods {color:aquamarine}
+    </style>
+    <script src="JS/jquery-1.7.1.js"></script>
+    <script> 
+        $(document).ready(function() {
+            $('li:first-child').addClass('emphasis');              
+                          });
+    </script>
+    
 </head>
 
 <body>
-
-<center> My name is Faith</center>
+<h2> Foods I Would Bring My Alien to Try </h2>
+    <ol> 
+        <li> Bacon Cheeseburgers </li>
+        <li> Noodles </li>
+        <li> Arby's Mozarella Sticks</li>
+        <li> In'N'Out </li>
+        <li> Shrimp Alfredo Pasta </li>
+    </ol>
     
+
+<img id="pointer" src="images/alien.jpg" width=250 height=250 alt="Alien Pointing" />
+
 <center><p id="textChange"> RAWR XD</p></center>
 <button type="button" onclick="changeText()">Click if you like</button>
-    
 <button type="button" onclick="disappear()">Make Disappear</button>
     
-    <img id="mario" src="images/mario2.jpg" width=150 height=150 alt="Mario Image" />
+
+        <script>
+            $('ol li').addClass('foods');
+        </script>
+
+<button data-file='aliens'> Alien </button>
+<button data-file='UFO'> UFO </button>
+
+    <script>
+        (function() {
+            var link = $('link');
+            $('button').click(function(){
+                var $this = $(this),
+                    stylesheet = $this.data('file');
+                
+                link.attr('href', '../Version6.0/user07/CSS/webDevUser07_' + stylesheet + '.css');
+                
+                $this
+                    .siblings('button')
+                        .removeAttr('disabled')
+                        .end()
+                        .attr('disabled', 'disabled')
+            })
+        })();
+    </script>
     
 </body>
-
 </html>
