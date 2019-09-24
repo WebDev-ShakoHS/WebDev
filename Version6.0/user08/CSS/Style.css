@@ -1,9 +1,10 @@
 body {
-    width: 500px; 
+    width: auto; 
     
     margin: auto;
     text-align: center;
 }
+
 
 body.Day {
     background: yellow;
@@ -26,7 +27,8 @@ dd {
 dt {
     cursor: pointer;
     
-    
+    width: 500;
+    margin-left: 475; 
     font-weight: bold;
     font-size: 1.5em;
     line-height: 2em;
@@ -54,7 +56,7 @@ h2{
 .a {
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
+	text-align: auto;
 	width: 1000;
     border-collapse: collapse;
 	cellspacing: 0px;

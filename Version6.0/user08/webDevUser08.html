@@ -25,11 +25,33 @@
 </head>
 
 <body>
+<h1><a href="/" id="logoLink">Jackson's First Website</a></h1>
+<ul>
+    <li><a href="webDevUser08.html">Home</a></li>
+
+                                <li><a href="webDevUser08_Tables.html">My Top 5 Lists</a></li>
+
+                                <li><a href="webDevUser08_Games.html">JavaScript Games</a></li>
+</ul>    
 <button data-file='Day'>Day</button>
 <button data-file='Night'>Night</button>
-       
+<div class="container">
+    <h2><img src="Images/Prison_mike.jpg" /></h2>           
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+
+<script>
     
+(function() {
+   
+    $('div.container').delegate('h2', 'click', function() {
+        console.log('clicked');
+        $(this).clone().appendTo('.container');
+    });
+    
+})();    
+    
+</script>    
 
 <script>
 (function() {
@@ -69,23 +91,18 @@
 </script>-->
 
     
-<ul> 
-    <li>hello</li>
-    <li>hello 2</li>
-    <li>hello 3</li>
-</ul>
 
 <dl>
-	<dt>What are your hours?</dt>
-	<dd>We are open 24/7.</dd>
-	<dt>What are your hours?</dt>
-	<dd>We are open 24/7.</dd>
-	<dt>What are your hours?</dt>
-	<dd>We are open 24/7.</dd>
-	<dt>What are your hours?</dt>
-	<dd>We are open 24/7.</dd>
-	<dt>What are your hours?</dt>
-	<dd>We are open 24/7.</dd>
+	<dt>#1 Micheal Scott Quote</dt>
+	<dd>"That's what she said."</dd>
+	<dt>#2 Micheal Scott Quote</dt>
+	<dd>"I'm not superstitious but I am a little stitious."</dd>
+	<dt>#3 Micheal Scott Quote</dt>
+	<dd>"Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me."</dd>
+	<dt>#4 Micheal Scott Quote</dt>
+	<dd>"Sometimes I'll start a sentence and I don't even know where it's going. I just hope I find it along the way."</dd>
+	<dt>#5 Micheal Scott Quote </dt>
+	<dd>"Fool me once, strike one. Fool me twice, strike three."</dd>
 </dl>
 
 
@@ -118,21 +135,13 @@
 
                 <div id="logo">
 
-                        <h1><a href="/" id="logoLink">Jackson's First Website</a></h1>
+                    
 
                 </div>
 
                 <div id="nav">
 
-                        <ul>
-
-                                <li><a href="webDevUser08.html">Home</a></li>
-
-                                <li><a href="webDevUser08_Tables.html">My Top 5 Lists</a></li>
-
-                                <li><a href="webDevUser08_Games.html">JavaScript Games</a></li>
-
-                        </ul>        
+                            
 
                 </div>
 
@@ -169,8 +178,7 @@
  <tr><td>3</td><td>Air Max 97</td><td>Nike</td></tr>
  <tr><td>4</td><td>Huaraches</td><td>Nike</td></tr>
  <tr><td>5</td><td>Air Max 1</td><td>Nike</td></tr>
- </table>                      
-                        
+ </table>                                             
      <p>
 <div id="footer">
                                 Webpage made by <a href="/" target="_blank">[Jackson Miller]</a>
