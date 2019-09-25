@@ -1,3 +1,12 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>jQuery Events 201</title>
+	<link rel="stylesheet" href="CSS/SampleCSS.css">
+</head>
+<body>
 <div id="nav">
 
                         <ul>
@@ -12,24 +21,45 @@
 
                 </div>
 
+<div class="container">
+<h2>Click Me</h2>
+<h2>Click Me</h2>
+<h2>Click Me</h2>
+<h2>Click Me</h2>
+</div>
+<script src="JS/jquery-1.7.1.js"></script>
 
+<script>
+    
+(function() {
+    $('div.container').delegate('h2', 'click', function() {
+       console.log('clicked');
+      $(this).clone().appendTo('.container');
+});
 
+    })();
+    
+</script>  
 
-
-
-
+    
 <h1>Our Goal</h1>
 <p>The Mission, the goal, and the hope for this world is to spread memes across the Earth.</p>
-<img src="Pepe.jpg">
-<!doctype html>
-<html>
-<head>
-	<meta charset=utf-8>
-	<title>jQuery Events 201</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
 
+    
+    
+    <div class="container2"><img src="Pepe.jpg"></div>
+        <script>
+    
+(function() {
+    $('div.container2').delegate('img', 'click', function() {
+       console.log('clicked');
+      $(this).clone().appendTo('.container2');
+});
+
+    })();
+    
+</script>  
+    
 <dl>
 	<dt>What are your hours?</dt>
 	<dd>We are open 24/7.</dd>

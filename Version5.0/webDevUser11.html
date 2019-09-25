@@ -30,18 +30,51 @@
    
 </html>
 <img class=c src="images/User11thanos.png">
-    <button>ooogabooga</button>
-    
-    
-    <button>boogaoooga</button>
-    
-    <script> 
-    (function(){ 
-  
-        $("button").click(function() {
-           $
-        })
+ 
         
-    })();
         
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>
     
+    <body>
+	<button id="btn" type="button">Click here for sound</button>
+	<audio id="audio" src="example.mp3"></audio>
+			
+	<script>
+			
+	//option 1
+	$("#btn").on("click", function() {
+		var audio = $("#audio")[0];
+		audio.play();
+	});
+			
+	// option 2		
+	$("#btn").on("click", function() {
+		var audio = document.getElementById("weewoo.mp3");
+		audio.play("weewoo.mp3");
+	});
+			
+        </script>	
+		
+</body>
