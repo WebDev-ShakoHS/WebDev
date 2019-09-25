@@ -8,6 +8,7 @@
 
     
 <link href="CSS/Webdevuser2.css" rel="stylesheet" type="text/css"> 
+    <script src="JS/jquery-1.7.1.js"></script>
 
     <title>Adam's Cool Website</title>
 
@@ -59,7 +60,24 @@
 
                 <div id="content">
 
-                        <h2>Home</h2>
+                        <h1>Home</h1>
+                    <h2>Packers Suck</h2>
+                    <script>
+(function(){
+  $('h2').on('click', function()  {
+     console.log('clicked');
+       $(this).clone(true).appendTo('.container');
+    
+});
+
+    })();
+    
+    
+</script>  
+                <div class='container'>
+                    
+                    </div>
+                    
 
                         <p>
 
@@ -87,7 +105,10 @@
  <tr><td>5</td><td>band 5</td><td>song 2</td></tr>
  </table>  
  <center><img src="images/user2/bandd.jpg" alt="Ugly boy band Pic" style="width:300px;height:301px;"></center>
+ 
+                    <div class='container'>
                     
+                    </div>
                     
  <h2>My Top 5 worst Sports Franchises</h2>
  <table class = "b">
@@ -110,8 +131,8 @@
     
     
     
-    
-    
+ 
+
   
 
 </body>
