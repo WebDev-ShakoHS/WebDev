@@ -1,6 +1,62 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
+    
+
+        
+        
+        
+    }
+body.NIGHT{
+    
+background: darkblue;
+color: darkblue;
+}
+
+body.DAY{
+    
+background: lightblue;
+color: aqua;
+}
+
+body.FAQ{
+    
+     width: 500 px;
+margin : auto;
+text-align : center;
+}
+
+
+h1.FAQ{ 
+background-color:aqua;
+color: white;
+font-size: 2d.3em;
+text-align: center;
+
+
+}
+
+dt.FAQ{
+    
+color: darkorange;
+}
+dl.FAQ{
+color: darkorange;
+}
+dd.FAQ{ 
+margin:1em;
+padding : 1em 0;
+    
+}
+
+dt.FAQ{
+     cursor: pointer;
+    
+    font-weight : bold;
+    font-weight : 7.5em;
+    line-height : 2em;
+    background: aqua;
+    border-bottom: 1px solid #c5c5c5;
 }
 
 h1 {
