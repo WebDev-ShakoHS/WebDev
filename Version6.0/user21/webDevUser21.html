@@ -19,6 +19,8 @@
 <!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
 
         <link href="CSS/WebDevUser21.css" rel="stylesheet" type="text/css"> 
+    
+        <script src="JS/jquery-1.7.1.js"></script>
 
         
 
@@ -99,7 +101,7 @@
                     <tr><td>5</td><td>Square Enix</td><td>Yasuhiro Fukushima</td></tr>
                     </table>
                     
-                        <img src="images/user21/Dark_Souls_3.jpg" alt="Image of Dark Souls 3 by From Software">
+                        <img src="Dark_Souls_3.jpg" alt="Image of Dark Souls 3 by From Software">
                     
                         <h6>What I recommend for different genres and people!</h6>
                         <p>
@@ -119,6 +121,15 @@
                 </div>
 
         </div>
+    
+    <script>
+    (function() {
+        $('img').on('click', function() {
+            console.log('clicked');
+            $(this).clone(true).appendTo('body');
+        });
+    })();
+    </script>
 
 </body>
     
