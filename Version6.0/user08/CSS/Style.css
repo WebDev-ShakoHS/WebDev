@@ -1,0 +1,97 @@
+body {
+    width: auto; 
+    
+    margin: auto;
+    text-align: center;
+}
+
+
+body.Day {
+    background: yellow;
+}
+body.Night {
+    background: black;
+    color: white;
+}
+
+dl {
+    
+}
+
+dd {
+    Margin: 0;
+    
+    padding: lem 0; 
+}
+
+dt {
+    cursor: pointer;
+    
+    width: 500;
+    margin-left: 475; 
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+    background: Blue; 
+    border-bottom: 1px solid #c5c5c5;
+    border-top: 1px solid white; 
+}
+
+dt:first-child { border-top: none; }
+dt:nth-last-child { border-bottom: none; }
+body {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #FFA500;
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2{
+        font-size: 1.1em;
+}
+
+.a {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: auto;
+	width: 1000;
+    border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+.a tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:darkorchid; 
+}
+
+.a th {
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #0000FF;
+}
+   
+
+.b {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 1000;
+    border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+.b tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#FF0000; 
+}
+
+.b th {
+	text-align: center;
+	color:forestgreen;
+	background-color: aqua;
+}
