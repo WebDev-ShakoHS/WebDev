@@ -1,17 +1,70 @@
 <html lang="en">
 <!--Version 7.0
-	Name:
-	Date Completed:
+	Name: David Tesar
+	Date Completed: 1.10.
  -->
 <head>
-
+    <script src="JS/jquery-1.7.1.js"></script>
+<style>
+    article {
+        width: 600px;
+        margin: auto;
+    }
+    blockquote.co {
+        float: center;
+        background: #e3e3e3;
+        font-size: 2em;
+        width: 35%;
+    }
+    </style>
 <title> Web Development User #17 </title>
 
 </head>
 
 <body>
+    <h1>MY AWSOME POST</h1>
+    
+    <article>
+<p>
+    Hello I am really glad that I am making this website!</p>
+<p>
+    <span class=co>My name is David</span> and today I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery.</p>
+        
+<p>
+    Hello I am really glad that I am making this website!</p><p>
+    Hello I am really glad that I am making this website!</p><p>
+    Hello I am really glad that I am making this website!</p><p>
+    Hello I am really glad that I am making this website!</p>
+    
+    </article>
+<script>
+(function() {
 
-<center> My name is User #17</center>
+    var co = $('span.co').each(function() {
+        var $this = $(this);
+        
+        $('<blockquote></blockquote>', {
+            class: 'co'
+            text: $(this).text()
+        }).prependTo( $this.closest('p') );
+        
+    });
+        
+    })();
+                               
+                               
+    $('p').eq(0).after( $('h1') );
+    
+    $('<h2></h2>', {
+        text: 'Hello from JavaScript',
+        class: 'myClass'
+    }).insertBefore('p:nth-child(1)');
+    
+})();
+</script>
+   <!---
+       $('p').first().before('Hello from the JavaScript'); 
+    -->
 
 </body>
 
