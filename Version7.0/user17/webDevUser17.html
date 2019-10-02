@@ -32,14 +32,17 @@
 <p>
     Hello I am really glad that I am making this website!</p>
 <p>
-    <span class=co>My name is David</span> and today I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery.</p>
+    <span class="co">My name is David</span> and today I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery. I am gonna try to make a JQuery.</p>
 <img src="IMG/coffee+blog.jpg">
 <p>
-    Hello I am really glad that I am making this website!</p><p>
-    Hello I am really glad that I am making this website!</p><p>
-    Hello I am really glad that I am making this website!</p><p>
-    Hello I am really glad that I am making this website!</p>
+    <span class="to">Hello I am really glad</span> that I am making this website!</p><p>
+    Hello I am really glad that I am making this website!Hello I am really glad that I am making this website!Hello I am really glad that I am making this website!</p>
     
+        <p><span class="ll">This is pined</span></p>
+        <p><snap class="kk">This it pinned as 
+        well</snap></p>
+
+        
     </article>
     
 <script>
@@ -50,15 +53,40 @@
         
         $('<blockquote></blockquote>', {
             class: 'co'
-            text: $(this).text()
+            text: $(this.text()
         }).prependTo( $this.closest('p') );
         
     });
         
     })();
-                               
-                               
-    $('p').eq(0).after( $('h1') );
+    
+    
+    var to = $('span.to').each(function() {
+        var $this = $(this);
+        
+        $('<blockquote></blockquote>', {
+            class: 'to'
+            text: $(this.text()
+        }).prependTo( $this.closest('p') );
+        
+    });
+        
+    })();
+    
+    var ll = $('span.ll').each(function() {
+        var $this = $(this);
+        
+        $('<blockquote></blockquote>', {
+            class: 'll'
+            text: $(this.text()
+        }).prependTo( $this.closest('p') );
+        
+    });
+        
+    })();
+    </script>
+   
+<!----$('p').eq(0).after( $('h1') );
     
     $('<h2></h2>', {
         text: 'Hello from JavaScript',
@@ -66,7 +94,6 @@
     }).insertBefore('p:nth-child(1)');
     
 })();
-</script>
    <!---
        $('p').first().before('Hello from the JavaScript'); 
     -->
