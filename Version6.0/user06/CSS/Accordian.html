@@ -21,7 +21,7 @@
 </dl>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
+    
 
 <script>
 
@@ -35,11 +35,17 @@
 				.slideDown(200)
 				.siblings('dd')
 					.slideUp(200);
+          var alertEvent = 'click.alert'
+this.unbind(alertEvent).bind(alertEvent,function(){
+  alert('clicked once');s
 	});
 })();
 
 
+
 </script>
+    
+    k
 
 </body>
 </html>
