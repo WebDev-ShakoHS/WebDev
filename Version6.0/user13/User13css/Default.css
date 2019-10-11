@@ -1,11 +1,7 @@
-body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-     background-image: url("images/User13/stone.png");
+body{
+    background-color: deepskyblue;
+    font-family: 'B612', sans-serif;
 
-      background-color: #666666;
-
-  background-size: cover;
-	color: #003366;
 }
 
 h1 {
@@ -26,7 +22,7 @@ h2{
   padding: 4px;
 }
 
-.a tr:nth-child(even){background-color: #f2f2f2;}
+.a tr:nth-child(even){background-color: #c3c3c3;}
 
 .a tr:nth-child(odd){background-color: #deb887;}
 
@@ -97,5 +93,60 @@ h2{
 
 .acurrent:hover, .acurrent:active {
   background-color: #2d3173;
+}
+
+dl{
+
+}
+
+dd{
+    background: white;
+    margin: 0;
+padding: 1em 0;
+
+}
+
+dt{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+    background: #525252;
+    border-bottom: 1px solid black;
+    border-top: 1px solid white;
+}
+
+dt:first-child{
+    border-top: none;
+    
+}
+dt:nth-last-child(2){
+    border-bottom: none;
+}
+
+
+article{
+    font-family: 'B612', sans-serif;
+
+    background-color: #e3e3e3;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+blockquote.co{
+    float: right;
+    background: antiquewhite;
+    font-size: 2em;
+    width: 50%;
+    text-align: justify-all;
+    
+    
+}
+
+#imggfh {
+    
+  display: block;
+  margin-left: auto;
+  height:75%;
+
 }
 

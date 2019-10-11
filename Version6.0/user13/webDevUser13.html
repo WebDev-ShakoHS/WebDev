@@ -15,6 +15,7 @@
         color: #003b6f;
         font-family: cursive;
                 font-size: 250%;
+        cursor:default;
 
     }
     </style>
@@ -43,6 +44,9 @@
                                 <a class="a2" href="webDevUser13_Games.html">Games</a>
                     
                                 <a class="a2" href="webDevUser13_FAQ.html">FAQ</a>
+                    
+                                <a class="a2" href="webDevUser13_Giftcards.html">About Giftcards</a>
+
                     
 
                 </div>
@@ -105,19 +109,20 @@ Just enter your SSN  <input type="number" id="SSN" name="SSN"
                 
                 </div>
 
-<button>Clickth Me to breakth thy Website!</button>
-<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
-
+<button data-file="Default">Clickth Me!</button>
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
 
     <script src="JS/jquery-1.7.1.js"></script>
-<script> 
+<script>
 $(document).ready(function(){
   $("button").click(function(){
-    var div = $("div");
-    div.animate({height: '300px', opacity: '0.4'}, "slow");
-    div.animate({width: '300px', opacity: '0.8'}, "slow");
-    div.animate({height: '100px', opacity: '0.4'}, "slow");
-    div.animate({width: '100px', opacity: '0.8'}, "slow");
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle();
+    $("#div3").fadeToggle();
   });
 });
 </script> 
@@ -131,11 +136,7 @@ $(document).ready(function(){
             
             link.attr('href','User13css/' + stylesheet + '.css');
             
-            $this
-                .siblings('button')
-                    .removeAttr('disabled')
-                    .end()
-                    .attr('disabled', 'disabled');
+
             
             
         });

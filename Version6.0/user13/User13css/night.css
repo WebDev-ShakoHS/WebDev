@@ -1,9 +1,20 @@
 body{
-    background-color: black;
-    color: azure;
-    
+    background-color: #383838;
+    color: aliceblue;
+        font-family: 'B612', sans-serif;
+
+}
+a:link {
+  text-decoration: none;
+      color: #003b6f;
+
 }
 
+a:visited {
+  text-decoration: none;
+      color: #003b6f;
+    background-color: antiquewhite
+}
 h1 {
 	font-size: 1.3em;
 }
@@ -124,3 +135,33 @@ dt:first-child{
 dt:nth-last-child(2){
     border-bottom: none;
 }
+article{
+    font-family: 'B612', sans-serif;
+    color:dimgrey;
+
+    background-color: #e3e3e3;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.article_content{
+    margin: 10px;
+}
+blockquote.co{
+    float: right;
+    background: antiquewhite;
+    font-size: 2em;
+    width: 50%;
+    text-align: justify-all;
+    
+    
+}
+
+#imggfh {
+
+     height: 75%;
+    position: absolute;
+    left: 79%;
+    top: 111%;
+}
+
+
