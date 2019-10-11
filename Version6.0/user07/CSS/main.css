@@ -105,5 +105,15 @@ body.QA{
     border-top: 1px solid white;        
 }
 
+article{
+    width: 600px; 
+    margin: auto;
+}
 
-
+blockquote.co{
+    float: right; 
+    background: #e3e3e3; 
+    font-size: 2em;
+    width: 40%;
+    text-align: center;
+}

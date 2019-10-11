@@ -62,8 +62,21 @@
                 });
             })();
         </script>
+    <center> <h5> Personally, I do not believe that this is a good idea, but I am quite curious on what will happen.</h5></center>
+            <h3> Aliens </h3>
+            <h3> Aliens </h3>
             
-        <center> <h5> Personally, I do not believe that this is a good idea, but I am quite curious on what will happen.</h5></center>
+        <script> 
+        (function() {
+            
+            $('h3').on('click', function(){
+                console.log('clicked');
+                $(this).clone(true).appendTo('body');
+            }); 
+        })();    
+            </script>
+            
+        
         </div>
     
     </div>
