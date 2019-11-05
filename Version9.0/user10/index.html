@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Oliver's Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-gray w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="weather.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Weather</a>
+    <a href="movie.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Movie</a>
+    <a href="sellshoes.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sell Your Shoes</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-gray w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Oliver's Website</h1>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Welcome</h1>
+      <h5 class="w3-padding-32">This website will be focused on selling shoes. It can also be used for random things such as checking the weather and finding movie posters.</h5>
+    </div>
+
+
+     <div class="container">
+ <img src= "hello.png" height="200" width="200" alt="Photo of Hello" >   
+</div>
+<script src="JS/jquery-1.7.1.js"></script> 
+      
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-twothird">
+<div class="faq">
+    
+<h1>FAQ</h1>
+    
+<dl>
+	<dt>What are some facts about you?</dt>
+	<dd>
+    
+<ul style="list-style-type:circle;">
+  <li>I'm 16 years old</li>
+  <li>I live in Shakopee</li>
+  <li>I go to the Shakopee High School</li>
+  <li>I am 5ft 9in tall</li>
+</ul>
+
+    </dd>
+	<dt>Do you sell shoes?</dt>
+	<dd><img src= "https://upload.wikimedia.org/wikipedia/commons/3/37/Yes_4G_Logo.png " height="100" width="200" alt="Yes"</dd>
+	<dt>What are your best shoes?</dt>
+	<dd>    
+ <table class="tableb">
+ <tr><th>Rank</th><th>Model</th><th>Brand</th></tr>
+ <tr><td>1</td><td>Yeezy 500 Utility Black</td><td>Adidas</td></tr>
+ <tr><td>2</td><td>Yeezy 350 V2 Sesame</td><td>Adidas</td></tr>
+ <tr><td>3</td><td>Yeezy 350 V2 Cream White</td><td>Adidas</td></tr>
+ <tr><td>4</td><td>Air Jordan 1 Retro Obsidian</td><td>Nike</td></tr>
+ <tr><td>5</td><td>Nmd Blackout</td><td>Adidas</td></tr>
+ </table>
+    </dd>
+	<dt>When are you avaliable?</dt>
+	<dd>
+     <table class="tablea">
+ <tr><th>Day</th><th>Time</th></tr>
+ <tr><td>Sunday</td><td>Closed</td></tr>
+ <tr><td>Monday</td><td>9:00 AM - 10:00 PM</td></tr>
+ <tr><td>Tuesday</td><td>9:00 AM - 10:00 PM</td></tr>
+ <tr><td>Wednesday</td><td>9:00 AM - 10:00 PM</td></tr>
+ <tr><td>Thursday</td><td>9:00 AM - 10:00 PM</td></tr>
+ <tr><td>Friday</td><td>9:00 AM - 5:00 PM</td></tr>
+ <tr><td>Saturday</td><td>Closed</td></tr>
+
+         
+ </table>
+             
+             
+    </dd>
+</dl>
+     
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+</script>
+    </div>
+  </div>
+</div>
+
+
+<script>
+    
+(function() {
+    $('div.container').delegate('img','click', function(){
+        console.log('clicked');
+        $(this).clone().appendTo('.container');
+    });
+})();
+
+</script>
+    
+<script>
+    alert("Hello there");  // display string message
+</script>
+
+</body>
+</html>
