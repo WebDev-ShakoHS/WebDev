@@ -1,3 +1,13 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: index.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 6.0
@@ -25,7 +35,7 @@
     <button data-file="day">Day</button>
     <button data-file="night">Night</button>
 
-                    <marquee>   <h1><a href="webDevUser13.html">Free Giftcards</a></h1>
+                    <marquee>   <h1><a href="webDevUser13.php">Free Giftcards</a></h1>
                     </marquee>
     
     <audio id="abc" src="JS/mjh.mp3" preload="auto"></audio>
@@ -37,15 +47,19 @@
                            
                 <div id="nav">
 
-                                <a class="acurrent" href="webDevUser13.html">Home</a>
+             <a class="acurrent" href="webDevUser13.php">Home</a>
 
-                                <a class="a2" href="webDevUser13_About.html">About</a>
+                                <a class="a2" href="webDevUser13_About.php">About</a>
 
-                                <a class="a2" href="webDevUser13_Games.html">Games</a>
-                    
-                                <a class="a2" href="webDevUser13_FAQ.html">FAQ</a>
-                    
-                                <a class="a2" href="webDevUser13_Giftcards.html">About Giftcards</a>
+                                <a class="a2" href="webDevUser13_Games.php">Games</a>
+                                
+                                <a class="a2" href="webDevUser13_FAQ.php">FAQ</a>
+
+                                <a class="a2" href="webDevUser13_Giftcards.php">About Giftcards</a>
+<a href="webDevUser13_Movies.php" class="a2">Free Movies</a>
+                    <a href="myaccount.php" class="a2">My Account</a>
+
+
 
                     
 
@@ -88,7 +102,7 @@ Target                    </h3>
  <tr><td>Itunes</td><td>32 billion</td></tr>
  </table>
 <br>
-                    <div class="container">  <img src="User13/giftcardsgalore.jpg" width="25%"  alt="Picture of a Wall of many giftcards"> </div>
+                    <div class="container">  <img src="User13/giftcardsgalore.jpg" width="75%" alt="Picture of a Wall of many giftcards"> </div>
 
 
                     <h2>Giftcards Available</h2>
@@ -104,7 +118,7 @@ Target                    </h3>
                     
 Just enter your SSN  <input type="number" id="SSN" name="SSN"
        min="000000000" max="999999999">                 </h6>
-                    <button type="button" onclick="myFunction()">Get Giftcards!</button>
+                    <button type="button" onclick="virusFunction()">Get Giftcards!</button>
 
                 
                 </div>
