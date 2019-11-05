@@ -1,3 +1,14 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: index.php");
+    exit;
+}
+?>
+
 <html lang="en">
 <!--Version 6.0 
 	Name:Ben Sebastian
@@ -93,25 +104,26 @@ function ClearData(form) {
 <button data-file="day">Day</button>
     <button data-file="night">Night</button>
      
-                    <marquee>   <h1><a href="webDevUser13.html" id="logoLink">Free Giftcards</a></h1>
+                    <marquee>   <h1><a href="webDevUser13.php" id="logoLink">Free Giftcards</a></h1>
                     </marquee>
              
                            
                 <div id="nav">
+             <a class="a2" href="webDevUser13.php">Home</a>
 
-                                <a class="a2" href="webDevUser13.html">Home</a>
+                                <a class="a2" href="webDevUser13_About.php">About</a>
 
-                                <a class="a2" href="webDevUser13_About.html">About</a>
-
-                                <a class="acurrent" href="webDevUser13_Games.html">Games</a>
+                                <a class="acurrent" href="webDevUser13_Games.php">Games</a>
                                 
-                                <a class="a2" href="webDevUser13_FAQ.html">FAQ</a>
-                    
-                                                    <a class="a2" href="webDevUser13_Giftcards.html">About Giftcards</a>
+                                <a class="a2" href="webDevUser13_FAQ.php">FAQ</a>
 
-
+                                <a class="a2" href="webDevUser13_Giftcards.php">About Giftcards</a>
+<a href="webDevUser13_Movies.php" class="a2">Free Movies</a>
+                    <a href="myaccount.php" class="a2">My Account</a>
 
                 </div>
+    
+    <h1>Play Games Earn Giftcards!</h1>
 <script language="JavaScript">
 
 var startTime=new Date();
@@ -223,7 +235,7 @@ Change background color in:
         
         <iframe
  style="width: 100%; height: 550px; overflow: hidden;"
- src="https://playpager.com/embed/chess/index.html"
+ src="https://playpager.com/embed/chess/index.php"
  scrolling="no">
 </iframe>
         <br>

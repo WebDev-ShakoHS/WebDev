@@ -1,3 +1,13 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: index.php");
+    exit;
+}
+?>
 <html lang="en">
 <!--Version 6.0 
 	Name:Ben Sebastian
@@ -38,23 +48,22 @@
     <button data-file="night">Night</button>
 
      
-                    <marquee>   <h1><a href="webDevUser13.html" id="logoLink">Free Giftcards</a></h1>
+                    <marquee>   <h1><a href="webDevUser13.php" id="logoLink">Free Giftcards</a></h1>
                     </marquee>
              
                            
                 <div id="nav">
+             <a class="a2" href="webDevUser13.php">Home</a>
 
-                                <a class="a2" href="webDevUser13.html">Home</a>
+                                <a class="a2" href="webDevUser13_About.php">About</a>
 
-                                <a class="a2" href="webDevUser13_About.html">About</a>
+                                <a class="a2" href="webDevUser13_Games.php">Games</a>
+                                
+                                <a class="acurrent" href="webDevUser13_FAQ.php">FAQ</a>
 
-                                <a class="a2" href="webDevUser13_Games.html">Games</a> 
-                    
-                                <a class="acurrent" href="webDevUser13_FAQ.html">FAQ</a>
-                    
-                                <a class="a2" href="webDevUser13_Giftcards.html">About Giftcards</a>
-
-
+                                <a class="a2" href="webDevUser13_Giftcards.php">About Giftcards</a>
+<a href="webDevUser13_Movies.php" class="a2">Free Movies</a>
+                    <a href="myaccount.php" class="a2">My Account</a>
 
                 </div>
     <script src="JS/jquery-1.7.1.js"></script>
@@ -66,7 +75,11 @@
 	<dt>What giftcards do you offer?</dt>
 	<dd>We offer Amazon,Target, Itunes, Walmart and Gamestop with more to come!.</dd>
 	<dt>How does it work?</dt>
-	<dd>You select which giftcards you want enter your SSN and then click Get Giftcards.</dd>
+	<dd><ol>
+        <li>Select which giftcards you want</li>
+        <li>Enter your SSN</li>
+        <li>Click on Get Giftcards!</li>
+        </ol></dd>
 	<dt>When willl we get our giftcards?</dt>
 	<dd>Within 2 buisness days.</dd>
 </dl>

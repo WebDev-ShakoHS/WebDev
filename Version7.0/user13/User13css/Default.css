@@ -3,16 +3,7 @@ body{
     font-family: 'B612', sans-serif;
 
 }
-a:link {
-  text-decoration: none;
-      color: #003b6f;
 
-}
-
-a:visited {
-  text-decoration: none;
-      color: #003b6f;
-}
 h1 {
 	font-size: 1.3em;
 }
@@ -141,9 +132,6 @@ article{
     margin-left: 25%;
     margin-right: 25%;
 }
-.article_content{
-    margin: 10px;
-}
 blockquote.co{
     float: right;
     background: antiquewhite;
@@ -155,12 +143,10 @@ blockquote.co{
 }
 
 #imggfh {
+    
+  display: block;
+  margin-left: auto;
+  height:75%;
 
-     height: 75%;
-    position: absolute;
-    left: 79%;
-    top: 111%;
 }
-
-
 
