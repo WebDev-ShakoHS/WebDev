@@ -1,0 +1,123 @@
+<html lang="en">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/style.css">
+      
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+    body {
+            background-image: url("https://c.static-nike.com/a/images/w_1920,c_limit,f_auto/bo2ewj3dpcajmb6yqmpd/air-jordan-1-banned-555088-001.jpg");
+         }
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-gray w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="weather.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Weather</a>
+    <a href="movie.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Movie</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Sell Your Shoes</a>
+  </div>
+</div>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Sell Your Shoes</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   </head> 
+      <style type="text/css">
+         #scroll{
+         position : absolute;
+         white-space : nowrap;
+         top : 0px;
+         left : 400px;
+         }
+         #oScroll{
+         margin : 0px;
+         padding : 0px;
+         position : relative;
+         width : 500px;
+         height : 300px;
+         overflow : hidden;
+         }
+          h4{
+              font-family: "Impact", "fantasy", fantasy;
+          }
+      </style>
+      <script type="text/javascript">
+         function scroll(oid,iid){
+             this.oCont=document.getElementById(oid);
+             this.ele=document.getElementById(iid);
+             this.width=this.ele.clientWidth;
+             this.n=this.oCont.clientWidth;
+             this.move=function(){
+                 this.ele.style.left=this.n+"px";
+                 this.n--;
+                 if(this.n<(-this.width)){this.n=this.oCont.clientWidth}
+             }
+         }
+         var vScroll
+         function setup(){
+             vScroll=new scroll("oScroll","scroll");
+             setInterval("vScroll.move()",10)
+         }
+         onload=function(){setup()}
+      </script>
+      <center>
+         <div id="oScroll">
+            <div id="scroll"><img src="https://cdn1.iconfinder.com/data/icons/finance-vol-4/48/152-2-512.png" border="0px" 
+               width="400px" height="235px" 
+            </div>
+         </div>
+      </center>
+      </br>
+      </br>
+      <center>
+          <form action='create.php' method = 'post'><!--needed to send info to php file !-->
+            <div class="container-fluid">
+            <div class="row">
+            <div class="col-xs-6">
+               <input type="text" class="form-control" placeholder="Brand" name='brand'>
+            </div>
+            <div class="col-xs-6">
+               <input type="text" class="form-control" placeholder="Model" name='model'>
+            </div>
+            <div class="col-xs-6">
+               <input type="text" class="form-control" placeholder="Colorway" name='colorway' >
+            </div>
+            </br>
+            <div class="col-xs-6">
+               <input type="text" class="form-control" placeholder="Price" name='price' >
+            </div>
+            </br>
+            </br>
+            <p><input type='submit' value = "Add to list">
+               <!-- <input name = 'edit2' type='submit' value = 'Edit'>
+               <input name = 'find2' type='submit' value = 'Find Student'>
+               <input name = 'del2' type='submit' value = 'Remove Record'>-->
+            </p>
+            </br>
+            </br>
+            </br>
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+         </form>
+         <form action= 'read.php' method = 'post'>
+            </select>
+               <p></p>
+         </form>
+
+      </center>
+</html>
