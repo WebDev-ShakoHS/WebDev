@@ -5,14 +5,47 @@
  -->
 <head>
 
-<title> Web Development User #11 </title>
+<title> My Blog</title>
 
 </head>
 
 <body>
+<center>My Blog</center>
+    
+    
+ <article>  
+<h1>Passage</h1>
+     <p><span class="co">Her old collecting she considered discovered. So at parties he warrant oh staying.</span> Square new horses and put better end. Sincerity collected happiness do is contented. Sigh ever way now many. Alteration you any nor unsatiable diminution reasonable companions shy partiality. Leaf by left deal mile oh if easy. Added woman first get led joy not early jokes. 
 
-<center> My name is User #11</center>
+<span class="co">Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county.</span> The use him without greatly can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It dissimilar in up devonshire inhabiting. 
 
+<span class="co">No in he real went find mr. Wandered or strictly raillery stanhill as.</span> Jennings appetite disposed me an at subjects an. To no indulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now how nay cold real case.
+</p>  
+    </article>
+<script src="JS/jquery-1.7.1.js">
+    </script>
+    <script>
+    (function() {
+
+var co = $('article').find('span.co').each(function() {
+    var  $this = $(this);
+    
+    $('<blockquote></blockquote>', {
+          class:'co',
+        text: $this.text()
+    }).prependTo( $this.closest('p') );
+    
+    });
+    
+    })();
+
+</script>
+    <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
+    <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
+          <img src="275455364016211.png">
 </body>
 
 </html>
+
+
+ 
