@@ -33,39 +33,7 @@
   background-color: #4CAF50;
   color: white;
 }
-    input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */  
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
+    
     </style>
     
 <head>
@@ -79,18 +47,19 @@ input[type=submit]:hover {
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="SampleCSS.css">
 
-    <title>CONTACT</title>
+    <title>VIDEO GAMES</title>
 
 </head>
-    
-<body>
 
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="webDevUser17.html">HOME</a>
+    <a class="navbar-brand" href="index.html">HOME</a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
         <a class="nav-link" href="webDevUser17_aboutme.html">ABOUT ME</a>
@@ -110,9 +79,9 @@ input[type=submit]:hover {
       <li class="nav-item">
         <a class="nav-link" href="weatherjs/index.html">WEATHER</a>
       </li>
-        <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="games.html">GAMES</a>
-      </li>    
+      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -122,107 +91,85 @@ input[type=submit]:hover {
 </nav>
     
     
+    
+    
+    
+<main>
     <div class="container text-center">
-        <h1 class="py-4 bg-dark text-light rounded">CONTACT <i class="far fa-address-card"></i></h1>
-    </div>
-   
-<!--Section: Contact v.2-->
-<section class="mb-4">
+        <h1 class="py-4 bg-dark text-light rounded"><i class="fas fa-angle-double-right"></i>WELCOME<i class="fas fa-angle-double-left"></i></h1>
 
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
+        <main>
+    <div class="container text-center">
+        <h1 class="py-4 bg-dark text-light rounded">TO</h1>
+        
+<main>
+    <div class="container text-center">
+        <h1 class="py-4 bg-dark text-light rounded">VIDEOGAMES <i class="fas fa-gamepad"></i></h1>
 
-    <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
+        <img src="img/videogame.jpg" class="img-fluid" alt="Responsive image">
+        
                 </div>
-                <!--Grid row-->
 
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
+        </main>
+                <div id="content">
 
-                <!--Grid row-->
-                <div class="row">
+                        <h5>Home</h5>
 
-                    <!--Grid column-->
-                    <div class="col-md-12">
+                        <p>
 
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
+                               On this website you can find EVERYTHING! If you want to know what weather it is you are on a right place!
 
-                    </div>
-                </div>
-                <!--Grid row-->
+                        </p>
 
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>Shakopee, Minnesota</p>
-                </li>
-
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 952 457 8779</p>
-                </li>
-
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>david2tesar@gmail.com</p>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
+                        <p>
+                               You can also find a databese to put your ideas for a game! You will be able to find info about me but that does not matter! I am Interested In making you visit as pleasant as possible.
+                        </p>
+                        <p>     Please leave you credit card information somewhere on this site! I am sure cats are going to rule the world.
+                            
+                        </p>
+                    
+<p class="text-break">****************************************************************************************************</p>
+            
     </div>
 
-</section>
-<!--Section: Contact v.2-->    
+
+
+    <title>VIDOE GAMES</title>
+
+
+<title> Web Development User #17 </title>
+
+        
     
+        
+<h1 class="display-4">My Top 5 VALVE games</h1>
+    
+<table style="width:100%">    
+    
+    <tr>
+ <table class="table">
+ <tr class="table"><th>Rank</th><th>Companay</th><th>Games</th></tr>
+ <tr class="table"><td>1</td><td>VALVE</td><td>Team Fortress 2</td></tr>
+ <tr class="table"><td>2</td><td>VALVE</td><td>Counter Strike 1.6</td></tr>
+ <tr class="table"><td>3</td><td>VALVE</td><td>Dota 2</td></tr>
+ <tr class="table"><td>4</td><td>VALVE</td><td>Portal</td></tr>
+ <tr class="table"><td>5</td><td>VALVE</td><td>Half Life 2</td></tr>
+ </table>
+
+        <h1 class="display-4">My Top 5 EA games</h1>
+        
+    <table style="width:100%">  
+        
+ <table class="table">
+ <tr class="table"><th>Rank</th><th>Company</th><th>Games</th></tr>
+ <tr class="table"><td>1</td><td>EA</td><td>Pokemon Adventure</td></tr>
+ <tr class="table"><td>2</td><td>EA</td><td>Mario Original</td></tr>
+ <tr class="table"><td>3</td><td>EA</td><td>Super Mario Bros</td></tr>
+ <tr class="table"><td>4</td><td>EA</td><td>Mario Karts</td></tr>
+ <tr class="table"><td>5</td><td>EA</td><td>Sonic</td></tr>
+</table>
+        </table>
+    </tr>
+</table>    
     </body>
-    
 </html>
