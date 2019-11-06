@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="CSS/SampleCSS.css">
+<script src="JS/jquery-1.7.1.js"></script>
+
+<script>
+    
+(function() {
+    $('div.container').delegate('h2', 'click', function() {
+       console.log('clicked');
+      $(this).clone().appendTo('.container');
+});
+
+    })();
+    
+</script>  
+
+    
+<h1>Our Goal</h1>
+<p>The Mission, the goal, and the hope for this world is to become true gamers of the Earth.</p>
+
+    
+    
+    <div class="container2"><img src="Pepe.jpeg"></div>
+        <script>
+    
+(function() {
+    $('div.container2').delegate('img', 'click', function() {
+       console.log('clicked');
+      $(this).clone().appendTo('.container2');
+});
+
+    })();
+    
+</script>  
+ <link rel="stylesheet" href="ooogabooga.css">   
+<dl class=z>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>Who made this website?</dt>
+	<dd>Tyler Pham.</dd>
+	<dt>What is the purpose of this website?</dt>
+	<dd>To become true gamers.</dd>
+	<dt>Do you take donations?</dt>
+	<dd>No.</dd>
+	<dt>Can I have the website?</dt>
+	<dd>No.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>
