@@ -1,0 +1,131 @@
+<html>
+<head>
+    <link href="CSS/FAQ.css">
+	<meta charset=utf-8>
+	<title>jQuery Events 201</title>
+    <link href="CSS/FAQ.css" rel="stylesheet" type="text/css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/SampleCSS.css">
+
+    <title>FAQ</title>
+    
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="../webDevUser17.html">HOME</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="../webDevUser17_aboutme.html">ABOUT ME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../contact.html">CONTACT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../FAQ/webDevUser17_FAQ.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../final/movies/index.html">MOVIES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../final/crud/index.php">GAMESTORE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../final/weatherjs/index.html">WEATHER</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" href="../games.html">GAMES</a>
+    </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+<div class="container text-center">
+        <h2 class="py-4 bg-dark text-light rounded"><img src="img/Funny%20cat_Heading.png" class="img-fluid" alt="Responsive image"></h2>
+    </div>
+    
+    <script src="JS/jquery-1.7.1.js"></script>
+    
+<script>
+    
+(function() {
+    
+    $('h3').bind('click', function() {
+        console.log('clicked');
+        $(this).clone(true).appendTo('body');
+    });
+})();
+    
+</script>
+    
+<dl>
+    
+    <dt><div class="container text-center">
+        <h2 class="py-4 bg-dark text-light rounded">When did you started<i class="fas fa-question"></i></h2>
+    </div></dt>
+    <dd><h1 class="py-4 bg-dark text-light rounded"><img src="img/photo-1518791841217-8f162f1e1131.jpeg" class="img-fluid" alt="Responsive image"><h1></dd>
+   
+    
+    <dt><div class="container text-center">
+        <h2 class="py-4 bg-dark text-light rounded">What are the hours<i class="fas fa-question"></i></h2>
+    </div></dt>
+    <dd><h1 class="py-4 bg-dark text-light rounded"><img src="img/3Sa2EDt1TM-1.png" class="img-fluid" alt="Responsive image"></h1></dd>
+    
+    
+    <dt><div class="container text-center">
+        <h2 class="py-4 bg-dark text-light rounded">Who are you<i class="fas fa-question"></i></h2>
+    </div></dt>
+    <dd><h1 class="py-4 bg-dark text-light rounded"><img src="img/gma-cat-groomsman-1-ht-jcl-190814_hpMain_16x9_992.jpg" class="img-fluid" alt="Responsive image"></h1></dd>
+    
+    
+    <dt><div class="container text-center">
+        <h2 class="py-4 bg-dark text-light rounded">Why are you alive<i class="fas fa-question"></i></h2>
+    </div></dt>
+    <dd><h1 class="py-4 bg-dark text-light rounded"><img src="img/Your_Typical_Indoor_Cat_Lives_14_to_20_Years.png" class="img-fluid" alt="Responsive image"></h1></dd>
+    
+    
+<dt><div class="container text-center">
+        <h1 class="py-4 bg-dark text-light rounded">Show me your face</h1>
+    </div></dt>
+    <dd><h1 class="py-4 bg-dark text-light rounded"><img src="img/Funny-Cat-Videos1.jpg" class="img-fluid" alt="Responsive image"></h1></dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+    
+</body>
+</html>
