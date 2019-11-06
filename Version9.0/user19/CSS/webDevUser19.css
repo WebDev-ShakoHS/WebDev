@@ -95,3 +95,13 @@ h2{
 p {background-color:#F0F8FF}
 title {background-color:#00008B}
 h2 {background-color:#00008B}
+
+.dog li {
+   border: 1px solid #A9A9A9;
+   background-color:#4682B4;
+   color: #4682B4;
+    width: 17%;
+    text-align: center;
+    margin-left: auto;
+	margin-right: auto;
+}
