@@ -1,0 +1,28 @@
+body {
+    background: gold;
+    color: black;
+    font-family: "Comic Sans MS", fantasy;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+dd {
+    margin: 0;
+    padding; 1em 0;
+}
+
+dt {
+    cursor: pointer;
+    
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height; 2em;
+    background: #b5651d;
+    border-bottom: 1px solid #48322B;
+    border-top: 1px solid white;
+}
+
+dt:first-child {border-top: none;}
+dt: nth-last-child(2) {border-bottom: none;}
+.hide {display: none}

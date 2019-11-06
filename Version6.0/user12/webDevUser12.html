@@ -79,7 +79,22 @@
  <tr><td>5</td><td>Toby Fox</td><td>MEGALOVANIA</td></tr>
  </table>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+    <div class = container>
     <center><img src="images/onceler.jpg" width="600" height="365"/></center>
+    </div>
+    
+    <script>
+    (function() {
+        $('div.container').delegate('img', 'click', function(){
+            console.log('clicked!');
+            $(this).clone().appendTo('.container');
+        });
+    })();   
+    </script>
+        
+        
                 <div id="footer">
 
  <h2>Honorable Mentions: Songs that Also Induce Fear</h2>

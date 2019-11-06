@@ -1,0 +1,31 @@
+body {
+	font-family: "Comic Sans MS", fantasy;
+	color: #C11313;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+dl {
+    
+}
+
+dd {
+    margin: 0;
+    padding; 1em 0;
+}
+
+dt {
+    cursor: pointer;
+    
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height; 2em;
+    background: #FFDFDF;
+    border-bottom: 1px solid #f2bdbd;
+    border-top: 1px solid white;
+}
+
+dt:first-child {border-top: none;}
+dt: nth-last-child(2) {border-bottom: none;}
+.hide {display: none}
