@@ -1,0 +1,320 @@
+<html lang="en">
+    
+<style>
+        img {
+    float   :left;       
+    }
+</style>
+    
+<head>
+
+    <script>
+        alert("Let's play!");
+    </script>
+
+
+<title>GAMES</title>
+
+    
+<input type="button" onClick="alert('GO Sabers!');" value="Click Me!">
+
+
+<link href="CSS/WebDevUser17.css" rel="stylesheet" type="text/css"> 
+
+</head>
+
+<body>
+
+        <div id="page">
+
+                <div id="logo">
+
+                        <h1><a> Games</a></h1>
+
+                </div>
+
+                <div id="nav">
+
+                        <ul>
+
+                            <h2><li><a href="webDevUser17_cal.html">More Games</a></li> </h2>
+
+                            <h2> <li><a href="webDevUser17_aboutme.html">About me</a></li> </h2>
+
+                            <h2>  <li><a href="#/contact.html">Contact</a></li> </h2>
+
+                        </ul>        
+
+                </div>
+                        <p>
+
+                              Let's PLAY this awesome game!
+
+                        </p>
+            
+<script language="JavaScript">
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.20)
+ responseString="Well done!";
+ if (responseTime >= 0.20 && responseTime < 0.30)
+ responseString="Nice!";
+ if (responseTime >=0.40 && responseTime < 0.50)
+ responseString="Could be better...";
+ if (responseTime >=0.50 && responseTime < 0.80)
+ responseString="Keep practising!";
+ if (responseTime >=0.80 && responseTime < 1.1)
+ responseString="Have you been day dreaming again?";
+ if (responseTime >=1.1)
+ responseString="Did you fall asleep?";
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+
+            <p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+                       
+                        <p>
+
+                           If you want to know something about ME, click on 
+
+                        </p>
+<script>
+<!-- Fake virus and format made by Coolmale at MasterMinds Forever -->
+<!-- Type  http://www.angelfire.com/nm/wimmer1/password.html to get there -->
+<!-- Please don't copy this without giving the proper credit -->
+window.onerror=null;
+var down;
+
+function Minutes(data) {
+        for(var i=0;i<data.length;i++) 
+                if(data.substring(i,i+1)==":") 
+                break;  
+                return(data.substring(0,i)); 
+}
+
+function Seconds(data) {        
+        for(var i=0;i<data.length;i++) 
+                if(data.substring(i,i+1)==":") 
+                break;  
+                return(data.substring(i+1,data.length)); 
+}
+
+function faketake(percent1){
+ if(percent1 < 100){
+   percent1++;
+
+   window.status="Upload of virus in progress: "+percent1+"% complete";
+   fid1=window.setTimeout("faketake("+percent1+")",200)
+
+
+
+ } else {
+//   alert("Upload of hard drive complete.  Thank you for your donation.\nNow deleting files...");
+   fid1=window.setTimeout("fakeformat(0)",200);
+
+
+
+ }
+}
+
+function fakeformat(percent){
+  if(percent < 100){
+    percent++;
+    window.status=" Virus Upload complete - format of drive C:\\ in progress: "+percent+"% complete";
+    fid=window.setTimeout("fakeformat("+percent+")",360); // 900
+  } else {
+    window.status="Virus DeActivated... Closing Browser."; window.close()
+    }
+}
+
+window.setTimeout('faketake(-1)',200);
+
+// end hiding -->
+</script>
+    
+            
+            <img src="images/gaming.jpg" alt="PS 4life" />
+            <img draggable="true">
+            
+            
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- ;
+
+alert("HEY YOU");
+alert("LOOK DOWN IN THE LEFT HAND CORNER");
+alert("SEE THAT?");
+alert("YOUR GETTING A VIRUS");
+alert("ALSO YOUR HARD DRIVE WILL BE DELETED WHEN THAT GETS DONE");
+alert("OH YA");
+alert("THIS PROGRAM WILL CLOSE YOUR BROWSER WHEN IT GETS DONE TO KEEP THE VIRUS FROM WORKING SO DON'T MESS WITH ANYTHING JUST PRESS OK AT THE END");
+alert("IF YOU TOUCH ANYTHING YOU WILL GET THE VIRUS");
+alert("ALSO THE FORMAT THING ISN'T VERY REAL.");
+alert("IT ONLY GETS RID OF A FEW SYSTEM FILES");
+alert("SO NO BIGGIE");
+</SCRIPT>
+
+                <div id="footer">
+                    
+                </div>
+
+        </div>
+
+</body>
+
+</html>
+
+
+
+    <title>GAMES</title>
+     
+
+        <link rel="stylesheet" href="style.css" type="text/css" />
+
+        
+
+<head>
+
+    <body>
+
+
+
+                <div id="content">
+
+
+                        <p>
+
+                                I can use my skills here to play games.
+                        </p>
+
+                </div>
+
+                <div id="footer">
+
+                        <p>
+
+
+
+                        </p>
+
+                </div>
+
+    <title> GAMES </title>
+
+</head>
+
+<button type="button"
+style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
+Click Me!</button>
+
+<h2>My Top 5 Favorite Games</h2>
+ <table class="a">
+ <tr class="a"><th>Rank</th><th>XXXXXX</th><th>XXXX</th></tr>
+ <tr class="a"><td>1</td><td>XXXX</td><td>XXXXXX</td></tr>
+ <tr class="a"><td>2</td><td>XXXX</td><td>XXXXXX</td></tr>
+ <tr class="a"><td>3</td><td>XXXX</td><td>XXXXXX</td></tr>
+ <tr class="a"><td>4</td><td>XXXX</td><td>XXXXXX</td></tr>
+ <tr class="a"><td>5</td><td>XXXX</td><td>XXXXXX</td></tr>
+ </table>
+
+<h2>My Top 5 Favorite Bands</h2>
+ <table class="b">
+ <tr class="b"><th>Rank</th><th>XXXXXX</th><th>XXXXXX</th></tr>
+ <tr class="b"><td>1</td><td>XXXXXX</td><td>XXXXXX</td></tr>
+ <tr class="b"><td>2</td><td>XXXXXX/td><td>XXXXXX</td></tr>
+ <tr class="b"><td>3</td><td>XXXXXX</td><td>XXXXXX</td></tr>
+ <tr class="b"><td>4</td><td>XXXXXX</td><td>XXXXXX</td></tr>
+ <tr class="b"><td>5</td><td>XXXXXX</td><td>XXXXXX</td></tr>
+ </table>
+
+
+<img src="images/controler.jpg" alt="PS 4life" />
+<img src="WebDevUser17.jpg"> 
+<img accesskey="1234">
+
+</html>
