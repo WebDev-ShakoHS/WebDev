@@ -1,0 +1,36 @@
+
+body {
+   
+
+    background-color:navy;
+    color: forestgreen;
+        
+      ;width: 500px;
+    
+    margin: auto;
+    text-align: center;
+
+}
+
+dl {
+cursor: 
+zoom-in;
+    
+    
+}
+
+dt {
+ cursor: pointer;
+    
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+    background: #e3e3e3;
+        border-bottom: 1px dotted #c5c5c5;
+    border-top: 1px solid white;
+}
+    
+dt:first-child {border-top: dotted;}
+dt:nth-last-child(2) { border-bottom: dotted; }
+    
+}
