@@ -1,0 +1,91 @@
+<html lang="en">
+<!--Version 3.0 
+	Name:Daniel Tindall
+	Date Completed:
+ --><!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="CSS/day.css" rel="stylesheet" type="text/css">
+<!-- your webpage info goes here -->
+
+
+    <title>Some Scams I Found</title>
+
+        
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+        
+
+        <link href="CSS/WebDevUser18.CSS" rel="stylesheet" type="text/css">
+<button data-file="day">Day</button>
+    <button data-file="night">Night</button>
+    <script src="JS/jquery-1.7.1.js"></script>
+
+        
+<script>
+(function() {    
+    var link = $('link');
+    $('button').on('click', function() {
+      var $this = $(this),
+         stylesheet = $this.data('file');
+   
+    link.attr('href', 'CSS/'+ stylesheet + '.css');
+   
+    $this
+         .siblings('button')
+         .removeAttr('disabled')
+         .end()
+         .attr('disabled', 'disabled');
+});
+    })();
+    </script>
+</head>
+
+<body>
+
+
+<!-- webpage content goes here in the body -->
+
+
+        <div id="page">
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink">Contact</a></h1>
+                     
+            
+                <div id="nav">
+
+                                               <ul>
+
+                                <li><a href="webDevUser18.html">Home</a></li>
+
+                                <li><a href="webDevUser18-about.html">About</a></li>
+
+                                <li><a href="WebDevUser18-contact.html">Contact</a></li>
+                             
+                            <li><a href="WebDevUser18-games.html">Games</a></li>
+                            
+                            <li><a href="WebDevUser18-FAQ.html">FAQs</a></li>
+                            
+                            <li><a href="Weather-App-JavaScript-master/index.html">Weather</a></li>
+                            
+                            <li><a href="Movies/MovieAPI-master/index.html">Movie Posters</a></li>
+                            
+                        </ul>             
+
+                </div>
+<p>Don't Contact Me.</p>
+
+                </div>
+<h6>My email is not shaktindall@gmail.com</h6>
+        </div>
+
+</body>
+
+</html>

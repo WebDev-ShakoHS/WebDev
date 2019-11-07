@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>
+Game    
+</title>    
+ <li><a href="WebDevUser18-games.html">Games</a></li>
+</head>
+<body>
+<div class="container">
+<img src="frog.jpeg">
+</div>
+<script src="JS/jquery-1.7.1.js">
+
+        </script>
+
+    <script >
+    (function() {
+    
+    $('div.container').delegate('img', 'click', function() {
+        console.log('clicked');
+        $(this).clone().appendTo('.container');
+        });
+        })();
+    </script>
+</body>
+</html>
+
+              <html>
+<head>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("img").hide();
+  });
+  $("#show").click(function(){
+    $("img").show();
+      
+  });
+});
+</script>
+</head>
+<body>
+
+
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>
