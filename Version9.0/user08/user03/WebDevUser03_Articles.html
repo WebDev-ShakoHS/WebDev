@@ -1,0 +1,121 @@
+<html lang="en">
+<!-- Version 6.0
+Name:Gavin Fee
+Date: 10/29/19
+-->
+    <head>
+
+
+<!-- your webpage info goes here -->
+
+
+    <title>My First Website</title>
+
+        
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link href="CSS/WebDevUser_3/gfee3.css" rel="stylesheet" type="text/css"> 
+
+        <script src="JS/jquery-1.7.1.js"></script>
+    
+    
+    
+         <script src="JS/webDevUser03_script.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- webpage content goes here in the body -->
+
+
+        <div id="page">
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink">My First Website</a></h1>
+
+                </div>
+
+                <div id="nav">
+
+                        <ul class="wrig">
+
+                               
+
+                                <li class="wrig"><a href="webDevUser03_AboutMe.html">About</a></li>
+
+                            <li class="wrig"><a href="webDevUser03_Games.html">Games</a></li>
+                            
+                            <li class="wrig"><a href="webDevUser03_FAQ.html">FAQ</a></li>
+                            
+                            <li class="wrig"><a href="vacationTracker.html">Vacation Tracker</a></li>
+                            
+                            <li class="wrig"><a href="index3.html">Movie Database</a></li>
+                            
+                            <li class="wrig"><a href="index1.php">Weather Tracker 1.0</a></li>
+                            
+                            <li class="wrig"><a href="index2.html">Weather Tracker 2.0</a></li>
+                            
+                        
+                            
+
+                        </ul>        
+
+                </div>
+
+
+
+                <div id="footer">
+
+                        <p>
+
+                                Webpage made by <a href="/" target="_blank">Gavin Fee</a>
+
+                        </p>
+
+                </div>
+
+        </div>
+    <h1>Why I'm right and you're wrong</h1>
+        <style>
+            article { 
+            width: 600px;
+            margin: auto;
+            }
+            blockquote.co {
+                float: right;
+                background: e3e3e3;
+                font-size: 2em;
+            }
+        </style>
+    <article>
+        <p><span class=co>I am right and you're wrong because you suck</span>, you are not as good as me. I am better at ranking football players, hands down.</p>
+        <p><span class=co>Another reason I am right, and you're wrong</span> is that you think you are right, which is not right.... again. so stop thinking that.</p>
+        <p><span class=co>The last reason is that whatever I say goes</span>, because I have clearly already proved that you are not as good as me
+        </p>
+        <center><img src="images/user3/img.jpg" width="200" height="200" alt="you are an idiot"></center>
+        <script>
+        (function() {
+            
+            var co = $('article').find('span.co').each(function() {
+                var $this = $(this);
+                
+                $('<blockquote></blockquote>', {
+                    class: 'co',
+                    text: $this.text()
+                }).prependTo( $this.closest('p') );
+                
+            });
+            
+        })();
+            
+        </script>
+    </article>
