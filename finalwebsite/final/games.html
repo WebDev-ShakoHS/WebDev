@@ -1,0 +1,1129 @@
+<html lang="en">
+
+<style>
+        img {
+    float   :right;
+    }
+    
+    @-webkit-keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+    
+    .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+    
+    </style>
+    
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="SampleCSS.css">
+
+    <title>THE REAL GAMES</title>
+
+    <!--Story telling AI-->
+    
+    <script LANGUAGE="JavaScript">
+
+<!--- hide from old browsers --->
+
+function jumpBox(list) {
+   location.href = list.options[list.selectedIndex].value
+   }
+
+function compute(form)  {
+    form.title.value = ("''A SHORT STORY,'' by " + form.firstName.value + " " + form.lastName.value);
+    if(form.gender.value == "Male" || form.gender.value == "male") {var boyGirl = "boy"} else {var boyGirl = "girl"};
+    if(form.gender.value == "Male" || form.gender.value == "male") {var heShe = "he"} else {var heShe = "she"};
+    if(form.gender.value == "Male" || form.gender.value == "male") {var hisHer = "his"} else {var hisHer = "her"};
+    if(form.gender.value == "Male" || form.gender.value == "male") {var himHer = "him"} else {var himHer = "her"};
+    
+    var pet = form.color.value + " " + form.animal.value
+
+form.story.value = ("Once upon a time there was a young " + boyGirl + " named " + form.firstName.value + ".  " + form.firstName.value + " was " + form.age.value + " years old and lived in " + form.city.value + ", " + form.state.value + ".  While walking home from school one day, a " + pet + " jumped out from behind a " + form.plant.value + " and tackled " + form.firstName.value + " to the ground.  But just when " + heShe + " was about to let out a scream for help, " + form.firstName.value + " realized that the " + pet + " was only licking " + hisHer + " face, not trying to bite it off.  At that moment, " + form.firstName.value + " decided to keep the " + pet + " as a pet.  And on the way home " + heShe + " decided to name " + hisHer + " pet " + pet + " ''" + form.friend.value + ".''  When " + form.firstName.value + " and " + hisHer + " new pet finally got home, guess who was standing on the front porch?  That's right, it was " + form.firstName.value + "'s mother, " + form.mom.value + ".  And boy was she surprised to see a " + pet + " following " + form.firstName.value + " into the yard!  ''What in world is that?'' shouted " + form.mom.value + ".  ''It's a " + pet + ",'' answered " + form.firstName.value + ".  ''Dah, I can see that, " + form.firstName.value + ", but what on earth is it doing here?'' said " + form.mom.value + ".  ''It's my new pet!'' answered " + form.firstName.value +".  ''Oh you think so do you?'' remarked " + form.mom.value + ".  ''I wouldn't get your hopes up. You know how your father hates " + pet + "s.  But, well, I suppose you can keep him until your father comes home.''  And with that " + form.firstName.value + " grabbed " + form.friend.value + " by the scruff of the neck and led " + hisHer + " new pet into the house--even though " + heShe + " knew " + hisHer + " father was probably going to dissaprove.  Once in the house, " + form.firstName.value + " and " + form.friend.value + " played and played, that is until " + form.firstName.value + "'s favorite television show, ''"+ form.tv.value + ",'' started.  At that point " + form.firstName.value + " forgot all about " + form.friend.value + " having an unsupervised run of the house.  That is until half way through ''" + form.tv.value + ",'' when " + form.firstName.value + " was brought back to reality when " + heShe + " heard " + hisHer + " father shout, ''" + form.cuss.value + "!!  " + form.firstName.value + "! Get your " + form.butt.value + " in the " + form.room.value + "...NOW!!''  With that " + form.firstName.value + " rushed into the " + form.room.value + " to see what all the fuss was about.  When " + heShe + " entered the " + form.room.value + ", there stood " + hisHer + " father, " + form.dad.value + ", pointing toward the " + form.furn.value + ".  ''Will someone please explain that?'' asked " + hisHer + " father.  Then, as " + form.firstName.value + " followed " + hisHer + " father's finger to where it was pointing, " + heShe + " instantly knew what " + hisHer + " father was so upset about.  There, smack dab in the middle of the " + form.furn.value + ", was the biggest pile of " + form.animal.value + " doo-doo " + heShe + " had ever seen!  ''I don't EVEN want to know how that got there,'' said " + form.dad.value + ".  ''But you had better get it cleaned up now!  And you had better get rid of whatever it is that could have done such a thing!''  Well, knowing " + hisHer + " father as well as " + heShe + " did, " + form.firstName.value + " knew there was no sense even asking " + hisHer + " father if " + heShe + " could keep " + form.friend.value + " for a pet.  So without hesitation, " + form.firstName.value + " set out to find where " + form.friend.value + " was hiding.  After a few minutes of looking, " + form.firstName.value + " discovered " + form.friend.value + " crouched beneath the table that " + form.firstName.value + " did " + hisHer + " " + form.hobby.value + " on.  ''Come on, " + form.friend.value + ", it's time to find you a new home.  And hey, don't look at me that way, I'm not the one who did the dirty deed on the " + form.furn.value + "!'' scolded " + form.firstName.value + ".  ''Thanks to you I'll never get to have my own pet " + form.animal.value + "!!  And with that " + form.firstName.value + " led " + form.friend.value + " out of the house and down to the local " + form.store.value + ".  They had a pet section and " + form.firstName.value + " knew the owner would find " + form.friend.value + " a good home.  So after saying good-bye to " + form.friend.value + ", and thanking the owner of " + form.store.value + ", " + form.firstName.value + " walked backed home and attempted to dround " + hisHer + " sorrows by slamming down a half dozen " + form.drink.value + "s.  But " + form.firstName.value + "'s pitty party came to an abrupt end when " + hisHer + " father reminded " + himHer + " about the mess " + heShe + " had neglected to clean up.  And low and behold, midway through the clean-up, " + form.firstName.value + " suddenly became thankful that someone else was going to have to do it from now on.  The End.");
+
+   
+   } 
+
+function ClearForm(form)  {
+   form.story.value = "";
+   form.title.value = "";
+   }
+
+function ClearData(form) {
+   form.firstName.value = "";
+   form.lastName.value = "";
+   form.color.value = "";
+   form.drink.value = "";
+   form.city.value = "";
+   form.state.value = "";
+   form.mom.value = "";
+   form.dad.value = "";
+   form.animal.value = "";
+   form.friend.value = "";
+   form.store.value = "";
+   form.furn.value = "";
+   form.hobby.value = "";
+   form.room.value = "";
+   form.cuss.value = "";
+   form.plant.value = "";
+   form.age.value = "";
+   form.gender.value = "";
+   form.butt.value = "";
+   form.tv.value = "";
+   }
+
+<!-- done hiding from old browsers -->
+</script>
+
+    
+    <!--Chiniese thing-->
+    
+    <script LANGUAGE="JavaScript">
+
+<!--- hide from old browsers --->
+
+function jumpBox(list) {
+   location.href = list.options[list.selectedIndex].value
+   }
+
+//1997 All Rights Reserved, Daniel C. Peterson
+//For commercial user rates please email a quote request to
+//webmaster@webwinder.com
+
+function compute(form)  {
+    form.title.value = ("''A SHORT STORY,'' by " + form.firstName.value + " " + form.lastName.value);
+    if(form.gender.value == "Male" || form.gender.value == "male") {var boyGirl = "boy"} else {var boyGirl = "girl"};
+    if(form.gender.value == "Male" || form.gender.value == "male") {var heShe = "he"} else {var heShe = "she"};
+    if(form.gender.value == "Male" || form.gender.value == "male") {var hisHer = "his"} else {var hisHer = "her"};
+    if(form.gender.value == "Male" || form.gender.value == "male") {var himHer = "him"} else {var himHer = "her"};
+    
+    var pet = form.color.value + " " + form.animal.value
+
+form.story.value = ("Once upon a time there was a young " + boyGirl + " named " + form.firstName.value + ".  " + form.firstName.value + " was " + form.age.value + " years old and lived in " + form.city.value + ", " + form.state.value + ".  While walking home from school one day, a " + pet + " jumped out from behind a " + form.plant.value + " and tackled " + form.firstName.value + " to the ground.  But just when " + heShe + " was about to let out a scream for help, " + form.firstName.value + " realized that the " + pet + " was only licking " + hisHer + " face, not trying to bite it off.  At that moment, " + form.firstName.value + " decided to keep the " + pet + " as a pet.  And on the way home " + heShe + " decided to name " + hisHer + " pet " + pet + " ''" + form.friend.value + ".''  When " + form.firstName.value + " and " + hisHer + " new pet finally got home, guess who was standing on the front porch?  That's right, it was " + form.firstName.value + "'s mother, " + form.mom.value + ".  And boy was she surprised to see a " + pet + " following " + form.firstName.value + " into the yard!  ''What in world is that?'' shouted " + form.mom.value + ".  ''It's a " + pet + ",'' answered " + form.firstName.value + ".  ''Dah, I can see that, " + form.firstName.value + ", but what on earth is it doing here?'' said " + form.mom.value + ".  ''It's my new pet!'' answered " + form.firstName.value +".  ''Oh you think so do you?'' remarked " + form.mom.value + ".  ''I wouldn't get your hopes up. You know how your father hates " + pet + "s.  But, well, I suppose you can keep him until your father comes home.''  And with that " + form.firstName.value + " grabbed " + form.friend.value + " by the scruff of the neck and led " + hisHer + " new pet into the house--even though " + heShe + " knew " + hisHer + " father was probably going to dissaprove.  Once in the house, " + form.firstName.value + " and " + form.friend.value + " played and played, that is until " + form.firstName.value + "'s favorite television show, ''"+ form.tv.value + ",'' started.  At that point " + form.firstName.value + " forgot all about " + form.friend.value + " having an unsupervised run of the house.  That is until half way through ''" + form.tv.value + ",'' when " + form.firstName.value + " was brought back to reality when " + heShe + " heard " + hisHer + " father shout, ''" + form.cuss.value + "!!  " + form.firstName.value + "! Get your " + form.butt.value + " in the " + form.room.value + "...NOW!!''  With that " + form.firstName.value + " rushed into the " + form.room.value + " to see what all the fuss was about.  When " + heShe + " entered the " + form.room.value + ", there stood " + hisHer + " father, " + form.dad.value + ", pointing toward the " + form.furn.value + ".  ''Will someone please explain that?'' asked " + hisHer + " father.  Then, as " + form.firstName.value + " followed " + hisHer + " father's finger to where it was pointing, " + heShe + " instantly knew what " + hisHer + " father was so upset about.  There, smack dab in the middle of the " + form.furn.value + ", was the biggest pile of " + form.animal.value + " doo-doo " + heShe + " had ever seen!  ''I don't EVEN want to know how that got there,'' said " + form.dad.value + ".  ''But you had better get it cleaned up now!  And you had better get rid of whatever it is that could have done such a thing!''  Well, knowing " + hisHer + " father as well as " + heShe + " did, " + form.firstName.value + " knew there was no sense even asking " + hisHer + " father if " + heShe + " could keep " + form.friend.value + " for a pet.  So without hesitation, " + form.firstName.value + " set out to find where " + form.friend.value + " was hiding.  After a few minutes of looking, " + form.firstName.value + " discovered " + form.friend.value + " crouched beneath the table that " + form.firstName.value + " did " + hisHer + " " + form.hobby.value + " on.  ''Come on, " + form.friend.value + ", it's time to find you a new home.  And hey, don't look at me that way, I'm not the one who did the dirty deed on the " + form.furn.value + "!'' scolded " + form.firstName.value + ".  ''Thanks to you I'll never get to have my own pet " + form.animal.value + "!!  And with that " + form.firstName.value + " led " + form.friend.value + " out of the house and down to the local " + form.store.value + ".  They had a pet section and " + form.firstName.value + " knew the owner would find " + form.friend.value + " a good home.  So after saying good-bye to " + form.friend.value + ", and thanking the owner of " + form.store.value + ", " + form.firstName.value + " walked backed home and attempted to dround " + hisHer + " sorrows by slamming down a half dozen " + form.drink.value + "s.  But " + form.firstName.value + "'s pitty party came to an abrupt end when " + hisHer + " father reminded " + himHer + " about the mess " + heShe + " had neglected to clean up.  And low and behold, midway through the clean-up, " + form.firstName.value + " suddenly became thankful that someone else was going to have to do it from now on.  The End.");
+
+   
+   } 
+
+function ClearForm(form)  {
+   form.story.value = "";
+   form.title.value = "";
+   }
+
+function ClearData(form) {
+   form.firstName.value = "";
+   form.lastName.value = "";
+   form.color.value = "";
+   form.drink.value = "";
+   form.city.value = "";
+   form.state.value = "";
+   form.mom.value = "";
+   form.dad.value = "";
+   form.animal.value = "";
+   form.friend.value = "";
+   form.store.value = "";
+   form.furn.value = "";
+   form.hobby.value = "";
+   form.room.value = "";
+   form.cuss.value = "";
+   form.plant.value = "";
+   form.age.value = "";
+   form.gender.value = "";
+   form.butt.value = "";
+   form.tv.value = "";
+   }
+
+<!-- done hiding from old browsers -->
+</script>
+
+    
+</head>
+
+<body>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="index.html">HOME</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="webDevUser17_aboutme.html">ABOUT ME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">CONTACT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="FAQ/webDevUser17_FAQ.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="movies/index.html">MOVIES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="crud/index.php">GAMESTORE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="weatherjs/index.html">WEATHER</a>
+      </li>
+    <li class="nav-item">
+        <a class="nav-link" href="games.html">GAMES</a>
+    </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    
+
+  <main>
+    <div class="container text-center">
+        <h1 class="py-4 bg-dark text-light rounded">LET'S PLAY SOME GAMES  <i class="fas fa-gamepad"></i></h1>
+
+        <h3>
+                What are games?    
+        </h3>
+
+                        <p>
+A game is a structured form of play, usually undertaken for enjoyment and sometimes used as an educational tool.[1] Games are distinct from work, which is usually carried out for remuneration, and from art, which is more often an expression of aesthetic or ideological elements. However, the distinction is not clear-cut, and many games are also considered to be work (such as professional players of spectator sports or games) or art (such as jigsaw puzzles or games involving an artistic layout such as Mahjong, solitaire, or some video games).
+                        </p>
+                        <p>
+Games are sometimes played purely for entertainment, sometimes for achievement or reward as well. They can be played alone, in teams, or online; by amateurs or by professionals. The players may have an audience of non-players, such as when people are entertained by watching a chess championship. On the other hand, players in a game may constitute their own audience as they take their turn to play. Often, part of the entertainment for children playing a game is deciding who is part of their audience and who is a player.
+                        </p>
+        <h3>OKAY LET'S PLAY!</h3>
+                    
+<p class="text-break">****************************************************************************************************</p>
+            
+    </div>
+    <p></p>
+    
+    <h5>Tic Tac Toe</h5>
+    
+    <p>Tic-tac-toe, noughts and crosses, or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.</p>
+    
+<SCRIPT>
+
+/*
+Code Written by Cory Fogliani (Email: cory@ijustdontcare.com)
+Testers: Cory Fogliani, Chris Gordon
+Featured on JavaScript Kit (http://javascriptkit.com)
+For this and over 400+ free scripts, visit http://javascriptkit.com
+*/
+
+//if IE4/NS6, apply style
+if (document.all||document.getElementById){
+document.write('<style>.tictac{')
+document.write('width:50px;height:50px;')
+document.write('}</style>')
+}
+
+var sqr1
+var sqr2
+var sqr3
+var sqr4
+var sqr5
+var sqr6
+var sqr7
+var sqr8
+var sqr9
+var sqr1T = 0
+var sqr2T = 0
+var sqr3T = 0
+var sqr4T = 0
+var sqr5T = 0
+var sqr6T = 0
+var sqr7T = 0
+var sqr8T = 0
+var sqr9T = 0
+var moveCount = 0
+var turn = 0
+var mode = 1
+
+function vari()
+{
+sqr1 = document.tic.sqr1.value
+sqr2 = document.tic.sqr2.value
+sqr3 = document.tic.sqr3.value
+sqr4 = document.tic.sqr4.value
+sqr5 = document.tic.sqr5.value
+sqr6 = document.tic.sqr6.value
+sqr7 = document.tic.sqr7.value
+sqr8 = document.tic.sqr8.value
+sqr9 = document.tic.sqr9.value
+}
+function check()
+{
+  if(sqr1 == " X " && sqr2 == " X " && sqr3 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  } 
+  else if(sqr4 == " X " && sqr5 == " X " && sqr6 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  } 
+  else if(sqr7 == " X " && sqr8 == " X " && sqr9 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else if(sqr1 == " X " && sqr5 == " X " && sqr9 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else if(sqr1 == " X " && sqr4 == " X " && sqr7 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else if(sqr2 == " X " && sqr5 == " X " && sqr8 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else if(sqr3 == " X " && sqr6 == " X " && sqr9 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else if(sqr1 == " X " && sqr5 == " X " && sqr9 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else if(sqr3 == " X " && sqr5 == " X " && sqr7 == " X ")
+  {
+    alert("You Win!")
+    reset()
+  }
+  else
+  {
+    winCheck()
+    check2()
+    drawCheck()  
+  } 
+}
+
+function check2()
+{
+  vari()
+  drawCheck()
+  if(sqr1 == " O " && sqr2 == " O " && sqr3 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  } 
+  else if(sqr4 == " O " && sqr5 == " O " && sqr6 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  } 
+  else if(sqr7 == " O " && sqr8 == " O " && sqr9 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr4 == " O " && sqr7 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr2 == " O " && sqr5 == " O " && sqr8 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr3 == " O " && sqr6 == " O " && sqr9 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+  else if(sqr3 == " O " && sqr5 == " O " && sqr7 == " O ")
+  {
+    alert("You Lose!")
+    reset()
+  }
+}
+
+function player1Check()
+{
+  if(sqr1 == " X " && sqr2 == " X " && sqr3 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  } 
+  else if(sqr4 == " X " && sqr5 == " X " && sqr6 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  } 
+  else if(sqr7 == " X " && sqr8 == " X " && sqr9 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else if(sqr1 == " X " && sqr5 == " X " && sqr9 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else if(sqr1 == " X " && sqr4 == " X " && sqr7 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else if(sqr2 == " X " && sqr5 == " X " && sqr8 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else if(sqr3 == " X " && sqr6 == " X " && sqr9 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else if(sqr1 == " X " && sqr5 == " X " && sqr9 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else if(sqr3 == " X " && sqr5 == " X " && sqr7 == " X ")
+  {
+    alert("Player 1 wins!")
+    reset()
+  }
+  else
+  {
+    player2Check()
+    drawCheck()  
+  } 
+}
+
+function player2Check()
+{
+  vari()
+  drawCheck()
+  if(sqr1 == " O " && sqr2 == " O " && sqr3 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  } 
+  else if(sqr4 == " O " && sqr5 == " O " && sqr6 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  } 
+  else if(sqr7 == " O " && sqr8 == " O " && sqr9 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr4 == " O " && sqr7 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+  else if(sqr2 == " O " && sqr5 == " O " && sqr8 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+  else if(sqr3 == " O " && sqr6 == " O " && sqr9 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+  else if(sqr3 == " O " && sqr5 == " O " && sqr7 == " O ")
+  {
+    alert("Player 2 wins!")
+    reset()
+  }
+}
+
+function drawCheck()
+{
+  vari()
+  moveCount = sqr1T + sqr2T + sqr3T + sqr4T + sqr5T + sqr6T + sqr7T + sqr8T + sqr9T 
+  if(moveCount == 9)
+  {
+    reset()
+    alert("Draw") 
+  }
+}
+
+function winCheck()
+{
+  check2()
+  if(sqr1 == " O " && sqr2 == " O " && sqr3T == 0 && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    sqr3T = 1;
+    turn = 0;
+  }
+  else if(sqr2 == " O " && sqr3 == " O " && sqr1T == 0 && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    sqr1T = 1;
+    turn = 0;
+  }
+  else if(sqr4 == " O " && sqr5 == " O " && sqr6T == 0 && turn == 1)
+  {
+    document.tic.sqr6.value = " O "
+    sqr6T = 1;
+    turn = 0;
+  }
+  else if(sqr5 == " O " && sqr6 == " O " && sqr4T == 0 && turn == 1)
+  {
+    document.tic.sqr4.value = " O "
+    sqr4T = 1;
+    turn = 0;
+  }
+  else if(sqr7 == " O " && sqr8 == " O " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr8 == " O " && sqr9 == " O " && sqr7T == 0 && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    sqr7T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr5 == " O " && sqr9 == " O " && sqr1T == 0 && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    sqr1T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " O " && sqr5 == " O " && sqr7T == 0 && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    sqr7T = 1;
+    turn = 0;
+  }
+  else if(sqr7 == " O " && sqr5 == " O " && sqr3T == 0 && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    sqr3T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " O " && sqr3 == " O " && sqr2T == 0 && turn == 1)
+  {
+    document.tic.sqr2.value = " O "
+    sqr2T = 1;
+    turn = 0;
+  }
+  else if(sqr4 == " O " && sqr6 == " O " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else if(sqr7 == " O " && sqr9 == " O " && sqr8T == 0 && turn == 1)
+  {
+    document.tic.sqr8.value = " O "
+    sqr8T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " O " && sqr7 == " O " && sqr4T == 0 && turn == 1)
+  {
+    document.tic.sqr4.value = " O "
+    sqr4T = 1;
+    turn = 0;
+  }
+  else if(sqr2 == " O " && sqr8 == " O " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " O " && sqr9 == " O " && sqr6T == 0 && turn == 1)
+  {
+    document.tic.sqr6.value = " O "
+    sqr6T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " O " && sqr5 == " O " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr4 == " O " && sqr7 == " O " && sqr1T == 0 && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    sqr1T = 1;
+    turn = 0;
+  }
+  else if(sqr5 == " O " && sqr8 == " O " && sqr2T == 0 && turn == 1)
+  {
+    document.tic.sqr2.value = " O "
+    sqr2T = 1;
+    turn = 0;
+  }
+  else if(sqr6 == " O " && sqr9 == " O " && sqr3T == 0 && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    sqr3T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " O " && sqr4 == " O " && sqr7T == 0 && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    sqr7T = 1;
+    turn = 0;
+  }
+  else if(sqr2 == " O " && sqr5 == " O " && sqr8T == 0 && turn == 1)
+  {
+    document.tic.sqr8.value = " O "
+    sqr8T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " O " && sqr6 == " O " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " O " && sqr9 == " O " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " O " && sqr7 == " O " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else
+  {
+    computer()
+  }
+  check2()
+}
+function computer()
+{
+  check2()
+  if(sqr1 == " X " && sqr2 == " X " && sqr3T == 0 && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    sqr3T = 1;
+    turn = 0;
+  }
+  else if(sqr2 == " X " && sqr3 == " X " && sqr1T == 0 && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    sqr1T = 1;
+    turn = 0;
+  }
+  else if(sqr4 == " X " && sqr5 == " X " && sqr6T == 0 && turn == 1)
+  {
+    document.tic.sqr6.value = " O "
+    sqr6T = 1;
+    turn = 0;
+  }
+  else if(sqr5 == " X " && sqr6 == " X " && sqr4T == 0 && turn == 1)
+  {
+    document.tic.sqr4.value = " O "
+    sqr4T = 1;
+    turn = 0;
+  }
+  else if(sqr7 == " X " && sqr8 == " X " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr8 == " X " && sqr9 == " X " && sqr7T == 0 && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    sqr7T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " X " && sqr5 == " X " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr5 == " X " && sqr9 == " X " && sqr1T == 0 && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    sqr1T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " X " && sqr5 == " X " && sqr7T == 0 && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    sqr7T = 1;
+    turn = 0;
+  }
+  else if(sqr7 == " X " && sqr5 == " X " && sqr3T == 0 && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    sqr3T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " X " && sqr3 == " X " && sqr2T == 0 && turn == 1)
+  {
+    document.tic.sqr2.value = " O "
+    sqr2T = 1;
+    turn = 0;
+  }
+  else if(sqr4 == " X " && sqr6 == " X " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else if(sqr7 == " X " && sqr9 == " X " && sqr8T == 0 && turn == 1)
+  {
+    document.tic.sqr8.value = " O "
+    sqr8T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " X " && sqr7 == " X " && sqr4T == 0 && turn == 1)
+  {
+    document.tic.sqr4.value = " O "
+    sqr4T = 1;
+    turn = 0;
+  }
+  else if(sqr2 == " X " && sqr8 == " X " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " X " && sqr9 == " X " && sqr6T == 0 && turn == 1)
+  {
+    document.tic.sqr6.value = " O "
+    sqr6T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " X " && sqr5 == " X " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr4 == " X " && sqr7 == " X " && sqr1T == 0 && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    sqr1T = 1;
+    turn = 0;
+  }
+  else if(sqr5 == " X " && sqr8 == " X " && sqr2T == 0 && turn == 1)
+  {
+    document.tic.sqr2.value = " O "
+    sqr2T = 1;
+    turn = 0;
+  }
+  else if(sqr6 == " X " && sqr9 == " X " && sqr3T == 0 && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    sqr3T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " X " && sqr4 == " X " && sqr7T == 0 && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    sqr7T = 1;
+    turn = 0;
+  }
+  else if(sqr2 == " X " && sqr5 == " X " && sqr8T == 0 && turn == 1)
+  {
+    document.tic.sqr8.value = " O "
+    sqr8T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " X " && sqr6 == " X " && sqr9T == 0 && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    sqr9T = 1;
+    turn = 0;
+  }
+  else if(sqr1 == " X " && sqr9 == " X " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else if(sqr3 == " X " && sqr7 == " X " && sqr5T == 0 && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    sqr5T = 1;
+    turn = 0;
+  }
+  else
+  {
+    AI()
+  }
+  check2()
+}
+
+function AI()
+{
+  vari()
+  if(document.tic.sqr5.value == "     " && turn == 1)
+  {
+    document.tic.sqr5.value = " O "
+    turn = 0
+    sqr5T = 1
+  }
+  else if(document.tic.sqr1.value == "     " && turn == 1)
+  {
+    document.tic.sqr1.value = " O "
+    turn = 0
+    sqr1T = 1
+  }
+  else if(document.tic.sqr9.value == "     " && turn == 1)
+  {
+    document.tic.sqr9.value = " O "
+    turn = 0
+    sqr9T = 1
+  }
+  else if(document.tic.sqr6.value == "     " && turn == 1)
+  {
+    document.tic.sqr6.value = " O "
+    turn = 0
+    sqr6T = 1
+  }
+  else if(document.tic.sqr2.value == "     " && turn == 1)
+  {
+    document.tic.sqr2.value = " O "
+    turn = 0
+    sqr2T = 1
+  }
+  else if(document.tic.sqr8.value == "     " && turn == 1)
+  {
+    document.tic.sqr8.value = " O "
+    turn = 0
+    sqr8T = 1
+  }
+  else if(document.tic.sqr3.value == "     " && turn == 1)
+  {
+    document.tic.sqr3.value = " O "
+    turn = 0
+    sqr3T = 1
+  }
+  else if(document.tic.sqr7.value == "     " && turn == 1)
+  {
+    document.tic.sqr7.value = " O "
+    turn = 0
+    sqr7T = 1
+  }
+  else if(document.tic.sqr4.value == "     " && turn == 1)
+  {
+    document.tic.sqr4.value = " O "
+    turn = 0
+    sqr4T = 1
+  }
+  check2()
+}
+
+function reset()
+{
+  document.tic.sqr1.value = "     "
+  document.tic.sqr2.value = "     "
+  document.tic.sqr3.value = "     "
+  document.tic.sqr4.value = "     "
+  document.tic.sqr5.value = "     "
+  document.tic.sqr6.value = "     "
+  document.tic.sqr7.value = "     "
+  document.tic.sqr8.value = "     "
+  document.tic.sqr9.value = "     "
+  sqr1T = 0
+  sqr2T = 0
+  sqr3T = 0
+  sqr4T = 0
+  sqr5T = 0
+  sqr6T = 0
+  sqr7T = 0
+  sqr8T = 0
+  sqr9T = 0
+  vari()
+  turn = 0
+  moveCount = 0
+}
+
+function resetter()
+{
+  reset()
+}
+</SCRIPT>
+
+<FORM NAME="tic" method="post">
+<INPUT TYPE="button" NAME="sqr1" class="tictac" value="     " onClick="if(document.tic.sqr1.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr1.value = ' X '; sqr1T = 1; turn = 1; vari(); check();} else if(document.tic.sqr1.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr1.value = ' X '; sqr1T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr1.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr1.value = ' O '; sqr1T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr2" class="tictac" value="     " onClick="if(document.tic.sqr2.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr2.value = ' X '; sqr2T = 1; turn = 1; vari(); check();} else if(document.tic.sqr2.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr2.value = ' X '; sqr2T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr2.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr2.value = ' O '; sqr2T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr3" class="tictac" value="     " onClick="if(document.tic.sqr3.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr3.value = ' X '; sqr3T = 1; turn = 1; vari(); check();} else if(document.tic.sqr3.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr3.value = ' X '; sqr3T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr3.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr3.value = ' O '; sqr3T = 1; turn = 1; vari(); player1Check()} drawCheck()"><br />
+<INPUT TYPE="button" NAME="sqr4" class="tictac" value="     " onClick="if(document.tic.sqr4.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr4.value = ' X '; sqr4T = 1; turn = 1; vari(); check();} else if(document.tic.sqr4.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr4.value = ' X '; sqr4T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr4.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr4.value = ' O '; sqr4T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr5" class="tictac" value="     " onClick="if(document.tic.sqr5.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr5.value = ' X '; sqr5T = 1; turn = 1; vari(); check();} else if(document.tic.sqr5.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr5.value = ' X '; sqr5T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr5.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr5.value = ' O '; sqr5T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr6" class="tictac" value="     " onClick="if(document.tic.sqr6.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr6.value = ' X '; sqr6T = 1; turn = 1; vari(); check();} else if(document.tic.sqr6.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr6.value = ' X '; sqr6T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr6.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr6.value = ' O '; sqr6T = 1; turn = 1; vari(); player1Check()} drawCheck()"><br />
+<INPUT TYPE="button" NAME="sqr7" class="tictac" value="     " onClick="if(document.tic.sqr7.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr7.value = ' X '; sqr7T = 1; turn = 1; vari(); check();} else if(document.tic.sqr7.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr7.value = ' X '; sqr7T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr7.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr7.value = ' O '; sqr7T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr8" class="tictac" value="     " onClick="if(document.tic.sqr8.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr8.value = ' X '; sqr8T = 1; turn = 1; vari(); check();} else if(document.tic.sqr8.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr8.value = ' X '; sqr8T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr8.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr8.value = ' O '; sqr8T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr9" class="tictac" value="     " onClick="if(document.tic.sqr9.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr9.value = ' X '; sqr9T = 1; turn = 1; vari(); check();} else if(document.tic.sqr9.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr9.value = ' X '; sqr9T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr9.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr9.value = ' O '; sqr9T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+</form>
+    <p>
+    
+                                                                                               
+    </p>
+
+<h5>Story writing robot</h5>
+      
+    <p>From androids to super-computers, there are certainly a lot of forms and purposes an AI character can serve in your story, whether as main characters, secondary ones, or simply a periphery presence. Despite that, there are commonalities to writing AI that authors should be aware of, whether it’s to learn great lessons or stand out from the crowd. That’s why, in this article, I’m going to examine what AI is, how AI characters are typically used in fiction, and what you can do to make yours believable and memorable.</p>
+    
+    <p align="center">Fill-in each of the following empty fields using your own personal data
+and then click on &quot;Write Story.&quot; </p>
+
+<form>
+  <div align="center"><center><table>
+    <tr>
+      <td ALIGN="RIGHT">First Name:</td>
+      <td><input TYPE="text" NAME="firstName" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Something to Hide Behind:</td>
+      <td><input TYPE="text" NAME="plant" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Last Name:</td>
+      <td><input TYPE="text" NAME="lastName" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Friend's First Name:</td>
+      <td><input TYPE="text" NAME="friend" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Male or Female:</td>
+      <td><input TYPE="text" NAME="gender" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">A Piece of Furniture:</td>
+      <td><input TYPE="text" NAME="furn" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Age:</td>
+      <td><input TYPE="text" NAME="age" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">A word expressing Anger:</td>
+      <td><input TYPE="text" NAME="cuss" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Mother's First Name:</td>
+      <td><input TYPE="text" NAME="mom" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Your Favorite Beverage:</td>
+      <td><input TYPE="text" NAME="drink" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Your Favorite Color:</td>
+      <td><input TYPE="text" NAME="color" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">A Room in Your House:</td>
+      <td><input TYPE="text" NAME="room" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Your City:</td>
+      <td><input TYPE="text" NAME="city" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Your Favorite Hobby:</td>
+      <td><input TYPE="text" NAME="hobby" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Your State:</td>
+      <td><input TYPE="text" NAME="state" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Your Father's Name:</td>
+      <td><input TYPE="text" NAME="dad" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Type of animal:</td>
+      <td><input TYPE="text" NAME="animal" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Your Favorite Store:</td>
+      <td><input TYPE="text" NAME="store" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Favorite TV Show:</td>
+      <td><input TYPE="text" NAME="tv" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Word to Describe Someone's Rear-End:</td>
+      <td><input TYPE="text" NAME="butt" SIZE="15"></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><p><input TYPE="button" VALUE="Write Story"
+  ONCLICK="compute(this.form)"><input TYPE="button" VALUE="Erase Story"
+  ONCLICK="ClearForm(this.form)"><input TYPE="button" VALUE="Erase Data"
+  ONCLICK="ClearData(this.form)"></p>
+  </center></div><div align="center"><center><p><input TYPE="text" NAME="title" SIZE="64"> <textarea
+  COLS="60" ROWS="6" name="story" wrap="virtual"></textarea> </p>
+  </center></div></form>
+
+    
+    <p>
+                                                                             
+        
+    </p>
+    
+    
+<h5>Western and Chinese Astrological Sign Calculator</h5>
+    <h6>Because why not</h6>
+    
+    <p>Like the western 12 astrology signs, the Chinese 12 zodiac animal signs also provide guidance on people’s love match and personality analysis, while the difference lies in the time division: western astrology signs are marked by 12 months according to Gregorian calendar, while Chinese animal signs are defined by a 12-year circle.
+
+Now, use Chinese zodiac calculator: select your Gregorian date of birth, and you'll reveal your date of birth according to lunar calendar, together with your Chinese zodiac years.</p>
+    
+    
+    <script language="javascript">
+
+//Western & Chinese Astrological Sign Calculator- By Timothy Joko-Veltman
+//Email: restlessperegrine@yahoo.com URL: http://openmind.digitalrice.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+
+function signs() {
+var start = 1901, birthyear = document.zodiac.year.value, date=document.zodiac.date.value, month=document.zodiac.month.selectedIndex;
+
+with (document.zodiac.sign){
+
+if (month == 1 && date >=20 || month == 2 && date <=18) {value = "Aquarius";}
+if (month == 1 && date > 31) {value = "Huh?";}
+if (month == 2 && date >=19 || month == 3 && date <=20) {value = "Pisces";}
+if (month == 2 && date > 29) {value = "Say what?";}
+if (month == 3 && date >=21 || month == 4 && date <=19) {value = "Aries";}
+if (month == 3 && date > 31) {value = "OK.  Whatever.";}
+if (month == 4 && date >=20 || month == 5 && date <=20) {value = "Taurus";}
+if (month == 4 && date > 30) {value = "I'm soooo sorry!";}
+if (month == 5 && date >=21 || month == 6 && date <=21) {value = "Gemini";}
+if (month == 5 && date > 31) {value = "Umm ... no.";}
+if (month == 6 && date >=22 || month == 7 && date <=22) {value = "Cancer";}
+if (month == 6 && date > 30) {value = "Sorry.";}
+if (month == 7 && date >=23 || month == 8 && date <=22) {value = "Leo";}
+if (month == 7 && date > 31) {value = "Excuse me?";}
+if (month == 8 && date >=23 || month == 9 && date <=22) {value = "Virgo";}
+if (month == 8 && date > 31) {value = "Yeah. Right.";}
+if (month == 9 && date >=23 || month == 10 && date <=22) {value = "Libra";}
+if (month == 9 && date > 30) {value = "Try Again.";}
+if (month == 10 && date >=23 || month == 11 && date <=21) {value = "Scorpio";}
+if (month == 10 && date > 31) {value = "Forget it!";}
+if (month == 11 && date >=22 || month == 12 && date <=21) {value = "Sagittarius";}
+if (month == 11 && date > 30) {value = "Invalid Date";}
+if (month == 12 && date >=22 || month == 1 && date <=19) {value = "Capricorn";}
+if (month == 12 && date > 31) {value = "No way!";}
+}
+x = (start - birthyear) % 12
+with (document.zodiac.csign){
+if (x == 1 || x == -11) {value = "Rat";}
+if (x == 0) {value = "Ox";}
+if (x == 11 || x == -1) {value = "Tiger";}
+if (x == 10 || x == -2) {value = "Rabbit/Cat";}
+if (x == 9 || x == -3)  {value = "Dragon";}
+if (x == 8 || x == -4)  {value ="Snake";}
+if (x == 7 || x == -5)  {value = "Horse";}
+if (x == 6 || x == -6)  {value = "Sheep";}
+if (x == 5 || x == -7)  {value = "Monkey";}
+if (x == 4 || x == -8)  {value = "Cock/Phoenix";}
+if (x == 3 || x == -9)  {value = "Dog";}
+if (x == 2 || x == -10)  {value = "Boar";}  
+
+}
+}
+</script>
+
+<center><b>Calculate your Western and Chinese Astrological Signs</b></center>
+    <p></p>
+<form name="zodiac">
+<center>
+<table bgcolor="#ebebeb" border="2" bordercolor="#000000" rules="none" cellspacing="0" cellpadding="4">
+	<tr><td><b><i>Year</i></b></td>
+	<td><div align="right"><input type="text" size="10" name="year" value="Birth Year" onClick=value=""></div></td>
+	<td><!--This empty field is just for appearance--></td>
+	<tr><td><b><i>Month</i></b></td>
+	<td><div align="right">
+<select name="month">
+<option value="x">Select Birth Month</option>
+<option value="1">January</option><option value="2">February</option><option value="3">March</option>
+<option value="4">April</option><option value="5">May</option><option value="6">June</option>
+<option value="7">July</option><option value="8">August</option><option value="9">September</option>
+<option value="10">October</option><option value="11">November</option>
+<option value="12">December</option></select></div></td>
+	<td><!--This empty field is just for appearance--></td></tr>
+	<tr><td><b><i>Day</i></b></td>
+	<td><div align="right"><input type="text" name="date"value="Day" size="3" onClick=value=""></td>
+	<td><input type="button" value="Calculate" onClick="signs()"></div></td></tr>
+	<tr><td><b><i>Sun Sign:</i></b></td>
+	<td><div align="right"><input type="text" name="sign" size="12" value="" align="right"></div</td></tr>
+	<td><!--This empty field is just for appearance--></td></tr>
+	<tr><td><b><i>Chinese Sign:</i></b></td>
+	<td><div align="right"><input type="text" name="csign" size="12"></div></td>
+	<td><!--This empty field is just for appearance--></td></tr>
+    </form>
+    </INPUT>
+    </INPUT>
+    </INPUT>
+    </INPUT>
+    </INPUT>
+    </INPUT>
+    </INPUT>
+    </INPUT>
+    </FORM>
+      
+</html>
