@@ -43,7 +43,7 @@
 
         </p>
                     
-<h3>Top 5 Songs</h3>
+<h2>Top 5 Songs</h2>
                     
         <p>
 
@@ -58,7 +58,22 @@
         
         </p>
 
-    <center><img src="images/user16_piano.jpg" width="500" height="300" alt="Picture of Piano Keyboard"></center>
+<center><img src="images/user16_piano.jpg" width="500" height="300" alt="Picture of Piano Keyboard"></center>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<div class="container">
+    <h3>CLICK TO PRACTICE</h3>
+</div>
+    
+<script>
+(function() {
+$("div.container").delegate("h3", "click", function() {
+    console.log("clicked");
+    $(this).clone().appendTo(".container");
+    });
+})();
+</script>
 
 <h4> List of Composers I Would Fight </h4>
     <ul>

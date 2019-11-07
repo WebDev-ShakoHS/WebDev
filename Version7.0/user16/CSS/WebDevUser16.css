@@ -1,0 +1,127 @@
+.about {
+    font-family: "Palatino", "URW", fantasy;
+    color: #583884;
+    font-weight: none
+}
+
+.home {
+	font-family: "Palatino", "URW", fantasy;
+	color: #583884;
+}
+
+.songs {
+    font-family: "Palatino", "URW", fantasy;
+    color: #583884;
+}
+
+.faq {
+    font-family: "Palatino", "URW", fantasy;
+    color: #583884;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+dd {
+    font-family: "Palatino", "URW", fantasy;
+    color: #583884;
+    margin: 0;
+    padding; 1em 0;
+}
+
+dt {
+    cursor: pointer;
+    font-family: "Palatino", "URW", fantasy;
+    color: #311f4a;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height; 2em;
+    background: #AA91CE;
+    border-bottom: 1px solid #AA91CE;
+    border-top: 1px solid white;
+}
+
+h1 {
+	font-family: "Palatino", "URW", fantasy;
+    color: #583884;
+    font-size: 1.5em;
+	text-align: left;
+}
+
+h1.a {
+	font-family: "Palatino", "URW", fantasy;
+    color: #583884;
+    font-size: 2.0em;
+	text-align: center;
+}
+
+h2 {
+    font-family: "Palatino", "URW", fantasy;
+    color: #583884;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+h2.a {
+    font-family: "Palatino", "URW", fantasy;
+    color: #583884;
+    font-size: 1.4em;
+    text-align: center;
+}
+h3 {
+    font-family: "Palatino", "URW", fantasy;
+    color: #583884;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+ul.a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d3b5ff;
+}
+
+li.a {
+  float: left;
+}
+
+li.a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.a:hover {
+  background-color: #a777ed;
+}
+
+dt:first-child {border-top: none;}
+dt: nth-last-child(2) {border-bottom: none;}
+.hide {display: none}
+ 
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr {
+	border: 2px solid #ffffff;
+    color: #583884;
+	text-align: center;
+	background-color:#AA91CE; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #866AAF;
+}

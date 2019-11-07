@@ -1,0 +1,27 @@
+body {
+	font-family: "Palatino", "URW", fantasy;
+	color: #583884;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+dl {
+    
+}
+
+dd {
+    margin: 0;
+    padding; 1em 0;
+}
+
+dt {
+    cursor: pointer;
+    
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height; 2em;
+    background: #AA91CE;
+    border-bottom: 1px solid #AA91CE;
+    border-top: 1px solid white;
+}
