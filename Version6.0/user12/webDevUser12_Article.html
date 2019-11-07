@@ -1,0 +1,66 @@
+<html lang="en">
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>Yeah Bois</title>
+    <style>
+        article {
+            width: 600px;
+            margin: auto;
+        }
+        blockquote.co {
+            float: right;
+            background: #F6BAB4;
+            font-size: 1.5em;
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Bees?</h1>
+        <p>
+            According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees dont care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Lets shake it up a little. Barry! Breakfast is ready! Coming! Hang on a second. Hello?
+        </p>
+        <p>
+            <span class=co> Barry? Adam?</span>, Looking sharp. Use the stairs. Your father paid good money for those. Sorry. I'm excited. Here's the graduate. We're very proud of you, son. A perfect report card, all B's.Very proud. Ma! I got a thing going here. You got lint on your fuzz. Ow! That's me! Wave to us! We'll be in row 118,000. Bye! Barry, I told you, stop flying in the house!
+
+        </p>
+        <p>
+        Hey, Adam. Hey, Barry. Is that fuzz gel? A little. Special day, graduation. Never thought I'd make it. Three days grade school, three days high school. Those were awkward. Three days college. I'm glad I took a day and hitchhiked around the hive.
+        </p>
+        <p>
+            According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees dont care what humans think is impossible. <span class=co>Can you believe this is happening?</span> Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Lets shake it up a little. Barry! Breakfast is ready! Coming! Hang on a second. Hello?
+        </p>
+        <p>
+            Looking sharp. Use the stairs. Your father paid good money for those. Sorry. I'm excited. Here's the graduate. We're very proud of you, son. A perfect report card, all B's.Very proud. Ma! I got a thing going here. You got lint on your fuzz. Ow! That's me! Wave to us! We'll be in row 118,000. Bye! Barry, I told you, stop flying in the house!
+
+        </p>
+        <p>
+        Hey, Adam. Hey, Barry. Is that fuzz gel? A little. Special day, graduation. Never thought I'd make it. <span class=co>I can't.</span> Three days grade school, three days high school. Those were awkward. Three days college. I'm glad I took a day and hitchhiked around the hive.
+        </p>
+        <p>
+            According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees dont care what humans think is impossible.</p>
+        <center><img src="images/onceler.jpg" width="250" height="150"></center>
+        <p>
+            Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Lets shake it up a little. Barry! Breakfast is ready! Coming! Hang on a second. Hello?
+        </p>
+      
+    </article>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"> </script>
+    
+    <script>
+    (function(){
+        var co = $('article').find('span.co').each(function(){
+            var $this = $(this);
+            $('<blockquote></blockquote>',{
+                class: 'co',
+                text: $this.text()
+            }).prependTo($this.closest('p'));
+        });
+    })();
+    </script>
+    
+    </body>
+</html>
