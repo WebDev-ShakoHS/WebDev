@@ -1,0 +1,97 @@
+body {
+	font-family: serif;
+	color: #003366;
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2{
+        font-size: 1.1em;
+}
+
+.a {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+.a tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+.a th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+.b {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+    width: auto;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+.b tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#654321; 
+}
+
+.b tr{
+	text-align: center;
+	color: #ffffff;
+	background-color: #b5651d;
+}
+dl {
+    border: solid;
+    text-align: center;
+    color: black;
+}
+article{
+    color: #003366;
+}
+blockquote.co {
+    float: right;
+    font-size: 1.5em;
+    width: 15%;
+    
+}
+image.Garnered {
+    float: right;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
