@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>jQuery Events 201</title>
+	<link rel="stylesheet" href="style.css">
+    <center> 
+    <a href="WebDevFinal.html">Back Home!</a>
+    </center>
+</head>
+    
+<body> 
+    
+
+    
+    
+    </body>
+<body>
+ 
+<dl>
+	<dt>Thank you for a great quarter</dt>
+	<dd>This class i can definitely say is in my top 4 for the quarter</dd>
+	<dt>Thanks for a great quarter</dt>
+	<dd>This class i can definitely say is in my top 4 for the quarter</dd>
+	<dt>Thank you for a great quarter</dt>
+	<dd>This class i can definitely say is in my top 4 for the quarter</dd>
+	<dt>Thank you for a great quarter</dt>
+	<dd>This class i can definitely say is in my top 4 for the quarter</dd>
+	<dt>Thank you for a great quarter</dt>
+	<dd>This class i can definitely say is in my top 4 for the quarter</dd>
+</dl>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+
+<script>
+
+    
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+          var alertEvent = 'click.alert'
+this.unbind(alertEvent).bind(alertEvent,function(){
+  alert('clicked once');s
+	});
+})();
+
+
+
+</script>
+    
+
+
+</body>
+</html>
