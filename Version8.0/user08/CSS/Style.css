@@ -34,7 +34,7 @@ dt {
     line-height: 2em;
     background: Blue; 
     border-bottom: 1px solid #c5c5c5;
-    border-top: 1px solid white;
+    border-top: 1px solid white; 
 }
 
 dt:first-child { border-top: none; }

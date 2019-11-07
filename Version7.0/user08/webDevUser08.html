@@ -1,18 +1,60 @@
-<html lang="en">
-<!--Version 7.0
-	Name:
-	Date Completed:
- -->
+<!doctype html>
+<html>
 <head>
-
-<title> Web Development User #8 </title>
-
+    <meta charset=utf-8>
+    <title>appending content</title>
+    <style>
+        blockquote.co {
+            float: right;
+            background: #e3e3e3;
+            font-size: 2em;
+        }
+    </style>
 </head>
-
 <body>
 
-<center> My name is User #8</center>
+    
+<article>
+    <h1>My Awesome Post</h1>
+    <p>
+    The Office is the best show in the world because of all the funny stuff that happens in it
+    </p>
+    <p>
+    <span class=co>The Office is amazing</span>, 
+    My favorite episode of the office is stress relief Pt 1 and Pt2. Because in these episodes Dwight starts a fire as a drill. Then everyone goes into a panic and Dwight had also locked all the doors so they have no way out. Eventually Dwight tells them that its just a drill after something bad happens to one of there co-workers. He gets in trouble with corporate and has to have a meeting with the CFO. And that is just the beginning of the first part and it only gets more hectic from there.
+    
+    </p>
+    <p>
+    The Office is the best show in the world because of all the funny stuff that happens in it
+    </p>
+    <p>
+    The Office is the best show in the world because of all the amazing actors that are in it
+    </p>
+    <p>
+        <span class=co>Steve Carrel is the best actor</span>
+        Steve Carell is the best actor because he plays Michael Scott in The Office which is the best show. Michael Scott is the region manager of the Scranton branch of a paper company called Dunder Mifflin. Michael is probably one of the worst bosses when it comes to getting work done. But when it comes to frendship he is one of the best bosses/friend ever.
+    </p>
+</article>
+<img src="Images/Michael_best_boss.jpg" />
 
+<script scr="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+    
+    var co = $('article').find('span.co').each(function() {
+        var $this = $(this);
+        $('<blockquote></blockquote>', {
+            class: 'co'
+            text: $(this).text()
+        }).prependTo( $(this.closest('p') );
+        
+    });
+
+})();
+
+
+</script>
 </body>
-
 </html>

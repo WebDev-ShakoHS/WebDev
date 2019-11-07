@@ -1,17 +1,201 @@
 <html lang="en">
-<!--Version 9.0
-	Name:
-	Date Completed:
+<!--Version 1.0 
+	Name:Jackson Miller
+	Date Completed:9/5/19
  -->
 <head>
 
-<title> Web Development User #8 </title>
+    <meta charset=utf-8>
+	<title>jQuery Events 201</title>
+<link href="CSS/Style.css" rel="stylesheet" type="text/css">
+         <meta name="author" content="your name" />
 
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+
+    <style>
+        .emphasis { font-weight: bold;}  
+        ul li { color: red; }
+        .emphasis {color: green; }
+        
+    </style>    
 </head>
 
 <body>
+<h1><a href="/" id="logoLink">Jackson's First Website</a></h1>
+<ul>
+    <li><a href="webDevUser08.html">Home</a></li>
 
-<center> My name is User #8</center>
+    <li><a href="webDevUser08_Tables.html">My Top 5 Lists</a></li>
+
+    <li><a href="webDevUser08_Games.html">JavaScript Games</a></li>
+
+    <li><a href="index.html">Poster Finder</a></li>
+
+    <li><a href="http://127.0.0.1:8080/Weather/">Weather Finder</a></li>
+</ul>    
+<button data-file='Day'>Day</button>
+<button data-file='Night'>Night</button>
+<div class="container">
+    <h2><img src="Images/Prison_mike.jpg" /></h2>           
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+
+<script>
+    
+(function() {
+   
+    $('div.container').delegate('h2', 'click', function() {
+        console.log('clicked');
+        $(this).clone().appendTo('.container');
+    });
+    
+})();    
+    
+</script>    
+
+<script>
+(function() {
+	var link = $('link');
+	
+	$('button').on('click', function() {
+		var $this = $(this),
+			newclass = $this.data('file');
+        $('body').toggleClass(newclass)
+		//link.attr('href','CSS/' + stylesheet + '.css');
+		$this
+			.siblings('button')
+				.removeAttr('disabled')
+				.end()
+			.attr('disabled', 'disabled');
+	});
+})();
+</script>
+    
+<!--<script>
+
+    $('ul li > a')
+    
+    $(function() {
+        $('li:first-child').addClass('emphasis');
+    });
+    
+    $(document).ready(function(){
+        $('li:first-child').addClass('emphasis');
+    });
+(function() {
+    $('button').hover(function() {
+        console.log(this);
+    });
+})();
+    
+</script>-->
+
+    
+
+<dl>
+    <dt>#1 Micheal Scott Quote</dt>
+	<dd>"That's what she said."</dd>
+	<dt>#2 Micheal Scott Quote</dt>
+	<dd>"I'm not superstitious but I am a little stitious."</dd>
+	<dt>#3 Micheal Scott Quote</dt>
+	<dd>"Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me."</dd>
+	<dt>#4 Micheal Scott Quote</dt>
+	<dd>"Sometimes I'll start a sentence and I don't even know where it's going. I just hope I find it along the way."</dd>
+    <dt>#5 , #6, and #7 Micheal Scott Quote</dt>
+    <dd><ul><li>"Fool me once, strike one. Fool me twice, strike three."</li> 
+        <p><li>"Make friends first, make sales second, make love third. In no particular order</li></p>
+        <p><li>"Friends joke with one another. ' Hey, you're poor.' 'Hey, your momma's dead.' That's what friends do."</li></p></ul></dd>
+
+</dl>
+
+
+<script>
+    $('ul li').addClass('emphasis');
+</script>
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+
+
+
+        <div id="page">
+
+                <div id="logo">
+
+                    
+
+                </div>
+
+                <div id="nav">
+
+                            
+
+                </div>
+
+                <div id="content">
+
+                        
+                        
+                </div>     
+                        
+                   
+     
+
+<h2>My Top 5 Favorite TV Shows</h2>
+ <table class="a">
+ <tr><th>Rank</th><th>TV Show</th><th>Lead Actor</th></tr>
+ <tr><td>1</td><td>The Office</td><td>Steve Carell</td></tr>
+ <tr><td>2</td><td>Psych</td><td>James Roday</td></tr>
+ <tr><td>3</td><td>SpongeBob</td><td>Tom Kenny</td></tr>
+ <tr><td>4</td><td>The Flash</td><td>Grant Guston</td></tr>
+ <tr><td>5</td><td>Phineas and Ferb</td><td>Vincent Martella</td></tr>
+ </table>
+                
+<img src="Images/Micheal_Scott.jpg" />
+  
+<h2>My Top 5 Favorite shoes</h2>
+ <table class="b">
+ <tr><th>Rank</th><th>Shoe Name</th><th>Brand</th></tr>
+ <tr><td>1</td><td>Adapt BB</td><td>Nike</td></tr>
+ <tr><td>2</td><td>Air Max 270 React Bauhaus</td><td>Nike</td></tr>
+ <tr><td>3</td><td>Air Max 97</td><td>Nike</td></tr>
+ <tr><td>4</td><td>Huaraches</td><td>Nike</td></tr>
+ <tr><td>5</td><td>Air Max 1</td><td>Nike</td></tr>
+ </table>                                             
+     <p>
+<div id="footer">
+                                Webpage made by <a href="/" target="_blank">[Jackson Miller]</a>
+
+                        </p>
+
+            
+            <!-- <button type="button"
+style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:13%;margin-bottom:0%;" onClick="alert('GO Sabers!');" >
+Click Me!</button>
+-->
+                </div>
+
+        </div>
 
 </body>
 
