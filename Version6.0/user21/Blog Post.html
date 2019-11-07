@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Where to start if I am interested in computers?</title>
+<style>
+    article {
+        width: 600px;
+        margin: auto;
+    }
+    blockquote.co {
+        float: right;
+        background: #e3e3e3
+        font-size: 2em
+    }
+    img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<script src="JS/jquery-1.7.1.js"></script>
+</head>
+<body>
+<img src="Coding.jpg" alt="Image of Code" >
+<article>
+    <h1>If you are still in school...</h1>
+    <p>you should focus on <span class=co>taking as many computer classes as possible</span>, even if the topic of the class is not what you are interested in. For example, even if you do not want to make a website, taking a class like Web Development could still help a lot because you learn general things about computers and it gets your brain thinking like a computer.</p>
+    
+    <h1>If you are done with school...</h1>
+    <p>I would recommend <span class=co>finding what you specifically want to do with computers</span> and focus on the basics of that topic. Using youtube could very much help with that but there are plenty of website out there for pretty much anything. For example, if you are interested in coding you could use Code Academy.</p>
+    
+    <h1>What do these skills give me?</h1>
+    <p><span class=co>Knowing how to use computers can help you in an infinite number of ways.</span> An obvious one would be that it could get you a job, but it can also help with solving errors with your own computer, you could do something like make a website for someone if they need one, and many other things. As the world progresses, computers are becoming more and more important to society, so having a general idea of how computers work definitely would not hurt.</p>
+    
+    <script>
+    
+    (function() {
+        var co = $('span.co').each(function() {
+            var $this = $(this);
+            
+            $('<blockquote></blockquote>', {
+                class: 'co',
+                text: $this.text()
+            }).prependTo( $this.closest('p') );
+        });
+    })();
+    
+    </script>
+    
+</article>   
+</body>
+</html>

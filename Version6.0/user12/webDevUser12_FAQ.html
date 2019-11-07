@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Phobias</title>
+    <script src="JS/webDevUser12_script.js"></script>
+	<link href="CSS/WebDevUser12.css" rel="stylesheet" type="text/css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+    <style>
+    ul li{color:blue;}
+    .emphasis {color: fuchsia; font-weight:bold;}
+    </style>
+    
+    <script>
+    $(document).ready(function() {
+    $('li:first-child').addClass('emphasis');
+    });
+    </script>
+    
+</head>
+<body class = "FAQ">
+
+<dl>
+	<dt>What is a phobia?</dt>
+	<dd>It is an extreme or irrational fear of or aversion to something.</dd>
+	<dt>What is the difference between a phobia and a fear?</dt>
+	<dd>When a person has a phobia, there typically appears to be no reason why they have it. It is completely unreasonable and is considered a mental disorder. Phobias can even lead to people not going outside in an attempt to stay away from what causes them extreme panic. A fear, however, is much less intense. People with a fear of spiders will just be jittery or suprised when a spider crawls up their arm, but someone with arachnophobia might have a panic attack.</dd>
+	<dt>What does the title "Home of Phobia" mean?</dt>
+	<dd>It's an interesting way to say haunted house.</dd>
+	<dt>What are the most common phobias?</dt>
+	<dd>Arachnophobia: The fear of spiders
+    Ophidiophobia: The fear of snakes
+    Acrophobia: The fear of heights</dd>
+	<dt>How common is it to have a phobia?</dt>
+	<dd>Around 11% of Americans have phobias.</dd>
+</dl>
+
+ <ul>
+    <li><b>Tl;dr - Phobias and Fears are two different things!!!</b></li>
+    <li><b>Be aware that phobias are an actual mental disorder and fears are not!!</b></li>
+    <li><b>Thanks for visiting my website :) I hope it is terrible to your eyes.</b></li>
+    </ul>
+    
+<button data-file="salmon">Want salmon?</button>
+<button data-file="bees">Bees?</button>
+    
+    <script>
+        (function() {
+        var link = $('link');
+        $('button').on('click', function() {
+            var $this = $(this),
+                stylesheet = $this.data('file');
+            
+            link.attr('href', 'CSS/' + stylesheet + '.css');
+            
+            $this
+                .siblings('button')
+                    .removeAttr('disabled')
+                    .end()
+                    .attr('disabled','disabled')
+        });
+    })();
+    </script>
+    
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(300)
+				.siblings('dd')
+					.slideUp(300);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>

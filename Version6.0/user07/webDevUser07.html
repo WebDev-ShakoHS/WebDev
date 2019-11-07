@@ -4,15 +4,149 @@
 	Date Completed:
  -->
 <head>
+<!-- your webpage info goes here -->
 
-<title> Web Development User #7 </title>
+
+    <title> Alien Appreciation Website </title>
+
+        <link href="CSS/main.css" rel="stylesheet" type="text/css"> 
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link rel="stylesheet" href="style.css" type="text/css" />
+
+        
 
 </head>
 
 <body>
 
-<center> My name is User #7</center>
 
+<!-- webpage content goes here in the body -->
+
+
+        <div id="page">
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink">My First Website</a></h1>
+
+                </div>
+
+                <div id="nav">
+
+                        <ul>
+
+                                <li><a href="#/webDevUser07.html">Home</a></li>
+
+                                <li><a href="raid.html">AbOuT tHe RaId</a></li>
+
+                                <li><a href="games.html">Games</a></li>
+
+                        </ul>        
+
+                </div>
+
+                <div id="content">
+
+                        <h1> The Home Page </h1>
+                    
+                        <h2> Reasons Why We Should Appreciate the Aliens  </h2>
+                    
+                        <h3> They haven't taken over our planet </h3>
+                    
+                        <h4> No Human Slaves . No Alien Masters . We Have Free Will </h4>        
+                    
+        
+                <h2>My Top 5 Favorite Movie/Show Aliens</h2> 
+                    <table class='a' >
+                        <tr><th>Rank</th><th>Alien</th><th>Movie</th></tr>
+                        <tr><td>1</td><td>Pizza Planet Aliens</td> <td>Toy Story 2</td></tr>
+                        <tr><td>2</td><td>Groot</td><td>Guardians of the Galaxy</td></tr>
+                        <tr><td>3</td><td>Dave Matthews Band</td><td>Grey Street</td></tr>
+                        <tr><td>4</td><td>Modest Mouse</td><td>One Chance</td></tr>
+                        <tr><td>5</td><td>New Radicals</td><td>Someday We'll Know</td></tr>
+                    </table> 
+                    
+                       <center><img src="images/aliens.png" width=275 height=215 alt="Image Of Toy Story Aliens"/></center>
+
+                </div>
+                <h2>States with the Most UFO Sightings</h2> 
+                    <table class='b'>
+                        <tr><th>Rank</th><th>State</th><th># Of UFO Sightings </th><th>Sightings per 1000 People</th></tr>
+                        <tr><td>1</td><td>Washington</td><td>5894</td><td>78.22</td></tr>
+                        <tr><td>2</td><td>Montana</td><td>823</td><td>77.47</td></tr>
+                        <tr><td>3</td><td>Vermont</td><td>482</td><td>76.96</td></tr>
+                        <tr><td>4</td><td>Alaska</td><td>560</td><td>75.94</td></tr>
+                        <tr><td>5</td><td>Maine</td><td>940</td><td>70.23</td></tr>
+                    </table> 
+            <article> 
+                <center><h3> UFOs Are Real And There Is No Way We Are The Only Living Things In The Universe </h3></center>
+        <p> 
+            <span class=co> aliens are real.</span> There is so much space that there is no way that we, humans, are the only living species in this whole universe. There is just so much that the chance that we are the only species is very slim. And so there must be some type of extraterestrial life out there that we have not discovered. Or that the government has not released to us.
+        </p>
+        <p> 
+            <span class=co>government is hiding the aliens from us. </span> I think that there is a large chanve that there has been life discovered, but the government is hiding the aliens from us. This could be for our own safety or because they just do not want to share the aliens with us.
+        </p>
+        <p> 
+            Aliens are very real and though we may not have visible proof there are still things outt there. And if someone is to believe that we are the only thing in the multiple universes than that is shocking. And they are ignorant. We must be open to the other ideas of life and how <span class=co> we are not alone in our universe. </span>
+        </p>
+    </article>
+            
+            <button type="button"
+                    style="background-color:cadetblue;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;" onClick="alert('aLiEnS aRe ReAl');" >
+                Click Me!</button>
+            
+                <div id="footer">
+
+                        <p>
+
+                                Webpage made by <a href="/" target="_blank">[Faith]</a>
+
+                        </p>
+
+                </div>
+
+        </div>
+            <script src="JS/jquery-1.7.1.js"></script>
+            
+    
+            <script>
+                (function() {
+                    $('dd').filter(':nth-child(n+4)').addClass('hide');
+                    
+                    $('dl').on('mouseenter', 'dt',function() {
+                              $(this)
+                              .next()
+                              .slideDown(100)
+                              .siblings('dd')
+                                    .slideUp(100)
+                });
+                })();
+    </script>
+    
+    
+    <script> 
+    (function() {
+        var co = $('span.co').each(function() {
+            var $this = $(this); 
+            
+            $('<blockquote></blockquote>', {
+                class: 'co', 
+                text: $this.text()
+            }).prependTo( $this.closest('p') );
+        });
+    })();
+    </script>
+    
+    <div>
+    <center> <h5> Thank You, Aliens for not abducting me and using me as a human test subject </h5> </center>
+    </div>    
 </body>
 
 </html>

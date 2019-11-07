@@ -1,0 +1,80 @@
+<html lang='en'> 
+<head>
+    <link rel="icon" type="image" href="images/handflower.png">
+    <title> Plants vs. Zombies </title>
+    <link href="style.css" rel="stylesheet" type="text/css"> 
+    <meta name="author" content="Faith" /> 
+    <meta name="description" content="PvsZ" /> 
+    
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="JS/pvszscript.js"></script>
+</head>
+
+<body class="zo">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- header bar -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only"> Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://www.ea.com/studios/popcap/plants-vs-zombies"> The Game </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="pvsz.html">Home</a></li>
+                    <li><a href="plants.html">Plants</a></li>
+                    <li class="active"><a href="#">Zombies</a></li>
+                    <li><a href="extra.html">About Me</a></li>
+                    <li> <a class="navbar-brand" href="https://plantsvszombies.fandom.com/wiki/Main_Page">More Info</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+    <!-- rest of webpage -->
+        <h1> Zombies </h1>
+        <img id="agent" src="images/agent.png" width=300 height=310 align=right>
+        <h3 id="dialogue"> hEy HuMaN! I aM a SeCrEt AgEnT. yOuR tRoPhY iS lOcAtEd UnDeR aLl ThEsE zOmBiEs!</h3>
+        <button id="understand" type="button" onClick="ok()">I understand</button>
+    </div>
+    <div>
+    <center><table class='b'>
+        <tr><th>Name</th><th>Picture</th><th>Characteristics</th><th>Health</th></tr>
+        <tr><td>Zombie</td><td><img src="images/zombies/Zombie1.png"></td><td>A normal zombie</td><td>200</td></tr>
+        <tr><td>Flag Zombie</td><td><img src="images/zombies/Flag_Zombie1.png"></td><td>Moves slightly faster and signals huge wave is coming</td><td>200</td></tr>
+        <tr><td>Conehead Zombie</td><td><img src="images/zombies/Conehead_Zombie1.png"></td><td>Wears a traffic cone to protect intself</td><td>560</td></tr>
+        <tr><td>Pole Vaulting Zombie</td><td><img src="images/zombies/Pole_Vaulting_Zombie1.png"></td><td>Jumps over the first plant it encounters</td><td>500</td></tr>
+        <tr><td>Buckethead Zombie</td><td><img src="images/zombies/Buckethead_Zombie1.png"></td><td>Wears a bucket to protect itself</td><td>1300, 1100 for bucket</td></tr>
+        <tr><td>Newspaper Zombie</td><td><img src="images/zombies/Newspaper_Zombie1.png"></td><td>Moves slowly, then moves twice as fast when newspaper destroted</td><td>350, 150 for newspaper</td></tr>
+        <tr><td>Screen Door Zombie</td><td><img src="images/zombies/Screen_Door_Zombie1.png"></td><td>Holds door to protect itself</td><td>1300, 1100 for screen door</td></tr>
+        <tr><td>Football Zombie</td><td><img src="images/zombies/Football_Zombie1.png"></td><td>Wears football gear that provides extra protection</td><td>1600, 1400 for football helmet</td></tr>
+        <tr><td>Dancing Zombie</td><td><img src="images/zombies/New_Dancing_Zombie2.png"></td><td>Dances as it walks and summons 4 backup dancers</td><td>500t</td></tr>
+        <tr><td>Backup Dancer</td><td><img src="images/zombies/Backup_Dancer1.png"></td><td>Dances as it walks and can be resummoned if Dancing Zombie still alive</td><td>200</td></tr>
+        <tr><td>Ducky Tube Zombie</td><td><img src="images/zombies/Ducky_Tube_Zombie1.png"></td><td>Appears in pool</td><td>200</td></tr>
+        <tr><td>Snorkel Zombie</td><td><img src="images/zombies/Snorkel_Zombie1.png"></td><td>Only resurfaces from water to eat plants</td><td>200</td></tr>
+        <tr><td>Zomboni</td><td><img src="images/zombies/Zomboni1.png"></td><td>Rides a zamboni which crushes plants, leaving an ice trail behind</td><td>1,350</td></tr>
+        <tr><td>Zombie Bobsled Team</td><td><img src="images/zombies/Zombie_Bobsled_Team1.png"></td><td>Only appears in a group of 4 with icetrail left from Zomboni</td><td>1,100, 200 per zombie, 300 for bobsled</td></tr>
+        <tr><td>Dolphin Rider Zombie</td><td><img src="images/zombies/Dolphin_Rider_Zombie1.png"></td><td>Very fast with dolphin. Jumps over one plant</td><td>500</td></tr>
+        <tr><td>Jack-In-the-Box Zombie</td><td><img src="images/zombies/Jack-in-the-Box_Zombie1.png"></td><td>Carries around explosive jack-in-the-box and moves twice as fast as normal zombies</td><td>500</td></tr>
+        <tr><td>Balloon Zombie</td><td><img src="images/zombies/Balloon_Zombie1.png"></td><td>Floats above ground which protects it fromground attacks</td><td>220, 20 for balloon</td></tr>
+        <tr><td>Digger Zombie</td><td><img src="images/zombies/Digger_Zombie1.png"></td><td>Digs through ground and appears on left side of yard</td><td>300, 100 for hardhat</td></tr>
+        <tr><td>Pogo Zombie</td><td><img src="images/zombies/Pogo_Zombie1.png"></td><td>can Make multiple jumps over plants</td><td>500</td></tr>
+        <tr><td>Zombie Yeti</td><td><img src="images/zombies/Zombie_Yeti1.png"></td><td>Runs away if not killed. Drops 4 diamonds if killed</td><td>1350</td></tr>
+        <tr><td>Bungee Zombie</td><td><img src="images/zombies/Bungee_Zombie1.png"></td><td>Steals plants at random by dropping down</td><td>400</td></tr>
+        <tr><td>Ladder Zombie</td><td><img src="images/zombies/Ladder_Zombie1.png"></td><td>Carries ladder which provides extra protection and places over defensive plants for others to climb</td><td>500, 500 for ladder</td></tr>
+        <tr><td>Cataplt Zombie</td><td><img src="images/zombies/Catapult_Zombie1.png"></td><td>Attacks last row until run out of basketballs</td><td>850</td></tr>
+        <tr><td>Gargantuar</td><td><img src="images/zombies/Gargantuar1.png"></td><td>Crushes plants instead of eating and throws an Imp when damaged</td><td>3000</td></tr>
+        <tr><td>Imp</td><td><img src="images/zombies/Imp1.png"></td><td>Thrown by Gargantuar into defenses</td><td>200</td></tr>
+        <tr><td>Dr Zomboss</td><td><img src="images/zombies/Dr._Zomboss1.png"></td><td>Final boss</td><td>31,660</td></tr>
+        </table></center>
+    </div>
+    
+    <img id="trophy" src="images/trophy.png">
+    <button id="grab" onClick="grab()">Grab It and GO!</button>
+</body>
+</html>

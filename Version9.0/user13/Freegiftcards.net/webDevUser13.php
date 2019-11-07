@@ -1,0 +1,192 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: index.php");
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 6.0
+	Name: Ben S
+	Date Completed: 9-13-19
+ -->
+<head>
+
+<title> Web Development User #13 </title>
+<script src="JS/WebDevUser13.js"></script>
+<link rel="stylesheet" href="User13css/day.css">  
+<style>
+   
+    .titlemania{
+        color: #003b6f;
+        font-family: cursive;
+                font-size: 250%;
+        cursor:default;
+
+    }
+    </style>
+</head>
+
+<body>
+    <button data-file="day">Day</button>
+    <button data-file="night">Night</button>
+
+                    <marquee>   <h1><a href="webDevUser13.php">Free Giftcards</a></h1>
+                    </marquee>
+    
+    <audio id="abc" src="JS/mjh.mp3" preload="auto"></audio>
+
+
+     
+
+             
+                           
+                <div id="nav">
+
+             <a class="acurrent" href="webDevUser13.php">Home</a>
+
+                                <a class="a2" href="webDevUser13_About.php">About</a>
+
+                                <a class="a2" href="webDevUser13_Games.php">Games</a>
+                                
+                                <a class="a2" href="webDevUser13_FAQ.php">FAQ</a>
+
+                                <a class="a2" href="webDevUser13_Giftcards.php">About Giftcards</a>
+<a href="webDevUser13_Movies.php" class="a2">Free Movies</a>
+                    <a href="myaccount.php" class="a2">My Account</a>
+
+
+
+                    
+
+                </div>
+
+                <div id="content">
+
+                        <h2>Absolute No Risk! 100% Safe!</h2>
+
+                        <p>
+
+"Amazing! Got them immediately!"
+                            -Sally From New York
+                        </p>
+
+                        <p>
+
+"Love These!"
+                            -Jeff Bezos CEO of Amazon
+                        </p> <img src="User13/JeffBezos.jpg" width="5%"  alt="Picture of Jeff Bezos">
+
+                    <h3>
+Target                    </h3>
+                    
+                    <h4>
+                    Amazon
+                    </h4>
+
+                    <h5>
+                    Walmart
+                    
+                    </h5>
+                    <br>
+                     <table class="b">
+ <tr><th>Company</th><th>Amount of gift cards given away</th></tr>
+ <tr><td>Amazon</td><td>12k</td></tr>
+ <tr><td>Walmart</td><td>32k</td></tr>
+ <tr><td>Target</td><td>43k</td></tr>
+ <tr><td>Gamestop</td><td>1.2 million</td></tr>
+ <tr><td>Itunes</td><td>32 billion</td></tr>
+ </table>
+<br>
+                    <div class="container">  <img src="User13/giftcardsgalore.jpg" width="75%" alt="Picture of a Wall of many giftcards"> </div>
+
+
+                    <h2>Giftcards Available</h2>
+ <table class="a">
+ <tr><th>Rank</th><th>Company</th><th>Amount</th></tr>
+ <tr><td>1</td><td> <input type="checkbox">Amazon</td><td><input type="radio" name="value1">$5, <input type="radio" name="value1">$10, <input type="radio" name="value1">$20, <input type="radio" name="value1">$50, <input type="radio" name="value1">$100, <input type="radio" name="value1">$500</td></tr>
+ <tr><td>2</td><td><input type="checkbox">Walmart</td><td><input type="radio" name="value2">$5, <input type="radio" name="value2">$10, <input type="radio" name="value2">$20, <input type="radio" name="value2">$50</td></tr>
+ <tr><td>3</td><td><input type="checkbox">Target</td><td><input type="radio" name="value3">$5, <input type="radio" name="value3">$10, <input type="radio" name="value3">$20, <input type="radio" name="value3">$50</td></tr>
+ <tr><td>4</td><td><input type="checkbox">Gamestop</td><td><input type="radio" name="value4">$5, <input type="radio" name="value4">$10, <input type="radio" name="value4">$20, <input type="radio" name="value4">$50</td></tr>
+ <tr><td>5</td><td><input type="checkbox">Itunes</td><td><input type="radio" name="value5">$5, <input type="radio" name="value5">$10, <input type="radio" name="value5">$20, <input type="radio" name="value5">$50, <input type="radio" name="value5">$100</td></tr>
+ </table>
+                    <h6>
+                    
+Just enter your SSN  <input type="number" id="SSN" name="SSN"
+       min="000000000" max="999999999">                 </h6>
+                    <button type="button" onclick="virusFunction()">Get Giftcards!</button>
+
+                
+                </div>
+
+<button data-file="Default">Clickth Me!</button>
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+    <script src="JS/jquery-1.7.1.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle();
+    $("#div3").fadeToggle();
+  });
+});
+</script> 
+    <script>
+    (function(){
+        
+        var link = $('link');
+        $('button').on('click', function() {
+            var $this = $(this),
+                stylesheet = $this.data('file');
+            
+            link.attr('href','User13css/' + stylesheet + '.css');
+            
+
+            
+            
+        });
+        
+        
+        
+    })();
+    
+    </script>
+  <script>
+      $("h1").addClass('titlemania');
+    </script>  
+    <script>(function(){
+        $('div.container').delegate('img', 'click', function(){
+            console.log('You bloody clicked it! Great Job!');
+            $(this).clone().appendTo('.container');
+            
+            
+            
+            
+            
+            
+        });    
+            
+            
+            
+            
+            
+            
+            
+            
+        })();
+                    
+                    
+                    </script>
+    
+</body>
+
+</html>

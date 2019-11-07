@@ -1,18 +1,56 @@
 <html lang="en">
 <!--Version 5.0
-	Name:
-	Date Completed:
+	Name: Thea Lauren Pineda
+	Date Completed: 9/13/19
  -->
 <head>
 
-<title> Web Development User #12 </title>
-
+<script src="JS/webDevUser12_script.js"></script>
+<title> Phobias </title>
+<link rel="stylesheet" href= "../Version6.0/user12/CSS/salmon.css">
+    
+<style>
+    ul li{color:blue;}
+    .emphasis {color: fuchsia; font-weight:bold;}
+    .hey {color: mediumorchid;}
+    </style>
+    
 </head>
 
 <body>
+    
+    <center><h1>hey...... um..... what if..... o___o haha just kidding.... unless...??????</h1></center>
+    
+    <center> My name is Thea Lauren Pineda!</center>
+    
+<center><p id="textChange">Ahhhhhhhhhhhhhhhhhhhh.........aaaaaaaaaaa.....aaaaAAAAAAAAAAAAAA</p></center>
+<button type="button" onclick="changeText()">Click if you like</button>
+    
+    <button data-file="salmon">The color salmon</button>
+    <button data-file="bees">Bees?</button>
+    
+    <script>
+        (function() {
+        var link = $('link');
+        $('button').on('click', function() {
+            var $this = $(this),
+                stylesheet = $this.data('file');
+            
+            link.attr('href', 'user12/CSS/' + stylesheet + '.css');
+            
+            $this
+                .siblings('button')
+                    .removeAttr('disabled')
+                    .end()
+                    .attr('disabled','disabled')
+        });
+    })();
+    </script>
 
-<center> My name is User #12</center>
-
+    <!--jQuery('ul li').addClass('emphasis');
+    $('h1').addClass('hey');
+    $('link').attr('href', '../Version6.0/user12/CSS/bees.css');-->
+    
 </body>
 
 </html>

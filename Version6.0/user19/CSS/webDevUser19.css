@@ -1,0 +1,97 @@
+body {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: 	#2E8B57;
+    	background-color: 	#F0F8FF;
+}
+.sb body {
+    
+width: 200px
+text-align: center;
+}
+
+dl {
+
+}
+
+dd {
+margin: 0;
+
+padding: 1em 0;
+}
+
+dt{
+cursor: pointer;
+
+
+font-weight: bold;
+font-size: 1.5em;
+line-height: 2em;
+background: #e3e3e3;
+border-bottom: 1px solid #c5c5c5;
+border-top: 1px sold white;
+    
+    	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+     width: 50%;
+    
+}
+
+dt:first-child { border-top: none; }
+dt:nth-last-child { border-bottom: none; 
+}
+
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2{
+        font-size: 1.1em;
+}
+
+.a {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+     width: 70%;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+.a tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#00008B; 
+}
+
+.a th {
+	text-align: center;
+	color: #4682B4;
+	background-color: #A9A9A9;
+}
+.b {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+     width: 70%;
+	border-collapse: collapse;
+	cellspacing: 0px;
+   
+}
+
+.b tr{
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#00008B; 
+}
+
+.b th{
+	text-align: center;
+	color: #4682B4;
+	background-color: #A9A9A9;
+}
+p {background-color:#00008B}
+title {background-color:#00008B}
+h2 {background-color:#00008B}

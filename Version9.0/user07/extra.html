@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <link rel="icon" type="image" href="images/handflower.png">
+    <title> Plants vs. Zombies </title>
+    <link href="style.css" rel="stylesheet" type="text/css"> 
+    <meta name="author" content="Faith" />
+    <meta name="description" content="" />      
+    
+</head>
+
+<body class= "x">
+    <div id="page">
+        
+        <div id="content">
+            
+            <center> <h5> ThAnKs! Want to go back <a href="pvsz.html">home?</a></h5></center>
+            
+            <dl class=x> 
+                <dt> What is my name? </dt>
+                <dd> Faith </dd>
+            <dt> Age? </dt>
+                <dd> 16 and a Junior at Shakopee High School</dd>
+            <dt> What is my favorite school subject? Why?</dt>
+                <dd> I like AP Biology because it is dope</dd>
+            <dt> What do I do in my free time?</dt>
+                <dd>
+                    <ul>
+                        <li> HOMEWORK! I only have 4 classes yet I still spend all my time doing homework.</li>
+                        <li> Social Media! I like to talk to my friends on snapchat or I go on Instagram to look at memes</li>
+                        <li> Games! I play games on my phone or computer. One Example being Plants vs. Zombies</li>
+                        <li> Movies! I like to watch movies, sometimes it is on Netflix or else I illegally pirate them. But don't tell anyone.</li>
+                        <li><a href="API/movieindex.html">Find A Movie Poster!</a>Posters are really cool. They look cool.</li>
+                    </ul>
+                </dd>
+            <dt>What are some things I'm interested in?</dt>
+                <dd>
+                    <h3>Aliens!</h3>
+                    <h3>Anime!</h3>
+                    <h3>FooD!</h3>
+                </dd>
+        </dl>
+            
+        <script src="JS/jquery-1.7.1.js"></script>
+            
+        <script> 
+            (function() {
+                $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+                $('dl').on('mouseenter', 'dt', function() {
+                    $(this)
+                        .next()
+				        .slideDown(100)
+				        .siblings('dd')
+					       .slideUp(100); 
+                });
+            })();
+        </script>
+            
+        <script> 
+        (function() {
+            
+            $('h3').on('click', function(){
+                console.log('clicked');
+                $(this).clone(true).appendTo('body');
+            }); 
+        })();    
+            </script>
+        </div>
+    
+    </div>
+</body>  
+</html>

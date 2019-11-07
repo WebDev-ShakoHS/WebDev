@@ -1,0 +1,79 @@
+<html>
+<head>
+    <style>
+        article {
+            width: 600px;
+            margin: auto; 
+        }
+        blockquote.co {
+            float: right;
+            background: azure;
+            font-size: 1.5em;
+        }
+        blockquote.co2 {
+            float: right;
+            background: azure;
+            font-size: 1.5em;
+        }
+        blockquote.co3 {
+            float: right;
+            background: azure;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+<article>
+    <h1> 1 October 2019 </h1>
+    <center><img src="images/user16_nature.jpg" width="500" height="200" alt="Nature"></center>
+    <p>
+        La cultura y la naturaleza están conectados por el patriotismo de los latinoamericanos. Sin un medioambiente saludable, las generaciones futuras no pueden aprender sobre las tradiciones y la historia de sus patria.
+    </p>
+    <p>
+        <span class=co>En la canción de Calle 13, ellos muestran la importancia del medioambiente y el efecto que tiene en la cultura.</span> Como resultado, la mensaje de la canción es sobre la protección del medioambiente para preservar la cultura y la unidad de los latinoamericanos.
+    </p>
+    <p>
+        Primero, en la letra de la canción, Calle 13 describen repetidamente el paisaje de Latinoamérica, está mostrando su amor por su patria. Por ejemplo, en una línea los que cantan,<span class=co2> “no puedes comprar mi vida / mi tierra no se vende”</span>.
+    </p>
+    <p>
+        Adicionalmente, Latinoamérica sufrió de años de colonización. Cuándo otros países, especialmente los Estados Unidos, usaron la tierra para dinero y trabajo, el medioambiente sufrió también.<span class=co3> Esta letra establecen la propiedad de los latinoamericanos de sus patria.</span>
+    </p>
+</article>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+    (function() {
+      var co = $("span.co").each(function() {
+          var $this = $(this);
+          $("<blockquote></blockquote>", {
+              class: "co",
+              text: $this.text()
+          }).prependTo( $this.closest("p") );
+          
+      });
+})();
+    (function() {
+      var co2 = $("span.co2").each(function() {
+          var $this = $(this);
+          $("<blockquote></blockquote>", {
+              class: "co2",
+              text: $this.text()
+          }).prependTo( $this.closest("p") );
+          
+      });
+})();
+    (function() {
+      var co3 = $("span.co3").each(function() {
+          var $this = $(this);
+          $("<blockquote></blockquote>", {
+              class: "co3",
+              text: $this.text()
+          }).prependTo( $this.closest("p") );
+          
+      });
+})();
+</script>
+</body>
+</html>

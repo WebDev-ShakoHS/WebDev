@@ -1,0 +1,26 @@
+body {
+    background-color: blue;
+}
+.Info {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 5%;
+    margin-bottom: 30px;
+    margin-top:30px;
+    background-color: darkgreen;
+    border-color: blue;
+}
+
+.Submit {
+    text-align: center;
+    margin: auto;
+    width: 5%;
+    height: 5%;
+    margin-left:47.5%;
+    margin-right: 47.5%;
+}
+
+#my_table {
+    border: 1px solid black;
+}

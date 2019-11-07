@@ -1,18 +1,101 @@
 <html lang="en">
 <!--Version 5.0
-	Name:
-	Date Completed:
+	Name: Adam Bjelland
+	Date Completed: Today
  -->
 <head>
 
 <title> Web Development User #2 </title>
-
+    <link rel="stylesheet" href="../version6.0/user02/css/webdevuser02_night.css">
+    
+    <script src="JS/webDevUser02_script.js"></script>
+<style> 
+ ul  Li{color: blue;}
+    .emphasis {font-weight: bold;}
+    .Colors{color:black;}
+    .color {font-weight: 10;}
+</style>
+    
+  <script src="JS/jquery-1.7.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('li:first-child').addClass('emphasis');
+     });
+    </script>
+    
+    
 </head>
 
 <body>
+    
 
-<center> My name is User #2</center>
+    
+    
+    <h1>
+        <ol>
+        <li> chicken</li>
+         <li> beef</li>
+         <li> Liver</li>
+         <li> Turkey</li>
+        </ol>
+    </h1>
+<ul>
+<li>testing 1-2-3</li> 
+<li>testing 1-2-3</li>  
+<li>testing 1-2-3</li>  
+    
+</ul>    
 
+<center> My name is Adam Bjelland</center>
+<center><p id="textChange"> Adam Bjelland </p></center>
+   <!--
+<button type="button" onclick="changeText()">Click if you like</button>
+-->
+
+  
+    
+    <script>
+          jQuery('ul li').addClass('colors');
+          $('ol li').addClass('colors');
+          $('h3').addClass('size');
+        
+    </script>
+   
+    
+      <button type="button"
+style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:5%;" onClick="alert('GO Sabers!');" >
+Click Me!</button>
+    
+  <button type="butt\on"
+style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:5%;" onClick="alert('GO Sabers!');" >
+Click Me!</button>
+
+    
+    <button data-file="webdevuser02_Day">Day</button>
+    <button data-file="ight">Night</button>
+    
+    <script>
+     (function() {
+        var link = $('link');
+        $('button').on('hover', function(){
+            var $this = $(this),
+                stylesheet = $this.data('file');
+            
+            link.attr('href','../Version6.0/user02/CSS/' +
+                     stylesheet + '.css');
+            
+    
+        
+        $this
+            .siblings('button')
+                .removeAttr('disabled')
+                .end()
+            .attr('disabled','disabled');
+        });
+                       
+    })();
+    </script>
+   
 </body>
 
 </html>

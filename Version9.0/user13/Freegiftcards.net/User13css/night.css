@@ -1,0 +1,275 @@
+body{
+    background-color: #383838;
+    color: aliceblue;
+        font-family: 'B612', sans-serif;
+
+}
+a:link {
+  text-decoration: none;
+      color: #003b6f;
+
+}
+
+a:visited {
+  text-decoration: none;
+      color: #003b6f;
+    background-color: antiquewhite
+}
+h1 {
+	font-size: 1.3em;
+}
+
+h2{
+        font-size: 1.1em;
+}
+.a {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.a td, .a th {
+  border: 1px solid black;
+  padding: 4px;
+}
+
+.a tr:nth-child(even){background-color: #c3c3c3;}
+
+.a tr:nth-child(odd){background-color: #deb887;}
+
+.a tr:hover {background-color: #ddd;}
+
+.a th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #003B6F;
+  color: white;
+}
+
+#page {
+    
+        background-image:url("images/User13/bg.jpg");
+
+}
+
+.page{
+        background-image:url("images/User13/bg.jpg");
+
+}
+
+.b {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+    width: 100%;
+	border-collapse: collapse;
+}
+
+.b tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+.b th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+
+
+.a2:link, .a2:visited {
+  background-color: #4286f4;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.a2:hover, .a2:active {
+  background-color: blue;
+  font-weight: bold;
+}
+
+.acurrent:link, .acurrent:visited {
+  background-color: #393e93;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.acurrent:hover, .acurrent:active {
+  background-color: #2d3173;
+}
+
+
+dl{
+
+}
+
+dd{
+    
+    margin: 0;
+padding: 1em 0;
+
+}
+
+dt{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+    background: #aaaaaa;
+    border-bottom: 1px solid black;
+    border-top: 1px solid white;
+}
+
+dt:first-child{
+    border-top: none;
+    
+}
+dt:nth-last-child(2){
+    border-bottom: none;
+}
+article{
+    font-family: 'B612', sans-serif;
+    color:dimgrey;
+
+    background-color: #e3e3e3;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.article_content{
+    margin: 10px;
+}
+blockquote.co{
+    float: right;
+    background: antiquewhite;
+    font-size: 2em;
+    width: 50%;
+    text-align: justify-all;
+    
+    
+}
+
+#imggfh {
+
+     height: 75%;
+    position: absolute;
+    left: 79%;
+    top: 111%;
+}
+
+
+
+.container{
+    width: 300px;    
+    
+    display: block;
+    margin: 0 auto;
+    
+    border-radius: 10px;
+    padding-bottom : 50px;
+}
+
+.app-title{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #293251;
+}
+
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container{
+    width: 300px;
+    height: 260px;
+    background-color: #F4F9FF;
+}
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover{
+    
+}
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+.temperature-description{
+    
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location{
+    
+}
+
+.location p{
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
+
+.richard{
+position: absolute;
+right: 10%;
+top: 5%;
+}

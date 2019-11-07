@@ -1,0 +1,75 @@
+<html lang="en">
+<!--Version 6.0 
+	Name: Ty Sibinski
+	Date Completed: 10/01/2019
+ -->
+<head>
+<!-- your webpage info goes here -->
+
+<link href="CSS/WebDevUser15.css" rel="stylesheet" type="text/css"> 
+    <title>An Epic Website</title>
+
+        
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        
+        
+
+</head>
+<div id="nav">
+                        <ul>
+                                <li><a href="webDevUser15.html">Home</a></li>
+                                <li><a href="WebDevUser15_AboutMe.html">About</a></li>
+                                <li><a href="WebDevUser15_Games.html">Game</a></li>
+                                <li><a href="webDevuser15-FAQ.html">FAQ</a></li>
+                                <li><a href="webDevUser15_Obama.html">Essay</a></li>
+                                <li><a href="weather/index.html">Weather</a></li>
+                                <li><a href="socialMedia/index.php">Give Feedback</a></li>
+                                <li><a href="movies/index.html">Find a Movie Poster</a></li>
+                        </ul>        
+                </div>
+
+<article>
+<h1>I didn't write this. This is from Wikipedia. <a href="https://en.wikipedia.org/wiki/Barack_Obama">Here link.</a></h1>
+    <p>
+Barack Hussein Obama II born August 4, 1961 is an American attorney and politician who served as the 44th president of the United States from 2009 to 2017. A member of the Democratic Party, he was the first African American to be elected to the presidency. He previously served as a U.S. senator from Illinois from 2005 to 2008 and an Illinois state senator from 1997 to 2004.
+</p>
+<p>
+    Obama was born in Honolulu, Hawaii. After graduating from Columbia University in 1983, he worked as a community organizer in Chicago. In 1988, he enrolled in Harvard Law School, where he was the first black president of the Harvard Law Review. After graduating, he became a civil rights attorney and an academic, teaching constitutional law at the University of Chicago Law School from 1992 to 2004. He represented the 13th district for three terms in the Illinois Senate from 1997 until 2004, when he ran for the U.S. Senate. He received national attention in 2004 with his March primary win, his well-received July Democratic National Convention keynote address, and his landslide November election to the Senate. In 2008, he was nominated for president a year after his campaign began, after a close primary campaign against Hillary Clinton. He was elected over Republican John McCain and was inaugurated on January 20, 2009. Nine months later, he was named the 2009 Nobel Peace Prize laureate.
+</p>
+<p>
+    Regarded as a centrist New Democrat, Obama signed many landmark bills into law during his first two years in office. The main reforms that were passed include the Patient Protection and Affordable Care Act (commonly referred to as the "Affordable Care Act" or "Obamacare"), the Dodd–Frank Wall Street Reform and Consumer Protection Act, and the Don't Ask, Don't Tell Repeal Act of 2010. The American Recovery and Reinvestment Act of 2009 and Tax Relief, Unemployment Insurance Reauthorization, and Job Creation Act of 2010 served as economic stimulus amidst the Great Recession. After a lengthy debate over the national debt limit, he signed the Budget Control and the American Taxpayer Relief Acts. In foreign policy, he increased U.S. troop levels in Afghanistan, reduced nuclear weapons with the United States–Russia New START treaty, and ended military involvement in the Iraq War. He ordered military involvement in Libya in opposition to Muammar Gaddafi, who was killed by NATO-assisted forces. <span class=co>He also ordered the military operations that resulted in the deaths of Osama bin Laden</span> and suspected Yemeni Al-Qaeda operative Anwar al-Awlaki.
+</p>   <span class=co>Obama was born in Honolulu, Hawaii.</span>
+<p>
+    After winning re-election by defeating Republican opponent Mitt Romney, Obama was sworn in for a second term in 2013. During this term, he promoted inclusiveness for LGBT Americans. His administration filed briefs that urged the Supreme Court to strike down same-sex marriage bans as unconstitutional (United States v. Windsor and Obergefell v. Hodges); same-sex marriage was fully legalized in 2015 after the Court ruled that a same-sex marriage ban was unconstitutional in Obergefell. He advocated for gun control in response to the Sandy Hook Elementary School shooting, indicating support for a ban on assault weapons, and issued wide-ranging executive actions concerning global warming and immigration. In foreign policy, he ordered military intervention in Iraq in response to gains made by ISIL after the 2011 withdrawal from Iraq, continued the process of ending U.S. combat operations in Afghanistan in 2016, promoted discussions that led to the 2015 Paris Agreement on global climate change, initiated sanctions against Russia following the invasion in Ukraine and again after Russian interference in the 2016 United States elections, brokered a nuclear deal with Iran, and normalized U.S. relations with Cuba. Obama nominated three justices to the Supreme Court: Sonia Sotomayor and Elena Kagan were confirmed as justices, while Merrick Garland faced unprecedented partisan obstruction and was ultimately not confirmed. During his term in office, America's soft power and reputation abroad significantly improved.
+</p>
+    <p>
+        Obama's presidency has generally been regarded favorably, and evaluations of his presidency among historians, political scientists, and <span class=co>the general public place him among the upper tier of American presidents.</span> Obama left office and retired in January 2017 and currently resides in Washington, D.C. A December 2018 Gallup poll found Obama to be the most admired man in America for an unprecedented 11th consecutive year, although Dwight D. Eisenhower was selected most admired in twelve non-consecutive years.
+    </p>
+    <p>
+        Obama is a supporter of the Chicago White Sox, and he threw out the first pitch at the 2005 ALCS when he was still a senator. In 2009, he threw out the ceremonial first pitch at the All-Star Game while wearing a White Sox jacket. He is also primarily a Chicago Bears football fan in the NFL, but in his childhood and adolescence was a fan of the Pittsburgh Steelers, and rooted for them ahead of their victory in Super Bowl XLIII 12 days after he took office as president. In 2011, Obama invited the 1985 Chicago Bears to the White House; the team had not visited the White House after their Super Bowl win in 1986 due to the Space Shuttle Challenger disaster. <span class=co>He plays basketball</span>, a sport he participated in as a member of his high school's varsity team, and he is left-handed.
+    </p>
+    <p><span class=co><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Barack_Obama_playing_basketball_with_members_of_Congress_and_Cabinet_secretaries_2.jpg/340px-Barack_Obama_playing_basketball_with_members_of_Congress_and_Cabinet_secretaries_2.jpg" alt= "Obama shooting hoops" width="200"></span></p>
+    
+    
+</article>
+<script src="JS/jquery-1.7.1.js"></script>
+<script>
+(function() {
+    var co = $('article').find('span.co').each(function() {
+        var $this = $(this);
+    $('<blockquote></blockquote>', {
+        class: 'co',
+        text: $this.text()
+    }).prependTo($this.closest('p'));
+});
+    })();
+    
+    
+</script>

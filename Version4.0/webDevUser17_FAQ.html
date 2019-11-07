@@ -1,0 +1,61 @@
+<html>
+<head>
+    <link href="CSS/FAQ.css">
+	<meta charset=utf-8>
+	<title>jQuery Events 201</title>
+    <link href="CSS/FAQ.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+<h2><img src="img/Funny%20cat_Heading.png"></h2>
+
+    <script src="JS/jquery-1.7.1.js"></script>
+    
+<script>
+    
+(function() {
+    
+    $('h2').bind('click', function() {
+        console.log('clicked');
+        $(this).clone(true).appendTo('body');
+    });
+})();
+    
+</script>
+    
+<dl>
+    <h1><dt>When did you started?</dt></h1>
+	<dd>I do not know have you see this cat? <img src="img/photo-1518791841217-8f162f1e1131.jpeg"></dd>
+    <dt><h1>What are your hours?</h1></dt>
+	<dd><img src="img/3Sa2EDt1TM-1.png"></dd>
+    <dt><h1>Who the hell are you?</h1></dt>
+	<dd><img src="img/gma-cat-groomsman-1-ht-jcl-190814_hpMain_16x9_992.jpg"></dd>
+    <dt><h1>Why are you alive?</h1></dt>
+	<dd><img src="img/Your_Typical_Indoor_Cat_Lives_14_to_20_Years.png"></dd>
+<dt><h1>Show me your face!</h1></dt>
+	<dd><img src="img/Funny-Cat-Videos1.jpg"></dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>

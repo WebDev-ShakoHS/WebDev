@@ -1,0 +1,126 @@
+body {
+	font-family: "Georgia", "Comic Sans MS", fantasy;
+	color: black;
+    background-image: url("http://www.maassenphoto.com/Wallpapers/desktop/MorganMaassen_Wallpaper_Desktop_3.jpg");
+}
+
+.clock{
+   : center;
+    
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+    font-family: "Comic Sans MS"
+}
+
+h2{
+        font-size: 1.1em;
+        text-align: center;
+        font-family: "marker felt";
+}
+
+h3{
+        font-size: 1.1em;
+        text-align: left;
+        font-family: "marker felt";
+}
+
+table.tableb {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-collapse: collapse;
+	cellspacing: 0px;
+    font-family: "Times New Roman";
+    color: #ffffff;
+}
+
+table.tableb tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#cc3300; 
+}
+
+table.tableb th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+table.tablea {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-collapse: collapse;
+	cellspacing: 0px;
+    font-family: "Times New Roman"
+}
+
+table.tablea tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+table.tablea th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+
+li{
+    color:white;
+}
+
+
+
+#faq page
+
+body.faq{
+    width: 500px;
+    text-align: center;
+    background-image: url("http://www.maassenphoto.com/Wallpapers/desktop/MorganMaassen_Wallpaper_Desktop_3.jpg");
+}
+.faq li{
+    text-align: center;
+}
+
+.faq h1{
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+
+.faq dl{
+    color: white;
+    text-align: center;
+    
+}
+
+
+.faq dd{
+    margin: 0;
+    color: black;
+    text-align: center;
+    
+    padding: 1em 0;
+    
+}
+
+.faq dt{
+    margin: auto
+    cursor: pointer;
+    
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+    background: black;
+    border-bottom: 1px solid blue;
+    border-top: 1px solid white;
+       
+}
+
+dt:first-child{border-top: none;}
+dt:last-child{border-bottom: none;}

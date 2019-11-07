@@ -1,0 +1,55 @@
+body {
+	font-family: "Comic Sans MS", fantasy;
+	color: #C11313;
+}
+
+h1 {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+h2{
+        font-size: 1.1em;
+        text-align: center;
+}
+
+.a {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+.a tr{
+	border: 2px solid #ffffff;
+	text-align: center;
+	background-color:#FFDFDF; 
+}
+
+.a th{
+	text-align: center;
+	color: #ffffff;
+	background-color: #C11313;
+}
+
+.b {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+    width: 100%;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+.b tr{
+	border: 2px solid #ffffff;
+	text-align: center;
+	background-color:#FFDFDF; 
+}
+
+.b th{
+	text-align: center;
+	color: #ffffff;
+	background-color: #C11313;
+}

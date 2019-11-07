@@ -1,0 +1,252 @@
+body {
+	font-family: "Georgia", "Comic Sans MS", fantasy;
+	color: #1a2426;
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+    color: white;
+    font-family: "Comic Sans MS"
+}
+
+h2{
+        font-size: 1.1em;
+        text-align: center;
+        color: white;
+        font-family: "marker felt";
+}
+
+h3{
+        font-size: 1.1em;
+        text-align: left;
+        font-family: "marker felt";
+}
+h5{
+        font-size: 1.1em;
+        text-align: left;
+        font-family: "marker felt";
+        color: white;
+}
+
+table.tableb {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-collapse: collapse;
+	cellspacing: 0px;
+    font-family: "Times New Roman";
+}
+
+table.tableb tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD;
+}
+
+table.tableb th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+
+table.tablea {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-collapse: collapse;
+	cellspacing: 0px;
+    font-family: "Times New Roman"
+}
+
+table.tablea tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+table.tablea th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+
+
+
+#faq page
+
+body.faq{
+    width: 500px;
+    text-align: center;
+}
+.faq li{
+    text-align: center;
+}
+
+.faq h1{
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+
+.faq dl{
+    color: white;
+    text-align: center;
+    
+}
+
+
+.faq dd{
+    margin: 0;
+    color: black;
+    text-align: center;
+    
+    padding: 1em 0;
+    
+}
+
+.faq dt{
+    margin: auto
+    cursor: pointer;
+    
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+    background: black;
+    border-bottom: 1px solid blue;
+    border-top: 1px solid white;
+       
+}
+
+dt:first-child{border-top: none;}
+dt:last-child{border-bottom: none;}
+
+
+
+*{
+    font-family: "Rimouski";
+}
+
+body{
+    background-color: #1a2426;
+}
+
+.container{
+    width: 10px;    
+    display: block;
+    margin: 0 auto;
+    float: right;
+    border-radius: 10px;
+
+}
+
+.app-title{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #293251;
+}
+
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container{
+    width: 300px;    
+    background-color: #FFF;
+    
+    display: block;
+    margin: 0 auto;
+    
+    border-radius: 10px;
+    padding-bottom : 50px;
+}
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover{
+    
+}
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+.temperature-description{
+    
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location{
+    
+}
+
+.location p{
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+body {
+    background: #1a2426;
+}
+
+.clock {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+    color: gray;
+
+}

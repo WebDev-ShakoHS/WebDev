@@ -1,0 +1,83 @@
+
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>jQuery Events 201</title>
+	<link href="CSS/Webdevuser2.css" rel="stylesheet" type="text/css"> 
+    <script src="JS/webDevUser02_script.js"></script>
+    <script src="JS/jquery-1.7.1.js"></script>
+   
+    
+    
+</head>
+<body class='FAQ'>
+<center>
+<dl class='FAQ'>
+	<dt class='FAQ'>Most overrated team in the NFL</dt>
+	<dd class='FAQ'>Green Bay Packers <img src="images/user2/download.jpeg" alt="Ugly boy band Pic"/img> </dd>
+	<dt class='FAQ'>Who is the most slept on running back</dt>
+	<dd class='FAQ'>Peyton Barber <img src="images/user2/barber.jpeg" alt="Ugly boy band Pic"/img> </dd>
+	<dt class='FAQ'>Who has the best hair in the NFL</dt>
+	<dd class='FAQ'>Tim Tebow <img src="images/user2/Tebow.jpg" alt="Ugly boy band Pic"style="width:300px;height:301px;"/img> </dd>
+	<dt class='FAQ'>Who will win the super bowl</dt>
+	<dd class='FAQ'>The chiefs <img src="images/user2/Chiefs.jpeg" alt="Ugly boy band Pic"style="width:300px;height:301px;"/img> </dd>
+	<dt class='FAQ'>Who will the mvp be this year</dt>
+	<dd class='FAQ'>Not Aaron Rodgers</dd>
+</dl>
+</center>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+   
+
+<script>
+
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(500);
+	});
+})();
+
+
+</script>
+    
+
+
+    
+    <button data-file="DAY" >Day</button>
+    <button data-file="NIGHT" >Night</button>    
+    
+ <script>
+     (function() {
+        var link = $('link');
+        $('button').on('hover', function(){
+            var $this = $(this),
+                newclass = $this.data('file');
+            
+            $('body').toggleClass(newclass);
+                //attr('href','../Version4.0/CSS/' +
+                  //   stylesheet + '.css');
+            
+    
+        
+        $this
+            .siblings('button')
+                .removeAttr('disabled')
+                .end()
+          
+        });
+                       
+    })();
+    </script>    
+    
+    
+ <h1 class='FAQ'><a href="https://www.youtube.com/watch?v=L9mrynxCHCo">return</a></h1>
+</body>
+</html>

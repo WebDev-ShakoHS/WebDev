@@ -1,18 +1,92 @@
 <html lang="en">
-<!--Version 5.0
-	Name:
+ <!--Version 4.0
+	Name: Kowsar
 	Date Completed:
  -->
-<head>
+    
+    
+    <a href="index.php">Click here to go back<br/><br/>
+        <form action="checklogin.php" method="POST">
 
-<title> Web Development User #4 </title>
-
-</head>
-
+    <head>
+        <title>My first PHP Website</title>
+    
+   <title>My first PHP Website</title>
+    </head>
+    
 <body>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h2>Kowsar Pizza Delivery</h2>
+                    </div>
+                    <p>Please fill this form and submit to add user needs to the database.</p>
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?><div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : 'yourname'; ?>">
+                            <label>Order Number</label>
+                            <input type="text" name="name" class="form-control" value=12345>
+                            <span class="help-block"><?php echo $name_err;?></span>
+                        </div>
+                        <div class="form-group <?php echo (!empty($address_err)) ? 'has-error' : ''; ?>">
+                            <label>Address</label>
+                            <textarea name="address" class="form-control"></textarea>
+                            <span class="help-block"><?php echo $address_err;?></span>
+                        </div>
+                        <div class="form-group <?php echo (!empty($salary_err)) ? 'has-error' : ''; ?>">
+                            <label>Delievery Time</label>
+                            <input type="text" name="timing" class="form-control" value="">
+                            <span class="help-block"><?php echo $timing_err;?></span>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                        <a href="index.php" class="btn btn-default">Cancel</a>
+                    </form>
+                </div>
+            </div>        
+        </div>
+    </div>
+<!--
+       <h2>Login Page</h2>
+        <a href="index.php">Click here to go back<br/><br/>
+        <form action="checklogin.php" method="POST">
+           Enter Username: <input type="text" name="username" required="required" /> <br/>
+           Enter password: <input type="password" name="password" required="required" /> <br/>
+           <input type="submit" value="Login"/>
+        </form>
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Kowsar Pizza Delivery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        .wrapper{
+            width: 500px;
+            margin: 0 auto;
+        }
+   
 
-<center> My name is User #4</center>
-
+                                        
 </body>
+            
+    </html>
+<center><p id="textChange"> My name is kowsar</p></center>
+<button type="button" onclick="changeText()">Click if you like</button>
+<center> My name is kowsar</center>
+ 
+    <button type="button" onclick="myFunction()">Set background color</button>
 
-</html>
+<script>
+function myFunction() {
+  document.body.style.backgroundColor = "blue";
+}
+
+    function(){
+        
+    $('<div.container>').delegate('h2','click',function(){
+            console.log('clicked');
+                            $(this).clone().appendTo('container')
+         });
+        })();
+                            
+</script>
+    --> 

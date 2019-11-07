@@ -1,0 +1,156 @@
+<html lang="en">
+<!--Version 6.0 
+	Name: Gavin Fee
+	Date Completed: 9/6/2019
+ -->
+<head>
+
+
+<!-- your webpage info goes here -->
+
+
+    <title>My First Website</title>
+
+        
+
+        <meta name="author" content="your name" />
+
+        <meta name="description" content="" />
+
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->        
+
+        <link href="CSS/WebDevUser_3/gfee3.css" rel="stylesheet" type="text/css"> 
+
+        <script src="JS/jquery-1.7.1.js"></script>
+    
+    
+    
+         <script src="JS/webDevUser03_script.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- webpage content goes here in the body -->
+
+
+        <div id="page">
+
+                <div id="logo">
+
+                        <h1><a href="/" id="logoLink">My First Website</a></h1>
+
+                </div>
+
+                <div id="nav">
+
+                        <ul class="wrig">
+
+                               
+
+                                <li class="wrig"><a href="webDevUser03_AboutMe.html">About</a></li>
+
+                            <li class="wrig"><a href="webDevUser03_Games.html">Games</a></li>
+                            
+                            <li class="wrig"><a href="webDevUser03_FAQ.html">FAQ</a></li>
+                            
+                            <li class="wrig"><a href="vacationTracker.html">Vacation Tracker</a></li>
+                            
+                            <li class="wrig"><a href="index3.html">Movie Database</a></li>
+                            
+                            <li class="wrig"><a href="index1.php">Weather Tracker 1.0</a></li>
+                            
+                            <li class="wrig"><a href="index2.html">Weather Tracker 2.0</a></li>
+                            
+                            <li class="wrig"><a href="WebDevUser03_Articles.html">Articles</a></li>
+                            
+                        
+                            
+
+                        </ul>        
+
+                </div>
+
+                <div id="content">
+
+                        <h2>Home</h2>
+
+                        <p>
+
+                                This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+
+                        </p>
+
+                        <p>
+
+                                Here on the home page, I will talk about one of my favorite things, football and my opinion based towards it.
+                        </p>
+
+                </div>
+
+                <div id="footer">
+
+                        <p>
+
+                                Webpage made by <a href="/" target="_blank">Gavin Fee</a>
+
+                        </p>
+
+                </div>
+
+        </div>
+    <center><h2>My Top 5 Favorite NFL Teams</h2></center>
+ <table class="a">
+ <tr class="a"><th>Rank</th><th>City</th><th>Team Name</th></tr>
+ <tr class="a"><td>1</td><td>Chicago</td><td>Bears</td></tr>
+ <tr class="a"><td>2</td><td>Atlanta</td><td>Falcons</td></tr>
+ <tr class="a"><td>3</td><td>Seattle</td><td>Seahawks</td></tr>
+ <tr class="a"><td>4</td><td>Cleveand</td><td>Browns</td></tr>
+ <tr class="a"><td>5</td><td>Arizona</td><td>Cardinals</td></tr>
+     <center><img src="images/user3/bears_logo.png" width="200" height="200" alt="Bears Logo"></center>
+ </table>
+    <center><h2>Top 10 NFL Players</h2></center>
+ <table class="b">
+ <tr class="b"><th>Rank</th><th>Player</th><th>Team</th></tr>
+ <tr class="b"><td>1</td><td>Aaron Donald</td><td>Rams</td></tr>
+ <tr class="b"><td>2</td><td>Patrick Mahomes</td><td>Cheifs</td></tr>
+ <tr class="b"><td>3</td><td>Khalil Mack</td><td>Bears</td></tr>
+ <tr class="b"><td>4</td><td>Drew Brees</td><td>Saints</td></tr>
+ <tr class="b"><td>5</td><td>DeAndre Hopkins</td><td>Texans</td></tr>
+     <tr class="b"><td>6</td><td>Tom Brady</td><td>Patriots</td></tr>
+     <tr class="b"><td>7</td><td>Julio Jones</td><td>Falcons</td></tr>
+   <tr class="b"><td>8</td><td>Bobby Wagner</td><td>Seahawks</td></tr>
+     <tr class="b"><td>9</td><td>Michael Thomas</td><td>Saints</td></tr>
+    <tr class="b"><td>10</td><td>Saquan Barkley</td><td>Giants</td></tr>
+     <center><img src="images/user3/saquon.barkley.jpg" width="300" height="200" alt="Saquon Barkley"></center>
+ </table>
+</body>
+
+    <center><p id="textChange">Gavin Fee</p></center>
+<button type="button" onclick="changeText()">Click if you like</button>
+  
+    <center><h2>Smokin' Jay</h2></center>
+    <center><p>Here is a duplicating picture of Jay Cutler.</p></center>
+    <div class="container">
+    <h2> <img src="images/user3/cutie_pie.jpg" width="350" height="200" alt="some random guy, ya know?"> </h2>
+    </div>
+    
+    <script>
+    
+    (function() {
+        
+        $('div.container').delegate('h2', 'click', function() {
+        console.log('clicked');
+        $(this).clone().appendTo('.container');
+    });
+        })();
+    
+    </script>
+    
+<title> Web Development User #3 </title>
+
+</head>
+
+</html>

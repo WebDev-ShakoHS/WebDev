@@ -1,0 +1,27 @@
+.faq{
+    width: 100%;
+    
+}
+
+.faq{
+   text-align: center; 
+
+}
+
+.faq{
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+    
+}
+
+.faq{
+   cursor: pointer;
+    
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2em;
+    background: blue;
+    border-bottom: 1px solid #c3c3c3;
+    text-align: center;
+}

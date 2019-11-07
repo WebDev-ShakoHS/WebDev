@@ -1,18 +1,73 @@
 <html lang="en">
 <!--Version 5.0
-	Name:
-	Date Completed:
+	Name:Oliver Pham
+	Date Completed: 9/13/2019
  -->
 <head>
-
+<script src="JS/WebDebUser10_script.js"></script>
 <title> Web Development User #10 </title>
-
+    <link rel="stylesheet" href="../Version6.0/CSS/Night.css">
+    <style>
+    ul li{ color: red;}
+    .emphasis { color: green;}
+    .Random {color: orange;}
+    .Random { font-weight: bold;}
+    </style>
+    <script src="Js/jquery-1.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            
+            $('li:first-child').addClass('emphasis');
+        });
+    </script>
 </head>
 
 <body>
+    <h3>3 Random Facts About Me</h3>
+    <ol>
+    <li>I'm 5ft 9</li>
+    <li>I'm 16 years old</li>
+    <li>idk anything else</li>
+    </ol>
+    
+<ul>
+    <li>Hello</li>
+    <li>Hello2</li>
+    <li>Hello3</li>
+</ul>
 
-<center> My name is User #10</center>
-
+<center> My name is Oliver Pham</center>
+<center><p id="textChange"> My name is Oliver Pham</p></center>
+<button type="button" onclick="changeText()">Click if you like</button>
+    
+<button> data-file="Day">Day</button>
+<button> data-file="Night">Night</button>
+    
+<script>
+       jQuery('ul li').addClass('emphasis');
+        $('ol li').addClass('Random');
+</script>
+    
+<script>
+    (function() {
+        var link =$('link');
+        $('button').on('click',function(){
+            var $this = $(this),
+                stylesheet= $this.data('file');
+            
+            link.attr('href','../Version6.0/CSS/'+ stylesheet + '.css');
+                    
+            $this
+            .siblings('button')
+            .removeAttr('disabled')
+            .end()
+            .attr('disabled', 'disabled')
+        });
+        
+    })();
+    
+</script>
+    
 </body>
 
 </html>

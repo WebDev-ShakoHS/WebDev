@@ -1,0 +1,67 @@
+.about {
+    font-family: "Palatino", "URW", fantasy;
+    color: #583884;
+    font-weight: bold
+}
+
+.home {
+	font-family: "Palatino", "URW", fantasy;
+	color: #583884;
+}
+
+h1 {
+	font-size: 1.2em;
+	text-align: left;
+}
+
+        font-size: 1.1em;
+}
+
+.FAQ {
+    font-family: "Palatino", "URW", fantasy;
+	color: #583884;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+dd {
+    margin: 0;
+    padding; 1em 0;
+}
+
+dt {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height; 2em;
+    background: #AA91CE;
+    border-bottom: 1px solid #AA91CE;
+    border-top: 1px solid white;
+
+}
+dt:first-child {border-top: none;}
+dt: nth-last-child(2) {border-bottom: none;}
+.hide {display: none}
+ 
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr{
+	border: 2px solid #ffffff;
+	text-align: center;
+	background-color:#AA91CE; 
+}
+
+th{
+	text-align: center;
+	color: #ffffff;
+	background-color: #866AAF;
+}
