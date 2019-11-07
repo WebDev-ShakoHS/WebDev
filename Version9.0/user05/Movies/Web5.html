@@ -1,0 +1,88 @@
+<html lang="en">
+<!--Version 5.0
+	Name: Yusuf Hendawy
+	Date Completed:
+ -->
+<head>
+<script src="JS/WebdevUser05_script.js"></script>
+<title> Web5 </title>
+    <link rel="stylesheet" href="CSS/Dark.css">
+<style> 
+   ul li{color: aqua:}
+    .emphasis {font-weight: 200;
+    color: aquamarine}
+    .heading {color: darkgoldenrod}
+    
+    </style>
+    <script src="JS/jquery-1.7.1.js"></script>
+    <script>
+    $(document).ready(function(){
+    $('lisfirst-child').addClass('emphasis');
+    });
+    </script>
+</head>
+
+<body>
+    
+    <H1>Randonm Objects</H1>
+<br>  
+    <ol>
+        <H1>chair</H1>
+        <H1>Table</H1>
+        <H1>bag</H1>
+        <H1>penny</H1>
+        <H1>fish</H1>
+        <H1>tree</H1>
+    </ol>
+    <ul>
+    <ul>
+        
+        <li> Weclome</li>
+        <li> This is a website</li>
+        <li>HA ha</li>
+        
+        </ul>
+    
+    </ul>
+    
+    <button data-file="light">Light</button>
+    <button data-file="dark">Dark</button>
+    <script>
+        (function(){ 
+            var link = $('link')
+            $('button').on("hover", function(){
+                var $this = $(this),
+                    stylesheet = $this.data('file');
+                link.attr('href', "CSS/" + stylesheet + '.css');
+                
+                $this
+                    .siblings('button')
+                .removeAttr('disabled')
+                .end()
+                .attr('disabled', 'disabled');
+                
+                              
+            });
+         
+         })();
+    </script>
+<center><p id="textChange"> My name is Yusuf Hendawy ##</p></center>
+<button type="button" onclick="changeText()">Click if you like</button>
+<center> My name is Yusuf</center>
+   
+<d</dt>
+ 
+
+<li><a href="webDevUser05.html">Home</a></li>
+    <li><a href="index.html">Movies</a></li>
+ <li><a href="index.php">Weather</a></li>
+   
+     <script>
+       jQuery('ul li').addClass('emphasis');
+       $('ol H1').addClass('heading')
+    
+    </script>
+    
+    </body>
+
+</html>
