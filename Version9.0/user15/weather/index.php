@@ -1,9 +1,14 @@
 <?php
-$apiKey = "6544f5d6cdb94dd259333af9c5eeb3d7";
-$cityId = "5046997";
-$googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=imperial&APPID=" . $apiKey;
-$cityId2 = "1861060";
-$googleApiUrl2 = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId2 . "&lang=en&units=imperial&APPID=" . $apiKey;
+$apiKey = "API KEY"; //You will need to add in the 
+$cityId = "5046997"; //5046997 Shakopee City Id
+$units = "metric";//metric-Celcius  imperial-Farhenheit
+if ($units == 'metric'){//Changes the $temp varaible to match 
+    $temp = "C";
+}
+else {
+    $temp = "F";
+}
+$googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
 
 $ch = curl_init();
 
@@ -18,20 +23,6 @@ $response = curl_exec($ch);
 curl_close($ch);
 $data = json_decode($response);
 $currentTime = time();
-
-$ch2 = curl_init();
-
-curl_setopt($ch2, CURLOPT_HEADER, 0);
-curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch2, CURLOPT_URL, $googleApiUrl2);
-curl_setopt($ch2, CURLOPT_FOLLOWLOCATION, 1);
-curl_setopt($ch2, CURLOPT_VERBOSE, 0);
-curl_setopt($ch2, CURLOPT_SSL_VERIFYPEER, false);
-$response2 = curl_exec($ch2);
-
-curl_close($ch2);
-$data2 = json_decode($response2);
-$currentTime2 = time();
 ?>
 
 <!doctype html>
@@ -89,8 +80,8 @@ span.min-temperature {
         <div class="weather-forecast">
             <img
                 src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
-                class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;F<span
-                class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;F</span>
+                class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span
+                class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
         </div>
         <div class="time">
             <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
@@ -99,25 +90,5 @@ span.min-temperature {
     </div>
 
 
-    <div class="report-container">
-        <h2><?php echo $data2->name; ?> Weather Status</h2>
-        <div class="time">
-            <div><?php echo date("l g:i a", $currentTime2); ?></div>
-            <div><?php echo date("jS F, Y",$currentTime2); ?></div>
-            <div><?php echo ucwords($data2->weather[0]->description); ?></div>
-        </div>
-        <div class="weather-forecast">
-            <img
-                src="http://openweathermap.org/img/w/<?php echo $data2->weather[0]->icon; ?>.png"
-                class="weather-icon" /> <?php echo $data2->main->temp_max; ?>&deg;F<span
-                class="min-temperature"><?php echo $data2->main->temp_min; ?>&deg;F</span>
-        </div>
-        <div class="time">
-            <div>Humidity: <?php echo $data2->main->humidity; ?> %</div>
-            <div>Wind: <?php echo $data2->wind->speed; ?> km/h</div>
-        </div>
-    </div>
-
 </body>
 </html>
-
