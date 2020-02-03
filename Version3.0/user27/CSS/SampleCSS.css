@@ -1,6 +1,10 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
+    
+    
+    background-image: url('Astroworld.jpg');
+    
 }
 
 h1 {
@@ -10,6 +14,7 @@ h1 {
 
 h2{
         font-size: 1.1em;
+        text-align: center;
 }
 
 table {
