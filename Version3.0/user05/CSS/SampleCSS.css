@@ -3,6 +3,11 @@ body {
 	color: #003366;
 }
 
+body {
+    background-image: url(https://www.betaarchive.com/imageupload/1304990899.or.90622.png)
+    
+}
+
 h1 {
 	font-size: 1.3em;
 	text-align: center;
@@ -10,6 +15,7 @@ h1 {
 
 h2{
         font-size: 1.1em;
+        text-align:center;  
 }
 
 table {
