@@ -1,6 +1,7 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
+    text-align: center;
 }
 
 h1 {
@@ -30,4 +31,19 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+h3 {
+  padding: 50px;
+  border-bottom: 1px solid #5D6063;
+
+}
+p {
+  padding: 20px 0 20px 10px;
+
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+strong {
+  margin: 50px;
 }
