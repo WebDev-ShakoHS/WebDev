@@ -15,6 +15,21 @@ h2{
     color: white; 
 }
 
+    <h3>Ordered List</h3>
+<ol>
+    <li>First numbered item</li>
+    <li>Second numbered item</li>
+    <li>Third numbered item</li>
+</ol>
+   
+    <h3>Un-ordered List</h3>
+    <ul>
+<li>Cats</li>
+<li>Dogs</li>
+<li>Birds</li>
+</ul>
+
+
 table {
 	margin-left: auto;
 	margin-right: auto;
