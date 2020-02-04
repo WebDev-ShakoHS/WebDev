@@ -1,6 +1,7 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	color: #2b2d2f;
+    background-image: url("../images/StellarisLoadingScreen.jpeg");
 }
 
 h1 {
@@ -10,6 +11,12 @@ h1 {
 
 h2{
         font-size: 1.1em;
+        text-align: center;
+}
+
+h3{
+            font-size 0.1em;
+            text-align: center;
 }
 
 table {
@@ -31,3 +38,4 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
