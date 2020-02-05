@@ -1,33 +1,80 @@
 body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+    color: #003366;
+}
+
+h4 {
+    text-align: left;
+    padding: 2px;
+    border-bottom: 1px solid #5D6063;
 }
 
 h1 {
-	font-size: 1.3em;
-	text-align: center;
+    font-size: 1.3em;
+    text-align: center;
 }
 
-h2{
-        font-size: 1.1em;
+h2 {
+    font-size: 1.1em;
+    text-align: center;
+
 }
 
 table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-collapse: collapse;
+    cellspacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+    border: 1px solid #ffffff;
+    text-align: center;
+    background-color: #9FB6CD;
 }
 
 th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+    text-align: center;
+    color: #ffffff;
+    background-color: #003366;
+    align-content: center;
+}
+
+html {
+    background: url(https://i.pinimg.com/originals/20/25/4d/20254d59accc782acceb094e5beef99c.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h5 {
+    text-align: left;
+}
+
+h5 {
+    padding: 2px;
+    border: 1px solid #5D6063;
+}
+
+ol {
+    text-align: left;
+}
+
+ul {
+    text-align: left;
+}
+
+
+p {
+    text-align: left;
+    padding: 20px 0 20px 10px;
+    margin-bottom: 1px;
+    /* Add this */
+}
+
+
+strong {
+    padding: 10 
 }
