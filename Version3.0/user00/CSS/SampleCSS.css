@@ -1,4 +1,17 @@
-
+h3 {
+  padding: 50px;
+  border-bottom: 7px solid #5D6063;
+    border-right: 30px solid #5D6063;
+}
+strong {
+  padding: 100px;
+    border:1px solid #5D6063;
+    background-color: fuchsia;
+}
+p {
+  padding: 20px 0 20px 10px;
+  margin-bottom: 50px;          /* Add this */
+}
 
 h1 {
 	font-size: 1.3em;
