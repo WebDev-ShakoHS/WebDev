@@ -31,3 +31,68 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: grab;
+}
+
+.button1 {
+  border-radius: 8px;
+    cursor: context-menu;
+    color: rosybrown;
+    background-color: #BFFCE5; 
+}
+
+.button2 {
+  border-radius: 30%;
+  background-color: #D2BFFC;  
+}
+
+.red { 
+   background-color: #ff0000;
+    color: black;
+    
+}
+
+.shop { 
+    background-color: #87CEFA; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: crosshair;
+}
+
+.american { 
+    background-color:  #fffdd0; 
+  border: none;
+  color: skyblue;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: not-allowed;
+}
+
+.content {
+    color: red;
+}
+
+#morecontent {
+  background-color: yellow;
+}
