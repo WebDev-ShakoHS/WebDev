@@ -31,3 +31,43 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: default;
+}
+
+.button1 {
+  border-radius: 8px;
+    transition-duration: 100s;
+}
+
+.button2 {
+  border-radius: 30%;
+}
+
+.red { 
+   background-color: #ff0000;
+}
+
+.no click {
+    background-color: #555555;
+    cursor:not-allowed
+    border: none;
+    margin 6px 5px;
+    display: inline-block;
+   
+
+
+    
+}
+#morecontent {
+  background-color: yellow;
+}
