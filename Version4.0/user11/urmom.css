@@ -93,13 +93,16 @@ body {
     99% {
         color: #4278f5;
     }
+
     100% {
         color: #f54242;
     }
 }
+
 .perhaps {
     animation: perhaps 1.2s infinite;
 }
+
 @keyframes perhaps {
     0% {
         font-size: 10px;
@@ -114,7 +117,7 @@ body {
     }
 
     70% {
-        font-size: 15px;   
+        font-size: 15px;
     }
 
     100% {
@@ -122,4 +125,3 @@ body {
     }
 }
 }
- 
