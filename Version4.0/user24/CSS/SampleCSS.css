@@ -47,7 +47,7 @@ th {
 
 .button1 {
   border-radius: 8px;
-    transition-duration: 100s;
+    transition-duration: 10s;
      width: {100%;}
     float: left;
 }
@@ -76,3 +76,9 @@ th {
 #morecontent {
   background-color: yellow;
 }
+
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(250, 0, 0, 1.0);
+}
+
