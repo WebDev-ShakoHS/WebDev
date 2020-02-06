@@ -90,10 +90,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="google.html" class="nav-item nav-link">Google</a>
                     <a href="music.html" class="nav-item nav-link" tabindex="-1">Music</a>
-                    <a href="list.html" class="nav-item nav-link" tabindex="-2">Lists</a>
+                    <a href="list.html" class="nav-item nav-link active" tabindex="-2">Lists</a>
                     <a href="music2.html" class="nav-item nav-link" tabindex="-2">Music 2</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contact</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
@@ -108,15 +108,87 @@
     <div class="wideMargin" id="content">
 
         <h2 class="text-left my-3">Home</h2>
+        <h3>Ordered list</h3>
+        <ol>
+            <li>First numbered item</li>
+            <li>Second numbered item</li>
+            <li>Third numbered item</li>
+        </ol>
+        <h2>Un-ordered list</h2>
+        <ul>
+            <li>List item...</li>
+            <li>List item...</li>
+            <li>List item...</li>
+        </ul>
+        <h3>CSS Box Model Demonstration</h3>
+        <style>
+            h3 {
+                padding: 50px;
+            }
+
+            p {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            p {
+                padding: 20px 10px;
+                /* Vertical  Horizontal */
+            }
+
+            p {
+                padding: 20px 0 20px 10px;
+                /* Top  Right  Bottom  Left */
+            }
+
+            h3 {
+                padding: 50px;
+                border: 10px solid #7e807f;
+                font-size: 55px;
+                font-family:cursive;
+                
+            }
+
+            border-bottom: 1px solid #5D6063;
+
+            p {
+                padding: 20px 0 20px 10px;
+                margin-bottom: 50px;
+                /* Add this */
+            }
+
+            strong {
+                margin: 50px;
+            }
+
+            p {
+                padding: 20px 0 20px 10px;
+
+                margin-top: 25px;
+                margin-bottom: 50px;
+            }
+            p {
+                font-family:fantasy;
+                font-size: 25px;
+            }
+            ol {
+                font-family: monospace;
+                font-size: 25px;
+            }
+        </style>
         <p>
-
-            This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+            Paragraphs are blocks too. <em>However</em> things like &lt;em&gt; and &lt;strong&gt; elements are not.
+            They are <strong>inline</strong> elements.
         </p>
-        <p>
+        <div style='padding-top: 1px'></div> <!-- Add this -->
 
-
-            I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
+        <p>Block elements define the flow of the HTML document, while inline elements
+            do not.
         </p>
+
+
     </div>
     <div class="wideMargin" id="footer">
         <p>
@@ -128,3 +200,4 @@
 </body>
 
 </html>
+
