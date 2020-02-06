@@ -44,7 +44,7 @@ th {
     font-size: 16px;
     margin: 4px 2px;
     cursor: crosshair;
-}
+} 
 
 .nba {
     background-color: black;
@@ -57,27 +57,31 @@ th {
     cursor: e-resize;
     padding: 20px;
     display: inline-block;
-    border-style:dashed;
+    border-style: dashed;
     box-shadow: 0 9px #999;
-   
+
 }
-.nba:hover {background-color: #3e8e41}
+
+.nba:hover {
+    background-color: #3e8e41
+}
 
 .nba:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
-.nba{
+.nba {
     border-style: inset;
 }
 
-.content{
+.content {
     color: red;
 }
+
 #morecontent {
-  background-color: yellow;
+    background-color: yellow;
 }
 }
 
