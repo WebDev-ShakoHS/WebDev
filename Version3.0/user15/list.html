@@ -6,6 +6,11 @@
     -->
 
 <head>
+<link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="CSS/SampleCSS.css"> 
+    
+   
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -38,6 +43,30 @@
             text-align: center;
         }
 
+        h3 {
+  
+  border:5px solid blue;
+  
+   border-style: dotted;         
+  padding: 10px; 
+    margin-bottom: 50px;
+
+            /* Top  Right  Bottom  Left */
+            }
+        strong {
+  margin: 50px;
+}
+        h4 {
+  
+  border:5px solid red;
+  
+   border-style: dotted;         
+  padding: 10px; 
+    margin-bottom: 50px;
+
+}
+      
+        
     </style>
 </head>
 
@@ -52,10 +81,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-2">Lists</a>
+                    <a href="music.html" class="nav-item nav-link" tabindex="-1">Music</a>
+                    <a href="list.html" class="nav-item nav-link active" tabindex="-2">Lists</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contact</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
@@ -68,16 +97,35 @@
 
     <div class="wideMargin" id="content">
 
-        <h2 class="text-left my-3">Home</h2>
+        <h2 class="text-left my-3">List</h2>
+        <h3>Ordered list</h3>
+        <ol>
+            <li>Packers</li>
+            <li>Lol</li>
+            <li>Third numbered item</li>
+        </ol>
+
+        <h4>Unordered list </h4>
+        <ul>
+            <li>First numbered item</li>
+            <li>Second numbered item</li>
+            <li>Third numbered item</li>
+        </ul>
+        <h3>CSS Box Model Demonstration</h3>
+
         <p>
-
-            This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+            Paragraphs are blocks too. <em>However</em> things like &lt;em&gt; and &lt;strong&gt; elements are not.
+            They are <strong>inline</strong> elements.
         </p>
-        <p>
-
-
-            I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
+        <p>Block elements define the flow of the HTML document, while inline elements
+            do not.
         </p>
+
+
+
+
+
+
     </div>
     <div class="wideMargin" id="footer">
         <p>
@@ -88,3 +136,15 @@
 </body>
 
 </html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
