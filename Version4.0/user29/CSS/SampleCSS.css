@@ -8,8 +8,6 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    font-size: 1.1em;
 }
 
 table {
@@ -93,6 +91,8 @@ th {
     border-radius: 30%;
 }
 
-.red {
-    background-color: #ff0000;
+.red { 
+
+background-color: red;
 }
+ 
