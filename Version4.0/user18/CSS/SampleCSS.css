@@ -144,4 +144,13 @@ th {
     transition: all 0.3s;
 }
 
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(106, 13, 173, 0.3);
+}
+
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: rgba(150, 1, 40, 0.3);
+}
 
