@@ -2,7 +2,9 @@ body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
 }
-
+strong {
+  padding: 50px;
+}
 h1 {
 	font-size: 1.3em;
 	text-align: center;
@@ -10,8 +12,22 @@ h1 {
 
 h2{
         font-size: 1.1em;
+    text-align: center;
 }
 
+h3 {
+  padding: 50px;
+  border: 1px solid #5D6063;
+}
+p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+p {
+  padding: 20px 10px;  /* Vertical  Horizontal */
+}
 table {
 	margin-left: auto;
 	margin-right: auto;

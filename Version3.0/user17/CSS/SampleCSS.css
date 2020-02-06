@@ -1,3 +1,11 @@
+h3 {
+  padding: 50px;
+  border-bottom: 4px solid #5D6063;
+}
+strong {
+  margin: 50px;
+}
+
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -30,4 +38,9 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+p {
+  padding: 10px 0 10px 10px;
+  margin-bottom: 50px;          /* Add this */
 }
