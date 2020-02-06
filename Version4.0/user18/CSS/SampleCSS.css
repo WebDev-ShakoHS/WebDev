@@ -12,6 +12,10 @@ h2{
         font-size: 1.1em;
 }
 
+#morecontent {
+  background-color: yellow;
+}
+
 table {
 	margin-left: auto;
 	margin-right: auto;
@@ -31,3 +35,113 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  border-radius: 8px;
+}
+
+.button2 {
+  border-radius: 30%;
+}
+
+.red { 
+   background-color: #ff0000;
+}
+
+.blue {
+    background-color: aquamarine
+}
+
+.blue{
+    border-radius: 20px;
+}
+
+.cool{
+    margin-right: 500px
+}
+
+.cool{
+    border-radius: 100%;
+}
+
+.cool {
+    background: #49a7df;
+    color: #fff;
+    box-shadow: 0 6px #ab3c3c;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+.cool {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: aqua;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.blue {
+	background: #cb4e4e;
+	color: #fff;
+	box-shadow: 0 6px #ab3c3c;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+
+.hi {
+    border: 4px solid #226fbe;
+    border-radius: 60px;
+}
+.hi {
+    color: #fff;
+    background: lightblue;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+.hi {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: lightblue;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
