@@ -46,7 +46,7 @@ th {
 }
 
 .button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     background-color: #D46A52;
 }
 
@@ -55,11 +55,11 @@ th {
     border-radius: 30%;
     padding: 20px;
     font-size: 16px;
-    cursor:  pointer;
+    cursor: pointer;
 }
 
 .button1:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     background-color: #68CBC2;
 }
 
@@ -71,7 +71,7 @@ th {
 }
 
 .button3:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     background-color: #D4C852
 }
 
@@ -81,18 +81,18 @@ th {
 }
 
 .ad:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     background-color: lightgrey;
 }
 
 #morecontent {
-  background-color: #FFF799;
+    background-color: #FFF799;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(255, 0, 0, 0.3);
+    background-color: rgba(255, 0, 0, 0.3);
 }
