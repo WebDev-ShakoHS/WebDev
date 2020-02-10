@@ -36,6 +36,11 @@ table {
 	cellspacing: 0px;
 }
 
+.button:active {
+    background-color: yellow;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
