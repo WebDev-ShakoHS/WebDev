@@ -595,7 +595,51 @@ For this and over 400+ free scripts, visit http://javascriptkit.com
         <INPUT TYPE="button" NAME="sqr7" class="tictac" value="     " onClick="if(document.tic.sqr7.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr7.value = ' X '; sqr7T = 1; turn = 1; vari(); check();} else if(document.tic.sqr7.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr7.value = ' X '; sqr7T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr7.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr7.value = ' O '; sqr7T = 1; turn = 1; vari(); player1Check()} drawCheck()">
         <INPUT TYPE="button" NAME="sqr8" class="tictac" value="     " onClick="if(document.tic.sqr8.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr8.value = ' X '; sqr8T = 1; turn = 1; vari(); check();} else if(document.tic.sqr8.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr8.value = ' X '; sqr8T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr8.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr8.value = ' O '; sqr8T = 1; turn = 1; vari(); player1Check()} drawCheck()">
         <INPUT TYPE="button" NAME="sqr9" class="tictac" value="     " onClick="if(document.tic.sqr9.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr9.value = ' X '; sqr9T = 1; turn = 1; vari(); check();} else if(document.tic.sqr9.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr9.value = ' X '; sqr9T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr9.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr9.value = ' O '; sqr9T = 1; turn = 1; vari(); player1Check()} drawCheck()">
-    </form>
+        <form>
+            <table border="0" width="350" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td><img border="0" src="roulette.jpg" width="152" height="216"></td>
+                    <td>
+
+                        <form name="fire">
+                            Load number of bullets (1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
+
+                            <p>
+                                <input name="message" type="button" value="Play Roulette!" onClick="fireit()">
+                            </p>
+
+                        </form>
+
+                        <script>
+                            //Russian Roulette Game- by javascriptkit.com
+                            //Visit JavaScript Kit (http://javascriptkit.com) for script
+                            //Credit must stay intact for use
+
+                            <
+                            img border = "0"
+                            src = "roulette.jpg"
+                            width = "152"
+                            height = "216" >
+                                function fireit() {
+                                    var theone = Math.floor(Math.random() * 6)
+
+                                    if (theone <= document.fire.bullets.value - 1)
+                                        alert("Bang. You\'re dead!")
+                                    else {
+                                        document.fire.message.value = "Whew. Got lucky!"
+                                        setTimeout("document.fire.message.value='Play Roulette'", 500)
+                                    }
+                                }
+
+                        </script>
+
+                        <p align="center">This free script provided by<br />
+                            <a href="http://javascriptkit.com">JavaScript
+                                Kit</a></p>
+
+                    </td>
+                </tr>
+            </table>
 </body>
 
 </html>
