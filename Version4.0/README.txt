@@ -1,6 +1,8 @@
 Version 4.0
 
-This assingment is all about organizing your information into tables, adding an image to reflect
-the data, and finally how to use CSS to style specfic information on your webpage.
+This assingment is all about Classes we will use in CSS.  We will make buttons that will 
+look different becasue of classes we define. 
 
-Complete Activities 1.3 and 1.3b and send a pull request.
+This assignment will also look at Bootstrap 4 and how we can use it help style our web pages.
+
+Complete Activities 1.4a and 1.4b and send a pull request.
