@@ -128,7 +128,7 @@ th {
     border: none;
     font-family: inherit;
     font-size: inherit;
-    color: inherit;
+    color: inherit; 
     background: lightblue;
     cursor: pointer;
     padding: 25px 80px;
