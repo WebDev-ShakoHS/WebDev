@@ -12,7 +12,6 @@
 
     <style>
         body {
-            -webkit-animation: colorchange 60s infinite;
             animation: colorchange 60s infinite;
         }
 
@@ -61,6 +60,8 @@
         }
 
     </style>
+
+
     <meta charset="utf-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,9 +80,19 @@
 
     <!-- Custom styles for this template -->
 
+    <style type="text/css">
+        .red{
+            font-family: monospace;
+            border-color: aqua;
+            border-style: groove;
+        }
+    </style>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
 
     <link href="style.css" rel="stylesheet">
+
+    <script src="JS/SampleJS.js"></script>
+
 
 </head>
 
@@ -127,21 +138,24 @@
     </div>
     <!-------------END OF NAV BAR ------------------>
 
-    
-    <div >
-    
-    
-    
-    
+
+    <div>
+
+
+
+
     </div>
-    
-    
-    
+
+
+
     <div id="content">
 
         <br>
         <br>
         <h1>About Me</h1>
+
+        <center>
+
         <h2>Hi</h2>
 
         <p>
@@ -150,17 +164,37 @@
 
         </p>
         <h3> Skills</h3>
+            
+            Some text: <input type="text" value="Hello world!" onselect="Onselect()">
 
+<p id="demo"></p>
+            
+            <form onsubmit="confirmInput()" action="Script.html">
+  Enter your name: <input id="fname" type="text" size="20">
+  <input type="submit">
+</form>
+            <form onsubmit="confirmInput()" action="https://www.google.com/search?q=42&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiS_M_pmsrnAhWVZ80KHWVxDmkQ_AUoAnoECA0QBA&biw=718&bih=789&dpr=2&surl=1&safe=active&ssui=on#imgrc=jKLWgjM3VQI9FM">
+  Click to find endless library: <input id="fname" type="text" size="20">
+  <input type="submit">
 
         <p>
+            <body onload="myFunction()">
+<h2>Hello World!</h2>
+</body>
 
-            I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
-            <h4>hobbies</h4>
-            <h5>Bye</h5>
-            <h6> See ya later</h6>
-            <p> My hobbies include playing video games and playing tennis </p>
 
-        </p>
+            I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about). </p>
+
+        <h4>hobbies</h4>
+        <h5>Bye</h5>
+        <h6> See ya later</h6>
+        <p> My hobbies include playing video games and playing tennis </p>
+
+            <p id="textChange"> My name is User ##</p>
+        </center>
+
+        <button type="button" class= "red" onclick="changeText()">Click if you like</button>
+
 
     </div>
 
