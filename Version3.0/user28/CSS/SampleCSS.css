@@ -6,11 +6,29 @@ body {
 h1 {
 	font-size: 1.3em;
 	text-align: center;
+    
 }
 
 h2{
         font-size: 1.1em;
+    text-align: center;
+    color: white; 
 }
+
+    <h3>Ordered List</h3>
+<ol>
+    <li>First numbered item</li>
+    <li>Second numbered item</li>
+    <li>Third numbered item</li>
+</ol>
+   
+    <h3>Un-ordered List</h3>
+    <ul>
+<li>Cats</li>
+<li>Dogs</li>
+<li>Birds</li>
+</ul>
+
 
 table {
 	margin-left: auto;
