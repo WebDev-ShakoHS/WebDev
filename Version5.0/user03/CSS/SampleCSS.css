@@ -17,7 +17,6 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
 }
 
 tr {
@@ -30,4 +29,13 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+.button {
+    font-size: large;
+    color: azure;
+    background-color: darkblue;
+    padding: 20px;
+    margin: 4px 2px;
+    border-radius: 15%;
 }

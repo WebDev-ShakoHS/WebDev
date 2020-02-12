@@ -1,0 +1,173 @@
+<html lang="en">
+
+<head>
+    <title>Games</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="JavaScript Games">
+    <!-- Bootstrap core JS -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+    </style>
+    <style>
+        .para {
+            color: azure;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="Music.html" class="nav-item nav-link" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link active" tabindex="-1">Games</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="wideMargin" id="content">
+
+        <h1 class="text-left my-3">Games</h1><!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <p>
+
+            Come and checkout these awesome JavaScript Games!!!!
+        </p>
+
+    </div>
+
+    <table border="1" bgcolor="#0000f9" color="white" cellspacing="0" cellpadding="3" class="wideMargin">
+        <tr>
+            <td width="100%">
+
+                <center>
+                    <p class="para"><strong>Crystal Ball</strong></p>
+                </center>
+                <p class="para">Please enter a yes/no question and it will respond</p>
+                <p class="para">Warning: the crystal ball has a tendency to be sarcastic!</p>
+
+                <table width="40%" border="0">
+                    <tr>
+                        <td>
+                            <form name="input1" method="post">
+                                <input name="textfield" size=63>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+                <table width="8%" border="0">
+                    <tr>
+                        <td>
+                            <form method="post">
+                                <input type="button" name="button1" value="Ask Me!" onClick="getAnswers()">
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+
+                <script language="JavaScript">
+                    //Crystal Ball Script - By Michael McDermott (mcdemf1@wfu.edu)
+                    //http://www.wfu.edu/~mcdemf1
+                    //Visit JavaScript Kit (http://javascriptkit.com) for script
+
+
+                    function getAnswers() {
+
+                        time = new Date()
+                        randominteger = time.getSeconds()
+
+                        if (document.input1.textfield.value == "") {
+                            alert("You... Didn't actually type anything...")
+                            return
+                        }
+
+                        if (randominteger <= 3) answer = "Did you really think so? Hahaha, I'm laughing now at your pitiful chances."
+                        if ((randominteger >= 4) && (randominteger <= 6)) answer = "Yeah, it it's got a 65% chance of happening."
+                        if ((randominteger >= 7) && (randominteger <= 9)) answer = "Oh God no!"
+                        if ((randominteger >= 10) && (randominteger <= 12)) answer = "As sure as I'm made of glass, this is likely to happen."
+                        if ((randominteger >= 13) && (randominteger <= 15)) answer = "Are you really sure I'm the one you should be asking?"
+                        if ((randominteger >= 16) && (randominteger <= 18)) answer = "Give me a break, give me a break, break me off a piece of that NO!"
+                        if ((randominteger >= 19) && (randominteger <= 21)) answer = "Good chances lie on the horizon."
+                        if ((randominteger >= 22) && (randominteger <= 24)) answer = "Ask again later. All these answers are random anyway and I really don't care."
+                        if ((randominteger >= 25) && (randominteger <= 27)) answer = "Just like the answers in this Crystal Ball, it's up to chance."
+                        if ((randominteger >= 28) && (randominteger <= 30)) answer = "As the sun is hot, your answer is YES."
+                        if ((randominteger >= 31) && (randominteger <= 33)) answer = "Did you get drunk last weekend? There's your answer."
+                        if ((randominteger >= 34) && (randominteger <= 36)) answer = "Forget about it"
+                        if ((randominteger >= 37) && (randominteger <= 39)) answer = "Yeah, it could happen. 80% chance."
+                        if ((randominteger >= 40) && (randominteger <= 42)) answer = "Hitler has a better chance of raising from the dead."
+                        if ((randominteger >= 43) && (randominteger <= 45)) answer = "If you really think so, then it shall be."
+                        if ((randominteger >= 46) && (randominteger <= 48)) answer = "Who said ambiguous answers were bad? Not me, so YES!"
+                        if ((randominteger >= 49) && (randominteger <= 51)) answer = "You think I'm going to answer that after a day of hard work? Ask again later."
+                        if ((randominteger >= 52) && (randominteger <= 54)) answer = "If you own a pet, yes. Otherwise, no."
+                        if ((randominteger >= 55) && (randominteger <= 57)) answer = "The sun will rise in the east and set in the west. Thank you Captain Obvious. YES!"
+                        if ((randominteger >= 58) && (randominteger <= 60)) answer = "I'm laughing hard, very hard. You'd better ask again."
+
+                        var newWindow = window.open("", "Results", "width=300,height=300")
+                        newWindow.document.write("<html><body bgcolor='#000000' text='#FFFFCC' link='#00FFFF' alink='#000066' vlink='#6666FF'>")
+                        newWindow.document.write("<P align='center'>Your Question:</P><P></P>")
+                        newWindow.document.write("<P align='center'>" + document.input1.textfield.value + "</P>")
+                        newWindow.document.write("<P></P><P></P><P></P><P align='center'>The Great Crystal Ball Has Answered:</P><P></P>")
+                        newWindow.document.write("")
+                        newWindow.document.write("<P align='center'>" + answer + "</P>")
+                        newWindow.document.write("<P></P><P></P><P align='center'><A HREF='javascript:window.close()'>Close Me</A></P>")
+                    }
+
+                </script>
+
+            </td>
+        </tr>
+    </table>
+
+    <p align="center">This free script provided by<br />
+        <a href="http://javascriptkit.com">JavaScript
+            Kit</a></p>
+    <div class="wideMargin" id="footer">
+        <p>
+            Webpage made by <a href="index.html" target="_blank">Paige Arnold</a>
+        </p>
+    </div>
+
+</body>
+
+</html>
