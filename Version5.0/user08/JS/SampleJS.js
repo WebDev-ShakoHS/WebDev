@@ -20,5 +20,9 @@ function changeBlack() {
 }
 
 function BGBlack() {
-  document.body.style.backgroundColor = "#000000";
+    document.body.style.backgroundColor = "#000000";
+}
+
+function BGWhite() {
+    document.body.style.backgroundColor = "#FFFFFF";
 }
