@@ -38,11 +38,10 @@
             font-size: 12px;
             text-align: center;
         }
-
     </style>
 </head>
 
-<body>
+<body onresize="annoy()">
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -77,32 +76,35 @@
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <button type="button" onclick="changeText()">Click here</button>
+                    <button id="xychords" type="button" onclick="findmouse()">Click Here for Mouse Chords</button>
+                    <p id="ontext" onmouseover="on()" onmouseout="off()">Move Mouse Here</p>
+                    <button id="swiper" type="button" onmouseover="annoy()">Move mouse here</button>
+                    <input type="text" id="inputter" onblur="blurred()">
+                    <p type="text" id="counter">0</p>
+                    <img onclick="setTimeout(norrmalizetext, 160);uptick()" src="https://www.nicepng.com/png/full/3-35433_cookie-free-download-png-chocolate-chip-cookie-no.png" height="250" width="250">
+                    <button id="dbutton" type="button" ondblclick="uptick()">Double Click here</button>
+                </div>
+                <div/>
+                <p>
 
-
-        </p>
-
+            </div>
+            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+            <div>
+                <center>
+                    <p id="textChange"> My name is User 1</p>
+                </center>
+                <!---------------------------------- Begin the footer ------------->
+                <div class="wideMargin" id="footer">
+                    <p>
+                        Webpage made by <a href="index.html" target="_blank">Peter Amendt</a>
+                    </p>
+                </div>
     </div>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-    <div>
-        <center>
-            <p id="textChange"> My name is User 1</p>
-        </center>
-        <button type="button" onclick="changeText()">Click if you like</button>
-        <button id="xychords" type="button" onclick="findmouse()">Click Here for Mouse Chords</button>
-        <p id="ontext" onmouseover="on()" onmouseout="off()">Move Mouse Here</p>
-        <button id="swiper" type="button" onmouseover="annoy()">Move mouse here</button>
-        <input type="text" id="inputter" onblur="blurred()">
-        <!---------------------------------- Begin the footer ------------->
-        <div class="wideMargin" id="footer">
-            <p>
-                Webpage made by <a href="index.html" target="_blank">Peter Amendt</a>
-            </p>
-        </div>
-        <p id="counter">0</p>
-        <img onclick="uptick()" src="https://www.nicepng.com/png/full/3-35433_cookie-free-download-png-chocolate-chip-cookie-no.png" height="250" width="250">
-        <button type="button" id="cpc" onclick="cpcu" onmouseover="cpccost">+1 CPC</button>
-    </div>
-    <!---------------------------------- End the footer ------------->
+</div>
+            <!---------------------------------- End the footer ------------->
 </body>
-
+    
 </html>
