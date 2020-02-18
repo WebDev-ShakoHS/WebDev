@@ -73,6 +73,12 @@
         }
 
     </script>
+    <script>
+        function myFunction() {
+            alert("You're very cool.");
+        }
+
+    </script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -111,7 +117,7 @@
             box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
             background-color: #9FD1B3;
         }
-
+      
     </style>
 </head>
 
@@ -155,9 +161,6 @@
             </center>
         </p>
         <p align="center">
-            <button onclick="setTimeout(myFunction, 3000);" class="button">Try it</button>
-        </p>
-        <p align="center">
             <form align="center">
                 <input type="button" value="Open Window" onclick="openWin()" class="button">
             </form>
@@ -168,6 +171,11 @@
                 Enter your name: <input id="fname" type="text" size="20">
                 <input type="submit">
             </form>
+        </p>
+        <p>
+            <p>A function is triggered when the user is pressing a key in the input field.</p>
+
+            <input type="text" onkeydown="myFunction()">
         </p>
         <p align="center">
             <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
