@@ -50,12 +50,18 @@ function typenametoreset() {
 }
 
 function writeMessage() {
-  document.forms[0].mySecondInput.value = document.forms[0].myInput.value;
+    document.forms[0].mySecondInput.value = document.forms[0].myInput.value;
 }
+
 function color(color) {
-  document.forms[0].myInput.style.background = color;
+    document.forms[0].myInput.style.background = color;
 }
+
 function confirmInput() {
-  fname = document.forms[0].fname.value;
-  alert("Hello " + fname + "! You will now be redirected to www.w3Schools.com");
+    fname = document.forms[0].fname.value;
+    alert("Hello " + fname + "! You will now be redirected to www.w3Schools.com");
+}
+
+function myFunction(x) {
+    x.style.background = "yellow";
 }
