@@ -5,6 +5,32 @@
         Date Completed:
     -->
 <link rel="stylesheet" href="test.css">
+<script>var space = " ";
+var pos = 0;
+var msg = "Version 5 Frame";
+
+function Scroll(){
+document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
+
+pos++;
+if (pos > msg.length) pos = 0;
+window.setTimeout("Scroll()", 0);
+}
+Scroll();</script>
+    <script>function whichElement(e) {
+  var targ;
+  if (!e) {
+    var e = window.event;
+  }
+  if (e.target) {
+    targ=e.target;
+  } else if (e.srcElement) {
+    targ=e.srcElement;
+  }
+  var tname;
+  tname = targ.tagName;
+  alert("You clicked on a " + tname + " element.");
+}</script>
 <style>
     body {
         font-family: "Marker Felt", "Comic Sans MS", fantasy;
@@ -65,6 +91,12 @@
     }
 
 </style>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <link rel="shortcut icon" type="image/png" href="https://www.freeiconspng.com/uploads/world-wide-web-globe-icon-images--pictures-becuo-0.png" />
 
 <head>
@@ -103,7 +135,7 @@
 
     </style>
 </head>
-
+<body onmousedown="whichElement(event)">
 <body>
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -129,7 +161,15 @@
             </div>
         </nav>
     </div>
-
+    <!-- Or let Bootstrap automatically handle the layout -->
+    <div class="row">
+      <div class="col-sm"style="background-color:yellow;">hi</div>
+      <div class="col-sm" style="background-color:orange;">what's</div>
+      <div class="col-sm" style="background-color:yellow;">up</div>
+      <div class="col-sm" style="background-color:orange;">help me</div>
+    </div>
+    <br>
+    
     <div class="wideMargin" id="content">
 
         <h2 class="text-left my-3">Home</h2>
