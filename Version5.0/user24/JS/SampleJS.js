@@ -2,6 +2,8 @@ function changeText() {
  document.getElementById("textChange").innerHTML="Thanks for liking my Webpage";
 }
 
-function Lime() {
-    document.body.style.backgroundColor = "#bfff00";
+
+function allcaps() {
+    var x = docucment.getElementById("fname");
+    x.value = x.value.toUpperCase();
 }
