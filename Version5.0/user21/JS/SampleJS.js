@@ -46,3 +46,5 @@ function annoyingAlert() {
 function changeParagraph() {
     document.getElementById("changeclick").innerHTML = "Hello World";
 }
+function typenametoreset() {
+  alert("This alert box was triggered by the onreset event handler");
