@@ -112,28 +112,47 @@
         Enter your name: <input type="text" id="fname" onchange="allCaps()">
         <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
 
+<form>
+Write a message:<br>
+<input 
+type="text" 
+onkeydown="color('yellow')"
+onkeyup="color('white')"
+name="myInput">
+</form>
 
 
-        <p>Click the button to trigger a function.</p>
 
-        <button onclick="myFunction()">Click me and I will say something</button>
+      <p>The onkeyup event occurs when the a keyboard key is on its way UP.</p>
 
+<form>
+  Enter your name:
+  <input type="text" name="myInput" onkeyup="writeMessage()" size="20">
+  <input type="text" name="mySecondInput" size="20">
+</form>
+        
+        
+        
+        
         <p ondblclick="changeParagraph()" id="changeclick">This is a paragrapgh that will change when you click on it</p>
 
- <form onreset="typenametoreset()">
-                    Enter your name: <input type="text" size="20">
-                    <input type="reset">
-                </form>
-
         <p id="demo"></p>
-
+        <form onreset="typenametoreset()">
+            Enter your name: <input type="text" size="20">
+            <input type="reset">
+        </form>
         <p ondblclick="myFunction()">A function is triggered when the user is pressing a key in the input field.</p>
 
         <input type="text" onkeypress="annoyingAlert()">
 
+<form onsubmit="confirmInput()" action="https://www.w3schools.com/">
+  Enter your name: <input id="fname" type="text" size="20">
+  <input type="submit">
+</form>
+
         <div class="wideMargin" id="footer">
             <p>
-               
+
                 Webpage made by <a href="index.html" target="_blank">[Riley-coder]</a>
             </p>
         </div>

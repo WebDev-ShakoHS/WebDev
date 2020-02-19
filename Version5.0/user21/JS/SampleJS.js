@@ -35,9 +35,7 @@ function allCaps() {
     x.value = x.value.toUpperCase();
 }
 
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Gotta love food";
-}
+
 
 function annoyingAlert() {
     alert("You pressed a key inside the input field");
@@ -46,5 +44,18 @@ function annoyingAlert() {
 function changeParagraph() {
     document.getElementById("changeclick").innerHTML = "Hello World";
 }
+
 function typenametoreset() {
-  alert("This alert box was triggered by the onreset event handler");
+    alert("This alert box was triggered by the onreset event handler");
+}
+
+function writeMessage() {
+  document.forms[0].mySecondInput.value = document.forms[0].myInput.value;
+}
+function color(color) {
+  document.forms[0].myInput.style.background = color;
+}
+function confirmInput() {
+  fname = document.forms[0].fname.value;
+  alert("Hello " + fname + "! You will now be redirected to www.w3Schools.com");
+}
