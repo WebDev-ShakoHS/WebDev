@@ -1,16 +1,17 @@
 <html lang="en">
 <!--Version 5.0 
 	Name: Paige Arnold
-	Date Completed: 2/10/2020
+	Date Completed: 2/11/2020
     -->
 
 <head>
 
-    <title>Web Development User #03 INDEX</title>
+    <title>Script</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/SampleJS.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
@@ -25,6 +26,17 @@
         #footer {
             font-size: 12px;
             text-align: center;
+        }
+
+        .wow {
+            padding: 40px;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 20px;
+            background-color: cornflowerblue;
+            color: aliceblue;
+            font-size: large;
+            align-self: center;
         }
 
     </style>
@@ -43,12 +55,12 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
                     <a href="Music.html" class="nav-item nav-link" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link" tabindex="-1">Lists</a>
                     <a href="Games.html" class="nav-item nav-link" tabindex="-1">Games</a>
-                    <a href="Script.html" class="nav-item nav-link" tabindex="-1">JavaScript</a>
+                    <a href="Script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -58,7 +70,42 @@
         </nav>
     </div>
 
-    <h1>Click on the Games tab!</h1>
+    <h1 class="wideMargin">Script Time</h1>
+
+
+    <div class="row">
+        <div class="col-lg-4">
+            <center>
+                <p id="textChange" class="wow">My name is Paige!</p>
+                <button class="wideMargin" type="button" onclick="changeText()" onclick="newclass()" onmouseover="ohYea() " onmouseout="noCat() ">Click if you like</button>
+                <button class="wideMargin" type="button" onclick="cry()" onmouseover="ohNo()" onmouseout="noCat()">Click if you don't like</button>
+                <p id="cat"> </p>
+            </center>
+        </div>
+
+        <div class="col-lg-4">
+            <center>
+                <p id="bunny">
+                    <img src="images/cute%20bunny.jpg" width="400px" onclick="petBunny(); OHGOD()" type="button">
+                </p>
+
+                <p id="bunnyText">Aww... What a cute bunny! Click on him to give him a pat.</p>
+            </center>
+        </div>
+
+        <div class="col-lg-4">
+            <center>
+            <p>
+                Feed some text to the website!
+            </p>
+            <form onreset="resetMessage()">
+                Type something... <input type="text" size="20px">
+                <input type="reset">
+            </form>
+            </center>
+        </div>
+
+    </div>
 
 </body>
 
