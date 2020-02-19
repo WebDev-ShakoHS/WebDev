@@ -1,18 +1,64 @@
 <html lang="en">
-    <!--Version 6.0 
+<!--Version 6.0 
 	Name:
 	Date Completed:
     -->
-    <head>
-        
-        <title>Web Development User #14</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #14</center>
-    
-    </body>
+
+<head>
+
+    <style>
+        ul li {
+            color: red;
+        }
+
+        .emphasis {
+            color: green;
+            font-weight: bold;
+        }
+
+        .big {
+            font-size: 40px;
+            font-family: Comic Sans MS;
+        }
+
+    </style>
+    <script src="JS/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('li:first-child').addClass('emphasis');
+            $('h1').addClass('big')
+        });
+
+    </script>
+
+    <title>Jquery m'deary</title>
+
+
+</head>
+
+<body style="background-color:powderblue;">
+
+    <ul>
+        <li>Little green</li>
+        <li>
+            <h1>Big red</h1>
+        </li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <h1>This is table</h1>
+                </th>
+            </tr>
+        </thead>
+
+        <tr>
+            <td>date</td>
+            <td>data</td>
+        </tr>
+    </table>
+
+</body>
 
 </html>

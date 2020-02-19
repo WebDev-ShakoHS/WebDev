@@ -35,12 +35,14 @@
         #footer {
             font-size: 12px;
             text-align: center;
-        }
 
     </style>
+    <script src="JS/SampleJS.js"></script>
 </head>
 
-<body>
+
+
+<body onload="load()">
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -67,7 +69,7 @@
         </nav>
     </div>
     <!---------------------------------- End the nav-bar ------------->
-    <input type="button" onClick="alert('GO Sabers!');" value="Click Me!"> 
+    <input type="button" onClick="alert('GO Sabers!');" value="Click Me!">
 
     <div class="wideMargin" id="content">
 
@@ -79,7 +81,51 @@
             Come and checkout these awesome JavaScript Games!!!!
         </p>
 
+        <center>
+            <p class="bad" id="textChange"> My name is User 14</p>
+        </center>
+
+
+
     </div>
+    <div class="row">
+        <div class="col" style="background-color:gray;"><button type="button" onclick="changeText()">Click if you like</button></div>
+        <div class="col" style="background-color:lightgray;"><input type="text" id="fname" onchange="myFunction()"></div>
+        <div class="col" style="background-color:gray;">
+            <form>
+                What are you:
+                <select id="browsers" onchange="preferedBrowser()">
+                    <option value="Iron Man">Iron Man</option>
+                    <option value="Inevitable">Inevitable</option>
+                    <option value="Confused">Confused</option>
+                </select>
+            </form>
+        </div>
+        <div class="col" style="background-color:lightgray;"><button onclick="audio()">Click Me! </button> <audio id="myAudio">
+        <source src="audio/round.ogg" type="audio/ogg">
+        <source src="audio/round.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <p class="bad" id="textchange1">page loaded</p>
+        </div>
+        <div class="col"><p onmouseover="style.color='red'" onmouseout="style.color='black'">Colors UwU</p></div>
+        <div class="col"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://www.w3schools.com/js/smiley.gif" alt="Smiley" width="32" height="32"></div>
+        <div class="col"> <form>
+Write a message:<br>
+<input 
+type="text" 
+onkeydown="color('yellow')"
+onkeyup="color('white')"
+name="myInput">
+</form></div>
+    </div>
+
+
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
 
@@ -90,6 +136,7 @@
         </p>
     </div>
     <!---------------------------------- End the footer ------------->
+    
 </body>
 
 </html>
