@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            width: 500px;
+
+            margin: auto;
+            text-align: center;
+        }
+
+        dl {}
+
+        dd {
+            margin: 0;
+            padding: 1em 0;
+        }
+
+        dt {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.5em;
+            line-height: 2em;
+            background: #e3e3e3;
+            border-bottom: 1px solid #c5c5c5;
+            border-top: 1px solid white;
+        }
+
+        dt:first-child {
+            border-top: none;
+        }
+
+        dt:nth-last-child(2) {
+            border-bottom: none;
+        }
+
+        .hide {
+            display: none;
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("p").click(function() {
+                $(this).hide();
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("p").on({
+                mouseenter: function() {
+                    $(this).css("background-color", "lightpink");
+                },
+                mouseleave: function() {
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function() {
+                    $(this).css("background-color", "lavendar");
+                }
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+
+    <dl>
+        <dt>What is you name?</dt>
+        <dd>Sahithi Ravva.</dd>
+        <dt>What is your favorite color?</dt>
+        <dd>Grey</dd>
+        <dt>What is your favortie cookie?</dt>
+        <dd>Sugar cookies</dd>
+        <dt>What is your favortie font?</dt>
+        <dd>Verdana</dd>
+        <dt>What is the smallest font size?</dt>
+        <dd>7</dd>
+    </dl>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script>
+        (function() {
+
+            $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+            $('dl').on('mouseenter', 'dt', function() {
+                $(this)
+                    .next()
+                    .slideDown(200)
+                    .siblings('dd')
+                    .slideUp(200);
+            });
+        })();
+
+    </script>
+    <p>Click and get rid of this ugly font</p>
+    <p>Change the color by hovering!!</p>
+
+</body>
+
+</html>
