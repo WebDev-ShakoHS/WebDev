@@ -1,89 +1,152 @@
-d
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 2.0
-        Name:
+<!--Version 5.0
+        Name:Brian
         Date Completed:
  -->
 
 <head>
-
+    <title>Web Dev User ## </title>
     <meta charset="utf-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Menu Sample">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap core JS -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <meta name="description" content="Test One Page Web Web ">
-
-    <!-- code obtained from https://frimmy.github.io/api-test/  -->
-
-    <title>Title</title>
-
-    <!-- Bootstrap core CSS -->
-
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
 
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+        .wideMargin {
+            margin: 15px;
+        }
 
-    <link href="style.css" rel="stylesheet">
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+    </style>
     <script src="JS/SampleJS.js"></script>
-
-</head>
-
-<body>
-
 
     <script>
         alert('Open The Games Title!');
 
     </script>
 
+</head>
 
-    <!-------------START NAV BAR ------------------>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+<body>
 
-                <a class="navbar-brand" href="https://127.0.0.1/">Home</a>
 
+
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="WebDevUSer29.html" class="nav-item nav-link" tabindex="-1">Games</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
             </div>
-
-            <div class="collapse navbar-collapse">
-
-                <ul class="nav navbar-nav">
-                    <!-------------_EDIT YOUR LINKS HERE _------------------>
-                    <li class="active"><a href="/AboutMe">About Me</a></li>
-
-                    <li><a href="https://shakopee.instructure.com">Canvas</a></li>
-
-                    <li><a href="file:///Users/310175/Applications/mampstack/apache2/htdocs/WebDev/Version5.0/user29/WebDevUSer29.html">GAMES</a></li>
-                    <li><a href="musicversion5.html">Music</a></li>
-                    <!-------------^EDIT YOUR LINKS HERE^ ------------------>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
+        </nav>
     </div>
-    <!-------------END OF NAV BAR ------------------>
-
-    <div id="content">
+    <!---------------------------------- End the nav-bar ------------->
+    <div class="wideMargin">
+        <br>
         <h1>JavaScript</h1>
+        <div class="row">
+            <div class="col-md-2">
+                <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="Hellofriend(event)" onmouseout="clearCoor()"></div>
 
-        <center>
-            <p id="textChange"> My name is Brian </p>
-        </center>
-        <button type="button" onclick="changeText()">Click if you like</button>
+                <p>Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
 
+            </div>
+            <div class="col-md-1">
+                <p id="demo"></p>
+            </div>
+            <div class="col-md-1">
+                <!-- NOTHING -->
+            </div>
 
+            <div id="content" class="col-md-2">
+                <button on type="button" onclick="changeText()">Click if you like</button>
+                <center>
+                    <p id="textChange"> My name is Brian </p>
+                </center>
+            </div>
 
+            <div class="col-lg-3">
+                Enter Your Name: <input type="text" id="fname" onchange="allCaps()">
+                <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+            </div>
+        </div>
+        <div>
+            <form onsubmit="confirmInput()" action="https://www.shakopee.k12.mn.us/shs">
+                Enter your name: <input id="gname" type="text" size="20">
+
+                <input type="submit">
+            </form>
+        </div>
+        <div>
+            <img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap" />
+
+            <map name="planetmap">
+                <area shape="rect" coords="0,0,82,126" onmouseover="writeText('The Sun and the gas giant planets like Jupiter are by far the largest objects in our Solar System.')" href="sun.htm" target="_blank" alt="Sun" />
+
+                <area shape="circle" coords="90,58,3" onmouseover="writeText('The planet Mercury is very difficult to study from the Earth because it is always so close to the Sun.')" href="mercur.htm" target="_blank" alt="Mercury" />
+
+                <area shape="circle" coords="124,58,8" onmouseover="writeText('Until the 1960s, Venus was often considered a twin sister to the Earth because Venus is the nearest planet to us, and because the two planets seem to share many characteristics.')" href="venus.htm" target="_blank" alt="Venus" />
+            </map>
+            <p id="desc">Mouse over the sun and the planets and see the different descriptions.</p>
+
+        </div>
+        <div class="col-md-4">
+        <p id="demo"><strong>Date</strong></p>
+    <div class="col-md-1"></div>
+        <button type="button" onclick="displayDate()">Display Date</button>
     </div>
+
+        <p ondblclick="DBLClick()">Doubleclick this paragraph to trigger a function.</p>
+
+        <p id="demo"></p>
+    </div>
+    <div class="col-md-2">
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+        <p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+        <p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+    </div>
+    <div class="col-md-3">
+    <!--------NOTHING--------->
+    </div>
+    
 </body>
+
+</html>
