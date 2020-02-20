@@ -33,7 +33,7 @@
 
     </script>
     <script>
-        function myFunction() {
+        function trigger() {
             alert('Hello');
         }
 
@@ -46,7 +46,7 @@
 
     </script>
     <script>
-        function myFunction() {
+        function youCool() {
             document.getElementById("demo").innerHTML = "Hello World";
         }
 
@@ -74,7 +74,7 @@
 
     </script>
     <script>
-        function myFunction() {
+        function trigger() {
             alert("You're very cool.");
         }
 
@@ -117,7 +117,7 @@
             box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
             background-color: #9FD1B3;
         }
-      
+
     </style>
 </head>
 
@@ -156,10 +156,13 @@
             <center>
                 <p id="textChange"> My name is Annika Froyum.</p>
             </center>
+        </p>
+        <p>
             <center>
                 <button type="button" onclick="changeText()" class="button">click if you like</button>
             </center>
         </p>
+
         <p align="center">
             <form align="center">
                 <input type="button" value="Open Window" onclick="openWin()" class="button">
@@ -175,16 +178,16 @@
         <p>
             <p>A function is triggered when the user is pressing a key in the input field.</p>
 
-            <input type="text" onkeydown="myFunction()">
+            <input type="text" onkeydown="trigger()">
         </p>
         <p align="center">
             <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
         </p>
-        <p ondblclick="myFunction()">Doubleclick this paragraph to trigger a function.</p>
+        <p ondblclick="youCool()">Doubleclick this paragraph to trigger a function.</p>
 
         <p id="demo"></p>
 
-        <p>Click on this paragraph. An alert box will tell you if you pressed the shift key or not.</p>
+        <p onblclick="isKeyPressed()">Click on this paragraph. An alert box will tell you if you pressed the shift key or not.</p>
 
         <p id="demo2"></p>
 
