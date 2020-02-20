@@ -86,10 +86,28 @@
         }
 
     </script>
+    <script>
+        function whichButton(event) {
+            document.getElementById("demo").innerHTML = event.keyCode;
+        }
+
+    </script>
+    <script>
+        function message() {
+            alert("This alert box was triggered by the onreset event handler");
+        }
+
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello World";
+        }
+
+    </script>
 </head>
 
-<body onload="myFunction()">
-    <h2>Hello World!</h2>
+    
+<body onload="myFunction()" onkeyup="whichButton(event)" onmousedown="isKeyPressed(event)">
 
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -150,12 +168,23 @@
     <p onmousedown="getEventType(event)">
         Click on this paragraph. A message will tell what type of event was triggered.</p>
 
-    <p id="demo"></p>
-    Enter your name: <input type="text" id="fname" onkeyup="myFunction()">
-    Some text: <input type="text" value="Hello world!" onselect="myFunction()">
+    <p>Click on this page, and press a key on your keyboard.</p>
 
     <p id="demo"></p>
+    <form onreset="message()">
+        Enter your name: <input type="text" size="20">
+        <input type="reset">
+    </form>
+    <p ondblclick="myFunction()">Doubleclick this paragraph to trigger a function.</p>
 
+    <p id="demo"></p>
+    
+<div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">Boostrap</div>
+    <div class="col-sm-4" style="background-color:aquamarine;">Row</div>
+    <div class="col-sm-4" style="background-color:lavender;">Class</div>
+  </div>
+    
 </body>
 
 </html>
