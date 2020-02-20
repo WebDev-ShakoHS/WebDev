@@ -5,32 +5,8 @@
         Date Completed:
     -->
 <link rel="stylesheet" href="test.css">
-<script>var space = " ";
-var pos = 0;
-var msg = "Version 5 Frame";
-
-function Scroll(){
-document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
-
-pos++;
-if (pos > msg.length) pos = 0;
-window.setTimeout("Scroll()", 0);
-}
-Scroll();</script>
-    <script>function whichElement(e) {
-  var targ;
-  if (!e) {
-    var e = window.event;
-  }
-  if (e.target) {
-    targ=e.target;
-  } else if (e.srcElement) {
-    targ=e.srcElement;
-  }
-  var tname;
-  tname = targ.tagName;
-  alert("You clicked on a " + tname + " element.");
-}</script>
+<script></script>
+<script></script>
 <style>
     body {
         font-family: "Marker Felt", "Comic Sans MS", fantasy;
@@ -91,12 +67,12 @@ Scroll();</script>
     }
 
 </style>
-      <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <link rel="shortcut icon" type="image/png" href="https://www.freeiconspng.com/uploads/world-wide-web-globe-icon-images--pictures-becuo-0.png" />
 
 <head>
@@ -135,57 +111,60 @@ Scroll();</script>
 
     </style>
 </head>
+
 <body onmousedown="whichElement(event)">
-<body>
-    <div class="menu">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="#" class="nav-item nav-link active">Home</a>
-                    <a href="google.html" class="nav-item nav-link">Google</a>
-                    <a href="music.html" class="nav-item nav-link" tabindex="-1">Music</a>
-                    <a href="list.html" class="nav-item nav-link" tabindex="-2">Lists</a>
-                    <a href="music2.html" class="nav-item nav-link" tabindex="-2">Music 2</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contact</a>
-                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
-                </div>
-                <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link disabled">Login</a>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!-- Or let Bootstrap automatically handle the layout -->
-    <div class="row">
-      <div class="col-sm"style="background-color:yellow;">hi</div>
-      <div class="col-sm" style="background-color:orange;">what's</div>
-      <div class="col-sm" style="background-color:yellow;">up</div>
-      <div class="col-sm" style="background-color:orange;">help me</div>
-    </div>
-    <br>
-    
-    <div class="wideMargin" id="content">
+    <body>
+        <div class="menu">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <h2 class="text-left my-3">Home</h2>
-        <center>
-            <p id="textChange">ahaha</p>
-        </center>
-        <button type="button" onclick="changeText()">Click if you like</button>
-        <div class="container">
-            <div id="runaway-container">
-                <button class='button button2 red' id="runaway">Click me</button>
-            </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <!---------------------------------- Edit These Items in your Menu ------------->
+                        <a href="#" class="nav-item nav-link active">Home</a>
+                        <a href="google.html" class="nav-item nav-link">Google</a>
+                        <a href="music.html" class="nav-item nav-link" tabindex="-1">Music</a>
+                        <a href="list.html" class="nav-item nav-link" tabindex="-2">Lists</a>
+                        <a href="music2.html" class="nav-item nav-link" tabindex="-2">Music 2</a>
+                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contact</a>
+                        <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="#" class="nav-item nav-link disabled">Login</a>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script src="SampleJS.js"></script>
+        <!-- Or let Bootstrap automatically handle the layout -->
+        <div class="row" id="hgh" onmousedown="whichElemente(event)">
+            <div class="col-sm" style="background-color:yellow;">hi</div>
+            <div class="col-sm" style="background-color:orange;">what's</div>
+            <div class="col-sm" style="background-color:yellow;">up</div>
+            <div class="col-sm" style="background-color:orange;">help me</div>
+        </div>
         <br>
-    </div>
-</body>
+
+        <div class="wideMargin" id="content">
+
+            <h2 class="text-left my-3">Home</h2>
+            <center>
+                <p id="textChange">ahaha</p>
+            </center>
+            <button type="button" onclick="changeText()">Click if you like</button>
+            <button type="button" onclick="changeText2()">Reset</button>
+            <div class="container">
+                <div id="runaway-container">
+                    <button class='button button2 red' id="runaway">Click me</button>
+                </div>
+            </div>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+            <script src="pphed.js"></script>
+            <br>
+        </div>
+    </body>
 
 </html>
