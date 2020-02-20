@@ -1,20 +1,28 @@
 function changeText() {
- document.getElementById("textChange").innerHTML="i dont like Amos";
+    document.getElementById("textChange").innerHTML = "div class='isiah'> Thanks for liking my webpage</div>";
 }
-var space = " ";
-var pos = 0;
-var msg = "User 19";
 
-function Scroll(){
-document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
-
-pos++;
-if (pos > msg.length) pos = 0;
-window.setTimeout("Scroll()", 0);
+function message() {
+  alert("This alert box was triggered by the onreset event handler");
 }
-Scroll();
 
-function confirmInput() {
-  fname = document.forms[0].fname.value;
-  alert("Hello " + fname + "! You will now be redirected to www.w3Schools.com");
+function writeMessage() {
+  document.forms[2].mySecondInput.value = document.forms[2].myInput.value;
 }
+
+function myFunction() {
+  alert("You pressed a key inside the input field");
+}
+
+function myFunction(elmnt, clr) {
+  elmnt.style.color = clr;
+}
+
+function myFunction() {
+  alert("Page is loaded");
+}
+
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+
