@@ -17,6 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/SampleJS.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -35,6 +36,9 @@
         #footer {
             font-size: 12px;
             text-align: center;
+        }
+        #saber{
+            background-image: url(images/favicon.ico);
         }
 
     </style>
@@ -78,9 +82,24 @@
         <p>
 
             Come and checkout these awesome JavaScript Games!!!!
-
-            <input type="button" onClick="alert('GO Sabers!');" value="Click Me!">
         </p>
+
+        <div class="row">
+            <div class="col-lg-4">
+                Enter your name: <input type="text" id="fname" onblur="allCaps()">
+
+                <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+            </div>
+            
+            <button>
+                <span id="saber"> HEllo world </span></button>
+        </div>
+
+
+
+
+        <input type="button" onClick="alert('GO Sabers!');" value="Click Me!">
+
         <button type="button" style="background-color:yellow;margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;" onClick="alert('GO Sabers!');">
             Click Me!</button>
     </div>
