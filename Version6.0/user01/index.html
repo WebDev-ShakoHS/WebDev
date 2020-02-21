@@ -1,8 +1,9 @@
 <html lang="en">
-    <!--Version 6.0 
+<!--Version 6.0 
 	Name:
 	Date Completed:
     -->
+
 <head>
     <title>JQ</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -21,10 +22,28 @@
             background: white;
             color: black;
         }
+
     </style>
 </head>
 
 <body id="body" class="day">
+
+    <h1>
+        My Website</h1>
+    <h1 style="text-align:center; color:white;" id="hidden">I was hidden!</h1>
+    <table>
+        <tr>
+            <th>
+                <h2 id="copytext">Hotel Transylvania 3</h2>
+            </th>
+            <th>
+                <button onclick="copyToClipboard('#copytext')">Copy</button>
+            </th>
+        </tr>
+    </table>
+    <button id="Darkm">Dark Mode</button>
+    <button id="Lightm">Light Mode</button>
+
     <dl>
         <dt>What are your hours?</dt>
         <dd>We are open 24/7.</dd>
@@ -37,7 +56,7 @@
         <dt>What are your hours?</dt>
         <dd>We are open 24/7.</dd>
     </dl>
-
+    <button id="delet">End Website</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
@@ -54,16 +73,17 @@
                     .slideUp(200);
             });
         })();
+
     </script>
-    <h1>
-        My Website</h1>
-    <h1 style="text-align:center; color:white;" id="hidden">I was hidden!</h1>
-    <button id="Darkm">Dark Mode</button>
-    <button id="Lightm">Light Mode</button>
+
+
+
+</body>
 
 
 
 
+</html>
 
-</body></html>
+
 
