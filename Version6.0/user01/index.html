@@ -3,16 +3,67 @@
 	Name:
 	Date Completed:
     -->
-    <head>
-        
-        <title>Web Development User #01</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #01</center>
-    
-    </body>
+<head>
+    <title>JQ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="JS/jquery-3.4.1.js"></script>
+    <script src="JS/SampleJS.js"></script>
+    <meta charset=utf-8>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .night {
+            background: black;
+            color: white;
+        }
 
-</html>
+        .day {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body id="body" class="day">
+    <dl>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+    </dl>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script>
+        (function() {
+
+            $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+            $('dl').on('mouseenter', 'dt', function() {
+                $(this)
+                    .next()
+                    .slideDown(200)
+                    .siblings('dd')
+                    .slideUp(200);
+            });
+        })();
+    </script>
+    <h1>
+        My Website</h1>
+    <h1 style="text-align:center; color:white;" id="hidden">I was hidden!</h1>
+    <button id="Darkm">Dark Mode</button>
+    <button id="Lightm">Light Mode</button>
+
+
+
+
+
+</body></html>
+
