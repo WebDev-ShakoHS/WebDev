@@ -109,7 +109,7 @@
     </style>
 </head>
 
-<body>
+<body onload="txtchng()">
 
     <body>
         <div class="menu">
@@ -150,9 +150,15 @@
             <h2 class="text-left my-3">Home</h2>
             <center>
                 <p id="textChange">ahaha</p>
+                <p id="txtchng"></p>
             </center>
             <button type="button" onclick="changeText()">Click if you like</button>
-            <button type="button" onclick="changeText2()">Reset</button>
+            <a href="/WebDev/Version5.0/user11/script.html" class="button" onclick="changeText2()">Reset</a><br>
+            <form id="your_form" onsubmit="return validateForm()">
+                <br>
+                <b>Enter Your Name: </b><input type="text" name="name">
+                <input type="submit" value="Enter">
+            </form>
             <div class="container">
                 <div id="runaway-container">
                     <button class='button button2 red' id="runaway">Click me</button>
@@ -163,5 +169,6 @@
             <br>
         </div>
     </body>
+</body>
 
 </html>
