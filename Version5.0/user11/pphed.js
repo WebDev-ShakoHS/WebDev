@@ -114,6 +114,11 @@ function validateForm() {
         return false;
     }
 }
+
 function cmds() {
     console.log("Commands:                                                                 changeText()                                                                 changeText2()                                                                 yourFunction()                                                                 validateForm()                                                                 whichElemente()                                                                 Scroll()                                                                 txtchng()                                                                 GetUrlValue()                                                                 name2 = 'what will be displayed'                                                                 then run txtchng()                          ");
+}
+
+function warning() {
+    console.log("WARNING!                                                                 DO NOT PASTE ANYTHING IN THE DEVELOPER CONSOLE                                                                 YOU COULD POTENTIALLY BREAK THE WEBSITE OR                                                                 LEAVE YOURSELF AT RISK OF A SECURITY BREACH!                                                                                                                                  Version 5.0 Loaded!")
 }

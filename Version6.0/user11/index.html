@@ -5,7 +5,12 @@
     -->
 
 <head>
+    <script>
+        function warning() {
+            console.log("WARNING!                                                                 DO NOT PASTE ANYTHING IN THE DEVELOPER CONSOLE                                                                 YOU COULD POTENTIALLY BREAK THE WEBSITE OR                                                                 LEAVE YOURSELF AT RISK OF A SECURITY BREACH!                                                                                                                                                                                                   Version 6.0 Loaded!")
+        }
 
+    </script>
     <style>
         li {
             color: red;
@@ -25,7 +30,7 @@
 
 </head>
 
-<body>
+<body onload="warning()">
     <ul>
         <li>this is a test</li>
         <br><br>
@@ -51,12 +56,11 @@
         });
 
     </script>
-    <center>My name is User #11</center>
+    <center>jQuery testing file.</center>
 
     <script>
         jQuery('ul li').addClass('emphasis');
         $('ul li').addClass('emphasis')
-        console.log("Do Not Paste Anything In Here! ");
         $('b').addClass('colors');
 
     </script>
