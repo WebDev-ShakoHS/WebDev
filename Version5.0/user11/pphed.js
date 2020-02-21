@@ -114,3 +114,6 @@ function validateForm() {
         return false;
     }
 }
+function cmds() {
+    console.log("Commands:                                                                 changeText()                                                                 changeText2()                                                                 yourFunction()                                                                 validateForm()                                                                 whichElemente()                                                                 Scroll()                                                                 txtchng()                                                                 GetUrlValue()                                                                 name2 = 'what will be displayed'                                                                 then run txtchng()                          ");
+}
