@@ -1,15 +1,16 @@
 <html lang="en">
-<!--Version 6.0 
-	Name: Peter
+    <!--Version 6.0 
+	Name:
 	Date Completed:
     -->
-
 <head>
     <title>JQ</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="JS/jquery-3.4.1.js"></script>
     <script src="JS/SampleJS.js"></script>
-
+    <meta charset=utf-8>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
     <style>
         .night {
             background: black;
@@ -20,12 +21,40 @@
             background: white;
             color: black;
         }
-
     </style>
 </head>
 
 <body id="body" class="day">
+    <dl>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+        <dt>What are your hours?</dt>
+        <dd>We are open 24/7.</dd>
+    </dl>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script>
+        (function() {
+
+            $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+            $('dl').on('mouseenter', 'dt', function() {
+                $(this)
+                    .next()
+                    .slideDown(200)
+                    .siblings('dd')
+                    .slideUp(200);
+            });
+        })();
+    </script>
     <h1>
         My Website</h1>
     <h1 style="text-align:center; color:white;" id="hidden">I was hidden!</h1>
@@ -36,6 +65,4 @@
 
 
 
-</body>
-
-</html>
+</body></html>
