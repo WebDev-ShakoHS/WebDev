@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SavvyTech</title>
+    <script src=../site.js> </script>
+    <!----Styling (Note: Move to external file soon)---->
+    <link rel="stylesheet" href="../main.css">
+    <!---- External Stuff ---->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="https://www.freeiconspng.com/uploads/world-wide-web-globe-icon-images--pictures-becuo-0.png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Menu Sample">
+    <!-- Bootstrap core JS -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body onload="txtchng(), warning()">
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="../" class="navbar-brand">SavvyTech</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!---------------------------------- Edit These Items in your Menu ------------->
+                    <a href="../" class="nav-item nav-link">Home</a>
+                    <a href="../learn-html" class="nav-item nav-link active">Learn Basic HTML</a>
+                    <a href="../names" class="nav-item nav-link" tabindex="-1">Names</a>
+                    <a href="../list" class="nav-item nav-link" tabindex="-2">Lists</a>
+                    <a href="../music" class="nav-item nav-link" tabindex="-2">Music</a>
+                    <a href="mailto:admin@cframe.cf?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contact</a>
+                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <center><br>
+        <h2 id="textChange">Basic HTML:</h2>
+        <div>
+            <br>
+            <p>HTML Was First developed by Tim Berners-Lee in 1990, HTML is short for Hypertext Markup Language.</p>
+        </div>
+        <div>
+            <p>HTML is used to create electronic documents (called pages) that are displayed on the World Wide Web</p>
+        </div>
+    </center>
+    <center>
+
+        <h5 style="padding: 3px;">Headings</h5>
+        <p><code>&lt;h1&gt; My Heading &lt;/h1&gt;</code></p>
+        <p style="padding: 5px; border: 1px dotted #909090;">Use headings for titles and subtitles, and make some text stand out from others.</p>
+
+        <h5 style="padding: 3px;">Paragraphs</h5>
+        <p><code>&lt;p&gt; Some text &lt;/p&gt;</code></p>
+        <p style="padding: 5px; border: 1px dotted #909090;">Links are necessary for users to jump from one page to another.</p>
+
+        <h5 style="padding: 3px;">Links</h5>
+        <p><code>&lt;a href=&quot;home.html&quot;&gt; My homepage &lt;/a&gt;</code></p>
+        <p style="padding: 5px; border: 1px dotted #909090;">Use headings for titles and subtitles, and make some text stand out from others.</p>
+
+        <h5 style="padding: 3px;">Images</h5>
+        <p><code>&lt;img src=&quot;photo.jpg&quot;&gt;</code></p>
+        <p style="padding: 5px; border: 1px dotted #909090;">Adding your holiday photos or other images to your web page is fairly simple.</p>
+
+        <h5 style="padding: 3px;">Embedding Scripts</h5>
+        <p><code>&lt;script type=&quot;text/javascript&quot;&gt;
+                var myVar=&quot;hello&quot;;
+                function showAlert() { alert('You triggered an alert!'); }
+                &lt;/script&gt;</code></p>
+        <p style="padding: 5px; border: 1px dotted #909090;">You can write javascript between the <code>&lt;script&gt;</code> and <code>&lt;/script&gt;</code> tags. The type and language attributes are still used the same as when specifying external scripts.
+        </p>
+
+        <h5 style="padding: 3px;">Title</h5>
+        <p><code>&lt;title&gt;My Website!&lt;/title&gt;</code></p>
+        <p style="padding: 5px; border: 1px dotted #909090;">Titles show in the tab of the web browser, ususally shown to display the title of the website.</p>
+
+        <h5 style="padding: 3px;">Example:</h5>
+        <p style="padding: 5px; border: 1px dotted #909090;">Below is an example of some of the basic tags explained above.</p>
+        <pre class="code" style="border: 1px dotted #909090;"><code style="color:cornflowerblue">&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;this is the title&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+  &lt;h1&gt;My Heading&lt;/h1&gt;
+  &lt;p&gt;This is the first paragraph of text.&lt;/p&gt;
+  &lt;p&gt;This is the second paragraph of text.&lt;/p&gt;
+  &lt;p&gt;An image: &lt;img src=&quot;photo.jpg&quot;&gt; &lt;/p&gt;
+  &lt;p&gt;A link: &lt;a href=&quot;https://www.cframe.cf/&quot;&gt; html guide &lt;/a&gt;&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+    </center>
+
+
+
+
+
+
+
+    <form id="your_form" style="padding: 5px; border: 1px dotted #909090;" onsubmit="return validateForm()">
+        <br>
+        <b>Enter Your Name: </b><input type="text" name="name">
+        <input type="submit" value="Enter">
+    </form>
+    <p style="padding: 100px;" id="txtchng"></p>
+</body>
+
+
+</html>
