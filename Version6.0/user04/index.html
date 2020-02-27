@@ -1,0 +1,240 @@
+<html lang="en">
+
+<head>
+	<script src="jquery-3.4.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<title> Web Development User #04</title>
+	<style>
+		.emphasis {
+			color: green;
+		}
+
+		.emphasis {
+			font-weight: bold
+		}
+
+		table {
+			margin: 25px 0;
+			width: 200px;
+		}
+
+		table th,
+		table td {
+			padding: 10px text-align: center;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid;
+		}
+
+	</style>
+
+	<link rel="stylesheet" href="day.css">
+	<link rel="stylesheet" href="night.css">
+	
+	
+	
+	<meta charset=utf-8>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+	
+	
+	
+	
+	<script>
+		$(document).ready(function() {
+			$("p").click(function() {
+				$(this).hide();
+			});
+		});
+
+	</script>
+	
+	<script>
+	$(document).ready(function() {
+		// Hide displayed paragraphs
+		$(".hide-btn").click(function() {
+			$("p").hide();
+		});
+
+		// Show hidden paragraphs
+		$(".show-btn").click(function() {
+			$("p").show();
+		});
+	});
+
+</script>
+
+
+<body>
+
+	<center>My Favorite Shops</center>
+
+	<ul>
+		<li>Brandy Melville</li>
+		<li>American Eagle</li>
+		<li>Lululemon</li>
+
+	</ul>
+
+	<script>
+		jQuery('ul li').addClass('emphasis');
+		$(document).ready(function() {
+					$('li:first-child').addClass('emphasis');
+				};
+
+	</script>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Colors</th>
+			</tr>
+		</thead>
+	<tbody>
+		<tr>
+		<td>purple</td>
+		</tr>
+		<tr>
+		<td>aquamarine</td>
+		</tr>
+		<tr>
+		<td>lightgreen</td>
+		</tr>
+		</tbody>
+		</table>
+			
+		<script>	
+			
+	let lineNo = 1;
+	$(document).ready(function() {
+		$('.add-row').click(function() {
+		markup = '<tr><td>This is row' +
+			lineNo + '</td></tr>';
+		tableBody = $('table tbody');
+		tableBody.append(markup);
+		lineNo++;	
+		
+		});
+		
+	});
+		
+		
+	</script>	
+	
+	
+	<form id="myform">
+		<select id="fs">
+		<option value="Arial">Arial</option>
+		<option value="Verdana">Verdana</option>
+		<option value="Impact">Impact</option>
+		<option value="Comic Sans MS">Comic Sans MS</option>
+		</select>
+		
+		<select id="size">
+		<option value="7">7</option>
+		<option value="10">10</option>
+		<option value="20">20</option>
+		<option value="30">30</option>
+		</select>
+	</form>
+	
+	<br />
+	<div id="container" class="changeMe">
+
+		
+		<p>
+			Change the font!
+		</p>
+
+	</div>
+	
+	<script>
+		$('#fs').change(function() {
+			//alert($(this).val());
+			$('.changeMe').css('font-family',$(this).val());
+		});
+		
+		$('size').change(function() {
+			$('.changeME').css('font-size', $(this).val() + 'px');
+		});
+		
+		
+	</script>
+
+	<button data-file='day'>Day</button>
+	<button data-file='night'>Night</button>
+	
+	<script>
+		(function() {
+			var link = $('link');
+			$('button').click(function() {
+				var $this = $(this);
+				var stylesheet = $this.data('file');
+				$(this).siblings('button').removeAttr('disabled');
+				link.attr('href', stylesheet + '.css');
+				$this.attr('disabled', 'disabled')
+	
+			});
+
+		})();
+	
+	
+	
+	
+	</script>
+	
+	
+	<dl>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+</dl>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+</script>
+	
+<p>If you press this the test will disappear. My favorite colors are white, black, yellow, and blue.</p>
+
+<button type="button" class="hide-btn">Hide Paragraphs</button>
+				<button type="button" class="show-btn">Show Paragraphs</button>
+				<p>My favorite animals are puppies.</p>
+	
+	
+	
+	
+	
+	
+	
+
+</body>
+
+</html>
