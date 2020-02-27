@@ -5,6 +5,7 @@
     -->
 
 <head>
+    <link rel="stylesheet" href="CSS/day.css">
 
     <style>
         ul li {
@@ -23,20 +24,14 @@
 
     </style>
     <script src="JS/jquery-3.4.1.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('li:first-child').addClass('emphasis');
-            $('h1').addClass('big')
-        });
 
-    </script>
 
     <title>Jquery m'deary</title>
 
 
 </head>
 
-<body style="background-color:powderblue;">
+<body>
 
     <ul>
         <li>Little green</li>
@@ -58,7 +53,24 @@
             <td>data</td>
         </tr>
     </table>
+    <div>
+        <button data-file="CSS/day">day</button>
+        <button data-file="CSS/night">night</button>
+    </div>
+    <script>
+        (function() {
+            var link = $('link')
+            $('button').click(function() {
+                var $this = $(this);got
+                var stylesheet = $this.data('file');
+                link.attr('href', stylesheet + '.css');
+                $this.siblings('button').removeAttr('disabled');
+                $this.attr('disabled', 'disabled')
+            })
 
+        })();
+
+    </script>
 </body>
 
 </html>
