@@ -3,6 +3,7 @@
     background-color: #D19FB5;
     overflow: hidden;
     font-weight: bold;
+    font-family: "Verdana", sans-serif;
 }
 
 /* Style the links inside the navigation bar */
@@ -32,26 +33,93 @@
 }
 
 .text1 {
-    font-size: 25px;
+    font-size: 30px;
     color: #46343C;
+    font-family: "Courier New", monospace;
 }
 
 .homebody {
     background-color: #E1F8F0;
+    font-family: "Courier New", monospace;
+    text-align: center;
 }
 
 .johnnybody {
     background-color: #E1F8E9;
+    font-family: "Courier New", monospace;
 }
 
 .richbody {
     background-color: #E7F8E1;
+    font-family: "Courier New", monospace;
 }
 
 .ryanbody {
     background-color: #F5F8E1;
+    font-family: "Courier New", monospace;
+    text-align: center
 }
 
 .mattbody {
     background-color: #F8F3E1;
+    font-family: "Courier New", monospace;
+}
+
+.musicbody {
+    background-color: #F8EAE1;
+}
+
+.acordian {
+    color: #3D283C;
+}
+
+.text2 {
+    color: #3D283C;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    font-size: 25px;
+}
+
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 0em;
+    margin: -0em;
+}
+
+.button2 {
+    color: #3D283C;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    background-color: #A795A7;
+    border: 2px solid #735872;
+    font-weight: bold;
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+tr {
+    color: #3D283C;
+    font-family: "Verdana", sans-serif;
+}
+
+.font1 {
+    font-family: "Courier New", monospace;
+}
+
+.button3 {
+    font-size: 20px;
+    border: 2px solid #D19FB5;
+    background-color: #ECCFDB;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.button3:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
