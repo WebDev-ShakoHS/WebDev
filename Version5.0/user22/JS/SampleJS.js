@@ -39,3 +39,11 @@ function coordinates(event) {
 function message() {
   alert("This alert box was triggered by the onreset event handler");
 }
+
+function isKeyPressed(event) {
+  var text = "The shift key was NOT pressed!";
+  if (event.shiftKey == 1) {
+    text = "The shift key was pressed!";
+  }
+  document.getElementById("shift").innerHTML = text;
+}
