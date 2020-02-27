@@ -1,0 +1,224 @@
+.topnav {
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: lavender;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: lavender;
+    color: black;
+}
+
+.text1 {
+    font-size: 20px;
+    color: black;
+
+}
+
+.info {
+    background-color: lightcyan;
+    /* Green */
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.info:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.speed {
+    background-color: lightcyan;
+    /* Green */
+    border: none;
+    color: black;
+    padding: 10px;
+    width: 180px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.typewriter {
+    background-color: lightcyan;
+    /* Green */
+    border: none;
+    color: black;
+    padding: 10px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.who {
+    background-color: lightcyan;
+    /* Green */
+    border: none;
+    color: black;
+    padding: 10px;
+    width: 80px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.speed:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.typewriter:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.who:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+accordian {
+    width: 600px; 
+    
+    
+    
+}
+
+
+dd {
+   
+    padding: 5px;
+    
+}
+
+dt {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 2.2em;
+    background: lightcyan;
+    border-bottom: 1px solid lightcyan;
+    border-top: 1px solid white;
+}
+
+dt:first-child {
+    border-top: none;
+}
+
+dt:nth-last-child(2) {
+    border-bottom: none;
+}
+
+hide {
+    display: none;
+}
+
+.hide2 {
+   background-color: lightcyan;
+    /* Green */
+    border: none;
+    color: black;
+    padding: 5px;
+    width: 60px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+}
+
+.show {
+    background-color: lightcyan;
+    /* Green */
+    border: none;
+    color: black;
+    padding: 5px;
+    width: 60px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.hide2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.show:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.p3 {
+    font-weight: bold;
+}
+
+.setting {
+    text-align: left;
+    background-color: lightcyan;
+    border: none;
+    color: black;
+    padding: 10px;
+    width: 80px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;5t
+    cursor: pointer;
+}
+
+.setting:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+} 
+
+.popover-body {
+    font-size: 10px;
+    text-align: right;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  border: 1px solid #ddd;
+
+}
+
+th {
+  text-align: left;
+  font-family:monospace; 
+font-weight:900;
+  
+}
+
+td {
+  text-align: left;
+  font-family: cursive;
+}
+
+tr:nth-child(even) {
+  background-color: lavender;
+   
+}
+
+
