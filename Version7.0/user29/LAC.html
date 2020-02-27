@@ -27,10 +27,12 @@
     <script> 
 $(document).ready(function(){
   $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
   });
 });
 </script>
     <script> 
+$(document).ready(function(){
   $("#up").click(function(){
     $("#down").slideToggle("slow");
   });
