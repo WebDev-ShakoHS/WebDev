@@ -25,7 +25,7 @@
 
 <script>
 
-(function() {
+function() {
 	
 	$('dd').filter(':nth-child(n+4)').addClass('hide');
 
@@ -33,10 +33,9 @@
 		$(this)
 			.next()
 				.slideDown(200)
-				.siblings('dd')
 					.slideUp(200);
 	});
-})();
+}();
 
 
 </script>
