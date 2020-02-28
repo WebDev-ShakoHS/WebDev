@@ -1,11 +1,17 @@
 <html lang="en">
-    <!--Version 7.0 
+<!--Version 7.0 
 	Name:
 	Date Completed:
     -->
-    <head>
-        
-    <title>JavaScript</title>
+
+<head>
+
+    <title>The Bronx</title>
+
+    <link href="CSS/SampleCSSV7.css" rel="stylesheet" type="text/css">
+    
+    <link rel='icon' href='Stoplight.png' type='image/x-icon'/>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -41,7 +47,7 @@
     </style>
 
 
-<body onload="startTime()" >
+<body onload="startTime()">
     <!---------------------------------- Begin the nav-bar ------------->
     <div id="txt"></div>
 
@@ -55,30 +61,37 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link">New York City</a>
-                    <a href="#" class="nav-item nav-link">The Bronx</a>
-                    <a href="#" class="nav-item nav-link " tabindex="-1">Brooklyn</a>
-                    <a href="#" class="nav-item nav-link " tabindex="-1">Manhattan</a>
+                    <a href="New%20York%20City.html" class="nav-item nav-link">New York City</a>
+                    <a href="#" class="nav-item nav-link active">The Bronx</a>
+                    <a href="Brooklyn.html" class="nav-item nav-link" tabindex="-1">Brooklyn</a>
+                    <a href="Manhattan.html" class="nav-item nav-link " tabindex="-1">Manhattan</a>
                     <a href="#" class="nav-item nav-link " tabindex="-1">Queens</a>
-                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">Staten Island</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
-                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-                </div>
-                <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link disabled">Login</a>
-                </div>
+                    <a href="Staten%20Island.html" class="nav-item nav-link" tabindex="-1">Staten Island</a>
+                   
             </div>
         </nav>
     </div>
-    
-    
-    
+
+
+
     <body>
+
+        <h3>The Bronx</h3>
+
+        <p> The Bronx is one of the five boroughs of New York City. It is home to over 1.4 million people.</p>
         
-        <center>My name is User #15</center>
+        <h4>Attractions</h4>
         
-        <img src="Manhattan%20map.jpg" alt="Map of Manhtattan">
-    
+        <p> Landmarks inside the Bronx include Yankee stadium, the New York Botanical Garden,the Bronx Zoo and the Hudson River</p>
+        
+        <h5> Sources</h5>
+        
+        <p> <li><a href=https://en.wikipedia.org/wiki/The_Bronx> Click here to learn more about the Bronx</a></li></p>
+        
+        <center><p id="textChange"> Hello</p></center>
+<center><button type="button" onclick="changeText()">Click if you like</button></center>
+
     </body>
+    
 
 </html>
