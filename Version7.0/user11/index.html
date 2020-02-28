@@ -1,18 +1,120 @@
+<!DOCTYPE html>
 <html lang="en">
-    <!--Version 7.0 
-	Name:
-	Date Completed:
-    -->
-    <head>
-        
-        <title>Web Development User #11</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #11</center>
-    
-    </body>
+
+<head>
+    <title>SavvyTech</title>
+    <script src=site.js> </script>
+    <!----Styling (Note: Move to external file soon)---->
+    <link rel="stylesheet" href="main.css">
+    <!---- External Stuff ---->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="https://www.freeiconspng.com/uploads/world-wide-web-globe-icon-images--pictures-becuo-0.png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Menu Sample">
+    <!-- Bootstrap core JS -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+
+<body onload="warning()">
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="./" class="navbar-brand">SavvyTech</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!---------------------------------- Edit These Items in your Menu ------------->
+                    <a href="./" class="nav-item nav-link active">Home</a>
+                    <a href="./learn-html" class="nav-item nav-link">Learn Basic HTML</a>
+                    <a href="./names" class="nav-item nav-link" tabindex="-1">Names</a>
+                    <a href="./list" class="nav-item nav-link" tabindex="-2">Lists</a>
+                    <a href="./music" class="nav-item nav-link" tabindex="-2">Music</a>
+                    <a href="./music-player" class="nav-item nav-link" tabindex="-2">Music Player</a>
+                    <a href="mailto:admin@cframe.cf?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contact</a>
+                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <center>
+        <h1>Welcome Home!</h1><br><br>
+        <h2>You like accordions?</h2>
+    </center>
+    <button class="accordion">What is this site?</button>
+    <div class="panel">
+        <p>This website was designed to fill the requirements of this project and to use all what has been discussed in the class to make a basic website.</p>
+    </div>
+    <button class="accordion">Why did you do this?</button>
+    <div class="panel">
+        <p>r u srs?</p>
+    </div>
+    <button class="accordion">What does this website do?</button>
+    <div class="panel">
+        <p>Nothing useful.</p>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+    </script>
+</body>
+
 
 </html>
