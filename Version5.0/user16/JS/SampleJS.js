@@ -14,7 +14,7 @@ function myFunction() {
   alert("You pressed a key inside the input field");
 }
 
-function myFunction(elmnt, clr) {
+function coolFunction(elmnt, clr) {
   elmnt.style.color = clr;
 }
 
