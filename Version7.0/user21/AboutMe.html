@@ -5,7 +5,7 @@
     -->
 
 <head>
-    
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,10 +43,15 @@
             color: #FF0000;
         }
 
-       
-
     </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#accordion").accordion();
+        });
 
+    </script>
 </head>
 
 <body>
@@ -65,7 +70,7 @@
                     <a href="Script.html" class="nav-item nav-link">Games</a>
                     <a href="music.html" class="nav-item nav-link" tabindex="-1">Music</a>
                     <a href="List.html" class="nav-item nav-link" tabindex="-1">Lists</a>
-                    <a href="AboutMe.html"class="nav-item nav-link active">About Me</a>
+                    <a href="AboutMe.html" class="nav-item nav-link active">About Me</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link" tabindex="-2">Contacts</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
@@ -79,13 +84,40 @@
     <center>Who is Riley?</center>
 
 
+    <div id="accordion">
+        <h3>What is Riley?</h3>
+        <div>
+            <p>
+                Riley is awesome!
+            </p>
+        </div>
+        <h3>What does Riley want?</h3>
+        <div>
+            <p>
+                Riley is hungry
+            </p>
+        </div>
+        <h3>What is Riley doing?</h3>
+        <div>
+            <p>
+                Riley eat food
+            </p>
+
+        </div>
+        <h3>How does Riley feel?</h3>
+        <div>
+            <p>
+                Food good!
+            </p>
+
+        </div>
+    </div>
 
 
 
 
 
 
-    
 
     <body>
 

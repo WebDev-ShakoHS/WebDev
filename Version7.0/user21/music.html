@@ -50,6 +50,28 @@
 
     </style>
 
+    <style>
+        p {
+            padding: 10px;
+            background: lightgreen;
+            display: none;
+        }
+
+        div {
+            margin: 20px 0;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function() {
+            var i = 0;
+            $('input[type="text"]').keypress(function() {
+                $("span").text(i += 1);
+                $("p").show().fadeOut();
+            });
+        });
+
+    </script>
 
     <head>
 
@@ -75,7 +97,7 @@
                         <a href="Script.html" class="nav-item nav-link">Games</a>
                         <a href="music.html" class="nav-item nav-link active" tabindex="-1">Music</a>
                         <a href="List.html" class="nav-item nav-link" tabindex="-1">Lists</a>
-                         <a href="AboutMe.html"class="nav-item nav-link">About Me</a>
+                        <a href="AboutMe.html" class="nav-item nav-link">About Me</a>
                         <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link" tabindex="-2">Contact</a>
                         <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                     </div>
@@ -85,73 +107,79 @@
                 </div>
             </nav>
         </div>
+        <input type="text">
+        <div>Keypress: <span>0</span></div>
+        <div><strong>Note:</strong> Enter something inside the input box and see the result.</div>
+        <p>Keypress is triggered.</p>
         <div class='text'>
 
 
             <h1>My Top 5 Favorite Songs</h1>
 
+            <div class='col-md=6'>
+
+                <table Border=13>
+
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Artist</th>
+                            <th>Song</th>
+                        </tr>
+                    </thead>
 
 
-            <table Border=13>
 
-                <thead>
                     <tr>
-                        <th>Rank</th>
-                        <th>Artist</th>
-                        <th>Song</th>
+                        <td>1</td>
+                        <td>7 Years</td>
+                        <td>Lucas Graham</td>
                     </tr>
-                </thead>
 
 
 
-                <tr>
-                    <td>1</td>
-                    <td>7 Years</td>
-                    <td>Lucas Graham</td>
-                </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Cheerleader</td>
+                        <td>Omi</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>3</td>
+                        <td>CANT STOP THE FEELING</td>
+                        <td>Justin Timberlake</td>
+                    </tr>
 
 
 
-                <tr>
-                    <td>2</td>
-                    <td>Cheerleader</td>
-                    <td>Omi</td>
-                </tr>
-
-
-                <tr>
-                    <td>3</td>
-                    <td>CANT STOP THE FEELING</td>
-                    <td>Justin Timberlake</td>
-                </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Rather Be</td>
+                        <td>Clean Bandit</td>
+                    </tr>
 
 
 
-                <tr>
-                    <td>4</td>
-                    <td>Rather Be</td>
-                    <td>Clean Bandit</td>
-                </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Cats and the Craddle</td>
+                        <td>Harry Chapin</td>
+                    </tr>
 
-
-
-                <tr>
-                    <td>5</td>
-                    <td>Cats and the Craddle</td>
-                    <td>Harry Chapin</td>
-                </tr>
-
-            </table>
-
-            <img src="https://cdn.apartmenttherapy.info/image/fetch/f_auto,q_auto:eco,c_fit,w_760/https%3A%2F%2Fstorage.googleapis.com%2Fgen-atmedia%2F3%2F2019%2F01%2F4d4764df3d39aaa67d86030a90de8df5382087c7.jpeg" height=150px>
-            Tastfull and Delicious muffins that will make you cry out for more
+                </table>
+            </div>
+            <div class='col-md=6'>
+                <img src="https://cdn.apartmenttherapy.info/image/fetch/f_auto,q_auto:eco,c_fit,w_760/https%3A%2F%2Fstorage.googleapis.com%2Fgen-atmedia%2F3%2F2019%2F01%2F4d4764df3d39aaa67d86030a90de8df5382087c7.jpeg" height=150px>
+                Tastfull and Delicious muffins that will make you cry out for more
+            </div>
 
             <p>
 
                 Music can be found here <a href="https://www.apple.com/apple-music/" target="_blank"> Amazon Music</a>
 
             </p>
-        </div>
+
 
     </body>
 
