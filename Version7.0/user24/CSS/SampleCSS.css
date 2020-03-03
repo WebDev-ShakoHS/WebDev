@@ -1,33 +1,27 @@
+.navbar navbar-default {
+    color: #FFFFFF;
+    background-color: #CC3333;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+    font-family: 'Josefin Sans', sans-serif;
 }
-
-h1 {
-	font-size: 1.3em;
-	text-align: center;
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
 }
-
-h2{
-        font-size: 1.1em;
+.main-nav {
+    list-style-type: none;
 }
-
-table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
-}
-
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
-}
-
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
 }

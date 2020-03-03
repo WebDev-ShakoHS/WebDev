@@ -31,3 +31,54 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: default;
+  float: left;
+}
+
+.button1 {
+  border-radius: 8px;
+    transition-duration: 10s;
+     width: {100%;}
+    float: left;
+}
+
+.button2 {
+  border-radius: 30%;
+    float: left;
+}
+
+.red { 
+   background-color: #ff0000;
+    float: left;
+}
+
+.no click {
+    background-color: #555555;
+    cursor:not-allowed
+    border: none;
+    margin 6px 5px;
+    display: inline-block;
+    width: {100%;}
+    float: left; 
+
+    
+}
+#morecontent {
+  background-color: yellow;
+}
+
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(250, 0, 0, 1.0);
+}
+

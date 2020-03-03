@@ -1,18 +1,223 @@
-<html lang="en">
-    <!--Version 7.0 
-	Name:
-	Date Completed:
-    -->
-    <head>
-        
-        <title>Web Development User #29</title>
+<html>
+
+<head onload="startTime()">
+
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="Basketball.jpg">
+    <link rel="stylesheet" href="CSS/SampleCSS.css">
+    <script src="JS/SampleJS.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: gray;
+            margin: 0;
+        }
+
+        .he {
+
+            color: blue;
+            text-align: center;
+
+        }
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#hide").click(function() {
+                $("p").hide();
+            });
+            $("#show").click(function() {
+                $("p").show();
+            });
+        });
+
+    </script>
+    <link rel="icon" href="MIN.jpg">
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="txt"></div>
+
+    <div class="col-md-2">
+        <div class="menu" margin="0">
+            <div class="navbar navbar-expand-md">
+                <a class="active" href="Index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                <a href="Lakers.html"><i class="fas fa-basketball-ball"></i>Minnesota Timberwolves</a>
+                <a href="CAVS.html"><i class="fa fa-fw fa-history "></i>History</a>
+                <a href="GSW.html"><i class="fas fa-basketball-ball"></i> Roster</a>
+                <a href="BRK.html"><i class="fas fa-basketball-ball"></i>Team Records</a>
+                <a href="LAC.html"><i class="fas fa-american-sign-language-interpreting"></i>Biggest Moments</a>>
+
+            </div>
+        </div>
+    </div>
     
-    </head>
-    
-    <body>
-        
-        <center>My name is User #29</center>
-    
-    </body>
+    <p id="demo"></p>
+    <div class="he">
+        <h1><strong>Welcome to My Website </strong></h1>
+    </div>
+    <form>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname"name="fname"  >
+       <div class="col-md-6"></div>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname"name="lname"  >
+        <div class="col-md-6"></div>
+        <p><strong>What do you know about Minnesota Timberwolves ?</strong></p>
+          <label for="fname">Text Box</label><br>
+        <textarea cols="60" rows="6" name="answer   " wrap="virtual"></textarea>
+        <br>
+        <input onclick="myFunction()"type="submit" value="Submit">
+    </form>
+    <script>
+function myFunction() {
+  alert("Thank you to answer the question! Have a good day!");
+}
+</script>
+
+    <div class=col-md-5></div>
+    <canvas id="canvas" width="250" height="250">
+    </canvas>
+    <img src="target.jpg" alt="Target Center" height=250 width="350" align="right">
+    <script>
+        var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+
+    function drawClock() {
+        drawFace(ctx, radius);
+        drawNumbers(ctx, radius);
+        drawTime(ctx, radius);
+    }
+
+    function drawFace(ctx, radius) {
+        var grad;
+        ctx.beginPath();
+        ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        grad = ctx.createRadialGradient(0, 0, radius * 0.95, 0, 0, radius * 1.05);
+        grad.addColorStop(0, '#333');
+        grad.addColorStop(0.5, 'white');
+        grad.addColorStop(1, '#333');
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = radius * 0.1;
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
+        ctx.fillStyle = '#333';
+        ctx.fill();
+    }
+
+    function drawNumbers(ctx, radius) {
+        var ang;
+        var num;
+        ctx.font = radius * 0.15 + "px arial";
+        ctx.textBaseline = "middle";
+        ctx.textAlign = "center";
+        for (num = 1; num < 13; num++) {
+            ang = num * Math.PI / 6;
+            ctx.rotate(ang);
+            ctx.translate(0, -radius * 0.85);
+            ctx.rotate(-ang);
+            ctx.fillText(num.toString(), 0, 0);
+            ctx.rotate(ang);
+            ctx.translate(0, radius * 0.85);
+            ctx.rotate(-ang);
+        }
+    }
+
+    function drawTime(ctx, radius) {
+        var now = new Date();
+        var hour = now.getHours();
+        var minute = now.getMinutes();
+        var second = now.getSeconds();
+        //hour
+        hour = hour % 12;
+        hour = (hour * Math.PI / 6) +
+            (minute * Math.PI / (6 * 60)) +
+            (second * Math.PI / (360 * 60));
+        drawHand(ctx, hour, radius * 0.5, radius * 0.07);
+        //minute
+        minute = (minute * Math.PI / 30) + (second * Math.PI / (30 * 60));
+        drawHand(ctx, minute, radius * 0.8, radius * 0.07);
+        // second
+        second = (second * Math.PI / 30);
+        drawHand(ctx, second, radius * 0.9, radius * 0.02);
+    }
+
+    function drawHand(ctx, pos, length, width) {
+        ctx.beginPath();
+        ctx.lineWidth = width;
+        ctx.lineCap = "round";
+        ctx.moveTo(0, 0);
+        ctx.rotate(pos);
+        ctx.lineTo(0, -length);
+        ctx.stroke();
+        ctx.rotate(-pos);
+    }
+
+
+    </script>
+    <div class="col-md-3">
+        <h2>About This Website</h2>
+        <h2 align="right">Target Center(The arena of Minnesota Timberwolves)</h2>
+        <p>This Website will make you know more about Minnesota Timberwolves</p>
+        <p>If you want to know go click the menu bar to know what you want to know.</p>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <div align="right">
+            <table>
+                <h2>Table of Capacity</h2>
+                <tr>
+                    <th>Basketaball</th>
+                    <th>Hockey</th>
+                    <th>Concerts</th>
+                </tr>
+                <tr>
+                    <td>18,798</td>
+                    <td>17,500</td>
+                    <td>Up to 20,500</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
 
 </html>

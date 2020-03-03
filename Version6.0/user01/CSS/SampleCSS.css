@@ -1,33 +1,29 @@
-body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+body{
+width: 500px;
+	
+    margin: auto;
+    text-align: center;
 }
 
-h1 {
-	font-size: 1.3em;
-	text-align: center;
+dl{
+
 }
 
-h2{
-        font-size: 1.1em;
+dd{
+margin: 0;	    
+padding: 1em 0;
 }
 
-table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
-}
+dt{
+cursor: pointer;    	    
+font-weight: bold;    
+font-size : 1.5em;    
+line-height: 2em;    
+background: #e3e3e3;    
+border-bottom: 1px solid #c5c5c5;    
+border-top: 1px solid white;}
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
-}
+dt:first-child { border-top: none; }
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
-}
+dt:nth-last-child(2) { border-bottom: none; }
+.hide { display: none;}

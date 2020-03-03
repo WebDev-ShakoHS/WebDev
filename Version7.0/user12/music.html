@@ -1,0 +1,286 @@
+<html lang="en">
+<!--Version 7.0 
+	Name: Annika Froyum
+	Date Completed: 2/20/20
+    -->
+
+<head>
+
+    <title>Web Development User #12</title>
+
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="JS/javascript.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myDIV *").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideDown(5000);
+            });
+            $("#stop").click(function() {
+                $("#panel").stop();
+            });
+        });
+
+    </script>
+
+    <style>
+        dl {
+            width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+
+        dd {
+            margin: 0;
+            padding: 1em 0;
+        }
+
+        dt {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.5em;
+            line-height: 2em;
+            background: #8F798E;
+            border-bottom: 1px solid #735872;
+            border-top: 1px solid #A795A7;
+        }
+
+        dt:first-child {
+            border-top: none;
+        }
+
+        dt:nth-last-child(2) {
+            border-bottom: none;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        #panel,
+        #flip {
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+            background-color: #D19FB5;
+            color: #3D283C;
+            border: solid 1px #9E7185;
+            border-radius: 3px;
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        
+        .button2
+        {
+            width: 40%;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+
+    </style>
+
+    <link rel="shortcut icon" type="image.png" href="images/music.png">
+    
+    <style> body{background: linear-gradient(to right, rgba(236,184,150,1), rgba(236,184,150,0));} </style>
+
+</head>
+
+<body class="musicbody">
+
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="johnny.html">Johnny Stevens</a>
+        <a href="rich.html">Rich Meyer</a>
+        <a href="ryan.html">Ryan Meyer</a>
+        <a href="matt.html">Matt Kofos</a>
+        <a href="music.html">Music + Other</a>
+    </div>
+
+    <p> </p>
+
+    <h2 class="text1" onmouseover="style.color='#D19FB5'" onmouseout="style.color='#46343C'" align="center">Highly Suspect Albums</h2>
+
+    <p align="center"><input id="myInput" type="text" placeholder="Search.."></p>
+
+    <div id="myDIV">
+        <dl class="acordian">
+            <dt>Highly Suspect (self-titled) songs</dt>
+            <dd>
+                <p>Gang Lion</p>
+                <p>Big Bear</p>
+                <p>Devil's Army</p>
+                <p>Alien Spaceship</p>
+                <p>Not Me</p>
+                <p>Home</p>
+                <p>The Breaking Point</p>
+                <p>Twin Opus</p>
+                <p>Then Mickey</p>
+                <p>The Alligator Song</p>
+                <p>One Day The Sun Will Explode</p>
+                <p>Whiskey Rain</p>
+                <p>I Am</p>
+                <p>Outroduction</p>
+            </dd>
+            <dt>Mister Asylum songs</dt>
+            <dd>
+                <p>Mister Asylum</p>
+                <p>Lost</p>
+                <p>Lydia</p>
+                <p>Bath Salts</p>
+                <p>23 (ft. Sasha Dobson)</p>
+                <p>Mom</p>
+                <p>Bloodfeather</p>
+                <p>F**k Me Up</p>
+                <p>Vanity</p>
+                <p>Claudeland</p>
+            </dd>
+            <dt>The Boy Who Died Wolf songs</dt>
+            <dd>
+                <p>My Name Is Human</p>
+                <p>Look Alive, Stay Alive</p>
+                <p>Little One</p>
+                <p>For Billy</p>
+                <p>Serotonia</p>
+                <p>Postres</p>
+                <p>Send Me An Angel</p>
+                <p>Viper Strike</p>
+                <p>F.W.Y.T.</p>
+                <p>Chicago</p>
+                <p>Wolf</p>
+            </dd>
+            <dt>MCID songs</dt>
+            <dd>
+                <p>Fly</p>
+                <p>16</p>
+                <p>Freekstreet</p>
+                <p>Canals</p>
+                <p>Upperdrugs</p>
+                <p>Tetsuo's Bike</p>
+                <p>Tokyo Ghoul (ft. Terrible Johnny and Young Thug)</p>
+                <p>SOS (ft. Gojira)</p>
+                <p>@tddybear (ft. Conor Mason)</p>
+                <p>Arizona</p>
+                <p>Juzo</p>
+                <p>The Silk Road (ft. Tee Grizzley and Terrible Johnny)</p>
+                <p>Taking Off</p>
+                <p>These Days</p>
+                <p>Snow White</p>
+                <p>Nairobi (Outro)</p>
+            </dd>
+        </dl>
+
+        <hr>
+        
+        <p> </p>
+
+        <form class="text2">
+            What's your favorite Highly Suspect album?
+            <select id="browsers" onchange="preferedBrowser()">
+                <option value="Highly Suspect">Highly Suspect</option>
+                <option value="Mister Asylum">Mister Asylum</option>
+                <option value="TBWDW">TBWDW</option>
+                <option value="MCID">MCID</option>
+            </select>
+        </form>
+        
+        <hr>
+
+        <div class="font1">
+            <button id="stop" class="button2">click to stop sliding</button>
+
+            <div id="flip"><strong>click here to see the lyrics to For Billy by Highly Suspect</strong></div>
+            <div id="panel">
+                <p>And it goes 3, 2, done</p>
+                <p>We always knew that you were the wild one</p>
+                <p>Oh, oh</p>
+                <p>But you too flew too close to a burning sun</p>
+                <p>At least we got it in when we were young</p>
+                <p>I know</p>
+                <p>It still feels like yesterday</p>
+                <p>I'll love you, always</p>
+                <p>Do you remember back in the day</p>
+                <p>That party at Dave's?</p>
+                <p>You said that you had nothing to lose</p>
+                <p>Oh, no</p>
+                <p>Then I should've listened up, but I fucked up</p>
+                <p>Laughed it off, and told you you had nothing to prove</p>
+                <p>(Had nothing to prove)</p>
+                <p>Oh, oh</p>
+                <p>It still feels like yesterday</p>
+                <p>I'll love you, always</p>
+                <p>And I promise, I'll see you</p>
+                <p>On the other side</p>
+                <p>We'll get high, and go out</p>
+                <p>For another ride</p>
+                <p>I promise</p>
+                <p>I'll see you</p>
+                <p>On the other side</p>
+                <p>Still feels like yesterday</p>
+                <p>I'll love you, always</p>
+                <p>And when my time's up</p>
+                <p>I'll come over and</p>
+                <p>Sing you a song</p>
+                <p>Punch your shoulder</p>
+                <p>'Cause I'll love you, always</p>
+                <p>I promise, I'll see you</p>
+                <p>On the other side</p>
+                <p>We'll get high, and go out</p>
+                <p>For another ride</p>
+                <p>I promise, I'll see you</p>
+                <p>On the other side</p>
+                <p>We'll get stoned</p>
+                <p>We'll get drunk</p>
+                <p>We'll get by
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        (function() {
+
+            $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+            $('dl').on('mouseenter', 'dt', function() {
+                $(this)
+                    .next()
+                    .slideDown(200)
+                    .siblings('dd')
+                    .slideUp(200);
+            });
+        })();
+
+    </script>
+
+</body>
+
+</html>

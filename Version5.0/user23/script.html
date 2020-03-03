@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 3.0
+        Name: Sahithi Ravva
+        Date Completed: 2/4/20
+    -->
+
+<head>
+    <script src="JS/SampleJS.js"></script>
+    <link rel="shortcut icon" type="image.png" href="images/favicon.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Menu Sample">
+
+    <title>Web Dev User ## </title>
+
+    <!-- Bootstrap core JS -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="list.html">
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+    </style>
+    <script>
+        function preferedBrowser() {
+            prefer = document.forms[0].browsers.value;
+            alert("You prefer browsing internet with " + prefer);
+        }
+
+    </script>
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+
+    </script>
+    <script>
+        function coordinates(event) {
+            document.getElementById("demo").innerHTML = "X = " + event.screenX + "<br>Y = " + event.screenY;
+        }
+
+    </script>
+    <script>
+        function getEventType(event) {
+            document.getElementById("demo").innerHTML = event.type;
+        }
+
+    </script>
+    <script>
+        function myFunction() {
+            alert("Page is loaded");
+        }
+
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "You selected some text";
+        }
+
+    </script>
+    <script>
+        function whichButton(event) {
+            document.getElementById("demo").innerHTML = event.keyCode;
+        }
+
+    </script>
+    <script>
+        function message() {
+            alert("This alert box was triggered by the onreset event handler");
+        }
+
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello World";
+        }
+
+    </script>
+</head>
+
+    
+<body onload="myFunction()" onkeyup="whichButton(event)" onmousedown="isKeyPressed(event)">
+
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!---------------------------------- Edit These Items in your Menu ------------->
+                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="music%20copy.html" class="nav-item nav-link active" tabindex="-1">Music</a>
+                    <a href="list%20copy.html" class="nav-item nav-link active" tabindex="-2">Lists</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link" tabindex="-2">Contact</a>
+                    <a href="WebDevUser23_Games.html" class="nav-item nav-link active" tabindex="-1">Games</a>
+                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link ">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    .
+
+    <div class="wideMargin" id="content">
+
+        <h2 class="text-left my-3">Javascript</h2>
+
+    </div>
+    <div class="wideMargin" id="footer">
+    </div>
+    <center>
+        <p id="textChange"> My name is Sahithi Ravva </p>
+    </center>
+    <button type="button" onclick="changeText()">Click if you like</button>
+    <h3 onmouseover="style.color='purple'" onmouseout="style.color='black'">Click</h3>
+    <form>
+        Choose which browser you prefer:
+        <select id="browsers" onchange="preferedBrowser()">
+            <option value="Chrome">Chrome</option>
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Firefox">Firefox</option>
+        </select>
+    </form>
+    <p id="demo">What's the Date?</p>
+
+    <button type="button" onclick="displayDate()">Display Date</button>
+    <form>
+        <p onmousedown="coordinates(event)">
+            Click this paragraph, to display the x and y coordinates of the cursor, relative to the screen.
+        </p>
+
+        <p id="demo"></p>
+    </form>
+    <p onmousedown="getEventType(event)">
+        Click on this paragraph. A message will tell what type of event was triggered.</p>
+
+    <p>Click on this page, and press a key on your keyboard.</p>
+
+    <p id="demo"></p>
+    <form onreset="message()">
+        Enter your name: <input type="text" size="20">
+        <input type="reset">
+    </form>
+    <p ondblclick="myFunction()">Doubleclick this paragraph to trigger a function.</p>
+
+    <p id="demo"></p>
+    
+<div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">Boostrap</div>
+    <div class="col-sm-4" style="background-color:aquamarine;">Row</div>
+    <div class="col-sm-4" style="background-color:lavender;">Class</div>
+  </div>
+    
+</body>
+
+</html>

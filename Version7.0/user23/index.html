@@ -1,18 +1,88 @@
 <html lang="en">
-    <!--Version 7.0 
-	Name:
-	Date Completed:
+<!--Version 7.0 
+	Name: Sahithi Ravva
+	Date Completed: 2/20/20
     -->
-    <head>
-        
-        <title>Web Development User #23</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #23</center>
-    
-    </body>
+
+<head>
+    <link rel='stylesheet' href="SampleCSS7.css">
+    <link rel="shortcut icon" type="image.png" href="images/index.png">
+    <title>Web Development User #23</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myDIV *").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+    </script>
+   
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="friends.html">Friends</a>
+        <a href="mother.html">HIMYM</a>
+        <a href="gg.html">Gilmore Girls</a>
+        <a href="river.html">Riverdale</a>
+        <a href="flash.html">The Flash</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <h1 class='h1'> The Best Shows to Watch!</h1>
+    <p class='text1' align='left'> These shows, in my opinion, are the best shows to watch when your are bored. </p>
+    <input id="myInput" type="text" placeholder="Search..">
+    <div id="myDIV">
+
+        <img src='https://cdn.cnn.com/cnnnext/dam/assets/191031183435-streaming-tv-exlarge-169.jpg' width='790' align='left'>
+        <dl class='accordian'>
+            <dt class='accordian'>What is the network of Friends?</dt>
+            <dd>NBC</dd>
+            <dt>What is the network of HIMYM?</dt>
+            <dd>CBS</dd>
+            <dt>What is the network of Gilmore Girls?</dt>
+            <dd>Netlfix</dd>
+            <dt>What the network of Riverdale?</dt>
+            <dd>The CW</dd>
+            <dt>What is the network of the Flash?</dt>
+            <dd>The CW</dd>
+        </dl>
+
+
+    </div>
+
+    <script>
+        (function() {
+
+            $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+            $('dl').on('mouseenter', 'dt', function() {
+                $(this)
+                    .next()
+                    .slideDown(200)
+                    .siblings('dd')
+                    .slideUp(200);
+            });
+        })();
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+</body>
 
 </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE hmtl>
+<head>
+
+</head>
+
+
+<body>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+        
+      <form>
+  <input type="button" value="Go back!" onclick="history.back()">
+</form>   
+    
+    <style> 
+ @keyframes bounce {
+  from {
+    top: 100px;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    top: 50px;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    top: 150px;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    top: 75px;
+    animation-timing-function: ease-in;
+  }
+  to {
+    top: 100px;
+  }
+}
+     
+     @keyframes bgcolor {
+    0% {
+        background-color: #FFA500
+    }
+
+    30% {
+        background-color: #228B22
+    }
+
+    60% {
+        background-color: #FFA500
+    }
+
+    90% {
+        background-color:#228B22
+    }
+
+    100% {
+        background-color: #FFA500
+    }
+}
+
+body {
+    animation: bgcolor 10s infinite;
+    animation: bgcolor 10s infinite;
+   animation-direction: alternate;
+    animation-direction: alternate;
+}
+        </style>
+<button id="stop">Stop sliding</button>
+
+<div id="flip">Click to slide down panel</div>
+<div id="panel"> <center> <img src="fish.jpeg" alt="" style="width:200px;height:128px;"> 
+        <p> his telepathy was once limited to marine-based lifeforms including fish and some mammals such as whales and dolphins. As he grew older, Aquaman was able to increase the range of his telepathy to include land-based mammals as well as human beings</p>
+        <img src="water.jpeg" alt="water" style="width:200px;height:128px;"> \
+        <p>auqman has the abilty to breath underwater as well as travel up too 10,000 feet per a secend (6818.182 miles per a hour)</p></div>
+   
+</body>
