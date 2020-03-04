@@ -3,6 +3,21 @@ body {
 	color: #003366;
 }
 
+h3 {
+  padding: 50px;
+  border-bottom: 1px solid #5D6063;
+    border-right: 10px solid #5D6063
+}
+
+strong {
+  border: 10px solid #5D6063;
+    border-color:red
+}
+p {
+  
+  padding: 20px 20px 20px 10px;
+  margin-bottom: 50px;
+  }
 h1 {
 	font-size: 1.3em;
 	text-align: center;
@@ -10,8 +25,9 @@ h1 {
 
 h2{
         font-size: 1.1em;
+        text-align: center;
 }
-
+  
 table {
 	margin-left: auto;
 	margin-right: auto;
@@ -20,6 +36,11 @@ table {
 	cellspacing: 0px;
 }
 
+.button:active {
+    background-color: yellow;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;

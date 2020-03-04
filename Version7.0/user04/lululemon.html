@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 3.0
+        Name:Ritu Bollena
+        Date Completed:1/31/20
+    -->
+
+<head>
+	<link rel="icon" href="lululemon%20favicon.png" type="image/gif" sizes="16x16">
+</head>
+
+<title>Web Dev User ## </title>
+
+<!-- Bootstrap core JS -->
+<!-- These are needed to get the responsive menu to work -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="JS/SampleJS.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/SampleCSS.css">
+
+<!-jquery 1-->
+	<script>
+		$(document).ready(function() {
+			$("p").click(function() {
+				$(this).hide();
+			});
+		});
+
+	</script>
+
+
+
+	<body>
+		<div class="menu">
+			<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+				<a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<div class="navbar-nav">
+						<!---------------------------------- Edit These Items in your Menu ------------->
+						<a href="index.html" class="nav-item nav-link">Home</a>
+						<a href="lululemon.html" class="nav-item nav-link active">Lululemon</a>
+						<a href="AE.html" class="nav-item nav-link" tabindex="-1">American Eagle</a>
+						<a href="brandymelville.html" class="nav-item nav-link" tabindex="-1">Brandy Melville</a>
+						<a href="urbanoutfitters.html" class="nav-item nav-link" tabindex="-1">Urban Outfitters</a>
+						<a href="nike.html" class="nav-item nav-link" tabindex="-1">Nike</a>
+						<!----------------------------------^ Edit These Items in your Menu ^ ------------->
+					</div>
+					<div class="navbar-nav ml-auto">
+						<a href="#" class="nav-item nav-link active">Login</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+
+		<div style="align:left;">
+			<div id="images">
+				<img src="lululemon%20image.jpg" width="400" alt="lululemon" align="right">
+			</div>
+		</div>
+
+
+
+		<div class="wideMargin" id="content">
+			<p>
+
+				Hi. Welcome to my Lululemon page!!!
+			</p>
+
+			<div class="wideMargin" id="content">
+
+				<!-javacsript 3-->
+
+					<p id="demo">What is Lululemon</p>
+
+					<button type="button" onclick='document.getElementById("demo").innerHTML = "Lululemon is an athletic apparel retailer domiciled in Delaware and headquartered in Vancouver. It was founded by Chip WIlson in 1998 in Vancouver, Canada."'>Click Me!!!</button>
+
+			</div>
+
+
+
+			<!-bootstrap 1-->
+
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<h3>Bottoms</h3>
+							<p>leggings, joggers, sweatpants, capris, track pants, trousers</p>
+							<img src="lulu%20pants.jpg" width="200">
+						</div>
+						<div class="col-sm-4">
+							<h3>Tops</h3>
+							<p>long sleeve shirts, short sleeve shirts, t-shirts, tank tops, body suits</p>
+							<img src="lulu%20tops.jpg" width="200">
+						</div>
+						<div class="col-sm-4">
+							<h3>Hair Accessories</h3>
+							<p>hair ties, scrunchies, headbands</p>
+							<img src="lulu%20hair%20acc.jpg" width="200">
+						</div>
+					</div>
+				</div>
+
+
+				<!-jquery 1-->
+
+					<p>"Our vision for our store was to create more than a place where people could get gear to sweat in, we wanted to create a community hub where people could learn and discuss the physical aspects of healthy living, mindfulness and living a life of possibility. It was also important for us to create real relationships with our guests and understand what they were passionate about, how they liked to sweat and help them celebrate their goals. Today, we do this in our stores around the globe."</p>
+
+
+
+		</div>
+
+	</body>
+
+</html>

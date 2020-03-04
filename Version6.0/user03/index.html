@@ -1,18 +1,89 @@
 <html lang="en">
-    <!--Version 6.0 
-	Name:
+<!--Version 6.0 
+	Name: Paige Arnold
 	Date Completed:
     -->
-    <head>
-        
-        <title>Web Development User #03</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #03</center>
-    
-    </body>
+
+<head>
+
+    <title>Web Development User #03</title>
+    <style>
+        ul li {
+            font-size: 20px;
+        }
+
+        .emphasis {
+            font-weight: bold;
+            color: red;
+        }
+
+        .heading {
+            margin: 15px;
+            font-display: block;
+            font-size: 75px;
+        }
+
+        .table {
+            border-color: black;
+            background-color: dodgerblue;
+            color: darkblue;
+            font-family: sans-serif;
+        }
+
+    </style>
+    <script src="JS/jquery-3.4.1.js">
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            jQuery('h1').addClass('heading');
+            $('li:first-child').addClass('emphasis');
+            $('table').addClass('table');
+        });
+
+    </script>
+
+    <link rel="stylesheet" href="CSS/sunlight.css">
+
+</head>
+
+<body>
+
+    <h1>It's jQuery Time</h1>
+
+    <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ul>
+
+    <table border="1px">
+        <tr>
+            <th>Video</th>
+            <th>Do I understand jQuery yet?</th>
+        </tr>
+        <tr>
+            <td>First</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Not Really</td>
+        </tr>
+    </table>
+    <br>
+    <button>Sunlight</button>
+    <button>Moonlight</button>
+
+
+    <script>
+        (function() {
+            $('button').click(function(){
+               console.log(this);
+            });
+        })();
+      
+    </script>
+</body>
 
 </html>

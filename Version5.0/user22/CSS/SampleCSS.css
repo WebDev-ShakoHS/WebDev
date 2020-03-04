@@ -31,3 +31,17 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+.button2 {
+         background-color: #1c87c9;
+         border: none;
+         color: white;
+         padding: 20px 34px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 20px;
+         margin: 4px 2px;
+         cursor: pointer;
+    onclick:"window.location.href = 'file:///Users/237483/Applications/mampstack/apache2/htdocs/WebDev/Version5.0/user22/WebDevUse22_Games.html';"
+}
