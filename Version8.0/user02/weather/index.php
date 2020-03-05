@@ -9,6 +9,13 @@ else {
     $temp = "F";
 }
 
+if ($temp < 50){
+    echo "<body style='background-color:#5F9EA0'>";
+}
+
+
+
+
 $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
 
 $ch = curl_init();
@@ -70,6 +77,7 @@ span.min-temperature {
 
 </head>
 <body>
+   
 
     <div class="report-container">
         <h2><?php echo $data->name; ?> Weather Status</h2>
