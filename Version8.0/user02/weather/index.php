@@ -1,14 +1,14 @@
 <?php
-$apiKey = "dfe3032a3bd8a367a7948bf40cbb0f05
-"; //You will need to add in the 
+$apiKey = "dfe3032a3bd8a367a7948bf40cbb0f05"; //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
-$units = "metric";//imperial-Farhenheit
+$units = "imperial";//imperial-Farhenheit
 if ($units == 'metric'){//Changes the $temp varaible to match 
     $temp = "C";
 }
 else {
     $temp = "F";
 }
+
 $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
 
 $ch = curl_init();
