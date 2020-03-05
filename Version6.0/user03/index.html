@@ -1,7 +1,7 @@
 <html lang="en">
 <!--Version 6.0 
 	Name: Paige Arnold
-	Date Completed:
+	Date Completed: 2/19/2020
     -->
 
 <head>
@@ -70,19 +70,30 @@
             <td>Second</td>
             <td>Not Really</td>
         </tr>
+        <tr>
+            <td>Third</td>
+            <td>A Little Bit</td>
+        </tr>
     </table>
     <br>
-    <button>Sunlight</button>
-    <button>Moonlight</button>
+    <button data-file="CSS/sunlight">Sunlight</button>
+    <button data-file="CSS/moonlight">Moonlight</button>
 
 
     <script>
         (function() {
-            $('button').click(function(){
-               console.log(this);
+            var link = $('link');
+            $('button').click(function() {
+                var stylesheet = $(this).data('file');
+                link.attr('href', stylesheet + '.css');
+                $(this)
+                    .siblings('button')
+                    .removeAttr('disabled')
+                    .end()
+                    .attr('disabled', 'disabled');
             });
         })();
-      
+
     </script>
 </body>
 

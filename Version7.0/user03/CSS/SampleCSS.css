@@ -1,33 +1,49 @@
-body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+.head {
+    padding: 20px;
+    border: 1px;
+    text-align: center;
 }
 
-h1 {
-	font-size: 1.3em;
-	text-align: center;
+.button {
+    padding: 20px;
+    border-radius: 30%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 20px;
 }
 
-h2{
-        font-size: 1.1em;
+.red {
+    background-color: crimson;
+    color: floralwhite;
+    border: solid 7px;
+    border-color: darkred;
 }
 
-table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+.blue {
+    background-color: dodgerblue;
+    color: floralwhite;
+    border: solid 7px;
+    border-color: blue;
 }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+.purple {
+    background-color: mediumpurple;
+    color: floralwhite;
+    border: solid 7px;
+    border-color: rebeccapurple;
 }
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+.green {
+    background-color: mediumseagreen;
+    color: floralwhite;
+    border: solid 7px;
+    border-color: seagreen;
+}
+
+.orange {
+    background-color: orange;
+    color: floralwhite;
+    border: solid 7px;
+    border-color: darkorange;
 }
