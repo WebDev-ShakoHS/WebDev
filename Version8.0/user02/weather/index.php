@@ -42,7 +42,7 @@ $currentTime = time();
 body {
     font-family: Arial;
     font-size: 0.95em;
-    color: #929292;
+    color: black;
 }
 
 .report-container {
@@ -67,7 +67,7 @@ body {
 
 span.min-temperature {
     margin-left: 15px;
-    color: #929292;
+    color: black;
 }
 
 .time {
