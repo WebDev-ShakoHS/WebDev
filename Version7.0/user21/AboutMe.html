@@ -1,17 +1,18 @@
-<!DOCTYPE html>
 <html lang="en">
-<!--Version 3.0
-        Name:
-        Date Completed:
+<!--Version 7.0 
+	Name:
+	Date Completed:
     -->
 
 <head>
+
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Menu Sample">
+    <meta name="2.5 Bringing it All together" content="Riley's Amzing Website">
 
-    <title>Web Dev User ## </title>
+    <title>Web Dev User #21 </title>
 
     <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
@@ -22,7 +23,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="CSS/SampleCSS.css">
+
     <!-- Custom styles for this template -->
     <style type="text/css">
         .menu {
@@ -38,10 +39,23 @@
             text-align: center;
         }
 
+        td {
+            color: #FF0000;
+        }
+
     </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#accordion").accordion();
+        });
+
+    </script>
 </head>
 
 <body>
+
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
@@ -52,11 +66,12 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="#" class="nav-item nav-link active">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-2">Lists</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contact</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="Script.html" class="nav-item nav-link">Games</a>
+                    <a href="music.html" class="nav-item nav-link" tabindex="-1">Music</a>
+                    <a href="List.html" class="nav-item nav-link" tabindex="-1">Lists</a>
+                    <a href="AboutMe.html" class="nav-item nav-link active">About Me</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link" tabindex="-2">Contacts</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -65,45 +80,45 @@
             </div>
         </nav>
     </div>
-    <h3>CSS Box Model Demonstration</h3>
-    <p>
-        Paragraphs are blocks too. <em>However</em> things like &lt;em&gt; and &lt;strong&gt; elements are not.
-        They are <strong>inline</strong> elements.
-    </p>
-    <p>Block elements define the flow of the HTML document, while inline elements
-        do not.
-    </p>
 
-    <div class="wideMargin" id="content">
-
-        <h2 class="text-left my-3">Favorite Foods and Resturants</h2>
-        <p>
-            <h3>Foods</h3>
-            <ol>
-                <li>Fried Chicken</li>
-                <li>Pizza</li>
-                <li>Burrito</li>
-            </ol>
-
-        
-        <p>
+    <center>Who is Riley?</center>
 
 
-            <h3>Resturants</h3>
-            <ol start="5">
-                <li>Canes</li>
-                <li>Pizza Ranch</li>
-                <li>Qudoba
-                
+    <div id="accordion">
+        <h3>What is Riley?</h3>
+        <div>
+            <p>
+                Riley is awesome!
+            </p>
+        </div>
+        <h3>What does Riley want?</h3>
+        <div>
+            <p>
+                Riley is hungry
+            </p>
+        </div>
+        <h3>What is Riley doing?</h3>
+        <div>
+            <p>
+                Riley eat food
+            </p>
 
-        <p>
-    <div>
-    <div class="wideMargin" id="footer">
-        <p>
+        </div>
+        <h3>How does Riley feel?</h3>
+        <div>
+            <p>
+                Food good!
+            </p>
 
-            Webpage made by <a href="index.html" target="_blank">[Riley-coder]</a>
-        </p>
+        </div>
     </div>
-<body>
+
+
+
+
+
+
+
+    <body>
 
 <html>
