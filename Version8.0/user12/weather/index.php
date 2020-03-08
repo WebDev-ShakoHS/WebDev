@@ -1,12 +1,12 @@
 <?php
-$apiKey = "API KEY"; //You will need to add in the 
+$apiKey = "d6892dc753cf44c0dbdc5ef7270ef38f"; //You will need to add in the
 $cityId = "5046997"; //5046997 Shakopee City Id
-$units = "metric";//metric-Celcius  imperial-Farhenheit
-if ($units == 'metric'){//Changes the $temp varaible to match 
-    $temp = "C";
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
+if ($units == 'imperial'){//Changes the $temp varaible to match
+   $temp = "F";
 }
 else {
-    $temp = "F";
+   $temp = "C";
 }
 $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
 
@@ -23,51 +23,65 @@ $response = curl_exec($ch);
 curl_close($ch);
 $data = json_decode($response);
 $currentTime = time();
+
+$x = $temp;
+$y = 60;
+    if ($x<$y){
+        $color =  "lightcyan";
+    }
+    else{
+        $color = "lightpink";
+    }
+
 ?>
 
 <!doctype html>
 <html>
+
 <head>
-<title>Forecast Weather using OpenWeatherMap with PHP</title>
+    <title>Forecast Weather using OpenWeatherMap with PHP</title>
 
-<style>
-body {
-    font-family: Arial;
-    font-size: 0.95em;
-    color: #929292;
-}
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 0.95em;
+            color: #929292;
+            background-color:<?php echo $color ?>;
+        }
 
-.report-container {
-    border: #E0E0E0 1px solid;
-    padding: 20px 40px 40px 40px;
-    border-radius: 2px;
-    width: 550px;
-    margin: 0 auto;
-}
+        .report-container {
+            border: #E0E0E0 1px solid;
+            padding: 20px 40px 40px 40px;
+            border-radius: 2px;
+            width: 550px;
+            margin: 0 auto;
+        }
 
-.weather-icon {
-    vertical-align: middle;
-    margin-right: 20px;
-}
+        .weather-icon {
+            vertical-align: middle;
+            margin-right: 20px;
+        }
 
-.weather-forecast {
-    color: #212121;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 20px 0px;
-}
+        .weather-forecast {
+            color: #212121;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 0px;
+        }
 
-span.min-temperature {
-    margin-left: 15px;
-    color: #929292;
-}
+        span.min-temperature {
+            margin-left: 15px;
+            color: #929292;
+        }
 
-.time {
-    line-height: 25px;
-}
-</style>
+        .time {
+            line-height: 25px;
+        }
+
+    </style>
 
 </head>
+
 <body>
 
     <div class="report-container">
@@ -78,17 +92,7 @@ span.min-temperature {
             <div><?php echo ucwords($data->weather[0]->description); ?></div>
         </div>
         <div class="weather-forecast">
-            <img
-                src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
-                class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span
-                class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
+            <img src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png" class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
         </div>
         <div class="time">
             <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
-            <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
-        </div>
-    </div>
-
-
-</body>
-</html>
