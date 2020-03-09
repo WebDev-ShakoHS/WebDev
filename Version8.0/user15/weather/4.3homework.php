@@ -79,7 +79,7 @@ if ($resp->ack == "Success") {
     $title = $item->title;
 /////////////////////////EDIT THIS LINE/////////////////////////////////////////////////////
     // For each SearchResultItem node, build a link and append it to $results
-    $results .= "<tr><td><img src=\"$pic\"></td><td><a href=\"$link\">$title</a></td></tr>";
+    $results .= "<tr><td><a href=\"$link\">$title</a></td><td><img src=\"$pic\"></td></tr>";
 ////////////////////////EDIT THIS LINE//////////////////////////////////////////////////////      
   }
 }
@@ -98,7 +98,9 @@ else {
         body {
             font-family: arial, sans-serif;
         }
-
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
     </style>
 </head>
 
@@ -106,7 +108,7 @@ else {
 
     <h1>eBay Search Results for <?php echo $query; ?></h1>
 
-    <table>
+    <table border="25">
         <tr>
             <td>
                 <?php echo $results;?>
