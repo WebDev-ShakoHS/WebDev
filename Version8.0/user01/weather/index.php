@@ -1,7 +1,10 @@
 <?php
-$apiKey = "API KEY"; //You will need to add in the 
+$apiKey = "60d6d2124df2f60b053648873900f27e"; //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
-$units = "metric";//metric-Celcius  imperial-Farhenheit
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
+class backgroundc {
+    var $colourr;
+}
 if ($units == 'metric'){//Changes the $temp varaible to match 
     $temp = "C";
 }
@@ -9,7 +12,12 @@ else {
     $temp = "F";
 }
 $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
-
+if ($temp == "F"){
+    $style='style="background: blue;"';
+} 
+else {
+    $style='style="background: red;"';
+}
 $ch = curl_init();
 
 curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -68,7 +76,7 @@ span.min-temperature {
 </style>
 
 </head>
-<body>
+<body <?php echo $style; ?>>
 
     <div class="report-container">
         <h2><?php echo $data->name; ?> Weather Status</h2>
