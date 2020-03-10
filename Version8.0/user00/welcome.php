@@ -58,7 +58,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link"><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
+                    <a href="reset_password.php" class="nav-item nav-link"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
+                    
                     <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     echo "<a href='logout.php' class='nav-item nav-link btn-danger'> Logout </a>";
 } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
@@ -69,9 +70,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <div class="page-header">
         <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
     </div>
-    <p>
-        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
-    </p>
+
 </body>
 
 </html>
