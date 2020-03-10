@@ -125,7 +125,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <a href="reset_password.php" class="nav-item nav-link active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
 
                     <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-                    echo "<a href='logout.php' class='nav-item nav-link btn-danger'> Logout </a>";
+                    echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
                     } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
                 </div>
             </div>
