@@ -60,7 +60,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link"><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
                     <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    echo "<a href='logout.php' class='nav-item nav-link btn btn-danger'> Logout </a>";
+    echo "<a href='logout.php' class='nav-item nav-link btn-danger'> Logout </a>";
 } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
                 </div>
             </div>
