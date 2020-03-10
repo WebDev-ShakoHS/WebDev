@@ -59,7 +59,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 </div>
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link"><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
-                    <a href="login.php" class="nav-item nav-link">Login</a>
+                    <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+    echo "<a href='logout.php' class='nav-item nav-link btn btn-danger'> Logout </a>";
+} else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
                 </div>
             </div>
         </nav>
@@ -69,7 +71,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </div>
     <p>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
-        <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
     </p>
 </body>
 
