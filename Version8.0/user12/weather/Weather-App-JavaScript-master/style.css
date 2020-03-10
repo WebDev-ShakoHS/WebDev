@@ -107,5 +107,17 @@ body{
     font-size: 0.8em;
 }
 
+.white {
+    color: white;
+}
 
+.text1 {
+    color:white;
+    font-family: sans-serif, monospace;
+}
 
+.button1 {
+    text-align: center;
+    align-content: center;
+    align-self: center;
+}
