@@ -15,6 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/jquery-3.4.1.js"></script>
     <script src="JS/SampleJS.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -49,6 +50,7 @@
             margin-bottom: 50px;
             /* Add this */
         }
+
     </style>
 </head>
 
@@ -79,11 +81,15 @@
         </nav>
     </div>
 
+    <audio id="honk">
+        <source src="Clown-horn/Clown-horn.mp3">
+    </audio>
+    
     <div class="row">
         <div class="col-lg-3"></div>
-        <div class="col-lg-6 wideMargin">
+        <div class="col-lg-6 wideMargin red">
             <center>
-                <h1>Clown Species</h1>
+                <h1 style="padding: 10px">Clown Species</h1>
             </center>
             <h5>Here's a broad overview of every species of clown so that you can make the right choice for your home.</h5>
         </div>
@@ -91,43 +97,71 @@
     <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-1">
-            <button onclick="whitefacePic(); whitefaceInfo()">Whiteface</button>
+            <button data-file="images/Whiteface.jpg" data-info="Whiteface Clown Info" onclick="honk()">Whiteface</button>
         </div>
         <div class="col-lg-1">
-            <button onclick="augustePic(); augusteInfo()">Auguste</button>
+            <button data-file="images/Auguste.jpg" data-info="Auguste Clown Info" onclick="honk()">Auguste</button>
         </div>
         <div class="col-lg-1">
-            <button onclick="trampPic(); trampInfo()">Tramp</button>
+            <button data-file="images/Tramp.jpg" data-info="Tramp Clown Info" onclick="honk()">Tramp</button>
         </div>
         <div class="col-lg-1">
-            <button onclick="rodeoPic(); rodeoInfo()">Rodeo</button>
+            <button data-file="images/Rodeo.jpg" data-info="Rodeo Clown Info" onclick="honk()">Rodeo</button>
         </div>
         <div class="col-lg-1">
-            <button onclick="mimePic(); mimeInfo()">Mime</button>
+            <button data-file="images/Mime.jpg" data-info="Mime Info" onclick="honk()">Mime</button>
         </div>
         <div class="col-lg-1">
-            <button onclick="creepyPic(); creepyInfo()">Creepy</button>
+            <button data-file="images/Creepy.jpg" data-info="Creepy Clown Info" onclick="honk()">Creepy</button>
         </div>
         <div class="col-lg-1">
-            <button onclick="jesterPic(); jesterInfo()">Jester</button>
+            <button data-file="images/Jester.jpg" data-info="Jester Info" onclick="honk()">Jester</button>
         </div>
         <div class="col-lg-1">
-            <button onclick="harlequinPic(); harlequinInfo()">Harlequin</button>
+            <button data-file="images/Harlequin.jpeg" data-info="Harlequin Info" onclick="honk()">Harlequin</button>
         </div>
         <div class="col-lg-2"></div>
     </div>
-<br>
+    <br>
     <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-4" id="ClownPic">
-            <p> </p>
+                <img height="450">
+                <script>
+                    (function() {
+                        var img = $('img');
+                        $('button').click(function() {
+                            var image = $(this).data('file');
+                            img.attr('src', image);
+                            $(this)
+                                .siblings('button')
+                                .removeAttr('disabled')
+                                .end();
+                        });
+                    })();
+
+                </script>
         </div>
         <div class="col-lg-4" id="ClownInfo">
             <p> </p>
+            <script>
+                (function() {
+                    var para = $('p')
+                    $('button').click(function() {
+                        var info = $(this).data('info');
+                        para.text(info);
+                        $(this)
+                            .siblings('button')
+                            .removeAttr('disabled')
+                            .end()
+                    });
+                }) ();
+            </script>
         </div>
         <div class="col-lg-2"></div>
     </div>
-    
+
+
 </body>
 
 </html>
