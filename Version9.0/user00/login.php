@@ -132,10 +132,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="index.php" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="gallery.php" class="nav-item nav-link" tabindex="-1">Photo Gallery</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
