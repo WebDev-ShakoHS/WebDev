@@ -1,7 +1,7 @@
 <?php
 // Initialize the session
 session_start();
- 
+require_once "config.php";
 // Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
@@ -101,7 +101,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <div class="col-md-1">
                     <div class="row">
                         <div class="col-md-12 col-sm-6">
-                            <button><i class="far fa-thumbs-up"></i></button>
+                            <input type="submit" class="far fa-thumbs-up fa-5x">
                         </div>
                         <div class="col-md-12 col-sm-6">
                             # of likes
@@ -116,7 +116,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <div class="col-md-1">
                     <div class="row">
                         <div class="col-md-12 col-sm-6">
-                            <button><i class="far fa-thumbs-up"></i></button>
+                            <input type="submit" class="far fa-thumbs-up fa-5x">
                         </div>
                         <div class="col-md-12 col-sm-6">
                             # of likes
