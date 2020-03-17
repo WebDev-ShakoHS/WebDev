@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is already logged in, if yes then redirect him to welcome page
+if(isset($_SESSION["loggedin"]) === false){
+    header("location: login.php");
+    exit;
+}
+?>
 <html lang="en">
 <!--Version 9.0
         Name:Mr. M
@@ -50,7 +59,7 @@
 <body>
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
