@@ -101,7 +101,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <div class="col-md-1">
                     <div class="row">
                         <div class="col-md-12 col-sm-6">
-                            <input type="submit" class="far fa-thumbs-up fa-5x">
+                            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                                <input type="submit" class="far fa-thumbs-up fa-5x">
+                            </form>
                         </div>
                         <div class="col-md-12 col-sm-6">
                             # of likes
@@ -116,6 +118,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <div class="col-md-1">
                     <div class="row">
                         <div class="col-md-12 col-sm-6">
+                            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                            </form>
                             <input type="submit" class="far fa-thumbs-up fa-5x">
                         </div>
                         <div class="col-md-12 col-sm-6">
