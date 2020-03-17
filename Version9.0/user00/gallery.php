@@ -29,7 +29,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
@@ -52,6 +52,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         .red {
             background-color: red;
             font-family: cursive;
+        }
+
+        .rounded-XL {
+            border-radius: 4rem !important;
         }
 
     </style>
@@ -90,16 +94,32 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <div class="row">
                 <div class="col-md-5 col-sm-11">
 
-                    <img src="images/web1.jpg" class="img-rounded" alt='Photo by <a href="/photographer/mmagallan-38172">Mario Alberto Magallanes Trejo</a> from <a href="https://freeimages.com/">FreeImages</a>' width="100%">
+                    <img src="images/web1.jpg" class="rounded-XL" alt='Photo by <a href="/photographer/mmagallan-38172">Mario Alberto Magallanes Trejo</a> from <a href="https://freeimages.com/">FreeImages</a>' width="100%">
                 </div>
                 <div class="col-md-1">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6">
+                            <button><i class="far fa-thumbs-up"></i></button>
+                        </div>
+                        <div class="col-md-12 col-sm-6">
+                            # of likes
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-md-5 col-sm-11">
 
-                    <img src="images/web2.jpg" class="img-rounded" alt="Cinque Terre" width="100%">
+                    <img src="images/web2.jpg" class="rounded-XL" alt="" width="100%">
                 </div>
                 <div class="col-md-1">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6">
+                            <button><i class="far fa-thumbs-up"></i></button>
+                        </div>
+                        <div class="col-md-12 col-sm-6">
+                            # of likes
+                        </div>
+                    </div>
                 </div>
             </div>
 
