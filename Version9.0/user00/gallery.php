@@ -95,8 +95,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){echo "<h1> Hi </h1>";}
     <div class="wideMargin" id="content">
         <h2 class="text-left my-3"><?php echo htmlspecialchars($_SESSION["username"]); ?>'s Photo Gallery</h2>
 <!------------------------------------------------------------------------------------>
-        <?php $sql = "SELECT * FROM photos";
-        require_once "config.php";
+        <?php 
+            $sql = "SELECT * FROM photos";
+            require_once "config.php";
+        
             if($result = mysqli_query($link, $sql)){
                 if(mysqli_num_rows($result) > 0){ 
                     echo '<div class="container-fluid">';
