@@ -2,13 +2,44 @@
 // Initialize the session
 session_start();
 require_once "config.php";
-// Check if the user is logged in, if not then redirect him to login page
+// Check if the user is logged in, if not then redirect them to the login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){echo "<h1> Hi </h1>";}
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $id = $_POST["likeBtn"];
+    $username = $_SESSION["username"];
+    $true ="1";     
+    $sql = "SELECT * FROM user_likes WHERE photo_id = '".$id."'";
+    if($result = mysqli_query($link, $sql)){
+        echo "success1";
+            if(mysqli_num_rows($result) == 0){
+                echo "success2";
+                $stmt = "INSERT INTO user_likes (photo_id, user, img_like) VALUES (?, ?, ?)";
+                    // Bind variables to the prepared statement as parameters
+                if($stmt = mysqli_prepare($link, $sql)){
+                    mysqli_stmt_bind_param($stmt, "iss", $id, $username, $true);
+            
+                    // Attempt to execute the prepared statement
+                    mysqli_stmt_execute($stmt);
+                    echo "success3";
+                    if(mysqli_stmt_execute($stmt)){
+                        echo "success4";
+                    } 
+                    else{
+                        echo "Something went wrong. Please try again later.";
+                    }
+                }
+                mysqli_stmt_close($stmt);
+            }
+        }
+    echo $id;
+        }
+    else {
+        echo "ERROR: Could not execute $sql. " . mysqli_error($link);
+    }
 
 ?>
 
@@ -94,11 +125,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){echo "<h1> Hi </h1>";}
 
     <div class="wideMargin" id="content">
         <h2 class="text-left my-3"><?php echo htmlspecialchars($_SESSION["username"]); ?>'s Photo Gallery</h2>
-            <!------------------------------------------------------------------------------------>
-            <?php 
-            $sql = "SELECT * FROM photos";
+<!------------------------------------------------------------------------------------>
+        <?php 
             require_once "config.php";
-        
+            $sql = "SELECT * FROM photos";
+            
             if($result = mysqli_query($link, $sql)){
                 if(mysqli_num_rows($result) > 0){ 
                     echo '<div class="container-fluid">';
@@ -114,7 +145,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){echo "<h1> Hi </h1>";}
                             echo '<div class="col-md-1">';
                                 echo '<div class="row">';
                                     echo '<div class="col-md-12 col-sm-6">';
-                                        echo '<form action='. htmlspecialchars($_SERVER["PHP_SELF"]).' method="post">               <button type="submit" class="btn btn-default">
+                                        echo '<form action='. htmlspecialchars($_SERVER["PHP_SELF"]).' method="post">               <button type="submit" class="btn btn-default" name="likeBtn" value="'.$row['photo_id'].'" >
                                                     <i class="far fa-thumbs-up fa-5x"></i>
                                                   </button>
                                                 </form>';
@@ -137,17 +168,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){echo "<h1> Hi </h1>";}
                         }
                     } 
             else{
-                        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                        echo "ERROR: Could not execute $sql. " . mysqli_error($link);
                     } 
             // Close connection
                     mysqli_close($link);
                     echo "</div>";
         ?>
-        </div>
-<!------------------------------------------------------------------------------------>
-        
+    </div>
+    <!------------------------------------------------------------------------------------>
 
-  <!------------      
+
+    <!------------      
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-5 col-sm-11">
@@ -192,8 +223,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){echo "<h1> Hi </h1>";}
 
         </div>
         ------------->
-        
-    
+
+
     <div class="wideMargin" id="footer">
         <p>
 
