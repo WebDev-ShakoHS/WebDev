@@ -7,6 +7,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){echo "<h1> Hi </h1>";}
+
 ?>
 
 <html lang="en">
@@ -90,19 +93,60 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </div>
 
     <div class="wideMargin" id="content">
-
         <h2 class="text-left my-3"><?php echo htmlspecialchars($_SESSION["username"]); ?>'s Photo Gallery</h2>
+<!------------------------------------------------------------------------------------>
+        <?php $sql = "SELECT * FROM photos";
+        require_once "config.php";
+            if($result = mysqli_query($link, $sql)){
+                if(mysqli_num_rows($result) > 0){ 
+                    echo '<div class="container-fluid">';
+                    while($row = mysqli_fetch_array($result)){
+                           echo '<div class="row">';
+                                echo '<div class="col-md-5 col-sm-11">';
+                                    echo '<img src="images/'. $row['photo_id'] .'.jpg class="rounded-XL" width="100%" </div>';
+                                echo '<div class="col-md-1">';
+                                    echo '<div class="row">';
+                                        echo '<div class="col-md-12 col-sm-6">'
+                                            echo '<form action='. htmlspecialchars($_SERVER["PHP_SELF"]).' method="post">
+                                <button type="submit" class="btn btn-default">
+                                    <i class="far fa-thumbs-up fa-5x"></i>
+                                </button>
+
+                            </form>';
+                                        echo '</div>';
+                                        echo '<div class="col-md-12 col-sm-6">';
+                                            echo '# of likes '.$row['total_likes'];
+                                        echo '</div>';
+                                    echo '</div>';
+                                echo '</div>';
+                    
+                    } 
+                }
+                echo '</div>';
+                else{
+                            echo "<p class='lead'><em>No photos were found.</em></p>";
+                        }
+                    } 
+            else{
+                        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                    } 
+        ?>
+        
+        
+<!------------------------------------------------------------------------------------>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-5 col-sm-11">
-
-                    <img src="images/web1.jpg" class="rounded-XL" alt='Photo by <a href="/photographer/mmagallan-38172">Mario Alberto Magallanes Trejo</a> from <a href="https://freeimages.com/">FreeImages</a>' width="100%">
+                    <img src="images/1.jpg" class="rounded-XL" alt='Photo by <a href="/photographer/mmagallan-38172">Mario Alberto Magallanes Trejo</a> from <a href="https://freeimages.com/">FreeImages</a>' width="100%">
                 </div>
                 <div class="col-md-1">
                     <div class="row">
                         <div class="col-md-12 col-sm-6">
                             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                                <input type="submit" class="far fa-thumbs-up fa-5x">
+                                <button type="submit" class="btn btn-default">
+                                    <i class="far fa-thumbs-up fa-5x"></i>
+                                </button>
+
                             </form>
                         </div>
                         <div class="col-md-12 col-sm-6">
@@ -113,14 +157,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                 <div class="col-md-5 col-sm-11">
 
-                    <img src="images/web2.jpg" class="rounded-XL" alt="" width="100%">
+                    <img src="images/2.jpg" class="rounded-XL" alt="" width="100%">
                 </div>
                 <div class="col-md-1">
                     <div class="row">
                         <div class="col-md-12 col-sm-6">
                             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                                <button type="submit" class="btn btn-default">
+                                    <i class="far fa-thumbs-up fa-5x"></i>
+                                </button>
+
                             </form>
-                            <input type="submit" class="far fa-thumbs-up fa-5x">
                         </div>
                         <div class="col-md-12 col-sm-6">
                             # of likes
