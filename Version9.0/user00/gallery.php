@@ -14,33 +14,24 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $true ="1";     
     $sql = "SELECT * FROM user_likes WHERE photo_id = '".$id."'";
     if($result = mysqli_query($link, $sql)){
-        echo "success1";
             if(mysqli_num_rows($result) == 0){
-                echo "success2";
-                $stmt = "INSERT INTO user_likes (photo_id, user, img_like) VALUES (?, ?, ?)";
+                $sql2 = "INSERT INTO user_likes (photo_id, user, img_like) VALUES (?, ?, ?)";
                     // Bind variables to the prepared statement as parameters
-                if($stmt = mysqli_prepare($link, $sql)){
+                if($stmt = mysqli_prepare($link, $sql2)){
                     mysqli_stmt_bind_param($stmt, "iss", $id, $username, $true);
             
                     // Attempt to execute the prepared statement
                     mysqli_stmt_execute($stmt);
-                    echo "success3";
-                    if(mysqli_stmt_execute($stmt)){
-                        echo "success4";
-                    } 
-                    else{
-                        echo "Something went wrong. Please try again later.";
-                    }
+                    //if(mysqli_stmt_execute($stmt)){
+                    //} 
+                   // else{
+                    //    echo "Something went wrong. Please try again later.";
+                   // }
                 }
                 mysqli_stmt_close($stmt);
             }
         }
-    echo $id;
-        }
-    else {
-        echo "ERROR: Could not execute $sql. " . mysqli_error($link);
-    }
-
+    } 
 ?>
 
 <html lang="en">
@@ -129,11 +120,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <?php 
             require_once "config.php";
             $sql = "SELECT * FROM photos";
+       
             
             if($result = mysqli_query($link, $sql)){
                 if(mysqli_num_rows($result) > 0){ 
                     echo '<div class="container-fluid">';
                     $i = 1;
+                    $like_true = '<i class="fas fa-thumbs-up fa-5x"></i>';
+                    $like_false = '<i class="far fa-thumbs-up fa-5x"></i>'; 
                     while($row = mysqli_fetch_array($result)){
                                    
                         if ($i % 2 != 0 ){
@@ -145,10 +139,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             echo '<div class="col-md-1">';
                                 echo '<div class="row">';
                                     echo '<div class="col-md-12 col-sm-6">';
-                                        echo '<form action='. htmlspecialchars($_SERVER["PHP_SELF"]).' method="post">               <button type="submit" class="btn btn-default" name="likeBtn" value="'.$row['photo_id'].'" >
-                                                    <i class="far fa-thumbs-up fa-5x"></i>
-                                                  </button>
-                                                </form>';
+                                        echo '<form action='. htmlspecialchars($_SERVER["PHP_SELF"]).' method="post">               <button type="submit" class="btn btn-default" name="likeBtn" value="'.$row['photo_id'].'" >';
+                                                
+                        if (1==1){
+                            echo "'".$like_true."'";
+                        }
+                        else{
+                            echo "'".$like_false."'";
+                        }
+                                            echo '</button>';
+                                        echo '</form>';
                                     echo "</div>";
                                     echo '<div class="col-md-12 col-sm-6">';
                                         echo '# of likes '.$row['total_likes'];
@@ -168,7 +168,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         }
                     } 
             else{
-                        echo "ERROR: Could not execute $sql. " . mysqli_error($link);
+                        echo "ERROR: Won't execute $sql. " . mysqli_error($link);
                     } 
             // Close connection
                     mysqli_close($link);
