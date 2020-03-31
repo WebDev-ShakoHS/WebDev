@@ -19,7 +19,7 @@ if(isset($_SESSION["loggedin"]) === false){
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Menu Sample">
+    <meta name="description" content="about Mr. M">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
     <title>Wide World of Web Development</title>
@@ -29,11 +29,12 @@ if(isset($_SESSION["loggedin"]) === false){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="JS/standard.js"></script>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.css">
+    <link rel="stylesheet" href="https://time4areview.com/clashofclanshack/src/bootstrap.superhero.css">
 
     <!-- Custom styles for this template -->
     <style type="text/css">
@@ -69,12 +70,12 @@ if(isset($_SESSION["loggedin"]) === false){
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="index.php" class="nav-item nav-link active">Home</a>
+                    <a href="index.php" class="nav-item nav-link ">Home</a>
                     <a href="about.php" class="nav-item nav-link">About Me</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="gallery.php" class="nav-item nav-link" tabindex="-1">Photo Gallery</a>
-                    <a href="review.php" class="nav-item nav-link" tabindex="-1">Review</a>
+                    <a href="review.php" class="nav-item nav-link active" tabindex="-1">Review</a>
                     <a href="reviews.php" class="nav-item nav-link" tabindex="-1">Reviews</a>
                     <a href="mailto:rmainhar@shakopeeschools.org?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
@@ -90,38 +91,21 @@ if(isset($_SESSION["loggedin"]) === false){
 
     <div class="wideMargin" id="content">
 
-        <h2 class="text-left my-3">Home</h2>
-        <div class="jumbotron">
-            <div class="container">
-                <h1 class="display-3">Hello, Web Developers!</h1>
-                <p>Web Development @ SHS is pretty lit! You will learn all about how to make a website.</p>
-                <p><a class="btn btn-primary btn-lg" href="https://www.shakopee.k12.mn.us/Page/8605" target="_blank" role="button">Learn more »</a></p>
+        <h2 class="text-left my-3">Reviews</h2>
+
+        <div class="panel panel-default" style="">
+            <div class="panel-heading">
+                <h3 class="panel-title"><i class="glyphicon glyphicon-fire" style="margin-right: 10px;"></i> Latest Comments</h3>
+            </div>
+            <div id="X00Comment" class="panel-body">
+                <div style="text-align: left; display: block;"><img src="images/a15.jpg" alt="" class="media-object"><span class="label label-default" style="font-weight: bold; margin-top: -20px;">SoteraГ±a</span> <span class="label label-success" style="font-weight: bold;">Can recommend this thanks for free Gems </span> <span id="X00CommentSeconds" class="label label-info" style="font-weight: bold;">13s ago</span></div>
+            </div>
+            <div class="panel-footer small">
+                <span class="label label-default"><strong>Info</strong></span><span class="label label-default"> You can leave a comment after you have used our generator.</span> <span class="label label-default">Comments are delayed due to high traffic.</span><br><br>
+                <span class="label label-danger"><strong><a href="#" style="color: #fff; cursor: pointer;"> Post Comment</a></strong></span>
+
             </div>
         </div>
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>HTML</h2>
-                    <p>You will learn the basic HTML that will give you an idea of how a webpage is put together.  Syntax and how we add HTML elements to make up a page will be our jumping off point.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Bootstrap Styling</h2>
-                    <p>How to make a website that is not only appealing, but can adapt to any device you decide to view it on.  You will learn how to use the Bootstrap library to make your website look awesome!</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>PHP</h2>
-                    <p>You will learn how to login to a website and where the information goes when you hit submit!</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-                </div>
-            </div>
-
-            <hr>
-
-        </div>
-
 
     </div>
     <div class="wideMargin" id="footer">

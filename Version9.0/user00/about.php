@@ -9,7 +9,7 @@ if(isset($_SESSION["loggedin"]) === false){
     
 }*/
 ?>
-<html lang="en">
+<html lang="en" class="js-focus-visible">
 <!--Version 9.0
         Name:Mr. M
         Date Completed:
@@ -19,7 +19,7 @@ if(isset($_SESSION["loggedin"]) === false){
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Menu Sample">
+    <meta name="description" content="about Mr. M">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
     <title>Wide World of Web Development</title>
@@ -33,7 +33,7 @@ if(isset($_SESSION["loggedin"]) === false){
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.css">
+    <link rel="stylesheet" href="CSS/product.css">
 
     <!-- Custom styles for this template -->
     <style type="text/css">
@@ -69,13 +69,11 @@ if(isset($_SESSION["loggedin"]) === false){
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="index.php" class="nav-item nav-link active">Home</a>
-                    <a href="about.php" class="nav-item nav-link">About Me</a>
+                    <a href="index.php" class="nav-item nav-link">Home</a>
+                    <a href="about.php" class="nav-item nav-link active">About Me</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="gallery.php" class="nav-item nav-link" tabindex="-1">Photo Gallery</a>
-                    <a href="review.php" class="nav-item nav-link" tabindex="-1">Review</a>
-                    <a href="reviews.php" class="nav-item nav-link" tabindex="-1">Reviews</a>
                     <a href="mailto:rmainhar@shakopeeschools.org?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
@@ -90,39 +88,33 @@ if(isset($_SESSION["loggedin"]) === false){
 
     <div class="wideMargin" id="content">
 
-        <h2 class="text-left my-3">Home</h2>
-        <div class="jumbotron">
-            <div class="container">
-                <h1 class="display-3">Hello, Web Developers!</h1>
-                <p>Web Development @ SHS is pretty lit! You will learn all about how to make a website.</p>
-                <p><a class="btn btn-primary btn-lg" href="https://www.shakopee.k12.mn.us/Page/8605" target="_blank" role="button">Learn more »</a></p>
+        <h2 class="text-left my-3">About</h2>
+
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 font-weight-normal">What's to Know about Mr. M</h1>
+                <p class="lead font-weight-normal">Not much. Just here to teach you waht you need to get started as a Web Developer.</p>
+                <a class="btn btn-outline-secondary" href="#">Coming soon</a>
             </div>
+            <div class="product-device box-shadow d-none d-md-block"></div>
+            <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
         </div>
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>HTML</h2>
-                    <p>You will learn the basic HTML that will give you an idea of how a webpage is put together.  Syntax and how we add HTML elements to make up a page will be our jumping off point.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Bootstrap Styling</h2>
-                    <p>How to make a website that is not only appealing, but can adapt to any device you decide to view it on.  You will learn how to use the Bootstrap library to make your website look awesome!</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>PHP</h2>
-                    <p>You will learn how to login to a website and where the information goes when you hit submit!</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-                </div>
-            </div>
-
-            <hr>
-
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Another headline</h2>
+          <p class="lead">And an even wittier subheading.</p>
         </div>
-
-
+        <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">Another headline</h2>
+          <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-dark box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+    </div>
     </div>
     <div class="wideMargin" id="footer">
         <p>
