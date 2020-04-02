@@ -1,13 +1,13 @@
 <?php
 // Initialize the session
-/*session_start();
+session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
-if(isset($_SESSION["loggedin"]) === false){
-    header("location: login.php");
-    exit;
+//if(isset($_SESSION["loggedin"]) === false){
+  //  header("location: login.php");
+  //  exit;
     
-}*/
+//}
 ?>
 <html lang="en">
 <!--Version 9.0
@@ -81,19 +81,35 @@ if(isset($_SESSION["loggedin"]) === false){
                 </div>
                 <div class="navbar-nav ml-auto">
                     <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-                    echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
-                    } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
+                        echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+                        } 
+                        else{ 
+                            echo "<a href='login.php' class='nav-item nav-link'> Login </a>";
+                        } ?>
                 </div>
             </div>
         </nav>
     </div>
 
     <div class="wideMargin" id="content">
-
-        <h2 class="text-left my-3">Home</h2>
+        <div class="row">
+            <div class="col-md-2">
+                <h2 class="text-left my-3">Home</h2>
+            </div>
+     
+        </div>
         <div class="jumbotron">
             <div class="container">
-                <h1 class="display-3">Hello, Web Developers!</h1>
+                <h1 class="display-3">Hello, 
+                    <?php 
+                    if(isset($_SESSION["loggedin"]) === false){
+                        echo "Web Developers";
+                    }
+                    else{
+                        echo htmlspecialchars($_SESSION["username"]);
+                    }?>
+                    !
+                    </h1>
                 <p>Web Development @ SHS is pretty lit! You will learn all about how to make a website.</p>
                 <p><a class="btn btn-primary btn-lg" href="https://www.shakopee.k12.mn.us/Page/8605" target="_blank" role="button">Learn more »</a></p>
             </div>
@@ -103,12 +119,12 @@ if(isset($_SESSION["loggedin"]) === false){
             <div class="row">
                 <div class="col-md-4">
                     <h2>HTML</h2>
-                    <p>You will learn the basic HTML that will give you an idea of how a webpage is put together.  Syntax and how we add HTML elements to make up a page will be our jumping off point.</p>
+                    <p>You will learn the basic HTML that will give you an idea of how a webpage is put together. Syntax and how we add HTML elements to make up a page will be our jumping off point.</p>
                     <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
                 </div>
                 <div class="col-md-4">
                     <h2>Bootstrap Styling</h2>
-                    <p>How to make a website that is not only appealing, but can adapt to any device you decide to view it on.  You will learn how to use the Bootstrap library to make your website look awesome!</p>
+                    <p>How to make a website that is not only appealing, but can adapt to any device you decide to view it on. You will learn how to use the Bootstrap library to make your website look awesome!</p>
                     <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
                 </div>
                 <div class="col-md-4">
