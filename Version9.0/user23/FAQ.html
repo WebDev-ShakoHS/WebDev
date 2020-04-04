@@ -1,0 +1,80 @@
+<html lang="en">
+    <!--Version 9.0 
+	Name:
+	Date Completed:
+    -->
+    <head>
+        <link rel="stylesheet" href="CSS/SampleCSS9.css">
+        <title>Web Development User #23</title>
+         
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+  
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        body {
+            font: "Verdana", sans-serif;
+        }
+
+
+        </style>
+       <link rel="shortcut icon" type="image.png" href="images/FAQ.png">
+    
+    </head>
+    
+    <body>
+        
+           <div class="topnav">
+       <a href="welcome.php">Home</a>
+       <a href="index.html">Jodhpur</a>
+       <a href="city2.html">Jaipur</a>
+       <a href="city3.html">Udaipur</a>
+       <a href="city4.html">Jaisalmer</a>
+       <a class= "active" href="FAQ.html">FAQ</a>
+        
+        </div>
+        
+      
+
+          <dl>
+        <dt>Which city has the most tourists?</dt>
+        <dd>Jaipur</dd>
+        <dt>What are other cities in Rajasthan?</dt>
+        <dd>Bikaner, Ajmer, Pushkar, Kota</dd>
+        <dt>What is the weather like in Rajasthan?</dt>
+        <dd>Winter - around 10 degress celsius/ Summer - 32 degress celsius</dd>
+        <dt>When is the best time to visit Rajasthan?</dt>
+        <dd>Between the months of November and February</dd>
+        <dt>How long is the flight to Rajasthan?</dt>
+        <dd>From NY 21 hours 6 minutes+</dd>
+    </dl>
+     
+
+
+    <script>
+        (function() {
+
+            $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+            $('dl').on('mouseenter', 'dt', function() {
+                $(this)
+                    .next()
+                    .slideDown(200)
+                    .siblings('dd')
+                    .slideUp(200);
+            });
+        })();
+
+    </script>
+        
+       
+    </body>
+    
+     <footer> Created by: Sahithi Ravva</footer>
+</html>
