@@ -1,0 +1,121 @@
+@import url(main.css);
+@import url(main2cols.css);
+
+#scripttitle{
+font-size: 110%;
+font-weight: bold;
+text-align: center;
+}
+
+.footad a{
+text-decoration: none;
+font: normal 11px Verdana;
+}
+
+pre, .codehighlight{
+background-color: #E9E9E9;
+padding: 5px;
+width: 95%;
+border: 1px dashed gray;
+}
+
+.codehighlight{
+font-family: Arial;
+font-size: 13px;
+}
+
+code{
+background-color: #EFEFEF;
+font-size: 13px;
+}
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+}
+
+
+.maincontainer{
+background: none;
+}
+
+#leftcolumn{
+background: transparent;
+float:left;
+width: 170px; /*Width of left column*/
+margin-left: -100%;
+display: none;
+}
+
+#middlecolumn{
+background-color: transparent;
+margin: 0 170px 0 0; /*0 rightcolumn 0 leftcolumn*/
+padding-left: 12px;
+padding-right: 10px;
+padding-bottom: 1em;
+}
+
+textarea[rows]{
+background: lightyellow;
+border: 1px solid gray;
+height: 180px;
+}
+
+#middlecolumn .dualcolumns{
+width: 50%;
+min-width: 350px;
+float: left;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 10px;
+}
+
+#middlecolumn .dualcolumns > div{
+overflow: hidden;
+margin-bottom: 10px;
+}
+
+#middlecolumn .dualcolumns i.fa{
+font-size: 48px;
+float: left;
+margin-right: 15px;
+height: 100px;
+}
+
+#rightcolumn{
+background-color: transparent;
+float: left;
+display: block;
+width: 165px; /*Width of right column*/
+padding-right: 5px;
+margin-left: -170px; /*Set left margin to -(RightColumnWidth + any padding)*/
+}
+
+
+/*** Mobile specific CSS ***/
+
+
+
+@media screen and (max-width:750px){
+
+	.maincontainer{
+	background: none !important;
+	}
+	
+	#middlecolumn{
+	margin:0 !important;
+	}
+	
+	#leftcolumn, #rightcolumn{
+	display:none !important;
+	}
+
+}
+
+@media screen and (max-width:600px){
+
+#rightboxad, #topbanner{
+display: none;
+}
+
+}
