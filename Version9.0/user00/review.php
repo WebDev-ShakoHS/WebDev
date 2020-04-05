@@ -32,10 +32,10 @@ if(isset($_SESSION["loggedin"]) === false){
     <script src="JS/standard.js"></script>
 
     <!-- Latest compiled and minified CSS -->
+     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://time4areview.com/clashofclanshack/src/bootstrap.superhero.css">
-
+   <link rel="stylesheet" href="https://time4areview.com/clashofclanshack/src/bootstrap.superhero.css">
     <!-- Custom styles for this template -->
     <style type="text/css">
         .menu {
@@ -70,7 +70,7 @@ if(isset($_SESSION["loggedin"]) === false){
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="index.php" class="nav-item nav-link ">Home</a>
+                    <a href="index.php" class="nav-item nav-link">Home</a>
                     <a href="about.php" class="nav-item nav-link">About Me</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
@@ -82,8 +82,11 @@ if(isset($_SESSION["loggedin"]) === false){
                 </div>
                 <div class="navbar-nav ml-auto">
                     <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-                    echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
-                    } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
+                        echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+                        } 
+                        else{ 
+                            echo "<a href='login.php' class='nav-item nav-link'> Login </a>";
+                        } ?>
                 </div>
             </div>
         </nav>
