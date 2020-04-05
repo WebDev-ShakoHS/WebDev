@@ -106,7 +106,7 @@ else {
 
     <h1>eBay Search Results for <?php echo $query; ?></h1>
 
-    <table>
+    <table border="1px" border-spacing="2px">
         <tr>
             <td>
                 <?php echo $results;?>

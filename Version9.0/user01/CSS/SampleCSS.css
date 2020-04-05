@@ -1,33 +1,117 @@
 body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-	font-size: 1.3em;
-	text-align: center;
+.navbar {
+  overflow: hidden;
 }
 
-h2{
-        font-size: 1.1em;
+.navbar a {
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+.dropdownn {
+  float: right;
+  overflow: hidden;
 }
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdownn .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+
+.navbar a:hover, .dropdownn:hover .dropbtn {
+  background-color: #ddd;
+}
+
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdownn-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdownn-content a {
+  float: none;
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: match-parent;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdownn-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: table-header-group;
+}
+
+.dropdownn:hover .dropdownn-content {
+  display: block;
+}
+
+.light {
+    background: white;
+    color: black;
+}
+.dark {
+    background: black;
+    color: white;
 }
