@@ -15,6 +15,8 @@
 
     <meta name="description" content="SHS WebDev Menu Sample">
 
+    <link rel="stylesheet" href="css/style.css">
+
     <link rel="icon" type="image/png" href="./images/favicon.ico">
 
     <title>Web Dev User 25</title>
@@ -46,6 +48,8 @@
             font-size: 12px;
             text-align: center;
         }
+
+       
 
     </style>
 
@@ -91,19 +95,39 @@
 
     <div class="wideMargin" id="content">
 
-        <h1 class="text-center my-3">Home</h1>
+        <h1 class="text-center my-3">Lists</h1>
+        <div class="wideMargin" id="content">
+            <p class="text-center">This is a list of my top 5 favorite games that I like to play during my free time.</p>
+            <dl>
+                <dt>5th Place</dt>
+                <dd class="text-center">Rainbow 6 Siege</dd>
+                <dt>4th Place</dt>
+                <dd class="text-center">Terraria</dd>
+                <dt>3rd Place</dt>
+                <dd class="text-center">Team Fortress 2</dd>
+                <dt>2nd Place</dt>
+                <dd class="text-center">Subnautica</dd>
+                <dt>1st Place</dt>
+                <dd class="text-center">Stellaris</dd>
+            </dl>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-        <p class="text-center">
-            Hello and welcome to my Web Dev Website. My user number is #25 but you can just refer to me as Dom.
-        </p>
+            <script>
+                (function() {
 
-    </div>
+                    $('dd').filter(':nth-child(n+4)').addClass('hide');
 
+                    $('dl').on('mouseenter', 'dt', function() {
+                        $(this)
+                            .next()
+                            .slideDown(200)
+                            .siblings('dd')
+                            .slideUp(200);
+                    });
+                })();
 
-    <div class="wideMargin" id="content">
-        <p class="text-center">
-            If you want to know more about me, click the 'About me' button on the tab above. There are also lists about things that I like in particular, and along with my contact if you'd like to contact me.
-        </p>
+            </script>
+        </div>
     </div>
 
     <div class="wideMargin" id="footer">
@@ -112,9 +136,9 @@
 
             Webpage made by <a href="index.html" target="_blank">Dominik Rettinger</a>
         </p>
-        
-    </div>
 
+    </div>
+    </div>
 </body>
 
 </html>
