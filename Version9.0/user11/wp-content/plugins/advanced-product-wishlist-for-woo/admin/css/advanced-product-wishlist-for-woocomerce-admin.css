@@ -1,0 +1,136 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ 
+ .apsw_settings_wrap{
+	display:block;	
+}
+.apsw_settings_wrap form{
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	background: #fff;
+	margin-bottom: 30px;	
+}
+
+.apsw_settings_wrap form h2 {
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    padding: 12px 15px;
+    font-weight: 600;
+	margin:0px;
+}
+.apsw_settings_wrap form table th,.apsw_settings_wrap form table td {
+	padding: 15px;
+	font-size: 13px;
+	line-height: 1.5;
+}
+.apsw_settings_wrap .apsw-btn-wrap{
+	background:#F1F1F1;	
+	padding-left: 10px;
+}
+.apsw_settings_wrap .apsw-btn-wrap p.submit{
+	margin:0px;
+	padding:15px;
+}
+.apsw_settings_wrap
+
+.apsw_settings_wrap input[type="text"], .apsw_settings_wrap input[type="password"], .apsw_settings_wrap input[type="checkbox"], .apsw_settings_wrap input[type="color"], .apsw_settings_wrap input[type="date"], .apsw_settings_wrap input[type="datetime"],.apsw_settings_wrap input[type="datetime-local"], .apsw_settings_wrap input[type="email"], .apsw_settings_wrap input[type="month"], .apsw_settings_wrap input[type="number"], .apsw_settings_wrap input[type="search"], .apsw_settings_wrap input[type="radio"],.apsw_settings_wrap  input[type="tel"], .apsw_settings_wrap input[type="text"], .apsw_settings_wrap input[type="time"],.apsw_settings_wrap input[type="url"], .apsw_settings_wrap input[type="week"],  .apsw_settings_wrap select, .apsw_settings_wrap textarea {
+	
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+	background-color: #fff;
+	color: #32373c;
+	outline: none;
+	transition: 0.05s border-color ease-in-out;
+	padding:4px 10px;
+
+}
+.apw-sortable-wrap li{
+	padding:0px 5px;
+}
+.apw-sortable-wrap li.ui-sortable-placeholder{
+	background:#F0F0F0!important;
+	border:1px dashed #D4D4D4;
+	visibility:visible!important;
+}
+
+
+
+
+tr.html td,
+tr.html th,
+tr.localization td,
+tr.localization th,
+tr.apww_table th,
+tr.apww_table td,
+tr.apww_archive_html th,
+tr.apww_archive_html td,
+tr.apww_modal_html th,
+tr.apww_modal_html td
+{
+    color: #3c763d;
+    border-color: #d6e9c6;
+    background-color: #dff0d8;
+	font-weight:bold;
+
+}
+
+.apww-group{
+	visibility:hidden;
+	opacity:0;	
+}
+.apww-group .apww_active_group{
+	visibility:visible;
+	opacity:1;
+}
+.ata-rss-widgets ul{
+	margin-bottom:20px;	
+}
+
+.apww-wishlist-pro {
+    background-color: #2d789a;
+    color: #fff;
+    border-radius: 6px;
+    padding: 20px 20px;
+	max-width:800px;
+	display:block;
+	margin:30px auto;
+}
+.apww-wishlist-pro p {
+    margin: 7px 0;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+	max-width:60%;
+}
+.apww-wishlist-pro .highlight {
+    text-transform: uppercase;
+    background: none;
+    font-weight: 800;
+    color: #fff;
+}
+.apww-wishlist-pro a.button {
+    border-radius: 6px;
+    height: 60px;
+    float: right;
+    background: url(upgrade.png) #971d00 no-repeat 13px 13px;
+    border-color: #971d00;
+    box-shadow: none;
+    outline: none;
+    color: #fff;
+    position: relative;
+    padding: 9px 50px 9px 70px;
+	float:right;
+}
+.apww-wishlist-pro a.button .highlight {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.apww-wishlist-pro a.button:hover, .apww-wishlist-pro a.button:active, .apww-wishlist-pro a.button:focus {
+    color: #fff;
+    border-color: #ff643f;
+	background: url(upgrade.png) #ff643f no-repeat 13px 13px;
+    box-shadow: none;
+}

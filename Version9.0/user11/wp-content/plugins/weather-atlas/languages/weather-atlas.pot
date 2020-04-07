@@ -1,0 +1,1963 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Weather Atlas Widget\n"
+"POT-Creation-Date: 2019-07-16 16:13+0200\n"
+"PO-Revision-Date: 2019-07-16 16:12+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: weather-atlas.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-weather-atlas-admin.php:77 includes/class-weather-atlas.php:588
+msgid "Upgrade to Premium version"
+msgstr ""
+
+#: admin/class-weather-atlas-admin.php:81
+msgid "Support"
+msgstr ""
+
+#: admin/class-weather-atlas-admin.php:82
+msgid "Reviews"
+msgstr ""
+
+#: includes/class-weather-atlas.php:64
+msgid "Display current conditions and weather forecast on your website."
+msgstr ""
+
+#: includes/class-weather-atlas.php:231 includes/class-weather-atlas.php:902
+msgid "Location"
+msgstr ""
+
+#: includes/class-weather-atlas.php:236
+msgid "City"
+msgstr ""
+
+#: includes/class-weather-atlas.php:240 includes/class-weather-atlas.php:894
+msgid "type and select location from drop-down"
+msgstr ""
+
+#: includes/class-weather-atlas.php:249
+msgid "shortcode - all options"
+msgstr ""
+
+#: includes/class-weather-atlas.php:256
+msgid "required"
+msgstr ""
+
+#: includes/class-weather-atlas.php:261 includes/class-weather-atlas.php:268
+#: includes/class-weather-atlas.php:275 includes/class-weather-atlas.php:282
+#: includes/class-weather-atlas.php:289 includes/class-weather-atlas.php:296
+#: includes/class-weather-atlas.php:303 includes/class-weather-atlas.php:310
+#: includes/class-weather-atlas.php:317 includes/class-weather-atlas.php:324
+#: includes/class-weather-atlas.php:331 includes/class-weather-atlas.php:338
+#: includes/class-weather-atlas.php:345
+msgid "default"
+msgstr ""
+
+#: includes/class-weather-atlas.php:263 includes/class-weather-atlas.php:270
+#: includes/class-weather-atlas.php:277 includes/class-weather-atlas.php:284
+#: includes/class-weather-atlas.php:291 includes/class-weather-atlas.php:298
+#: includes/class-weather-atlas.php:305 includes/class-weather-atlas.php:312
+#: includes/class-weather-atlas.php:319 includes/class-weather-atlas.php:326
+#: includes/class-weather-atlas.php:333 includes/class-weather-atlas.php:340
+#: includes/class-weather-atlas.php:347
+msgid "options"
+msgstr ""
+
+#: includes/class-weather-atlas.php:351
+msgid "Example:"
+msgstr ""
+
+#: includes/class-weather-atlas.php:355
+msgid "(excluded options load default values)"
+msgstr ""
+
+#: includes/class-weather-atlas.php:359
+msgid "Settings"
+msgstr ""
+
+#: includes/class-weather-atlas.php:364
+msgid "Units"
+msgstr ""
+
+#: includes/class-weather-atlas.php:373
+msgid "Language"
+msgstr ""
+
+#: includes/class-weather-atlas.php:376
+msgid ""
+"The widget's language is automatically chosen based on your Settings / "
+"General / Site Language settings."
+msgstr ""
+
+#: includes/class-weather-atlas.php:378
+msgid "If a local translation does not exist, fallback language is English."
+msgstr ""
+
+#: includes/class-weather-atlas.php:380
+msgid "How to translate the widget to my language?"
+msgstr ""
+
+#: includes/class-weather-atlas.php:386
+msgid "Appearance"
+msgstr ""
+
+#: includes/class-weather-atlas.php:391
+msgid "Layout"
+msgstr ""
+
+#: includes/class-weather-atlas.php:398
+msgid "vertical layout - recommended for placement in sidebar"
+msgstr ""
+
+#: includes/class-weather-atlas.php:400
+msgid "horizontal layout - recommended for placement in articles"
+msgstr ""
+
+#: includes/class-weather-atlas.php:406
+msgid "Font size"
+msgstr ""
+
+#: includes/class-weather-atlas.php:407 includes/class-weather-atlas.php:420
+#: includes/class-weather-atlas.php:434 includes/class-weather-atlas.php:452
+#: includes/class-weather-atlas.php:463
+msgid "(optional)"
+msgstr ""
+
+#: includes/class-weather-atlas.php:411
+msgid "leave blank - widget's font size adjusts to web site's font size"
+msgstr ""
+
+#: includes/class-weather-atlas.php:413
+#, php-format
+msgid "16px or 12pt or 1.2em or 1rem or 90% etc. - specify widget's font size"
+msgstr ""
+
+#: includes/class-weather-atlas.php:419
+msgid "Background Color"
+msgstr ""
+
+#: includes/class-weather-atlas.php:425
+msgid "leave blank - widget's background adapt to current temperature"
+msgstr ""
+
+#: includes/class-weather-atlas.php:427
+msgid "choose color and transparency - background color is fixed"
+msgstr ""
+
+#: includes/class-weather-atlas.php:433
+msgid "Text Color"
+msgstr ""
+
+#: includes/class-weather-atlas.php:439
+msgid "leave blank - widget's font color adapt to current temperature"
+msgstr ""
+
+#: includes/class-weather-atlas.php:441
+msgid "choose color - font color is fixed"
+msgstr ""
+
+#: includes/class-weather-atlas.php:446
+msgid "Display"
+msgstr ""
+
+#: includes/class-weather-atlas.php:451
+msgid "Heading"
+msgstr ""
+
+#: includes/class-weather-atlas.php:456
+msgid "leave blank - no heading above widget"
+msgstr ""
+
+#: includes/class-weather-atlas.php:462
+msgid "Header"
+msgstr ""
+
+#: includes/class-weather-atlas.php:467
+msgid "leave blank - City name is in widget's header"
+msgstr ""
+
+#: includes/class-weather-atlas.php:472
+msgid "Current conditions"
+msgstr ""
+
+#: includes/class-weather-atlas.php:483
+msgid "Show: sunrise / sunset time"
+msgstr ""
+
+#: includes/class-weather-atlas.php:495
+msgid "Show: feels like / wind / humidity / pressure / uv index"
+msgstr ""
+
+#: includes/class-weather-atlas.php:499
+msgid "(on mobile devices current condition details are hidden)"
+msgstr ""
+
+#: includes/class-weather-atlas.php:504
+msgid "Hourly forecast"
+msgstr ""
+
+#: includes/class-weather-atlas.php:512
+msgid "hide hourly forecast"
+msgstr ""
+
+#: includes/class-weather-atlas.php:513
+msgid "hour"
+msgstr ""
+
+#: includes/class-weather-atlas.php:514 includes/class-weather-atlas.php:515
+#: includes/class-weather-atlas.php:516 includes/class-weather-atlas.php:517
+msgid "hours"
+msgstr ""
+
+#: includes/class-weather-atlas.php:521 includes/class-weather-atlas.php:548
+msgid "vertical layout recommended"
+msgstr ""
+
+#: includes/class-weather-atlas.php:524 includes/class-weather-atlas.php:551
+msgid "horizontal layout recommended"
+msgstr ""
+
+#: includes/class-weather-atlas.php:526
+msgid "(on mobile devices more then 3 hours are hidden)"
+msgstr ""
+
+#: includes/class-weather-atlas.php:531
+msgid "Daily forecast"
+msgstr ""
+
+#: includes/class-weather-atlas.php:539
+msgid "hide daily forecast"
+msgstr ""
+
+#: includes/class-weather-atlas.php:540
+msgid "day"
+msgstr ""
+
+#: includes/class-weather-atlas.php:541 includes/class-weather-atlas.php:542
+#: includes/class-weather-atlas.php:543 includes/class-weather-atlas.php:544
+msgid "days"
+msgstr ""
+
+#: includes/class-weather-atlas.php:553
+msgid "(on mobile devices more then 3 days are hidden)"
+msgstr ""
+
+#: includes/class-weather-atlas.php:558 includes/class-weather-atlas.php:569
+#: includes/class-weather-atlas.php:1161
+msgid "Detailed forecast"
+msgstr ""
+
+#: includes/class-weather-atlas.php:573
+msgid "checked"
+msgstr ""
+
+#: includes/class-weather-atlas.php:575
+msgid "recommended"
+msgstr ""
+
+#: includes/class-weather-atlas.php:577
+msgid ""
+"removes \"<i>Weather from Weather Atlas</i>\" & places link \"<i>Detailed "
+"forecast</i>\" for choosen location"
+msgstr ""
+
+#: includes/class-weather-atlas.php:579
+msgid "unchecked"
+msgstr ""
+
+#: includes/class-weather-atlas.php:581
+msgid "shows \"<i>Weather from Weather Atlas</i>\" at the bottom of the widget"
+msgstr ""
+
+#: includes/class-weather-atlas.php:948
+msgid "Feels like"
+msgstr ""
+
+#: includes/class-weather-atlas.php:953
+msgid "Wind"
+msgstr ""
+
+#: includes/class-weather-atlas.php:968
+msgid "Humidity"
+msgstr ""
+
+#: includes/class-weather-atlas.php:973
+msgid "Pressure"
+msgstr ""
+
+#: includes/class-weather-atlas.php:978
+msgid "UV index"
+msgstr ""
+
+#: includes/class-weather-atlas.php:1005 languages/language_conditions.en.php:3
+msgid "h"
+msgstr ""
+
+#: includes/class-weather-atlas.php:1148
+msgid "Weather forecast"
+msgstr ""
+
+#: languages/language_conditions.en.php:5
+msgid "Mon"
+msgstr ""
+
+#: languages/language_conditions.en.php:6
+msgid "Tue"
+msgstr ""
+
+#: languages/language_conditions.en.php:7
+msgid "Wed"
+msgstr ""
+
+#: languages/language_conditions.en.php:8
+msgid "Thu"
+msgstr ""
+
+#: languages/language_conditions.en.php:9
+msgid "Fri"
+msgstr ""
+
+#: languages/language_conditions.en.php:10
+msgid "Sat"
+msgstr ""
+
+#: languages/language_conditions.en.php:11
+msgid "Sun"
+msgstr ""
+
+#: languages/language_conditions.en.php:13
+msgid "AM Clouds / PM Sun"
+msgstr ""
+
+#: languages/language_conditions.en.php:14
+msgid "AM Clouds / PM Sun / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:15
+msgid "AM Drizzle"
+msgstr ""
+
+#: languages/language_conditions.en.php:16
+msgid "AM Drizzle / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:17
+msgid "AM Fog / PM Clouds"
+msgstr ""
+
+#: languages/language_conditions.en.php:18
+msgid "AM Fog / PM Clouds / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:19
+msgid "AM Fog / PM Sun"
+msgstr ""
+
+#: languages/language_conditions.en.php:20
+msgid "AM Fog / PM Sun / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:21
+msgid "AM Ice"
+msgstr ""
+
+#: languages/language_conditions.en.php:22
+msgid "AM Ice / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:23
+msgid "AM Light Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:24
+msgid "AM Light Rain / Ice"
+msgstr ""
+
+#: languages/language_conditions.en.php:25
+msgid "AM Light Rain / Ice / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:26
+msgid "AM Light Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:27
+msgid "AM Light Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:28
+msgid "AM Light Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:29
+msgid "AM Light Wintry Mix"
+msgstr ""
+
+#: languages/language_conditions.en.php:30
+msgid "AM Light Wintry Mix / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:31
+msgid "AM Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:32
+msgid "AM Rain / Ice"
+msgstr ""
+
+#: languages/language_conditions.en.php:33
+msgid "AM Rain / Ice / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:34
+msgid "AM Rain / Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:35
+msgid "AM Rain / Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:36
+msgid "AM Rain / Snow Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:37
+msgid "AM Rain / Snow Showers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:38
+msgid "AM Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:39
+msgid "AM Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:40
+msgid "AM Showers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:41
+msgid "AM Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:42
+msgid "AM Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:43
+msgid "AM Snow Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:44
+msgid "AM Snow Showers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:45
+msgid "AM Thundershowers"
+msgstr ""
+
+#: languages/language_conditions.en.php:46
+msgid "AM Thunderstorms"
+msgstr ""
+
+#: languages/language_conditions.en.php:47
+msgid "AM Thunderstorms / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:48
+msgid "AM Wintry Mix"
+msgstr ""
+
+#: languages/language_conditions.en.php:49
+msgid "AM Wintry Mix / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:50
+msgid "Blizzard"
+msgstr ""
+
+#: languages/language_conditions.en.php:51
+msgid "Blowing Dust"
+msgstr ""
+
+#: languages/language_conditions.en.php:52
+msgid "Blowing Dust / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:53
+msgid "Blowing Sand"
+msgstr ""
+
+#: languages/language_conditions.en.php:54
+msgid "Blowing Sand / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:55
+msgid "Blowing Sand Nearby"
+msgstr ""
+
+#: languages/language_conditions.en.php:56
+msgid "Blowing Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:57
+msgid "Blowing Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:58
+msgid "Blowing Snow Nearby"
+msgstr ""
+
+#: languages/language_conditions.en.php:59
+msgid "Blowing Snow Nearby / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:60
+msgid "Blowing Spray / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:61
+msgid "Chance of a Thunderstorm"
+msgstr ""
+
+#: languages/language_conditions.en.php:62
+msgid "Chance of Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:63
+msgid "Chance of Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:64
+msgid "Clear"
+msgstr ""
+
+#: languages/language_conditions.en.php:65
+msgid "Clear / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:66
+msgid "Clouds Early / Clearing Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:67
+msgid "Cloudy"
+msgstr ""
+
+#: languages/language_conditions.en.php:68
+msgid "Cloudy Early / Clearing Late / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:69
+msgid "Cloudy / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:70
+msgid "Drifting Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:71
+msgid "Drifting Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:72
+msgid "Drizzle"
+msgstr ""
+
+#: languages/language_conditions.en.php:73
+msgid "Drizzle and Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:74
+msgid "Drizzle and Fog / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:75
+msgid "Drizzle Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:76
+msgid "Drizzle Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:77
+msgid "Drizzle / Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:78
+msgid "Drizzle / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:79
+msgid "Drizzle / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:80
+msgid "Drizzle / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:81
+msgid "Duststorm"
+msgstr ""
+
+#: languages/language_conditions.en.php:82
+msgid "Duststorm in the Vicinity"
+msgstr ""
+
+#: languages/language_conditions.en.php:83
+msgid "Duststorm / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:84
+msgid "Fair"
+msgstr ""
+
+#: languages/language_conditions.en.php:85
+msgid "Fair / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:86
+msgid "Few Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:87
+msgid "Few Showers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:88
+msgid "Few Snow Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:89
+msgid "Few Snow Showers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:90
+msgid "Flurries"
+msgstr ""
+
+#: languages/language_conditions.en.php:91
+msgid "Flurries / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:92
+msgid "Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:93
+msgid "Fog Early / Clearing Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:94
+msgid "Fog Early / Clearing Late / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:95
+msgid "Fog Early / Clouds Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:96
+msgid "Fog Early / Clouds Late / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:97
+msgid "Fog Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:98
+msgid "Fog / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:99
+msgid "Fog / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:100
+msgid "Foggy"
+msgstr ""
+
+#: languages/language_conditions.en.php:101
+msgid "Foggy / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:102
+msgid "Freezing Drizzle"
+msgstr ""
+
+#: languages/language_conditions.en.php:103
+msgid "Freezing Drizzle / Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:104
+msgid "Freezing Drizzle / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:105
+msgid "Freezing Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:106
+msgid "Freezing Rain / Sleet"
+msgstr ""
+
+#: languages/language_conditions.en.php:107
+msgid "Freezing Rain / Sleet / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:108
+msgid "Freezing Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:109
+msgid "Funnel Cloud"
+msgstr ""
+
+#: languages/language_conditions.en.php:110
+msgid "Hail"
+msgstr ""
+
+#: languages/language_conditions.en.php:111
+msgid "Hail / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:112
+msgid "Haze"
+msgstr ""
+
+#: languages/language_conditions.en.php:113
+msgid "Haze / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:114
+msgid "Heavy Drizzle"
+msgstr ""
+
+#: languages/language_conditions.en.php:115
+msgid "Heavy Drizzle / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:116
+msgid "Heavy Duststorm"
+msgstr ""
+
+#: languages/language_conditions.en.php:117
+msgid "Heavy Duststorm / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:118
+msgid "Heavy Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:119
+msgid "Heavy Freezing Drizzle"
+msgstr ""
+
+#: languages/language_conditions.en.php:120
+msgid "Heavy Freezing Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:121
+msgid "Heavy Freezing Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:122
+msgid "Heavy Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:123
+msgid "Heavy Rain / Freezing Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:124
+msgid "Heavy Rain / Freezing Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:125
+msgid "Heavy Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:126
+msgid "Heavy Rain Shower"
+msgstr ""
+
+#: languages/language_conditions.en.php:127
+msgid "Heavy Rain Shower / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:128
+msgid "Heavy Rain Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:129
+msgid "Heavy Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:130
+msgid "Heavy Snow Grains"
+msgstr ""
+
+#: languages/language_conditions.en.php:131
+msgid "Heavy Snow Grains / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:132
+msgid "Heavy Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:133
+msgid "Heavy Snow Shower"
+msgstr ""
+
+#: languages/language_conditions.en.php:134
+msgid "Heavy Snow Shower / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:135
+msgid "Heavy Snow Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:136
+msgid "Heavy Snow with Thunder"
+msgstr ""
+
+#: languages/language_conditions.en.php:137
+msgid "Heavy Thunderstorm"
+msgstr ""
+
+#: languages/language_conditions.en.php:138
+msgid "Heavy Thunderstorm / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:139
+msgid "Heavy Thunderstorms"
+msgstr ""
+
+#: languages/language_conditions.en.php:140
+msgid "Heavy Thunderstorms and Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:141
+msgid "Heavy Thunderstorms / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:142
+msgid "Heavy Thunderstorms with Hail"
+msgstr ""
+
+#: languages/language_conditions.en.php:143
+msgid "Ice Crystals"
+msgstr ""
+
+#: languages/language_conditions.en.php:144
+msgid "Ice Crystals / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:145
+msgid "Ice Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:146
+msgid "Ice Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:147
+msgid "Ice / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:148
+msgid "Ice / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:149
+msgid "Ice Pellets"
+msgstr ""
+
+#: languages/language_conditions.en.php:150
+msgid "Ice to Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:151
+msgid "Ice to Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:152
+msgid "Ice to Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:153
+msgid "Ice to Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:154
+msgid "Isolated Thunderstorms"
+msgstr ""
+
+#: languages/language_conditions.en.php:155
+msgid "Isolated Thunderstorms / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:156
+msgid "Light Drizzle"
+msgstr ""
+
+#: languages/language_conditions.en.php:157
+msgid "Light Drizzle / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:158
+msgid "Light Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:159
+msgid "Light Freezing Drizzle"
+msgstr ""
+
+#: languages/language_conditions.en.php:160
+msgid "Light Freezing Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:161
+msgid "Light Freezing Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:162
+msgid "Light Freezing Rain / Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:163
+msgid "Light Freezing Rain / Sleet"
+msgstr ""
+
+#: languages/language_conditions.en.php:164
+msgid "Light Freezing Rain / Sleet / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:165
+msgid "Light Freezing Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:166
+msgid "Light Haze"
+msgstr ""
+
+#: languages/language_conditions.en.php:167
+msgid "Light Mist"
+msgstr ""
+
+#: languages/language_conditions.en.php:168
+msgid "Light Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:169
+msgid "Light Rain Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:170
+msgid "Light Rain Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:171
+msgid "Light Rain / Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:172
+msgid "Light Rain / Freezing Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:173
+msgid "Light Rain / Freezing Rain / Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:174
+msgid "Light Rain / Freezing Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:175
+msgid "Light Rain / Ice Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:176
+msgid "Light Rain / Ice Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:177
+msgid "Light Rain / Ice / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:178
+msgid "Light Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:179
+msgid "Light Rain / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:180
+msgid "Light Rain / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:181
+msgid "Light Rain Shower"
+msgstr ""
+
+#: languages/language_conditions.en.php:182
+msgid "Light Rain Shower / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:183
+msgid "Light Rain Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:184
+msgid "Light Rain with Thunder"
+msgstr ""
+
+#: languages/language_conditions.en.php:185
+msgid "Light Sleet"
+msgstr ""
+
+#: languages/language_conditions.en.php:186
+msgid "Light Sleet / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:187
+msgid "Light Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:188
+msgid "Light Snow and Sleet"
+msgstr ""
+
+#: languages/language_conditions.en.php:189
+msgid "Light Snow and Sleet / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:190
+msgid "Light Snow Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:191
+msgid "Light Snow Grains"
+msgstr ""
+
+#: languages/language_conditions.en.php:192
+msgid "Light Snow Grains / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:193
+msgid "Light Snow Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:194
+msgid "Light Snow / Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:195
+msgid "Light Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:196
+msgid "Light Snow / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:197
+msgid "Light Snow / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:198
+msgid "Light Snow Shower"
+msgstr ""
+
+#: languages/language_conditions.en.php:199
+msgid "Light Snow Shower / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:200
+msgid "Light Snow Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:201
+msgid "Light Snow with Thunder"
+msgstr ""
+
+#: languages/language_conditions.en.php:202
+msgid "Light Thunderstorm"
+msgstr ""
+
+#: languages/language_conditions.en.php:203
+msgid "Light Thunderstorms and Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:204
+msgid "Light Thunderstorms and Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:205
+msgid "Light Wintry Mix"
+msgstr ""
+
+#: languages/language_conditions.en.php:206
+msgid "Light Wintry Mix Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:207
+msgid "Light Wintry Mix Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:208
+msgid "Light Wintry Mix / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:209
+msgid "Light Wintry Mix / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:210
+msgid "Light Wintry Mix / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:211
+msgid "Low Drifting Dust"
+msgstr ""
+
+#: languages/language_conditions.en.php:212
+msgid "Low Drifting Dust / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:213
+msgid "Low Drifting Sand"
+msgstr ""
+
+#: languages/language_conditions.en.php:214
+msgid "Low Drifting Sand / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:215
+msgid "Low Drifting Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:216
+msgid "Mist"
+msgstr ""
+
+#: languages/language_conditions.en.php:217
+msgid "Mist / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:218
+msgid "Mostly Clear"
+msgstr ""
+
+#: languages/language_conditions.en.php:219
+msgid "Mostly Clear / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:220
+msgid "Mostly Cloudy"
+msgstr ""
+
+#: languages/language_conditions.en.php:221
+msgid "Mostly Cloudy / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:222
+msgid "Mostly Sunny"
+msgstr ""
+
+#: languages/language_conditions.en.php:223
+msgid "Mostly Sunny / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:224
+#: languages/language_conditions.en.php:225
+msgid "-"
+msgstr ""
+
+#: languages/language_conditions.en.php:226
+msgid "Overcast"
+msgstr ""
+
+#: languages/language_conditions.en.php:227
+msgid "Partial Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:228
+msgid "Partial Fog / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:229
+msgid "Partly Cloudy"
+msgstr ""
+
+#: languages/language_conditions.en.php:230
+msgid "Partly Cloudy / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:231
+msgid "Patches of Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:232
+msgid "Patches of Fog / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:233
+msgid "PM Drizzle"
+msgstr ""
+
+#: languages/language_conditions.en.php:234
+msgid "PM Drizzle / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:235
+msgid "PM Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:236
+msgid "PM Fog / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:237
+msgid "PM Ice"
+msgstr ""
+
+#: languages/language_conditions.en.php:238
+msgid "PM Ice / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:239
+msgid "PM Light Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:240
+msgid "PM Light Rain / Ice"
+msgstr ""
+
+#: languages/language_conditions.en.php:241
+msgid "PM Light Rain / Ice / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:242
+msgid "PM Light Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:243
+msgid "PM Light Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:244
+msgid "PM Light Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:245
+msgid "PM Light Wintry Mix"
+msgstr ""
+
+#: languages/language_conditions.en.php:246
+msgid "PM Light Wintry Mix / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:247
+msgid "PM Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:248
+msgid "PM Rain / Ice"
+msgstr ""
+
+#: languages/language_conditions.en.php:249
+msgid "PM Rain / Ice / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:250
+msgid "PM Rain / Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:251
+msgid "PM Rain / Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:252
+msgid "PM Rain / Snow Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:253
+msgid "PM Rain / Snow Showers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:254
+msgid "PM Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:255
+msgid "PM Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:256
+msgid "PM Showers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:257
+msgid "PM Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:258
+msgid "PM Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:259
+msgid "PM Snow Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:260
+msgid "PM Snow Showers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:261
+msgid "PM Thundershowers"
+msgstr ""
+
+#: languages/language_conditions.en.php:262
+msgid "PM Thundershowers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:263
+msgid "PM Thunderstorms"
+msgstr ""
+
+#: languages/language_conditions.en.php:264
+msgid "PM Thunderstorms / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:265
+msgid "PM Wintry Mix"
+msgstr ""
+
+#: languages/language_conditions.en.php:266
+msgid "PM Wintry Mix / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:267
+msgid "Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:268
+msgid "Rain and Sleet"
+msgstr ""
+
+#: languages/language_conditions.en.php:269
+msgid "Rain and Sleet / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:270
+msgid "Rain and Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:271
+msgid "Rain and Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:272
+msgid "Rain Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:273
+msgid "Rain Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:274
+msgid "Rain / Freezing Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:275
+msgid "Rain / Freezing Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:276
+msgid "Rain / Ice Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:277
+msgid "Rain / Ice Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:278
+msgid "Rain / Ice / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:279
+msgid "Rain / Ice / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:280
+msgid "Rain / Sleet"
+msgstr ""
+
+#: languages/language_conditions.en.php:281
+msgid "Rain / Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:282
+msgid "Rain / Snow Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:283
+msgid "Rain / Snow Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:284
+msgid "Rain / Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:285
+msgid "Rain / Snow / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:286
+msgid "Rain / Snow / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:287
+msgid "Rain / Snow Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:288
+msgid "Rain / Snow Showers Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:289
+msgid "Rain / Snow Showers Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:290
+msgid "Rain / Snow Showers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:291
+msgid "Rain / Snow Showers / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:292
+msgid "Rain / Snow Showers / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:293
+msgid "Rain / Thunder"
+msgstr ""
+
+#: languages/language_conditions.en.php:294
+msgid "Rain / Thunder / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:295
+msgid "Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:296
+msgid "Rain / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:297
+msgid "Rain / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:298
+msgid "Rain / Wind / Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:299
+msgid "Rain Shower"
+msgstr ""
+
+#: languages/language_conditions.en.php:300
+msgid "Rain Shower / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:301
+msgid "Rain Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:302
+msgid "Rain to Ice"
+msgstr ""
+
+#: languages/language_conditions.en.php:303
+msgid "Rain to Ice / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:304
+msgid "Rain to Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:305
+msgid "Rain to Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:306
+msgid "Rain to Wintry Mix"
+msgstr ""
+
+#: languages/language_conditions.en.php:307
+msgid "Rain to Wintry Mix / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:308
+msgid "Sand"
+msgstr ""
+
+#: languages/language_conditions.en.php:309
+msgid "Sand / Dust Whirls Nearby"
+msgstr ""
+
+#: languages/language_conditions.en.php:310
+msgid "Sand / Dust Whirlwinds"
+msgstr ""
+
+#: languages/language_conditions.en.php:311
+msgid "Sand / Dust Whirlwinds / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:312
+msgid "Sand / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:313
+msgid "Sandstorm"
+msgstr ""
+
+#: languages/language_conditions.en.php:314
+msgid "Sandstorm in the Vicinity"
+msgstr ""
+
+#: languages/language_conditions.en.php:315
+msgid "Sandstorm / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:316
+msgid "Scattered Clouds"
+msgstr ""
+
+#: languages/language_conditions.en.php:317
+msgid "Scattered Flurries"
+msgstr ""
+
+#: languages/language_conditions.en.php:318
+msgid "Scattered Snow Showers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:319
+msgid "Scattered Strong Storms"
+msgstr ""
+
+#: languages/language_conditions.en.php:320
+msgid "Scattered Strong Storms / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:321
+msgid "Scattered Thunderstorms"
+msgstr ""
+
+#: languages/language_conditions.en.php:322
+msgid "Scattered Thunderstorms / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:323
+msgid "Shallow Fog"
+msgstr ""
+
+#: languages/language_conditions.en.php:324
+msgid "Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:325
+msgid "Showers Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:326
+msgid "Showers in the Vicinity"
+msgstr ""
+
+#: languages/language_conditions.en.php:327
+msgid "Showers Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:328
+msgid "Showers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:329
+msgid "Showers / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:330
+msgid "Showers / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:331
+msgid "Sleet"
+msgstr ""
+
+#: languages/language_conditions.en.php:332
+msgid "Sleet / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:333
+msgid "Small Hail"
+msgstr ""
+
+#: languages/language_conditions.en.php:334
+msgid "Small Hail / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:335
+msgid "Smoke"
+msgstr ""
+
+#: languages/language_conditions.en.php:336
+msgid "Smoke / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:337
+msgid "Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:338
+msgid "Snow and Sleet"
+msgstr ""
+
+#: languages/language_conditions.en.php:339
+msgid "Snow and Sleet / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:340
+msgid "Snow and Thunder"
+msgstr ""
+
+#: languages/language_conditions.en.php:341
+msgid "Snow and Thunder / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:342
+msgid "Snow Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:343
+msgid "Snow Grains"
+msgstr ""
+
+#: languages/language_conditions.en.php:344
+msgid "Snow Grains / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:345
+msgid "Snow Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:346
+msgid "Snow / Sleet"
+msgstr ""
+
+#: languages/language_conditions.en.php:347
+msgid "Snow / Sleet / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:348
+msgid "Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:349
+msgid "Snow / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:350
+msgid "Snow / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:351
+msgid "Snow Shower"
+msgstr ""
+
+#: languages/language_conditions.en.php:352
+msgid "Snow Shower / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:353
+msgid "Snow Showers"
+msgstr ""
+
+#: languages/language_conditions.en.php:354
+msgid "Snow Showers Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:355
+msgid "Snow Showers Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:356
+msgid "Snow Showers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:357
+msgid "Snow Showers / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:358
+msgid "Snow Showers / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:359
+msgid "Snow Squalls"
+msgstr ""
+
+#: languages/language_conditions.en.php:360
+msgid "Snow to Ice"
+msgstr ""
+
+#: languages/language_conditions.en.php:361
+msgid "Snow to Ice / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:362
+msgid "Snow to Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:363
+msgid "Snow to Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:364
+msgid "Snow to Wintry Mix"
+msgstr ""
+
+#: languages/language_conditions.en.php:365
+msgid "Snow to Wintry Mix / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:366
+msgid "Sprinkles"
+msgstr ""
+
+#: languages/language_conditions.en.php:367
+msgid "Sprinkles / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:368
+msgid "Squalls"
+msgstr ""
+
+#: languages/language_conditions.en.php:369
+msgid "Squalls / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:370
+msgid "Strong Storms"
+msgstr ""
+
+#: languages/language_conditions.en.php:371
+msgid "Strong Storms / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:372
+msgid "Sunny"
+msgstr ""
+
+#: languages/language_conditions.en.php:373
+msgid "Sunny / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:374
+msgid "Thunder"
+msgstr ""
+
+#: languages/language_conditions.en.php:375
+msgid "Thunder and Hail"
+msgstr ""
+
+#: languages/language_conditions.en.php:376
+msgid "Thunder and Hail / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:377
+msgid "Thunder and Small Hail"
+msgstr ""
+
+#: languages/language_conditions.en.php:378
+msgid "Thunder in the Vicinity"
+msgstr ""
+
+#: languages/language_conditions.en.php:379
+msgid "Thunder / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:380
+msgid "Thunder / Wintry Mix"
+msgstr ""
+
+#: languages/language_conditions.en.php:381
+msgid "Thunder / Wintry Mix / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:382
+msgid "Thunder Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:383
+msgid "Thunder Snow / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:384
+msgid "Thundershowers"
+msgstr ""
+
+#: languages/language_conditions.en.php:385
+msgid "Thundershowers Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:386
+msgid "Thundershowers Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:387
+msgid "Thundershowers / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:388
+msgid "Thundershowers / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:389
+msgid "Thunderstorm"
+msgstr ""
+
+#: languages/language_conditions.en.php:390
+msgid "Thunderstorm / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:391
+msgid "Thunderstorms"
+msgstr ""
+
+#: languages/language_conditions.en.php:392
+msgid "Thunderstorms and Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:393
+msgid "Thunderstorms Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:394
+msgid "Thunderstorms Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:395
+msgid "Thunderstorms / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:396
+msgid "Thunderstorms / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:397
+msgid "Thunderstorms / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:398
+msgid "Tornado"
+msgstr ""
+
+#: languages/language_conditions.en.php:399
+msgid "Unknown"
+msgstr ""
+
+#: languages/language_conditions.en.php:400
+msgid "Unknown Precipitation"
+msgstr ""
+
+#: languages/language_conditions.en.php:401
+msgid "Volcanic Ash"
+msgstr ""
+
+#: languages/language_conditions.en.php:402
+msgid "Widespread Dust"
+msgstr ""
+
+#: languages/language_conditions.en.php:403
+msgid "Widespread Dust / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:404
+msgid "Wintry Mix"
+msgstr ""
+
+#: languages/language_conditions.en.php:405
+msgid "Wintry Mix Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:406
+msgid "Wintry Mix Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:407
+msgid "Wintry Mix / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:408
+msgid "Wintry Mix / Wind Early"
+msgstr ""
+
+#: languages/language_conditions.en.php:409
+msgid "Wintry Mix / Wind Late"
+msgstr ""
+
+#: languages/language_conditions.en.php:410
+msgid "Wintry Mix to Rain"
+msgstr ""
+
+#: languages/language_conditions.en.php:411
+msgid "Wintry Mix to Rain / Wind"
+msgstr ""
+
+#: languages/language_conditions.en.php:412
+msgid "Wintry Mix to Snow"
+msgstr ""
+
+#: languages/language_conditions.en.php:413
+msgid "Wintry Mix to Snow / Wind"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Weather Atlas Widget"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/weather-atlas/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Highly customizable, simple & beautiful Weather Widget / Responsive web "
+"design / Detailed current conditions, hourly & long-term weather forecast"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Yu Media Group d.o.o."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.weather-atlas.com"
+msgstr ""
