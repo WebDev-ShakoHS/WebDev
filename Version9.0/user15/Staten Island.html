@@ -1,0 +1,363 @@
+<html lang="en">
+<!--Version 7.0 
+	Name:
+	Date Completed:
+    -->
+
+<head>
+
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Menu Sample">
+     <link href="CSS/SampleCSSV7.css" rel="stylesheet" type="text/css">
+    
+    <meta charset="utf-8">
+    <title>Simple HTML Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    
+    <link rel='icon' href='Bridge.png' type='image/x-icon'/>
+    
+    <script>
+$(document).ready(function(){
+    // Display alert message after hiding paragraphs
+    $(".hide-btn").click(function(){
+        $("p").hide("slow", function(){
+            // Code to be executed
+            alert("The hide effect is completed.");
+        });
+    });
+    
+    // Display alert message after showing paragraphs
+    $(".show-btn").click(function(){
+        $("p").show("slow", function(){
+            // Code to be executed
+            alert("The show effect is completed.");
+        });
+    });
+});
+</script>
+    
+    <script>
+$(document).ready(function(){
+    // Append all paragraphs on document ready
+    $("p").append(' <a href="#"></a>');
+    
+    // Append a div container on button click
+    $("button").click(function(){
+       $("#container").append("Staten Island is also known as the forgotten borough and has the third largets land mass of the 3 boroughs of New York City.");
+    });
+});
+</script>
+    
+    <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+    <!-- Bootstrap core JS -->
+    <!-- These are needed to get the responsive menu to work -->
+    <style>
+    p{
+        padding: 15px;
+        background: #F0E68C;
+    }
+</style>
+    
+    <STYLE TYPE="text/css">
+<!--
+
+BODY{
+overflow-x:hidden;
+}
+
+.s1
+{
+  position  : absolute;
+  font-size : 10pt;
+  color     : blue;
+  visibility: hidden;
+}
+
+.s2
+{
+  position  : absolute;
+  font-size : 18pt;
+  color     : red;
+	visibility : hidden;
+}
+
+.s3
+{
+  position  : absolute;
+  font-size : 14pt;
+  color     : gold;
+	visibility : hidden;
+}
+
+.s4
+{
+  position  : absolute;
+  font-size : 12pt;
+  color     : lime;
+	visibility : hidden;
+}
+
+//-->
+</STYLE>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/SampleJS.js"></script>
+     <link href="CSS/SampleCSSV7.css" rel="stylesheet" type="text/css">
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css3clock.css" />
+    
+    <link rel="stylesheet"
+          href="CSS/SampleCSSV7.css">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+    </style>
+
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    
+    <div id="txt"></div>
+
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.php" class="nav-item nav-link ">Home</a>
+                    <a href="newyork.php" class="nav-item nav-link">New York City</a>
+                    <a href="Bronx.php" class="nav-item nav-link">The Bronx</a>
+                    <a href="Brooklyn.html" class="nav-item nav-link " tabindex="-1">Brooklyn</a>
+                    <a href="Manhattan.html" class="nav-item nav-link " tabindex="-1">Manhattan</a>
+                    <a href="Queens.html" class="nav-item nav-link " tabindex="-1">Queens</a>
+                    <a href="Staten%20Island.html" class="nav-item nav-link active" tabindex="-1">Staten Island</a>
+                    <a href="FAQs.php" class="nav-item nav-link" tabindex="-1">FAQs</a>
+                    <a href="ebayAPI.php" class="nav-item nav-link" tabindex="-1">New York Souvenirs</a>
+            </div>
+        </nav>
+    </div>
+
+
+
+    
+        
+        <div>
+        <center>
+            <h4> Staten Island Clock</h4>
+            <div class="container-fluid">
+            <DIV ID="div1" CLASS="s1">*</DIV>
+<DIV ID="div2" CLASS="s2">*</DIV>
+<DIV ID="div3" CLASS="s3">*</DIV>
+<DIV ID="div4" CLASS="s4">*</DIV>
+
+
+
+<SCRIPT LANGUAGE="javascript" TYPE="text/javascript">
+
+/*
+Script by Mike McGrath- http://website.lineone.net/~mike_mcgrath
+Featured on JavaScript Kit (http://javascriptkit.com)
+For this and over 400+ free scripts, visit http://javascriptkit.com
+*/
+
+//Updated Feb 20th, 08 by JavaScriptKit.com: Script now compatible in IE7/FF 
+
+var standardbody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body //create reference to common "body" across doctypes
+
+var nav = (!document.all || window.opera);
+var tmr = null;
+var spd = 50;
+var x = 0;
+var x_offset = 5;
+var y = 0;
+var y_offset = 15;
+
+document.onmousemove = get_mouse; 
+
+function get_mouse(e)
+{    
+  x = (nav) ? e.pageX : event.clientX+standardbody.scrollLeft;
+  y = (nav) ? e.pageY : event.clientY+standardbody.scrollTop;
+  x += x_offset;
+  y += y_offset;
+  beam(1);     
+}
+
+function beam(n)
+{
+  if(n<5)
+  {
+				document.getElementById('div'+n).style.top=y+'px'
+				document.getElementById('div'+n).style.left=x+'px'
+				document.getElementById('div'+n).style.visibility='visible'
+    n++;
+    tmr=setTimeout("beam("+n+")",spd);
+  }
+  else
+  {
+     clearTimeout(tmr);
+     fade(4);
+  }   
+} 
+
+function fade(n)
+{
+  if(n>0) 
+  {
+				document.getElementById('div'+n).style.visibility='hidden'
+    n--;
+    tmr=setTimeout("fade("+n+")",spd);
+  }
+  else clearTimeout(tmr);
+} 
+
+// -->
+</SCRIPT>
+        </center>
+
+</div>
+        <br>
+
+    <div id="liveclock" class="outer_face" class="col-sm-10">
+
+<div class="marker oneseven"></div>
+<div class="marker twoeight"></div>
+<div class="marker fourten"></div>
+<div class="marker fiveeleven"></div>
+
+<div class="inner_face">
+<div class="hand hour"></div>
+<div class="hand minute"></div>
+<div class="hand second"></div>
+</div>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+/***********************************************
+* CSS3 Analog Clock- by JavaScript Kit (www.javascriptkit.com)
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+***********************************************/
+
+var $hands = $('#liveclock div.hand')
+
+window.requestAnimationFrame = window.requestAnimationFrame
+                               || window.mozRequestAnimationFrame
+                               || window.webkitRequestAnimationFrame
+                               || window.msRequestAnimationFrame
+                               || function(f){setTimeout(f, 60)}
+
+
+function updateclock(){
+	var curdate = new Date()
+	var hour_as_degree = ( curdate.getHours() +1 + curdate.getMinutes()/60 ) / 12 * 360
+	var minute_as_degree = curdate.getMinutes() / 60 * 360
+	var second_as_degree = ( curdate.getSeconds() + curdate.getMilliseconds()/1000 ) /60 * 360
+	$hands.filter('.hour').css({transform: 'rotate(' + hour_as_degree + 'deg)' })
+	$hands.filter('.minute').css({transform: 'rotate(' + minute_as_degree + 'deg)' })
+	$hands.filter('.second').css({transform: 'rotate(' + second_as_degree + 'deg)' })
+	requestAnimationFrame(updateclock)
+}
+
+requestAnimationFrame(updateclock)
+
+
+</script><div>
+
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+/***********************************************
+* CSS3 Analog Clock- by JavaScript Kit (www.javascriptkit.com)
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+***********************************************/
+
+
+
+</script>
+    
+    <button type="button" class="hide-btn">Hide Paragraphs</button> 
+    <button type="button" class="show-btn">Show Paragraphs</button>
+    <p>Staten Island has a population of almost 500,000 people and is off the New York bay</p>
+    
+    
+    <button type="button">Insert Text</button>
+    <div id="container">
+        
+        <p></p>
+    </div>
+    
+
+
+    
+    
+    
+    
+    
+    
+    </body>
+    
+   <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 item">
+                            <h3>Email</h3>
+                            <ul>
+                                <li><a href="#">School email</a></li>
+                                <li><a href="#">Personal email</a></li>
+                            
+                            </ul>
+                        </div>
+                        
+                    
+                        <div class="col-md-6 item text">
+                            <h3>About the Web Designer</h3>
+                            <p>Ajay Inampudi is currently a freshman attending shakopee high school.</p>
+                        </div>
+                        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    </div>
+                   
+                </div>
+            </footer>
+
+</html>
