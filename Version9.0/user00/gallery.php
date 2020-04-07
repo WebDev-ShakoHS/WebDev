@@ -11,7 +11,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $id = $_POST["likeBtn"];
     $username = $_SESSION["username"];
-    $true ="1";     
+    $true ="1";
+    $false ="0";
     $sql = "SELECT * FROM user_likes WHERE photo_id = '".$id."'";
     if($result = mysqli_query($link, $sql)){
             if(mysqli_num_rows($result) == 0){
