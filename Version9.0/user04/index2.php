@@ -1,3 +1,29 @@
+<?php
+$apiKey = "2ed56039ed0f285d29872c4700fcbf3a"; //You will need to add in the 
+$cityId = "5046997"; //5046997 Shakopee City Id
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
+if ($units == 'metric'){//Changes the $temp varaible to match 
+    $temp = "F";
+}
+else {
+    $temp = "F";
+}
+$googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
+
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_VERBOSE, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$response = curl_exec($ch);
+
+curl_close($ch);
+$data = json_decode($response);
+$currentTime = time();
+?>
 
 <html lang="en">
 <!--Version 3.0
@@ -45,6 +71,36 @@
 			text-align: center;
 		}
 
+
+		.report-container {
+			border: #E0E0E0 1px solid;
+			padding: 20px 40px 40px 40px;
+			border-radius: 2px;
+			width: 550px;
+			margin: 0 auto;
+		}
+
+		.weather-icon {
+			vertical-align: middle;
+			margin-right: 20px;
+		}
+
+		.weather-forecast {
+			color: #212121;
+			font-size: 1.2em;
+			font-weight: bold;
+			margin: 20px 0px;
+		}
+
+		span.min-temperature {
+			margin-left: 15px;
+			color: #929292;
+		}
+
+		.time {
+			line-height: 25px;
+		}
+
 	</style>
 </head>
 
@@ -59,16 +115,19 @@
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<div class="navbar-nav">
 					<!---------------------------------- Edit These Items in your Menu ------------->
-					<a href="index.html" class="nav-item nav-link ">Home</a>
+					<a href="index.html" class="nav-item nav-link active">Home</a>
 					<a href="lululemon.html" class="nav-item nav-link">Lululemon</a>
 					<a href="AE.html" class="nav-item nav-link" tabindex="-1">American Eagle</a>
 					<a href="brandymelville.html" class="nav-item nav-link" tabindex="-1">Brandy Melville</a>
 					<a href="urbanoutfitters.html" class="nav-item nav-link" tabindex="-1">Urban Outfitters</a>
 					<a href="nike.html" class="nav-item nav-link" tabindex="-1">Nike</a>
+
 					<!----------------------------------^ Edit These Items in your Menu ^ ------------->
 				</div>
 				<div class="navbar-nav ml-auto">
-				<a href="#" class="nav-item nav-link active">Login</a>
+					<a href="login2.php" class="nav-item nav-link active">Login</a>
+					<a href="register2.php" class="nav-item nav-link active">Register</a>
+					<a href="logout2.php" class="nav-item nav-link active">Logout</a>
 				</div>
 			</div>
 		</nav>
@@ -160,10 +219,30 @@
 				</select>
 			</form>
 
-
-
-
 	</div>
+
+	<div class="report-container">
+		<h2><?php echo $data->name; ?> Weather Status</h2>
+		<div class="time">
+			<div><?php echo date("l g:i a", $currentTime); ?></div>
+			<div><?php echo date("jS F, Y",$currentTime); ?></div>
+			<div><?php echo ucwords($data->weather[0]->description); ?></div>
+		</div>
+		<div class="weather-forecast">
+			<img src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png" class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
+		</div>
+		<div class="time">
+			<div>Humidity: <?php echo $data->main->humidity; ?> %</div>
+			<div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
 	<div class="wideMargin" id="footer">
 		<p>
 

@@ -6,7 +6,7 @@
     -->
 
 <head>
-	<link rel="icon" href="brandy%20melville%20favicon.png" type="image/gif" sizes="16x16">
+	<link rel="icon" href="urban-outfitters%20image%20favicon.jpg" type="image/gif" sizes="16x16">
 </head>
 
 <title>Web Dev User ## </title>
@@ -16,7 +16,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="JS/SampleJS.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -26,34 +25,24 @@
 <style>
 	p {
 		padding: 15px;
-		background: #DFF3F9;
+		background: #EFF9DF;
 	}
 
 </style>
 
 <script>
 	$(document).ready(function() {
-		// Hide displayed paragraphs
-		$(".hide-btn").click(function() {
-			$("p").hide();
-		});
 
-		// Show hidden paragraphs
-		$(".show-btn").click(function() {
-			$("p").show();
+		$(".toggle-btn").click(function() {
+			$("p").toggle(1000, function() {
+				// Code to be executed
+			});
 		});
 	});
 
 </script>
 
-<script>
-	$(document).ready(function() {
-		$("p").click(function() {
-			$(this).hide();
-		});
-	});
 
-</script>
 
 
 <body>
@@ -64,6 +53,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
+
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<div class="navbar-nav">
 					<!---------------------------------- Edit These Items in your Menu ------------->
@@ -71,71 +61,75 @@
 					<a href="lululemon.html" class="nav-item nav-link">Lululemon</a>
 					<a href="AE.html" class="nav-item nav-link" tabindex="-1">American Eagle</a>
 					<a href="brandymelville.html" class="nav-item nav-link" tabindex="-1">Brandy Melville</a>
-					<a href="urbanoutfitters.html" class="nav-item nav-link" tabindex="-1">Urban Outfitters</a>
+					<a href="urbanoutfitters.html" class="nav-item nav-link active" tabindex="-1">Urban Outfitters</a>
 					<a href="nike.html" class="nav-item nav-link" tabindex="-1">Nike</a>
 					<!----------------------------------^ Edit These Items in your Menu ^ ------------->
 				</div>
 				<div class="navbar-nav ml-auto">
-				<a href="#" class="nav-item nav-link active">Login</a>
+				<a href="login2.php" class="nav-item nav-link active">Login</a>
+				<a href="register2.php" class="nav-item nav-link active">Register</a>
+				<a href="logout2.php" class="nav-item nav-link active">Logout</a>
 				</div>
 			</div>
 		</nav>
 	</div>
 
+
 	<div style="align:left;">
 		<div id="images">
-			<img src="brandy%20melville%20image2.png" width="500" alt="brandy melville" align="right">
+			<img src="urban%20outfitters%20image.jpeg" width="600" alt="urban outfitters" align="right">
 		</div>
 	</div>
+
 	<div class="wideMargin" id="content">
-
-
 		<p>
 
-			Hi. Welcome to my Brandy Melville page!!!
+			Hi. Welcome to my Urban Outfitters page!!!
 		</p>
 
 		<div class="wideMargin" id="content">
 
-			<!-jquery2-->
+			<!-jquery 3---->
 
-				<button type="button" class="hide-btn">Hide Paragraphs</button>
-				<button type="button" class="show-btn">Show Paragraphs</button>
-				<p>Brandy Melville is an Italian clothing and fashion accessories brand, marketing their products to teenage girls and young women. The company was established in 1970 in Italy by Silvio Marsan and his son, Stephan Marsan.</p>
 
+				<button type="button" class="toggle-btn">Toggle Paragraphs</button>
+				<p>Urban Outfitters, Inc. is a multinational lifestyle retail corporation headquartered in Philadelphia, Pennsylvania.The Urban Outfitters brand targets young adults with a merchandise mix of women's and men's fashion, as well as music, primarily vinyl records and cassettes. The company was founded as the retail store Free People by Richard Hayne, Judy Wicks, and Scott Belair in 1970 as a project for an entrepreneurship class at University of Pennsylvania. It was renamed to Urban Outfitters and incorporated in 1976.</p>
+
+
+				<div class="container">
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Urban Outfitters Social Media</button>
+					<div id="demo" class="collapse">
+						Instagram: @urbanoutfitters,
+						@uominnesota,
+						@urbanoutfittershome;
+						Facebook: Urban Outfitters
+					</div>
+				</div>
 		</div>
-
-
-
-		<p>Click away as you read some fun facts!!!</p>
-		<p>The brand name and logo was inspired by the fictional tale of two people – Brandy, an American girl, and Melville, an English guy who meet in Rome and fall in love.</p>
-		<p>Brandy Melville is a favourite clothing brand of Kylie Jenner. The star has been photographed while out and about wearing several pieces from the store.</p>
-		<p>Brandy Melville has had such a meteoric rise to fame that much bigger brands are now trying to emulate their success.</p>
 
 
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-3">
 					<h3>Bottoms</h3>
-					<p>jeans, skirts, pants, shorts, sweatpants</p>
-					<img src="bm%20bottoms.jpg" width="250">
+					<p>jeans, pants, shorts, skirts, sweatpants, overalls</p>
+					<img src="uo%20bottoms.jpg" width="200">
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-4">
 					<h3>Tops</h3>
-					<p>short sleeves, tanks, crop tops, oversized tops, etc.</p>
-					<img src="bm%20tops.jpg" width="250">
+					<p>blouses, graphic tees, hoodie, bodysuits, sweaters, etc.</p>
+					<img src="uo%20tops.jpg" width="300">
 				</div>
-				<div class="col-sm-12">
-					<h3>Jewelry</h3>
-					<p>chokers, bracelets, necklaces, earrings, rings</p>
-					<img src="bm%20jewelry.jpg" width="300">
+				<div class="col-sm-5">
+					<h3>Beauty</h3>
+					<p>skincare, makeup, hair, perfumes, body washes, etc.</p>
+					<img src="uo%20beauty.jpg" width="400">
 				</div>
 			</div>
 		</div>
 
-
-
 	</div>
+
 </body>
 
 </html>
