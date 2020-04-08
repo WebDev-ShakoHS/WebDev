@@ -1,0 +1,101 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Where's My Student</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   </head>
+   <body style="background-color:#f74138;">
+      <style type="text/css">
+         #scroll{
+         position : absolute;
+         white-space : nowrap;
+         top : 0px;
+         left : 400px;
+         }
+         #oScroll{
+         margin : 0px;
+         padding : 0px;
+         position : relative;
+         width : 500px;
+         height : 300px;
+         overflow : hidden;
+         }
+      </style>
+      <script type="text/javascript">
+         function scroll(oid,iid){
+             this.oCont=document.getElementById(oid);
+             this.ele=document.getElementById(iid);
+             this.width=this.ele.clientWidth;
+             this.n=this.oCont.clientWidth;
+             this.move=function(){
+                 this.ele.style.left=this.n+"px";
+                 this.n--;
+                 if(this.n<(-this.width)){this.n=this.oCont.clientWidth}
+             }
+         }
+         var vScroll
+         function setup(){
+             vScroll=new scroll("oScroll","scroll");
+             setInterval("vScroll.move()",10)
+         }
+         onload=function(){setup()}
+      </script>
+      <center>
+         <div id="oScroll">
+            <div id="scroll"><img src="saberhead.png" border="0px" 
+               width="400px" height="235px" 
+            </div>
+         </div>
+      </center>
+      </br>
+      </br>
+      <center>
+         <form method = 'post' action='processStudentLogin.php'>
+            <div class="container-fluid">
+            <div class="row">
+            <div class="col-xs-6">
+               <input type="text" class="form-control" placeholder="First Name" name='firstName'>
+            </div>
+            <div class="col-xs-6">
+               <input type="text" class="form-control" placeholder="Last Name" name='lastName'>
+            </div>
+            </br>
+            </br>
+            </br>
+            </br>
+            <div class="col-xs-12">
+               <input type="text" class="form-control" placeholder="Current Location" name='currentLocation' >
+            </div>
+            </br>
+            </br>
+            </br>
+            </br>
+            <div class="col-xs-12">
+               <input type="text" class="form-control" placeholder="Destination Location" name = 'destinationLocation' >
+            </div>
+            </br>
+            </br>
+            </br>
+            </br>
+            <p><label for='Authentication Code'>Authentication Code</label></p>
+            <input type='password' name='password' placeholder="Teacher Code">
+            </br>
+            </br>
+            <p><input type='submit' value = "Give Pass">
+               <!-- <input name = 'edit2' type='submit' value = 'Edit'>
+               <input name = 'find2' type='submit' value = 'Find Student'>
+               <input name = 'del2' type='submit' value = 'Remove Record'>-->
+            </p>
+            </br>
+            </br>
+            </br>
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+         </form>
+      </center>
+</html>
