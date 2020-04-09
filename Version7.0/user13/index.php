@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<title>Home</title>
 <?php
 $apiKey = "367e06598b498d2ea13ddf6af2f3efeb"; //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
@@ -28,6 +29,8 @@ $currentTime = time();
 ?>
 
 <head>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon/">
+    <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
     <style>
         ul {
             list-style-type: none;
@@ -58,14 +61,14 @@ $currentTime = time();
 
 <body style="background-color: white">
     <ul>
-        <li><a class="active" href="index.php" style="color: white;font-family: sans-serif">Home</a></li>
-        <li><a href="Nintendo.html" style="color: white;font-family: sans-serif">Nintendo</a></li>
-        <li><a href="Consoles.html" style="color: white;font-family: sans-serif">Consoles</a></li>
-        <li><a href="Games.html" style="color: white;font-family: sans-serif">Games</a></li>
-        <li><a href="Favorites.html" style="color: white;font-family: sans-serif">Favorites</a></li>
-        <li><a href="Franchise.html" style="color: white;font-family: sans-serif">Franchise</a></li>
-        <li><a href="Innovation.html" style="color: white;font-family: sans-serif">Innovation</a></li>
-        <li><a href="Future.html" style="color: white;font-family: sans-serif">Future</a></li>
+        <li><a class="active" href="index.php" rel="external">Home</a></li>
+        <li><a href="Nintendo.html" rel="external">Nintendo</a></li>
+        <li><a href="Consoles.html" rel="external">Consoles</a></li>
+        <li><a href="Games.html" rel="external">Games</a></li>
+        <li><a href="Favorites.html" rel="external">Favorites</a></li>
+        <li><a href="Franchise.html" rel="external">Franchise</a></li>
+        <li><a href="Innovation.html" rel="external">Innovation</a></li>
+        <li><a href="Future.html" rel="external">Future</a></li>
     </ul>
     <style>
         body {
@@ -93,5 +96,9 @@ $currentTime = time();
     </div>
 
 </body>
-
+   <footer>
+    <center>
+    <p>website by Elijah Hamilton</p>
+    </center>
+</footer>
 </html>
