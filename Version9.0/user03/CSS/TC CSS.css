@@ -1,0 +1,27 @@
+body {
+    color: goldenrod;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    font-family: fantasy;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    font-family: fantasy;
+    margin: 10px;
+}
+
+p {
+    margin: 20px;
+}
+
+.footer {
+    font-size: 0.8em;
+    text-align: center;
+    margin: 50px;
+}
