@@ -1,0 +1,92 @@
+<html lang="en">
+<!--Version 9.0 
+	Name:Jack Casey
+	Date Completed:
+    -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Menu Sample">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="GameJS.js"></script>
+    <script src="JS/SampleJS.js"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="GameCSS.css">
+    <link rel="stylesheet" href="CSS/SampleCSS.css">
+    <link rel='icon' href='favicon.ico' type='image/x-icon' />
+
+
+    <title>Game</title>
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Home.php" target="_self">Home</a>
+        <a href="About.html" target="_self">About</a>
+        <a href="Paper.html" target="_self">Paper!</a>
+        <a href="Game.html" target="_self">Game</a>
+        <a href="More.html" target="_self">More</a>
+        <a href="form.html" target="_self">Login</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <header class="header">
+        <div class="container">
+            <h1><span class="rock">Rock</span>, <span class="paper">paper</span>, <span class="scissors">scissors<span class="shoot">, shoot</span></h1>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <section class="content">
+                <button class="play rock" type="button" onclick="play('rock')"></button>
+                <button class="play paper" type="button" onclick="play('paper')"></button>
+                <button class="play scissors" type="button" onclick="play('scissors')"></button>
+                <div style="clear:both;"></div>
+                <p><span id="player"></span> <span id="opponent"></span></p>
+                <h2 id="results"></h2>
+            </section>
+            <aside class="aside">
+                <div class="scorebox">
+                    <h2>Score</h2>
+                    <div class="score-num"><span id="wins">0</span> <br />wins</div>
+                    <div class="score-divider"><span>-</span></div>
+                    <div class="score-num"><span id="loses">0</span> <br />loses</div>
+                </div>
+                <button type="reset" id="reset" onclick="reset()">reset scores</button>
+            </aside>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
