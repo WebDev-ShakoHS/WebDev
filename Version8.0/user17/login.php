@@ -134,9 +134,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <!---------------------------------- Edit These Items in your Menu ------------->
                     <a href="#" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <a href="#" class="nav-item nav-link enabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link enabled" tabindex="-1">Lists</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link enabled" tabindex="-1">Contact</a>
                     <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">

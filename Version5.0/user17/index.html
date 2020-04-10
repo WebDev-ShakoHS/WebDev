@@ -8,6 +8,8 @@
 <head>
     <script src="JS/SampleJS.js"></script>
 
+    <link href="JS/SampleJS.js">
+    
     <title>JavaScript</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -101,3 +103,57 @@
 
 </html>
 
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over this text</h1>
+
+</body>
+</html>
+
+
+<hr>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function message() {
+  alert("This alert box was triggered because the reset button was clicked");
+}
+</script>
+</head>
+<body>
+
+<form onreset="message()">
+  Enter your name: <input type="text" size="20">
+  <input type="reset">
+</form>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction(elmnt, clr) {
+  elmnt.style.color = clr;
+}
+</script>
+</head>
+<body>
+
+<p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')">
+Click the text to change the color. <p/>
+
+</body>
+</html>
