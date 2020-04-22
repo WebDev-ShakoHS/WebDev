@@ -1,229 +1,225 @@
 <html lang="en">
-    <!--Version 7.0 
+<!--Version 7.0 
 	Name: Jacob M
 	Date Completed:
     -->
-    <head>
-    <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css"> 
-     
-     <a href="index%202.html">Link to second page</a>   
-        <h1>Welcome to my website!</h1>
-         <center><h2>This website is about games</h2></center>
-        <button type="button" onclick="alert('thats not even a link')">Second page</button>
-        <!-- Bootstrap meta data -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="SHS WebDev Bootstrap sample">
 
-<!-- Bootstrap core JS -->
+<head>
+
+
+
+
+
+
+    <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
+
+
+    <h1>Welcome to my website!</h1>
+    <center>
+        <h2>This website is about games</h2>
+    </center>
+    <button type="button" onclick="alert('thats not even a link')">Second page</button>
+    <!-- Bootstrap meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Bootstrap sample">
+
+    <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
-        <title>Web Development User #17</title>
-    
-    </head>
-    
-    <body>
-       
-        <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">  
-        <center>My name is Jacob M</center>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Web Development User #17</title>
+
+</head>
+
+<body>
+
+    <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
+    <center>My name is Jacob M</center>
     <script language="JavaScript">
+        var startTime = new Date();
+        var endTime = new Date();
+        var startPressed = false;
+        var bgChangeStarted = false;
+        var maxWait = 20;
+        var timerID;
 
-var startTime=new Date();
-var endTime=new Date();
-var startPressed=false;
-var bgChangeStarted=false;
-var maxWait=20;
-var timerID;
+        function startTest() {
+            document.body.style.background = document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+            bgChangeStarted = true;
+            startTime = new Date();
+        }
 
-function startTest()
-{
- document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
- bgChangeStarted=true;
- startTime=new Date();
-}
+        function remark(responseTime) {
+            var responseString = "";
+            if (responseTime < 0.20)
+                responseString = "Well done!";
+            if (responseTime >= 0.20 && responseTime < 0.30)
+                responseString = "Nice!";
+            if (responseTime >= 0.40 && responseTime < 0.50)
+                responseString = "Could be better...";
+            if (responseTime >= 0.50 && responseTime < 0.80)
+                responseString = "Keep practising!";
+            if (responseTime >= 0.80 && responseTime < 1.1)
+                responseString = "Have you been day dreaming again?";
+            if (responseTime >= 1.1)
+                responseString = "Did you fall asleep?";
+            return responseString;
+        }
 
-function remark(responseTime)
-{
- var responseString="";
- if (responseTime < 0.20)
- responseString="Well done!";
- if (responseTime >= 0.20 && responseTime < 0.30)
- responseString="Nice!";
- if (responseTime >=0.40 && responseTime < 0.50)
- responseString="Could be better...";
- if (responseTime >=0.50 && responseTime < 0.80)
- responseString="Keep practising!";
- if (responseTime >=0.80 && responseTime < 1.1)
- responseString="Have you been day dreaming again?";
- if (responseTime >=1.1)
- responseString="Did you fall asleep?";
- return responseString;
-}
+        function stopTest() {
+            if (bgChangeStarted) {
+                endTime = new Date();
+                var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
 
-function stopTest()
-{
- if(bgChangeStarted)
- {
- endTime=new Date();
- var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+                document.body.style.background = "white";
+                alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+                startPressed = false;
+                bgChangeStarted = false;
+            } else {
+                if (!startPressed) {
+                    alert("press start first to start test");
+                } else {
+                    clearTimeout(timerID);
+                    startPressed = false;
+                    alert("cheater! you pressed too early!");
+                }
+            }
+        }
 
- document.body.style.background="white"; 
- alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
- startPressed=false;
- bgChangeStarted=false;
- }
- else
- {
- if (!startPressed)
- {
- alert("press start first to start test");
- }
- else
- { 
- clearTimeout(timerID);
- startPressed=false; 
- alert("cheater! you pressed too early!");
- } 
- }
-}
+        var randMULTIPLIER = 0x015a4e35;
+        var randINCREMENT = 1;
+        var today = new Date();
+        var randSeed = today.getSeconds();
 
-var randMULTIPLIER=0x015a4e35;
-var randINCREMENT=1;
-var today=new Date();
-var randSeed=today.getSeconds();
+        function randNumber() {
+            randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+            return ((randSeed >> 15) & 0x7fff) / 32767;
+        }
 
-function randNumber()
-{
- randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
- return((randSeed >> 15) & 0x7fff) / 32767;
-}
+        function startit() {
+            if (startPressed) {
+                alert("Already started. Press stop to stop");
+                return;
+            } else {
+                startPressed = true;
+                timerID = setTimeout('startTest()', 6000 * randNumber());
+            }
+        }
 
-function startit()
-{
- if(startPressed)
- {
- alert("Already started. Press stop to stop");
- return;
- }
- else
- {
- startPressed=true; 
- timerID=setTimeout('startTest()', 6000*randNumber());
- }
-}
+    </script>
+    <p>Test your Response time!</p>
+    Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
 
-</script>
-<p>Test your Response time!</p>
-Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+    <form name="response">
+        Change background color in:
+        <select name="bgColorChange">
+            <option selected>deeppink
+            <option>aliceblue
+            <option>crimson
+            <option>darkkhaki
+            <option>cadetblue
+            <option>darkorchid
+            <option>coral
+        </select>
+        <input type="button" value="start" onClick="startit()">
+        <input type="button" value="stop" onClick="stopTest()">
+    </form>
 
-<form name="response">
-Change background color in: 
-<select name="bgColorChange">
-<option selected>deeppink
-<option>aliceblue
-<option>crimson
-<option>darkkhaki
-<option>cadetblue
-<option>darkorchid
-<option>coral
-</select>
-<input type="button" value="start" onClick="startit()">
-<input type="button" value="stop" onClick="stopTest()">
-</form>
- 
-      
 
-<hr width="100%">
-        
-        
-        <p>In this website i will talk about video games and which ones are my favorite. I'm bad at making websites because i forget how to add a lot of detail. Here's a game for you to enjoy.</p>   
-    
-    
+
+    <hr width="100%">
+
+
+    <p>In this website i will talk about video games and which ones are my favorite. I'm bad at making websites because i forget how to add a lot of detail. Here's a game for you to enjoy.</p>
+
+
     <SCRIPT LANGUAGE="JavaScript">
-<!-- ;
-// numberguess is by Lancer - written 4 Jan 1999
-// lancer@kp.planet.gen.nz
+        <!-- ;
+        // numberguess is by Lancer - written 4 Jan 1999
+        // lancer@kp.planet.gen.nz
 
-var guessme=Math.round(Math.random()*(99)+1);
-var speech='Guess my number (from 1 to 100)';
+        var guessme = Math.round(Math.random() * (99) + 1);
+        var speech = 'Guess my number (from 1 to 100)';
 
-function process(mystery) {
-var guess=document.forms.guessquiz.guess.value;
-var speech='"'+guess+ '" does not make sense to me.';
-document.forms.guessquiz.guess.value='';
+        function process(mystery) {
+            var guess = document.forms.guessquiz.guess.value;
+            var speech = '"' + guess + '" does not make sense to me.';
+            document.forms.guessquiz.guess.value = '';
 
-if (guess==mystery)
-{
-document.forms.guessquiz.prompt.value='Congratulations! '+mystery+' is correct!';
-alert ('Well done - the mystery number is '+mystery+'! \n\nPress this button to reload the page for another game.');
-speech='';
-document.location=document.location;
-}
+            if (guess == mystery) {
+                document.forms.guessquiz.prompt.value = 'Congratulations! ' + mystery + ' is correct!';
+                alert('Well done - the mystery number is ' + mystery + '! \n\nPress this button to reload the page for another game.');
+                speech = '';
+                document.location = document.location;
+            }
 
-if (mystery<guess)
-{
-speech='Less than '+ guess;
-}
+            if (mystery < guess) {
+                speech = 'Less than ' + guess;
+            }
 
-if (mystery>guess)
-{
-speech='Greater than '+ guess;
-}
+            if (mystery > guess) {
+                speech = 'Greater than ' + guess;
+            }
 
-if (guess=='')
-{
-speech='You didn\'t guess anything!'
-}
+            if (guess == '') {
+                speech = 'You didn\'t guess anything!'
+            }
 
-document.forms.guessquiz.prompt.value=speech; document.forms.guessquiz.guess.focus();
+            document.forms.guessquiz.prompt.value = speech;
+            document.forms.guessquiz.guess.focus();
 
-}
+        }
 
-// end hide -->
-</SCRIPT>
+        // end hide 
 
-<FORM onSubmit="" NAME="guessquiz">
-<CENTER>
-<TABLE ALIGN="CENTER" BGCOLOR="#888888" BORDER="3" CELLPADDING="5">
-<TR>
-<TD BGCOLOR="#004080">
-<FONT COLOR="#ffffff" FACE="Arial"><B>GUESS MY NUMBER (1 - 100)</B></FONT>
-</TD>
-</TR>
-<TR>
-<TD>
-<CENTER>
-<INPUT TYPE="text" NAME="prompt" SIZE="31" MAXLENGTH="40" VALUE="Guess my number (from 1 to 100)"><BR>
-<INPUT TYPE="text" NAME="guess" SIZE="3" MAXLENGTH="3" VALUE="">
-<INPUT TYPE="button" VALUE="Guess" onClick='process(guessme)'>
-</CENTER>
-</TD>
-</TR>
-</TABLE>
-</CENTER>
-</FORM>
-    
-    
-    
-    
-   <p>How did you enjoy that game? I have no idea what im doing. ¯\_(ツ)_/¯</p> <button type="button" onclick="alert('You took instructions from a website -_-. Now click the link at the top to go to the second page.')">Click me</button>
-    
-    
-    
-    
-    
-    
-    
-    
-    </body>
-    
-    
+        -->
+    </SCRIPT>
+
+    <FORM onSubmit="" NAME="guessquiz">
+        <CENTER>
+            <TABLE ALIGN="CENTER" BGCOLOR="#888888" BORDER="3" CELLPADDING="5">
+                <TR>
+                    <TD BGCOLOR="#004080">
+                        <FONT COLOR="#ffffff" FACE="Arial"><B>GUESS MY NUMBER (1 - 100)</B></FONT>
+                    </TD>
+                </TR>
+                <TR>
+                    <TD>
+                        <CENTER>
+                            <INPUT TYPE="text" NAME="prompt" SIZE="31" MAXLENGTH="40" VALUE="Guess my number (from 1 to 100)"><BR>
+                            <INPUT TYPE="text" NAME="guess" SIZE="3" MAXLENGTH="3" VALUE="">
+                            <INPUT TYPE="button" VALUE="Guess" onClick='process(guessme)'>
+                        </CENTER>
+                    </TD>
+                </TR>
+            </TABLE>
+        </CENTER>
+    </FORM>
+
+
+
+
+    <p>How did you enjoy that game? I have no idea what im doing. ¯\_(ツ)_/¯</p> <button type="button" onclick="alert('You took instructions from a website -_-. Now click the link at the top to go to the second page.')">Click me</button>
+
+
+    <a href="index%202.html">Link to second page</a>
+
+
+
+
+
+
+
+
+</body>
+
+
 
 </html>
