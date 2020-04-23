@@ -36,14 +36,37 @@ $currentTime = time();
 <!doctype html>
 <html>
 <head>
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">My Website</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Music.html">Music</a></li>
+            <li><a href="List.html">List</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="Games.html">Games</a></li>
+            <li><a href="http://127.0.0.1:8080/WebDev/Version9.0/user02/index.php">Weather</a></li>
+            <li><a href="indexcomm.php">CRUD</a></li>
+        </ul>
+    </div>
+</nav>  
+     <link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+      <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
+            <meta charset="utf-8">
 <title>Forecast Weather using OpenWeatherMap with PHP</title>
 
 <style>
-body {
-    font-family: Arial;
-    font-size: 0.95em;
-    color: black;
-}
+body
 
 .report-container {
     border: #E0E0E0 1px solid;
@@ -74,7 +97,7 @@ span.min-temperature {
     line-height: 25px;
 }
 </style>
-
+<link rel='icon' href='images/favicon.ico' type='image/x-icon' />
 </head>
 <body>
    
@@ -98,6 +121,25 @@ span.min-temperature {
         </div>
     </div>
 
+        <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+</style>
+    
+<div class="footer">
+  <p>Contact information:
+    226402@shakopeeschools.org</p>
+</div>
+     <link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+      <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
+            <meta charset="utf-8">
 
 </body>
 </html>
