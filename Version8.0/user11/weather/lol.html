@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title> Live Weather App Using jQuery (Open Weather API) </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+ 
+<body class="bg-gray-100 leading-normal my-10" style="background:#edf2f6;">
+ 
+    <div class="flex mb-4">
+        <div class="w-full text-center">
+            <h1 class="text-4xl">Live Weather App Using jQuery (Open Weather API)</h1>
+        </div>
+    </div>
+ 
+    <div class="flex items-center justify-center p-8">
+ 
+        <div class="flex mb-4">
+            <div class="w-full text-center">
+ 
+                <div class="max-w-sm bg-white shadow-lg rounded p-3">
+                    <div class="timeBlock border border-gray-100 my-2 p-2">
+                        <h4>Date and Time</h4>
+                        <span id="date"></span> | <span id="time"></span>
+                    </div>
+                    <form>
+                        <div class="max-w-sm my-3">
+                            <input id="location" class="w-full h-12 px-3 rounded mb-2 focus:outline-none focus:shadow-outline text-md shadow-md" type="search" placeholder="Search your location...">
+ 
+                            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Search Location</button>
+                        </div>
+                    </form>
+ 
+                    <div class="w-full text-center">
+                        <div class="justify-center"><img src="img/weather.png" width="170px" style="margin: 0 auto;" /></div>
+                        <span id="temperature" class="text-6xl"></span><span id="unit">°C</span>
+                        <div id="status" class="text-2xl"></div>
+                    </div>
+ 
+                    <table class="w-full text-center border-collapse">
+                        <!--Border collapse doesn't work on this site yet but it's available in newer tailwind versions -->
+                        <tbody>
+                            <tr class="hover:bg-grey-lighter">
+                                <td class="py-4 px-6 border-b border-grey-light"><img width="30px" src="img/wind.png" style="margin: 0 auto;" /><span class="windSpeed"></span> <span class="windSpeedUnit">km/h</span></td>
+                                <td class="py-4 px-6 border-b border-grey-light"><img width="30px" src="img/pressure.png" style="margin: 0 auto;" /><span class="pressure"></span></td>
+                            </tr>
+                            <tr class="hover:bg-grey-lighter">
+                                <td class="py-4 px-6 border-b border-grey-light"><img width="30px" src="img/windsock.png" style="margin: 0 auto;" /><span class="windDirection"></span></td>
+                                <td class="py-4 px-6 border-b border-grey-light"><img width="30px" src="img/humidity.png" style="margin: 0 auto;" /><span class="humidity"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+ 
+                    <div class="w-full text-center my-3">
+                        <input id="celsius_F" type="checkbox" class="checkbox">
+                        <label for="celsius_F" class="text-1xl">Celsius</label>
+                    </div>
+ 
+                </div>
+ 
+            </div>
+        </div>
+ 
+    </div>
+ 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="script.js"></script>
+ 
+</body>
+ 
+</html>
