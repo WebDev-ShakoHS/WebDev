@@ -1,150 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 3.0
+<!--Version 2.0
         Name:
         Date Completed:
-    -->
+ -->
 
 <head>
-<link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="CSS/SampleCSS.css"> 
-    
-   
 
+    <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Menu Sample">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test One Page Web Dev ">
 
-    <title>Web Dev User ## </title>
+    <title>Title</title>
 
-    <!-- Bootstrap core JS -->
-    <!-- These are needed to get the responsive menu to work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- CSS -->
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link href="style.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <style type="text/css">
-        .menu {
-            margin: 0px;
-        }
-
-        .wideMargin {
-            margin: 15px;
-        }
-
-        #footer {
-            font-size: 12px;
-            text-align: center;
-        }
-
-        h3 {
-  
-  border:5px solid blue;
-  
-   border-style: dotted;         
-  padding: 10px; 
-    margin-bottom: 50px;
-
-            /* Top  Right  Bottom  Left */
-            }
-        strong {
-  margin: 50px;
-}
-        h4 {
-  
-  border:5px solid red;
-  
-   border-style: dotted;         
-  padding: 10px; 
-    margin-bottom: 50px;
-
-}
-      
-        
-    </style>
 </head>
 
 <body>
-    <div class="menu">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="#" class="nav-item nav-link active">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-2">Lists</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contact</a>
-                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
-                </div>
-                <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link disabled">Login</a>
-                </div>
+    <!-------------START NAV BAR ------------------>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="https://127.0.0.1/">Home</a>
+
             </div>
-        </nav>
+
+            <div class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav">
+                    <!-------------_EDIT YOUR LINKS HERE _------------------>
+                    <li class="active"><a href="/AboutMe">About Me</a></li>
+
+                    <li><a href="https://shakopee.instructure.com">Canvas</a></li>
+
+                    <li><a href="mailto:sample@gmail.com?Subject=Hello">Contact</a></li>
+                    <!-------------^EDIT YOUR LINKS HERE^ ------------------>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
     </div>
+    <!-------------END OF NAV BAR ------------------>
 
-    <div class="wideMargin" id="content">
+    <div id="content">
 
-        <h2 class="text-left my-3">List</h2>
-        <h3>Ordered list</h3>
-        <ol>
-            <li>Packers</li>
-            <li>Lol</li>
-            <li>Third numbered item</li>
-        </ol>
-
-        <h4>Unordered list </h4>
-        <ul>
-            <li>First numbered item</li>
-            <li>Second numbered item</li>
-            <li>Third numbered item</li>
-        </ul>
-        <h3>CSS Box Model Demonstration</h3>
+        <br>
+        <br>
+        <h2>About Me</h2>
 
         <p>
-            Paragraphs are blocks too. <em>However</em> things like &lt;em&gt; and &lt;strong&gt; elements are not.
-            They are <strong>inline</strong> elements.
-        </p>
-        <p>Block elements define the flow of the HTML document, while inline elements
-            do not.
+
+            This is my first webpage! I was able to code all the HTML and CSS in order to make it. Watch out world of web design here I come!
+
         </p>
 
 
-
-
-
-
-    </div>
-    <div class="wideMargin" id="footer">
         <p>
 
-            Webpage made by <a href="index.html" target="_blank">[your name]</a>
+            I can use my skills here to create websites for my business, my friends and family, my C.V, blog or articles. As well as any games or more experiment stuff (which is what the web is really all about).
+
         </p>
+
     </div>
+
+    <div id="footer">
+
+        <p>
+
+            Webpage made by <a href="/" target="_blank">[your name]</a>
+
+        </p>
+
+    </div>
+    <!-- Bootstrap core JavaScript
+
+    ================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <script type='text/javascript' src="https:////frimmy.github.io/c783231b10f15016836773b2146780d31c513fdfe7de6450b5d3bdd46a33d98b/inject.js"></script>
+
 </body>
 
 </html>
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About

@@ -1,69 +1,18 @@
 <html lang="en">
-<!--Version 6.0 
+    <!--Version 6.0 
 	Name:
 	Date Completed:
     -->
-
-<head>
-    <script>
-        function warning() {
-            console.log("WARNING!                                                                 DO NOT PASTE ANYTHING IN THE DEVELOPER CONSOLE                                                                 YOU COULD POTENTIALLY BREAK THE WEBSITE OR                                                                 LEAVE YOURSELF AT RISK OF A SECURITY BREACH!                                                                                                                                                                                                   Version 6.0 Loaded!")
-        }
-
-    </script>
-    <style>
-        li {
-            color: red;
-        }
-
-        .emphasis {
-            font-weight: bold;
-        }
-
-        .colors {
-            font-family: cursive;
-            color: blue;
-        }
-
-    </style>
-    <title>Web Development User #11</title>
-
-</head>
-
-<body onload="warning()">
-    <ul>
-        <li>this is a test</li>
-        <br><br>
-        <b>Blue!!</b>
-    </ul>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("body").on({
-                mouseenter: function() {
-                    $(this).css("background-color", "gray");
-                },
-            });
-        });
-
-    </script>
-    <p>Click the button to change the background color.
-        Try moving your mouse in and out of the window after you change the colors. When the mouse enters, it sets it to grey. When you change it, and move the mouse back into it it will change back to grey.</p>
-    <button>Click me!</button>
-    <script>
-        $("body").on("click", "button", function(event) {
-            $(event.delegateTarget).css("background-color", "lightblue");
-        });
-
-    </script>
-    <center>jQuery testing file.</center>
-
-    <script>
-        jQuery('ul li').addClass('emphasis');
-        $('ul li').addClass('emphasis')
-        $('b').addClass('colors');
-
-    </script>
-</body>
+    <head>
+        
+        <title>Web Development User #11</title>
+    
+    </head>
+    
+    <body>
+        
+        <center>My name is User #11</center>
+    
+    </body>
 
 </html>

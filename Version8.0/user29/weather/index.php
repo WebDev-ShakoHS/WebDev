@@ -1,5 +1,5 @@
 <?php
-$apiKey = "4c60d01599f00520363ed76e87d2aebd"; //You will need to add in the 
+$apiKey = "API KEY"; //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
 $units = "metric";//metric-Celcius  imperial-Farhenheit
 if ($units == 'metric'){//Changes the $temp varaible to match 
@@ -23,25 +23,22 @@ $response = curl_exec($ch);
 curl_close($ch);
 $data = json_decode($response);
 $currentTime = time();
-echo "<body style='background-color:pink'>";
 ?>
-
 
 <!doctype html>
 <html>
 <head>
 <title>Forecast Weather using OpenWeatherMap with PHP</title>
- 
 
 <style>
 body {
     font-family: Arial;
     font-size: 0.95em;
-    color: :#000000;
-    }
+    color: #929292;
+}
 
 .report-container {
-    border: #000000	1px solid;
+    border: #E0E0E0 1px solid;
     padding: 20px 40px 40px 40px;
     border-radius: 2px;
     width: 550px;
@@ -68,10 +65,10 @@ span.min-temperature {
 .time {
     line-height: 25px;
 }
-    </style>
+</style>
+
 </head>
 <body>
-
 
     <div class="report-container">
         <h2><?php echo $data->name; ?> Weather Status</h2>

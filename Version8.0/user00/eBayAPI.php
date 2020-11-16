@@ -4,7 +4,7 @@ error_reporting(E_ALL);  // Turn on all errors, warnings and notices for easier 
 // API request variables
 $endpoint = 'http://svcs.ebay.com/services/search/FindingService/v1';  // URL to call
 $version = '1.0.0';  // API version supported by your application
-$appid = 'RobertMa-Shakopee-PRD-169ec6b8e-bb30ba02';  // Replace with your own AppID
+$appid = 'KEY HERE';  // Replace with your own AppID
 $globalid = 'EBAY-US';  // Global ID of the eBay site you want to search (e.g., EBAY-DE)
 $query = 'screwdrivers';  // You may want to supply your own query
 $safequery = urlencode($query);  // Make the query URL-friendly
@@ -79,7 +79,7 @@ if ($resp->ack == "Success") {
     $title = $item->title;
 /////////////////////////EDIT THIS LINE/////////////////////////////////////////////////////
     // For each SearchResultItem node, build a link and append it to $results
-    $results .= "<div class='col-md-3'><img src=\"$pic\"></div><div class='col-md-3'><a href=\"$link\">$title</a></div>";
+    $results .= "<tr><td><img src=\"$pic\"></td><td><a href=\"$link\">$title</a></td></tr>";
 ////////////////////////EDIT THIS LINE//////////////////////////////////////////////////////      
   }
 }
@@ -93,18 +93,7 @@ else {
 <html>
 
 <head>
-    
     <title>eBay Search Results for <?php echo $query; ?></title>
-    
-    <!-- Bootstrap core JS -->
-        <!-- These are needed to get the responsive menu to work -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
         body {
             font-family: arial, sans-serif;
@@ -117,11 +106,13 @@ else {
 
     <h1>eBay Search Results for <?php echo $query; ?></h1>
 
-<div class="container-fluid">
-    <div class="row">
+    <table>
+        <tr>
+            <td>
                 <?php echo $results;?>
-        </div>
-</div>
+            </td>
+        </tr>
+    </table>
 
 </body>
 

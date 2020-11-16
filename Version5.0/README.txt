@@ -1,6 +1,5 @@
 Version 5.0
 
-This assingment is all about organizing your information into tables, adding an image to reflect
-the data, and finally how to use CSS to style specfic information on your webpage.
+This assingment is all about using JavaScript to program some dynamic events and "games" to your website.
 
-Complete Activities 1.3 and 1.3b and send a pull request.
+Complete Activities 2.1 and 2.2 and send a pull request.

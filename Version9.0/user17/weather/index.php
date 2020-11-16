@@ -3,7 +3,7 @@ $apiKey = "API KEY"; //You will need to add in the
 $cityId = "5046997"; //5046997 Shakopee City Id
 $units = "metric";//metric-Celcius  imperial-Farhenheit
 if ($units == 'metric'){//Changes the $temp varaible to match 
-    $temp = "F";
+    $temp = "C";
 }
 else {
     $temp = "F";
@@ -17,7 +17,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt($ch, CURLOPT_VERBOSE, 0);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 $response = curl_exec($ch);
 
 curl_close($ch);
@@ -90,49 +90,5 @@ span.min-temperature {
     </div>
 
 
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   
-  <link href="index.php"> 
-    
-   <link href="index.html"> 
-    
-   <a href="#" class="nav-item nav-link enabled" tabindex="-2">Weather</a>      
-    
-    <a href="index.html">Welcome Page</a>
-    <meta charset="UTF-8">
-    <title>Weather App - JavaScript</title>
-    <link rel="stylesheet" href="font/Rimouski.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <div class="container">
-        <div class="app-title">
-            <p>Weather</p>
-        </div>
-        <div class="notification"> </div>
-        <div class="weather-container">
-            <div class="weather-icon">
-                <img src="icons/unknown.png" alt="">
-            </div>
-            <div class="temperature-value">
-                <p>- °<span>F</span></p>
-            </div>
-            <div class="temperature-description">
-                <p> - </p>
-            </div>
-            <div class="location">
-                <p>-</p>
-            </div>
-        </div>
-    </div>
-    
-    <script src="app.js"></script>
 </body>
 </html>

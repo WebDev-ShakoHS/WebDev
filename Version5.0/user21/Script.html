@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 3.0
+<!--Version 5.0
         Name:
         Date Completed:
     -->
 
 <head>
-
-
-
-
-
-
-    <html>
+    <title>JavaScript</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Menu Sample">
-
-    <title>Web Dev User #21 </title>
+    <meta name="description" content="SHS WebDev JavaScript Practice">
 
     <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="JS/SampleJS.js"></script>
+
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,101 +40,58 @@
         }
 
     </style>
+</head>
 
-    <head>
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <script src="JS/SampleJS.js"></script>
-
-    <body>
-
-
-        <div class="menu">
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <!---------------------------------- Edit These Items in your Menu ------------->
-                        <a href="#" class="nav-item nav-link">Home</a>
-                        <a href="#" class="nav-item nav-link active">Games</a>
-                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
-                        <a href="#" class="nav-item nav-link disabled" tabindex="-2">Lists</a>
-                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contacts</a>
-                        <!----------------------------------^ Edit These Items in your Menu ^ ------------->
-                    </div>
-                    <div class="navbar-nav ml-auto">
-                        <a href="#" class="nav-item nav-link disabled">Login</a>
-                    </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
-            </nav>
-        </div>
-
-        <div class="wideMargin" id="content">
-
-            <h2 class="text-left my-3">JavaScript</h2>
-            <p>
-
-                <div class='row'>
-                    <div class='col-md-12'>
-                        <center>
-                            <p id="textChange"> My name is User #21</p>
-                        </center>
-                        <button type="button" onclick="changeText()">Click here to learn how to get women</button>
-                    </div>
-                    <div class='col-md-5'>
-
-                        <form>
-                            Enter your name:
-                            <input type="text" name="myInput" onkeyup="writeMessage()" size="20">
-                            <input type="text" name="mySecondInput" size="20">
-                        </form>
-
-                    </div>
-                    <div class='col-md-5'>
-                        Enter your name: <input type="text" id="fname" onchange="allCaps()">
-                        <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
-
-
-
-                    </div>
-
-                    <div class='col-md-4'>
-
-                        <form>
-                            Write a message:<br>
-                            <input type="text" onkeydown="color('yellow')" onkeyup="color('white')" name="myInput">
-                        </form>
-                    </div>
-
-
-
-                    <p ondblclick="changeParagraph()" id="changeclick">This is a paragrapgh that will change when you click on it</p>
-
-                    <p id="demo"></p>
-                    <form onreset="typenametoreset()">
-                        Enter your name: <input type="text" size="20">
-                        <input type="reset">
-                    </form>
-                    <p ondblclick="myFunction()">A function is triggered when the user is pressing a key in the input field.</p>
-
-                    <input type="text" onkeypress="annoyingAlert()">
-
-                    <form onsubmit="confirmInput()" action="https://www.w3schools.com/">
-                        Enter your name: <input id="fname" type="text" size="20">
-                        <input type="submit">
-                    </form>
-
-                    <div class="wideMargin" id="footer">
-                        <p>
-
-                            Webpage made by <a href="index.html" target="_blank">[Riley-coder]</a>
-                        </p>
-                    </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
                 </div>
-        </div>
-    </body>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
 
-    <html>
+    <div class="wideMargin" id="content">
+        <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+            </div>
+        </div>
+    </div>
+    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
+
+
+    <!---------------------------------- Begin the footer ------------->
+    <div class="wideMargin" id="footer">
+        <p>
+            Webpage made by <a href="index.html" target="_blank">[your name]</a>
+        </p>
+    </div>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>

@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 3.0
+<!--Version 5.0
         Name:
         Date Completed:
     -->
 
-<head WebDevUser32.html>
-    p
-
-
-    <script src="JS/SampleJS.js"></script>
-
+<head>
+    <title>JavaScript</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Menu Sample">
-
-    <title>JavaScript </title>
+    <meta name="description" content="SHS WebDev JavaScript Practice">
 
     <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -44,107 +40,58 @@
         }
 
     </style>
-
 </head>
 
 <body>
+    <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="index%20_V2.html" class="nav-item nav-link" tabindex="-1">Home</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">About Me</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Music</a>
-                    <a href="#" class="nav-item nav-link" tabindex="-1">Lists</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link" tabindex="-1">Contact</a>
-                    <a href="#" class="nav-item nav-link active" tabindex="1" a href="script.html">JavaScript</a>
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
                 </div>
             </div>
         </nav>
     </div>
-</body>
-<div>
-    <h3>Javascript</h3>
-    <div>
+    <!---------------------------------- End the nav-bar ------------->
 
-        <body>
-
-
-
-            <center>
-                <p id="textChange"> My name is Josh</p>
-            </center>
-            <button type="button" onclick="changeText()">Click if you like</button>
-
-
-
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("fname");
-                    x.value = x.value.toUpperCase();
-                }
-
-            </script>
-
-        </body>
+    <div class="wideMargin" id="content">
+        <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+            </div>
+        </div>
     </div>
-
-    <body>
-        <center>
-            Enter your SS Number: <input type="text" id="fname" onblur="myFunction()">
+    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
 
-
-            <h1 onmouseover="style.color='red'" onmouseout="style.color=''">cool thing here</h1>
-
-            <head>
-                <script>
-                    function myFunction(e) {
-                        x = e.clientX;
-                        y = e.clientY;
-                        coor = "Coordinates: (" + x + "," + y + ")";
-                        document.getElementById("demo").innerHTML = coor
-                    }
-
-                    function clearCoor() {
-                        document.getElementById("demo").innerHTML = "";
-                    }
-
-                </script>
-
-            </head>
-
-            <body style="margin:0px;">
-
-                <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
-
-                <p>Cool coordinates thing for nerds</p>
-
-                <p id="demo"></p>
-
-                <head>
-                    <script>
-                        function displayDate() {
-                            document.getElementById("demo").innerHTML = Date();
-                        }
-
-                    </script>
-                </head>
-
-                <body>
-
-                    <h2>What time is it?</h2>
-                    <p id="demo">This is the date and time.</p>
-
-                    <button type="button" onclick="displayDate()">Display Date</button>
-
-                </body>
-
+    <!---------------------------------- Begin the footer ------------->
+    <div class="wideMargin" id="footer">
+        <p>
+            Webpage made by <a href="index.html" target="_blank">[your name]</a>
+        </p>
+    </div>
+    <!---------------------------------- End the footer ------------->
+</body>
 
 </html>

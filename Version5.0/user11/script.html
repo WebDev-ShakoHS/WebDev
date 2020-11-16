@@ -1,91 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0
-        Name: Collin Frame
+        Name:
         Date Completed:
     -->
-<link rel="stylesheet" href="test.css">
-<style>
-    body {
-        font-family: "Marker Felt", "Comic Sans MS", fantasy;
-        color: #003366;
-    }
-
-    h1 {
-        font-size: 1.3em;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 1.1em;
-    }
-
-    table {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: left;
-        border-collapse: collapse;
-        cellspacing: 0px;
-    }
-
-    tr {
-        border: 1px solid #ffffff;
-        text-align: center;
-        background-color: #9FB6CD;
-    }
-
-    th {
-        text-align: center;
-        color: #ffffff;
-        background-color: #003366;
-    }
-
-    body {
-        background: #1d1f20;
-        color: white;
-    }
-
-    .container {
-        width: 100%;
-    }
-
-    .container h1 {
-        text-align: center;
-    }
-
-    #runaway-container {
-        position: absolute;
-        width: 150px;
-        margin: 0 auto;
-        margin-top: 100px;
-    }
-
-    #runaway {
-        width: 150px;
-    }
-
-</style>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<link rel="shortcut icon" type="image/png" href="https://www.freeiconspng.com/uploads/world-wide-web-globe-icon-images--pictures-becuo-0.png" />
 
 <head>
+    <title>JavaScript</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Menu Sample">
-
-    <title>Version 3 Frame </title>
+    <meta name="description" content="SHS WebDev JavaScript Practice">
 
     <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -109,66 +42,56 @@
     </style>
 </head>
 
-<body onload="txtchng(), warning()">
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <body>
-        <div class="menu">
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <!---------------------------------- Edit These Items in your Menu ------------->
-                        <a href="#" class="nav-item nav-link active">Home</a>
-                        <a href="google.html" class="nav-item nav-link">Google</a>
-                        <a href="music.html" class="nav-item nav-link" tabindex="-1">Music</a>
-                        <a href="list.html" class="nav-item nav-link" tabindex="-2">Lists</a>
-                        <a href="music2.html" class="nav-item nav-link" tabindex="-2">Music 2</a>
-                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-2">Contact</a>
-                        <!----------------------------------^ Edit These Items in your Menu ^ ------------->
-                    </div>
-                    <div class="navbar-nav ml-auto">
-                        <a href="#" class="nav-item nav-link disabled">Login</a>
-                    </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
-            </nav>
-        </div>
-        <!-- Or let Bootstrap automatically handle the layout -->
-        <div class="row" id="hgh" onmousedown="whichElemente(event)">
-            <div class="col-sm" style="background-color:yellow;">hi</div>
-            <div class="col-sm" style="background-color:orange;">what's</div>
-            <div class="col-sm" style="background-color:yellow;">up</div>
-            <div class="col-sm" style="background-color:orange;">help me</div>
-        </div>
-        <br>
-
-        <div class="wideMargin" id="content">
-
-            <h2 class="text-left my-3">Home</h2>
-            <center>
-                <p id="textChange">ahaha</p>
-                <p id="txtchng"></p>
-            </center>
-            <button type="button" onclick="changeText()">Click if you like</button>
-            <a href="/WebDev/Version5.0/user11/script.html" class="button" onclick="changeText2()">Reset</a><br>
-            <form id="your_form" onsubmit="return validateForm()">
-                <br>
-                <b>Enter Your Name: </b><input type="text" name="name">
-                <input type="submit" value="Enter">
-            </form>
-            <div class="container">
-                <div id="runaway-container">
-                    <button class='button button2 red' id="runaway">Click me</button>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
                 </div>
             </div>
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-            <script src="pphed.js"></script>
-            <br>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
+
+    <div class="wideMargin" id="content">
+        <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+            </div>
         </div>
-    </body>
+    </div>
+    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
+
+
+    <!---------------------------------- Begin the footer ------------->
+    <div class="wideMargin" id="footer">
+        <p>
+            Webpage made by <a href="index.html" target="_blank">[your name]</a>
+        </p>
+    </div>
+    <!---------------------------------- End the footer ------------->
 </body>
 
 </html>

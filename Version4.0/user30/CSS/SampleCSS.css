@@ -2,77 +2,7 @@ body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
 }
-  <div class="bs-example">
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Row</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Clark</td>
-                <td>Kent</td>
-                <td>clarkkent@mail.com</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>John</td>
-                <td>Carter</td>
-                <td>johncarter@mail.com</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Peter</td>
-                <td>Parker</td>
-                <td>peterparker@mail.com</td>
-            </tr>            
-        </tbody>
-    </table>
-</div>
-.button { <a href="form.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Form Page</a>
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
 
-.button1 {
-  border-radius: 8px;
-}
-
-.button2 {
-  border-radius: 30%;
-}
-.button {
-  transition-duration: 0.4s;
-}
-
-.button:hover {
-  background-color: #4CAF50; /* Green */
-  color: white;
-}
-...
-.red { 
-   background-color: #ff0000;
-}
-.button1 {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.button2:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
 h1 {
 	font-size: 1.3em;
 	text-align: center;

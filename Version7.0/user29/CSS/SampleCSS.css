@@ -1,33 +1,33 @@
-
-
-body {font-family: Arial, Helvetica, sans-serif;}
-
-.navbar {
-  width: 103%;
-  background-color: #555;
-  overflow: auto;
+body {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
 }
 
-.navbar a {
-  float: left;
-  padding: 20px;
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
+h1 {
+	font-size: 1.3em;
+	text-align: center;
 }
 
-.navbar a:hover {
-  background-color: red;
+h2{
+        font-size: 1.1em;
 }
 
-.active {
-  background-color: #4CAF50;
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
 }
 
-@media screen and (max-width: 150px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
 }
 
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}

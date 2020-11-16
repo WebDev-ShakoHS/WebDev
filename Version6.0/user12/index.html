@@ -1,147 +1,18 @@
 <html lang="en">
-<!--Version 6.0 
-	Name: Annika Froyum
-	Date Completed: 2/13/20
+    <!--Version 6.0 
+	Name:
+	Date Completed:
     -->
-
-
-<head>
-    <script src="jquery-3.4.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <title>Web Development User #12</title>
-    <style>
-
-        table {
-            margin: 25px 0;
-            width: 200px;
-        }
-
-        table th,
-        table td {
-            padding: 10px;
-            text-align: center;
-        }
-
-        table,
-        th,
-        td {
-            border: 1px solid;
-        }
-
-    </style>
-
-    <link rel="stylesheet" href="light.css">
-
-</head>
-
-<body>
-    <h2>highly suspect members</h2>
-    <ul>
-        <li>johnny</li>
-        <li>rich</li>
-        <li>ryan</li>
-        <li>matt</li>
-    </ul>
-
-    <script>
-        jQuery("ul li").addClass('emphasis');
-
-        $(document).ready(function() {
-                    $('li:first-child').addClass('emphasis');
-                };
-
-    </script>
-    <table>
-        <thead>
-            <tr>
-                <th>highly suspect albums</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>mister asylum</td>
-            </tr>
-            <tr>
-                <td>the boy who died wolf</td>
-            </tr>
-            <tr>
-                <td>mcid</td>
-            </tr>
-        </tbody>
-    </table>
-    <script>
-        let lineNo = 1;
-        $(document).ready(function() {
-            $(".add-row").click(function() {
-                markup = "<tr><td>This is row " +
-                    lineNo + "</td></tr>";
-                tableBody = $("table tbody");
-                tableBody.append(markup);
-                lineNo++;
-            });
-        });
-
-    </script>
-
-    <form id="myform">
-        <button>erase</button>
-        <select id="fs">
-            <option value="Arial">Arial</option>
-            <option value="Verdana ">Verdana </option>
-            <option value="Impact ">Impact </option>
-            <option value="Comic Sans MS">Comic Sans MS</option>
-        </select>
-
-        <select id="size">
-            <option value="7">7</option>
-            <option value="10">10</option>
-            <option value="20">20</option>
-            <option value="30">30</option>
-        </select>
-    </form>
-
-    <br />
-    <div id="container" class="changeMe">
-
-
-        <p>
-            try changing the font
-        </p>
-    </div>
-
-    <script>
-        $("#fs").change(function() {
-            //alert($(this).val());
-            $('.changeMe').css("font-family", $(this).val());
-
-        });
-
-        $("#size").change(function() {
-            $('.changeMe').css("font-size", $(this).val() + "px");
-        });
-
-    </script>
-
-    <button data-file='day'>light</button>
-    <button data-file='dark'>dark</button>
-
-    <script>
-       
-       (function() {
-           var link = $('link');
-          $('button').click(function() {
-              var $this = $(this);
-              var stylesheet = $this.data('file');
-              $(this).siblings('button').removeAttr('disabled');
-             link.attr('href', stylesheet + '.css');
-              $this.attr('disabled', 'disabled')
-               
-           });
-       })();
-       
-
-   </script>
-</body>
+    <head>
+        
+        <title>Web Development User #12</title>
+    
+    </head>
+    
+    <body>
+        
+        <center>My name is User #12</center>
+    
+    </body>
 
 </html>

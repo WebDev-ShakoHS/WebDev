@@ -31,35 +31,3 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: crosshair;
-}
-
-.button1 {
-  border-radius: 8px;
-}
-
-.button2 {
-  border-radius: 30%;
-}
-
-.red { 
-   background-color: #ff0000;
-}
-
-.blue { 
-    background-color: blue;
-}
-
-.yellow { 
-    background-color: yellow;
-}
