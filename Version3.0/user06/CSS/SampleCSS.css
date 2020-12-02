@@ -1,7 +1,11 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	color: #003366;text-align: center;
+	background-image: url(https://t3.ftcdn.net/jpg/01/99/21/24/360_F_199212427_3B5SXsaLCcKYGgYU9828gXIf91A6YdrS.jpg) ;
+	background-size: 10000px;
+	background-repeat: no-repeat;
 }
+
 
 h1 {
 	font-size: 1.3em;
