@@ -1,4 +1,5 @@
 body {
+	background-image: url(../images/channels4_profile.jpg);
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
 }
@@ -10,8 +11,8 @@ h1 {
 
 h2{
         font-size: 1.1em;
+	text-align: center;
 }
-
 table {
 	margin-left: auto;
 	margin-right: auto;
