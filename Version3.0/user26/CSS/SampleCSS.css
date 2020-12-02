@@ -1,7 +1,7 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
-	background-image: url(images/mainehardt.png);
+	background-image: url("images/mainehardt.png");
 }
 
 h1 {
