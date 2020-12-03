@@ -11,6 +11,8 @@ h1 {
 }
 
 h2{
+	background: url(../images/banner.jpg) no-repeat center center;
+	background-size: cover;
 		font-size: 1.1em;
 		text-align: center;	
 }
