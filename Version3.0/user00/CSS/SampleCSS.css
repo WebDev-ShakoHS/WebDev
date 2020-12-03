@@ -1,15 +1,25 @@
+html {
+
+
+  }
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	background-image: url(../images/music_background.png);
+	color: #ffffff;
+	background: url(../images/music_background.png) no-repeat center center fixed;
+	background-size:75% 90vh;
+	width: 100%;
 }
 
 h1 {
+	background: url(../images/banner2.jpg) no-repeat center center;
+	background-size: contain;
 	font-size: 1.3em;
 	text-align: center;
 }
 
 h2{
+	background: url(../images/banner2.jpg) no-repeat center center;
+	background-size: cover;
 		font-size: 1.1em;
 		text-align: center;
 }
@@ -19,7 +29,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
@@ -29,6 +39,8 @@ tr {
 }
 
 th {
+	background: url(../images/banner1.jpg) no-repeat center center;
+	background-size: cover;
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
