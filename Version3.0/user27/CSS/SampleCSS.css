@@ -1,10 +1,11 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #640ba0;
+	background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.imgur.com%2FjVQDWVV.png&imgrefurl=https%3A%2F%2Fimgur.com%2Fgallery%2FjVQDWVV&tbnid=cbvple0RHldqaM&vet=12ahUKEwjcz-PJsLLtAhWaGc0KHeWVDxoQMygCegQIARBm..i&docid=8qyY9Grue8F6dM&w=219&h=230&q=shrekwizouski&safe=active&ved=2ahUKEwjcz-PJsLLtAhWaGc0KHeWVDxoQMygCegQIARBm");
 }
 
 h1 {
-	font-size: 1.3em;
+	font-size: 2.3em;
 	text-align: center;
 }
 
