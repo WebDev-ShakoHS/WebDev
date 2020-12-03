@@ -1,6 +1,7 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
+	background-image: url(../images/music_background.png);
 }
 
 h1 {
@@ -9,7 +10,8 @@ h1 {
 }
 
 h2{
-        font-size: 1.1em;
+		font-size: 1.1em;
+		text-align: center;
 }
 
 table {
