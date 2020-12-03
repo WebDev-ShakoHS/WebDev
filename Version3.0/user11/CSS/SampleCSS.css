@@ -1,7 +1,7 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #eca2d4;
-	background-image: url(../WebDev\ New\ picture.png);
+	color: #ffffff;
+	background-image: url(../images/WebDev\ try\ pic.webp);
 }
 
 h1 {
@@ -19,7 +19,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
@@ -29,7 +29,9 @@ tr {
 }
 
 th {
+	background: url(../images/new\ banner.jpg) no-repeat center center;
+background-size: cover;
 	text-align: center;
-	color: #ffffff;
+	color: #000000;
 	background-color: #000000;
 }
