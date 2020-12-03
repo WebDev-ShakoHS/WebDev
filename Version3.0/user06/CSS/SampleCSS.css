@@ -31,6 +31,9 @@ tr {
 }
 
 th {
+	background: url(https://www.abc.net.au/cm/rimage/9738964-1x1-large.jpg?v=4) ;
+	background-size: cover;
+
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
