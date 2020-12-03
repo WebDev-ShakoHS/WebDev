@@ -19,7 +19,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
@@ -29,7 +29,9 @@ tr {
 }
 
 th {
+	Background: url(../images/WebDevUser16Bannerb.jpeg);
+	background-size: cover;
 	text-align: center;
-	color: #ffffff;
+	color: #000000;
 	background-color: #003366;
 }
