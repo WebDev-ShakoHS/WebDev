@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <!--Version 3.0
         Name: Mr. M
@@ -6,7 +5,7 @@
     -->
 
 <head>
-    <title>My Lists</title>
+    <title>About Me </title>
     <link rel="shortcut icon" href="images/favicon.ico" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,6 +36,22 @@
             font-size: 12px;
             text-align: center;
         }
+
+        h3 {
+            padding: 50px;
+            border-bottom: 1px solid #5D6063;
+            border-right: 3px dotted #0000ff;
+            border-top: 5px inset;
+            border-left: 3px dashed #d41212;
+        }
+
+        p {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 50px;
+        }
     </style>
 </head>
 
@@ -53,9 +68,9 @@
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="aboutMe.html" class="nav-item nav-link active">About Me</a>
                     <a href="music.html" class="nav-item nav-link" tabindex="-1">Music</a>
-                    <a href="list.html" class="nav-item nav-link active" tabindex="-1">Lists</a>
+                    <a href="list.html" class="nav-item nav-link" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
@@ -71,45 +86,21 @@
 
     <div class="wideMargin" id="content">
 
-        <h1 class="text-left my-3">Lists</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">About Me</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h1>
-            NFC North Standings
-        </h1>
-        <ol>
-            <li>
-                Packers
-            </li>
-            <li>
-                Bears
-            </li>
-            <li>
-                Vikings
-            </li>
-            <li>
-                Lions
-            </li>
-        </ol>
+        <h3>Headings Are Block Elements</h3>
 
-        <h2>Favorite Players</h2>
-            <ul>
-                <li>
-                    Aaron Rodgers
-                </li>
-                <li>
-                    Jamall Williams
-                </li>
-                <li>
-                    Kamal Martin
-                </li>
-            </ul>
-        
+        <p>paragraphs are blocks, too.<em>However</em>, &lt;em&gt; and &lt;strong&gt;
+            elements are not. They are <strong>inline</strong> elements.
+        </p>
 
-
-
-        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+        <p>Block elements define the flow of the HTML document, while inline elements
+            do not.
+        </p>
     </div>
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
 
     <!---------------------------------- Begin the footer ------------->
     <div class="wideMargin" id="footer">
