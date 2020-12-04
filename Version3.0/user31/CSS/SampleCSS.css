@@ -1,15 +1,17 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	color: #057aee;
 }
 
 h1 {
 	font-size: 1.3em;
 	text-align: center;
+	
 }
 
 h2{
-        font-size: 1.1em;
+		font-size: 1.1em;
+		text-align: center
 }
 
 table {
@@ -30,4 +32,10 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+	
+}
+body {
+	background-image: url(https://wallpaperaccess.com/full/2564042.jpg);
+	background-repeat: no-repeat;
+	background-size: 1920px 1080px;
 }
