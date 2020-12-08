@@ -17,7 +17,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
@@ -31,3 +31,62 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+  
+  .button1 {
+	border-radius: 8px;
+  }
+  
+  .button2 {
+	border-radius: 30%;
+  }
+  
+  .red { 
+	 background-color: #ff0000;
+  }
+
+  .button3 {
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:15px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+  }
+
+  .blue {
+	  background-color: #003366;
+  }
+
+  .title{
+	  color: red;
+	  font-family: 'Trebuchet MS', sans-serif;
+	}
+	
+	.title-large {
+	  font-size: 2rem;
+	}
+	
+	.title-small {
+	  font-size: .5rem;
+	}
