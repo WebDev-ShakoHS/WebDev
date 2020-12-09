@@ -101,3 +101,19 @@ th {
   .title-small {
 	font-size: .5rem;
   }
+
+  #morecontent {
+	background-color: yellow;
+  }
+  #footer{ 
+font-size: 10px;
+margin: auto;
+width: 85%;
+border: 3px solid green;
+padding: 10px;
+  }
+
+  #main{ 
+	  background-color: aliceblue
+  }
+  
