@@ -91,11 +91,16 @@ th {
 .behind {
 	background: url(../images/Sun\ banner.jpeg);
 }
-.Hola{
+
+.Hola {
 	background: url(../images/walapaper_kitti.jpg);
 }
 
-.colr{
+.button-shadow {
+	box-shadow: 3px 4px 0px 0px #5b4a47;
+}
+
+.colr {
 	color: #ff0000
 }
 
@@ -110,4 +115,29 @@ th {
 
 .title-small {
 	font-size: .5rem;
+}
+
+.title-small {
+	font-family: sans-serif;
+}
+
+#morecontent {
+	background-color: yellow;
+}
+
+#main {
+	background-color: #24a3ba;
+}
+
+#footer {
+	font-size: 10px;
+	margin: auto;
+	width: 85%;
+	border: 3px solid green;
+	padding: 10px;
+}
+
+* {
+	text-align: center;
+font-style: italic;
 }
