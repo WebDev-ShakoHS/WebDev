@@ -45,11 +45,11 @@ th {
     cursor: pointer;
 }
 
-.button1 {
+.button-radius1 {
     border-radius: 8px;
 }
 
-.button2 {
+.button-radius2 {
     border-radius: 30%;
 }
 
@@ -101,4 +101,25 @@ th {
 
 .title-small {
     font-size: .5rem;
+}
+
+#morecontent {
+    background-color: yellow;
+}
+
+#footer {
+    font-size: 10px;
+    margin: auto;
+    width: 85%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+#main {
+    background-color: rgb(150, 95, 252);
+}
+
+* {
+    text-align: center;
+    border: 2x solid rgb(255, 0, 0);
 }
