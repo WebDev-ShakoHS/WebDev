@@ -97,3 +97,24 @@ th {
   .title-small {
 	font-size: .5rem;
   }
+
+  #morecontent {
+	background-color: yellow;
+  }
+
+  #footer{
+font-size: 10px;
+margin: auto;
+width: 85%;
+border: 3px solid green;
+padding: 10px;
+  }
+
+  #main{
+background-color: rgb(168, 216, 241) ;
+font-size: 16px;
+  }
+
+*{
+	margin: .8%;
+}
