@@ -48,10 +48,16 @@ th {
 .button1 {
 	border-radius: 8px;
 }
-.button-shadow{
-	box-shadow: 3px 4px 0px 0px #1564ad;}
 
-	.button2 {
+.button-shadow {
+	box-shadow: 3px 4px 0px 0px #1564ad;
+}
+
+.button-backround {
+	background-color: #57220d;
+}
+
+.button2 {
 	border-radius: 30%;
 }
 
@@ -93,8 +99,6 @@ th {
 	text-shadow: 0px 1px 0px #c70067;
 }
 
-
- 
 .title {
 	color: red;
 	font-family: 'Trebuchet MS', sans-serif;
@@ -106,4 +110,28 @@ th {
 
 .title-small {
 	font-size: .5rem;
+}
+
+#morecontent {
+	background-color: yellow;
+}
+
+#footer {
+	font-size: 10px;
+	margin: auto;
+	width: 50%;
+	border: 3px solid green;
+	padding: 10px;
+}
+
+#main {
+	background-color: rgb(240, 238, 236);
+	font-size: 16px;
+}
+
+*{
+    text-align:left;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font-size: 16px;
 }
