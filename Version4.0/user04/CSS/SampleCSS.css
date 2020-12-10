@@ -117,10 +117,62 @@ th {
 
 #main {
 	background-color: aliceblue;
-
 }
 
-*{
-    text-align:center;
-    border: 2px solid rgb(255, 0, 0);
+.content {
+	box-shadow: -5px -5px 10px;
+	margin: 7.5%;
+	background-color: aliceblue;
+	font-size: 25px;
+}
+
+div#face {
+	width: 40vw;
+	height: 40vw;
+	max-width: 400px;
+	max-height: 400px;
+	margin: 0 auto;
+	position: relative;
+	background: rgb(0, 0, 0);
+	margin-top: 2rem;
+}
+
+div#face, div#face * {
+	border-radius: 30%;
+}
+
+.eye {
+	width: 15%;
+	height: 25%;
+	background: #fff;
+	position: absolute;
+	top: 20%;
+}
+
+.left.eye {
+	left: 25%;
+}
+
+.right.eye {
+	right: 25%;
+}
+
+.pupil {
+	background: rgb(0, 217, 255);
+	width: 50%;
+	height: 50%;
+	position: relative;
+	left: 25%;
+	transform-origin: bottom;
+}
+
+#mouth {
+	position: relative;
+	width: 60%;
+	left: 20%;
+	height: 25%;
+	border: 1vw solid transparent;
+	border-radius: 50%;
+	top: 50%;
+	border-bottom-color: rgb(255, 255, 255);
 }
