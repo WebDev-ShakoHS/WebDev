@@ -1,10 +1,10 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	color: #000307;
 }
 
 h1 {
-	font-size: 1.3em;
+	font-size: 1.7em;
 	text-align: center;
 }
 
@@ -15,9 +15,9 @@ h2{
 table {
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
+	text-align: center;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 5px;
 }
 
 tr {
@@ -31,3 +31,153 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+.blue {
+	box-shadow: 3px 4px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:18px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.blue:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+.blue:active {
+	position:relative;
+	top:1px;
+}
+
+	
+.greentone {
+	box-shadow:inset 0px 1px 0px 0px #f2fadc;
+	background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+	background-color:#dbe6c4;
+	border-radius:6px;
+	border:1px solid #b2b8ad;
+	display:inline-block;
+	cursor:pointer;
+	color:#757d6f;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ced9bf;
+}
+.greentone:hover {
+	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	background-color:#9ba892;
+}
+.greentone:active {
+	position:relative;
+	top:1px;
+}
+
+
+	
+.grey {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color:#768d87;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.grey:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.grey:active {
+	position:relative;
+	top:1px;
+}
+	
+.soft {
+	box-shadow: 0px 0px 0px 2px #efdcfb;
+	background:linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+	background-color:#dfbdfa;
+	border-radius:10px;
+	border:1px solid #c584f3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9752cc;
+}
+.soft:hover {
+	background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+	background-color:#bc80ea;
+}
+.soft:active {
+	position:relative;
+	top:1px;
+}
+
+.yellow {
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+
+.title{
+	color: rgb(110, 136, 69);
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 3rem;
+  }
+  
+  .title-small {
+	font-size: 1rem;
+  }
+
+  #morecontent {
+	background-color: rgba(94, 89, 63, 0.555);
+  }
+
+  #footer {
+	font-size: 15px;
+	text-align: center;
+  }
+
+  #main {
+	background-color: #caece7;
+	padding: 12px;
+}
+
+  *{
+    text-align:center;
+    padding:12px 24px;
+	}
