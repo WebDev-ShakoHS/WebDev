@@ -107,7 +107,6 @@ th {
 	background-color: rgb(171, 245, 142);
 }
 
-
 div#face {
 	width: 40vw;
 	height: 40vw;
@@ -117,38 +116,38 @@ div#face {
 	position: relative;
 	background: rgb(223, 155, 255);
 	margin-top: 2rem;
-	}
-	
-	div#face, div#face * {
+}
+
+div#face, div#face * {
 	border-radius: 30%;
-	}
-	
-	.eye {
+}
+
+.eye {
 	width: 25%;
 	height: 25%;
 	background: #fff;
 	position: absolute;
 	top: 20%;
-	}
-	
-	.left.eye {
+}
+
+.left.eye {
 	left: 20%;
-	}
-	
-	.right.eye {
+}
+
+.right.eye {
 	right: 20%;
-	}
-	
-	.pupil {
+}
+
+.pupil {
 	background: rgb(63, 62, 62);
 	width: 50%;
 	height: 50%;
 	position: relative;
 	left: 25%;
 	transform-origin: bottom;
-	}
-	
-	#mouth {
+}
+
+#mouth {
 	position: relative;
 	width: 60%;
 	left: 20%;
@@ -156,8 +155,8 @@ div#face {
 	border: 1vw solid transparent;
 	border-radius: 50%;
 	top: 40%;
-	border-bottom-color:  rgb(63, 62, 62);
-	}
+	border-bottom-color: rgb(63, 62, 62);
+}
 
 #footer {
 	font-size: 10px;
@@ -175,7 +174,7 @@ div#face {
 	box-shadow: -5px -5px 10px;
 	margin: 7.5%;
 	background-color: rgb(241, 236, 155);
-	font-size: 1em;
+	font-size: 20px; 
 
-
+	
 	
