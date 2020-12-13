@@ -109,52 +109,54 @@ th {
 }
 
 * {
-	margin: ;
+	margin: 2px;
 }
 
 .content {
 	box-shadow: -5px -5px 10px;
-	margin: 7.5%
+	margin: 7.5%;
+	background-color: rgb(133, 180, 133);
+	font-size: 2.5em;
 }
 
 div#face {
-	width: 40vw;
-	height: 40vw;
-	max-width: 400px;
-	max-height: 400px;
-	margin: 0 auto;
-	position: relative;
-	background: yellow;
-	margin-top: 2rem;
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: rgba(0, 255, 234, 0.705);
+    margin-top: 2rem;
 }
 
 div#face, div#face * {
-	border-radius: 50%;
+    border-radius: 10%;
 }
 
 .eye {
-	width: 25%;
-	height: 25%;
-	background: #fff;
-	position: absolute;
-	top: 20%;
+    width: 10%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
 }
 
 .left.eye {
-	left: 20%;
+    left: 20%;
 }
 
 .right.eye {
-	right: 20%;
+    right: 20%;
 }
 
 .pupil {
-	background: #000;
-	width: 50%;
-	height: 50%;
-	position: relative;
-	left: 25%;
-	transform-origin: bottom;
+    background: #000;
+    width: 50%;
+    height: 50%;
+    position: top;
+    left: 25%;
+    transform-origin: bottom;
 }
 
 #mouth {
