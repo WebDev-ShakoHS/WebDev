@@ -8,8 +8,8 @@ h1 {
 	text-align: center;
 }
 
-h2{
-        font-size: 1.1em;
+h2 {
+	font-size: 1.4em;
 }
 
 table {
@@ -23,7 +23,7 @@ table {
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #9FB6CD;
 }
 
 th {
@@ -34,150 +34,226 @@ th {
 
 .blue {
 	box-shadow: 3px 4px 0px 0px #dcecfb;
-	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
-	background-color:#bddbfa;
-	border-radius:18px;
-	border:1px solid #84bbf3;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:7px 25px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #528ecc;
+	background: linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color: #bddbfa;
+	border-radius: 18px;
+	border: 1px solid #84bbf3;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 7px 25px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #528ecc;
 }
+
 .blue:hover {
-	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
-	background-color:#80b5ea;
+	background: linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color: #80b5ea;
 }
+
 .blue:active {
-	position:relative;
-	top:1px;
+	position: relative;
+	top: 1px;
 }
 
-	
 .greentone {
-	box-shadow:inset 0px 1px 0px 0px #f2fadc;
-	background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
-	background-color:#dbe6c4;
-	border-radius:6px;
-	border:1px solid #b2b8ad;
-	display:inline-block;
-	cursor:pointer;
-	color:#757d6f;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ced9bf;
+	box-shadow: inset 0px 1px 0px 0px #f2fadc;
+	background: linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+	background-color: #dbe6c4;
+	border-radius: 6px;
+	border: 1px solid #b2b8ad;
+	display: inline-block;
+	cursor: pointer;
+	color: #757d6f;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ced9bf;
 }
+
 .greentone:hover {
-	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
-	background-color:#9ba892;
+	background: linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	background-color: #9ba892;
 }
+
 .greentone:active {
-	position:relative;
-	top:1px;
+	position: relative;
+	top: 1px;
 }
 
-
-	
 .grey {
-	box-shadow:inset 0px 1px 3px 0px #91b8b3;
-	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
-	background-color:#768d87;
-	border-radius:5px;
-	border:1px solid #566963;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:11px 23px;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #2b665e;
+	box-shadow: inset 0px 1px 3px 0px #91b8b3;
+	background: linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color: #768d87;
+	border-radius: 5px;
+	border: 1px solid #566963;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 11px 23px;
+	text-decoration: none;
+	text-shadow: 0px -1px 0px #2b665e;
 }
+
 .grey:hover {
-	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
-	background-color:#6c7c7c;
+	background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color: #6c7c7c;
 }
+
 .grey:active {
-	position:relative;
-	top:1px;
+	position: relative;
+	top: 1px;
 }
-	
+
 .soft {
 	box-shadow: 0px 0px 0px 2px #efdcfb;
-	background:linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
-	background-color:#dfbdfa;
-	border-radius:10px;
-	border:1px solid #c584f3;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:19px;
-	padding:12px 37px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #9752cc;
+	background: linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+	background-color: #dfbdfa;
+	border-radius: 10px;
+	border: 1px solid #c584f3;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 19px;
+	padding: 12px 37px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #9752cc;
 }
+
 .soft:hover {
-	background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
-	background-color:#bc80ea;
+	background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+	background-color: #bc80ea;
 }
+
 .soft:active {
-	position:relative;
-	top:1px;
+	position: relative;
+	top: 1px;
 }
 
 .yellow {
-	box-shadow:inset 0px 1px 0px 0px #fff6af;
-	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	background-color:#ffec64;
-	border-radius:6px;
-	border:1px solid #ffaa22;
-	display:inline-block;
-	cursor:pointer;
-	color:#333333;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffee66;
+	box-shadow: inset 0px 1px 0px 0px #fff6af;
+	background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color: #ffec64;
+	border-radius: 6px;
+	border: 1px solid #ffaa22;
+	display: inline-block;
+	cursor: pointer;
+	color: #333333;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ffee66;
 }
 
-.title{
+.title {
 	color: rgb(110, 136, 69);
-	font-family: 'Trebuchet MS', sans-serif; 
-  }
-  
-  .title-large {
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
 	font-size: 3rem;
-  }
-  
-  .title-small {
+}
+
+.title-small {
 	font-size: 1rem;
-  }
+}
 
-  #morecontent {
+#morecontent {
 	background-color: rgba(94, 89, 63, 0.555);
-  }
+	font-size: 20px;
+}
 
-  #footer {
+#footer {
 	font-size: 15px;
 	text-align: center;
-  }
+	border: 4px dashed #ffaa22;
+}
 
-  #main {
+#main {
 	background-color: #caece7;
 	padding: 12px;
 }
 
-  *{
-    text-align:center;
-    padding:12px 24px;
-	}
+* {
+	text-align: center;
+	padding: 10px;
+}
+
+.content {
+	box-shadow: -5px -5px 10px;
+	margin: 2.5%;
+	font-size: 20px;
+	padding: 10px;
+}
+
+div#face {
+	width: 40vw;
+	height: 40vw;
+	max-width: 400px;
+	max-height: 400px;
+	margin: 0 auto;
+	position: relative;
+	background: rgb(180, 180, 163);
+	margin-top: 2rem;
+}
+
+div#face, div#face * {
+	border-radius: 50%;
+}
+
+.eye {
+	width: 25%;
+	height: 25%;
+	background: #fff;
+	position: absolute;
+	top: 20%;
+}
+
+.left.eye {
+	left: 20%;
+}
+
+.right.eye {
+	right: 20%;
+}
+
+.pupil {
+	background: rgb(3, 27, 6);
+	width: 50%;
+	height: 50%;
+	position: relative;
+	left: 25%;
+	transform-origin: bottom;
+}
+
+#mouth {
+	position: relative;
+	width: 60%;
+	left: 20%;
+	height: 25%;
+	border: 1vw solid transparent;
+	border-radius: 50%;
+	top: 50%;
+	border-bottom-color: #000;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+canvas {
+width: 500px;
+height: 100px;
+overflow: hidden;
+}
