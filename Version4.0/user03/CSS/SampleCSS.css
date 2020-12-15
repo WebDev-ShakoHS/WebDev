@@ -31,3 +31,76 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+ .button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+  
+  .welcome{
+	border-radius: 40%;
+	text-align: center;
+	background-color: #2011f6;
+  }
+  
+  .button-mediumRadius{
+	border-radius: 60%;
+  }
+  
+  .red { 
+	 background-color: #ff0000;
+  }
+ .aheedbutton{
+	background-color: #b068c2;
+}
+
+.gettoknowme{
+	background-color: #773f00;
+	
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+ }
+
+ #morecontent {
+	background-color: yellow;
+  }
+
+  #somemorecontent {
+	background-color: rgb(175, 52, 99);
+	font-size: 20px;
+  }
+
+  #footer {
+  font-size: 20px;
+  margin: auto;
+  width: 85%;
+  border: 3px dotted rgb(216, 167, 31);
+  padding: 10px
+  }
+
+  #main {
+  font-size: 16px;
+  background-color: rgb(131, 233, 251);
+  }
+
+  #toptitle {
+   color: #4CAF50;
+  }
+
+  *{
+    text-align: center;
+    padding: 1px;
+}
