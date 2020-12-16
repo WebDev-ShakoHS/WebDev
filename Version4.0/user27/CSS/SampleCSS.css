@@ -8,8 +8,8 @@ h1 {
 	text-align: center;
 }
 
-h2{
-        font-size: 1.1em;
+h2 {
+	font-size: 1.1em;
 }
 
 table {
@@ -17,20 +17,20 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	 padding: 0px;
+	padding: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #9FB6CD;
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
-<<<<<<< HEAD
+	<<<<<< HEAD
 }
 
 .button {
@@ -138,6 +138,5 @@ div#face, div#face * {
 	top: 50%;
 	border-bottom-color: #000;
 }
-=======
-}
->>>>>>> parent of ec5b70f6... version 4
+
+======
