@@ -8,8 +8,8 @@ h1 {
 	text-align: center;
 }
 
-h2{
-        font-size: 1.1em;
+h2 {
+	font-size: 1.1em;
 }
 
 table {
@@ -17,17 +17,168 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #9FB6CD;
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {
+	border-radius: 8px;
+}
+
+.button2 {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+.TylerButton {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color: #c62d1f;
+	border-radius: 18px;
+	border: 1px solid #d02718;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Times New Roman;
+	font-size: 28px;
+	font-weight: bold;
+	font-style: italic;
+	padding: 7px 25px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #810e05;
+}
+
+.TylerButton2 {
+	box-shadow: inset 0px 1px 0px 0px #f9eca0;
+	background: linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+	background-color: #f0c911;
+	border-radius: 6px;
+	border: 1px solid #e65f44;
+	display: inline-block;
+	cursor: pointer;
+	color: #c92200;
+	font-family: Times New Roman;
+	font-size: 28px;
+	font-weight: bold;
+	font-style: italic;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ded17c;
+}
+
+.title {
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+	font-size: 2rem;
+}
+
+.title-small {
+	font-size: .5rem;
+}
+
+#morecontent {
+	background-color: yellow;
+}
+
+#footer {
+	font-size: 10px;
+	margin: auto;
+	width: 85%;
+	border: 3px solid green;
+	padding: 10px;
+}
+
+#main {
+	font-size: 16px;
+}
+
+* {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 16px;
+}
+
+.content {
+	box-shadow: -5px -5px 10px;
+	margin: 7.5%
+}
+
+div#face {
+	width: 40vw;
+	height: 40vw;
+	max-width: 400px;
+	max-height: 400px;
+	margin: 0 auto;
+	position: relative;
+	background: yellow;
+	margin-top: 2rem;
+}
+
+div#face, div#face * {
+	border-radius: 10%;
+}
+
+.eye {
+	width: 25%;
+	height: 25%;
+	background: #fff;
+	position: absolute;
+	top: 20%;
+}
+
+.left.eye {
+	left: 20%;
+}
+
+.right.eye {
+	right: 20%;
+}
+
+.pupil {
+	background: #000;
+	width: 50%;
+	height: 50%;
+	position: relative;
+	left: 25%;
+	transform-origin: bottom;
+}
+
+#mouth {
+	position: relative;
+	width: 60%;
+	left: 20%;
+	height: 25%;
+	border: 1vw solid transparent;
+	border-radius: 50%;
+	top: 50%;
+	border-bottom-color: #000;
 }
