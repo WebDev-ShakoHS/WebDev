@@ -154,7 +154,7 @@ div#face, div#face * {
     background: #000;
     width: 50%;
     height: 50%;
-    position: top;
+    position: relative;
     left: 25%;
     transform-origin: bottom;
 }
