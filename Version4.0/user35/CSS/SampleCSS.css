@@ -1,3 +1,5 @@
+
+
 body {
   font-family: "Marker Felt", "Comic Sans MS", fantasy;
   color: #003366;
@@ -115,10 +117,126 @@ title {
 }
 
 #main {
-	background-color: rgb(240,252,255);
-	font-size: 16px;
+  background-color: rgb(240, 252, 255);
+  font-size: 16px;
 }
-*{
-    text-align:center;
-    font-family: sans-serif;
+* {
+  text-align: center;
+  font-family: sans-serif;
+}
+.content {
+  box-shadow: -5px -5px 10px;
+  margin: 7.5%;
+  background-color: rgb(240, 252, 255);
+  font-size: xx-large;
+}
+div#face {
+  width: 40vw;
+  height: 40vw;
+  max-width: 400px;
+  max-height: 400px;
+  margin: 0 auto;
+  position: relative;
+  background: yellow;
+  margin-top: 2rem;
+}
+
+div#face,
+div#face * {
+  border-radius: 50%;
+}
+
+.eye {
+  width: 25%;
+  height: 25%;
+  background: #fff;
+  position: absolute;
+  top: 20%;
+}
+
+.left.eye {
+  left: 20%;
+}
+
+.right.eye {
+  right: 20%;
+}
+
+.pupil {
+  background: #000;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  left: 25%;
+  transform-origin: bottom;
+}
+
+#mouth {
+  position: relative;
+  width: 60%;
+  left: 20%;
+  height: 25%;
+  border: 1vw solid transparent;
+  border-radius: 50%;
+  top: 50%;
+  border-bottom-color: #000;
+}
+BODY {
+  height: 100%;
+}
+
+.webcoderskull {
+  font-size: 0.5em;
+}
+
+svg {
+  position: relative;
+  width: 50%;
+  height: 50%;
+   background: #000;
+  background-size: 0.005em 100%;
+  font: 16em/1 Arial;
+}
+
+.webcoderskull-1 {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 7% 28%;
+  stroke-width: 3px;
+  -webkit-animation: stroke-offset 7s infinite linear;
+          animation: stroke-offset 7s infinite linear;
+}
+.webcoderskull-1:nth-child(1) {
+  stroke: #360745;
+  stroke-dashoffset: 7%;
+}
+.webcoderskull-1:nth-child(2) {
+  stroke: #d61c59;
+  stroke-dashoffset: 14%;
+}
+.webcoderskull-1:nth-child(3) {
+  stroke: #e7d84b;
+  stroke-dashoffset: 21%;
+}
+.webcoderskull-1:nth-child(4) {
+  stroke: #efeac5;
+  stroke-dashoffset: 28%;
+}
+.webcoderskull-1:nth-child(5) {
+  stroke: #1b8798;
+  stroke-dashoffset: 35%;
+}
+
+@-webkit-keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+
+@keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
 }
