@@ -1,40 +1,94 @@
 body {
-	background-image: url(../images/channels4_profile.jpg);
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+    background-image: url(../images/channels4_profile.jpg);
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+    color: #003366;
 }
 
 h1 {
-	font-size: 1.3em;
-	text-align: center;
+    font-size: 1.3em;
+    text-align: center;
 }
 
-h2{
-        font-size: 1.1em;
-	text-align: center;
+h2 {
+    font-size: 1.1em;
+    text-align: center;
 }
+
 table {
-	background: url(../images/0ba3d60362c7e6d256cfc1f37156bad9.jpg) no-repeat center center;
-	background-size: cover;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+    background: url(../images/0ba3d60362c7e6d256cfc1f37156bad9.jpg) no-repeat center center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+    cellspacing: 0px;
 }
 
 tr {
-	background: url(../images/0ba3d60362c7e6d256cfc1f37156bad9.jpg) no-repeat center center;
-	background-size: cover;
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+    background: url(../images/0ba3d60362c7e6d256cfc1f37156bad9.jpg) no-repeat center center;
+    background-size: cover;
+    border: 1px solid #ffffff;
+    text-align: center;
+    background-color: #9FB6CD;
 }
 
 th {
-	background: url(../images/0ba3d60362c7e6d256cfc1f37156bad9.jpg) no-repeat center center;
-	background-size: cover;
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+    background: url(../images/0ba3d60362c7e6d256cfc1f37156bad9.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    background-color: #003366;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7 !important;
+}
+
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.search_input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_input {
+    padding: 0 10px;
+    width: 450px;
+    caret-color: red;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover>.search_icon {
+    background: white;
+    color: #e74c3c;
+}
+
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
 }
