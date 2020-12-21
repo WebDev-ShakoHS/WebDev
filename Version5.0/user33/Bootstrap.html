@@ -19,10 +19,200 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <blockquote class="w3-panel w3-leftbar w3-light-grey">
+        <p class="w3-large">
+        <i>"Use your best friend google if you have any problems with coding"</i></p>
+        <p>Inspirational Quote by My Dad</p>
+      </blockquote>
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body>
+<style>
 
+    .demo-content{
+    padding: 15px;
+    font-size: 18px;
+    background: #dbdfe5;
+    margin-bottom: 15px;
+    }
+    .demo-content.bg-alt{
+    background: #abb1b8;
+    }
+    .bs-example {
+    margin: 20px;
+    }
+    .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 180, 220, 0.08);
+}
+
+.progress {
+  display: -ms-flexbox;
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+
+.progress-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #007bff;
+  transition: width 0.6s ease;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.30) !important;
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar {
+    transition: none;
+  }
+}
+
+.progress-bar-striped {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
+}
+
+    </style>
+
+<body>
+    <div class="jumbotron">
+        <h4> Bootstrap Examples</h4>
+        <p class="lead"> Let's look at the many different examples of how we can use bootstrap and what this bad boy can do! </p>
+    </div>
+    
+    <!---------Three Column Layouts--------->
+    <div class="container mt-3">
+        <!--Row with two equal columns-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="demo-content shadow">.col-md-6</div>
+            </div>
+            <div class="col-md-6">
+                <div class="demo-content bg-alt shadow">.col-md-6</div>
+            </div>
+        </div>
+        <!--Row with two columns divided in 1:2 ratio-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="demo-content shadow">.col-md-4</div>
+            </div>
+            <div class="col-md-8">
+                <div class="demo-content bg-alt shadow">.col-md-8</div>
+            </div>
+        </div>
+        <!--Row with two columns divided in 1:3 ratio-->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="demo-content shadow">.col-md-3</div>
+            </div>
+            <div class="col-md-9">
+                <div class="demo-content bg-alt shadow">.col-md-9</div>
+            </div>
+        </div>
+        
+        <!---------Auto Layout Columns--------->
+        <div class="row">
+            <div class="col demo-content shadow">Column one</div>
+            <div class="col demo-content bg-alt shadow">Column two</div>
+            <div class="col demo-content shadow">Column three</div>
+            <div class="col demo-content bg-alt shadow">Column four</div>
+            <div class="col demo-content shadow">Column five</div>
+            <div class="col demo-content bg-alt shadow">Column six</div>
+        </div>
+        
+        <!---------Flexible Layouts--------->
+        <div class="row">
+            <div class="col-md-4 col-lg-3">
+                <div class="demo-content shadow">.col-md-4 .col-lg-3</div>
+            </div>
+            <div class="col-md-8 col-lg-6">
+                <div class="demo-content bg-alt shadow">.col-md-8 .col-lg-6</div>
+            </div>
+            <div class="col-md-12 col-lg-3 shadow">
+                <div class="demo-content">Pizza   or   Burgers
+                </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="progress blue">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">90%</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="progress yellow">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">10%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bs-example">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Row</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Frank</td>
+                    <td>Clark</td>
+                    <td>FClark@mail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Taegena</td>
+                    <td>Craeb</td>
+                    <td>PostedCringe@mail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mr</td>
+                    <td>Whatzittooya</td>
+                    <td>Whatzittooya@mail.com</td>
+                </tr>            
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
