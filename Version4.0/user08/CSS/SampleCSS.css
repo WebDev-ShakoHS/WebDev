@@ -91,11 +91,16 @@ th {
 .behind {
 	background: url(../images/Sun\ banner.jpeg);
 }
-.Hola{
+
+.Hola {
 	background: url(../images/walapaper_kitti.jpg);
 }
 
-.colr{
+.button-shadow {
+	box-shadow: 3px 4px 0px 0px #5b4a47;
+}
+
+.colr {
 	color: #ff0000
 }
 
@@ -111,3 +116,86 @@ th {
 .title-small {
 	font-size: .5rem;
 }
+
+.title-small {
+	font-family: sans-serif;
+}
+
+#morecontent {
+	background-color: rgb(255, 0, 0);
+}
+
+#main {
+	background-color: #24a3ba;
+}
+
+#footer {
+	font-size: 10px;
+	margin: auto;
+	width: 85%;
+	border: 3px solid green;
+	padding: 10px;
+}
+
+* {
+	text-align: center;
+	font-style: italic;
+}
+
+.content {
+	box-shadow: -5px -5px 10px;
+	margin: 7%;
+background-color: rgb(119, 0, 255);
+}
+
+div#face {
+	width: 40vw;
+	height: 40vw;
+	max-width: 400px;
+	max-height: 400px;
+	margin: 0 auto;
+	position: relative;
+	background: yellow;
+	margin-top: 2rem;
+	}
+	
+	div#face, div#face * {
+	border-radius: 20%;
+	}
+	
+	.eye {
+	width: 15%;
+	height: 25%;
+	background: #fff;
+	position: absolute;
+	top: 5%;
+	bottom: 10%;
+	}
+	
+	.left.eye {
+	left: 20%;
+	}
+	
+	.right.eye {
+	right: 20%;
+	}
+	
+	.pupil {
+	background: rgb(0, 81, 255);
+	width: 50%;
+	height: 50%;
+	position: relative;
+	left: 25%;
+	transform-origin: bottom;
+	}
+	
+	#mouth {
+	position: relative;
+	width: 60%;
+	left: 20%;
+	height: -20%;
+	border: 1vw solid transparent;
+	border-radius: 20%;
+	top: 50%;
+	border-bottom-color: #000;
+	}
