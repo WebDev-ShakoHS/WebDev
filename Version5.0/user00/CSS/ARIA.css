@@ -1,9 +1,11 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-main{
+
+main {
   padding: 5vh;
 }
+
 .container {
   display: inline;
   font-weight: 700;
@@ -15,8 +17,17 @@ ul li {
 }
 
 a {
-  color: purple;
+  color: rgb(180, 25, 25);
   text-decoration: none;
+}
+
+section {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
 
 .logo {
@@ -28,72 +39,115 @@ a {
   float: right;
 }
 
-ul {
+.Accordion {
   margin: 0;
   padding: 0;
-  list-style: none;
-  justify-content: space-between;
+  border: 2px solid hsl(0, 0%, 82%);
+  border-radius: 7px;
+  width: 20em;
 }
 
-input[type=radio] {
-  display: none;
+.Accordion h3 {
+  margin: 0;
+  padding: 0;
 }
 
-/* style */
-
-.a-container {
-  width: 600px;
-  margin: 20px auto;
+.Accordion.focus {
+  border-color: hsl(216, 94%, 73%);
 }
 
-.a-container label {
+.Accordion.focus h3 {
+  background-color: hsl(0, 0%, 97%);
+}
+
+.Accordion>*+* {
+  border-top: 1px solid hsl(0, 0%, 82%);
+}
+
+.Accordion-trigger {
+  background: none;
+  color: hsl(0, 0%, 13%);
   display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 1em 1.5em;
   position: relative;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px 20px;
-  color: #aaa;
-  background-color: #eee;
-  border-bottom: 1px solid #ddd;
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -ms-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
+  text-align: left;
+  width: 100%;
+  outline: none;
 }
 
-.a-container label:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 8px solid #aaa;
-  border-right: 6px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 6px solid transparent;
+.Accordion-trigger:focus, .Accordion-trigger:hover {
+  background: hsl(216, 94%, 94%);
+}
+
+.Accordion *:first-child .Accordion-trigger {
+  border-radius: 5px 5px 0 0;
+}
+
+button {
+  border-style: none;
+}
+
+.Accordion button::-moz-focus-inner {
+  border: 0;
+}
+
+.Accordion-title {
+  display: block;
+  pointer-events: none;
+  border: transparent 2px solid;
+  border-radius: 5px;
+  padding: 0.25em;
+  outline: none;
+}
+
+.Accordion-trigger:focus .Accordion-title {
+  border-color: hsl(216, 94%, 73%);
+}
+
+.Accordion-icon {
+  border: solid hsl(0, 0%, 62%);
+  border-width: 0 2px 2px 0;
+  height: 0.5rem;
+  pointer-events: none;
   position: absolute;
-  right: 10px;
-  top: 16px;
+  right: 2em;
+  top: 50%;
+  transform: translateY(-60%) rotate(45deg);
+  width: 0.5rem;
 }
 
-.a-container input:checked+label, .a-container label:hover {
-  background-color: #ddd;
-  color: #222;
+.Accordion-trigger:focus .Accordion-icon, .Accordion-trigger:hover .Accordion-icon {
+  border-color: hsl(216, 94%, 73%);
 }
 
-.a-container input:checked+label:after {
-  border-top: 8px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 8px solid #222;
-  border-left: 6px solid transparent;
-  top: 6px;
+.Accordion-trigger[aria-expanded="true"] .Accordion-icon {
+  transform: translateY(-50%) rotate(-135deg);
 }
 
-.a-content {
-  padding: 0 20px 20px;
+.Accordion-panel {
+  margin: 0;
+  padding: 1em 1.5em;
+}
+
+/* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4806035/ */
+
+.Accordion-panel[hidden] {
   display: none;
 }
 
-.a-container input:checked~.a-content {
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: 1px solid hsl(0, 0%, 62%);
+  border-radius: 0.3em;
   display: block;
+  font-size: inherit;
+  padding: 0.3em 0.5em;
 }
