@@ -17,7 +17,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
@@ -29,5 +29,8 @@ tr {
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #003366;
+	background-image: #003366;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }

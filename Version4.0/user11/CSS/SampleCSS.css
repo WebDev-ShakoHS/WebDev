@@ -48,10 +48,16 @@ th {
 .button1 {
 	border-radius: 8px;
 }
-.button-shadow{
-	box-shadow: 3px 4px 0px 0px #1564ad;}
 
-	.button2 {
+.button-shadow {
+	box-shadow: 3px 4px 0px 0px #1564ad;
+}
+
+.button-backround {
+	background-color: #57220d;
+}
+
+.button2 {
 	border-radius: 30%;
 }
 
@@ -89,12 +95,9 @@ th {
 	font-size: 15px;
 	font-weight: bold;
 	padding: 6px 24px;
-	text-decoration: none;
 	text-shadow: 0px 1px 0px #c70067;
 }
 
-
- 
 .title {
 	color: red;
 	font-family: 'Trebuchet MS', sans-serif;
@@ -107,3 +110,86 @@ th {
 .title-small {
 	font-size: .5rem;
 }
+
+#morecontent {
+	background-color: rgb(250, 156, 242);
+}
+
+#footer {
+	font-size: 10px;
+	margin: auto;
+	width: 50%;
+	border: 3px solid green;
+	padding: 10px;
+}
+
+#main {
+	background-color: rgb(240, 238, 236);
+	font-size: 16px;
+}
+
+* {
+	text-align: left;
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.content {
+	box-shadow: -5px -5px 10px;
+	margin: 7.5%;
+	background-color: lightslategrey;
+	padding: 3px;
+}
+
+div#face {
+	width: 40vw;
+	height: 40vw;
+	max-width: 400px;
+	max-height: 400px;
+	margin: 0 auto;
+	position: relative;
+	background: rgb(123, 214, 226);
+	margin-top: 2rem;
+}
+
+div#face, div#face * {
+	border-radius: 40%;
+}
+
+.eye {
+	width: 35%;
+	height: 25%;
+	background: #fff;
+	position: absolute;
+	top: 20%;
+}
+
+.left.eye {
+	left: 20%;
+}
+
+.right.eye {
+	right: 20%;
+}
+
+.pupil {
+	background: rgb(252, 0, 0);
+	width: 50%;
+	height: 30%;
+	position: relative;
+	left: 25%;
+	transform-origin: bottom;
+}
+
+#mouth {
+	position: relative;
+	width: 60%;
+	left: 20%;
+	height: 10%;
+	border: 1vw solid transparent;
+	border-radius: 50%;
+	top: 50%;
+	border-bottom-color: #000;
+}
+
