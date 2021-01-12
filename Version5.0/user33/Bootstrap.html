@@ -92,10 +92,38 @@ blockquote {
   background-size: 1rem 1rem;
 }
 
+a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+a.skip-main:focus,a.skip-main:active {
+    color: #fff;
+    background-color: #000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 4px solid red;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
+}
     </style>
 
 <body>
+    <a class="skip-main" tabindex="0" href="#main">Skip to main content</a>
     <div class="jumbotron">
+        <p tabindex="0">
         <h4> Bootstrap Examples</h4>
         <p class="lead"> Let's look at the many different examples of how we can use bootstrap and what this bad boy can do! </p>
     </div>
