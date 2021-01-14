@@ -99,6 +99,7 @@
                             <option value="Chrome">Chrome</option>
                             <option value="Internet Explorer">Internet Explorer</option>
                             <option value="Firefox">Firefox</option>
+                            <option value="Bing">Bing</option>
                         </select>
                     </form>
                 </div>
@@ -153,19 +154,14 @@
                                         </center>
                                     </div>
                                     <div class="col-sm-4" style="background-color:rgb(226, 224, 134);">
-                                        <script>
-                                            function myFunction() {
-                                              var x = document.getElementById("fname");
-                                              x.value = x.value.toUpperCase();
-                                            }
-                                            </script>
-                                            </head>
-                                            <body>
+                                       
+                                            
+                                          
                                             
                                            
-                                            Enter your name: <input type="text" id="fname" onkeyup="myFunction()">
+                                            Enter your name: <input type="text" id="Uppercase" onkeyup="Capitalize()">
                                             
-                                            </body>
+                                            
                                     </div>
                                     <div class="col-sm-4" style="background-color:rgb(14, 46, 136);">Have a great day</div>
 
@@ -179,18 +175,14 @@
                                                 </center>
                                             </div>
                                             <div class="col-sm-4" style="background-color:rgb(0, 255, 64);">
-                                                <script>
-                                                    function getEventType(event) { 
-                                                      document.getElementById("demo").innerHTML = event.type;
-                                                    }
-                                                    </script>
+                                                
                                                     </head>
                                                     <body>
                                                     
                                                     <p onmousedown="getEventType(event)">
                                                     Click on this paragraph. A message will tell what type of event was triggered.</p>
                                                     
-                                                    <p id="demo"></p>
+                                                    <p id="Eventpopup"></p>
                                                     
                                                     </body>
                                             </div>
@@ -206,15 +198,11 @@
                                                                         </center>
                                                                     </div>
                                                                     <div class="col-sm-4" style="background-color:rgb(194, 171, 70);">
-                                                                        <script>
-                                                                            function myFunction(x) {
-                                                                              x.style.background = "green";
-                                                                            }
-                                                                            </script>
+                                                                        
                                                                             </head>
                                                                             <body>
                                                                             
-                                                                            Enter your name: <input type="text" onfocus="myFunction(this)">
+                                                                            Enter your name: <input type="text" onfocus="changebackground(this)">
                                                                             
                                                                             
                                                                             
