@@ -28,14 +28,14 @@ function message() {
     x.value = x.value.toUpperCase();
   }
 
-  function message() {
+  function text() {
     alert("This alert box was triggered by the onreset event handler");
   }
 
-  function myFunction() {
+  function select() {
     document.getElementById("demo").innerHTML = "You selected some text";
   }
 
-  function myFunction(x) {
+  function backround(x) {
     x.style.background = "yellow";
   }
