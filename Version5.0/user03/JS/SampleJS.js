@@ -10,13 +10,11 @@ function preferedBrowser() {
 
 
 function confirmInput() {
-    fname = document.forms[0].fname.value;
-    alert("Hello " + fname + "! You will now be redirected to www.w3Schools.com");
-}
+    fname = document.forms[1].fname.value;
+    alert("Hello " +fname+ "! You will now be redirected to www.w3Schools.com");
+  }
 
-function writeMessage() {
-    document.forms[0].mySecondInput.value = document.forms[0].myInput.value;
-}
+
 
 
 
