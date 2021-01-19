@@ -6,6 +6,7 @@
     -->
 
 <head>
+    <script src="JS/SampleJS.js"></script>
     <title>JavaScript</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,16 +30,15 @@
         .menu {
             margin: 0px;
         }
-
+        
         .wideMargin {
             margin: 15px;
         }
-
+        
         #footer {
             font-size: 12px;
             text-align: center;
         }
-
     </style>
 </head>
 
@@ -72,12 +72,19 @@
     <!---------------------------------- End the nav-bar ------------->
 
     <div class="wideMargin" id="content">
-        <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">My JavaScript Examples</h1>
+        <!-- Edit this line for the title of your page -->
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <center>
+                        <p id="textChange"> My name is User ##</p>
+                    </center>
+                </div>
+                <div class="col-sm-4" style="background-color:orange;">
+                    <center><button type="button" onclick="changeText()">Click if you like</button></center>
+                </div>
                 <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
             </div>
         </div>
@@ -92,6 +99,182 @@
         </p>
     </div>
     <!---------------------------------- End the footer ------------->
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</head>
+
+<body>
+
+    Enter your name: <input type="text" id="fname" onblur="myFunction()">
+
+    <p>henry is cool</p>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</head>
+
+<body>
+
+    henry jakusz: <input type="text" id="fname" onchange="myFunction()">
+    <p>Henry to kewl for school</p>
+
+</body>
+
+</html>
+
+
+<html>
+
+<head>
+    <script>
+        function preferedBrowser() {
+            prefer = document.forms[0].browsers.value;
+            alert("You prefer browsing internet with " + prefer);
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        Choose which browser you prefer:
+        <select id="browsers" onchange="preferedBrowser()">
+    <option value="Chrome">Chrome</option>
+    <option value="Internet Explorer">Internet Explorer</option>
+    <option value="Firefox">Firefox</option>
+  </select>
+    </form>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction(x) {
+            x.style.background = "pink";
+        }
+    </script>
+</head>
+
+<body>
+
+    Henry jakusz: <input type="text" onfocus="myFunction(this)">
+
+    <p></p>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function imgError() {
+            alert('The image could not be loaded.');
+        }
+    </script>
+</head>
+
+<body>
+
+    <img src="image.gif" onerror="imgError()">
+    <p>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            alert("Page is loaded");
+        }
+    </script>
+</head>
+
+<body onload="myFunction()">
+    <h2>Hello World!</h2>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Cool people</h1>
+
+</body>
+
+</html>
+
+
+<html>
+
+<head>
+    <script>
+        function myFunction(e) {
+            x = e.clientX;
+            y = e.clientY;
+            coor = "Coordinates: (" + x + "," + y + ")";
+            document.getElementById("demo").innerHTML = coor
+        }
+
+        function clearCoor() {
+            document.getElementById("demo").innerHTML = "";
+        }
+    </script>
+</head>
+
+<body style="margin:0px;">
+
+    <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+
+    <p></p>
+
+    <p id="demo"></p>
+
 </body>
 
 </html>
