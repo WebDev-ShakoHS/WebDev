@@ -1,6 +1,6 @@
 body {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: whitesmoke;
 }
 
 h1 {
@@ -17,17 +17,42 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
-	text-align: center;
+	
 	background-color:#9FB6CD; 
 }
 
 th {
-	text-align: center;
+
 	color: #ffffff;
 	background-color: #003366;
+}
+
+.table-bordered {
+	border: 1px solid #dee2e6;
+  }
+
+.menu {
+	margin: 0px;
+}
+
+.wideMargin {
+	margin: 15px;
+}
+
+#footer {
+	font-size: 12px;
+	text-align: center;
+}
+
+p.solid {border-style: solid;
+color: rgb(0, 0, 0);
+}
+
+p.basic { 
+	color: whitesmoke;
 }
