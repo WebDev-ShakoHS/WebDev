@@ -29,7 +29,7 @@ function message() {
   }
 
   function text() {
-    alert("This alert box was triggered by the onreset event handler");
+    document.getElementById("demo").innerHTML = "Hello World";
   }
 
   function select() {
