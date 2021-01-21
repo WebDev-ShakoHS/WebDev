@@ -17,7 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <script src="JS/SampleJS.js"></script>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
     <!-- Latest compiled and minified CSS -->
@@ -38,7 +38,6 @@
             font-size: 12px;
             text-align: center;
         }
-
     </style>
 </head>
 
@@ -60,7 +59,8 @@
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -76,22 +76,145 @@
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:rgb(255, 182, 182);">
+                    <center>
+                        <p id="textChange"> My name is Isabelle</p>
+                    </center>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(255, 216, 145);">
+                    <center><button type="button" onclick="changeText()">Click if you like</button></center>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(250, 250, 133);">
+                    <html>
+
+                    <head>
+                        <script>
+                            function myFunction() {
+                                document.getElementById("demo").innerHTML = "Hello World";
+                            }
+                        </script>
+                    </head>
+
+                    <body>
+
+                        <p ondblclick="myFunction()">Doubleclick this paragraph to trigger a function.</p>
+
+                        <p id="demo"></p>
+
+                    </body>
+
+                    </html>
+                </div>
             </div>
         </div>
-    </div>
-    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:rgb(207, 243, 136);">
+                    <center>
+                        <p id="textChange">
+                            <html>
+
+                            <body>
+
+                                <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+                                <p id="demo"></p>
+
+                            </body>
+
+                            </html>
+                        </p>
+                    </center>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(166, 205, 250);">
+                    <html>
+
+                    <head>
+                        <script>
+                            function preferedBrowser() {
+                                prefer = document.forms[0].browsers.value;
+                                alert("You prefer browsing internet with " + prefer);
+                            }
+                        </script>
+                    </head>
+
+                    <body>
+
+                        <form>
+                            Choose which browser you prefer:
+                            <select id="browsers" onchange="preferedBrowser()">
+                                <option value="Chrome">Chrome</option>
+                                <option value="Internet Explorer">Internet Explorer</option>
+                                <option value="Firefox">Firefox</option>
+                            </select>
+                        </form>
+
+                    </body>
+
+                    </html>
+
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(223, 175, 255);">
+                    <html>
+
+                    <head>
+                        <script>
+                            function myFunction() {
+                                document.getElementById("demo").innerHTML = "Hello World";
+                            }
+                        </script>
+                    </head>
+
+                    <body>
+
+                        <p>Click the button to trigger a function.</p>
+
+                        <button onclick="myFunction()">Click me</button>
+
+                        <p id="demo"></p>
+
+                    </body>
+
+                    </html>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4" style="background-color:rgb(255, 182, 222);">
+                        <html>
+
+                        <head>
+                            <script>
+                                function color(color) {
+                                    document.forms[0].myInput.style.background = color;
+                                }
+                            </script>
+                        </head>
+
+                        <body>
+
+                            <form>
+                                Write a message:<br>
+                                <input type="text" onkeydown="color('yellow')" onkeyup="color('white')" name="myInput">
+                            </form>
+
+                        </body>
+
+                        </html>
+
+                    </div>
+                </div>
+                
+                <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
 
-    <!---------------------------------- Begin the footer ------------->
-    <div class="wideMargin" id="footer">
-        <p>
-            Webpage made by <a href="index.html" target="_blank">[your name]</a>
-        </p>
-    </div>
-    <!---------------------------------- End the footer ------------->
+                <!---------------------------------- Begin the footer ------------->
+                <div class="wideMargin" id="footer">
+                    <p>
+                        Webpage made by <a href="index.html" target="_blank">[your name]</a>
+                    </p>
+                </div>
+                <!---------------------------------- End the footer ------------->
 </body>
 
 </html>
