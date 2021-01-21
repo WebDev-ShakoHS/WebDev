@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0
-        Name:
-        Date Completed:
-    -->
+    Name: chayse
+    Date Completed:
+-->
 
 <head>
     <title>JavaScript</title>
@@ -17,7 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <script src="JS/SampleJS.js"></script>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
     <!-- Latest compiled and minified CSS -->
@@ -76,10 +76,39 @@
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;"><center><p id="textChange"> My name is chayse</p></center></div>
+                <div class="col-sm-4" style="background-color:orange;"><center><button type="button" onclick="changeText()">Click if you like</button></center></div>
+                <div class="col-sm-4" style="background-color:yellow;"></div>
             </div>
+        <div class="row">
+            <div class="col-sm-4" style="background-color:yellow"><form onreset="message()">
+                Enter your name: <input type="text" size="20">
+                <input type="reset">
+              </form></div>
+                <div class="col-sm-4" style="background-color:orange;"><form>
+                    Write a message:<br>
+                    <input 
+                    type="text" 
+                    onkeydown="color('yellow')"
+                    onkeyup="color('white')"
+                    name="myInput">
+                    </form></div>
+                <div class="col-sm-4" style="background-color:yellow;"><p>A function is triggered when the user releases a key in the input field. The function transforms the character to upper case.</p>
+                    Enter your name: <input type="text" id="fname" onkeyup="myFunction()"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" style="background-color:yellow;"><form onreset="text()">
+                Enter your name: <input type="text" size="20">
+                <input type="reset">
+              </form></div>
+            <div class="col-sm-4" style="background-color:orange;">Some text: <input type="text" value="Hello world!" onselect="select()">
+
+                <p id="demo"></p>
+                </div>
+            <div class="col-sm-4" style="background-color:yellow;">Enter your name: <input type="text" onfocus="backround(this)">
+
+                <p>When the input field gets focus, a function is triggered which changes the background-color.</p></div>
+        </div>
         </div>
     </div>
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
@@ -93,5 +122,4 @@
     </div>
     <!---------------------------------- End the footer ------------->
 </body>
-
 </html>

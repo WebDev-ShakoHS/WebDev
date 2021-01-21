@@ -17,6 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/SampleJS.js"></script>
 
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
@@ -38,7 +39,6 @@
             font-size: 12px;
             text-align: center;
         }
-
     </style>
 </head>
 
@@ -60,7 +60,8 @@
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -75,23 +76,198 @@
         <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
+
             <div class="row">
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <center>
+                        <p id="textChange"> Hello</p>
+                    </center>
+                </div>
+                <div class="col-sm-4" style="background-color:orange;">
+                    <center><button type="button" onclick="changeText()">Click if you want to</button></center>
+                </div>
+                <div class="col-sm-4" style="background-color:yellow;">Have a great day</div>
             </div>
-        </div>
-    </div>
-    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
+
+            <div class="row">
+                <div class="col-sm-4" style="background-color:red;">
+
+                </div>
+                <div class="col-sm-4" style="background-color:blue;">
+                    <form>
+                        Choose which browser you prefer:
+                        <select id="browsers" onchange="preferedBrowser()">
+                            <option value="Chrome">Chrome</option>
+                            <option value="Internet Explorer">Internet Explorer</option>
+                            <option value="Firefox">Firefox</option>
+                            <option value="Bing">Bing</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="col-sm-4" style="background-color:green;">Have a great day</div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4" style="background-color:rgb(55, 0, 255);">
+                    <center>
+                        <p>Enter "Punjabi" and see what happens</p>
+                    </center>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(255, 0, 234);">
+                    <form onsubmit="confirmInput()" action="https://www.youtube.com/watch?v=hzTg4zPBtDU" target="_blank">
+                        Enter your name: <input id="fname" type="text" size="20">
+                        <input type="submit">
+                      </form>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(37, 192, 153);">Pretty cool isn't it</div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4" style="background-color:rgb(169, 250, 115);">
+
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(255, 115, 0);">
+                    Enter Today's date please! <input type="date" onfocus="highlightBackground(this)">
 
 
-    <!---------------------------------- Begin the footer ------------->
-    <div class="wideMargin" id="footer">
-        <p>
-            Webpage made by <a href="index.html" target="_blank">[your name]</a>
-        </p>
-    </div>
-    <!---------------------------------- End the footer ------------->
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(156, 37, 192);">This is so cool</div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4" style="background-color:rgb(226, 192, 224);">
+                    <center>
+                        <p>Click Reset</p>
+                    </center>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(255, 159, 234);">
+                    <center>
+                        <form onreset="message()">
+                            Enter your name: <input type="text" size="20">
+                            <input type="reset">
+                        </form>
+                    </center>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(211, 160, 79);">This is so cool</div>
+                </center>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4" style="background-color:rgb(16, 65, 110);">
+                    <center>
+                        <p id="textChange"> Hello</p>
+                    </center>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(226, 224, 134);">
+
+
+
+
+
+                    Enter your name: <input type="text" id="Uppercase" onkeyup="Capitalize()">
+
+
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(14, 46, 136);">Have a great day</div>
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="col-sm-4" style="background-color:rgb(25, 179, 206);">
+                    <center>
+                        <p id="textChange"> Hello</p>
+                    </center>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(0, 255, 64);">
+
+                    </head>
+
+                    <body>
+
+                        <p onmousedown="getEventType(event)">
+                            Click on this paragraph. A message will tell what type of event was
+                            triggered.</p>
+
+                        <p id="Eventpopup"></p>
+
+                    </body>
+                </div>
+                <div class="col-sm-4" style="background-color:rgba(143, 202, 32, 0.788);">
+                    Dumbest reason appears</div>
+            </div>
+
+
+
+           
+                <div class="row">
+                    <div class="col-sm-4" style="background-color:rgb(149, 25, 206);">
+                        <center>
+                            <p id="textChange"> Satisfying result</p>
+                        </center>
+                    </div>
+                    <div class="col-sm-4" style="background-color:rgb(194, 171, 70);">
+
+
+                        <body>
+
+                            Enter your name: <input type="text" onfocus="changebackground(this)">
+
+
+
+
+                    </div>
+                    <div class="col-sm-4" style="background-color:rgba(32, 148, 202, 0.788);">If
+                        you click the
+                        searchbar, color changes</div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
+
+
+            <!---------------------------------- Begin the footer ------------->
+            <div class="wideMargin" id="footer">
+                <p>
+                    Webpage made by <a href="index.html" target="_blank">[your name]</a>
+                </p>
+            </div>
+            <!---------------------------------- End the footer ------------->
 </body>
 
 </html>
