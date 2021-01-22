@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<style> 
+body {
+    background: black;
+    color: white;
+    font: 6vw 'Lato', sans-serif !important;
+}
+
+h2 {
+    width: 80%;
+    font-size: inherit;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+[class^=char] {
+    display: inline-block !important;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+</style>
+
+</head>
+    <body>
+<div class="container">
+    <div class="row">
+        <h2>
+            <div data-splitting>Thistookwaytolongtofigureouthowtodo</div>
+        </h2>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+<script>
+    // split text
+    Splitting(); // => letters are '<div>' wrapped!
+
+    // ref obj
+    var OBJ = 'h2 > div span';
+
+    // total nr of letters
+    var ntCh = OBJ.length;
+
+    // cos (index) => y
+    function curveY(i) {
+        var n = i / ntCh * 6.24;
+        return (Math.cos(n)) * -200;
+    }
+
+    // sin (index) => x
+    function curveX(i) {
+        var n = i / ntCh * 6.24;
+        return (Math.sin(n)) * -200;
+    }
+
+    // new timeline ref
+    var tl = new TimelineMax({ delay: .5, repeat: -1 });
+
+    // color array helper
+    var arr = ["#960c0c", "#03fff7", "#a9d046", "#00b0f0", "#a93056", "#ee3338", "#f89734", "#ffd925", "#973989", "#22ff05"];
+
+    // ZIGZAG letters 
+    tl.staggerFrom(OBJ, 1, {
+        cycle: {
+            y: curveY,
+        },
+        x: -100, opacity: 0
+    }, .03);
+    // ZIPPER letters
+    tl.staggerTo(OBJ, 3, {
+        cycle: {
+            y: [-80, 80],
+            color: arr,
+            skewY: [20, -20],
+            skewX: [-20, 20],
+        },
+    }, .05, "+=1");
+
+    // sin curve out
+
+    tl.staggerTo(OBJ, 2, {
+        cycle: {
+            x: curveY,
+            y: curveX,
+        },
+        color: "#fff"
+    }, .03, "+=1");
+
+</script>
+
+</html>

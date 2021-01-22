@@ -1,6 +1,7 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	color: #c21e1e;
+	background-image: url("https://hdwallpaperim.com/geese-memes/");
 }
 
 h1 {
@@ -9,7 +10,9 @@ h1 {
 }
 
 h2{
-        font-size: 1.1em;
+		font-size: 1.1em;
+		text-align: center;
+		
 }
 
 table {
@@ -17,7 +20,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {

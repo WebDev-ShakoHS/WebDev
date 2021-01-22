@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0
-        Name:
-        Date Completed:
-    -->
+    Name:David C
+    Date Completed:
+-->
 
 <head>
     <title>JavaScript</title>
@@ -17,7 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <script src="JS/SampleJS.js"></script>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
     <!-- Latest compiled and minified CSS -->
@@ -38,7 +38,6 @@
             font-size: 12px;
             text-align: center;
         }
-
     </style>
 </head>
 
@@ -60,7 +59,8 @@
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -76,11 +76,67 @@
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <center>
+                        <p id="textChange"> My name is User ##</p>
+                    </center>
+                </div>
+                <div class="col-sm-4" style="background-color:orange;">
+                    <center><button type="button" onclick="changeText()">Click if you like</button></center>
+                </div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <form onsubmit="confirmInput()" action="https://shakopee.instructure.com/">
+                        Enter your name: <input id="fname" type="text" size="20">
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4" style="background-color:orange;"><img src="image.gif" onerror="imgError()">
+                    <p>A function is triggered if an error occurs when loading the image. The function shows an alert
+                        box with a text.
+                        In this example we refer to an image that does not exist, therefore the onerror event occurs.
+                    </p>
+                </div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <h2>My First JavaScript</h2>
+                    <p id="demo">This is a paragraph.</p>
+
+                    <button type="button" onclick="displayDate()">Display Date</button>
+                </div>
+                <div class="col-sm-4" style="background-color:orange;">
+                    <p>Click the button to trigger a function.</p>
+
+                    <button onclick="myFunction()">Click me</button>
+
+                    <p id="demo"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <form onreset="message()">
+                        Enter your name: <input type="text" size="20">
+                        <input type="reset">
+                    </form>
+                </div>
+                <div class="col-sm-4" style="background-color:orange;">Enter your name: <input type="text"
+                        onfocus="myFunctio(this)">
+
+                    <p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+                </div>
+                <div class="col-sm-4" style="background-color:green;">
+                    <form>
+                        Choose which browser you prefer:
+                        <select id="browsers" onchange="preferedBrowser()">
+                            <option value="Chrome">Chrome</option>
+                            <option value="Internet Explorer">Internet Explorer</option>
+                            <option value="Firefox">Firefox</option>
+                        </select>
+                    </form>
+                </div>
             </div>
         </div>
+
     </div>
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
@@ -94,4 +150,4 @@
     <!---------------------------------- End the footer ------------->
 </body>
 
-</html>
+</html>ƒ
