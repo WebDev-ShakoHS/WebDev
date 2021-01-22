@@ -31,3 +31,120 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+  
+  .button1 {
+	border-radius: 8px;
+  }
+  
+  .button2 {
+	border-radius: 30%;
+  }
+  
+  .red { 
+	 background-color: #ff0000;
+  }
+  .NEW 
+	{
+		box-shadow:inset 0px 0px 15px 3px #23395e;
+		background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+		background-color:#2e466e;
+		border-radius:17px;
+		border:1px solid #1f2f47;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:15px;
+		padding:6px 13px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #263666;
+	}
+	.myButton:hover {
+		background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+		background-color:#415989;
+	}
+	.myButton:active {
+		position:relative;
+		top:1px;
+	}
+  
+  
+  .OTHER 
+	{
+		box-shadow: 4px 4px 0px 0px #899599;
+		background-color:transparent;
+		border-radius:19px;
+		border:7px solid #ff5900;
+		display:inline-block;
+		cursor:pointer;
+		color:#000641;
+		font-family:Trebuchet MS;
+		font-size:23px;
+		font-style:italic;
+		padding:12px 25px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #e1e2ed;
+	}
+	.myButton:hover {
+		background-color:transparent;
+	}
+	.myButton:active {
+		position:relative;
+		top:1px;
+	}
+	.title{
+		color: red;
+		font-family: 'Trebuchet MS', sans-serif; 
+	  }
+	  
+	  .title-large {
+		font-size: 2rem;
+	  }
+	  
+	  .title-small {
+		font-size: .5rem;
+	  }
+	  .btn-group button {
+		background-color: #0066ff; /* Green background */
+		border: 1px solid rgb(28, 0, 128); /* Green border */
+		color: white; /* White text */
+		padding: 10px 24px; /* Some padding */
+		cursor: pointer; /* Pointer/hand icon */
+		float: left; /* Float the buttons side by side */
+	  }
+	  
+	  /* Clear floats (clearfix hack) */
+	  .btn-group:after {
+		content: "";
+		clear: both;
+		display: table;
+	  }
+	  
+	  .btn-group button:not(:last-child) {
+		border-right: none; /* Prevent double borders */
+	  }
+	  
+	  /* Add a background color on hover */
+	  .btn-group button:hover {
+		background-color: #001cbb;
+	  }
+	  #morecontent {
+		background-color: yellow;
+	  }
+	  *{
+		text-align:center;
+		font-family: 'Courier New', Courier, monospace;
+		cursor: alias;
+	}
