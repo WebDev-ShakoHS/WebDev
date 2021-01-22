@@ -42,8 +42,12 @@
     </style>
 </head>
 
-<body>
+<body onload="Function()" onmousedown="whichElement(event)" onmousedown="isKeyPressed(event)" onresize="unction()">
+
     <!---------------------------------- Begin the nav-bar ------------->
+
+
+
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
@@ -87,194 +91,82 @@
                 </div>
                 <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
             </div>
+
+
+
+            <div class="row">
+                <div class="col-sm-4" style="background-color:blue;">Enter your Name</div>
+                <input type="text" id="fname" onkeyup="myFunction()">
+
+                <form>
+
+                    Choose which browser you prefer:
+                    <select id="browsers" onchange="preferedBrowser()">
+                        <option value="Chrome">Chrome</option>
+                        <option value="Internet Explorer">Internet Explorer</option>
+                        <option value="Firefox">Firefox</option>
+                    </select>
+                </form>
+
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <center>
+                        <p id="textChange"> </p>
+                    </center>
+                    <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">YO</h1>
+                </div>
+
+            </div>
+
+            <div class="col-sm-4">
+                <input type="text" onkeydown="yee()">
+            </div>
+
+
+            <div class="col-sm-4" style="background-color:yellow;">
+                <center>
+                    <p id="textChange"> Try to resize the browser window</p>
+                </center>
+            </div>
+
+
+
+
+            <div class="row" <p id="demo">
+                <div class="col-sm-4" style="background-color:orange;">
+                    <center><button type="button" onclick="changeText()">Click on this
+                            paragraph. An alert box will tell you if you pressed the shift key
+                            or not</button></center>
+                </div>
+            </div>
         </div>
+
+
+
+
+
+        <p id="demo"></p>
+
     </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
 
     <!---------------------------------- Begin the footer ------------->
     <div class="wideMargin" id="footer">
         <p>
-            Webpage made by <a href="index.html" target="_blank">[your name]</a>
+
         </p>
     </div>
     <!---------------------------------- End the footer ------------->
-</body>
-
-</html>
-
-
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("fname");
-            x.value = x.value.toUpperCase();
-        }
-    </script>
-</head>
-
-<body>
-
-    Enter your name: <input type="text" id="fname" onblur="myFunction()">
-
-    <p>henry is cool</p>
-
-</body>
-
-</html>
-
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("fname");
-            x.value = x.value.toUpperCase();
-        }
-    </script>
-</head>
-
-<body>
-
-    henry jakusz: <input type="text" id="fname" onchange="myFunction()">
-    <p>Henry to kewl for school</p>
-
-</body>
-
-</html>
-
-
-<html>
-
-<head>
-    <script>
-        function preferedBrowser() {
-            prefer = document.forms[0].browsers.value;
-            alert("You prefer browsing internet with " + prefer);
-        }
-    </script>
-</head>
-
-<body>
-
-    <form>
-        Choose which browser you prefer:
-        <select id="browsers" onchange="preferedBrowser()">
-    <option value="Chrome">Chrome</option>
-    <option value="Internet Explorer">Internet Explorer</option>
-    <option value="Firefox">Firefox</option>
-  </select>
-    </form>
-
-</body>
-
-</html>
-
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <script>
-        function myFunction(x) {
-            x.style.background = "pink";
-        }
-    </script>
-</head>
-
-<body>
-
-    Henry jakusz: <input type="text" onfocus="myFunction(this)">
-
-    <p></p>
-
-</body>
-
-</html>
-
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <script>
-        function imgError() {
-            alert('The image could not be loaded.');
-        }
-    </script>
-</head>
-
-<body>
-
-    <img src="image.gif" onerror="imgError()">
-    <p>
-</body>
-
-</html>
-
-
-
-<!DOCTYPE html>
-<html>
-
-<head>
-    <script>
-        function myFunction() {
-            alert("Page is loaded");
-        }
-    </script>
-</head>
-
-<body onload="myFunction()">
-    <h2>Hello World!</h2>
-</body>
-
-</html>
-
-
-<!DOCTYPE html>
-<html>
-
-<body>
-
-    <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Cool people</h1>
-
-</body>
-
-</html>
-
-
-<html>
-
-<head>
-    <script>
-        function myFunction(e) {
-            x = e.clientX;
-            y = e.clientY;
-            coor = "Coordinates: (" + x + "," + y + ")";
-            document.getElementById("demo").innerHTML = coor
-        }
-
-        function clearCoor() {
-            document.getElementById("demo").innerHTML = "";
-        }
-    </script>
-</head>
-
-<body style="margin:0px;">
-
-    <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
-
-    <p></p>
-
-    <p id="demo"></p>
-
 </body>
 
 </html>
