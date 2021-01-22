@@ -8,8 +8,8 @@ h1 {
 	text-align: center;
 }
 
-h2{
-        font-size: 1.1em;
+h2 {
+	font-size: 1.1em;
 }
 
 table {
@@ -17,17 +17,157 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #9FB6CD;
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.buttonradius8 {
+	border-radius: 8px;
+}
+
+.buttonradius2 {
+	border-radius: 2px;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+.buttonshadow {
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color: #eae0c2;
+	border-radius: 15px;
+	border: 2px solid #333029;
+	display: inline-block;
+	cursor: pointer;
+	color: #505739;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 16px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.blue {
+	background-color: #003366;
+}
+
+.title {
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+	font-size: 2rem;
+}
+
+.title-small {
+	font-size: .5rem;
+}
+
+#morecontent {
+	background-color: yellow;
+}
+
+#footer {
+	font-size: 10px;
+	margin: auto;
+	width: 85%;
+	border: 3px solid rgb(216, 196, 12);
+	padding: 10px;
+}
+
+#main {
+	background-color: aliceblue;
+	text-shadow: darkgray;
+}
+
+* {
+	text-align: center;
+}
+
+.content {
+	box-shadow: -5px -5px 10px;
+	margin: 7%;
+	background-color: darkolivegreen;
+	font-size: 1.5em;
+	font-weight: 100;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+div#face {
+	width: 40vw;
+	height: 40vw;
+	max-width: 400px;
+	max-height: 400px;
+	margin: 0 auto;
+	position: relative;
+	background: rgb(255, 255, 152);
+	margin-top: 2rem;
+}
+
+div#face, div#face * {
+	border-radius: 50%;
+}
+
+.eye {
+	width: 25%;
+	height: 35%;
+	background: #fff;
+	position: absolute;
+	top: 20%;
+}
+
+.left.eye {
+	left: 20%;
+}
+
+.right.eye {
+	right: 20%;
+}
+
+.pupil {
+	background: #000;
+	width: 50%;
+	height: 60%;
+	position: relative;
+	left: 25%;
+	transform-origin: bottom;
+}
+
+#mouth {
+	position: relative;
+	width: 60%;
+	left: 20%;
+	height: 25%;
+	border: 1vw solid transparent;
+	border-radius: 50%;
+	top: 50%;
+	border-bottom-color: #000;
 }
