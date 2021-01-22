@@ -97,10 +97,14 @@
                     Enter your name: <input type="text" id="fname" onkeyup="myFunction()"></div>
         </div>
         <div class="row">
-            <div class="col-sm-4" style="background-color:rgb(255, 255, 255);"><form onreset="text()">
-                Doubleclick this paragraph to trigger a function. <input type="text" size="20">
+            <div class="col-sm-4" style="background-color:rgb(255, 255, 255);"><p>A function is triggered when the user is pressing a key in the input field.</p>
+                 <input type="text" size="20"
+                 onkeydown="text ()">
                 <input type="reset">
-              </form></div>
+              </form>
+              
+               
+            </div>
             <div class="col-sm-4" style="background-color:rgb(255, 0, 0);">Some text: <input type="text" value="Hello world!" onselect="select()">
 
                 <p id="demo"></p>

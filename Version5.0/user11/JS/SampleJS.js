@@ -29,7 +29,7 @@ function message() {
   }
 
   function text() {
-    document.getElementById("demo").innerHTML = "Hello World";
+    alert("You pressed a key inside the input field");
   }
 
   function select() {
