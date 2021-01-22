@@ -1,18 +1,214 @@
 <html lang="en">
-    <!--Version 7.0 
-	Name:
+<!--Version 7.0 
+	Name:Jack Barber
 	Date Completed:
     -->
-    <head>
-        
-        <title>Web Development User #05</title>
+
+<head>
+    <style>
+        body {
+            background-image: url("https://i.pinimg.com/originals/26/6d/f7/266df7ab6322509273a9cddeeee5a3e7.jpg");
+            background-color: #ffffff;
+        }
+    </style>
+    <link rel="JavaScript" href="JS/SampleJS.js">
+    <link rel="stylesheet" href="CSS/SampleCSS.css">
+
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="Acacia.html">Acacia</a>
+        <a href="Birch.html">Birch</a>
+        <a href="Nether Woods.html">The Nether</a>
+        <a href="Oak.html">Oak</a>
+        <a href="Dark Oak.html">Dark Oak</a>
+    </div>
+</head>
+
+<body>
+
+    <p> Hello everyone</p>
+    <button type="button" class="collapsible" width=100px>Crating Recipes</button>
+    <div class="content">
+        <table style="width: 50%;" style="text-align: center;" style="size: 12;">
+            <tr>
+                <th>Crafted Item</th>
+                <th>Needed materiels</th>
+            </tr>
+            <tr>
+                <td>Barrel</td>
+                <td>Any Planks +
+                    Any wood Slab</td>
+            </tr>
+            <tr>
+                <td>Bed</td>
+                <td>Matching Wool +
+                    Any Planks</td>
+            </tr>
+            <tr>
+                <td>Beehives</td>
+                <td>Any Planks +
+                    Honeycomb</td>
+            </tr>
+            <tr>
+                <td>Boat</td>
+                <td>Matching Overworld Planks +
+                    Wooden Shovel (Bedrock)</td>
+            </tr>
+            <tr>
+                <td>Boat</td>
+                <td>Matching Overworld Planks</td>
+            </tr>
+            <tr>
+                <td>Bookshelf</td>
+                <td>Any Planks + Book</td>
+            </tr>
+            <tr>
+                <td>Bowl</td>
+                <td>Any Planks</td>
+            </tr>
+            <tr>
+                <td>Cartography Table</td>
+                <td>Paper +
+                    Any Planks</td>
+            </tr>
+            <tr>
+                <td>Chest</td>
+                <td>Any Planks</td>
+            </tr>
+            <tr>
+                <td>Crafting Table</td>
+                <td>Any Planks</td>
+            </tr>
+            <tr>
+                <td>Fletching Table</td>
+                <td>Flint + Any Planks</td>
+            </tr>
+            <tr>
+                <td>Grindstone</td>
+                <td>Stick + Stone Slab + Any Planks</td>
+            </tr>
+            <tr>
+                <td>Jukebox</td>
+                <td>Any Planks + Diamond</td>
+            </tr>
+            <tr>
+                <td>Loom</td>
+                <td>String + Any Planks</td>
+            </tr>
+            <tr>
+                <td>Note Block</td>
+                <td>Any Planks + Redstone Dust</td>
+            </tr>
+            <tr>
+                <td>Piston</td>
+                <td>Any Planks +
+                    Cobblestone +
+                    Iron Ingot +
+                    Redstone Dust</td>
+            </tr>
+            <tr>
+                <td>Shield</td>
+                <td>Any Planks + Iron Ingot</td>
+            </tr>
+            <tr>
+                <td>Sign</td>
+                <td>Matching Planks + Stick</td>
+            </tr>
+            <tr>
+                <td>Smithing Table</td>
+                <td>Iron Ingot + Any Planks</td>
+            </tr>
+            <tr>
+                <td>Tripwire Hook</td>
+                <td>Iron Ingot + Stick + Any Plank</td>
+            </tr>
+            <tr>
+                <td>Wood Fence Gate</td>
+                <td>Matching Planks + Stick</td>
+            </tr>
+            <tr>
+                <td>Wood Door</td>
+                <td>Matching Planks</td>
+            </tr>
+            <tr>
+                <td>Wood Fence</td>
+                <td>Matching Planks + Stick</td>
+            </tr>
+            <tr>
+                <td>Wood Stairs</td>
+                <td>Matching Planks</td>
+            </tr>
+            <tr>
+                <td>Wood Stairs</td>
+                <td>Matching Planks</td>
+            </tr>
+            <tr>
+                <td>Wooden Preassure Plate</td>
+                <td>Matching Planks</td>
+            </tr>
+            <tr>
+                <td>Wooden Trapdoor</td>
+                <td>Matching Planks</td>
+            </tr>
+            <tr>
+                <td>Wooden Axe</td>
+                <td>Any Planks + Stick</td>
+            </tr>
+            <tr>
+                <td>Wooden Hoe</td>
+                <td>Any Planks + Stick</td>
+            </tr>
+            <tr>
+                <td>Wooden Pickaxe</td>
+                <td>Any Planks + Stick</td>
+            </tr>
+            <tr>
+                <td>Wooden Shovel</td>
+                <td>Any Planks + Stick</td>
+            </tr>
+            <tr>
+                <td>Wooden Sword</td>
+                <td>Any Planks + Stick</td>
+            </tr>
+        </table>
+
+
+    </div>
+
+    <P> help me</P>
+<Script>var coll = document.getElementsByClassName("collapsible");
+    var i;
     
-    </head>
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
     
-    <body>
-        
-        <center>My name is User #05</center>
     
-    </body>
+    
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+    </Script>
+
+</body>
 
 </html>
