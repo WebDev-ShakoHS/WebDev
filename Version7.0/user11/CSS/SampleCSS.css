@@ -56,3 +56,7 @@ color: rgb(0, 0, 0);
 p.basic { 
 	color: whitesmoke;
 }
+
+.hidden {
+    display: none;
+}
