@@ -29,7 +29,7 @@ function message() {
   }
 
   function text() {
-    alert("This alert box was triggered by the onreset event handler");
+    alert("You pressed a key inside the input field");
   }
 
   function select() {

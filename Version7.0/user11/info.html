@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="CSS/SampleCSS.css">
+<script src="JS/SampleJS.js"></script>
     
     
   
@@ -35,7 +36,7 @@
     <!---------------------------------- Begin the nav-bar ----------------------------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <a href="file:///Users/229208/Applications/mampstack/apache2/htdocs/WebDev/Version7.0/user11/info.html" class="navbar-brand">Help The Animals</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,13 +44,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav"></div>
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="info.html" class="nav-item nav-link active">Info</a>
-                    <a href="rhino.html" class="nav-item nav-link">Sumatran Rhino</a>
-                    <a href="paddlefish.html" class="nav-item nav-link" tabindex="-1">Spix's Macaw</a>
-                    <a href="turtle.html" class="nav-item nav-link" tabindex="-1">Yangtze giant softshell
+                    <a href="info.html" class="nav-item nav-link active"tabindex="0">Info</a>
+                    <a href="rhino.html" class="nav-item nav-link"tabindex="0">Sumatran Rhino</a>
+                    <a href="Macaw.html" class="nav-item nav-link" tabindex="0">Spix's Macaw</a>
+                    <a href="turtle.html" class="nav-item nav-link" tabindex="0">Yangtze giant softshell
                         turtle</a>
-                    <a href="cheetah.html" class="nav-item nav-link" tabindex="-1">Indian Cheetah</a>
-                    <a href="macaw.html" class="nav-item nav-link" tabindex="-1">Spix Macaw</a>
+                    <a href="cheetah.html" class="nav-item nav-link" tabindex="0">Indian Cheetah</a>
+                    <a href="panda.html" class="nav-item nav-link" tabindex="0">Giant Panda</a>
                 
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
@@ -58,6 +59,15 @@
         </nav>
     </div>
     <!---------------------------------- End the nav-bar ------------------------------------->
+    <div id="main" class="hidden" tabindex="0"></div>
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+    
+    <p id="demo"></p>
+   
+   
+   
     <center>
         <h2>Why are Animals going Extinct</h2>
     </center>
@@ -89,7 +99,7 @@
         </tr>
         <tr>
             <td>5</td>
-            <td>Spix Macaw</td>
+            <td>Giant Panda</td>
         </tr>
        
     </table>
