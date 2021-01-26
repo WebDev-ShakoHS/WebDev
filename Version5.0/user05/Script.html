@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0
-        Name:
-        Date Completed:
-    -->
+    Name:
+    Date Completed:
+-->
 
 <head>
+
     <title>JavaScript</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,8 +39,9 @@
             font-size: 12px;
             text-align: center;
         }
-
     </style>
+
+    <script src="JS/SampleJS.js"></script>
 </head>
 
 <body>
@@ -60,7 +62,8 @@
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -76,10 +79,31 @@
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <center>
+                        <p id="textChange"> My name is User ##</p>
+                    </center>E
+                </div>
+                <div class="col-sm-4" style="background-color:orange;">
+                    <center><button type="button" onclick="changeText()">Click if you like</button></center>
+                </div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <p id="demo">A Paragraph.</p>
+
+
+                    <button type="button" onclick="myFunction()">Try it</button>
+                </div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <p>This example calls a function which performs a calculation, and returns the result:</p>
+
+                    <p id="Number"></p>
+                    
+                </div>
             </div>
+            <div class="col-sm-4" style="background-color:orange;">
+                <center><button type="button" onclick="changeText()">Click if you like</button></center>
+            </div>
+            
         </div>
     </div>
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
