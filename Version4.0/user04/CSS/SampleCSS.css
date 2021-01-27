@@ -1,13 +1,22 @@
+.paragraph{
+	display: inline;
+}
+.card{
+	display: inline-block;
+}
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
 }
 
+.content{
+    box-shadow: -5px -5px 10px;
+    margin: 7.5%;
+}
 h1 {
 	font-size: 1.3em;
 	text-align: center;
 }
-
 h2 {
 	font-size: 1.1em;
 }
