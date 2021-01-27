@@ -17,7 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <script src="JS/SampleJS.js"></script>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
     <!-- Latest compiled and minified CSS -->
@@ -29,16 +29,15 @@
         .menu {
             margin: 0px;
         }
-
+        
         .wideMargin {
             margin: 15px;
         }
-
+        
         #footer {
             font-size: 12px;
             text-align: center;
         }
-
     </style>
 </head>
 
@@ -72,26 +71,81 @@
     <!---------------------------------- End the nav-bar ------------->
 
     <div class="wideMargin" id="content">
-        <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">My JavaScript Examples</h1>
+        <!-- Edit this line for the title of your page -->
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <center>
+                        <p id="textChange"> My name is Christian Yun</p>
+                    </center>
+                </div>
+                <div class="col-sm-4" style="background-color:orange;">
+                    <center><button type="button" onclick="changeText()">Click if you like</button></center>
+                </div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <center><button ondblclick="myFunction()">Doubleclick this paragraph to trigger a function.</button></center>
+                    <p id="demo"></p>
+                </div>
+
+                <div class="col-sm-4" style="background-color:orange;">
+
+                    <body onmousedown="isKeyPressed(event)">
+
+                        <p>Shift Click on this</p>
+
+                        <p id="demoShift"></p>
+
+                    </body>
+                </div>
+
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <h1 onmouseover="style.color='yellow'" onmouseout="style.color='black'">Don't touch me!!!</h1>
+                </div>
+                <div class="col-sm-4" style="background-color:orange;">
+
+                    <body onresize="size()">
+
+                        <p>Try to resize the browser window.</p>
+
+                        <p id="demoSize"> </p>
+                </div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <p onmousedown="getEventType(event)">
+                        Click on this paragraph to find out what happens when you shoot a mouse and what type of event was triggered.</p>
+
+                    <p id="demoMouse"></p>
+                </div>
+                <div class="col-sm-4" style="background-color:orange;">
+                    <p>Don't type in this box</p>
+
+                    <input type="text" onkeypress="box()">
+                </div>
+
+                <div class="col-sm-4" style="background-color:yellow;">Highlight Bob: <input type="text" value="Hi I'm Bob" onselect="blue()">
+
+                    <p id="demoBlue"></p>
+                </div>
+                <div class="col-sm-4" style="background-color:orange;">
+                    <form onsubmit="Leave()" action="https://www.google.com/">
+                        Enter your name to leave: <input id="fname" type="text" size="20">
+                        <input type="submit">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
+    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this lines ↑↑↑↑↑↑↑↑↑↑-->
 
 
     <!---------------------------------- Begin the footer ------------->
     <div class="wideMargin" id="footer">
         <p>
-            Webpage made by <a href="index.html" target="_blank">[your name]</a>
+            Webpage made by <a href="index.html" target="_blank">[Christian]</a>
         </p>
     </div>
     <!---------------------------------- End the footer ------------->
-</body>
+    </body>
 
 </html>
