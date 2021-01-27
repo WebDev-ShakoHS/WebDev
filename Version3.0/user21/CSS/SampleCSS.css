@@ -1,6 +1,7 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	color: rgb(13, 107, 196);
+	background-color: rgb(255, 255, 255);
 }
 
 h1 {
@@ -30,4 +31,12 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+ul{
+	list-style-type: square;
+}
+
+ol{
+	list-style-type: decimal-leading-zero;
 }
