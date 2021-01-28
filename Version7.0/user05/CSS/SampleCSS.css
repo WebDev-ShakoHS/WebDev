@@ -52,7 +52,7 @@ text-align: center;
     padding: 18px;
     width: 50%;
     border: none;
-    text-align: left;
+  
     outline: none;
     font-size: 20px;
     
@@ -87,7 +87,7 @@ th, td {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     width: 50%;
-    text-align: center;
+    
     
 }
 
@@ -104,4 +104,11 @@ table {
     margin-left: auto;
     margin-right: auto;
     scale: .5;
+  }
+
+  p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 60px;
+    margin-left: 0px;
   }
