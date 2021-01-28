@@ -1,18 +1,111 @@
+<!DOCTYPE html>
 <html lang="en">
-    <!--Version 7.0 
+<!--Version 7.0 
 	Name:
 	Date Completed:
     -->
-    <head>
-        
-        <title>Web Development User #21</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #21</center>
-    
-    </body>
+
+<head>
+    <title>Mythical Creatures</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/SampleJS.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/SampleCSS.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <link rel="manifest" href="images/favicon.ico">
+</head>
+
+<body>
+    <a class="skip-main" tabindex="0" href="#main" hidden>Skip to main content</a>
+    <!---------------------------------- Begin the nav-bar ----------------------------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">Mythical Creatures</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="Phoenix.html" class="nav-item nav-link" tabindex="0">Phoenix</a>
+                    <a href="Bowtruckle.html" class="nav-item nav-link" tabindex="0">Bowtruckle</a>
+                    <a href="Centaur.html" class="nav-item nav-link" tabindex="0">Centaur</a>
+                    <a href="Thunderbird.html" class="nav-item nav-link" tabindex="0">Thunderbird</a>
+                    <a href="Hungarian_Horntail.html" class="nav-item nav-link" tabindex="0">Hungarian Horntail</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <div class="wideMargin" id="content">
+        <div id="main" class="hidden" tabindex="-1"></div>
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <p tabindex="0">
+            <h1><center>This site will tell you about five amazing Mythical Creatures from <i>"Harry Potter"</i> and mythology from
+            around the world.</center></h1>
+        </p>
+        <div class="contanter">
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="images/Phoenix_card.jpeg" alt="Phoenix" style="width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Phoenix</h4>
+                <p class="card-text">"Fascinating creatures, phoenixes. They can carry immensely heavy loads, their tears have healing powers, and they make highly faithful pets."</P>
+                <p class="card-text">—Albus Dumbledore on the nature of Phoenixes</p>
+                <a href="Phoenix.html" class="phoenixbutton">Information on Phoenixs</a>
+            </div>
+        </div>
+        <div class="contaner" style="width: 400px">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="images/Bowtruckle_card.jpg" alt="Pickett" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Bowtruckle</h4>
+                  <p class="card-text">"The Bowtruckle, which eats insects, is a peaceable and intensely shy creature but if the tree in which it lives is threatened, it has been known to leap down upon the woodcutter or tree-surgeon attempting to harm its home and gouge at their eyes with its long, sharp fingers. An offering of woodlice will placate the Bowtruckle long enough to let a witch or wizard remove wand-wood from its tree."</P>
+                  <p class="card-text">—Newt Scamander, Fantastic Beasts and Where to Find Them</p>
+                  <a href="Bowtruckle.html" class="bowtrucklebutton">Information on Bowtruckles</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="images/centaur-firenze-card.jpg" alt="The Centaur Firenze" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Centaur</h4>
+                  <p class="card-text">"Forest-dwellers who have the torso of a human but the body of a horse, and who are gifted in Divination."</p>
+                  <p class="card-text">—Description of centaurs</p>
+                  <a href="Centaur.html" class="centaurbutton">Information on Centaurs</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="images/Thunderbird_card.jpg" alt="Thunderbird" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Thunderbird</h4>
+                  <p class="card-text">"Flying beast that can sense danger, and create storms as it flies"</p>
+                  <p class="card-text">—Description of the Thunderbird</p>
+                  <a href="Thunderbird.html"class="thunderbirdbutton">Information on Thunderbirds</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="images/Hungarian_Horntail_card.jpg" alt="Hungarian Horntail" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">Hungarian Horntail</h4>
+                  <p class="card-text">"Supposedly the most dangerous of all dragon breeds, the Hungarian Horntail has black scales and is lizard-like in appearance."</p>
+                  <p class="card-text">—Description of a Hungarian Horntail</p>
+                  <a href="Hungarian_Horntail.html" class="hungarianhorntailbutton">Information on Hungarian Horntails</a>
+                </div>
+            </div>
+        </div>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑-->
+    </div>
+</body>
 
 </html>
