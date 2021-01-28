@@ -1,0 +1,123 @@
+body {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.1em;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color: #9FB6CD;
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+
+.button {
+	background-color: #994caf;
+	border: none;
+	
+}
+
+.welcome {
+	border-radius: 40%;
+	text-align: center;
+	background-color: #80f611;
+}
+
+.button-mediumRadius {
+	border-radius: 60%;
+}
+
+.red {
+	background-color: #04284180;
+}
+
+
+
+.gettoknowme {
+	background-color: #773f00;
+}
+
+#gettoknowme2 {
+color: #e41262;
+}
+
+#word {
+	background: linear-gradient(to bottom, #0b8888 5%, #17be92 100%);
+	background-color: #20a5a5;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+#morecontent {
+	background-color: yellow;
+}
+
+#somemorecontent {
+	background-color: rgb(175, 52, 99);
+	font-size: 20px;
+}
+
+#footer {
+	font-size: 20px;
+	margin: auto;
+	width: 85%;
+	border: 3px dotted rgb(216, 167, 31);
+	padding: 10px
+}
+
+#main {
+	font-size: 16px;
+	background-color: rgb(131, 233, 251);
+}
+
+#center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
+  .center {
+	text-align: center;
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
