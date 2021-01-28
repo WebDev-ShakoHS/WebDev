@@ -4,26 +4,22 @@ body {
 }
 
 h1 {
-	font-size: 1.3em;
-	text-align: center;
+	font-size: 1.5em;
+	
 }
 
-h2{
-        font-size: 1.1em;
+h2 {
+	font-size: 1.1em;
 }
 
-table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+.menu {
+	margin: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #9FB6CD;
 }
 
 th {
@@ -31,3 +27,8 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+li {
+	font-size: 0.9em;
+}
+
