@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 5.0
-    Name:
-    Date Completed:
--->
 
 <head>
 
-    <title>Home</title>
+    <title>Best Video Games of all time</title>
 
     <!-- Homepage meta data -->
     <meta charset="utf-8">
@@ -28,27 +24,24 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="CSS/SampleCSS.css">
 
-
 </head>
 
 <body>
     <a class="skip-main" tabindex="0" href="#main">Skip to main content</a>
-
     <!---------------------------------- Begin the nav-bar ----------------------------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-
-                    <a href="index.html" class="nav-item nav-link disabled" tabindex="-1">Video Games</a>
+                    <a href="index.html" class="nav-item nav-link active" tabindex="-1">Video Games/a>
                     <a href="History.html" class="nav-item nav-link active" tabindex="-1">History of Video Games</a>
-                    <a href="Best.html" class="nav-item nav-link active" tabindex="-1">Video Game Music</a>
+                    <a href="Best.html" class="nav-item nav-link disabled" tabindex="-1">Video Game Music</a>
                     <a href="Favorite.html" class="nav-item nav-link active" tabindex="-1">My Favorite Video Games</a>
                     <a href="Content.html" class="nav-item nav-link active" tabindex="-1">Content Creaters</a>
                     <a href="Speedrun.html" class="nav-item nav-link active" tabindex="-1">Speed Running</a>
@@ -60,34 +53,43 @@
         </nav>
     </div>
     <div id="main" class="hidden" tabindex="-1"></div>
-    <!---------------------------------- End the nav-bar ------------------------------------->
-
     <div class="wideMargin" id="content">
 
-        <h1 class="text-left my-3">Video Games</h1>
-        <img src="images/VGController.jpg" />
+        <h1 class="text-left my-3">Video Game Music</h1>
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
         <p tabindex="0">
-            What is a video game? By definitions a video game is a game played by electronically manipulating images produced by a computer program on a television screen or other display screen.
+            Video game music has evolved as time has gone one. The purpose of music in video games is very important. Music can affect the mode when you play video games. For example a study was done on space invaders. In Space Invaders as you destroy more aliens,
+            the aliens got faster and closer which caused the music to get faster and faster. The people who had music plaing had higher music than the people without music. This shows that music in video games is very important. Originaly because of
+            the hardware music could not be played as they wanted causing what we call to day an 8-bit theme. One of the famous 8-bit music is tetris which was based on a Russian folk song. Another classic is Super mario bros which has been remade by
+            Nintendo multiple times in multiple games.
         </p>
-        <article tabindex="0">
-            I have played video games all my life so I wanted to make a website about them.
-        </article>
         <p tabindex="0">
-            I hope you enjoy this website!!!
+            <div id="lH">
+                <audio controls id="aH">
+                  <source src="Audio/Tetris.ogg" type="audio/ogg">
+                  <source src="Audio/Tetris.mp3" type="audio/mpeg">
+                  </audio> <img src="images/Tetris.jpg" alt="Tetris">
         </p>
+
+
+
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑-->
-    </div>
-
-    <!---------------------------------- Begin the footer ------------------------------------->
-    <div class="wideMargin" id="footer">
-        <p>
-            Webpage made by <a href="index.html" target="_blank">[Christian]</a>
-        </p>
-    </div>
-    <!---------------------------------- End the footer --------------------------------------->
+        </div>
+        <div id="Hl">
+            <audio controls id="Ha">
+                  <source src="Audio/SuperMarioBros.ogg" type="audio/ogg">
+                  <source src="Audio/SuperMarioBros.mp3" type="audio/mpeg">
+                  </audio> <img src="images/SMNES.jpg" alt="Mario">
+            </p>
+        </div>
+        <!---------------------------------- Begin the footer ------------------------------------->
+        <div class="wideMargin" id="footer">
+            <p>
+                Webpage made by <a href="index.html" target="_blank">[Christian]</a>
+            </p>
+        </div>
+        <!---------------------------------- End the footer --------------------------------------->
 </body>
-
-</html>

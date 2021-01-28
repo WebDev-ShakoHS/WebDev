@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 5.0
-    Name:
-    Date Completed:
--->
 
 <head>
 
-    <title>Home</title>
+    <title>Content Creaters</title>
 
     <!-- Homepage meta data -->
     <meta charset="utf-8">
@@ -28,29 +24,26 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="CSS/SampleCSS.css">
 
-
 </head>
 
 <body>
     <a class="skip-main" tabindex="0" href="#main">Skip to main content</a>
-
     <!---------------------------------- Begin the nav-bar ----------------------------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-
-                    <a href="index.html" class="nav-item nav-link disabled" tabindex="-1">Video Games</a>
+                    <a href="index.html" class="nav-item nav-link active" tabindex="-1">Video Games</a>
                     <a href="History.html" class="nav-item nav-link active" tabindex="-1">History of Video Games</a>
                     <a href="Best.html" class="nav-item nav-link active" tabindex="-1">Video Game Music</a>
                     <a href="Favorite.html" class="nav-item nav-link active" tabindex="-1">My Favorite Video Games</a>
-                    <a href="Content.html" class="nav-item nav-link active" tabindex="-1">Content Creaters</a>
+                    <a href="Content.html" class="nav-item nav-link disabled" tabindex="-1">Content Creaters</a>
                     <a href="Speedrun.html" class="nav-item nav-link active" tabindex="-1">Speed Running</a>
 
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
@@ -60,27 +53,79 @@
         </nav>
     </div>
     <div id="main" class="hidden" tabindex="-1"></div>
-    <!---------------------------------- End the nav-bar ------------------------------------->
-
     <div class="wideMargin" id="content">
 
         <h1 class="text-left my-3">Video Games</h1>
-        <img src="images/VGController.jpg" />
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <p tabindex="0">
-            What is a video game? By definitions a video game is a game played by electronically manipulating images produced by a computer program on a television screen or other display screen.
+            Content Creators
         </p>
         <article tabindex="0">
-            I have played video games all my life so I wanted to make a website about them.
+            List of the most popular content creators
         </article>
-        <p tabindex="0">
-            I hope you enjoy this website!!!
-        </p>
+
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑-->
     </div>
+    <div class="bs-example">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Username</th>
+                    <th>Platform</th>
+                    <th>Subscribers</th>
 
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>DanTDM</td>
+                    <td>Youtube</td>
+                    <td>24,400,000</td>
+
+                    <img src="images/Dan.jpg" />
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>VanossGaming</td>
+                    <td>Youtube</td>
+                    <td>25,400,000</td>
+
+                    <img src="images/Vanoss.jpg" />
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Jacksepticeye</td>
+                    <td>Youtube</td>
+                    <td>26,300,000</td>
+
+                    <img src="images/Jack.jpg" />
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Markiplier</td>
+                    <td>Youtube</td>
+                    <td>28,200,000</td>
+
+                    <img src="images/Mark.jpg" />
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>PewDiePie</td>
+                    <td>Youtube</td>
+                    <td>108,000,000</td>
+
+                    <img src="images/PieDiePie.jpg" />
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <!---------------------------------- Begin the footer ------------------------------------->
     <div class="wideMargin" id="footer">
         <p>
@@ -89,5 +134,3 @@
     </div>
     <!---------------------------------- End the footer --------------------------------------->
 </body>
-
-</html>
