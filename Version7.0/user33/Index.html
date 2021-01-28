@@ -40,17 +40,27 @@
   text-align: center;
 }
 
-div.b {
-  text-align: left;
+aside{
+text-align: center;
 }
 
-div.c {
-  text-align: right;
-} 
+caption{
+text-align: center;
+display: inline-block;
+margin: 0 auto;
+}
 
-div.d {
-  text-align: justify;
-} 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid;
+  border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
 
 a.skip-main {
     left: -999px;
@@ -78,10 +88,10 @@ a.skip-main:focus,a.skip-main:active {
     font-size: 1.2em;
     z-index: 999;
 }
-    
         </style>
     
     </head>
+    
     <body>
         <!---------------------------------- Begin the nav-bar ------------->
         <div class="menu">
@@ -95,11 +105,11 @@ a.skip-main:focus,a.skip-main:active {
                     <div class="navbar-nav">
                         <a class="skip-main" tabindex="0" href="#main">Skip to main content</a>
                         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                        <a href="Index.html" class="nav-item nav-link">Home</a>
+                        <a href="#" class="nav-item nav-link active">Home</a>
                         <a href="AboutMe.html" class="nav-item nav-link">About Me</a>
                         <a href="MySocials.html" class="nav-item nav-link">My Socials</a>
                         <a href="PersonalFavoriteMusic.html" class="nav-item nav-link">Personal Favorite Music</a>
-                        <a href="#" class="nav-item nav-link active">FAQ</a>
+                        <a href="FAQ.html" class="nav-item nav-link">FAQ</a>
                         <a href="MyCharacters.html" class="nav-item nav-link">My Characters</a>
                         <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                     </div>
@@ -112,41 +122,46 @@ a.skip-main:focus,a.skip-main:active {
         <!---------------------------------- End the nav-bar ------------->
     
         <div class="wideMargin" id="content">
+
+    <div class="jumbotron">
+        <p tabindex="0">
+        <h1> Tanner's Webpage</h1>
+    </div>
     
-            <h1 class="text-left my-3">Frequently Asked Questions</h1><!-- Edit this line for the title of your page -->
+            <h1 class="text-left my-3"></h1><!-- Edit this line for the title of your page -->
     
             <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                <div class="a">
-                  <h3>What are your pronouns?</h3>
-                  <p>I use he/him pronouns.</p>
-                
-                    <h3>When did you start drawing?</h3>
-                    <p>About 3, I think?</p>
-            
-                    <h3>What is your favorite video game?</h3>
-                    <p>That's a tough call. I like a lot of games,
-                    but right now, I would have to say Minecraft
-                    or Smash Ultimate.
-                    </p>
+            <div id="main" class="hidden" tabindex="0"></div>
+            <p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4"><img src="images/SecondSelfie.jpg"width= "250" height="250">
+                        <caption>An image of me.</caption>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="a">
+                <article>
+                <h2>Welcome to my webpage!</h2>
+                <p>This is made by the Epic Tanner Swanson. He is a high school senior who is looking to make an interesting website about himself!</p>
+                </article>
+            </p>
+            <p>
+            <article>
+                <h2>Feel free to poke around!</h2> 
+                <p>Maybe you'll learn some stuff about me.</p>
+            </p>
+            </div>
+        </div>
 
-                    <h3>What is your favorite song?</h3>
-                    <p>That's another tricky question. Most of my favorite songs come from
-                    video games. If you want an answer, you should check out my music tab!
-                    </p>
+        <aside>
+        <p id="quote">Click the button for a quote.</p>
 
-                    <h3>Do you have any siblings?</h3>
-                  <p>I have an older brother.</p>
-
-                  <h3>What is a quote that you live by?</h3>
-                  <p>I don't really have a quotation that I follow closely, but here is something I like.</p>
-                  <blockquote>"Whenever you have a chance to rest, take it."</blockquote>
-
-                  <h3>What browser do you use?</h3>
-                    <p>I don't know, but I think you're using</p> <p id="browser"></p>
-                  </div>
-                  
-                </li>
-            </ol>
+        <button onclick="myFunction()">Click here.</button>
+        </aside>
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
     
     
