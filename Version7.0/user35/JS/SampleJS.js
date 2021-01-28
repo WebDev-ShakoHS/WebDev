@@ -27,3 +27,8 @@ function CDD() {
         }
     }, 1000);
 }
+
+function Leave() {
+    fname = document.forms[0].fname.value;
+    alert("Hello " + fname + "! You will now go to the stock price of ");
+}
