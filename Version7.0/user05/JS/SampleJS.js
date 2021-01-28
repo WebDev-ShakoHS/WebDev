@@ -1,8 +1,7 @@
-type="text/javascript">
- 
-    
-    
-    function Acacia(){
-    var image = document.getElementById('Acacia');
-    image.src ="images/Acacia sapling.png";
-    }
+
+
+
+function change(){
+var image = document.getElementById('Tree');
+image.src ="images/Acacia_Tree.png";
+}
