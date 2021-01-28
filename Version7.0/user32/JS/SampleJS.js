@@ -1,6 +1,6 @@
 var space = " ";
 var pos = 0;
-var msg = "Games Stop";
+var msg = "User 19";
 
 function Scroll(){
 document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
@@ -26,8 +26,13 @@ $('.like-btn').on('click', function() {
     } else {
         value = 0;
     }
+    $input.val(value);
+
+
+
+    
+    
+  
  
-  $input.val(value);
- 
-});
+
  
