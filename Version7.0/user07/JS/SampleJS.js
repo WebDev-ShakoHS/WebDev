@@ -14,3 +14,29 @@ function randomMusic() {
         document.getElementById("songName").innerHTML = "Light In The Black, By Sabaton. (This song is about peacekeeping forces, ex. The United Nations) ";
     }
 }
+
+
+function onloadindex() {
+    alert ("Welcome to the Index page!") ;
+}
+
+function onloadaboutme() {
+    alert ("Welcome to the About me page!") ;
+}
+
+function onloadmusic() {
+    alert ("Welcome to the Music page!") ;
+}
+
+function onloadlists() {
+    alert ("Welcome to the Lists page!") ;
+}
+
+function onloadgames() {
+    alert ("Welcome to the Games page!") ;
+}
+
+function onloadFAQ() {
+    alert ("Welcome to the FAQ page!") ;
+}
+
