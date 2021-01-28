@@ -3,31 +3,36 @@ body {
 	color: #003366;
 }
 
-h1 {
-	font-size: 1.3em;
-	text-align: center;
-}
-
-h2{
-        font-size: 1.1em;
-}
-
 table {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
+	table-layout: fixed;
+	width: "500px";
 	border-collapse: collapse;
-	cellspacing: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #9FB6CD;
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+td {
+	word-wrap: break-word;
+}
+
+#MessageOption {
+	text-align: right;
+}
+
+.ButtonRight {
+	float: right;
+}
+
+.ButtonLeft {
+	float : left;
 }
