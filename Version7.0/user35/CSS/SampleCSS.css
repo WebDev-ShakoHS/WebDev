@@ -101,7 +101,7 @@ audio#aH {
 }
 
 div#Hl {
-    position: relative;
+    position: absolute;
     width: 30px;
     height: 30px;
     overflow: hidden;
@@ -111,7 +111,7 @@ div#Hl {
 }
 
 audio#Ha {
-    position: relative;
+    position: absolute;
     top: -5px;
     left: -5px;
     z-index: 2;
