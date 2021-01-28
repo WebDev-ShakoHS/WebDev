@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 5.0
-    Name:
-    Date Completed:
--->
 
 <head>
 
-    <title>Home</title>
+    <title>My Favorite Video Games</title>
 
     <!-- Homepage meta data -->
     <meta charset="utf-8">
@@ -33,23 +29,21 @@
 
 <body>
     <a class="skip-main" tabindex="0" href="#main">Skip to main content</a>
-
     <!---------------------------------- Begin the nav-bar ----------------------------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-
-                    <a href="index.html" class="nav-item nav-link disabled" tabindex="-1">Video Games</a>
+                    <a href="index.html" class="nav-item nav-link active" tabindex="-1">Video Games</a>
                     <a href="History.html" class="nav-item nav-link active" tabindex="-1">History of Video Games</a>
                     <a href="Best.html" class="nav-item nav-link active" tabindex="-1">Video Game Music</a>
-                    <a href="Favorite.html" class="nav-item nav-link active" tabindex="-1">My Favorite Video Games</a>
+                    <a href="Favorite.html" class="nav-item nav-link disabled" tabindex="-1">My Favorite Video Games</a>
                     <a href="Content.html" class="nav-item nav-link active" tabindex="-1">Content Creaters</a>
                     <a href="Speedrun.html" class="nav-item nav-link active" tabindex="-1">Speed Running</a>
 
@@ -60,27 +54,74 @@
         </nav>
     </div>
     <div id="main" class="hidden" tabindex="-1"></div>
-    <!---------------------------------- End the nav-bar ------------------------------------->
-
     <div class="wideMargin" id="content">
 
-        <h1 class="text-left my-3">Video Games</h1>
-        <img src="images/VGController.jpg" />
+        <h1 class="text-left my-3">My Favorite Video Games</h1>
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <p tabindex="0">
-            What is a video game? By definitions a video game is a game played by electronically manipulating images produced by a computer program on a television screen or other display screen.
+            Game Covers
         </p>
-        <article tabindex="0">
-            I have played video games all my life so I wanted to make a website about them.
-        </article>
-        <p tabindex="0">
-            I hope you enjoy this website!!!
-        </p>
+
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑-->
     </div>
+    <div class="bs-example">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Title of Game</th>
+                    <th>Genre</th>
+                    <th>What I liked</th>
+                    <th>description</th>
 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5</td>
+                    <td>Undertale</td>
+                    <td>Role Playing Game</td>
+                    <td>My favorite thing about this game is the story and the music</td>
+                    <td>RPG where killing or saving determines the story</td>
+                    <img src="images/Undertale.jpg" />
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>The Binding of Isaac </td>
+                    <td>Roguelike</td>
+                    <td>My favorite thing about this game is that everytime you play the game its not the same as the last time because you get random items.</td>
+                    <td>Top-down dungeon crawler game where the player controls Isaac as he explores his basement.</td>
+                    <img src="images/TBOI.jpg" />
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Supermario Bros</td>
+                    <td>Platform game</td>
+                    <td>My favorite thing about this game is when playing the Wii version with friends and family its chaotic and its the first game I played and the game I've put the most time in.</td>
+                    <td>a platform game where Mario must race through the Mushroom Kingdom and save Princess Toadstool</td>
+                    <img src="images/SMWII.jpg" />
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minecraft</td>
+                    <td>Sandbox, Survival, and Open World</td>
+                    <td>My favorite thing about this game is playing with other people and being able to do whatever you want</td>
+                    <td>Minecraft is a video game in which players create and break apart various kinds of blocks in three-dimensional worlds</td>
+                    <img src="images/Minecraft.jpg" />
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Super smash bros</td>
+                    <td>Fighting, Platformer, and Action</td>
+                    <td>My favorite thing about this game is plating with family and friends and yelling at eachother</td>
+                    <td>Series of crossover fighting video games published by Nintendo, and primarily features characters from various Nintendo franchises</td>
+                    <img src="images/SSB.jpg" />
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <!---------------------------------- Begin the footer ------------------------------------->
     <div class="wideMargin" id="footer">
         <p>
@@ -89,5 +130,3 @@
     </div>
     <!---------------------------------- End the footer --------------------------------------->
 </body>
-
-</html>
