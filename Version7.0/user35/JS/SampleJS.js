@@ -30,5 +30,15 @@ function CDD() {
 
 function Leave() {
     fname = document.forms[0].fname.value;
-    alert("Hello! You will now go to the stock price of GameStop");
+    alert("Hello " + fname + "! You will now go to the stock price of GameStop");
+}
+
+function Leave2() {
+    fname = document.forms[0].fname.value;
+    alert("Hello " + fname + "! You will now go to NES Tetris");
+}
+
+function Leave3() {
+    fname = document.forms[0].fname.value;
+    alert("Hello " + fname + "! You will now go to LiveSplit");
 }
