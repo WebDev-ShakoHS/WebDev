@@ -22,3 +22,11 @@ function myFunction() {
     var x = document.getElementById("fname");
     x.value = x.value.toUpperCase();
 }
+function writeMessage() {
+    document.forms[0].mySecondInput.value = document.forms[0].myInput.value;
+}
+
+function preferedBrowser() {
+    prefer = document.forms[0].browsers.value;
+    alert("You prefer browsing internet with " + prefer);
+}

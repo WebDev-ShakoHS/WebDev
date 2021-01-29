@@ -6,8 +6,6 @@
     -->
 
 <head>
-
-
     <title>JavaScript</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,8 +14,6 @@
 
     <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
-
-    <script src="JS/SampleJS.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -80,192 +76,22 @@
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-
-                <div class="col-sm-4" style="background-color:yellow;">2005 Ford GT</div>
-                <div class="col-sm-4" style="background-color:orange;">
-                    <p>Click the button to trigger a function.</p>
-
-                    <button onclick="Transformingtext()">Click me</button>
-                </div>
-                <div class="col-sm-4" style="background-color:yellow;">
-                    <p id="demo"></p>
-                </div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
             </div>
-            <div class="row">
-
-                <div class="col-sm-4" style="background-color:orange;">
-
-
+        </div>
+    </div>
+    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
 
-
-
-
-
-
-
-
-
-
-</body>
-
-</html>
-<div class="col-sm-4" style="background-color:yellow;">
-    <html>
-
-    <body>
-
-        <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over this text
-        </h1>
-
-    </body>
-
-    </html>
-</div>
-
-</div>
-<div class="col-sm-4" style="background-color:yellow;">
-    <html>
-
-    <head>
-        <script>
-            function myFunction(elmnt, clr) {
-                elmnt.style.color = clr;
-            }
-        </script>
-    </head>
-
-    <body>
-
-        <p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')">
-            Click the text to change the color. A function, with parameters, is triggered when the mouse
-            button is pressed down, and again, with other parameters, when the mouse button is released.
+    <!---------------------------------- Begin the footer ------------->
+    <div class="wideMargin" id="footer">
+        <p>
+            Webpage made by <a href="index.html" target="_blank">[your name]</a>
         </p>
-
-    </body>
-
-    </html>
-</div>
-
-</div>
-<div class="col-sm-4" style="background-color:orange;">
-    <html>
-
-    <head>
-        <script>
-            function message() {
-                alert("This alert box was triggered by the onreset event handler");
-            }
-        </script>
-    </head>
-
-    <body>
-
-        <form onreset="message()">
-            Enter your name: <input type="text" size="20">
-            <input type="reset">
-        </form>
-
-    </body>
-
-    </html>
-</div>
-<div class="col-sm-4" style="background-color:yellow;">
-    <html>
-
-    <head>
-        <script>
-            function myFunction() {
-                alert("Page is loaded");
-            }
-        </script>
-    </head>
-
-    <body onload="myFunction()">
-        <h2>Hello World!</h2>
-    </body>
-
-    </html>
-</div>
-<div class="col-sm-4" style="background-color:orange;">
-    <html>
-
-    <head>
-        <script>
-            function confirmInput() {
-                fname = document.forms[0].fname.value;
-                alert("Hello " + fname + "! You will now be redirected to www.w3Schools.com");
-            }
-        </script>
-    </head>
-
-    <body>
-
-        <form onsubmit="confirmInput()" action="https://www.w3schools.com/">
-            Enter your name: <input id="fname" type="text" size="20">
-            <input type="submit">
-        </form>
-
-    </body>
-
-    </html>
-</div>
-<div class="col-sm-4" style="background-color:yellow;">
-    <html>
-
-    <head>
-        <script>
-            function myFunction(elmnt, clr) {
-                elmnt.style.color = clr;
-            }
-        </script>
-    </head>
-
-    <body>
-
-        <p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')">
-            Click the text to change the color. A function, with parameters, is triggered when the mouse
-            button is pressed down, and again, with other parameters, when the mouse button is released.
-        </p>
-
-    </body>
-
-    </html>
-</div>
-<div class="col-sm-4" style="background-color:yellow;">
-    <html>
-
-    <head>
-        <script>
-            function preferedBrowser() {
-                prefer = document.forms[0].browsers.value;
-                alert("You prefer browsing internet with " + prefer);
-            }
-        </script>
-    </head>
-
-    <body>
-
-        <form>
-            Choose which browser you prefer:
-            <select id="browsers" onchange="preferedBrowser()">
-                <option value="Chrome">Chrome</option>
-                <option value="Internet Explorer">Internet Explorer</option>
-                <option value="Firefox">Firefox</option>
-            </select>
-        </form>
-</div>
-</div>
-<!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
-
-
-<!---------------------------------- Begin the footer ------------->
-<div class="wideMargin" id="footer">
-    <p>
-        Webpage made by <a href="index.html" target="_blank">[your name]</a>
-    </p>
-</div>
-<!---------------------------------- End the footer ------------->
+    </div>
+    <!---------------------------------- End the footer ------------->
 </body>
 
 </html>
