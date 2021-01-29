@@ -1,3 +1,5 @@
+
+
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -8,8 +10,8 @@ h1 {
 	text-align: center;
 }
 
-h2{
-        font-size: 1.1em;
+h2 {
+	font-size: 1.1em;
 }
 
 table {
@@ -17,17 +19,72 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	letter-spacing: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #1b6bbb;
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+.buttonstyle {
+	box-shadow: inset 0px 1px 3px 0px #91b8b3;
+	background: linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	background-color: #768d87;
+	border-radius: 5px;
+	border: 1px solid #566963;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 11px 23px;
+	text-decoration: none;
+	text-shadow: 0px -1px 0px #2b665e;
+}
+
+strong {
+	font-size: 200%;
+}
+
+aside {
+	width: 60%;
+	padding-left: 5px;
+	margin-left: 10px;
+	float: right;
+	font-style: italic;
+	color: #e4a240;
+	background-color: rgb(0, 0, 0);
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	width: 70%;
+	margin-bottom: .6em;
+	display: inline-block;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nameplate {
+	padding: 2px 16px;
+}
+
+.paragraph {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.red {
+	color: red;
 }
