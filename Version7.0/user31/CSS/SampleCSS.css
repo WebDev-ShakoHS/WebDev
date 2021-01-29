@@ -1,6 +1,6 @@
 body {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	color: #0077ff;
 }
 
 h1 {
@@ -30,4 +30,55 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+.NEW Button {
+	box-shadow:inset 0px 0px 0px 0px #7a8eb9;
+	background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+	background-color:#637aad;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+	background-color:#5972a7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.btn-group button {
+	background-color: #0077ff; /* Green background */
+	border: 1px solid rgb(0, 0, 0); /* Green border */
+	color: white; /* White text */
+	padding: 10px 24px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	float: left; /* Float the buttons side by side */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  
+  .btn-group button:not(:last-child) {
+	border-right: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+	background-color: #1b3c6d;
+  }
+  body {
+	background-image: url(https://wallpaperaccess.com/full/2564042.jpg);
+	background-repeat: no-repeat;
+	background-size: 1920px 1080;
 }
