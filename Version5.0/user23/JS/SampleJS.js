@@ -18,7 +18,7 @@ Scroll();
 function Transformingtext() {
     document.getElementById("demo").innerHTML = "Hello World";
 }
-function myFunction() {
+function MyFunction() {
     var x = document.getElementById("fname");
     x.value = x.value.toUpperCase();
 }
@@ -30,3 +30,8 @@ function preferedBrowser() {
     prefer = document.forms[0].browsers.value;
     alert("You prefer browsing internet with " + prefer);
 }
+<script>
+    function Hello() {
+        document.getElementById("demo").innerHTML = "You selected some text"
+}
+</script>
