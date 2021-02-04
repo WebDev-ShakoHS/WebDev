@@ -17,7 +17,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
@@ -30,4 +30,8 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+body {
+	background-color: rgb(255,0,0);
+	
 }
