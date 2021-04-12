@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0
-        Name:
-        Date Completed:
-    -->
+    Name:
+    Date Completed:
+-->
 
 <head>
     <title>JavaScript</title>
@@ -17,7 +17,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="JS/SampleJS.js"></script>
 
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
@@ -39,6 +38,7 @@
             font-size: 12px;
             text-align: center;
         }
+
     </style>
 </head>
 
@@ -60,8 +60,7 @@
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
-                        tabindex="-1">Contact</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -71,34 +70,19 @@
         </nav>
     </div>
     <!---------------------------------- End the nav-bar ------------->
+
     <div class="wideMargin" id="content">
         <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
-            <div class="row" id="holder">
-                <button type="button" id="RandomColorButton" onclick=randomColorText(this.id)>Click for RANDOM COLORS</button>
-                <button type="button" id="TransparentButton" onclick=transparentButton(this.id)>Click for transparency!</button>
-                <button type="button" id="RandomMessage" onclick=randomMessage(this.id)>Click for a random message!</button>
-                <input type="file" accept="image/*" id="fileinput" onchange=imageAdded(this.id)>
-                
-                <form id="InteractionForm">
-                    <br>
-                    <input type="text" id="ElementCreationBox" placeholder="Type something here">
-                    <br>
-                    <input type="button" id="ElementCreationButton" value="Create Element" onclick=createRow(this.id)>
-                    <select id="Sizes" onchange=sizeChanged(this.id)></select>
-                </form>
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
             </div>
-            <img id="InputImage" width="200px" height="200px" alt="No image provided.">
         </div>
-       
-        <script>
-            createSizeOptions();
-        </script>
-        
     </div>
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
-
 
 
     <!---------------------------------- Begin the footer ------------->

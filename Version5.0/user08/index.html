@@ -38,48 +38,12 @@
             font-size: 12px;
             text-align: center;
         }
-
-        .hidden {
-            display: none;
-        }
-
-        a.skip-main {
-            left: -999px;
-            position: absolute;
-            top: auto;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            z-index: -999;
-        }
-
-        a.skip-main:focus,
-        a.skip-main:active {
-            color: #fff;
-            background-color: #000;
-            left: auto;
-            top: auto;
-            width: 30%;
-            height: auto;
-            overflow: auto;
-            margin: 10px 35%;
-            padding: 5px;
-            border-radius: 15px;
-            border: 4px solid red;
-            text-align: center;
-            font-size: 1.2em;
-            z-index: 999;
-        }
     </style>
-
 </head>
 
 <body>
-    <a class="skip-main" tabindex="0" href="#main">Skip to main content</a>
-
     <!---------------------------------- Begin the nav-bar ----------------------------------->
     <div class="menu">
-
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -108,18 +72,13 @@
     <!---------------------------------- End the nav-bar ------------------------------------->
 
     <div class="wideMargin" id="content">
-        <div id="main" class="hidden" tabindex="-1"></div>
+
         <h1 class="text-left my-3">Home</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <p tabindex="0">
+        <p>
             This is my Home page!
         </p>
-        <article>
-            <p tabindex="0">
-I think I get this now
-            </p>
-        </article>
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑-->
     </div>
 

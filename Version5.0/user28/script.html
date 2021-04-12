@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0
-        Name:
-        Date Completed:
-    -->
+    Name:
+    Date Completed:
+-->
 
 <head>
     <title>JavaScript</title>
@@ -38,6 +38,7 @@
             font-size: 12px;
             text-align: center;
         }
+
     </style>
 </head>
 
@@ -59,8 +60,7 @@
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
-                        tabindex="-1">Contact</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -76,114 +76,19 @@
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" style="background-color:rgb(82, 124, 172);">
-                    <script>
-                        function myFunction3(elmnt, clr) {
-                            elmnt.style.color = clr;
-                        }
-                    </script>
-                    <p onmousedown="myFunction3(this,'white')" onmouseup="myFunction3(this,'pink')">
-                        I wonder what would happen...
-                    </p>
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(236, 203, 141);">
-                    <center>
-                        <script>
-                            function myFunction6() {
-                                document.getElementById("demo").innerHTML = "Why Hello ;)";
-                            }
-                        </script>
-                        <button onclick="myFunction6()">Click</button>
-                    </center>
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(82, 124, 172);">
-                    <html>
-                    <h1 onmouseover="style.color='orange'" onmouseout="style.color='black'">Mouse Here</h1>
-
-                    </html>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4" style="background-color:rgb(236, 203, 141);">
-                    <script>
-                        function myFunction2() {
-                            var x = document.getElementById("fname");
-                            x.value = x.value.toUpperCase();
-                        }
-                    </script>
-                    Type Here: <input type="text" id="fname" onchange="myFunction2()">
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(82, 124, 172);">
-                    <script>
-                        function myFunction() {
-                            document.getElementById("demo").innerHTML = "Hey There :)";
-                        }
-                    </script>
-                    <p ondblclick="myFunction()">Doubleclick Here</p>
-
-                    <p id="demo"></p>
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(236, 203, 141);">
-                    <script>
-                        function myFunction1(x) {
-                            x.style.background = "yellow";
-                        }
-                    </script>
-                    Click This Box: <input type="text" onfocus="myFunction1(this)"></div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4" style="background-color:rgb(82, 124, 172);">
-                    <script>
-                        function myFunction5() {
-                            document.getElementById("demo").innerHTML = "You selected some text";
-                        }
-                    </script>
-                    Try Something: <input type="text" value="Hello world!" onselect="myFunction5()">
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(236, 203, 141);">
-                    <center>
-                        <script>
-                            function myFunction4(e) {
-                                x = e.clientX;
-                                y = e.clientY;
-                                coor = "Coordinates: (" + x + "," + y + ")";
-                                document.getElementById("demo").innerHTML = coor
-                            }
-                            function clearCoor() {
-                                document.getElementById("demo").innerHTML = "";
-                            }
-                        </script>
-                        <div id="coordiv" style="width:199px;height:99px;border:1px solid"
-                            onmousemove="myFunction4(event)" onmouseout="clearCoor()"></div>
-
-                        <p>Coordinates?</p>
-
-                        <p id="demo"></p>
-                    </center>
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(82, 124, 172);">
-                    <script>
-                        function getEventType(event) {
-                            document.getElementById("demo").innerHTML = event.type;
-                        }
-                    </script>
-                    <p onmousedown="getEventType(event)">
-                        Can you trigger an event?
-                    </p>
-
-                </div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
             </div>
         </div>
     </div>
-
-
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
 
     <!---------------------------------- Begin the footer ------------->
     <div class="wideMargin" id="footer">
         <p>
-            Webpage made by <a href="index.html" target="_blank">Lena :3</a>
+            Webpage made by <a href="index.html" target="_blank">[your name]</a>
         </p>
     </div>
     <!---------------------------------- End the footer ------------->

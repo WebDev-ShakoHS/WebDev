@@ -1,129 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 4.0
-        Name: Henry Jakusz
-        Date Completed: 12/9/20
- -->
+<!--Version 5.0
+    Name:
+    Date Completed:
+-->
 
 <head>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Home</title>
 
-    <link href="CSS/SampleCSS.css" rel="stylesheet" type="text/css">
+    <!-- Homepage meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Home Page">
+
+    <!-- Bootstrap core JS -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
+    <!---------------------------------- Begin the nav-bar ----------------------------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <a class="skip-main" tabindex="0" href="#main">Skip to main content</a>
-    <div class="container">
-        <span class="mytext1">Hello This is </span>
-        <span class="mytext2"> Henry </span>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="games.html" class="nav-item nav-link" tabindex="-1">Games</a>
+                    <a href="bootstrap.html" class="nav-item nav-link" tabindex="-1">Bootstrap</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
     </div>
-    <style>
-        .hidden {
-            display: none;
-        }
-        
-        a.skip-main {
-            left: -999px;
-            position: absolute;
-            top: auto;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            z-index: -999;
-        }
-        
-        a.skip-main:focus,
-        a.skip-main:active {
-            color: #fff;
-            background-color: #000;
-            left: auto;
-            top: auto;
-            width: 30%;
-            height: auto;
-            overflow: auto;
-            margin: 10px 35%;
-            padding: 5px;
-            border-radius: 15px;
-            border: 4px solid red;
-            text-align: center;
-            font-size: 1.2em;
-            z-index: 999;
-        }
-    </style>
+    <!---------------------------------- End the nav-bar ------------------------------------->
 
-    <div id="main">
-        <h1>I am Web Dev User ##</h1>
-        <h2> </h2>
-        <h3>And I'm a Web Developer</h3>
+    <div class="wideMargin" id="content">
 
-        <button>Hire me</button>
+        <h1 class="text-left my-3">Home</h1><!-- Edit this line for the title of your page -->
 
-        <button class="button">Hire me</button>
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <p>
+            This is my Home page!
+        </p>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑-->
+    </div>
 
-        <button class="button button-radius1">Hire me</button>
-
-        <button class="button button-radius2">Hire me</button>
-
-        <button class="button button2 red">Hire me</button>
-        <button class="coolbutton">Henry Rocks</button>
-        <button class="coolerbutton">Henry is cool</button>
-
-
-
-
-
-
-        <br>
-
-        <span class="title title-large">Example of a Heading Title</span>
-
-        <div class="content">
-
-            <p>
-                Page content..<span class='red'>looks awesome</span>
-            </p>
-
-            <p>
-                Some more page content..
-            </p>
-
-        </div>
-
-        <p id="morecontent">
-            Even more content
+    <!---------------------------------- Begin the footer ------------------------------------->
+    <div class="wideMargin" id="footer">
+        <p>
+            Webpage made by <a href="index.html" target="_blank">[your name]</a>
         </p>
     </div>
-    <div id="face">
-        <div class="left eye">
-            <div class="pupil">
-            </div>
-        </div>
-        <div class="right eye">
-            <div class="pupil">
-            </div>
-        </div>
-        <div id="mouth">
-        </div>
-    </div>
-
-
-    <div id="footer">
-        <span class="title title-small">Example of a Footer Title</span>
-    </div>
+    <!---------------------------------- End the footer --------------------------------------->
 </body>
 
 </html>
-<div id="main" class="hidden" tabindex="-1"></div>
-<h1>Minecraft is an Awesome game</h1>
-<data>
-    <h2>Its just the best</h2>
-    <p>Its so fun</p>
-</data>
-
-<data>
-    <h2>Good game</h2>
-    <p>Fun</p>
-</data>

@@ -6,7 +6,6 @@
 -->
 
 <head>
-
     <title>Home</title>
 
     <!-- Homepage meta data -->
@@ -30,52 +29,19 @@
         .menu {
             margin: 0px;
         }
-        
+
         .wideMargin {
             margin: 15px;
         }
-        
+
         #footer {
             font-size: 12px;
             text-align: center;
-        }
-        
-        .hidden {
-            display: none;
-        }
-        
-        a.skip-main {
-            left: -999px;
-            position: absolute;
-            top: auto;
-            width: 1px;
-            height: 1px;
-            overflow: hidden;
-            z-index: -999;
-        }
-        
-        a.skip-main:focus,
-        a.skip-main:active {
-            color: #fff;
-            background-color: #000;
-            left: auto;
-            top: auto;
-            width: 30%;
-            height: auto;
-            overflow: auto;
-            margin: 10px 35%;
-            padding: 5px;
-            border-radius: 15px;
-            border: 4px solid red;
-            text-align: center;
-            font-size: 1.2em;
-            z-index: 999;
         }
     </style>
 </head>
 
 <body>
-    <a class="skip-main" tabindex="0" href="#main">Skip to main content</a>
     <!---------------------------------- Begin the nav-bar ----------------------------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -93,7 +59,8 @@
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="games.html" class="nav-item nav-link" tabindex="-1">Games</a>
                     <a href="bootstrap.html" class="nav-item nav-link" tabindex="-1">Bootstrap</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -102,23 +69,15 @@
             </div>
         </nav>
     </div>
-    <div id="main" class="hidden" tabindex="-1"></div>
     <!---------------------------------- End the nav-bar ------------------------------------->
 
     <div class="wideMargin" id="content">
 
-        <h1 class="text-left my-3">Home</h1>
-        <!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">Home</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <p tabindex="0">
+        <p>
             This is my Home page!
-        </p>
-        <article tabindex="0">
-            Here is my article
-        </article>
-        <p tabindex="0">
-            3rd item
         </p>
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑-->
     </div>

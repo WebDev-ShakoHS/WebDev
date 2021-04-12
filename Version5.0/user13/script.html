@@ -6,56 +6,40 @@
 -->
 
 <head>
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev JavaScript Practice">
 
-<body>
+    <!-- Bootstrap core JS -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <h2>JavaScript Objects</h2>
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
-    <p id="demo"></p>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script>
-        // Create an object:
-        var car = { type: "Fiat", model: "500", color: "white" };
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
 
-        // Display some data from the object:
-        document.getElementById("demo").innerHTML = "The car type is " + car.type;
-    </script>
+        .wideMargin {
+            margin: 15px;
+        }
 
-</body>
-<title>JavaScript</title>
-<script src="JS/SampleJS.js"></script>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="SHS WebDev JavaScript Practice">
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
 
-<!-- Bootstrap core JS -->
-<!-- These are needed to get the responsive menu to work -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-<!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Custom styles for this template -->
-<style type="text/css">
-    .menu {
-        margin: 0px;
-    }
-
-    .wideMargin {
-        margin: 15px;
-    }
-
-    #footer {
-        font-size: 12px;
-        text-align: center;
-    }
-</style>
+    </style>
 </head>
 
 <body>
@@ -76,8 +60,7 @@
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
-                        tabindex="-1">Contact</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -91,217 +74,13 @@
     <div class="wideMargin" id="content">
         <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <script>
-            function myFunction() {
-                var x = document.getElementById("fname");
-                x.value = x.value.toUpperCase();
-            }
-        </script>
-        </head>
-
-        <body>
-
-            Enter your name: <input type="text" id="fname" onblur="myFunction()">
-
-            <p>When you leave the input field, a function is triggered which transforms the input text to upper case.
-            </p>
-            <script>
-                function myFunction(x) {
-                    x.style.background = "yellow";
-                }
-            </script>
-            </head>
-
-            <body>
-
-                Enter your name: <input type="text" onfocus="myFunction(this)">
-
-                <p>When the input field gets focus, a function is triggered which changes the background-color.</p>
-                function myFunction() {
-                alert("You pressed a key inside the input field");
-                }
-                </script>
-                </head>
-
-                <body>
-
-                    <p>A function is triggered when the user is pressing a key in the input field.</p>
-
-                    <input type="text" onkeypress="myFunction()">
-                    <script>
-                        function bigImg(x) {
-                            x.style.height = "64px";
-                            x.style.width = "64px";
-                        }
-
-                        function normalImg(x) {
-                            x.style.height = "32px";
-                            x.style.width = "32px";
-                        }
-                    </script>
-                    </head>
-
-                    <body>
-
-                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images/favicon.ico"
-                            alt="Smiley" width="32" height="32">
-
-                        <p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
-                        <p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
-                        <html>
-
-                        <head>
-                            <script>
-                                function myFunction(elmnt, clr) {
-                                    elmnt.style.color = clr;
-                                }
-                            </script>
-                        </head>
-
-                        <body>
-
-                            <p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')">
-                                Click the text to change the color. A function, with parameters, is triggered when the
-                                mouse button is pressed down, and again, with other parameters, when the mouse button is
-                                released.
-                            </p>
-
-                        </body>
-
-                        </html>
-                        <html>
-
-                        <head>
-                            <script>
-                                function message() {
-                                    alert("This alert box was triggered by the onreset event handler");
-                                }
-                            </script>
-                        </head>
-
-                        <body>
-
-                            <form onreset="message()">
-                                Enter your name: <input type="text" size="20">
-                                <input type="reset">
-                            </form>
-
-                        </body>
-
-                        </html>
-                        <html>
-
-                        <head>
-                            <script>
-                                function confirmInput() {
-                                    fname = document.forms[0].fname.value;
-                                    alert("Hello " + fname + "! You will now be redirected to www.w3Schools.com");
-                                }
-                            </script>
-                        </head>
-
-                        <body>
-
-                            <form onsubmit="confirmInput()" action="https://www.w3schools.com/">
-                                Enter your name: <input id="fname" type="text" size="20">
-                                <input type="submit">
-                            </form>
-
-                        </body>
-
-                        </html>
-                        <html>
-
-                        <head>
-                            <script>
-                                function myFunction() {
-                                    var x = document.getElementById("fname");
-                                    x.value = x.value.toUpperCase();
-                                }
-                            </script>
-                        </head>
-
-                        <body>
-
-                            Enter your name: <input type="text" id="fname" onchange="myFunction()">
-                            <p>When you leave the input field, a function is triggered which transforms the input text
-                                to upper case.</p>
-
-                        </body>
-
-                        </html>
-                        <html>
-
-                        <body>
-
-                            <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over this text
-                            </h1>
-
-                        </body>
-
-                        </html>
-                        <html>
-
-                        <head>
-                            <script>
-                                function whichElement(e) {
-                                    var targ;
-                                    if (!e) {
-                                        var e = window.event;
-                                    }
-                                    if (e.target) {
-                                        targ = e.target;
-                                    } else if (e.srcElement) {
-                                        targ = e.srcElement;
-                                    }
-                                    var tname;
-                                    tname = targ.tagName;
-                                    alert("You clicked on a " + tname + " element.");
-                                }
-                            </script>
-                        </head>
-
-                        <body onmousedown="whichElement(event)">
-
-                            <p>Click somewhere in the document. An alert box will alert the name of the element you
-                                clicked on.</p>
-                            <h3>This is a heading</h3>
-                            <img border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
-                            <p>This is a paragraph.</p>
-
-                        </body>
-
-                        </html>
-                        <html>
-
-                        <head>
-                            <script>
-                                function myFunction(e) {
-                                    x = e.clientX;
-                                    y = e.clientY;
-                                    coor = "Coordinates: (" + x + "," + y + ")";
-                                    document.getElementById("demo").innerHTML = coor
-                                }
-
-                                function clearCoor() {
-                                    document.getElementById("demo").innerHTML = "";
-                                }
-                            </script>
-                        </head>
-
-                        <body style="margin:0px;">
-
-                            <div id="coordiv" style="width:199px;height:99px;border:1px solid"
-                                onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
-
-                            <p>Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
-
-                            <p id="demo"></p>
-
-                        </body>
-
-                        </html>
-
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+            </div>
+        </div>
     </div>
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 

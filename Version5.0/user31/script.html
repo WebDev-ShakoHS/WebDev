@@ -38,10 +38,8 @@
             font-size: 12px;
             text-align: center;
         }
-      
 
     </style>
-    <script src="JS/SampleJS.js"></script>
 </head>
 
 <body>
@@ -78,172 +76,10 @@
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" style="background-color:yellow;"><html>
-                    <head>
-                    <script>
-                    function myFunction(elmnt, clr) {
-                      elmnt.style.color = clr;
-                    }
-                    </script>
-                    </head>
-                    <body>
-                    
-                    <p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')">
-                    Click the text to change the color. A function, with parameters, is triggered when the mouse button is pressed down, and again, with other parameters, when the mouse button is released.
-                    </p>
-                    
-                    </body>
-                    </html>
-                    </div>
-                <div class="col-sm-4" style="background-color:orange;"><html>
-                    <body>
-                    
-                    <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over this text</h1>
-                    
-                    </body>
-                    </html>
-                    </div>
-                <div class="col-sm-4" style="background-color:yellow;"><html>
-                    <head>
-                    <script>
-                    function displayDate() {
-                      document.getElementById("demo").innerHTML = Date();
-                    }
-                    </script>
-                    </head>
-                    <body>
-                    
-                    <h2>My First JavaScript</h2>
-                    <p id="demo">This is a paragraph.</p>
-                    
-                    <button type="button" onclick="displayDate()">Display Date</button>
-                    
-                    </body>
-                    </html> </div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-4" style="background-color:orange;"><html>
-                <head>
-                <script>
-                function whichButton(event) {
-                  document.getElementById("demo").innerHTML = event.keyCode;
-                }
-                </script>
-                </head>
-                
-                <body onkeyup="whichButton(event)">
-                
-                <p><b>Note:</b> Make sure the right frame has focus when trying this example!</p>
-                
-                <p>Click on this page, and press a key on your keyboard.</p>
-                
-                <p id="demo"></p>
-                
-                </body>
-                </html>
-                </div>
-            <div class="col-sm-4" style="background-color:yellow;"><html>
-                <head>
-                <script>
-                function coordinates(event) {
-                  document.getElementById("demo").innerHTML = "X = " + event.screenX + "<br>Y = " + event.screenY;
-                }
-                </script>
-                </head>
-                <body>
-                
-                <p onmousedown="coordinates(event)">
-                Click this paragraph, to display the x and y coordinates of the cursor, relative to the screen.
-                </p>
-                
-                <p id="demo"></p>
-                
-                </body>
-                </html>
-                </div>
-            <div class="col-sm-4" style="background-color:orange;"><html>
-                <head>
-                <script>
-                function preferedBrowser() {
-                  prefer = document.forms[0].browsers.value;
-                  alert("You prefer browsing internet with " + prefer);
-                }
-                </script>
-                </head>
-                <body>
-                
-                <form>
-                Choose which browser you prefer:
-                  <select id="browsers" onchange="preferedBrowser()">
-                    <option value="Chrome">Chrome</option>
-                    <option value="Internet Explorer">Internet Explorer</option>
-                    <option value="Firefox">Firefox</option>
-                  </select>
-                </form>
-                
-                </body>
-                </html></div>
-        </div>
-    </div> <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-4" style="background-color:yellow;"><html>
-                <head>
-                <title>Unclosable Window</title>
-                <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-                <meta name="copyright" content="JavaScriptBank.com" />
-                <script language=JavaScript>
-                /*
-                Source of MainPart: Stefan MÃ¼nz, Selfhtml 7.0, tecb.htm
-                */
-                
-                activ = window.setInterval("Farbe()",100);
-                i = 0, farbe = 1;
-                function Farbe() {
-                
-                if(farbe==1) {
-                document.bgColor="FFFF00"; farbe=2; }
-                else {
-                document.bgColor="FF0000"; farbe=1; }
-                i = i + 1;
-                
-                //if you don't want to freeze the browser uncommend the next two lines
-                //if(i >= 50)
-                //window.clearInterval(activ);
-                }
-                
-                function erneut(){
-                window.open(self.location,'');
-                }
-                window.onload = erneut;
-                </script>
-                </head>
-                <body>
-                <h1>Unclosable Window</h1>
-                </body>
-                </html></div>
-            <div class="col-sm-4" style="background-color:orange;">\<!DOCTYPE html>
-                <html>
-                <head>
-                <script>
-                function myFunction() {
-                  document.getElementById("demo").innerHTML = "Hello World";
-                }
-                </script>
-                </head>
-                <body>
-                
-                <p>Click the button to trigger a function.</p>
-                
-                <button onclick="myFunction()">Click me</button>
-                
-                <p id="demo"></p>
-                
-                </body>
-                </html>
-                </div>
         </div>
     </div>
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
@@ -256,11 +92,6 @@
         </p>
     </div>
     <!---------------------------------- End the footer ------------->
-    <center><p id="textChange"> My name is User ##</p></center>
-<center><button type="button" onclick="changeText()">Click if you like</button></center>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </body>
-
- 
 
 </html>
