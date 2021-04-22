@@ -19,10 +19,73 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
+        div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: yellow;
+    margin-top: 2rem;
+}
 
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #000;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
     </style>
 </head>
+<h1>Dummy</h1>
+<section>
+    <h2>So Basically</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum facilisis leo vel fringilla est. Amet facilisis magna etiam tempor orci eu lobortis. Praesent elementum facilisis leo vel fringilla est ullamcorper. Turpis cursus in hac habitasse platea dictumst. Nunc congue nisi vitae suscipit tellus. Risus feugiat in ante metus dictum at. Vel pharetra vel turpis nunc eget. Sit amet consectetur adipiscing elit pellentesque habitant. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi.</p>
+</section>
 
+<section>
+    <h2>And Here's Why</h2>
+    <p>Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. In mollis nunc sed id semper risus. Aliquam sem et tortor consequat id porta. Erat velit scelerisque in dictum non consectetur a. Neque sodales ut etiam sit amet nisl. Porttitor eget dolor morbi non arcu risus. Gravida rutrum quisque non tellus orci ac. Cursus euismod quis viverra nibh cras pulvinar. Faucibus et molestie ac feugiat sed lectus vestibulum mattis. Pulvinar neque laoreet suspendisse interdum. Dolor sed viverra ipsum nunc aliquet bibendum. Rutrum quisque non tellus orci ac auctor augue mauris. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Iaculis urna id volutpat lacus laoreet non curabitur. Scelerisque eleifend donec pretium vulputate sapien nec. Lacus vestibulum sed arcu non odio</p>
+</section>
 <body>
     <main class="wideMargin">
 
@@ -43,7 +106,7 @@
                         <h4>Just wait for it
                             <h5>It is coming up now
                                 <h6>cool elements in coding
-                                    
+
                                     <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
                                     <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
                                     Let's get healthy <del>COVID-19</del>
@@ -56,10 +119,19 @@
                                     <abbr title="World Health Organization"> WHO </abbr>
                                     <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
-        <div id="banner">
+        <div id="banner"> Hybrid was fun
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
         </div>
     </main>
 
