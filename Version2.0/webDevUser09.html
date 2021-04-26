@@ -18,7 +18,62 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <style>
+        #banner{
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+}
+div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: red;
+    margin-top: 2rem;
+}
 
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 10%;
+    background: #fff;
+    position: absolute;
+    top: 35%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #000;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    top: 25%;
+    transform-origin: center;
+}
+
+#mouth {
+    position: relative;
+    width: 55%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
     </style>
 </head>
 
@@ -57,13 +112,38 @@
 <abbr title="World Health Organization" > WHO </abbr> -- used to show acronyms
 
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <h1>Lorem Ipsum</h1>
+<section>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Non curabitur gravida arcu ac tortor dignissim convallis aenean et.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Euismod quis viverra nibh cras pulvinar mattis nunc sed. 
+        Adipiscing elit pellentesque habitant morbi.</p>
+</section>
+
+<section>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Adipiscing enim eu turpis egestas pretium aenean pharetra.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Maecenas sed enim ut sem viverra. Suspendisse faucibus interdum posuere lorem ipsum dolor.
+    </p>
+</section>
            
 
         </div>
         <div id="banner">
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div class="right eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div id="mouth">
+           </div>
         </div>
     </main>
 
