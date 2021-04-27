@@ -41,6 +41,24 @@
             font-size: 12px;
             text-align: center;
         }
+
+
+
+
+
+        < !----------- Begin Dark Mode HTML -----------------><meta name="viewport"content="width=device-width, initial-scale=1"><style>body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        < !---------- End dark mode HTML -->
     </style>
 </head>
 
@@ -73,6 +91,33 @@
     </menu>
     <!---------------------------------- End the nav-bar ------------------------------------->
 
+
+
+
+
+
+    <!----------- Begin Dark Mode HTML ----------------->
+    <h2>Toggle Dark/Light Mode</h2>
+    <p>Click the button to toggle between dark and light mode for this page.</p>
+
+    <button onclick="myFunction()">Toggle dark mode</button>
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
+    <!---------- End dark mode HTML -->
+
+
+
+
+
+
+
+
     <main class="wideMargin">
 
         <h1 class="text-left my-3" tabindex="0">Cars</h1><!-- Edit this line for the title of your page -->
@@ -92,31 +137,36 @@
                 <td>1</td>
                 <td>Tesla</td>
                 <td>Model S Plaid+</td>
-                <td><img src="images/Tesla Plaid+.png" style="height:100px;" alt="Image of Grey Tesla Model S Plaid+ Sports Car"></td>
+                <td><img src="images/Tesla Plaid+.png" style="height:100px;"
+                        alt="Image of Grey Tesla Model S Plaid+ Sports Car"></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Rolls Royce</td>
                 <td>Phantom</td>
-                <td><img src="images/Rolls Royce Phantom.png" style="height:115px;" alt="Image of Black Rolls Royce Phantom Luxury Car"></td>
+                <td><img src="images/Rolls Royce Phantom.png" style="height:115px;"
+                        alt="Image of Black Rolls Royce Phantom Luxury Car"></td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Porsche</td>
                 <td>911</td>
-                <td><img src="https://static.wikia.nocookie.net/forzamotorsport/images/b/bb/HOR_XB1_Porsche_911_14.png/revision/latest?cb=20200320135526" style="height:135px;" alt="Image of Red Porsche 911 Sports Car"></td>
+                <td><img src="https://static.wikia.nocookie.net/forzamotorsport/images/b/bb/HOR_XB1_Porsche_911_14.png/revision/latest?cb=20200320135526"
+                        style="height:135px;" alt="Image of Red Porsche 911 Sports Car"></td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>Ford</td>
                 <td>F-150 Raptor</td>
-                <td><img src="images/Ford Raptor.png" style="height:120px;" alt="Image of Blue Ford F-150 Raptor Pickup Truck"></td>
+                <td><img src="images/Ford Raptor.png" style="height:120px;"
+                        alt="Image of Blue Ford F-150 Raptor Pickup Truck"></td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>Ford</td>
                 <td>Fusion</td>
-                <td><img src="/Users/225838/Applications/mampstack/apache2/htdocs/WebDev/Version3.0/user23/images/Ford Fusion.png" style="height:150px;" alt="Image of Grey Ford Fusion Sedan"></td>
+                <td><img src="/Users/225838/Applications/mampstack/apache2/htdocs/WebDev/Version3.0/user23/images/Ford Fusion.png"
+                        style="height:150px;" alt="Image of Grey Ford Fusion Sedan"></td>
             </tr>
         </table>
     </main>
@@ -124,7 +174,7 @@
 
 
     <!---------------------------------- Begin the footer ------------->
-    
+
     <!---------------------------------- End the footer ------------->
 </body>
 
