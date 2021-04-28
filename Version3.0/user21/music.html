@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -42,9 +42,12 @@
             font-size: 12px;
             text-align: center;
         }
+
+        td {
+     color: #FF0000;
+    }
     </style>
 </head>
-
 <body>
     <!---------------------------------- Begin the nav-bar ------------->
     <menu>
@@ -76,11 +79,9 @@
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3" tabindex="0">Music</h1><!-- Edit this line for the title of your page -->
-
+        <h1 class="text-left my-3" tabindex="0">Music</h1> <!-- Edit this line for the title of your page -->
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h2>Aidan Rau's Top 5 Favorite Songs</h2>
-        <table>
+        <h2>Aidan Rau's Top 5 Favorite Songs</h2><table>
             <thead>
                 <tr>
                     <th>Rank</th>
@@ -89,10 +90,11 @@
                     <th>Album Art</th>
                 </tr>
             </thead>
+
             <tr>
                 <td>1</td>
                 <td>Morgan Wallen</td>
-                <td>Somebodys Problem</td>
+                <td style="color:#1100ff; background-color:rgb(252, 22, 22);">Somebodys Problem</td>
                 <td><img src="images/MorganWallenSomebodysProblem.jpg" style="width:200px;"></td>
             </tr>
             <tr>
@@ -109,6 +111,7 @@
                 <td><img src="images/NeonEye.JPG" style="width:200px;"></td>></td>
             </tr>
             <tr>
+                <tr style="background-color:chocolate;">
                 <td>4</td>
                 <td>George Strait</td>
                 <td>Armirillo By Morning</td>
