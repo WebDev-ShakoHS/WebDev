@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 3.0
-        Name: Julian Fletcher
-        Date Completed: 4/26/21
+        Name:
+        Date Completed:
     -->
 
 <head>
 
-    <title>Julian's Lists</title>
-
+    <title>Web Dev User ## </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -19,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -41,15 +40,30 @@
             font-size: 12px;
             text-align: center;
         }
-
         
     </style>
-    <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
+    <style>
+        h3 {
+            padding: 20px 0 20px 10px;
+            margin-bottom: 50px;
+            border: 1px solid #5D6063;
+        }
+
+        strong {
+            padding: 50px;
+        }
+        p {
+            padding: 20px 0 20px 10px;
+
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+      </style>
 </head>
 
 <body>
     <!---------------------------------- Begin the nav-bar ------------->
-    <div class="list">
+    <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -60,9 +74,9 @@
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="aboutMe.html" class="nav-item nav-link">About Me</a>
+                    <a href="aboutMe.html" class="nav-item nav-link active">About Me</a>
                     <a href="music.html" class="nav-item nav-link">Music</a>
-                    <a href="list.html" class="nav-item nav-link active">Lists</a>
+                    <a href="list.html" class="nav-item nav-link" >Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
@@ -78,24 +92,26 @@
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3">Home</h1><!-- Edit this line for the title of your page -->
+    <h3>Headings Are Block Elements</h3>
 
-        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h3>Favorite Drinks</h3>
-        <ol id="Drinks">
-            <li>Milk</li>
-            <li>Bottled Water</li>
-            <li>Lemonade</li>
-            <li>Filtered Water</li>
-        </ol>
+        <p>paragraphs are blocks, too.<em>However</em>, &lt;em&gt; and &lt;strong&gt;
+        elements are not. They are <strong>inline</strong> elements.</p>
 
-        <h3>Favorite Building Floors</h3>
-        <ul id="Floors">
-            <li>Floor 1</li>
-            <li>Floor 3</li>
-            <li>Floor 2</li>
-            <li>Floor 16</li>
-        </ul>
+        <p>Block elements define the flow of the HTML document, while inline elements
+        do not.</p>
+
+    <h3>CSS Box Model Demonstration</h3>
+        <p>
+            Paragraphs are blocks too. <em>However</em> things like &lt;em&gt; and &lt;strong&gt; elements are not.
+            They are <strong>inline</strong> elements. 
+        </p>
+    
+    <div style='padding-top: 1px'>
+    
+        <p>These are words that you are reading becuae I needed filler</p>
+    
+    </div>  <!-- Add this -->
+
     </main>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
@@ -103,7 +119,7 @@
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
         <p>
-            Webpage made by <a href="#" target="_blank">Julian Fletcher</a>
+            Webpage made by <a href="#" target="_blank">[your name]</a>
         </p>
     </footer>
     <!---------------------------------- End the footer ------------->
