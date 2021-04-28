@@ -1,3 +1,9 @@
+body  {
+    background-image: url("../images/Background2.jpeg");
+    background-size: cover;
+  }
+
+
 table {
     font-family: "Marker Felt", "Comic Sans MS", fantasy;
     color: #003366;
@@ -11,7 +17,7 @@ table {
 tr {
     border: 1px solid #ffffff;
     text-align: center;
-    background-color:#9FB6CD; 
+    background-color: #9FB6CD;
 }
 
 th {
