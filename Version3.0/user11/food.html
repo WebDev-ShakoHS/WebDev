@@ -7,8 +7,8 @@
 
 <head>
 
-    <title>Music for Web Dev User ## </title>
-
+    <title>Food for Web Dev User 11</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -41,6 +41,15 @@
             font-size: 12px;
             text-align: center;
         }
+
+        td {
+            color: #FF0000;
+        }
+
+        body {
+            background-image: url(../images/background.jpeg);
+            background-size: cover;
+        }
     </style>
 </head>
 
@@ -56,10 +65,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Food</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="food.html" class="nav-item nav-link active">Food</a>
+                    <a href="list.html" class="nav-item nav-link">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
@@ -87,7 +96,7 @@
                     <th>Picture</th>
                 </tr>
             </thead>
-            <tr>
+            <tr style="background-color: slategrey;">
                 <td>1</td>
                 <td>Chicken Wings</td>
                 <td><img src="images/wings.jpeg" style="height:150px" alt="Saucy Bourbon Chicken Wings"></td>
@@ -95,8 +104,8 @@
             <tr>
                 <td>2</td>
                 <td>Asian Cuisine</td>
-                <td><img src="https://www.dinneratthezoo.com/wp-content/uploads/2015/04/sesame-chicken-1.jpg" style="height:150px"
-                        alt="Sesame Chicken With Sesame Seeds And Scallions"></td>
+                <td><img src="https://www.dinneratthezoo.com/wp-content/uploads/2015/04/sesame-chicken-1.jpg"
+                        style="height:150px" alt="Sesame Chicken With Sesame Seeds And Scallions"></td>
             </tr>
             <tr>
                 <td>3</td>
@@ -112,7 +121,7 @@
             </tr>
             <tr>
                 <td>5</td>
-                <td>Pizza</td>
+                <td style="color:#00FF00; background-color:sienna;">Pizza</td>
                 <td><img src="images/pizza.jpeg" style="height:150px" alt="Cheesy Wood Fired Pepperoni Pizza"></td>
             </tr>
         </table>
@@ -123,7 +132,7 @@
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
         <p>
-            Food can be found here <a href="https://food.com"> Food.com</a>
+            Food can be found here <a href="https://food.com"> food.com</a>
         </p>
     </footer>
     <!---------------------------------- End the footer ------------->
