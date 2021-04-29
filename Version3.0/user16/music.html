@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -41,7 +41,18 @@
             font-size: 12px;
             text-align: center;
         }
+
+        td {
+            color: #FF0000;
+        }
+        body {
+	background-image: url(../images/backroundimage.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
     </style>
+      <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 </head>
 
 <body>
@@ -56,13 +67,14 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="music.html" class="nav-item nav-link active" >Music</a>
+                    <a href="list.html" class="nav-item nav-link " >Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" >Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
+                    
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -89,22 +101,26 @@
                 </tr>
             </thead>
             <tr>
-                <td>1</td>
+                <td style="color:#00FF00; background-color:sienna;">1</td>
                 <td>Rush</td>
                 <td>Fly By Night</td>
-                <td><img src="images/fly-by-night.jpeg" style="width:128px;height:128px;" alt="Fly by night cover with blue owel"></td>
+                <td><img src="images/fly-by-night.jpeg" style="width:128px;height:128px;"
+                        alt="Fly by night cover with blue owel"></td>
             </tr>
             <tr>
+    
                 <td>2</td>
                 <td>BNL</td>
                 <td>One Week</td>
-                <td><img src="file:///Users/230181/Applications/mampstack/apache2/htdocs/WebDev/Version3.0/user16/images/bnl.jpg" style="width:128px;height:128px;" alt="BNL image of band"> </td>
+                <td><img src="file:///Users/230181/Applications/mampstack/apache2/htdocs/WebDev/Version3.0/user16/images/bnl.jpg"
+                        style="width:128px;height:128px;" alt="BNL image of band"> </td>
             </tr>
-            <tr>
+            <tr style="backgroundcolor: blue:rgb(255, 5, 10)">
                 <td>3</td>
                 <td>Dave Matthews Band</td>
                 <td>Grey Street</td>
-                <td><img src="images/greystreet.jpg" style="width:128px;height:128px;" alt="image of grey street album cover"></td>
+                <td><img src="images/greystreet.jpg" style="width:128px;height:128px;"
+                        alt="image of grey street album cover"></td>
             </tr>
             <tr>
                 <td>4</td>
@@ -117,7 +133,7 @@
                 <td>5</td>
                 <td>New Radicals</td>
                 <td>Someday We'll Know</td>
-                <td><img src="images/new.jpg"style="width:128px;height:128px;" alt="Picture of new radicals"</td>
+                <td><img src="images/new.jpg" style="width:128px;height:128px;" alt="Picture of new radicals" </td>
             </tr>
         </table>
     </main>
