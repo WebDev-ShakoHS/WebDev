@@ -4,6 +4,7 @@
         Name:
         Date Completed:
     -->
+<link rel="icon" type="image/x-icon" href="images/mario_icon.png" />
 
 <head>
 
@@ -18,7 +19,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -41,6 +42,29 @@
             font-size: 12px;
             text-align: center;
         }
+
+        td {
+            color: #FF0000;
+        }
+
+        body {
+            background-image: url(images/background.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1{
+            color:rgb(134, 191, 241);
+            background-color: black;
+            width: 240px;
+        }
+        
+        h2{
+            color:rgb(134, 191, 241);
+            background-color: black;
+            width: 450px;
+        }
     </style>
 </head>
 
@@ -56,11 +80,11 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Video Games</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="videogames.html" class="nav-item nav-link active">Video Games</a>
+                    <a href="list.html" class="nav-item nav-link">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
@@ -91,32 +115,37 @@
             <tr>
                 <td>1</td>
                 <td>Nintendo</td>
-                <td>Super Mario Galaxy 2</td>
-                <td><img src="images/super_mario_galaxy_2_box_art.jpg" style="height:140px;" alt="Super Mario Galaxy 2 box art"></td>
+                <td style="color:#00FF00; background-color:sienna;">Super Mario Galaxy 2</td>
+                <td><img src="images/super_mario_galaxy_2_box_art.jpg" style="height:140px;"
+                        alt="Super Mario Galaxy 2 box art"></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Nintendo</td>
                 <td>Super Mario Odyssey</td>
-                <td><img src="https://images-na.ssl-images-amazon.com/images/I/71jNxM0SvPL._SL1001_.jpg" style="height:140px;" alt="Super Mario Odyssey box art"></td>
+                <td><img src="https://images-na.ssl-images-amazon.com/images/I/71jNxM0SvPL._SL1001_.jpg"
+                        style="height:140px;" alt="Super Mario Odyssey box art"></td>
             </tr>
-            <tr>
+            <tr style="background-color:salmon;">
                 <td>3</td>
                 <td>Retro Studios</td>
                 <td>Donkey Kong Country Tropical Freeze</td>
-                <td><img src="images/dkctf_box_art.jpg" style="height:140px;" alt="Donkey Kong Country Tropical Freeze box art"></td>
+                <td><img src="images/dkctf_box_art.jpg" style="height:140px;"
+                        alt="Donkey Kong Country Tropical Freeze box art"></td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>Toys For Bob</td>
                 <td>Crash Bandicoot 4: It's About Time</td>
-                <td><img src="images/crash_4_box_art.jpg" style="height:140px;" alt="Crash Bandicoot 4: It's About Time box art"></td>
+                <td><img src="images/crash_4_box_art.jpg" style="height:140px;"
+                        alt="Crash Bandicoot 4: It's About Time box art"></td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>Mossmouth</td>
                 <td>Spelunky 2</td>
-                <td><img src="https://image.api.playstation.com/vulcan/ap/rnd/202009/0812/K3Rvr0agVdm8ZPgkxIzOfMU6.png" style="height:140px;" alt="Spelunky 2 box art"></td>
+                <td><img src="https://image.api.playstation.com/vulcan/ap/rnd/202009/0812/K3Rvr0agVdm8ZPgkxIzOfMU6.png"
+                        style="height:140px;" alt="Spelunky 2 box art"></td>
             </tr>
         </table>
     </main>
