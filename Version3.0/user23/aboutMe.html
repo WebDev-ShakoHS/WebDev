@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 3.0
-        Name: Joey St. George 
-        Date Completed: 
+        Name: Joey St. George
+        Date Completed:
     -->
 
 <head>
-    <title>JS Lists</title>
+
+    <title>JS About Me</title>
+
     <link rel="icon" type="image/x-icon" href="images/JS6.ico" />
 
     <!-- Meta -->
@@ -28,8 +30,9 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
-        .menu {
-            margin: 0px;
+        menu {
+            margin: 0;
+            padding: 0;
         }
 
         .wideMargin {
@@ -40,68 +43,86 @@
             font-size: 12px;
             text-align: center;
         }
+
+        h3 {
+            padding: 50px;
+            background-color: rgb(122, 122, 122);
+            display: inline-block;
+            border-bottom: 8px solid #3437ff;
+            border-right: 8px dotted #3437ff;
+            border-top: 8px solid #3437ff;
+            border-left: 8px dashed #3437ff;
+        }
+
+        p {
+            padding-top: 5px;
+            padding-bottom: 50px;
+            padding-left: 30px;
+            padding-right: 5px;
+            background-color: lavender;
+            margin-bottom: 50px;
+
+            padding: 5px 50px 30px 5px;
+            background-color: lavender;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+
+        strong {
+            margin: 50px;
+            background-color: lightblue;
+        }
     </style>
 </head>
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------->
-    <div class="menu">
+    <!---------------------------------- Begin the nav-bar ------------------------------------------>
+    <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="aboutMe.html" class="nav-item nav-link" tabindex="-1" >About Me</a>
-                    <a href="cars.html" class="nav-item nav-link" >Cars</a>
-                    <a href="list.html" class="nav-item nav-link active" >Lists</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1" >Games</a>
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link active">About Me</a>
+                    <a href="#" class="nav-item nav-link">Music</a>
+                    <a href="#" class="nav-item nav-link">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
-                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
                     <a href="#" class="nav-item nav-link disabled">Login</a>
                 </div>
             </div>
         </nav>
-    </div>
-    <!---------------------------------- End the nav-bar ------------->
+        <!---------------------------------- End the nav-bar ------------------------------------->
+    </menu>
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3">Lists</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">About Me</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h3>Places I Want to Visit</h3>
-        <ol>
-            <li>Dubai</li>
-            <li>Maldives</li>
-            <li>Turks and Caicos</li>
-            <li>Bora Bora</li>
-            <li>France</li>
-        </ol>
-        <h3>Places I've Been</h3>
-        <ul>
-            <li>Costa Rica</li>
-            <li>Mexico</li>
-            <li>Dominican Republic</li>
-            <li>Sanibel</li>
-            <li>Islamorada</li>
-        </ul>
-    </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+        <h3>Headings Are Block Elements</h3>
 
+        <p>paragraphs are blocks, too. <em>However</em>, &lt;em&gt; and &lt;strong&gt;
+            elements are not. They are <strong>inline</strong> elements.</p>
+
+        <p>Block elements define the flow of the HTML document, while inline elements
+            do not.</p>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+    </main>
 
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
-        <p>
+        <div>
             Webpage made by <a href="#" target="_blank">[Joey St. George]</a>
-        </p>
+        </div>
     </footer>
     <!---------------------------------- End the footer ------------->
 </body>
