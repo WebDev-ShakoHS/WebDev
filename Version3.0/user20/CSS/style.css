@@ -8,6 +8,12 @@ table {
 	cellspacing: 0px;
 }
 
+body{
+	background-image: url(../images/background.jpeg);
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 300px 100px;
+}
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
