@@ -11,11 +11,19 @@ table {
 tr {
     border: 1px solid #ffffff;
     text-align: center;
-    background-color:#9FB6CD; 
+    background-color: #9FB6CD;
 }
 
 th {
     text-align: center;
     color: #ffffff;
     background-color: #003366;
+}
+
+ul {
+    list-style-image: url('../images/Plane7.png');
+}
+
+ol {
+    background-color: rgb(190, 190, 190);
 }

@@ -6,8 +6,9 @@
     -->
 
 <head>
+    <link rel="icon" type="image/x-icon" href="images/JS6.ico" />
 
-    <title>Cars for Web Dev User 23 </title>
+    <title>JS Cars</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -43,23 +44,15 @@
         }
 
 
-
-
-
-        < !---------- Begin Dark Mode HTML----------------->
-        <meta name="viewport"content="width=device-width, initial-scale=1"><style>body {
-            padding: 25px;
-            background-color: white;
-            color: black;
-            font-size: 25px;
+        td {
+            color: #a70000;
         }
 
-        .dark-mode {
-            background-color: rgb(39, 39, 39);
-            color: white;
+        body {
+            background-image: url("images/Background2.jpeg");
+            background-size: cover;
         }
 
-        < !---------- End dark mode HTML -->
     </style>
 </head>
 
@@ -75,11 +68,11 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Cars</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="aboutMe.html" class="nav-item nav-link" tabindex="-1" >About Me</a>
+                    <a href="cars.html" class="nav-item nav-link active" >Cars</a>
+                    <a href="list.html" class="nav-item nav-link" >Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1" >Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
@@ -97,20 +90,7 @@
 
 
 
-    <!----------- Begin Dark Mode HTML ----------------->
-    <h2>Toggle Dark/Light Mode</h2>
-    <p>Click the button to toggle between dark and light mode for this page.</p>
 
-    <button onclick="myFunction()">Toggle dark mode</button>
-
-    <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
-    </script>
-
-    <!---------- End dark mode HTML -->
 
 
 
@@ -155,7 +135,7 @@
                 <td><img src="https://static.wikia.nocookie.net/forzamotorsport/images/b/bb/HOR_XB1_Porsche_911_14.png/revision/latest?cb=20200320135526"
                         style="height:135px;" alt="Image of Red Porsche 911 Sports Car"></td>
             </tr>
-            <tr>
+            <tr style="background-color:palevioletred">
                 <td>4</td>
                 <td>Ford</td>
                 <td>F-150 Raptor</td>
@@ -165,7 +145,7 @@
             <tr>
                 <td>5</td>
                 <td>Ford</td>
-                <td>Fusion</td>
+                <td style="color:#00ff00; background-color:sienna;">Fusion</td>
                 <td><img src="/Users/225838/Applications/mampstack/apache2/htdocs/WebDev/Version3.0/user23/images/Ford Fusion.png"
                         style="height:150px;" alt="Image of Grey Ford Fusion Sedan"></td>
             </tr>
