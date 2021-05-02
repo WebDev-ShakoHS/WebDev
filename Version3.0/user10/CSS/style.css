@@ -5,17 +5,31 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #9FB6CD;
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+ol {
+	color: rgb(223, 21, 21);
+}
+ul {
+	color: teal;
+}
+body {
+	background-image: url(../images/Red\ Background.jpeg);
+	background-size: 1450px 800px;
+}
+p {
+	text-align: end;
 }
