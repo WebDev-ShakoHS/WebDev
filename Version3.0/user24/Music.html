@@ -6,6 +6,7 @@
     -->
 
 <head>
+    <link rel="icon" type="image/x-icon" href="../user24/images/favicon.ico" />
 
     <title>Music for Evan Triplett </title>
 
@@ -18,7 +19,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -28,6 +29,13 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
+        body {
+            background-image: url(../images/background_1.jpeg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
         menu {
             margin: 0;
             padding: 0;
@@ -40,6 +48,10 @@
         footer {
             font-size: 12px;
             text-align: center;
+        }
+
+        td {
+            color: #FF0000;
         }
     </style>
 </head>
@@ -55,15 +67,15 @@
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="About Me.HTML" class="nav-item nav-link ">About Me</a>
+                    <a href="Music.html" class="nav-item nav-link active">Music</a>
+                    <a href="list.html" class="nav-item nav-link">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
-                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
                 </div>
                 <div class="navbar-nav ml-auto">
                     <a href="#" class="nav-item nav-link disabled">Login</a>
@@ -79,6 +91,7 @@
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <h2>My Top 5 Favorite Songs</h2>
+
         <table>
             <thead>
                 <tr>
@@ -92,33 +105,36 @@
                 <td>1</td>
                 <td>Led Zeppelin</td>
                 <td>Stairway to Heaven</td>
-                <td><img src="images/Led_Zeppelin_Cover.jpg"></td>
+                <td><img src="images/Led_Zeppelin_Cover.jpg" alt="Stairway to heaven - Led Zeppelin, Album Cover"></td>
             </tr>
-            <tr>
+            <tr style="background-color:rgb(45, 160, 160);">
                 <td>2</td>
                 <td>Paint it, Black</td>
-                <td>The Rolling Stones</td>
-                <td><img src="images/Aftermath_Cover.jpeg"></td>
+                <td> The Rolling Stones</td>
+                <td><img src="images/Aftermath_Cover.jpeg" alt="Paint it, Black - The Rolling Stones, Album Cover"></td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Kickstart My Heart</td>
                 <td>Mötley Crüe</td>
-                <td><img src="images/220px-Kickstart_my_heart.jpeg"></td>
+                <td><img src="images/220px-Kickstart_my_heart.jpeg" alt="Kickstart my heart - Mötley Crüe, Album Cover">
+                </td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>Don't Stop Believin'</td>
                 <td>Journey</td>
-                <td><img src= "images/Jgreatesthits.jpeg" style="width:220px;"></td>
+                <td><img src="images/Jgreatesthits.jpeg" style="width:220px;"
+                        alt="Don't stop Believin - Journey, Album Cover"></td>
             </tr>
             <tr>
                 <td>5</td>p
                 <td>Raining Blood</td>
                 <td>Slayer</td>
-                <td><img src="images/download.jpeg" style="width:220px;"></td>
+                <td><img src="images/download.jpeg" style="width:220px;" alt="Raining Blood - Slayer, Album Cover"></td>
             </tr>
         </table>
+
     </main>
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
