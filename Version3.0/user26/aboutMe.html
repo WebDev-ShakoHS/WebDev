@@ -6,17 +6,14 @@
     -->
 
 <head>
-    <style>  
-        td {color: #FF0000;}
-    </style>
 
-    <title>Music for Web Dev User ## </title>
-    <link rel="icon" type="image/x-icon" href="images/favicon (1).ico"/>
+    <title>Web Dev User ## </title>
+
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="My Favorite Music">
+    <meta name="description" content="SHS WebDev Version 3.0">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -31,6 +28,31 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
+        h3 {
+            padding: 50px;
+            background-color: lavender;
+            display: inline-block;
+            border-bottom: 15px dotted #706f38;
+            border-right: 50px dotted #225a27;
+            border-top: 8px double #e7e570;
+            border-left: 3px outset #572853;
+        }
+
+        p {
+            padding-top: 5px;
+            padding-bottom: 50px;
+            padding-left: 30px;
+            padding-right: 5px;
+            background-color: lavender;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+
+        strong {
+            padding: 50px;
+            background-color: lightblue;
+        }
+
         menu {
             margin: 0;
             padding: 0;
@@ -44,28 +66,23 @@
             font-size: 12px;
             text-align: center;
         }
-        body{
-	background-image: url(images/resturant.jpeg);
-	background-size: cover;
-}
     </style>
 </head>
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------->
+    <!---------------------------------- Begin the nav-bar ------------------------------------------>
     <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="aboutMe.html" class="nav-item nav-link">About Me</a>
-                    <a href="Food.html" class="nav-item nav-link active">Food</a>
+                    <a href="aboutMe.html" class="nav-item nav-link active">About Me</a>
+                    <a href="Food.html" class="nav-item nav-link">Food</a>
                     <a href="list.html" class="nav-item nav-link ">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
@@ -77,65 +94,30 @@
                 </div>
             </div>
         </nav>
+        <!---------------------------------- End the nav-bar ------------------------------------->
     </menu>
-    <!---------------------------------- End the nav-bar ------------------------------------->
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3" tabindex="0">Food</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">About Me</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h2>My Top 5 Favorite Foods</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Country of origin</th>
-                    <th>Food</th>
-                    <th>Image</th>
-                </tr>
-            </thead>
-            <tr>
-            <tr style="background-color: rgb(248, 252, 9); height: 300px;">
-                <td>1</td>
-                <td>Mexico</td>
-                <td style="color:#00FF00; background-color:sienna;">Tacos</td>
-                <td><img src="images/Taco.jpeg" alt="Picture of a Taco" style="height: 120px;"></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Germany</td>
-                <td>Hamburgers</td>
-                <td><img src="images/Burger.jpeg" alt="Picture of a Hamburger" style="height: 120px;"></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Italy</td>
-                <td>Spaghetti</td>
-                <td><img src="images/Speghetti.jpeg" alt="Picture of Spaghetti" style="height: 120px;"></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>China</td>
-                <td>Orange Chicken</td>
-                <td><img src="images/Orange chicken.jpeg" alt="Picture of Orange Chicken" style="height: 120px;"></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Japan</td>
-                <td>Tuna Sandwich</td>
-                <td><img src="file:///Users/232834/Applications/mampstack/apache2/htdocs/WebDev/Version3.0/user26/images/Tuna Sandwich.jpeg" alt="Picture of a Tuna Sandwich" style="height: 120px;"></td>
-            </tr>
-        </table>
-    </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+        <h3>Headings Are Block Elements</h3>
 
+        <p>paragraphs are blocks, too. <em>However</em>, &lt;em&gt; and &lt;strong&gt;
+            elements are not. They are <strong>inline</strong> elements.</p>
+        <div style='padding-top: 1px'></div> <!-- Add this -->
+
+        <p>Block elements define the flow of the HTML document, while inline elements
+            do not.</p>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+    </main>
 
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
-        <p>
-            Food can be found here <a href="https://www.walmart.com/store/3513-shakopee-mn"> Walmart store page</a>
-        </p>
+        <div>
+            Webpage made by <a href="#" target="_blank">[your name]</a>
+        </div>
     </footer>
     <!---------------------------------- End the footer ------------->
 </body>
