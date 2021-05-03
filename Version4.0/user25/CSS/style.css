@@ -1,21 +1,108 @@
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button-small {
+	border-radius: 8px;
+}
+
+.button-large {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td {
+	padding: 20px;
+}
+
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
 }
 
-tr {
-	border: 1px solid #ffffff;
+h1, h2, h3, h4, h5, h6 {
 	text-align: center;
-	background-color:#9FB6CD; 
 }
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+.button3{ 
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+
+  .button4{
+	box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+	background-color:#c123de;
+	border-radius:6px;
+	border:1px solid #a511c0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9b14b3;
+  }
+
+  .button5{
+		box-shadow: 3px 4px 0px 0px #8a2a21;
+		background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+		background-color:#c62d1f;
+		border-radius:18px;
+		border:1px solid #d02718;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:17px;
+		padding:7px 25px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #810e05;
+  }
+
+  .title{
+	color: red;
+	font-family: 'Courier New', monospace; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+
+  #morecontent {
+	background-color: yellow;
+  }
+
+  *{
+    text-align:right;
+    border: 1px solid rgb(127, 24, 212);
 }
