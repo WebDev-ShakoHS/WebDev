@@ -36,26 +36,26 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-.button3 {
+.newbutton {
 	border-radius: 64px;
 	padding: 32px 16px;
 	background-color: darkmagenta;
 }
 
-.button4 {
+.newerbutton {
 	background-color: coral;
 	color: brown;
 	border: 3px solid rgb(99, 30, 2);
 	box-shadow: 0 9px 17px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
 }
 
-.button5 {
+.newestbutton {
 	transition-duration: 0.5s;
 	-webkit-transition-duration: 0.5s;
 	/* Safari */
 }
 
-.button5:hover {
+.newestbutton:hover {
 	background-color: red;
 	color: black;
 }
