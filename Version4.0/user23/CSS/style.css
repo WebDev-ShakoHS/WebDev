@@ -1,21 +1,113 @@
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {
+	border-radius: 8px;
+}
+
+.button2 {
+	border-radius: 30%;
+}
+
+.button3 {
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color: #7892c2;
+	border-radius: 10px;
+	border: 1px solid #4e6096;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 19px;
+	padding: 12px 37px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #283966;
+}
+
+.myButton:hover {
+	background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color: #476e9e;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.button4 {
+	text-align: center;
+	width: 200px;
+	height: 75px;
+	background-color: #f3cf00;
+	border: none;
+	border-radius: 3px;
+	/* Yellow */
+}
+
+.button5 {
+	text-align: center;
+	width: 100px;
+	height: 50px;
+	background-color: #008CBA;
+	border: none;
+	border-radius: 3px;
+	/* Blue */
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td {
+	padding: 20px;
+}
+
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
 }
 
-tr {
-	border: 1px solid #ffffff;
+h1, h2, h3, h4, h5, h6 {
 	text-align: center;
-	background-color:#9FB6CD; 
 }
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+.title {
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+	font-size: 2rem;
+}
+
+.title-small {
+	font-size: .5rem;
+}
+
+#morecontent {
+	background-color: yellow;
+}
+
+#hireButtons {
+	background-color: rgb(0, 110, 255);
+}
+
+#footerTable {
+	color: crimson;
+	background-color: darkgray;
+}
+
+* {
+	font-family:'Courier New', Courier, monospace
 }
