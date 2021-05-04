@@ -5,14 +5,44 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
-
+body {
+	background-image: url(../images/Background.jpeg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
 	background-color:#9FB6CD; 
 }
+h3 {
+	color:slateblue;
+}
+ol {
+	color:crimson;
+}
+ul {
+	color:black;
+	list-style-type: none;
+  
+  }
+  
+  
+  ul li:before {
+	content: '';
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+  
+	 background-size: 10px;
+  
+	background-image: url("http://www.freepngimg.com/thumb/star/1-red-star-png-image-thumb.png");
+	background-repeat: no-repeat;
+	margin-right: 5px;
+  }
 
 th {
 	text-align: center;
