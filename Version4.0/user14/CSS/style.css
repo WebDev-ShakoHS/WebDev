@@ -9,13 +9,72 @@ table {
 }
 
 tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+	border: 1px solid #e45b5b;
+	text-align: right;
+	background-color: #bbdfb2;
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+.button {
+	background-color: #60af4c;
+	border: none;
+	color: rgb(141, 216, 135);
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button {
+	border-radius: 8px;
+}
+
+.button2 {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td {
+	padding: 20px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+.title {
+	color: rgb(50, 156, 124);
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+	font-size: 2rem;
+}
+
+.title-small {
+	font-size: .5rem;
+}
+
+#morecontent {
+	background-color: rgb(32, 147, 175);
+}
+*{
+    text-align:right;
+    border: 2px solid rgb(149, 166, 179);
 }
