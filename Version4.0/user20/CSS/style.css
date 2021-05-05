@@ -49,7 +49,6 @@ p#hireButtons {
     color: rgb(21, 165, 209);
     font-weight: bold;
     background: #27dae7; /* yellow */
-    border: 2px solid rgb(27, 197, 219);
     padding: 1em;
   }
 
@@ -107,6 +106,13 @@ p#hireButtons {
 td{
 	padding:20px;
 }
+
+div {
+	/* This is the default, you don't need to
+	   explicitly declare it unless overriding
+	   another declaration */
+	   white-space: pre;; 
+  }
 
 table{
 	margin-left: auto;
