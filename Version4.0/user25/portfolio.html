@@ -49,8 +49,25 @@
         td:hover {
             background-color: black;
         }
-        #knowledge > * {
-  border: 3px red solid;
+
+        #knowledge>* {
+            border: 3px red solid;
+
+        }
+
+        p+* {
+            background-color: #FFFF00;
+        }
+
+        div li::marker {
+            color: red;
+            font-weight: bold;
+        }
+        div li::marker{
+  content:"😜 ";
+}
+td:hover {
+  background-color: black;
 }
     </style>
 </head>
@@ -102,13 +119,13 @@
                     <li>Nav Bar</li>
                 </ul>
             </li>
+            <div>
             <p>
                 These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
             </p>
             <p>
                 I will use my knowledge to create an amazing website for you and your needs.
             </p>
-            </ul>
         </div>
         <div>
             <table id="rainbow">
