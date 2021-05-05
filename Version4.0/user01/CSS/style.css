@@ -19,7 +19,7 @@
 	border-radius: 30%;
 }
 
-.myButton {
+.small-red-button {
 	box-shadow: inset 0px 1px 0px 0px #cf866c;
 	background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
 	background-color: #d0451b;
@@ -35,17 +35,17 @@
 	text-shadow: 0px 1px 0px #854629;
 }
 
-.myButton:hover {
+.small-red-button:hover {
 	background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
 	background-color: #bc3315;
 }
 
-.myButton:active {
+.small-red-button:active {
 	position: relative;
 	top: 1px;
 }
 
-.myButton2 {
+.blue-rectangle-big-button {
 	box-shadow: 3px 4px 0px 0px #1564ad;
 	background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
 	background-color: #79bbff;
@@ -62,17 +62,17 @@
 	text-shadow: 0px 1px 0px #528ecc;
 }
 
-.myButton2:hover {
+.blue-rectangle-big-button:hover {
 	background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
 	background-color: #378de5;
 }
 
-.myButton2:active {
+.blue-rectangle-big-button:active {
 	position: relative;
 	top: 1px;
 }
 
-.myButton3 {
+.tiny-darkblue-button {
 	box-shadow: inset 0px 0px 15px 3px #23395e;
 	background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
 	background-color: #2e466e;
@@ -88,12 +88,12 @@
 	text-shadow: 0px 1px 0px #263666;
 }
 
-.myButton3:hover {
+.tiny-darkblue-button :hover {
 	background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
 	background-color: #415989;
 }
 
-.myButton3:active {
+.tiny-darkblue-button :active {
 	position: relative;
 	top: 1px;
 }
@@ -136,10 +136,6 @@ table {
 	margin-right: auto;
 }
 
-*{
-    background: silver;
-	border-bottom: 3px solid skyblue;
-}
 
 h1, h2, h3, h4, h5, h6 {
 	text-align: center;
