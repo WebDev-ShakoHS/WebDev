@@ -105,9 +105,21 @@ h1, h2, h3, h4, h5, h6 {
 
 #footerTable {
 	color: crimson;
-	background-color: darkgray;
 }
+
 .card {
 	white-space: nowrap;
-	overflow:scroll
+	overflow: scroll
+}
+
+#knowledge>* {
+	border: 3px red solid;
+}
+
+p+p {
+	background-color: #FFFF00;
+}
+
+div>li::marker {
+	content: "👨🏻‍💻 ";
 }
