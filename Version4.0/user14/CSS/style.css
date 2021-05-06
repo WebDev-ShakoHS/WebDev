@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -74,3 +75,64 @@ h1, h2, h3, h4, h5, h6 {
 #morecontent {
 	background-color: rgb(32, 147, 175);
 }
+
+#knowledge>* {
+	border: 3px rgb(0, 174, 255) solid;
+}
+
+p+p {
+	background-color: #56c076;
+}
+
+div li::marker {
+	color: red;
+	font-weight: bold;
+}
+
+div li::marker {
+	content: "😜 ";
+}
+
+a {
+	/* Specify non-transparent defaults to certain properties,
+	   allowing them to be styled with the :visited state */
+	background-color: rgb(42, 175, 175);
+	border: 1px solid rgb(228, 148, 148);
+}
+
+a:visited {
+	background-color: rgb(82, 130, 150);
+	border-color: hotpink;
+	color: hotpink;
+}
+
+form {
+	border: 1px solid;
+	color: gray;
+	padding: 4px;
+}
+
+form:focus-within {
+	background: #ff8;
+	color: black;
+}
+
+input {
+	margin: 4px;
+}
+article:target-within {
+	background-color: gold;
+  }
+  
+  /* Add a pseudo-element inside the target element */
+  p:target::before {
+	font: 70% sans-serif;
+	content: "►";
+	color: limegreen;
+	margin-right: .25em;
+  }
+  
+  /* Style italic elements within the target element */
+  p:target i {
+	color: red;
+  }
