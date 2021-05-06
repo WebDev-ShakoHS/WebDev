@@ -15,10 +15,7 @@
 	font-size: .5rem;
   }
 
-  *{
-    text-align:center;
-    border: 2px solid rgb(39, 19, 129);
-}
+
 
 .button {
 	background-color: #4CAF50;
