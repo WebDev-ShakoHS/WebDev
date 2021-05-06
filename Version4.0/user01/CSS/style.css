@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -127,7 +128,7 @@ td {
 	border: 5px dotted black;
 }
 
-#footerTable{
+#footerTable {
 	background-color: lightblue;
 }
 
@@ -136,7 +137,44 @@ table {
 	margin-right: auto;
 }
 
+#knowledge>* {
+	border: 3px red solid;
+}
+
+ul>li::marker {
+	content: "💩 ";
+}
+
+p+p {
+	background-color: #FFFF00;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	text-align: center;
+}
+
+p:first-child {
+	color: chocolate
+}
+
+a:link {
+	color: blue;
+}
+
+/* visited link */
+
+a:visited {
+	color: blueviolet;
+}
+
+/* mouse over link */
+
+a:hover {
+	color: red;
+}
+
+/* selected link */
+
+a:active {
+	color: #0000FF;
 }

@@ -7,7 +7,7 @@
 
 <head>
 
-    <title>Hire Me For Your Web Development Needs</title>
+    <title>My Work as a Web Developer</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -41,6 +41,21 @@
             font-size: 12px;
             text-align: center;
         }
+
+        .fullWidth {
+            width: 100%;
+        }
+
+        #tableRainbow>td:hover {
+            background-color: black;
+        }
+        q:lang(no) {
+            quotes:"🔥 " "🔥"
+        }
+
+        p i:first-child {
+            color: blue;
+        }
     </style>
 </head>
 
@@ -56,9 +71,9 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="display.html" class="nav-item nav-link">Display</a>
-                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                    <a href="portfolio.html" class="nav-item nav-link active">Portfolio</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -76,63 +91,57 @@
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <h3 id="topHeading">I'm a Web Developer</h3>
-        <table id="hireButtons">
-            <tr>
-                <td>
-                    <button>Hire me</button>
-                </td>
-                <td>
-                    <button class="button">Hire me</button>
-                </td>
-                <td>
-                    <button class="button button-smallRadius">Hire me</button>
-                </td>
-                <td>
-                    <button class="button button-largeRadius">Hire me</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="button button2 red">Hire me</button>
-                </td>
-                <td>
-                    <button class="small-red-button">Hire Me </button>
-                </td>
-                <td>
-                    <button class="blue-rectangle-big-button">Hire Me</button>
-                </td>
-                <td>
-                    <button class="tiny-darkblue-button">Hire me</button>
-                </td>
-            </tr>
-        </table>
-        <div style="padding-top: 5px;">
-            <!-- spacing div-->
-
-            <span class="title title-large">Example of a Heading Title</span>
-
-            <div class="content">
-
-                <p>
-                    Page content..
-                </p>
-
-                <p>
-                    Some more page content..
-                </p>
-
-            </div>
-
-            <p id="morecontent">
-                Even more content
-            </p>
-
-            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+        <div id="knowledge">
+            <li>CSS
+                <ul>
+                    <li>Classes</li>
+                    <li>Selectors</li>
+                    <li>ID's</li>
+                </ul>
+            </li>
+            <li>HTML
+                <ul>
+                    <li>Tables</li>
+                    <li>DIV's</li>
+                    <li>Nav Bar</li>
+                </ul>
+            </li>
+        </div>
+        <p>
+            These are the things I <i>know</i> in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
+        </p>
+        <p>
+            I will use my <i>knowledge</i> to create an <q lang="no">amazing website</q> for you and your needs.
+        </p>
+        <p>
+            <a href=https://t4.ftcdn.net/jpg/03/60/70/11/360_F_360701167_9dolp6h5cfm5i9uC8QObRzhog1mc1gI0.jpg>This is a link</a>
+        </p>
+        <div>
+            <table class="fullWidth">
+                <tr id="tableRainbow">
+                    <td class="background-red">
+                    </td>
+                    <td class="background-orange">
+                    </td>
+                    <td class="background-yellow">
+                    </td>
+                    <td class="background-green">
+                    </td>
+                    <td class="background-blue">
+                    </td>
+                    <td class="background-indigo">
+                    </td>
+                    <td class="background-violet">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 
     <!---------------------------------- Begin the footer ------------->
     <footer>
-        <span class="title title-small">Example of a Footer Title</span>
+        <span class="title">Example of a Footer Title</span>
         <table id="footerTable">
             <tr>
                 <td>
@@ -143,9 +152,6 @@
                 </td>
                 <td>
                     <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-                </td>
-                <td>
-                    <i class="fa fa-snapchat-ghost fa-3x" aria-hidden="true"></i>
                 </td>
             </tr>
         </table>
