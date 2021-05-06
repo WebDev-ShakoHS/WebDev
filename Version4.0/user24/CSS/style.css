@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+@import url(Link.css);
 .title {
 	color: red;
 	font-family: 'Trebuchet MS', sans-serif;
@@ -127,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: blue;
 }
 
-*{
-    color:cadetblue;
+* {
+	color: cadetblue;
 }
+
