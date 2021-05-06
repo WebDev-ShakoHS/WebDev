@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -5,7 +6,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
@@ -121,13 +122,40 @@ h1, h2, h3, h4, h5, h6 {
 .title-small {
 	font-size: .5rem;
 }
-.buttonhireme{
+
+.buttonhireme {
 	font-size: large;
 }
 
-#button button1{
+#button button1 {
 	color: #003366;
 }
-*{
+
+* {
 	color: #00ff00;
+}
+
+#knowledge>* {
+	border: 3px red solid;
+}
+
+p+p {
+	background-color: #FFFF00;
+}
+
+ul li::marker {
+	content: "😜 ";
+}
+
+q:lang(no) {
+	quotes: "~" "~";
+}
+
+.coollink{
+	background-color: rgb(0, 17, 255);
+}
+
+::selection  {
+	color: red;
+	background: rgb(14, 49, 124);
 }
