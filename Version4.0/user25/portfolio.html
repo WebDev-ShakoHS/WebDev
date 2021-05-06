@@ -66,8 +66,21 @@
         div li::marker{
   content:"😜 ";
 }
-td:hover {
+.fullwidth {
+    width: 100%;
+}
+#rainbow > td:hover {
   background-color: black;
+}
+p::first-letter {
+  font-size: 200%;
+  color: #8A2BE2;
+}
+p::before {
+  content: "Look at these words!: ";
+}
+p::after {
+  content: " - Those were great words!";
 }
     </style>
 </head>
@@ -128,8 +141,8 @@ td:hover {
             </p>
         </div>
         <div>
-            <table id="rainbow">
-                <tr>
+            <table class="fullwidth">\
+                <tr id="rainbow">
                     <td class="background-red">
                     </td>
                     <td class="background-orange">

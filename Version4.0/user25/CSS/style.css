@@ -86,21 +86,5 @@ h1, h2, h3, h4, h5, h6 {
 		text-shadow:0px 1px 0px #810e05;
   }
 
-  .title{
-	color: red;
-	font-family: 'Courier New', monospace; 
-  }
-  
-  .title-large {
-	font-size: 2rem;
-  }
-  
-  .title-small {
-	font-size: .5rem;
-  }
 
-  #morecontent {
-	background-color: yellow;
-  }
 
-  
