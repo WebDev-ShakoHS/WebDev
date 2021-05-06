@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -116,10 +117,17 @@ h1, h2, h3, h4, h5, h6 {
 	border: 3px red solid;
 }
 
-p+p {
-	background-color: #FFFF00;
+#paragraph {
+	background-color: yellow;
 }
 
 div>li::marker {
-	content: "👨🏻‍💻 ";
+	content: "👨‍🏫  ";
 }
+
+ul>*::marker {
+	content: "👨🏻‍💻 "
+}
+
+p i:first-child {
+	color:blue;
