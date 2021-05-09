@@ -1,3 +1,6 @@
+@import url(rainbow.css);
+ #rainbow
+
 .button {
 	background-color: #1aecec;
 	border: none;
@@ -11,7 +14,9 @@
 	cursor: pointer;
 }
 
-
+td:hover {
+	background-color: black;
+  }
 
 .myButton {
 	box-shadow:inset 0px -3px 7px 0px #29bbff;
@@ -49,7 +54,6 @@ p#hireButtons {
     color: rgb(21, 165, 209);
     font-weight: bold;
     background: #27dae7; /* yellow */
-    border: 2px solid rgb(27, 197, 219);
     padding: 1em;
   }
 
@@ -60,10 +64,7 @@ p#hireButtons {
     border: 2px solid rgb(24, 243, 207);
     padding: 1em;
   }
-  *{
-    text-align:right;
-    border: 2px solid rgb(25, 214, 205);
-}
+  
 .title{
 	color: rgb(39, 189, 209);
 	font-family: 'Times New Roman', serif; 
@@ -107,6 +108,9 @@ p#hireButtons {
 td{
 	padding:20px;
 }
+
+
+ 
 
 table{
 	margin-left: auto;
