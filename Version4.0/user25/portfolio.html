@@ -7,7 +7,7 @@
 
 <head>
 
-    <title>Hire Me For Your Web Development Needs</title>
+    <title>My Work as a Web Developer</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -41,6 +41,47 @@
             font-size: 12px;
             text-align: center;
         }
+
+        #rainbow {
+            width: 100%;
+        }
+
+        td:hover {
+            background-color: black;
+        }
+
+        #knowledge>* {
+            border: 3px red solid;
+
+        }
+
+        p+* {
+            background-color: #FFFF00;
+        }
+
+        div li::marker {
+            color: red;
+            font-weight: bold;
+        }
+        div li::marker{
+  content:"😜 ";
+}
+.fullwidth {
+    width: 100%;
+}
+#rainbow > td:hover {
+  background-color: black;
+}
+p::first-letter {
+  font-size: 200%;
+  color: #8A2BE2;
+}
+p::before {
+  content: "Look at these words!: ";
+}
+p::after {
+  content: " - Those were great words!";
+}
     </style>
 </head>
 
@@ -56,8 +97,9 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="display.html" class="nav-item nav-link">Display</a>
+                    <a href="portfolio.html" class="nav-item nav-link active">Portfolio</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -74,66 +116,51 @@
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <span class="title title-large">I'm a Web Developer</span>
-
         <h3 id="topHeading">I'm a Web Developer</h3>
-        <table id="hireButtons">
-            <tr>
-                <td>
-                    <button>Hire me</button>
-                </td>
-                <td>
-                    <button class="button">Hire me</button>
-                </td>
-                <td>
-                    <button class="button button-small">Hire me</button>
-                </td>
-                <td>
-                    <button class="button button-large">Hire me</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="button button2 red">Hire me</button>
-                </td>
-                <td>
-                </td>
-                <td>
-                    <button class=lightbluebutton>Hire me?</button>
-                </td>
-                <td>
-                </td>
-                <td>
-                    <button class=purplebutton>Or hire me</button>
-                </td>
-                <td>
-                </td>
-                <td>
-                    <button class=red3Dbutton>But also hire me</button>
-                </td>
-            </tr>
-        </table>
-        <div style="padding-top: 5px;">
-            <!-- spacing div-->
-            <span class="title title-small">Example of a Heading Title</span>
-
-            <div class="content">
-
-                <p>
-                    Page content..
-                </p>
-
-                <p>
-                    Some more page content..
-                </p>
-
-            </div>
-
-            <p id="morecontent">
-                Even more content
+        <div id="knowledge">
+            <li>CSS
+                <ul>
+                    <li>Classes</li>
+                    <li>Selectors</li>
+                    <li>ID's</li>
+                </ul>
+            </li>
+            <li>HTML
+                <ul>
+                    <li>Tables</li>
+                    <li>DIV's</li>
+                    <li>Nav Bar</li>
+                </ul>
+            </li>
+            <div>
+            <p>
+                These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
             </p>
-
-            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+            <p>
+                I will use my knowledge to create an amazing website for you and your needs.
+            </p>
+        </div>
+        <div>
+            <table class="fullwidth">\
+                <tr id="rainbow">
+                    <td class="background-red">
+                    </td>
+                    <td class="background-orange">
+                    </td>
+                    <td class="background-yellow">
+                    </td>
+                    <td class="background-green">
+                    </td>
+                    <td class="background-blue">
+                    </td>
+                    <td class="background-indigo">
+                    </td>
+                    <td class="background-violet">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 
     <!---------------------------------- Begin the footer ------------->
