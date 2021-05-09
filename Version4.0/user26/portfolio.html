@@ -7,7 +7,7 @@
 
 <head>
 
-    <title>Hire Me For Your Web Development Needs</title>
+    <title>My Work as a Web Developer</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/stle.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -28,6 +28,14 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
+        #knowledge>* {
+            border: 3px red solid;
+        }
+
+        p+p {
+            background-color: #FFFF00;
+        }
+
         menu {
             margin: 0;
             padding: 0;
@@ -41,6 +49,20 @@
             font-size: 12px;
             text-align: center;
         }
+
+        #rainbow {
+            width: 100%;
+        }
+
+        td:hover {
+            background-color: black;
+        }
+
+        div>li::marker {
+            color: rgb(0, 247, 255);
+            font-weight: bold;
+        }
+
     </style>
 </head>
 
@@ -56,8 +78,9 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="display.html" class="nav-item nav-link">Display</a>
+                    <a href="portfolio.html" class="nav-item nav-link active">Portfolio</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -75,63 +98,54 @@
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <h3 id="topHeading">I'm a Web Developer</h3>
-        <table id="hireButtons">
-            <tr>
-                <td>
-                    <button>Hire me</button>
-                </td>
-                <td>
-                    <button class="button">Hire me</button>
-                </td>
-                <td>
-                    <button class="button button-largeradius">Hire me</button>
-                </td>
-                <td>
-                    <button class="button button-smallradius">Hire me</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="button button2 red">Hire me</button>
-                </td>
-                <td>
-                    <button class=" button button3 red">Fire me</button>
-                  </td>
-                  <td>
-                    <button class=" button button4">Please fire me</button>
-                  </td>
-                  <td>
-                    <button class=" button button5">Don't fire  me</button>
-                  </td>
-            </tr>
-        </table>
-        <div style="padding-top: 5px;">
-            <!-- spacing div-->
-
-            <span class="title-large">Example of a Heading Title</span>
-
-            <div class="content">
-
-                <p>
-                    Page content..
-                </p>
-
-                <p>
-                    Some more page content..
-                </p>
-
-            </div>
-
-            <p id="morecontent">
-                Even more content
-            </p>
-
-            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+        <div id="knowledge">
+            <li>CSS
+                <ul>
+                    <li>Classes</li>
+                    <li>Selectors</li>
+                    <li>ID's</li>
+                </ul>
+            </li>
+            <li>HTML
+                <ul>
+                    <li>Tables</li>
+                    <li>DIV's</li>
+                    <li>Nav Bar</li>
+                </ul>
+            </li>
+        </div>
+        <p>
+            These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
+        </p>
+        <p>
+            I will use my knowledge to create an amazing website for you and your needs.
+        </p>
+        <div>
+            <table id="rainbow">
+                <tr>
+                    <td class="background-red">
+                    </td>
+                    <td class="background-orange">
+                    </td>
+                    <td class="background-yellow">
+                    </td>
+                    <td class="background-green">
+                    </td>
+                    <td class="background-blue">
+                    </td>
+                    <td class="background-indigo">
+                    </td>
+                    <td class="background-violet">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 
     <!---------------------------------- Begin the footer ------------->
     <footer>
-        <span class="title-little">Example of a Footer Title</span>
+        <span class="title">Example of a Footer Title</span>
         <table id="footerTable">
             <tr>
                 <td>
