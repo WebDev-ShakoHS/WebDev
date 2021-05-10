@@ -70,6 +70,14 @@
         a:active {
             color: blue;
         }
+
+        q:lang(no) {
+            quotes: "~""~";
+        }
+
+        p:first-child i {
+            color: blue;
+        }
     </style>
 </head>
 
@@ -157,13 +165,22 @@
         <td>
         </td>
         <div>
-            <p>I am a <strong><i>strong</i></strong> person. I am a <strong><i>strong</i></strong> person.</p>
-            <p>I am a <strong><i>strong</i></strong> person. I am a <strong><i>strong</i></strong> person.</p>
 
-            <center><h2>CSS Links</h2></center>
-            <center><p><b><a href="default.asp" target="_blank">This is a link</a></b></p></center>
+            <center>
+                <h2>CSS Links</h2>
+            </center>
+            <center>
+                <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+            </center>
         </div>
+        
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+        <p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+        <p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+
+
     </main>
 
     <!---------------------------------- Begin the footer ------------->
