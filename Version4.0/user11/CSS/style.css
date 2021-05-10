@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -88,21 +89,61 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: coral;
 	border-radius: 25%;
 }
-.title{
+
+.title {
 	color: red;
-	font-family: 'Trebuchet MS', sans-serif; 
-  }
-  
-  .title-large {
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
 	font-size: 2rem;
-  }
-  
-  .title-small {
+}
+
+.title-small {
 	font-size: .5rem;
-  }
-  #morecontent {
+}
+
+#morecontent {
 	background-color: yellow;
-  }
-  #footerTable {
-background-color: darkorange;
-  }
+}
+
+#footerTable {
+	background-color: darkorange;
+}
+
+#knowledge>* {
+	border: 3px red solid;
+}
+
+ul li::marker {
+	content: "💀 ";
+}
+
+div>* {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: darkblue;
+	font-weight: 100;
+	background-color: cornflowerblue;
+}
+
+div>li::marker {
+	content: "👑";
+}
+
+#rainbow>td:hover {
+	background-color: black;
+}
+
+li::first-letter {
+	font-weight: 900;
+	font-size: xx-large;
+}
+
+li::after {
+	content: "🦐"
+}
+
+p::first-line {
+	background-color: rgb(238, 92, 121);
+	color: rgb(0, 0, 0);
+}
