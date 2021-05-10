@@ -1,3 +1,6 @@
+@import url(rainbow.css);
+
+
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -14,7 +17,7 @@
 .button1 {
 	border-radius: 8px;
 }
-
+ 
 .button2 {
 	border-radius: 30%;
 }
@@ -49,3 +52,36 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: .5rem;
   }
 
+  #knowledge > * {
+	border: 3px red solid;
+  }
+
+  p + p {
+	background-color: #fffb00;
+  }
+
+  div > li {
+	  background-color:aqua;
+  }
+
+  	ul li::marker{
+		content:"🐠  ";
+  }
+
+  p {
+	display: none;
+	background-color: yellow;
+	padding: 20px;
+  }
+  
+  div:hover p {
+	display: block;
+  }
+
+  
+
+  p:only-child {
+	background: rgb(14, 36, 240);
+  }
+
+ 
