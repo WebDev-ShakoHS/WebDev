@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/stle.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -32,6 +32,19 @@
             border: 3px red solid;
         }
 
+        td:hover {
+            background-color: black;
+        }
+        li:hover {
+            background-color: green;
+        }
+        a:hover {
+            background-color: blue;
+        }
+        div:hover {
+            background-color: red;
+        }
+    
         p+p {
             background-color: #FFFF00;
         }
@@ -54,15 +67,10 @@
             width: 100%;
         }
 
-        td:hover {
-            background-color: black;
-        }
-
         div>li::marker {
             color: rgb(0, 247, 255);
             font-weight: bold;
         }
-
     </style>
 </head>
 
@@ -148,15 +156,15 @@
         <span class="title">Example of a Footer Title</span>
         <table id="footerTable">
             <tr>
-                <td>
+                <div>
                     <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-                </td>
-                <td>
+                </div>
+                <div>
                     <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-                </td>
-                <td>
+                </div>
+                <div>
                     <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-                </td>
+                </div>
             </tr>
         </table>
     </footer>
