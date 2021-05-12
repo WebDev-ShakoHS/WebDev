@@ -40,9 +40,36 @@
         .bs-example {
             margin: 20px;
         }
+
         .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(255, 0, 0, 0.3);
-}
+            background-color: rgba(255, 0, 0, 0.3);
+        }
+
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 32px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 32px;
+            margin: 8px 8px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
     </style>
 </head>
 
@@ -51,6 +78,7 @@
         <h4> Bootstrap Examples</h4>
         <p class="lead"> Let's look at the man different examples of how we can use bootstrap and what bootstrap can do!
         </p>
+
     </div>
 
     <!---------Three Column Layouts--------->
@@ -133,6 +161,24 @@
             </a>
         </div>
     </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Call to action -->
+            <ul class="list-unstyled list-inline text-center py-2">
+                <li class="list-inline-item">
+                </li>
+                <li class="list-inline-item">
+                    <button type="button button1">Sign up!</button>
+                </li>
+            </ul>
+            <!-- Call to action -->
+
+        </div>
+
 
 </body>
 
