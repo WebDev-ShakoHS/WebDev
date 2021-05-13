@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 
+
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -42,12 +43,8 @@
             text-align: center;
         }
 
-        #rainbow {
+        .fullWidth {
             width: 100%;
-        }
-
-        td:hover {
-            background-color: black;
         }
 
         #knowledge>* {
@@ -62,7 +59,7 @@
             content: "🌙 ";
         }
 
-        td:hover {
+       #rainbow > td:hover {
             background-color: black;
         }
     </style>
@@ -123,8 +120,8 @@
             I will use my knowledge to create an amazing website for you and your needs.
         </p>
         <div>
-            <table id="rainbow">
-                <tr>
+            <table class="fullWidth">
+                <tr id="rainbow">
                     <td class="background-red">
                     </td>
                     <td class="background-orange">
