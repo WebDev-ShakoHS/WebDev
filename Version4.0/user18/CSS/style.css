@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -18,4 +20,8 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+td{
+	padding: 20px;
 }
