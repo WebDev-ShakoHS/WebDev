@@ -25,7 +25,7 @@
     <script src="JS/script.js"></script>
 
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-    
+
     <!-- Custom styles for this template -->
     <style type="text/css">
         .menu {
@@ -45,6 +45,8 @@
 
 <body>
     <!---------------------------------- Begin the nav-bar ------------->
+
+
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
@@ -73,17 +75,35 @@
     </div>
     <!---------------------------------- End the nav-bar ------------->
 
-    <div class="wideMargin" id="content">
+    <main class="wideMargin" id="content">
         <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:orange;">PUT YOUR CODE HERE</div>
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col" style="background-color:rgb(255, 0, 0);">
+                    <center>
+                        <p id="textChange"> My name is Ritesh I'm user 20</p>
+                    </center>
+                </div>
+                <div class="col" style="background-color:orange;">
+                    <center><button type="button" onclick="changeText()">Click if you like</button></center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5" style="background-color:rgb(235, 213, 17);">
+                    <div onmousedown="WhichButton(event);">Click here (with one of your mouse-buttons)</div>
+                    <div class="col-sm-5" style="background-color:rgb(93, 241, 24);">PUT YOUR CODE HERE</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5" style="background-color:rgb(25, 236, 201);">PUT YOUR CODE HERE</div>
+                    <div class="col-sm-5" style="background-color:rgb(228, 17, 217);">PUT YOUR CODE HERE</div>
+                </div>
+
+                <div class="col-sm-5" style="background-color:rgb(162, 0, 255);">PUT YOUR CODE HERE</div>
+                <div class="col-sm-5" style="background-color:rgb(93, 11, 29);">PUT YOUR CODE HERE</div>
             </div>
         </div>
-    </div>
+    </main>
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
 
