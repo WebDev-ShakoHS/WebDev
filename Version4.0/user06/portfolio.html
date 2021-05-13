@@ -2,12 +2,12 @@
 <html lang="en">
 <!--Version 4.0
         Name: Julian Fletcher   
-        Date Completed:
+        Date Completed: 
     -->
 
 <head>
 
-    <title>Hire Me For Your Web Development Needs</title>
+    <title>My Work as a Web Developer</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -41,6 +41,67 @@
             font-size: 12px;
             text-align: center;
         }
+
+        .rainbow {
+            width: 100%;
+        }
+
+        #knowledge>* {
+            border: 3px red solid;
+        }
+
+        #highlight p+* {
+            background-color: #FFFF00;
+        }
+
+        div ul li::marker {
+            color: red;
+        }
+
+        div ul li::marker {
+            content: "😜 ";
+        }
+
+        .rainbow td:hover {
+            background-color: black;
+        }
+
+        /*Tooltip Pseudo Action*/
+        div#tooltip>p {
+            display: none;
+            background-color: rgb(96, 88, 212);
+            padding: 10px;
+
+        }
+
+        div#tooltip:hover p {
+            display: inline-block;
+        }
+
+        .tooltip {
+            background-color: cadetblue;
+        }
+
+        /* First Child Selector */
+
+        .selector {
+            background-color: darkblue;
+            color: white;
+        }
+
+        p i:first-child {
+            color: #FF5349;
+        }
+
+        /*First Class Selector */
+        .name p:first-child {
+            color: blue;
+        }
+
+        .name {
+            background-color: beige;
+            padding: 5px;
+        }
     </style>
 </head>
 
@@ -56,8 +117,9 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="display.html" class="nav-item nav-link">Display</a>
+                    <a href="portfolio.html" class="nav-item nav-link active">Portfolio</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -75,63 +137,83 @@
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <h3 id="topHeading">I'm a Web Developer</h3>
-        <table id="hireButtons">
-            <tr>
-                <td>
-                    <button>Hire me</button>
-                </td>
-                <td>
-                    <button class="button">Hire me</button>
-                </td>
-                <td>
-                    <button class="button button1">Hire me</button>
-                </td>
-                <td>
-                    <button class="button button2">Hire me</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="button button2 red">Hire me</button>
-                </td>
-                <td>
-                    <button class="coolbutton">New Button 1</button>
-                </td>
-                <td>
-                    <button class="btn btn-6 btn-6l">New Button 2</button>>
-                </td>
-                <td>
-                    <button class="otherbutton">New Button 3</button>>
-                </td>
-            </tr>
-        </table>
-        <div style="padding-top: 5px;">
-            <!-- spacing div-->
-
-            <span class="title title-large">Example of a Heading Title</span>
-
-            <div class="content">
-
-                <p>
-                    Page content..
-                </p>
-
-                <p>
-                    Some more page content..
-                </p>
-
-            </div>
-
-            <p id="morecontent">
-                Even more content
+        <div id="knowledge">
+            <li>CSS
+                <ul>
+                    <li>Classes</li>
+                    <li>Selectors</li>
+                    <li>ID's</li>
+                </ul>
+            </li>
+            <li>HTML
+                <ul>
+                    <li>Tables</li>
+                    <li>DIV's</li>
+                    <li>Nav Bar</li>
+                </ul>
+            </li>
+        </div>
+        <p>
+            These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
+        </p>
+        <p id=highlight>
+            I will use my knowledge to create an amazing website for you and your needs.
+        </p>
+        <div>
+            <table class="rainbow">
+                <tr>
+                    <td class="background-red">
+                    </td>
+                    <td class="background-orange">
+                    </td>
+                    <td class="background-yellow">
+                    </td>
+                    <td class="background-green">
+                    </td>
+                    <td class="background-blue">
+                    </td>
+                    <td class="background-indigo">
+                    </td>
+                    <td class="background-violet">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--Pseudo Classes Here-->
+        <div id="tooltip">
+            Hover over me to see something cool!
+            <p>
+                I am a tooltip! I'm hidden until I'm not!!
             </p>
 
-            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+        </div>
+
+        <div class="selector">
+            <p>
+                Stars are made out of various <i>gasses</i> in the process of <i>nuclear</i> fusion.
+            </p>
+
+            <p>
+                Humans are <i>trying</i> to harness this power as a <i>clean</i> and efficent means of energy
+                production.
+            </p>
+
+        </div>
+
+        <div class="name">
+            <p>
+                This is the first child of this &ltdiv&gt
+            </p>
+            <p>
+                This is the second child of this &ltdiv&gt
+            </p>
+        </div>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 
     <!---------------------------------- Begin the footer ------------->
     <footer>
-        <span class="title title-small">Example of a Footer Title</span>
+        <span class="title">Example of a Footer Title</span>
         <table id="footerTable">
             <tr>
                 <td>
@@ -142,9 +224,6 @@
                 </td>
                 <td>
                     <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-                </td>
-                <td>
-                    <i class="fa fa-google-wallet fa-5x" aria-hidden="true"></i>
                 </td>
             </tr>
         </table>
