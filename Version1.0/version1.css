@@ -1,0 +1,23 @@
+* {
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+}
+
+th {
+    width: 150px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 70px;
+}
+
+tr {
+    width: 150px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 70px;
+}
+
+a {
+    color: royalblue;
+    font-style: oblique;
+}
