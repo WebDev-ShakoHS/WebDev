@@ -42,7 +42,7 @@
     </style>
 </head>
 
-<body onload="myFunction()" onresize="Size()">
+<body onload="myFunction()" onresize="Size()" onmousedown="Shift(event)">
 
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
@@ -113,6 +113,40 @@
                         Click this paragraph, to display the x and y coordinates of the cursor, relative to the screen.
                     </p>
                     <p id="demo"></p>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(153, 210, 224);">
+                    <p>
+                    <form onsubmit="confirmInput()" action="https://tetris.com/play-tetris">
+                        Enter your name to be taken somewhere fun: <input id="fname" type="text" size="20">
+                        <input type="submit">
+                    </form>
+
+                    <body onunload="close()"></body>
+                    </p>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(214, 247, 255);">
+                    <p>
+                    </p>
+                    <p id="shift"></p>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(255, 85, 107);">
+                    <p>Display the number of URLs in the history list:</p>
+
+                    <button onclick="His()">Try it</button>
+
+                    <p id="his"></p>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(164, 53, 255);">
+                    <p>
+                        <button onclick="Con()">Click me</button>
+
+                    <p id="con"></p>
+                    </p>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(159, 255, 210);">
+                    <p onclick="text(this)">Click here for free candy:D
+
+                    </p>
                 </div>
             </div>
     </main>

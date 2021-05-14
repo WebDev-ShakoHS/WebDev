@@ -37,3 +37,37 @@ function Type() {
 function coordinates(event) {
     document.getElementById("demo").innerHTML = "X = " + event.screenX + "<br>Y = " + event.screenY;
 }
+function confirmInput() {
+    fname = document.forms[0].fname.value;
+    alert("You will now be redirected to tetris");
+}
+function close() {
+    alert("Sad that you can't stay for longer!");
+}
+function Shift(event) {
+    var text = "The shift key was NOT pressed!";
+    if (event.shiftKey == 1) {
+        text = "The shift key was pressed!";
+    }
+    document.getElementById("shift").innerHTML = text;
+}
+function breakout() {
+    if (window.top != window.self) {
+        window.top.location = "tryjs_breakout.htm";
+    }
+}
+function His() {
+    document.getElementById("his").innerHTML = history.length;
+}
+function Con() {
+    var txt;
+    if (confirm("Hit yes!")) {
+        txt = "You did the right thing";
+    } else {
+        txt = "What why!";
+    }
+    document.getElementById("con").innerHTML = txt;
+}
+function text(id) {
+    id.innerHTML = "Amongus";
+  }
