@@ -17,7 +17,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -87,7 +87,7 @@
                     </center>
                 </div>
                 <div class="col-sm-4" style="background-color:rgb(0, 207, 17);">
-                    <center><button type="button" onclick="changeText()">Click if you like</button></center>
+                    <center><button type="button" onclick="changeText()">Click Here</button></center>
                 </div>
 
 
@@ -107,7 +107,8 @@
 
                 <!-----------------------------------FUNCTION 3---------------------------------->
                 <div class="col-sm-4" style="background-color:rgb(0, 207, 17)">
-                    <form onsubmit="confirmInput()" action="https://www.shakopee.k12.mn.us/shs">
+                    <form onsubmit="confirmInput()"
+                        action="file:///Users/225838/Applications/mampstack/apache2/htdocs/WebDev/Version6.0/user23/piano.html">
                         Enter your name: <input id="fname" type="text" size="20">
                         <input type="submit">
                     </form>
@@ -117,7 +118,7 @@
                 <div class="col-sm-4" style="background-color:rgb(0, 132, 255);">
                     <p>A function is triggered when the user releases a key in the input field. The function transforms
                         the character to upper case.</p>
-                    Enter your name: <input type="text" id="fname" onkeyup="upperCase()">
+                    Enter your name: <input type="text" id="gname" onkeyup="upperCase()">
                 </div>
 
 
@@ -136,19 +137,37 @@
 
 
                 <!-----------------------------------FUNCTION 6---------------------------------->
-                <div class="col-sm-4" style="background-color:rgb(0, 132, 255);">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:rgb(0, 132, 255);">
+
+                    <body onload="pageLoad()">
+                        <h2>This box is used for the pop up when the page loads.</h2>
+                </div>
 
 
 
 
                 <!-----------------------------------FUNCTION 7---------------------------------->
-                <div class="col-sm-4" style="background-color:rgb(0, 207, 17)">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:rgb(0, 207, 17)">
+                    <p>A function is triggered when the user is pressing a key in the input field.</p>
+
+                    <input type="text" onkeydown="keyPress()">
+                </div>
 
 
 
 
                 <!-----------------------------------FUNCTION 8---------------------------------->
-                <div class="col-sm-4" style="background-color:rgb(0, 132, 255);">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:rgb(0, 132, 255);">
+                    <form>
+                        Choose which browser you prefer:
+                        <select id="browsers" onchange="preferedBrowser()">
+                            <option value="How much RAM do you have!?">Chrome</option>
+                            <option value="What year is it again?">Internet Explorer</option>
+                            <option value="Why?">Firefox</option>
+                        </select>
+                    </form>
+                </div>
+
             </div>
 </body>
 
