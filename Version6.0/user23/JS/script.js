@@ -15,20 +15,55 @@ function Scroll() {
 }
 Scroll();
 
+
+
+
 function show_coords(event) {
     document.getElementById("demo").innerHTML = "X= " + event.clientX + "<br>Y= " + event.clientY;
 }
+
+
+
+
 
 function confirmInput() {
     fname = document.forms[0].fname.value;
     alert("Hello " + fname + "! You will now be redirected to the Shakopee Schools Website");
 }
 
+
+
+
 function upperCase() {
-    var x = document.getElementById("fname");
+    var x = document.getElementById("gname");
     x.value = x.value.toUpperCase();
 }
 
+
+
+
 function clickColor(elmnt, clr) {
     elmnt.style.color = clr;
+}
+
+
+
+
+function pageLoad() {
+    alert("Hello! Welcome to my Javascript examples.");
+}
+
+
+
+
+function keyPress() {
+    alert("You pressed a key inside the input field");
+}
+
+
+
+
+function preferedBrowser() {
+    prefer = document.forms[1].browsers.value;
+    alert(prefer);
 }
