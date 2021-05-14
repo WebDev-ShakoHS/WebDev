@@ -28,7 +28,7 @@ function show_coords(event) {
 
 function confirmInput() {
     fname = document.forms[0].fname.value;
-    alert("Hello " + fname + "! You will now be redirected to the Shakopee Schools Website");
+    alert("Hello " + fname + "! You will now be redirected to a piano that I created.");
 }
 
 
@@ -67,3 +67,7 @@ function preferedBrowser() {
     prefer = document.forms[1].browsers.value;
     alert(prefer);
 }
+
+
+
+
