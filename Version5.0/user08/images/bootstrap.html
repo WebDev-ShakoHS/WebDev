@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0 
-    Name:  Mark Kuz'mich
+    Name:
     Date Completed: 
 -->
 
@@ -24,14 +24,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #dbdfe5;
+            margin-bottom: 15px;
+        }
+
+        .demo-content.bg-alt {
+            background: #abb1b8;
+        }
+
+        .bs-example {
+            margin: 20px;
+        }
+    </style>
 </head>
 
 <body>
     <div class="jumbotron">
         <h4> Bootstrap Examples</h4>
-        <p class="lead"> Let's look at the man different examples of how we can use bootstrap and what bootstrap can do! </p>
+        <p class="lead"> Let's look at the man different examples of how we can use bootstrap and what bootstrap can do!
+        </p>
     </div>
-    
+
     <!---------Three Column Layouts--------->
     <div class="container mt-3">
         <!--Row with two equal columns-->
@@ -61,7 +79,7 @@
                 <div class="demo-content bg-alt">.col-md-9</div>
             </div>
         </div>
-        
+
         <!---------Auto Layout Columns--------->
         <div class="row">
             <div class="col demo-content">Column one</div>
@@ -71,7 +89,7 @@
             <div class="col demo-content">Column five</div>
             <div class="col demo-content bg-alt">Column six</div>
         </div>
-        
+
         <!---------Flexible Layouts--------->
         <div class="row">
             <div class="col-md-4 col-lg-3">
@@ -85,38 +103,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
-<div class="bs-example">
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Row</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Clark</td>
-                <td>Kent</td>
-                <td>clarkkent@mail.com</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>John</td>
-                <td>Carter</td>
-                <td>johncarter@mail.com</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Peter</td>
-                <td>Parker</td>
-                <td>peterparker@mail.com</td>
-            </tr>            
-        </tbody>
-    </table>
-</div>
