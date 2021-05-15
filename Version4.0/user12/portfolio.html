@@ -48,7 +48,7 @@
         #knowledge > * {
   border: 3px red solid;
 }
-p + * {
+p {
   background-color: #FFFF00;
 }
 div li::marker{
@@ -60,6 +60,22 @@ div li::marker{
 td:hover {
   background-color: black;
 }
+p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+div:hover p {
+  display: block;
+}
+#knowledge:hover {
+  background-color: rgb(73, 199, 0);
+}
+.Linker:hover {
+  color: #6234ac;
+}
+
     </style>
 </head>
 
@@ -94,7 +110,10 @@ td:hover {
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h3 id="topHeading">I'm a Web Developer</h3>
+        <div>Hover over me To see a tool tip
+            <p>WOW! ITS A TOOLTIP!</p>
+          </div>
+          <h3 id="topHeading">I'm a Web Developer</h3>
         <div id="knowledge">
             <li>CSS
                 <ul>
@@ -110,7 +129,8 @@ td:hover {
                     <li>Nav Bar</li>
                 </ul>
             </li>
-        </div>
+        </div> 
+      
         <p>
             These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
         </p>
@@ -118,6 +138,7 @@ td:hover {
             I will use my knowledge to create an amazing website for you and your needs.
         </p>
         <div>
+           
             <table id="rainbow">
                 <tr>
                     <td class="background-red">
@@ -137,6 +158,9 @@ td:hover {
                 </tr>
             </table>
         </div>
+        <div class=Linker>
+        LINK IS HERE
+    </div>
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 
