@@ -90,19 +90,57 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-5" style="background-color:rgb(235, 213, 17);">
+                <div class="col" style="background-color:rgb(235, 213, 17);">
                     <div onmousedown="WhichButton(event);">Click here (with one of your mouse-buttons)</div>
-                    <div class="col-sm-5" style="background-color:rgb(93, 241, 24);">PUT YOUR CODE HERE</div>
+                    <div class="col" style="background-color:rgb(93, 241, 24);">Enter your name: <input type="text" id="fname" onblur="myName()">
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-5" style="background-color:rgb(25, 236, 201);">PUT YOUR CODE HERE</div>
-                    <div class="col-sm-5" style="background-color:rgb(228, 17, 217);">PUT YOUR CODE HERE</div>
+                    <div class="col" style="background-color:rgb(25, 236, 201);"> <p ondblclick="myClick()">Doubleclick this paragraph to trigger a function.</p>
+
+                        <p id="demo"></p></div>
+                    <div class="col" style="background-color:rgb(228, 17, 217);">Enter your name:
+                        <input type="text" name="myInput" onkeyup="writeMessage()" size="20">
+                        <input type="text" name="mySecondInput" size="20"></div>
                 </div>
 
-                <div class="col-sm-5" style="background-color:rgb(162, 0, 255);">PUT YOUR CODE HERE</div>
-                <div class="col-sm-5" style="background-color:rgb(93, 11, 29);">PUT YOUR CODE HERE</div>
+                <div class="col" style="background-color:rgb(162, 0, 255);"><form>
+                    Write a message:<br>
+                    <input 
+                    type="text" 
+                    onkeydown="color('yellow')"
+                    onkeyup="color('white')"
+                    name="myInput">
+                    </form>/div>
+                <div class="col-sm-5" style="background-color:rgb(93, 11, 29);"><p onmousedown="myElement(this,'red')" onmouseup="myElement(this,'green')">
+                    Click the text to change the color. A function, with parameters, is triggered when the mouse button is pressed down, and again, with other parameters, when the mouse button is released.
+                    </p></div>
             </div>
         </div>
+        <div class=”calculator”>
+            <div class=”calculator__display”>0</div>
+            <div class=”calculator__keys”> … </div>
+          </div>
+          <div class="calculator__keys">
+            <button class="key--operator" data-action="add">+</button>
+            <button class="key--operator" data-action="subtract">-</button
+            <button class="key--operator" data-action="multiply">&times;</button>
+            <button class="key--operator" data-action="divide">÷</button
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>0</button>
+            <button data-action="decimal">.</button>
+            <button data-action="clear">AC</button>
+            <button class="key--equal" data-action="calculate">=</button>
+          </div>
+         
     </main>
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
