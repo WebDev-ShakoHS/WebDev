@@ -7,7 +7,7 @@
 <head>
     <link rel="icon" type="image/x-icon" href="images/JS6.ico" />
 
-    <title>Top Places to Visit in Your Lifetime!</title>
+    <title>Login</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,16 +16,49 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/Places To Visit.css">
+    <link rel="stylesheet" href="CSS/Login.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="JS/Places To Visit.js"></script>
+    <script src="JS/Login.js"></script>
 
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+
+
+
+
+
+    <!-----------------------Stuff to make login work---------------------->
+    <style type="text/css">
+        #popupbox {
+            margin: 0;
+            margin-left: 40%;
+            margin-right: 40%;
+            margin-top: 50px;
+            padding-top: 10px;
+            width: 20%;
+            height: 150px;
+            position: absolute;
+            background: #FBFBF0;
+            border: solid #000000 2px;
+            z-index: 9;
+            font-family: arial;
+            visibility: hidden;
+        }
+    </style>
+    <script language="JavaScript" type="text/javascript">
+        function login(showhide) {
+            if (showhide == "show") {
+                document.getElementById('popupbox').style.visibility = "visible";
+            } else if (showhide == "hide") {
+                document.getElementById('popupbox').style.visibility = "hidden";
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -51,70 +84,33 @@
                         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                     </div>
                     <div class="navbar-nav ml-auto">
-                        <a href="Login.html" class="nav-item nav-link">Login</a>
+                        <a href="Login.html" class="nav-item nav-link active">Login</a>
                     </div>
                 </div>
             </nav>
         </div>
         <!---------------------------------- End the nav-bar ------------->
 
-        <main class="wideMargin" id="content">
-            <h1 class="text-left my-3">Top Places to Visit in Your Lifetime!</h1>
-            <!-- Edit this line for the title of your page -->
-            <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-            <div class="container-fluid">
-                <div class="row">
-        </main>
 
-        <!--------------------------------Data--------------------------------->
-
-
-
-
-
-        <!--------------------------------Cards--------------------------------->
-
-        <div class="cards">
-            <center>
-                <!--------------------------------South Island, New Zealand--------------------------------->
-                <h4><b><a href="South Island.html" target="_blank" rel="noopener noreferrer">South Island, New
-                            Zealand</a></b></h4>
-                <p>#1 in World's Best Places to Visit</p>
-                <img src="images/South Island.jpeg" alt="Image of New Zealand's South Island Landscape"
-                    style="width:100%">
-                <div class="container">
-            </center>
+        <!-----------------------Stuff to make login work---------------------->
+        <div id="popupbox">
+            <form name="login" action="" method="post">
+                <center>Username:</center>
+                <center><input name="username" size="14" /></center>
+                <center>Password:</center>
+                <center><input name="password" type="password" size="14" /></center>
+                <center><input type="submit" name="submit" value="login" /></center>
+            </form>
+            <br />
+            <center><a href="javascript:login('hide');">close</a></center>
         </div>
 
-        <!--------------------------------Paris, France--------------------------------->
-        <div class="cards">
-            <center>
-                <h4><b><a href="Paris.html" target="_blank" rel="noopener noreferrer">Paris, France</a></b></h4>
-                <p>#2 in World's Best Places to Visit</p>
-                <img src="images/Paris.jpeg" alt="Image of the Eiffel Tower in Paris" style="width:100%">
-                <div class="container"></div>
-            </center>
-        </div>
-
-        <!--------------------------------Bora Bora--------------------------------->
-        <div class="cards">
-            <center>
-                <h4><b><a href="Bora Bora.html" target="_blank" rel="noopener noreferrer">Bora Bora</a></b></h4>
-                <p>#3 in World's Best Places to Visit</p>
-                <img src="images/Bora Bora.jpeg" alt="Image of Bora Bora's Landscape" style="width:100%">
-                <div class="container"></div>
-            </center>
-        </div>
-
-        <!--------------------------------Maui--------------------------------->
-        <div class="cards">
-            <center>
-                <h4><b><a href="Maui.html" target="_blank" rel="noopener noreferrer">Maui</a></b></h4>
-                <p>#4 in World's Best Places to Visit</p>
-                <img src="images/Maui.jpeg" alt="Image of Maui's Ocean and Mountain Landscapes" style="width:100%">
-                <div class="container"></div>
-            </center>
-        </div>
+        <p>
+            Some text
+        </p>
+        <p>
+            Some more text
+        </p>
+        <p><a href="javascript:login('show');">login</a></p>
     </body>
-
-</html>
+</body>
