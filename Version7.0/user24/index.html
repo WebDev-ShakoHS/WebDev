@@ -1,18 +1,145 @@
+<!DOCTYPE html>
 <html lang="en">
-    <!--Version 7.0 
-	Name:
-	Date Completed:
-    -->
-    <head>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="../user24/images/favicon.ico" />
+    <title>Shift Reviews</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Version 3.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
+
+    <style>
+        .jumbotron {
+
+            margin-bottom: 0%;
+            background-color: rgb(56, 56, 56);
+            overflow: hidden;
+            height: 400px;
+            width: 1050px;
+            justify-content: center;
+        }
+
+        .vaxban {
+
+
+            width: 500px;
+            background-color: rgba(170, 170, 170, 0.726);
+            padding-top: 0%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #bannerimg {
+            margin: 0%;
+            height: 500px;
+            width: 1050px;
+            float: left;
+
+        }
+    </style>
+</head>
+
+<menu>
+    <nav class="navbar navbar-expand-md navbar-dark navbar2">
+        <a href="index.html" class="navbar-brand"><img src="images/WebLogo_100x100.png"></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="reviews.HTML" class="nav-item nav-link">Reviews</a>
+                <a href="news.HTML" class="nav-item nav-link">News</a>
+                <a href="registration.HTML" class="nav-item nav-link">Register</a>
+
+            </div>
+        </div>
+    </nav>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+</menu>
+<header>
+    <div class="container">
+        <div class="jumbotron">
+            <img id="bannerimg" src="images/20%offBanner1.png">
+        </div>
+    </div>
+
+    <div class="vaxban">
+        <h2>Make Sure You Get Your <a href="#" style="color: rgb(62, 107, 137);">Vaccination</a> </h2>
+    </div>
+
+</header>
+
+<body>
+    <h1>
+        <center>Game Guides</center>
+    </h1>
+
+
+    <div class="row">
+        <div class="card col-md-3">
+            <img class="Cardimg" src="images/Warthunderimg.png" alt="War Thunder title image" style="width:100%">
+            <div class="container">
+                <a href="#" target="_blank" onclick="openwar()"><h4><b>War Thunder</b></h4></a>
+                <p>By: Gaijin Entertainment</p>
+            </div>
+
+        </div>
+        <div class="card col-md-3">
+
+            <img src="images/Rustimg.png" alt="Rust title image" style="width:100%">
+            <div class="container">
+                <a href="#" target="_blank" onclick="openrust()"><h4><b>Rust</b></h4></a>
+                <p>By: Facepunch Studios</p>
+            </div>
+
+        </div>
+        <div class="card col-md-3">
+
+            <img src="images/Rainbow6img.png" alt="Rainbow six siege title image" style="width:100%">
+            <div class="container">
+                <a href="#" target="_blank" onclick="openr6()"><h4><b>Rainbow Six Siege</b></h4></a>
+                <p>By: Ubisoft</p>
+            </div>
+
+        </div>
+        <div class="card col-md-3">
+          
+            <img src="images/Destiny2img.png" alt="Destiny two title image" style="width:100%">
+            <div class="container">
+                <a href="#" target="_blank" onclick="openD2()"><h4><b>Destiny 2</b></h4></a>
+                <p>By: Bungie Inc</p>
+            </div>
         
-        <title>Web Development User #24</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #24</center>
-    
-    </body>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
 
 </html>

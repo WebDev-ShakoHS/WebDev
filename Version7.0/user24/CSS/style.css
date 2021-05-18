@@ -1,0 +1,33 @@
+body {
+    margin: 0%;
+    background-color: rgb(56, 56, 56);
+}
+
+menu {
+    padding: 0%;
+    margin-bottom: 16px;
+    margin-top: 0px;
+}
+
+.navbar2 {
+    background-color: rgb(56, 56, 56);
+    border-bottom: 3px solid rgb(155, 155, 155);
+    position: center;
+}
+
+h1 {
+    color: rgb(62, 107, 137);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.342);
+    transition: 0.3s;
+    width: 10%;
+    margin: 0%;
+    display: inline-block;
+}
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.829);
+}
