@@ -1,79 +1,117 @@
 .movietitle {
     position: absolute;
-    top: 30px;
+    top: 50px;
     right: 150px;
     width: 200px;
     height: 100px;
 }
-center{
- font-size: 50px;
+
+center {
+    font-size: 50px;
 }
-.review{
+
+.review {
     position: absolute;
     top: 170px;
     width: 500;
     right: 200px;
     padding: 5px
-     
 }
-.video{
+
+.video {
     position: absolute;
-    top: 750;
-    
+    top: 752;
 }
-.img{
+
+.img {
     width: 400;
     height: 600;
     position: absolute;
     top: 150;
     left: 150;
-    
-    
 }
-.star{
+
+.star {
     width: 20;
     padding: 2px;
 }
-.stars{
+
+.stars {
     position: absolute;
     right: 395;
     top: 145;
 }
-body {font-family: Arial;}
+
+body {
+    font-family: Arial;
+}
 
 /* Style the tab */
+
 .tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
 }
 
 /* Style the buttons inside the tab */
+
 .tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
+
 .tab button:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
+
 .tab button.active {
-  background-color: #ccc;
+    background-color: #ccc;
 }
 
 /* Style the tab content */
+
 .tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.footer {
+    border-radius: 1px;
+    padding: auto;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: -400px
+}
+.textmid{
+    text-align: center;
+}
+.starcenter{
+    position: absolute;
+    right: 40%;
+}
+.badmovieposter{
+    height: 500pt;
+}
+.badmoviereview{
+    padding: 20px;
+    border-radius: 1px;
+    margin: 30px;
+    width: 600px;
+    position: absolute;
+    right: 200px;
+    top: 150px;
 }

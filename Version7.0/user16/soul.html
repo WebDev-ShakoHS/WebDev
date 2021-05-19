@@ -8,6 +8,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 <!--javescript-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="JS/SampleJS.js"></script>
 
 <head>
 
@@ -17,32 +21,35 @@
 </head>
 
 <body>
-    <!--tabs-->
-    <div class="tab">
-        <button href="emojimovie.html" class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Bad movie</button>
-        <button href="" class="tablinks" onclick="openCity(event, 'Paris')">Ok movie</button>
-        <button href="" class="tablinks" onclick="openCity(event, 'Tokyo')">Good movie 2</button>
-    </div>
 
-    <div id="London" class="tabcontent">
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
-    </div>
 
-    <div id="Paris" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p>
-    </div>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div id="Tokyo" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
-    </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="emojimovie.html" class="nav-item nav-link">Bad movie</a>
+                    <a href="#" class="nav-item nav-link active">Soul</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
     <!---Title-->
     <center class=col-md-4><b>Movie reviews</b></center>
 
     <div class=movietitle>
-        <h1 class=movietitle>Good Movie</h1>
+        <h1 class=movietitle> Movie</h1>
     </div>
     <div class="review">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dictum odio sed ipsum pellentesque, at
@@ -65,13 +72,11 @@
             ullamcorper purus volutpat quis. Curabitur velit ligula, faucibus a est nec, pharetra pellentesque nunc.
             Donec ac consectetur urna. Nulla porttitor in elit eget volutpat. Donec laoreet ante vel nulla accumsan,
             vitae fermentum felis sagittis. Duis pulvinar nisi quis nunc luctus, ut pretium nisl commodo. Curabitur
-            metus lectus, rutrum id nunc in, interdum posuere dolor. Aliquam fermentum pharetra molestie. Sed fringilla
-            metus sed quam scelerisque, sed rhoncus nisi dictum. Sed sit amet leo urna. Aliquam tempus lacinia tellus,
-            ut tincidunt felis eleifend et. Donec commodo augue ac orci aliquam tristique. Donec commodo posuere tellus
-            ac porta. Pellentesque est felis, mattis quis placerat nec, mattis ut mi. Integer augue sapien, luctus vel
-            viverra vel, pharetra non sem. Proin sapien velit, eleifend a dignissim a, luctus eget nisi.</p>
+            metus lectus, rutrum id nunc in, interdum posuere dolor. Donec ac sodales urna. Quisque vitae tellus
+            pharetra, mollis enim eu, faucibus libero. Duis facilisis, enim vitae suscipit dapibus, purus sem tristique
+            lorem, in sodales velit orci vitae nunc. Praesent ornare dignissim sollicitudin. </p>
     </div>
-    <img src="images/Pixar-Soul-Poster.jpeg" class="img" alt="Picture of soul movie poster">
+    <img src="../images/pixar-soul-poster.jpeg" class="img" alt="Picture of soul movie poster">
     <video width="700" height="300" controls class="video">
         <source src="images/soul-trailer-1_h480p.mov" type="video/mp4">
     </video>
@@ -82,7 +87,15 @@
         <img src="images/unnamed.png" alt="Picture of star" class="star">
         <img src="images/unnamed.png" alt="Picture of star" class="star">
     </div>
+    <footer class="footer col-md-12">
+        <h1>Footer</h1>
+        <div class="col-md-12">
+            <h3>More Movie review websites</h3>
+            <li><a href="https://library.honolulu.hawaii.edu/movies">honolulu community college </a></li>
+            <li><a href=https://www.rogerebert.com>roger ebert</a></li>
+        </div>
 
+    </footer>
 </body>
 
 </html>
