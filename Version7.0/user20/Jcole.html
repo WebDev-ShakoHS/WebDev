@@ -1,0 +1,56 @@
+<head>
+    <!-- Bootstrap meta data -->
+             <meta charset="utf-8">
+             <meta http-equiv="X-UA-Compatible" content="IE=edge">
+             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+             <meta name="description" content="SHS WebDev JavaScript sample">
+         
+             <!-- CSS -->
+             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+             <link rel="stylesheet" href="CSS/style.css">
+         
+             <!-- JavaScript -->
+             <!-- These are needed to get the responsive menu to work -->
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+             <meta name="viewport" content="width=device-width, initial-scale=1">
+             
+             <script type="text/javascript">
+                writeRandomQuote = function () {
+                  var quotes = new Array();
+                  quotes[0] = "To appreciate the sun, you gotta know what rain is. – J Cole.";
+                  quotes[1] = " Anything's possible, you gotta dream like you never seen obstacles.” – J Cole.";
+                  quotes[2] = "“ Take a chance, because you never know how perfect something can turn out.” – J Cole.";
+                  quotes[3] = "I put a lot of pressure on myself. I think something’s not good enough, and I won’t stop until I feel like I’ve made it. I’m never satisfied.” - J cole.";
+                  var rand = Math.floor(Math.random()*quotes.length);
+                  document.write(quotes[rand]);
+                }
+                writeRandomQuote();
+              </script>
+    </head>
+    <body>
+       
+        <style>
+        h3  {
+            
+            animation-duration: 8s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes slidein {
+          0% {
+            margin-left: 0%;
+          }
+          50% {
+            margin-left: 300px;
+          }
+          100% {
+            margin-left: 0%;
+          }
+        }
+    </style>
+<script type="text/javascript">writeRandomQuote();</script>
+  </body>
