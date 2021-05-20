@@ -1,0 +1,74 @@
+<html lang="en">
+<!--Version 7.0 
+	Name: Landon
+	Date Completed:
+    -->
+
+<head>
+
+    <title>McMonalds</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="WebDev Version 7.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
+    <style>
+        body {
+            background-image: url(images/mcdonalds-drive-through-restaurant.jpeg);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="index.html" class="navbar-brand">McMonalds</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="Menu.html" class="nav-item nav-link">Menu</a>
+                    <a href="Message.html" class="nav-item nav-link">Order</a>
+
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="Sign.html" class="nav-item nav-link">Sign In</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <center>
+        <h1>Welcome to McMonalds!</h1>
+    </center>
+    <div class="dropdown">
+        <button onclick="ButtonClick()" class="dropbtn">Locations</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="Map.html">World Locations</a>
+            <a href="MiniMap.html">State Locations</a>
+        </div>
+    </div>
+</body>
+
+</html>
