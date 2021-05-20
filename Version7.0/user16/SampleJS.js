@@ -33,4 +33,12 @@ function openCity(evt, cityName) {
       changeColor('yellow');
       el_down.innerHTML = "Background Color changed";
   }        
+  // button to switch image
+  function changeImage()
+{
+var img = document.getElementById("image");
+img.src="images/badmovie.jpg";
+return false;
+}
+
   

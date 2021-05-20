@@ -96,17 +96,21 @@ body {
     position: absolute;
     bottom: -400px
 }
-.textmid{
+
+.textmid {
     text-align: center;
 }
-.starcenter{
+
+.starcenter {
     position: absolute;
     right: 40%;
 }
-.badmovieposter{
+
+.badmovieposter {
     height: 500pt;
 }
-.badmoviereview{
+
+.badmoviereview {
     padding: 20px;
     border-radius: 1px;
     margin: 30px;
@@ -114,4 +118,65 @@ body {
     position: absolute;
     right: 200px;
     top: 150px;
+}
+
+.trash {
+    width: 450px;
+}
+
+#clickme {
+    position: relative;
+    top: -30px;
+}
+
+.good2review {
+    position: static;
+}
+
+.star2 {
+    width: 20px;
+    position: relative;
+}
+
+.coolbackround {
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: rgb(0, 0, 0);
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        backround-color: green;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+.boxscrollbar {
+    position: absolute;
+    top: 450px;
+    right: 10%;
+    height: 500px;
+    width: 500px;
+    border: 1px solid #ccc;
+    font: 16px/26px Georgia, Garamond, Serif;
+    overflow: auto
+    
+}
+#aboutTH{
+    position: absolute;
+    top: 325px;
+    right: 20%;
 }
