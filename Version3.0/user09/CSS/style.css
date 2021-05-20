@@ -7,6 +7,9 @@ table {
 	border-collapse: collapse;
 	cellspacing: 0px;
 }
+ul  {
+	list-style: square inside url("sqpurple.gif");
+}
 
 tr {
 	border: 1px solid #ffffff;
