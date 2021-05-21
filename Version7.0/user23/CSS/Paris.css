@@ -2,3 +2,12 @@
     font: arial;
     margin: 1.2in;
 }
+
+#myCarousel{
+    Height: 800px; 
+    Width: auto;
+}
+.carousel-inner{
+    Height: 800px; 
+    Width: auto;
+}
