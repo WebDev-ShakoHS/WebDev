@@ -95,3 +95,6 @@ p {
     padding-right: 25px;
     word-wrap: break-word;
 }
+body {
+    background-color: black;
+}
