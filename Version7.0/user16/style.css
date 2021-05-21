@@ -107,7 +107,9 @@ body {
 }
 
 .badmovieposter {
-    height: 500pt;
+    position: relative;
+    top: 20vw;
+    right: 500vw;
 }
 
 .badmoviereview {
@@ -115,18 +117,20 @@ body {
     border-radius: 1px;
     margin: 30px;
     width: 600px;
-    position: absolute;
-    right: 200px;
-    top: 150px;
+    position: relative;
+    right: -30vw;
+    top: 0vw;
 }
 
 .trash {
-    width: 450px;
+    width: 30vw;
+    position: relative;
+    top: -35vw;
 }
 
 #clickme {
     position: relative;
-    top: -30px;
+    top: -37vw;
 }
 
 .good2review {
@@ -166,10 +170,10 @@ body {
 
 .boxscrollbar {
     position: absolute;
-    top: 450px;
+    top: 30vw;
     right: 10%;
-    height: 500px;
-    width: 500px;
+    height: 30vw;
+    width: 30vw;
     border: 1px solid #ccc;
     font: 16px/26px Georgia, Garamond, Serif;
     overflow: auto
@@ -179,4 +183,73 @@ body {
     position: absolute;
     top: 325px;
     right: 20%;
+}
+.star3{
+    
+    position: absolute;
+    top: 7vw;
+    left: 20vw;
+}
+.okmoviereview{
+    width: 50vw;
+    position: relative;
+    left: 40vw;
+
+}
+/* ok movie fade in*/
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+.fade-in{
+    width: 100px;
+    position: relative;
+    top: -40vw;
 }
