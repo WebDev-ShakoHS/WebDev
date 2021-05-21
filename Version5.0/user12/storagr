@@ -1,0 +1,27 @@
+<div class="container">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="row"> 
+        <div class="demo-content">.col-md-12
+</div>
+</div>
+            <div class=".col-*">
+                <div class="demo-content bg-alt">.col-md-12
+</div>
+</div>
+<div class=".col-sm-*">
+    <div class="demo-content bg-alt">.col-md-12
+</div>
+</div>
+<div class=".col-md-*">
+    <div class="demo-content bg-alt">.col-md-12
+</div>
+</div>
+<div class=".col-lg-*">
+    <div class="demo-content bg-alt">.col-md-12
+</div>
+</div>
+<div class=".col-xl-*">
+    <div class="demo-content bg-alt">.col-md-12
+</div>
+</div>
+</div>
