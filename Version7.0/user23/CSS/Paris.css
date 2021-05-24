@@ -3,11 +3,7 @@
     margin: 1.2in;
 }
 
-#myCarousel{
-    Height: 800px; 
-    Width: auto;
-}
-.carousel-inner{
+#carouselExampleFade{
     Height: 800px; 
     Width: auto;
 }
