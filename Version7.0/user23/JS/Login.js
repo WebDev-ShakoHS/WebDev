@@ -15,3 +15,7 @@ signupLink.onclick = (() => {
     signupBtn.click();
     return false;
 });
+
+function clickColor(x) {
+    x.style.background = "grey";
+}
