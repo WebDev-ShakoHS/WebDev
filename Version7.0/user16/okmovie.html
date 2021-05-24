@@ -41,8 +41,8 @@
         </div>
     </nav>
     <div class="row">
-        <h1 class="col-md-6" style="text-align: center;">ok movie</h1>
-        <h1 class="col-md-4">review</h1>
+        <header class="col-md-2 header" style="text-align: left;" >ok movie</header>
+        <header class="col-md-6" style="text-align: center;">review</header>
     </div>
 
 
@@ -84,7 +84,10 @@
         tincidunt magna. Quisque sit amet vestibulum justo. Fusce quis leo eu mi consectetur tincidunt non vitae eros.
     </p>
     <div class="fade-in">
-        <img src="images/okmovie.jpg">
+        <img src="images/okmovie.jpg" style="width: 30vw;">
      </div>
-
+     <div class="changecolor">
+     <input type="button" onclick="chBackcolor('red');">
+     <button onclick="document.body.style.backgroundColor = 'green';">Green backround?</button>
+    </div>
 </body>

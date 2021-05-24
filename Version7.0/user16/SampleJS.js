@@ -40,5 +40,22 @@ var img = document.getElementById("image");
 img.src="images/badmovie.jpg";
 return false;
 }
+// button to switch color
+function chBackcolor(color) {
+  document.body.style.background = color;
+}
+preloadimage("images/Pixar-Soul-Poster.jpeg",);
 
-  
+
+
+
+if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+
+    if (document.cookie.indexOf("iphone_redirect=false") == -1) {
+
+        window.location = "http://m.espn.go.com/wireless/?iphone&i=COMR";
+
+    }
+
+}
+

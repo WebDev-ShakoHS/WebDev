@@ -252,4 +252,21 @@ body {
     width: 100px;
     position: relative;
     top: -40vw;
+    right: -3vw;
+}
+header{
+   position: relative; 
+   right: -20vw;
+   width: 20vw;
+   font-size: 3vw;
+}
+.changecolor{
+    position: relative;
+    top: -90vw;
+}
+.openwebsite{
+      position: absolute;
+      top: 4vw;
+      right: 23vw;
+      
 }
