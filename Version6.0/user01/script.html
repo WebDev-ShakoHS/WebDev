@@ -12,10 +12,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="SHS WebDev JavaScript Practice">
 
+
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -40,11 +41,12 @@
             font-size: 12px;
             text-align: center;
         }
+
         
     </style>
 </head>
 
-<body onload="pageLoad()">
+<body onload="suspendContent()" style="margin:0;">
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -75,21 +77,48 @@
     <!---------------------------------- End the nav-bar ------------->
 
     <main class="wideMargin" id="content">
+        <div id="loader"></div>
         <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <div class="container-fluid">
+        <div class="container-fluid" style="display:none;" id="theDisplay" class="animate-bottom">
             <div class="row">
-                <div class="col-sm-3"><center><p id="textChange"> My name is Gideon</p></center></div>
-                <div class="col-sm-3"><center><button type="button" onclick="changeText()">Click if you like</button></center></div>
-                <div class="col-sm-3"><center><p onmousedown="show_coords(event)"> Click here to show current cursor coordniates</p></center></div>
-                <div class="col-sm-3"><p id="coordinates"></p></div>
+                <div class="col-sm-3">
+                    <center>
+                        <p id="textChange"> My name is Gideon</p>
+                    </center>
+                </div>
+                <div class="col-sm-3">
+                    <center><button type="button" onclick="changeText()">Click if you like</button></center>
+                </div>
+                <div class="col-sm-3">
+                    <center>
+                        <p onmousedown="show_coords(event)"> Click here to show current cursor coordniates</p>
+                    </center>
+                </div>
+                <div class="col-sm-3">
+                    <p id="coordinates"></p>
+                </div>
             </div>
             <div class="row">
-                <div class="col-sm-3"><button type="button" ondblclick="changeBackground()">Double Click Me</button><button type="button" ondblclick="resetBackground()">Double Click Me</button></div>
-                <div class="col-sm-3"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="images/Red Heart.png" alt="Heart" width="32" height="32"></div>
+                <div class="col-sm-3"><button type="button" ondblclick="changeBackground()">Double Click
+                        Me</button><button type="button" ondblclick="resetBackground()">Double Click Me</button></div>
+                <div class="col-sm-3"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"
+                        src="images/Red Heart.png" alt="Heart" width="32" height="32"></div>
                 <div class="col-sm-3">Enter your name: <input type="text" onfocus="inputBackground(this)"></div>
-                <div class="col-sm-3"><form onreset="message()"> Enter your name: <input type="text" size="20"><input type="reset"></form></div>
+                <div class="col-sm-3">
+                    <form onreset="message()"> Enter your name: <input type="text" size="20"><input type="reset"></form>
+                </div>
             </div>
+            <h5><b>Love Calculator</b></h5>
+            <form name=loveform>
+
+                <input value="Bill Clinton" name="name1" type="text" size="20"> +
+                <input value="Monica Lewinsky" name="name2" type="text" size="20"> =
+                <input value="" name="output" type="text" size="6">
+                <br>
+                <br>
+                <input value="Calculate!" name="calculate" type="button" value="calculate" onclick="calc()">
+            </form>
         </div>
     </main>
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
