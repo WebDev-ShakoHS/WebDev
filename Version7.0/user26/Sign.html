@@ -7,7 +7,7 @@
 
 <head>
     <title>Sign In Form</title>
-
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,12 +24,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
 
     <style>
         .bs-example {
-            margin: 20px;
+            margin: 30px;
         }
 
+        body {
+            background-color: grey;
+            background-size: cover;
+        }
     </style>
 
 </head>
@@ -38,27 +43,25 @@
     <div class="bs-example">
         <form action="index.html" method="post">
             <div class="form-group row">
-                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly class="form-control-plaintext" id="inputEmail" value="example@example.com">
+                <header><label for="inputEmail" class="col-sm-2 col-form-label">McMonalds Acount name</label></header>
+                <div class="col-lg-10">
+                    <input type="text" readonly class="form-control-plaintext" id="inputEmail"
+                        value="McMonaldsCustomer@Gmail.com">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                <label for="inputPassword" class="col-sm-2 col-form-label">McMonalds Review</label>
+                <div class="col-lg-10">
+                    <input class="form-control" id="inputPassword" placeholder="Review" required>
                 </div>
             </div>
             <div class="form-group row">
                 <div class="col-sm-10 offset-sm-2">
-                    <div class="checkbox">
-                        <label><input type="checkbox"> Remember me</label>
+                    <div onmousedown="PressTextReview(event);"><u>
+                            <h1>Finish Review</h1>
+                        </u>
                     </div>
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-10 offset-sm-2">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <button type="submit" class="btn btn-primary">Return to McMonalds</button>
                 </div>
             </div>
         </form>

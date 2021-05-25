@@ -76,3 +76,6 @@ table {
 .show {
     display: block;
 }
+.bigM {
+    margin-left:25% ;
+}

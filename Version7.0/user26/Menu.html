@@ -5,7 +5,7 @@
     -->
 
 <head>
-
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <title>McMonalds Menu</title>
     <!-- Meta -->
     <meta charset="utf-8">
@@ -23,6 +23,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
 
 </head>
 <style type="text/css">
@@ -50,16 +51,23 @@
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="Sign.html" class="nav-item nav-link">Sign In</a>
+                    <a href="Sign.html" class="nav-item nav-link">Review</a>
                 </div>
             </div>
         </nav>
     </menu>
     <!---------------------------------- End the nav-bar ------------------------------------->
 
-    <center>
-        <h2>Items</h2>
-    </center>   
+    <header>
+        <center>
+            <h2>Items</h2>
+        </center>
+    </header>
+
+    <aside>
+        <div class="col-sm-4" style="background-color:yellow;"><button type="button" onclick="changeTextsun()">Click if
+                you want to get a free discount</button></div>
+    </aside>
 
     <main>
         <table>
@@ -76,7 +84,8 @@
                 <td>Cheeseburger</td>
                 <td>600</td>
                 <td style="color:Green; background-color:Yellow;">$3.99</td>
-                <td><img src="images/t-mcdonalds-Cheeseburger.jpeg" alt="Picture of a cheeseburger" style="height: 120px;"></td>
+                <td><img src="images/t-mcdonalds-Cheeseburger.jpeg" alt="Picture of a cheeseburger"
+                        style="height: 120px;"></td>
             </tr>
             <tr>
                 <td>Small Mac</td>
@@ -99,12 +108,34 @@
             <tr>
                 <td>Ice Cream Sundae</td>
                 <td>1800</td>
-                <td style="color:Green; background-color: Yellow;">$9.99 </td>
-                <td><img src="images/origin.jpeg"
-                        alt="Picture of a Ice cream Sunday" style="height: 120px;"></td>
+                <td style="color:Green; background-color: Yellow;">
+                    <p id="textChangesun"> $9.99 </p>
+                </td>
+                <td><img src="images/origin.jpeg" alt="Picture of a Ice cream Sunday" style="height: 120px;"></td>
             </tr>
         </table>
     </main>
+    <footer>
+        <div class="col-sm-6 bigM" style="background-color:yellow"><span>
+                <center>McMonalds incorperated</center>
+            </span></div>
+        <table id="footerTable">
+            <tr>
+                <td>
+                    <i class="fa fa-facebook fa-5x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-instagram fa-5x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <H4> McMonalds 1883-2021, All rights reserved</H4>
+                </td>
+            </tr>
+        </table>
+    </footer>
 </body>
 
 </html>
