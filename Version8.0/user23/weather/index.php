@@ -1,7 +1,9 @@
 <?php
-$apiKey = "API KEY"; //You will need to add in the 
+$apiKey = "9a51fb90223ff313eb06958a5f947268"; //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
-$units = "metric";//metric-Celcius  imperial-Farhenheit
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
+
+
 if ($units == 'metric'){//Changes the $temp varaible to match 
     $temp = "C";
 }
@@ -34,7 +36,8 @@ $currentTime = time();
 body {
     font-family: Arial;
     font-size: 0.95em;
-    color: #929292;
+    color: salmon;
+    background-color: green;
 }
 
 .report-container {
@@ -74,7 +77,7 @@ span.min-temperature {
         <h2><?php echo $data->name; ?> Weather Status</h2>
         <div class="time">
             <div><?php echo date("l g:i a", $currentTime); ?></div>
-            <div><?php echo date("jS F, Y",$currentTime); ?></div>
+            <div><?php echo date("F jS, Y",$currentTime); ?></div>
             <div><?php echo ucwords($data->weather[0]->description); ?></div>
         </div>
         <div class="weather-forecast">
