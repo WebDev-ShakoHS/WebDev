@@ -1,0 +1,41 @@
+/*NAVBAR*/
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: gray;
+    overflow: hidden;
+    background-color: #FFFAF5;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: #0d2666;
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+    font-family: 'Georgia', Times, serif;
+}
+
+.menu li a:hover {
+    background-color: #BEB7A4;
+}
+
+.active {
+    background-color: #BEB7A4;
+}
+
+.listA {
+    font-family:'Georgia', Times, serif;
+    list-style-type: none;
+}
