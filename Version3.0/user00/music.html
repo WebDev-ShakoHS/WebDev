@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -41,11 +41,22 @@
             font-size: 12px;
             text-align: center;
         }
+
+        td {
+            color: #FF0000;
+        }
+
+        body {
+            background-image: url("../images/background.jpeg");
+            background-size: cover;
+        }
     </style>
 </head>
 
 <body>
     <!---------------------------------- Begin the nav-bar ------------->
+
+
     <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
@@ -56,10 +67,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
+                    <a href="aboutMe.html" class="nav-item nav-link">About Me</a>
+                    <a href="music.html" class="nav-item nav-link active">Music</a>
+                    <a href="list.html" class="nav-item nav-link">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
@@ -91,14 +102,15 @@
             <tr>
                 <td>1</td>
                 <td>Rush</td>
-                <td>Fly By Night</td>
-                <td></td>
+                <td style="color:#00FF00; background-color:sienna;">Fly By Night</td>
+                <td><img src="images/fly_by_nightAlbumCover.jpg" style="height:120px;"
+                        alt="Rush - Fly By Night Ablum cover with Big Blue Owl"></td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>BNL</td>
                 <td>One Week</td>
-                <td></td>
+                <td><img src="https://i.ytimg.com/vi/FKspq8PiCKg/hqdefault.jpg" style="height: 150px;"></td>
             </tr>
             <tr>
                 <td>3</td>
@@ -110,9 +122,9 @@
                 <td>4</td>
                 <td>Modest Mouse</td>
                 <td>One Chance</td>
-                <td></td>
+                <td><img src="images/modest_mouse.jpeg" style="height:120px;"></td>
             </tr>
-            <tr>
+            <tr style="background-color:salmon; height: 300px;">
                 <td>5</td>
                 <td>New Radicals</td>
                 <td>Someday We'll Know</td>
@@ -128,6 +140,8 @@
         <p>
             Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
         </p>
+
+
     </footer>
     <!---------------------------------- End the footer ------------->
 </body>

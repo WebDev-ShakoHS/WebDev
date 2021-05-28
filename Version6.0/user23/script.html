@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 5.0
+    Name: Joey St. George
+    Date Completed:
+-->
+
+<head>
+    <link rel="icon" type="image/x-icon" href="images/JS6.ico" />
+
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev JavaScript Practice">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
+
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
+
+    <main class="wideMargin" id="content">
+        <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <div class="container-fluid">
+            <div class="row">
+                <!-----------------------------------FUNCTION 1---------------------------------->
+                <div class="col-sm-4" style="background-color:rgb(0, 132, 255);">
+                    <center>
+                        <p id="textChange"> My name is Joey St. George</p>
+                    </center>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(0, 207, 17);">
+                    <center><button type="button" onclick="changeText()">Click Here</button></center>
+                </div>
+
+
+
+
+                <!-----------------------------------FUNCTION 2---------------------------------->
+                <div class="col-sm-4" style="background-color:rgb(0, 132, 255);">
+
+                    <p onmousedown="show_coords(event)">
+                        Click this paragraph to display the x and y coordinates of the mouse pointer.</p>
+
+                    <p id="demo"></p>
+                </div>
+
+
+
+
+                <!-----------------------------------FUNCTION 3---------------------------------->
+                <div class="col-sm-4" style="background-color:rgb(0, 207, 17)">
+                    <form onsubmit="confirmInput()"
+                        action="file:///Users/225838/Applications/mampstack/apache2/htdocs/WebDev/Version6.0/user23/piano.html">
+                        Enter your name: <input id="fname" type="text" size="20">
+                        <input type="submit">
+                    </form>
+                </div>
+
+                <!-----------------------------------FUNCTION 4---------------------------------->
+                <div class="col-sm-4" style="background-color:rgb(0, 132, 255);">
+                    <p>A function is triggered when the user releases a key in the input field. The function transforms
+                        the character to upper case.</p>
+                    Enter your name: <input type="text" id="gname" onkeyup="upperCase()">
+                </div>
+
+
+
+
+
+                <!-----------------------------------FUNCTION 5---------------------------------->
+                <div class="col-sm-4" style="background-color:rgb(0, 207, 17)">
+                    <p onmousedown="clickColor(this,'orange')" onmouseup="clickColor(this,'white')">
+                        Click the text to change the color. A function, with parameters, is triggered when the mouse
+                        button is pressed down, and again, with other parameters, when the mouse button is released.
+                    </p>
+                </div>
+
+
+
+
+                <!-----------------------------------FUNCTION 6---------------------------------->
+                <div class="col-sm-4" style="background-color:rgb(0, 132, 255);">
+
+                    <body onload="pageLoad()">
+                        <h2>This box is used for the pop up when the page loads.</h2>
+                </div>
+
+
+
+
+                <!-----------------------------------FUNCTION 7---------------------------------->
+                <div class="col-sm-4" style="background-color:rgb(0, 207, 17)">
+                    <p>A function is triggered when the user is pressing a key in the input field.</p>
+
+                    <input type="text" onkeydown="keyPress()">
+                </div>
+
+
+
+
+                <!-----------------------------------FUNCTION 8---------------------------------->
+                <div class="col-sm-4" style="background-color:rgb(0, 132, 255);">
+                    <form>
+                        Choose which browser you prefer:
+                        <select id="browsers" onchange="preferedBrowser()">
+                            <option value="How much RAM do you have!?">Chrome</option>
+                            <option value="What year is it again?">Internet Explorer</option>
+                            <option value="Why?">Firefox</option>
+                        </select>
+                    </form>
+                </div>
+
+            </div>
+</body>
+
+<!---------------------------------- Begin the footer ------------->
+<div class="wideMargin" id="footer">
+    <p>
+        Webpage made by <a href="index.html" target="_blank">[Joey St. George]</a>
+    </p>
+</div>
+<!---------------------------------- End the footer ------------->
+</body>
+
+</html>

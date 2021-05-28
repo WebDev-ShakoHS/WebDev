@@ -1,21 +1,149 @@
+@import url(rainbow.css);
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button-largeRadius {
+	border-radius: 8px;
+}
+
+.button-smallRadius {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td {
+	padding: 20px;
+}
+
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
 }
 
-tr {
-	border: 1px solid #ffffff;
+h1, h2, h3, h4, h5, h6 {
 	text-align: center;
-	background-color:#9FB6CD; 
 }
 
-th {
-	text-align: center;
+.lbluebutton {
+	box-shadow: inset 0px 1px 0px 0px #dcecfb;
+	background: linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color: #bddbfa;
+	border-radius: 6px;
+	border: 1px solid #84bbf3;
+	display: inline-block;
+	cursor: pointer;
 	color: #ffffff;
-	background-color: #003366;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #528ecc;
+}
+
+.greenroundbutton {
+	background-color: #44c767;
+	border-radius: 28px;
+	border: 1px solid #18ab29;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 16px 31px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #2f6627;
+}
+
+.redrectanglebutton {
+	box-shadow: inset 0px 1px 0px 0px #f5978e;
+	background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+	background-color: #f24537;
+	border-radius: 6px;
+	border: 1px solid #d02718;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #810e05;
+}
+
+#hireButtons {
+	background-color: coral;
+	border-radius: 25%;
+}
+
+.title {
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+	font-size: 2rem;
+}
+
+.title-small {
+	font-size: .5rem;
+}
+
+#morecontent {
+	background-color: yellow;
+}
+
+#footerTable {
+	background-color: darkorange;
+}
+
+#knowledge>* {
+	border: 3px red solid;
+}
+
+ul li::marker {
+	content: "💀 ";
+}
+
+div>* {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: darkblue;
+	font-weight: 100;
+	background-color: cornflowerblue;
+}
+
+div>li::marker {
+	content: "👑";
+}
+
+#rainbow>td:hover {
+	background-color: black;
+}
+
+li::first-letter {
+	font-weight: 900;
+	font-size: xx-large;
+}
+
+li::after {
+	content: "🦐"
+}
+
+p::first-line {
+	background-color: rgb(238, 92, 121);
+	color: rgb(0, 0, 0);
 }
