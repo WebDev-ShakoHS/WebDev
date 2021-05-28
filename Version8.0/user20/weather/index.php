@@ -1,7 +1,7 @@
 <?php
-$apiKey = "API KEY"; //You will need to add in the 
+$apiKey = "8c35198f22759acfe864a141f0f71c50"; //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
-$units = "metric";//metric-Celcius  imperial-Farhenheit
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
 if ($units == 'metric'){//Changes the $temp varaible to match 
     $temp = "C";
 }
@@ -66,7 +66,7 @@ span.min-temperature {
     line-height: 25px;
 }
 </style>
-
+<p id="sum"></p>
 </head>
 <body>
 
@@ -82,13 +82,33 @@ span.min-temperature {
                 src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
                 class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span
                 class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
+                <?php
+                if($data->main->temp_max>"60")
+                echo("<style> .report-container{background-color:blue}<style>");
+                ?>
+
         </div>
         <div class="time">
             <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
             <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
         </div>
     </div>
-
+    <script>
+    function myFunction(tBox)
+    {
+        var sum=0;
+        var elts = document.getElementsByTagName('input');
+        for (var i=0; i<elts.length; i++)
+        {
+           var elt=elts[i];
+           if ( elt.id && elt.id.indexOf('hous')===0) sum += Number(elt.value);
+        }
+        document.getElementById('sum').innerText = sum;
+    }
+    if(sum != x)
+   document.getElementById('sum').style.backgroundColor = 'red';
+</script>
+<?php echo ($_POST["qty"])*$qtyHous; ?>
 
 </body>
 </html>

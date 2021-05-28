@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 5.0
+    Name:
+    Date Completed:
+-->
+
+<head>
+    <title>JavaScript</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev JavaScript Practice">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
+
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+    
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
+
+    <main class="wideMargin" id="content">
+        <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3" style="background-color:yellow;"><center><p id="textChange"> My name is Hunter</p></center></div>
+                <div class="col-sm-3" style="background-color:orange;"><center><button type="button" onclick="changeText()">Click if you like the Webpage</button></center></div>
+                <div class="col-sm-3" style="background-color:yellow;"><center><button type="button" onclick="showCoords(event)">Click to show current mouse coordinates</button></center></div>
+                <div class="col-sm-3" style="background-color:orange;"><center><p id="coordsShown"> Current Coordinates</p></center></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3" style="background-color:orange;">Press Any Key: <input type="text" onkeydown="keyPressed()"></div>
+                <div class="col-sm-3" style="background-color:yellow;">UPPERCASE: <input type="text" id="fname" onkeyup="upperCase()"></div>
+                <div class="col-sm-3" style="background-color:orange;"><center><h4 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over this text</h4></center></div>
+                <div class="col-sm-3" style="background-color:yellow;"><h4 onmousedown="whichElement(event)">Click here </h4><h6 onmousedown="whichElement(event)">Click Here </h6><h2 onmousedown="whichElement(event)">Click Here</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6" style="background-color: lightseagreen;"><center><p onmousedown="isKeyPressed(event)">Click this paragraph holding shift or not holding shift to trigger a function.</p></center><p id="ShiftKeyresponse"></p></div>
+                <div class="col-sm-6" style="background-color: lightskyblue;"><center><p ondblclick="doubleClicked()">Doubleclick this paragraph to trigger a function.</p></center><p id="DoubleClickresponse"></p></div>
+            </div>
+        </div>
+    </main>
+    <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
+
+
+    <!---------------------------------- Begin the footer ------------->
+    <div class="wideMargin" id="footer">
+        <p>
+            Webpage made by a <a href="index.html" target="_blank">Short, American, Freshman, White, Student, Gamer, Friendly, Code Novice, Nerd, Teacher's Pet, Human Being</a>
+        </p>
+    </div>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>
