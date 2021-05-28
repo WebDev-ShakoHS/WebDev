@@ -70,8 +70,14 @@ span.min-temperature {
 </head>
 <body>
  
-
-    <div class="report-container">
+<?php
+ if ( $temp = "55"; ) {
+}
+else {
+    $temp = "F";
+}
+   
+<div class="report-container">
         <h2><?php echo $data->name; ?> Weather Status</h2>
         <div class="time">
             <div><?php echo date("l g:i a", $currentTime); ?></div>
