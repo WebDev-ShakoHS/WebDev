@@ -1,0 +1,272 @@
+.movietitle {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    width: 200px;
+    height: 100px;
+}
+
+center {
+    font-size: 50px;
+}
+
+.review {
+    position: absolute;
+    top: 170px;
+    width: 500;
+    right: 200px;
+    padding: 5px
+}
+
+.video {
+    position: absolute;
+    top: 752;
+}
+
+.img {
+    width: 400;
+    height: 600;
+    position: absolute;
+    top: 150;
+    left: 150;
+}
+
+.star {
+    width: 20;
+    padding: 2px;
+}
+
+.stars {
+    position: absolute;
+    right: 395;
+    top: 145;
+}
+
+body {
+    font-family: Arial;
+}
+
+/* Style the tab */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.footer {
+    border-radius: 1px;
+    padding: auto;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: -400px
+}
+
+.textmid {
+    text-align: center;
+}
+
+.starcenter {
+    position: absolute;
+    right: 40%;
+}
+
+.badmovieposter {
+    position: relative;
+    top: 20vw;
+    right: 500vw;
+}
+
+.badmoviereview {
+    padding: 20px;
+    border-radius: 1px;
+    margin: 30px;
+    width: 600px;
+    position: relative;
+    right: -30vw;
+    top: 0vw;
+}
+
+.trash {
+    width: 30vw;
+    position: relative;
+    top: -35vw;
+}
+
+#clickme {
+    position: relative;
+    top: -37vw;
+}
+
+.good2review {
+    position: static;
+}
+
+.star2 {
+    width: 20px;
+    position: relative;
+}
+
+.coolbackround {
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: rgb(0, 0, 0);
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        backround-color: green;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+.boxscrollbar {
+    position: absolute;
+    top: 30vw;
+    right: 10%;
+    height: 30vw;
+    width: 30vw;
+    border: 1px solid #ccc;
+    font: 16px/26px Georgia, Garamond, Serif;
+    overflow: auto
+    
+}
+#aboutTH{
+    position: absolute;
+    top: 325px;
+    right: 20%;
+}
+.star3{
+    
+    position: absolute;
+    top: 7vw;
+    left: 20vw;
+}
+.okmoviereview{
+    width: 50vw;
+    position: relative;
+    left: 40vw;
+
+}
+/* ok movie fade in*/
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+.fade-in{
+    width: 100px;
+    position: relative;
+    top: -40vw;
+    right: -3vw;
+}
+header{
+   position: relative; 
+   right: -20vw;
+   width: 20vw;
+   font-size: 3vw;
+}
+.changecolor{
+    position: relative;
+    top: -90vw;
+}
+.openwebsite{
+      position: absolute;
+      top: 4vw;
+      right: 23vw;
+      
+}
