@@ -28,7 +28,7 @@ $currentTime = time();
 <!doctype html>
 <html>
 <head>
-<title>Forecast Weather using OpenWeatherMap with PHP</title>
+<title>Current <?php echo $data->name; ?> Weather</title>
 
 <style>
 body {
@@ -84,8 +84,13 @@ span.min-temperature {
                 class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
                 <?php
                 if($data->main->temp_max>"60")
+                echo("<style> .report-container{background-color:red}<style>");
+                ?>
+                <?php
+                if($data->main->temp_max<"60")
                 echo("<style> .report-container{background-color:blue}<style>");
                 ?>
+                
 
         </div>
         <div class="time">
@@ -95,7 +100,7 @@ span.min-temperature {
     </div>
     <script>
     function myFunction(tBox)
-    {
+        {
         var sum=0;
         var elts = document.getElementsByTagName('input');
         for (var i=0; i<elts.length; i++)
@@ -107,8 +112,29 @@ span.min-temperature {
     }
     if(sum != x)
    document.getElementById('sum').style.backgroundColor = 'red';
-</script>
+</script> 
 <?php echo ($_POST["qty"])*$qtyHous; ?>
+
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+  Name: <input type="text" name="fname">
+  <input type="submit">
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // collect value of input field
+    $name = htmlspecialchars($_REQUEST['fname']);
+    if (empty($name)) {
+        echo "Name is empty";
+    } else {
+        echo $name;
+    }
+}
+?>
+
+
+
 
 </body>
 </html>

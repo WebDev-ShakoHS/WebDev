@@ -24,3 +24,6 @@ function color(color) {
 function myElement(elmnt, clr) {
   elmnt.style.color = clr;
 }
+function Pageload() {
+  alert("Page is loaded");
+}
