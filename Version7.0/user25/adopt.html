@@ -2,6 +2,10 @@
 <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
 
 <head>
+  <script src="JS/script.js">
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "You heard my message!";
+    }</script>
   <!--Footer-->
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -76,7 +80,7 @@
 
       }
 
-      li {
+      ul .navbar {
         float: left;
       }
 
@@ -96,18 +100,44 @@
       h2 {
         text-align: center
       }
+
+      .list {
+        background: #928b8b;
+        color: #000;
+      }
+
+      h3 {
+        background: rgb(155, 16, 16);
+        color: white;
+        display: inline;
+      }
     </style>
   </head>
 
 <body>
 
 
-  <ul>
+
+  <ul class="navbar">
     <li><a href="home.html">Home</a></li>
     <li><a href="aboutus.html">About Us</a></li>
     <li><a href="demons.html">Our Demon Spawn</a></li>
     <li><a class="active" href="adopt.html">Adopting Process</a></li>
   </ul>
+  <h3>
+    Adoption Steps
+  </h3>
+  <div class="list">
+    <ol type="1">
+      <li>Great! I'm honestly suprised you would even check out this page. First you really have to ask yourself if you
+        actually want this?</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+  </div>
+
+
+  <!--------------------->
   <footer class="container-fluid bg-grey py-5">
     <div class="container">
       <div class="row">
@@ -116,12 +146,12 @@
             <div class="col-md-6 ">
               <div class="logo-part">
                 <img src="images/demon.png" class="w-50 logo-footer">
-                <p>Hell</p>
+                <p>Heck</p>
               </div>
             </div>
             <div class="col-md-6 px-4">
               <h6> About Company</h6>
-              <p>We're selling pets, but from hell!</p>
+              <p>We're selling pets, but from heck!</p>
               <a href="#" class="btn-footer"> More Info </a><br>
               <a href="#" class="btn-footer"> Contact Us</a>
             </div>
@@ -171,5 +201,6 @@
       </div>
     </div>
   </footer>
+</body>
 
 </html>
