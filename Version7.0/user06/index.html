@@ -24,13 +24,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
 
     <!--Custom Styling-->
     <style>
-
         .main {
             background-color: #FFFAF5;
-            height: 100vh;
+            height: 100%;
             margin-top: 75px;
         }
 
@@ -59,7 +59,9 @@
         .Image1 {
             margin-top: 60px;
         }
-        
+        .color{
+            background-color: #FFFAF5;
+        }
     </style>
 </head>
 
@@ -72,7 +74,7 @@
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="team.html">Our Team</a></li>
         <li><a href="clients.html">Perjury</a></li>
-        <li><a href="reviews.html">Pyramid Schemes</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
         <li style="float:right"><a href="#">Underground Lawyer Societeé</a></li>
 
     </ul>
@@ -80,8 +82,9 @@
 
     <main class="main">
         <div class="introduction">
-            <div id=content>
-                <img src="images/Lawyer.png" alt="Our Logo" style="width:150px;height:150px;" class="Image1">
+            <div id="content">
+                <img src="images/Lawyer.png" alt="Our Logo" style="width:150px;height:150px;" class="Image1"
+                    onmousedown="changeText()" onmouseup="textRevert()">
 
 
                 <h3 id="Slogan">
@@ -103,7 +106,7 @@
                     We've been around, we've seen it all. We've won them all. Our win-loss ratio is 14:1! That's a lot
                     of cases.
                 </p>
-                <p class="lies">
+                <p class="lies" id="textChange" id="textRevert">
                     That's a lot of satisfied customers.Never before has a firm been so sucesssufl as we.
                     Never before have so many innocent men walked free. You too, can be one of these men.
 
@@ -114,8 +117,54 @@
 
 
             </div>
+            <!-- Footer -->
+            <footer class="page-footer font-small pt-4 color">
 
-        </main>
+                <!-- Footer Text -->
+                <div class="container-fluid text-center text-md-left">
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 mt-md-0 mt-3">
+
+                            <!-- Content -->
+                            <h5 class="text-uppercase font-weight-bold">ULS</h5>
+                            <p>Here for you. Here forever. Underground Lawyer Societeé. </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="clearfix w-100 d-md-none pb-3">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 mb-md-0 mb-3">
+
+                            <!-- Content -->
+                            <h5 class="text-uppercase font-weight-bold">Warning:</h5>
+                            <p>We reserve the right to refuse all cases and will do so if unwinable. Do not contanct us under any circumstances unless through the 
+                                given channels. Any discussion of what happens within our agency will result in prosecution of the highest degree. Do not infringe. 
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </div>
+                <!-- Footer Text -->
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2021 Copyright:
+                    <a href="index.html"> Underground Lawyer Societeé</a>
+                </div>
+                <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+    </main>
 
 
 
