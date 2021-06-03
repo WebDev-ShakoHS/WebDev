@@ -5,14 +5,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 ::selection {
     background: #0059ff;
     color: #fff;
 }
 
 .wrapper {
-    margin:auto;
+    margin: auto;
     height: 100%;
     width: 60%;
     place-items: center;
@@ -204,5 +203,19 @@ form .btn input[type="submit"] {
     border-radius: 5px;
     font-size: 20px;
     font-weight: 500;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #686868;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
 }
