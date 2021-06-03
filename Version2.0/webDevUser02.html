@@ -19,7 +19,64 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
 
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: yellow;
+            margin-top: 2rem;
+            border: 1vw solid black;
+        }
+
+        div#face,
+        div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 20%;
+        }
+
+        .right.eye {
+            right: 20%;
+        }
+
+        .pupil {
+            background: #000;
+            width: 50%;
+            height: 75%;
+            position: relative;
+            left: 25%;
+            transform-origin: bottom;
+        }
+
+        #mouth {
+            position: relative;
+            width: 60%;
+            left: 20%;
+            height: 5%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: #000;
+        }
     </style>
 </head>
 
@@ -37,29 +94,41 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-                <h3>I love tacos</h3>
-                <h4>I don't like shoes</h4>
-                <h5>I like shirts</h5>
-                <h6>I hate broccolli</h6>
+            <h3>I love tacos</h3>
+            <h4>I don't like shoes</h4>
+            <h5>I like shirts</h5>
+            <h6>I hate broccolli</h6>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-            <del>taco</del>
-            <ins>up</ins>
-            <sub>slow</sub>
-            <sup>Jump</sup> 
-            <small>Gigantic</small>
-            <progress value="75" max="100" > </progress >
-            <hr>
-            <abbr title="Minneasota Youth Soccer League" > MYSA </abbr>
+            <section>
+                <del>taco</del>
+                <ins>up</ins>
+                <sub>slow</sub>
+                <sup>Jump</sup>
+                <small>Gigantic</small>
+                <progress value="75" max="100"> </progress>
+                <hr>
+                <abbr title="Minneasota Youth Soccer League"> MYSA </abbr>
+            </section>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
+            <h2>Get big</h2>
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
         </div>
     </main>
 
