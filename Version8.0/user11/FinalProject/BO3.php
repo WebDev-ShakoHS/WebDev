@@ -1,3 +1,13 @@
+<?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header("location: login.php");
+    exit;
+}
+?>
 <html lang="en">
 <!--Version 7.0 
 	Name:
@@ -39,24 +49,28 @@
 </head>
 
 <body ondblclick="whichElement(event)">
-    <menu>
+<menu>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <a href="#" class="nav-item nav-link disabled"><img src="images/favicon.ico" style="height: 40px;"></img></a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link ">Home</a>
-                    <a href="R6S.html" class="nav-item nav-link ">R6S</a>
-                    <a href="BO3.html" class="nav-item nav-link active">BO3</a>
-                    <a href="GTAV.html" class="nav-item nav-link">GTAV</a>
+                    <a href="index.php" class="nav-item nav-link">Home</a>
+                    <a href="R6S.php" class="nav-item nav-link ">R6S</a>
+                    <a href="BO3.php" class="nav-item nav-link active">BO3</a>
+                    <a href="GTAV.php" class="nav-item nav-link">GTAV</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link disabled"><img src="images/favicon.ico"
-                            style="height: 40px;"></img></a>
+                    <a href="reset_password.php" class="nav-item nav-link active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
+                    <?php if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+                        echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+                    } else {
+                        echo "<a href='login.php' class='nav-item nav-link'> Login </a>";
+                    } ?>
                 </div>
             </div>
         </nav>
