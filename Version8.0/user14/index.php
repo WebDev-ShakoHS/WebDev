@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="SHS WebDev Version 3.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -165,89 +168,131 @@
     </nav>
     <!-- End of Navbar -->
 
+    <!DOCTYPE html>
+    <html>
 
-    <header>
-        <div>
-            <h1>Salih's World of Knowledge</h1>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
 
-            <p>~Presented to you by Salih~</p>
-    </header>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
 
-    <main>
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <img src="images/Licoln4.jpeg" class="mx-auto d-block">
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco.</p>
-        <br>
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <img src="images/lincoln5.jpeg" class="img-thumbnail" alt="Cinque Terre">
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco.</p>
+            /* Float four columns side by side */
+            .column {
+                float: left;
+                width: 25%;
+                padding: 0 10px;
+            }
+
+            /* Remove extra left and right margins, due to padding */
+            .row {
+                margin: 0 -5px;
+            }w
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Responsive columns */
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+
+            /* Style the counter cards */
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                padding: 16px;
+                text-align: center;
+                background-color:greenyellow;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <center>
+
+
+            <h2>Salih's World of Knowledge</h2>
+
+        </center>
+
 
         <div class="row">
-            <div class="col-sm-6" style="background-color:rgb(52, 73, 90);">
-                <Center>
-                    <h2> Video </h2>
-                </Center>
-                <center>
-                    <h3>Biography VIDEO</h3>
-                </center>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/L80_q2tPveo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="column">
+                <div class="card">
+                    <h3>Abraham Lincoln's Biography</h3>
+                    <a href="https://youtu.be/L80_q2tPveo">Biography of Abraham Licncoln</a><BR>
+                </div>
             </div>
-            <div class="col-sm-6" style="background-color:rgb(95, 86, 105);">
-                <center>
-                    <form onsubmit="confirmInput()" action="https://shakopee.instructure.com/courses/131334" style="background-color:rgb(95, 86, 105);">
-                        Enter your name: <input id="fname" type="text" size="20" style="background-color:yellow;">
-                        <input type="submit" style="background-color:rgb(223, 168, 220);">
-                        <center>
-                            <div id="colorMsg" style="font-size:18px;width:150px;height:100px;padding:5px;">Choose a background
-                                color...
-                            </div>
-                            <select id="colorPicker" onchange="JavaScript:changeColor()">
-                                <option value="transparent">None</option>
-                                <option value="yellow">Yellow</option>
-                                <option value="salmon">Salmon</option>
-                                <option value="lightblue">Light Blue</option>
-                                <option value="limegreen">Lime Green</option>
-                            </select>
+
+            <div class="column">
+                <div class="card">
+                    <h3>US History</h3>
+                    <a href="/history/native_americans.php">Native Americans</a><BR>
+                    <a href="/history/colonial_america/">Colonial America</a><br>
+                    <a href="/history/american_revolution.php">American Revolution</a><BR>
+                    <a href="/history/us_1800s/industrial_revolution.php">Industrial Revolution</a><BR>
+                    <a href="/history/civil_war.php">American Civil War</a><BR>
+                    <a href="/history/westward_expansion/">Westward Expansion</a><BR>
+                    <a href="/history/us_1900s/great_depression.php">The Great Depression</a><BR>
+                    <a href="/history/civil_rights/">Civil Rights Movement</a><BR>
+                    <a href="/history/cold_war/summary.php">Cold War</a><BR>
+                    <a href="/history/us_1800s/">Pre-1900s</a><BR>
+                    <a href="/history/us_1900s/">1900 to Present</a><BR>
+                    <a href="/history/us_government.php">US Government</a><BR>
+                    <a href="/geography/us_states/">US State History</a>
+                </div>
             </div>
-            </center>
-            </form>
 
+            <div class="column">
+                <div class="card">
+                    <h3>World Historry</h3>
+                    <a href="/history/mesopotamia/ancient_mesopotamia.php">Ancient Mesopotamia</a><BR>
+                    <a href="/history/china/ancient_china.php">Ancient China</a><BR>
+                    <a href="/history/ancient_egypt.php">Ancient Egypt</a><BR>
+                    <a href="/history/ancient_greece.php">Ancient Greece</a><BR>
+                    <a href="/history/ancient_rome.php">Ancient Rome</a><BR>
+                    <a href="/history/africa/">Ancient Africa</a><BR>
+                    <a href="/history/middle_ages_timeline.php">Middle Ages</a><BR>
+                    <a href="/history/islam/">Islamic Empire</a><BR>
+                    <a href="/history/renaissance.php">Renaissance</a><BR>
+                    <a href="/history/aztec_maya_inca.php">Aztec, Maya, Inca</a><BR>
+                    <a href="/history/french_revolution/">French Revolution</a><BR>
+                    <a href="/history/world_war_i/">World War 1</a><BR>
+                    <a href="/history/world_war_ii/">World War 2</a><BR>
+                    <a href="/history/art/">Art History</a>
+                </div>
+            </div>
 
+            <div class="column">
+                <div class="card">
+                    <h3>Science</h3>
+                    <a href="/science/biology/">Biology</a><BR>
+                    <a href="/science/chemistry/">Chemistry</a><BR>
+                    <a href="/science/earth_science/">Earth Science</a><BR>
+                    <a href="/science/environment/">Environment</a><BR>
+                    <a href="/science/physics/">Physics</a><BR>
+                    <a href="/animals.php">Animals</a><BR>
+                    <a href="/money/">Money and Economics</a><BR>
+                    <a href="/kidsmath/">Math</a>
+                </div>
+            </div>
         </div>
-    </main>
-    <footer>
-        <h2>Footer</h2>
-        <div class="row">
-            <aside class="col" style="background-color:rgb(66, 139, 173);">
-                <center><button onclick="myFunction()">Click if you liked my Biography</button></center>
-            </aside>
-            <aside class="col" style="background-color:rgb(207, 218, 112);">
-                <h3>sources</h3>
-                <a href="https://www.w3schools.com/default.asp" class="nav-item nav-link active" tabindex="-1">W3Schools</a>
-                <a href="https://www.youtube.com/channel/UCiCPv2sV_D3FqMRzzUFA2Fg" class="nav-item nav-link active" tabindex="-1">Biography Channel</a>
-            </aside>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="footer" id="footer" style="background-color:rgb(102, 212, 69);">
-            <p>
-                <center>Webpage made by <a href="index.html" target="_blank">Salih</a></center>
-            </p>
-
-        </div>
 
 
+    </body>
 
-    </footer>
-</body>
-
-</html>
+    </html>
