@@ -56,18 +56,21 @@
 </head>
 
 <menu>
-    <nav class="navbar navbar-expand-md navbar-dark navbar2">
-        <a href="index.html" class="navbar-brand"><img src="images/WebLogo_100x100.png"></a>
+<nav class="navbar navbar-expand-md navbar-dark navbar2">
+        <a href="index.php" class="navbar-brand"><img src="images/WebLogo_100x100.png"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ml-auto">
-                <a href="reviews.HTML" class="nav-item nav-link">Reviews</a>
-                <a href="news.HTML" class="nav-item nav-link">News</a>
-                <a href="registration.HTML" class="nav-item nav-link">Register</a>
+                <a href="reviews.php" class="nav-item nav-link">Reviews</a>
+                <a href="news.php" class="nav-item nav-link">News</a>
+                <a href="registration.php" class="nav-item nav-link">Register</a>
 
             </div>
+            <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+                } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
         </div>
     </nav>
     <!---------------------------------- End the nav-bar ------------------------------------->
@@ -161,7 +164,7 @@
     <!-- Call to action -->
     <ul class="list-unstyled list-inline text-center py-2">
         <li class="list-inline-item">
-            <a href="registration.HTML">
+            <a href="registration.php">
                 <h5 class="mb-1" style="color: rgb(37, 78, 105);"><u>Register for free</u></h5>
             </a>
         </li>
@@ -194,6 +197,7 @@
         </tr>
     </table>
 
-</footer>
+
+    <!-- Social buttons -->
 
 </html>

@@ -47,54 +47,75 @@
             padding: 10px;
         }
 
-        header {
-
-            border-bottom: solid 3px rgb(146, 146, 146);
-        }
+        
     </style>
 
 </head>
 
 <menu>
-    <nav class="navbar navbar-expand-md navbar-dark navbar2">
-        <a href="index.html" class="navbar-brand"><img src="images/WebLogo_100x100.png"></a>
+<nav class="navbar navbar-expand-md navbar-dark navbar2">
+        <a href="index.php" class="navbar-brand"><img src="images/WebLogo_100x100.png"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ml-auto">
-                <a href="reviews.HTML" class="nav-item nav-link">Reviews</a>
-                <a href="news.HTML" class="nav-item nav-link">News</a>
-                <a href="registration.HTML" class="nav-item nav-link">Register</a>
+                <a href="reviews.php" class="nav-item nav-link">Reviews</a>
+                <a href="news.php" class="nav-item nav-link">News</a>
+                <a href="registration.php" class="nav-item nav-link">Register</a>
 
             </div>
+            <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+                } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
         </div>
     </nav>
     <!---------------------------------- End the nav-bar ------------------------------------->
 </menu>
 
 <header>
-   <h1><center>Reviews</center></h1>
+    <h1>
+        <center>
+            <div class="nav-item dropdown">
+                <a class="dropdown nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Select The Game Here
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <form onsubmit="alfachange(); return false"><button type="submit" class="dropdown-item">War Thunder
+                            News</button>
+                    </form>
+                    <form onsubmit="betachange(); return false"><button type="submit" class="dropdown-item">Rust
+                            News</button>
+                    </form>
+                    <form onsubmit="charliechange(); return false"><button type="submit" class="dropdown-item">Rainbow6
+                            Siege News</button>
+                    </form>
+                    <form onsubmit="deltachange(); return false"><button type="submit" class="dropdown-item">Destiny 2
+                            News</button>
+                    </form>
+
+                </div>
+            </div>
+        </center>
+    </h1>
+
 </header>
 
 
 <body>
 
-<h1><center>War Thunder</center></h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam pellentesque nec nam aliquam sem. Quisque sagittis purus sit amet volutpat. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras.</p>
-
-<h1><center>Rust</center></h1>
-<p>Est placerat in egestas erat imperdiet sed euismod nisi porta. Vulputate enim nulla aliquet porttitor lacus luctus. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Massa placerat duis ultricies lacus. Urna neque viverra justo nec ultrices dui sapien.</p>
-
-<h1><center>Rainbow Six Siege</center></h1>
-<p>Commodo ullamcorper a lacus vestibulum sed arcu non. Varius duis at consectetur lorem. Semper risus in hendrerit gravida. Libero enim sed faucibus turpis in. Nisl nunc mi ipsum faucibus vitae aliquet. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Viverra orci sagittis eu volutpat odio.</p>
-
-<h1><center>Destiny 2</center></h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam pellentesque nec nam aliquam sem. Quisque sagittis purus sit amet volutpat. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Est placerat in egestas erat imperdiet sed euismod nisi porta.</p>
 
 
-
-
+    <div id="textChange">
+        <h3></h3>
+        <p><i></i></p>
+        <h3></h3>
+        <p><i></i></p>
+        <h3></h3>
+        <p><i></i></p>
+    </div>
 
 </body>
 <!-- Footer -->
@@ -161,7 +182,7 @@
     <!-- Call to action -->
     <ul class="list-unstyled list-inline text-center py-2">
         <li class="list-inline-item">
-            <a href="registration.HTML">
+            <a href="registration.php">
                 <h5 class="mb-1" style="color: rgb(37, 78, 105);"><u>Register for free</u></h5>
             </a>
         </li>
@@ -194,6 +215,7 @@
         </tr>
     </table>
 
-</footer>
+
+    <!-- Social buttons -->
 
 </html>
