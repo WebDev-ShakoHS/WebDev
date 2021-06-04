@@ -1,3 +1,4 @@
+
 body {
     margin: 0%;
     background-color: rgb(56, 56, 56);
@@ -11,7 +12,7 @@ menu {
 
 .navbar2 {
     background-color: rgb(56, 56, 56);
-    border-bottom: 3px solid rgb(155, 155, 155);
+    border-bottom: 3px solid rgb(146, 146, 146);
     position: center;
 }
 
@@ -19,15 +20,43 @@ h1 {
     color: rgb(62, 107, 137);
 }
 
+h2 {
+    color: rgb(146, 146, 146);
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.342);
     transition: 0.3s;
     width: 10%;
     margin: 0%;
+    margin-bottom: 50px;
     display: inline-block;
 }
 
-
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.829);
+}
+
+footer table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer td {
+    width: 60px;
+    padding: 10px;
+    border: double 3px rgba(100, 100, 100, 0.603);
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 3px solid black;
+    background-color: rgb(146, 146, 146);
+    color: rgb(170, 170, 170);
+   
+}
+
+footer div ul li a {
+    color: rgb(37, 78, 105);
+    text-decoration: underline;
 }
