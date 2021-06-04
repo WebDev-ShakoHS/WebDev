@@ -30,13 +30,16 @@ $currentTime = time();
 <html>
 
 <head>
+
+    <link rel="icon" type="image/x-icon" href="../images/JS6.ico" />
+
     <title>Weather in <?php echo $data->name; ?> </title>
 
     <style>
         body {
             font-family: Arial;
             font-size: 0.95em;
-            color: grey;
+            color: black;
             background-color: white;
         }
 
@@ -76,7 +79,7 @@ $currentTime = time();
 
     <?php
     if ($data->main->temp_max > "55") {
-        echo ("<style> .report-container{background-color: blue;} </style>");
+        echo ("<style> .report-container{background-color: grey;} </style>");
     }
     ?>
     <div class="report-container">

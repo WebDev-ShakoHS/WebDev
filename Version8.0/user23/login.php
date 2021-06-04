@@ -92,13 +92,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/x-icon" href="../images/JS6.ico" />
+    <link rel="icon" type="image/x-icon" href="images/JS6.ico" />
 
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="../CSS/Login.css">
+    <link rel="stylesheet" href="CSS/Login.css">
 
 </head>
 
@@ -114,15 +114,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="../index.html" class="nav-item nav-link">Places To Visit</a>
-                    <a href="../South-Island.html" class="nav-item nav-link" tabindex="-1">South Island</a>
-                    <a href="../Paris.html" class="nav-item nav-link" tabindex="-1">Paris</a>
-                    <a href="../Bora-Bora.html" class="nav-item nav-link" tabindex="-1">Bora Bora</a>
-                    <a href="../Maui.html" class="nav-item nav-link" tabindex="-1">Maui</a>
+                    <a href="index.html" class="nav-item nav-link">Places To Visit</a>
+                    <a href="South-Island.html" class="nav-item nav-link" tabindex="-1">South Island</a>
+                    <a href="Paris.html" class="nav-item nav-link" tabindex="-1">Paris</a>
+                    <a href="Bora-Bora.html" class="nav-item nav-link" tabindex="-1">Bora Bora</a>
+                    <a href="Maui.html" class="nav-item nav-link" tabindex="-1">Maui</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="Login/login.php" class="nav-item nav-link active">Login</a>
+                    <a href="login.php" class="nav-item nav-link active">Login</a>
                 </div>
             </div>
         </nav>

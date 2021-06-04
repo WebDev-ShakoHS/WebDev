@@ -51,7 +51,7 @@
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="Login/login.php" class="nav-item nav-link">Login</a>
+                    <a href="login.php" class="nav-item nav-link">Login</a>
                 </div>
             </div>
         </nav>
@@ -158,10 +158,12 @@
             <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
                 <!-- Content -->
-                <h5 class="font-weight-bold text-uppercase mb-4">Thanks!</h5>
-                <p>Thank you for visiting our travel website.
-                    Happy traveling!
-                </p>
+                <a class="weatherwidget-io" href="https://forecast7.com/en/n45d16170d00/gimmerburn/?unit=us"
+                    data-label_1="South Island" data-label_2="Weather" data-days="5" data-theme="gray">South Island
+                    Weather</a>
+                <script>
+                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                </script>
 
 
             </div>

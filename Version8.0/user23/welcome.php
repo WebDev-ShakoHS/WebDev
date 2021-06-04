@@ -15,7 +15,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">\
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <style>
         body {
@@ -26,10 +26,15 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 </head>
 
 <body>
-    <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
+    <br>
+    <h1>
+        <center>You are now logged in!<center>
+    </h1>
+
+    <h2 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to my travel site.</h2>
     <p>
         <a href="logout.php" class="btn btn-secondary ml-3">Sign Out of Your Account</a>
-        <a href="../index.html" class="btn btn-success">Return to Website</a>
+        <a href="index.html" class="btn btn-success">Return to Website</a>
 
     </p>
 </body>
