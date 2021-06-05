@@ -82,12 +82,15 @@ if ($resp->ack == "Success") {
     $link  = $item->viewItemURL;
     $title = $item->title;
 /////////////////////////EDIT THIS LINE/////////////////////////////////////////////////////
-    // For each SearchResultItem node, build a link and append it to $results
-   // if(condition 1) {
-      //  $results .= <div class='col'"<<img src=\"$pic\"></td><td><a href=\"$link\">$title</a></td></tr>";
-   // }
-    //if(condition 2 || 3) {
-     //   $results .= <div class='col'"<<img src=\"$pic\"></td><td><a href=\"$link\">$title</a></td></tr>";
+if($i % 4 === 1){
+$results .= "$price<div class='row'><div class='col'><span>$price</span><img src =\"pic\"><a href =\"$link\">$title</a></div>";
+}
+if($i % 4===2 || $i % 4 === 3){
+  $results .= "<div class='col'><img src=\"$pic\"<a href=\"$link\">$title</a></div>";
+}
+if($i % 4 === 0){
+  $results .= "<div class ='col'><img src=\"$pic\"><a href=\"$link\">$title</a></div></div>";
+}
         
 ////////////////////////EDIT THIS LINE//////////////////////////////////////////////////////      
   }
@@ -102,7 +105,7 @@ else {
 <html>
 
 <head>
-    <title>eBay Search Results for <?php echo $query; ?></title>
+    <title>eBay Search Results for YEEZY'S<?php echo $query; ?></title>
     <style type="text/css">
         body {
             font-family: arial, sans-serif;
@@ -131,8 +134,39 @@ else {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    
 <body>
+<a href="frankocean.html">Frank Ocean</a>
+            <a href="Tyler.html" class="tablinks" onclick="openCity(event, 'Tyler')">Tyler</a>
+            <a href="Jcole.html" class="tablinks" onclick="openCity(event, 'J cole')">J cole</a>
+            <a href="kanye.html" class="tablinks" onclick="openCity(event, 'Kanye')">Kanye</a>
+            <a href="index.php" class="tablinks" onclick="openCity(event, 'Index')">Index</a>
+            <a href="eBAY.API.PHP" class="tablinks" onclick="openCity(event, 'Yeezys')">Yeezy</a>
+            <div id="Frank Ocean" class="tabcontent">
+         
+         <span onclick="this.parentElement.style.display='none'"></span>
+       </div>
+       
+       <div id="Tyler" class="tabcontent">
+         
+         <span onclick="this.parentElement.style.display='none'"></span>
+       </div>
+       
+       
+       <div id="J cole" class="tabcontent">
+         
+       `  <span onclick="this.parentElement.style.display='none'"></span>
+       
+       <div id="Kanye" class="tabcontent">
+           
+           <span onclick="this.parentElement.style.display='none'"></span>
+         </div>
+         <div id="INDEX" class="tabcontent">
+   
+           ` <span onclick="this.parentElement.style.display='none'"></span>
+       </div> 
+       <div id="Yeezy" class="tabcontent">
 
     <h1>eBay Search Results for <?php echo $query; ?></h1>
+    <h2>Kanye's Shoes <?php echo $query; ?></h2>
     <div class="container-fluid">
         <div class="row">
         
