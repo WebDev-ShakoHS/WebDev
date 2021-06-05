@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,7 +35,7 @@
 
         /* Style the header */
         header {
-            padding: 80px;
+            padding: 60px;
             text-align: center;
             background: #daa778;
             color: rgb(148, 82, 82);
@@ -51,7 +49,7 @@
 
 
         .navbar {
-            overflow: hidden;
+            overflow: clip;
             background-color: rgb(61, 158, 187);
 
         }
@@ -67,7 +65,7 @@
 
         .side {
             flex: 30%;
-            background-color: #41b68f;
+            background-color: cornflowerblue;
             padding: 20px;
         }
 
@@ -119,180 +117,238 @@
         h3 {
             column-span: all;
         }
+
+        .navbar {
+            overflow: visible;
+            background-color: rgb(42, 53, 52);
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color:lightsalmon;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: center;
+            overflow: clip;
+
+
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color:skyblue;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+
+            background-color: #dba864;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(238, 150, 150);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
 </head>
 
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-
-        <!-- Container wrapper -->
-        <div class="container">
-            <!-- Navbar brand -->
-            <a class="navbar-brand me-2" href="index.html" aria-posinset="text-align: left;">
-                <i class="fa fa-google-wallet fa-3x aria-hidden=" style="color: darkgoldenrod;" true></i>
-            </a>
-
-            <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse" id="navbarButtonsExample">
-                <!-- Left links -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutme.HTML">About creator</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Users/309761/Applications/mampstack/apache2/htdocs/WebDev/Version2.0/webDevUser14.html">My
-                            first webpage</a>
-                    </li>
-                    </li>
-                    <a href="games.html" style="color:rgb(78, 144, 206)"><i class="fa fa-gamepad fa-3x" aria-hidden="true" class="animated heartBeat" alt="Transparent MDB Logo" id="animated-img1"></i></a>
-
-                    </li>
-                </ul>
-                <!-- Left links -->
-
-                <div class="ml-auto d-flex align-items-center">
-                    <a href="index.php" type="button" class="btn btn-link px-3 me-2">
-                        Login
-                    </a>
-                    <a href="form.php" type="button" class="btn btn-primary me-3" style="text-decoration: steelblue;">
-                        Sign up for free
-                    </a>
-                    <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i class="fa fa-github"></i></a>
-                </div>
+    <div class="navbar">
+        <a href="biography.html">Home</a>
+        <a href="login.php" class="nav-item nav-link active">Login</a>
+            <div class="dropdown">
+                <button class="dropbtn">page bar
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="http://localhost:8080/WebDev/Version8.0/user14/index.php">Page 2</a>
+                    <a href="http://localhost:8080/WebDev/Version8.0/user14/presLincoln.php">Page 3</a>
+                    <a href="http://localhost:8080/WebDev/Version8.0/user14/Lifeafterpres.php">Page 4</a>
+                </div>`
             </div>
-            <!-- Collapsible wrapper -->
+    </div>
 
-            <!-- Container wrapper -->
-    </nav>
-    <!-- End of Navbar -->
+</body>
+<!------end of nav bar------->
 
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
 
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            * {
-                box-sizing: border-box;
-            }
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-            }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-            /* Float four columns side by side */
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 0 -5px;
+        }
+
+        w
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: inline-start;
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
             .column {
-                float: left;
-                width: 25%;
-                padding: 0 10px;
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
             }
+        }
 
-            /* Remove extra left and right margins, due to padding */
-            .row {
-                margin: 0 -5px;
-            }w
+        /* Style the counter cards */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: khaki;
+        }
+    </style>
+</head>
 
-            /* Clear floats after the columns */
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
+<body style=background-color:darkslategray;>
 
-            /* Responsive columns */
-            @media screen and (max-width: 600px) {
-                .column {
-                    width: 100%;
-                    display: block;
-                    margin-bottom: 20px;
-                }
-            }
-
-            /* Style the counter cards */
-            .card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                padding: 16px;
-                text-align: center;
-                background-color:greenyellow;
-            }
-        </style>
-    </head>
-
-    <body>
-
-        <center>
-
+    <center>
+        <div style=background-color:lightsalmon;>
 
             <h2>Salih's World of Knowledge</h2>
 
-        </center>
+    </center>
 
 
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <h3>Abraham Lincoln's Biography</h3>
-                    <a href="https://youtu.be/L80_q2tPveo">Biography of Abraham Licncoln</a><BR>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="card">
-                    <h3>US History</h3>
-                    <a href="/history/native_americans.php">Native Americans</a><BR>
-                    <a href="/history/colonial_america/">Colonial America</a><br>
-                    <a href="/history/american_revolution.php">American Revolution</a><BR>
-                    <a href="/history/us_1800s/industrial_revolution.php">Industrial Revolution</a><BR>
-                    <a href="/history/civil_war.php">American Civil War</a><BR>
-                    <a href="/history/westward_expansion/">Westward Expansion</a><BR>
-                    <a href="/history/us_1900s/great_depression.php">The Great Depression</a><BR>
-                    <a href="/history/civil_rights/">Civil Rights Movement</a><BR>
-                    <a href="/history/cold_war/summary.php">Cold War</a><BR>
-                    <a href="/history/us_1800s/">Pre-1900s</a><BR>
-                    <a href="/history/us_1900s/">1900 to Present</a><BR>
-                    <a href="/history/us_government.php">US Government</a><BR>
-                    <a href="/geography/us_states/">US State History</a>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="card">
-                    <h3>World Historry</h3>
-                    <a href="/history/mesopotamia/ancient_mesopotamia.php">Ancient Mesopotamia</a><BR>
-                    <a href="/history/china/ancient_china.php">Ancient China</a><BR>
-                    <a href="/history/ancient_egypt.php">Ancient Egypt</a><BR>
-                    <a href="/history/ancient_greece.php">Ancient Greece</a><BR>
-                    <a href="/history/ancient_rome.php">Ancient Rome</a><BR>
-                    <a href="/history/africa/">Ancient Africa</a><BR>
-                    <a href="/history/middle_ages_timeline.php">Middle Ages</a><BR>
-                    <a href="/history/islam/">Islamic Empire</a><BR>
-                    <a href="/history/renaissance.php">Renaissance</a><BR>
-                    <a href="/history/aztec_maya_inca.php">Aztec, Maya, Inca</a><BR>
-                    <a href="/history/french_revolution/">French Revolution</a><BR>
-                    <a href="/history/world_war_i/">World War 1</a><BR>
-                    <a href="/history/world_war_ii/">World War 2</a><BR>
-                    <a href="/history/art/">Art History</a>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="card">
-                    <h3>Science</h3>
-                    <a href="/science/biology/">Biology</a><BR>
-                    <a href="/science/chemistry/">Chemistry</a><BR>
-                    <a href="/science/earth_science/">Earth Science</a><BR>
-                    <a href="/science/environment/">Environment</a><BR>
-                    <a href="/science/physics/">Physics</a><BR>
-                    <a href="/animals.php">Animals</a><BR>
-                    <a href="/money/">Money and Economics</a><BR>
-                    <a href="/kidsmath/">Math</a>
-                </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h3>Biography</h3>
+                <a href="https://youtu.be/L80_q2tPveo">Abraham Licncoln</a><BR>
+                <a href="/history/art/">Artists</a><br>
+                <a href="/history/civil_rights/">Civil Rights Leaders</a><br>
+                <a href="/biography/entrepreneurs/">Entrepreneurs</a><br>
+                <a href="/biography/explorers/">Explorers</a><br>
+                <a href="/biography/scientists/scientists_and_inventors.php">Inventors and Scientists</a><br>
+                <a href="/biography/uspresidents/">US Presidents</a><br>
+                <a href="/biography/world_leaders/">World Leaders</a><br>
             </div>
         </div>
 
+        <div class="column">
+            <div class="card">
+                <h3>US History</h3>
+                <a href="/history/native_americans.php">Native Americans</a><BR>
+                <a href="/history/colonial_america/">Colonial America</a><br>
+                <a href="/history/american_revolution.php">American Revolution</a><BR>
+                <a href="/history/us_1800s/industrial_revolution.php">Industrial Revolution</a><BR>
+                <a href="/history/civil_war.php">American Civil War</a><BR>
+                <a href="/history/westward_expansion/">Westward Expansion</a><BR>
+                <a href="/history/us_1900s/great_depression.php">The Great Depression</a><BR>
+                <a href="/history/civil_rights/">Civil Rights Movement</a><BR>
+              
+            </div>
+        </div>
 
-    </body>
+        <div class="column">
+            <div class="card">
+                <h3>World Historry</h3>
+                <a href="/history/mesopotamia/ancient_mesopotamia.php">Ancient Mesopotamia</a><BR>
+                <a href="/history/china/ancient_china.php">Ancient China</a><BR>
+                <a href="/history/ancient_egypt.php">Ancient Egypt</a><BR>
+                <a href="/history/ancient_greece.php">Ancient Greece</a><BR>
+                <a href="/history/ancient_rome.php">Ancient Rome</a><BR>
+                <a href="/history/africa/">Ancient Africa</a><BR>
+                <a href="/history/middle_ages_timeline.php">Middle Ages</a><BR>
+                <a href="/history/islam/">Islamic Empire</a><BR>
+               
+            </div>
+        </div>
 
-    </html>
+        <div class="column">
+            <div class="card">
+                <h3>Science</h3>
+                <a href="/science/biology/">Biology</a><BR>
+                <a href="/science/chemistry/">Chemistry</a><BR>
+                <a href="/science/earth_science/">Earth Science</a><BR>
+                <a href="/science/environment/">Environment</a><BR>
+                <a href="/science/physics/">Physics</a><BR>
+                <a href="/animals.php">Animals</a><BR>
+                <a href="/money/">Money and Economics</a><BR>
+                <a href="/kidsmath/">Math</a>
+                <a href="https://edu.gcfglobal.org/en/computerbasics/what-is-a-computer/1/">computer</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+        <div class="row">
+            <aside class="col" style="background-color:rgb(66, 139, 173);">
+                <center><button onclick="myFunction()">Click if you liked my Biography</button></center>
+            </aside>
+            <aside class="col" style="background-color:rgb(207, 218, 112);">
+                <h3>sources</h3>
+                <a href="https://www.w3schools.com/default.asp" class="nav-item nav-link active" tabindex="-1">W3Schools</a>
+                <a href="https://www.youtube.com/channel/UCiCPv2sV_D3FqMRzzUFA2Fg" class="nav-item nav-link active" tabindex="-1">Biography Channel</a>
+            </aside>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer" id="footer" style="background-color:rgb(102, 212, 69);">
+        <p>
+            <center>Webpage made by <a href="index.html" target="_blank">Salih</a></center>
+        </p>
+
+    </div>
+
+
+</body>
+
+</html>
