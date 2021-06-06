@@ -367,7 +367,7 @@
         }
 
         .dropdown:hover .dropdown-content {
-            display: block;
+            display: inline-table;
         }
         .container {
   position: relative;
