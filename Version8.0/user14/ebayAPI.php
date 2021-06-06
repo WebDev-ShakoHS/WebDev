@@ -114,15 +114,18 @@ else {
     * {box-sizing: border-box;}
 
 .container {
-  position: relative;
+  position: sticky;
   width: 50%;
   max-width: 300px;
+  display: inline-block;
+    line-height: 20px;
 }
 
 .image {
   display: inline-flex;
   width: 100%;
   height: auto;
+display: inline;
 }
 
 .overlay {
@@ -137,7 +140,7 @@ else {
   color: white;
   font-size: 20px;
   padding: 20px;
-  text-align: center;
+  text-align: right;
 }
   </style>
 </head>
@@ -149,7 +152,7 @@ else {
   </center>
 
 
-  <div class="container">
+  <a<div class="container"></a>
     <?php echo $results; ?>
   </div>
  
