@@ -369,6 +369,45 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+        .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
   </style>
 </head>
 
@@ -398,7 +437,12 @@
   <section>
     <nav>
       <h5>Life as President</h5>
+      <div class="container">
       <img src="images/abraham Licoln.jpeg" style="height:200px;" class="animated heartBeat" alt="Transparent MDB Logo" id="animated-img1">
+      <div class="overlay">
+    <div class="text">President Lincoln</div>
+  </div>
+</div>
 
     </nav>
 

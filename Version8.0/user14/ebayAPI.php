@@ -6,44 +6,47 @@ $endpoint = 'http://svcs.ebay.com/services/search/FindingService/v1';  // URL to
 $version = '1.0.0';  // API version supported by your application
 $appid = 'RobertMa-Shakopee-PRD-169ec6b8e-bb30ba02';  // Replace with your own AppID
 $globalid = 'EBAY-US';  // Global ID of the eBay site you want to search (e.g., EBAY-DE)
-$query = ' games';  // You may want to supply your own query
+$query = 'abraham lincoln';  // You may want to supply your own query
 $safequery = urlencode($query);  // Make the query URL-friendly
 $i = '0';  // Initialize the item filter index to 0
 // Create a PHP array of the item filters you want to use in your request
 $filterarray =
   array(
     array(
-    'name' => 'MaxPrice',
-    'value' => '25',
-    'paramName' => 'Currency',
-    'paramValue' => 'USD'),
+      'name' => 'MaxPrice',
+      'value' => '25',
+      'paramName' => 'Currency',
+      'paramValue' => 'USD'
+    ),
     array(
-    'name' => '',
-    'value' => 'true',
-    'paramName' => '',
-    'paramValue' => ''),
+      'name' => '',
+      'value' => 'true',
+      'paramName' => '',
+      'paramValue' => ''
+    ),
     array(
-    'name' => 'ListingType',
-    'value' => array('AuctionWithBIN','FixedPrice'),
-    'paramName' => '',
-    'paramValue' => ''),
+      'name' => 'ListingType',
+      'value' => array('AuctionWithBIN', 'FixedPrice'),
+      'paramName' => '',
+      'paramValue' => ''
+    ),
   );
 
 // Generates an indexed URL snippet from the array of item filters
-function buildURLArray ($filterarray) {
+function buildURLArray($filterarray)
+{
   global $urlfilter;
   global $i;
   // Iterate through each filter in the array
-  foreach($filterarray as $itemfilter) {
+  foreach ($filterarray as $itemfilter) {
     // Iterate through each key in the filter
-    foreach ($itemfilter as $key =>$value) {
-      if(is_array($value)) {
-        foreach($value as $j => $content) { // Index the key for each value
+    foreach ($itemfilter as $key => $value) {
+      if (is_array($value)) {
+        foreach ($value as $j => $content) { // Index the key for each value
           $urlfilter .= "&itemFilter($i).$key($j)=$content";
         }
-      }
-      else {
-        if($value != "") {
+      } else {
+        if ($value != "") {
           $urlfilter .= "&itemFilter($i).$key=$value";
         }
       }
@@ -73,14 +76,14 @@ $resp = simplexml_load_file($apicall);
 if ($resp->ack == "Success") {
   $results = '';
   // If the response was loaded, parse it and build links
-  foreach($resp->searchResult->item as $item) {
+  foreach ($resp->searchResult->item as $item) {
     $pic   = $item->galleryURL;
     $link  = $item->viewItemURL;
     $title = $item->title;
-/////////////////////////EDIT THIS LINE/////////////////////////////////////////////////////
+    /////////////////////////EDIT THIS LINE/////////////////////////////////////////////////////
     // For each SearchResultItem node, build a link and append it to $results
     $results .= "<tr><td><img src=\"$pic\"></td><td><a href=\"$link\">$title</a></td></tr>";
-////////////////////////EDIT THIS LINE//////////////////////////////////////////////////////      
+    ////////////////////////EDIT THIS LINE//////////////////////////////////////////////////////      
   }
 }
 // If the response does not indicate 'Success,' print an error
@@ -93,39 +96,66 @@ else {
 <html>
 
 <head>
-    <!-----css---->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-     <!-- Meta -->
-     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Version 3.0">
+  <!-----css---->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="SHS WebDev Version 3.0">
 
-    <title>eBay Search Results for <?php echo $query; ?></title>
-    <style type="text/css">
-        body {
-            font-family: arial, sans-serif;
-            background-color: coral;
-            border-bottom-color:skyblue;
-        }
+  <title>Results for <?php echo $query; ?></title>
+  <style type="text/css">
+    body {
+      font-family: arial, sans-serif;
+      background-color: coral;
+      border-bottom-color: skyblue;
+    }
+    * {box-sizing: border-box;}
 
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
 
-    </style>
+.image {
+  display: inline-flex;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+  </style>
 </head>
 
 <body>
 
-    <h1>eBay Search Results for <?php echo $query; ?></h1>
+  <center>
+    <h1>Search Results for <?php echo $query; ?></h1>
+  </center>
 
-    <div class="container-fluid">
-        <div class="row">
-        <div class="col">
-                <?php echo $results;?>
-    </div>
-    </div>
-    </conainer>
-   
-    </table>
+
+  <div class="container">
+    <?php echo $results; ?>
+  </div>
+ 
+  </conainer>
+
+  </table>
 
 </body>
 
