@@ -12,3 +12,7 @@ session_destroy();
 header("location: login.php");
 exit;
 ?>
+<head>
+<link rel="stylesheet" href="../CSS/style.css">
+
+</head>

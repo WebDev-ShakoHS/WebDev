@@ -28,6 +28,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </head>
+<script>
+    function Back1() {
+        window.history.go(-5);
+    }
+</script>
 <div class="menu">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a href="http://shakonet.isd720.com" class="navbar-brand">Magic The Gathering</a>
@@ -61,7 +66,7 @@
         </div>
         <div class="toast-body">
             Take an extra turn after this one.
-    </div>
+        </div>
     </div>
 
 </body>
@@ -70,6 +75,8 @@
     <!-- Footer Elements -->
     <footer class="page-footer font-small unique-color-dark pt-4"></footer>
     <div class="container1">
+        <button onclick="Back1()" class="btn btn-outline-primary">Take another turn</button>
+
         <!-- Copyright -->
         <div class="footer-copyright1 text-center py-3">© 2021 Copyright: Me
         </div>
@@ -83,7 +90,7 @@
                 </div>
                 <div class="col-sm-10"></div>
                 <div class="col-sm-1">
-                    <a class="carousel-control-next" href="The-Power-5.html" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="index.html" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
