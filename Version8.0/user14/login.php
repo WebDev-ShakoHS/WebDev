@@ -117,34 +117,82 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             width: 350px;
             padding: 20px;
         }
+        .navbar a {
+                float: left;
+                font-size: 16px;
+                color: rgb(85, 112, 201);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .dropdown {
+                float: left;
+                overflow: clip;
+            }
+
+            .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: skyblue;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover,
+            .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+
+            .dropdown-content {
+                display: none;
+                
+                background-color: #5d5c5e;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display:block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {
+                background-color: rgb(205, 233, 139);
+            }
+
+            .dropdown:hover .dropdown-content {
+                display:inline-table;
+            }
 
     </style>
 </head>
 
 <body>
-    <div class="menu">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+<div class="navbar" style="background-color:darkslategray;">
+        <a href="biography.html">Home</a>
+        <a href="http://localhost:8080/WebDev/Version8.0/user14/login.php" class="nav-item nav-link active">Login</a>
+        <div class="dropdown">
+            <button class="dropbtn">page bar
+                <i class="fa fa-caret-down"></i>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <!---------------------------------- Edit These Items in your Menu ------------->
-                    <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
-                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
-                </div>
-                <div class="navbar-nav ml-auto">
-                    <a href="login.php" class="nav-item nav-link active">Login</a>
-                </div>
-            </div>
-        </nav>
+            <div class="dropdown-content">
+                <a href="http://localhost:8080/WebDev/Version8.0/user14/index.php">Page 2</a>
+                <a href="http://localhost:8080/WebDev/Version8.0/user14/presLincoln.php">Page 3</a>
+                <a href="http://localhost:8080/WebDev/Version8.0/user14/Lifeafterpres.php">Page 4</a>
+            </div>`
+        </div>
     </div>
+
+</body>
     <div class="wrapper">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>

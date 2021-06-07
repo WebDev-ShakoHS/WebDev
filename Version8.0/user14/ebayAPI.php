@@ -143,7 +143,7 @@ else {
   </center>
   <div class="row">
     <div class="col">
-      <?php echo $results; ?>
+     <center> <?php echo $results; ?></center>
     </div>
   </div>
 

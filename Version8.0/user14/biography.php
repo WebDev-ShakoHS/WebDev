@@ -170,7 +170,7 @@
 
 <body>
     <div class="navbar">
-        <a href="biography.html">Home</a>
+        <a href="biography.php">Home</a>
         <a href="http://localhost:8080/WebDev/Version8.0/user14/login.php" class="nav-item nav-link active">Login</a>
         <div class="dropdown">
             <button class="dropbtn">page bar

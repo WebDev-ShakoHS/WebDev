@@ -414,7 +414,7 @@
 
 <body>
   <div class="navbar">
-    <a href="biography.html">Home</a>
+    <a href="biography.php">Home</a>
     <a href="login.php" class="nav-item nav-link active">Login</a>
     <div class="dropdown">
       <button class="dropbtn">page bar
