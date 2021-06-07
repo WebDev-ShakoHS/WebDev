@@ -126,7 +126,7 @@
         .navbar a {
             float: left;
             font-size: 16px;
-            color:lightsalmon;
+            color: lightsalmon;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -143,7 +143,7 @@
             font-size: 16px;
             border: none;
             outline: none;
-            color:skyblue;
+            color: skyblue;
             padding: 14px 16px;
             background-color: inherit;
             font-family: inherit;
@@ -187,16 +187,16 @@
     <div class="navbar">
         <a href="biography.html">Home</a>
         <a href="login.php" class="nav-item nav-link active">Login</a>
-            <div class="dropdown">
-                <button class="dropbtn">page bar
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="http://localhost:8080/WebDev/Version8.0/user14/index.php">Page 2</a>
-                    <a href="http://localhost:8080/WebDev/Version8.0/user14/presLincoln.php">Page 3</a>
-                    <a href="http://localhost:8080/WebDev/Version8.0/user14/Lifeafterpres.php">Page 4</a>
-                </div>`
-            </div>
+        <div class="dropdown">
+            <button class="dropbtn">page bar
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="http://localhost:8080/WebDev/Version8.0/user14/index.php">Page 2</a>
+                <a href="http://localhost:8080/WebDev/Version8.0/user14/presLincoln.php">Page 3</a>
+                <a href="http://localhost:8080/WebDev/Version8.0/user14/Lifeafterpres.php">Page 4</a>
+            </div>`
+        </div>
     </div>
 
 </body>
@@ -292,7 +292,7 @@
                 <a href="/history/westward_expansion/">Westward Expansion</a><BR>
                 <a href="/history/us_1900s/great_depression.php">The Great Depression</a><BR>
                 <a href="/history/civil_rights/">Civil Rights Movement</a><BR>
-              
+
             </div>
         </div>
 
@@ -307,7 +307,7 @@
                 <a href="/history/africa/">Ancient Africa</a><BR>
                 <a href="/history/middle_ages_timeline.php">Middle Ages</a><BR>
                 <a href="/history/islam/">Islamic Empire</a><BR>
-               
+
             </div>
         </div>
 
@@ -327,12 +327,16 @@
         </div>
     </div>
     <div class="footer">
-        <h2>Footer</h2>
+
         <div class="row">
-            <aside class="col" style="background-color:rgb(66, 139, 173);">
+            <aside class="col-6">
                 <center><button onclick="myFunction()">Click if you liked my Biography</button></center>
             </aside>
-            <aside class="col" style="background-color:rgb(207, 218, 112);">
+            <aside class="col-6">
+                <center><button><a href="http://localhost:8080/WebDev/Version8.0/user14/ebayAPI.php" class="nav-item nav-link active" tabindex="-1">More biography of Abraham Lincoln</a></button></center>
+
+            </aside>
+            <aside class="col">
                 <h3>sources</h3>
                 <a href="https://www.w3schools.com/default.asp" class="nav-item nav-link active" tabindex="-1">W3Schools</a>
                 <a href="https://www.youtube.com/channel/UCiCPv2sV_D3FqMRzzUFA2Fg" class="nav-item nav-link active" tabindex="-1">Biography Channel</a>
@@ -341,7 +345,7 @@
     </div>
     </div>
     </div>
-    <div class="footer" id="footer" style="background-color:rgb(102, 212, 69);">
+    <div class="footer" id="footer">
         <p>
             <center>Webpage made by <a href="index.html" target="_blank">Salih</a></center>
         </p>

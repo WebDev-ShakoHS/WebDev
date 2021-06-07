@@ -109,57 +109,45 @@ else {
     body {
       font-family: arial, sans-serif;
       background-color: coral;
-      border-bottom-color: skyblue;
     }
-    * {box-sizing: border-box;}
 
-.container {
-  position: sticky;
-  width: 50%;
-  max-width: 300px;
-  display: inline-block;
-    line-height: 20px;
-}
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+      display: inline;
+    }
 
-.image {
-  display: inline-flex;
-  width: 100%;
-  height: auto;
-display: inline;
-}
-
-.overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: right;
-}
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.5);
+      /* Black see-through */
+      color: #f1f1f1;
+      width: 100%;
+      transition: .5s ease;
+      opacity: 0;
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      text-align: end;
+    }
   </style>
 </head>
 
 <body>
 
   <center>
-    <h1>Search Results for <?php echo $query; ?></h1>
+    <h1>Search Results for<?php echo $query; ?></h1>
   </center>
-
-
-  <a<div class="container"></a>
-    <?php echo $results; ?>
+  <div class="row">
+    <div class="col">
+      <?php echo $results; ?>
+    </div>
   </div>
- 
-  </conainer>
 
-  </table>
-
+  
 </body>
 
 </html>

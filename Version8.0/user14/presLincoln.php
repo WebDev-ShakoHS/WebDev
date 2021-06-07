@@ -31,7 +31,7 @@
 
     /* Style the header */
     header {
-      background-color:gold;
+      background-color: gold;
       padding: 30px;
       text-align: center;
       font-size: 50px;
@@ -166,9 +166,7 @@
     }
 
     .active,
-    .dot:hover {
-      
-    }
+    .dot:hover {}
 
     /* Fading animation */
     .fade {
@@ -298,7 +296,7 @@
 
     .close:hover,
     .close:focus {
-      color:lightsalmon;
+      color: lightsalmon;
       text-decoration: none;
       cursor: pointer;
     }
@@ -309,170 +307,176 @@
         width: 100%;
       }
     }
+
     .navbar {
-            overflow: hidden;
-            background-color: rgb(42, 53, 52);
-        }
+      overflow: hidden;
+      background-color: rgb(42, 53, 52);
+    }
 
-        .navbar a {
-            float: left;
-            font-size: 16px;
-            color: rgb(85, 112, 201);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: rgb(85, 112, 201);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-        .dropdown {
-            float: left;
-            overflow: clip;
-        }
+    .dropdown {
+      float: left;
+      overflow: clip;
+    }
 
-        .dropdown .dropbtn {
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color:lightskyblue;
-            padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
-        }
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: lightskyblue;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
 
-        .navbar a:hover,
-        .dropdown:hover .dropbtn {
-            background-color: red;
-        }
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+    }
 
-        .dropdown-content {
-            display: none;
-            
-            background-color: #dba864;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
+    .dropdown-content {
+      display: none;
 
-        .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
+      background-color: #dba864;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
 
-        .dropdown-content a:hover {
-            background-color: rgb(238, 150, 150);
-        }
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
 
-        .dropdown:hover .dropdown-content {
-            display: inline-table;
-        }
-        .container {
-  position: relative;
-  width: 50%;
-}
+    .dropdown-content a:hover {
+      background-color: rgb(238, 150, 150);
+    }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+    .dropdown:hover .dropdown-content {
+      display: inline-table;
+    }
 
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 100%;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: .5s ease;
-}
+    .container {
+      position: relative;
+      width: 50%;
+    }
 
-.container:hover .overlay {
-  width: 100%;
-  left: 0;
-}
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 100%;
+      right: 0;
+      background-color: #008CBA;
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+      transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+      width: 100%;
+      left: 0;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
   </style>
 </head>
 
 
 <body>
-    <div class="navbar">
-        <a href="biography.html">Home</a>
-        <a href="login.php" class="nav-item nav-link active">Login</a>
-        <div class="dropdown">
-            <button class="dropbtn">page bar
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="http://localhost:8080/WebDev/Version8.0/user14/index.php">Page 2</a>
-                <a href="http://localhost:8080/WebDev/Version8.0/user14/presLincoln.php">Page 3</a>
-                <a href="http://localhost:8080/WebDev/Version8.0/user14/Lifeafterpres.php">Page 4</a>
-            </div>`
-        </div>
+  <div class="navbar">
+    <a href="biography.html">Home</a>
+    <a href="login.php" class="nav-item nav-link active">Login</a>
+    <div class="dropdown">
+      <button class="dropbtn">page bar
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="http://localhost:8080/WebDev/Version8.0/user14/index.php">Page 2</a>
+        <a href="http://localhost:8080/WebDev/Version8.0/user14/presLincoln.php">Page 3</a>
+        <a href="http://localhost:8080/WebDev/Version8.0/user14/Lifeafterpres.php">Page 4</a>
+      </div>`
     </div>
+  </div>
 
 </body>
 
-  <header>
-    <h2>President Licloln</h2>
-  </header>
+<header>
+  <h2>President Licloln</h2>
+</header>
 
-  <section>
-    <nav>
-      <h5>Life as President</h5>
-      <div class="container">
+<section>
+  <nav>
+    <h5>Life as President</h5>
+    <div class="container">
       <img src="images/abraham Licoln.jpeg" style="height:200px;" class="animated heartBeat" alt="Transparent MDB Logo" id="animated-img1">
       <div class="overlay">
-    <div class="text">President Lincoln</div>
+        <div class="text">President Lincoln</div>
+      </div>
+    </div>
+
+  </nav>
+
+  <article>
+    <h1>What did President Lincoln do as President</h1>
+    <p>As President, he built the Republican Party into a strong national organization. Further, he rallied most of the northern Democrats to the Union cause.</p>
+    <p>. On January 1, 1863, he issued the Emancipation Proclamation that declared forever free those slaves within the Confederacy.</p>
+  </article>
+</section>
+<div class="footer">
+
+  <div class="row">
+    <aside class="col-6">
+      <center><button onclick="myFunction()">Click if you liked my Biography</button></center>
+    </aside>
+    <aside class="col-6">
+      <center><button><a href="http://localhost:8080/WebDev/Version8.0/user14/ebayAPI.php" class="nav-item nav-link active" tabindex="-1">More biography of Abraham Lincoln</a></button></center>
+
+    </aside>
+    <aside class="col">
+      <h3>sources</h3>
+      <a href="https://www.w3schools.com/default.asp" class="nav-item nav-link active" tabindex="-1">W3Schools</a>
+      <a href="https://www.youtube.com/channel/UCiCPv2sV_D3FqMRzzUFA2Fg" class="nav-item nav-link active" tabindex="-1">Biography Channel</a>
+    </aside>
   </div>
 </div>
+</div>
+</div>
+<div class="footer" id="footer">
+  <p>
+    <center>Webpage made by <a href="index.html" target="_blank">Salih</a></center>
+  </p>
 
-    </nav>
-
-    <article>
-      <h1>What did President Lincoln do as President</h1>
-      <p>As President, he built the Republican Party into a strong national organization. Further, he rallied most of the northern Democrats to the Union cause.</p>
-      <p>. On January 1, 1863, he issued the Emancipation Proclamation that declared forever free those slaves within the Confederacy.</p>
-    </article>
-  </section>
-  <div class="footer" style="background-color:rgb(66, 139, 173);">
-    <h2>Footer</h2>
-    <div class="row">
-      <aside class="col" style="background-color:rgb(66, 139, 173);">
-        <center><button onclick="myFunction()">Click if you liked my Biography</button></center>
-      </aside>
-      <aside class="col">
-        <h3>sources</h3>
-        <a href="https://www.w3schools.com/default.asp" class="nav-item nav-link active" tabindex="-1">W3Schools</a>
-        <a href="https://www.youtube.com/channel/UCiCPv2sV_D3FqMRzzUFA2Fg" class="nav-item nav-link active" tabindex="-1">Biography Channel</a>
-      </aside>
-    </div>
-  </div>
-  </div>
-  </div>
-  <div class="footer" id="footer" style="background-color:rgb(102, 212, 69);">
-    <p>
-      <center>Webpage made by <a href="index.html" target="_blank">Salih</a></center>
-    </p>
-
-  </div>
+</div>
 
 
 
