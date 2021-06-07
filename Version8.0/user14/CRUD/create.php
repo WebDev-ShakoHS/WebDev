@@ -88,22 +88,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h2>Create Record</h2>
+                        <h2>Add Books</h2>
                     </div>
-                    <p>Please fill this form and submit to add employee record to the database.</p>
+                    <p>Please fill this form and submit to add Book Records to the database.</p>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
-                            <label>Name</label>
+                            <label>Name of book</label>
                             <input type="text" name="name" class="form-control" value="<?php echo $name; ?>">
                             <span class="help-block"><?php echo $name_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($address_err)) ? 'has-error' : ''; ?>">
-                            <label>Address</label>
+                            <label>Date Written</label>
                             <textarea name="address" class="form-control"><?php echo $address; ?></textarea>
                             <span class="help-block"><?php echo $address_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($salary_err)) ? 'has-error' : ''; ?>">
-                            <label>Salary</label>
+                            <label>Cost</label>
                             <input type="text" name="salary" class="form-control" value="<?php echo $salary; ?>">
                             <span class="help-block"><?php echo $salary_err;?></span>
                         </div>

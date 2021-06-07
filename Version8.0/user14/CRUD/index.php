@@ -30,8 +30,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header clearfix">
-                        <h2 class="pull-left">Employees Details</h2>
-                        <a href="create.php" class="btn btn-success pull-right">Add New Employee</a>
+                        <h2 class="pull-left">Record of Books written by Abraham Lincoln</h2>
+                        <a href="create.php" class="btn btn-success pull-right">Add New Book</a>
                     </div>
                     <?php
                     // Include config file
@@ -45,10 +45,10 @@
                                 echo "<thead>";
                                     echo "<tr>";
                                         echo "<th>#</th>";
-                                        echo "<th>Name</th>";
-                                        echo "<th>Address</th>";
-                                        echo "<th>Salary</th>";
-                                        echo "<th>Action</th>";
+                                        echo "<th>Name of Book</th>";
+                                        echo "<th>Date Published</th>";
+                                        echo "<th>Cost</th>";
+                                        echo "<th>Edit as neaded</th>";
                                     echo "</tr>";
                                 echo "</thead>";
                                 echo "<tbody>";

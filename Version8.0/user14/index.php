@@ -327,13 +327,16 @@
         </div>
     </div>
     <div class="footer">
-
         <div class="row">
-            <aside class="col-6">
+            <aside class="col-4">
                 <center><button onclick="myFunction()">Click if you liked my Biography</button></center>
             </aside>
-            <aside class="col-6">
+            <aside class="col-4">
                 <center><button><a href="http://localhost:8080/WebDev/Version8.0/user14/ebayAPI.php" class="nav-item nav-link active" tabindex="-1">More biography of Abraham Lincoln</a></button></center>
+
+            </aside>
+            <aside class="col-4">
+                <center><button><a href="http://localhost:8080/WebDev/Version8.0/user14/CRUD/index.php" class="nav-item nav-link active" tabindex="-1">Check books Written by Abraham Lincoln</a></button></center>
 
             </aside>
             <aside class="col">

@@ -64,7 +64,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["username"] = $username;                            
                             
                             // Redirect user to welcome page
-                            header("location: welcome.php");
+                            header("location: Lifeafterpres.php");
                         } else{
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
@@ -178,16 +178,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 <body>
 <div class="navbar" style="background-color:darkslategray;">
-        <a href="biography.html">Home</a>
-        <a href="http://localhost:8080/WebDev/Version8.0/user14/login.php" class="nav-item nav-link active">Login</a>
+        <a href="biography.php">Home</a>
+        <a href="login.php" class="nav-item nav-link active">Login</a>
         <div class="dropdown">
             <button class="dropbtn">page bar
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="http://localhost:8080/WebDev/Version8.0/user14/index.php">Page 2</a>
-                <a href="http://localhost:8080/WebDev/Version8.0/user14/presLincoln.php">Page 3</a>
-                <a href="http://localhost:8080/WebDev/Version8.0/user14/Lifeafterpres.php">Page 4</a>
+                <a href="index.php">Page 2</a>
+                <a href="presLincoln.php">Page 3</a>
+                <a href="Lifeafterpres.php">Page 4</a>
             </div>`
         </div>
     </div>

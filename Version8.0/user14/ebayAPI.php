@@ -133,6 +133,7 @@ else {
       padding: 20px;
       text-align: end;
     }
+    
   </style>
 </head>
 
@@ -141,13 +142,12 @@ else {
   <center>
     <h1>Search Results for<?php echo $query; ?></h1>
   </center>
-  <div class="row">
-    <div class="col">
-     <center> <?php echo $results; ?></center>
-    </div>
-  </div>
-
+  <table>
+     <tr><center> <?php echo $results; ?></center><tr>
+    </tr>
+  </table>
   
 </body>
+
 
 </html>

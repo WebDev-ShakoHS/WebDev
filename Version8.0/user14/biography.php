@@ -106,7 +106,7 @@
             }
 
             .navbar {
-                overflow: hidden;
+                overflow:auto;
                 background-color: rgb(42, 53, 52);
             }
 
@@ -273,13 +273,18 @@
 </div>
 <div class="footer">
     <div class="row">
-        <aside class="col-6" >
+        <aside class="col-4" style="color:lightblue">
             <center><button onclick="myFunction()">Click if you liked my Biography</button></center>
         </aside>
-        <aside class="col-6">
+        <aside class="col-4">
             <center><button><a href="http://localhost:8080/WebDev/Version8.0/user14/ebayAPI.php" class="nav-item nav-link active" tabindex="-1">More biography of Abraham Lincoln</a></button></center>
 
         </aside>
+        <aside class="col-4">
+            <center><button><a href="http://localhost:8080/WebDev/Version8.0/user14/CRUD/index.php" class="nav-item nav-link active" tabindex="-1">Check books Written by Abraham Lincoln</a></button></center>
+
+        </aside>
+
         <aside class="col">
             <h3>sources</h3>
             <a href="https://www.w3schools.com/default.asp" class="nav-item nav-link active" tabindex="-1">W3Schools</a>
