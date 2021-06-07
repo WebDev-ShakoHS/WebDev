@@ -41,6 +41,7 @@
   <!--Fonts-->
   <link href='https://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Caesar+Dressing' rel='stylesheet' type='text/css'>
+
   <title>Great Lord of the Underworld's Pet Adaption</title>
 
   <style>
@@ -99,15 +100,14 @@
     <li><a href="adopt.html">Adopting Process</a></li>
   </ul>
 
-  <p id="textChange" id="textRevert"> Hey yeah, I’m the devil, bow down yeah whatever. It’s getting way too cramped down here
+  <p ondblclick="myFunction()"> Hey yeah, I’m the devil, bow down yeah whatever. It’s getting way too cramped down here
     and I need to make some room
     but the big man isn’t letting me get rid of you idiots. So I’m giving the pet district of heck up to adoption.
     There’s only one computer down here and it only runs Windows 95 so it might take a while to update the site.
     Unsurprisingly I’m bad with coding myself but good thing a little friend decided to come down a few years ago. But
     hey we got it up and running. Anyways. We've got a lot of weird stuff down here so it would be great if ya guys
     bought a few. Thanks. I'll be seeing most of you very soon.</p>
-  <p id="demo">
-  </p>
+  <p id="demo"></p>
 </body>
 
 
@@ -119,8 +119,7 @@
         <div class="row">
           <div class="col-md-6 ">
             <div class="logo-part">
-              <img src="images/demon.png" class="w-50 logo-footer"
-              onmousedown="textChange()" onmouseu0="textRevert()">
+              <img src="images/demon.png" class="w-50 logo-footer">
               <p>Heck</p>
             </div>
           </div>

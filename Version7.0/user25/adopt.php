@@ -131,12 +131,12 @@
     <ol type="1">
       <li>Great! I'm honestly suprised you would even check out this page. First you really have to ask yourself if you
         actually want this?</li>
-      <li>If the answer is somehow yes, please sign in <a href="signin.html" class="nav-item nav-link">SIGN IN</a></li>
-      <li>Now that you're signed in you can grab your pet! With the right payment option you can then buy them right there </li>
-      <li>Then you put in your shipping info and boom. You're done </li>
-      <li>We'll send your new pet friend in 10-2,900 business days (unsurprisingly shipping is slow down here) </li>
-      <li>Wait a little longer </li>
-      <li>And then you've got your new pet! Don't come back to this high. </li>
+      <li>If the answer is somehow yes, please sign in <a href="signin.php" class="nav-item nav-link">SIGN IN</a></li>
+      <li>Then </li>
+      <li>Then </li>
+      <li>Then </li>
+      <li>Then </li>
+      <li>Then </li>
     </ol>
   </div>
 
