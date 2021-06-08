@@ -29,7 +29,7 @@
     </script>
 
     <style>
-         * {
+        * {
             box-sizing: border-box;
         }
 
@@ -74,6 +74,7 @@
             text-align: center;
             background-color: khaki;
         }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
@@ -233,6 +234,7 @@
     <div class="navbar">
         <a href="biography.php">Home</a>
         <a href="login.php" class="nav-item nav-link active">Login</a>
+
         <div class="dropdown">
             <button class="dropbtn">page bar
                 <i class="fa fa-caret-down"></i>
@@ -247,7 +249,7 @@
 
 </body>
 <!------end of nav bar------->
- 
+
 </head>
 
 <body style=background-color:darkslategray;>
@@ -256,7 +258,7 @@
         <div style=background-color:lightsalmon;>
 
             <h2>Salih's World of Knowledge</h2>
-            
+
 
     </center>
 

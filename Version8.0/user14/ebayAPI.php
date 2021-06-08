@@ -115,11 +115,11 @@ else {
       display: block;
       width: 100%;
       height: auto;
-      display: inline;
+      display: list-item;
     }
 
     .overlay {
-      position: absolute;
+      position: sticky;
       bottom: 0;
       background: rgb(0, 0, 0);
       background: rgba(0, 0, 0, 0.5);
@@ -131,9 +131,12 @@ else {
       color: white;
       font-size: 20px;
       padding: 20px;
-      text-align: end;
+      text-align: inherit;
     }
-    
+
+    * {
+      box-sizing: border-box;
+    }
   </style>
 </head>
 
@@ -143,10 +146,12 @@ else {
     <h1>Search Results for<?php echo $query; ?></h1>
   </center>
   <table>
-     <tr><center> <?php echo $results; ?></center><tr>
+    <tr>
+      <center> <?php echo $results; ?></center>
+    <tr>
     </tr>
   </table>
-  
+
 </body>
 
 
