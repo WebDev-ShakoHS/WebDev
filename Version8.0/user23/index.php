@@ -67,9 +67,10 @@
         <!--------------------------------Button--------------------------------->
         <button onclick="topFunction()" id="topBtn" title="Go to top">Top of Page</button>
         <script>
-
             // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function () { scrollFunction() };
+            window.onscroll = function() {
+                scrollFunction()
+            };
         </script>
 
         <!--------------------------------Cards--------------------------------->
@@ -81,8 +82,7 @@
                                 Zealand</a></b></h4>
                     <p>#1 in World's Best Places to Visit</p>
                     <br>
-                    <img src="images/South Island.jpeg" alt="Image of New Zealand's South Island Landscape"
-                        style="width:100%">
+                    <img src="images/South Island.jpeg" alt="Image of New Zealand's South Island Landscape" style="width:100%">
                     <div class="container">
                 </center>
             </div>
@@ -160,27 +160,23 @@
                     <ul class="list-unstyled">
                         <li>
                             <p>
-                                <a id="links" href="http://shakonet.isd720.com/WebDev/" target="_blank"
-                                    rel="noopener noreferrer">PROJECTS</a>
+                                <a id="links" href="http://shakonet.isd720.com/WebDev/" target="_blank" rel="noopener noreferrer">PROJECTS</a>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <a id="links" href="https://www.shakopee.k12.mn.us/" target="_blank"
-                                    rel="noopener noreferrer">ABOUT
+                                <a id="links" href="https://www.shakopee.k12.mn.us/" target="_blank" rel="noopener noreferrer">ABOUT
                                     US</a>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <a id="links" href="https://www.smore.com/z45xm" target="_blank"
-                                    rel="noopener noreferrer">BLOG</a>
+                                <a id="links" href="https://www.smore.com/z45xm" target="_blank" rel="noopener noreferrer">BLOG</a>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <a id="links" href="https://www.shakopeesabers.com/" target="_blank"
-                                    rel="noopener noreferrer">AWARDS</a>
+                                <a id="links" href="https://www.shakopeesabers.com/" target="_blank" rel="noopener noreferrer">AWARDS</a>
                             </p>
                         </li>
                     </ul>

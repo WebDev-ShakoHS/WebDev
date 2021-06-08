@@ -35,7 +35,7 @@
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="Top places to Visit.html" class="navbar-brand">WebDev</a>
+            <a href="index.php" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,11 +43,11 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link">Places To Visit</a>
-                    <a href="South-Island.html" class="nav-item nav-link" tabindex="-1">South Island</a>
-                    <a href="Paris.html" class="nav-item nav-link" tabindex="-1">Paris</a>
-                    <a href="Bora-Bora.html" class="nav-item nav-link" tabindex="-1">Bora Bora</a>
-                    <a href="Maui.html" class="nav-item nav-link active" tabindex="-1">Maui</a>
+                    <a href="index.php" class="nav-item nav-link">Places To Visit</a>
+                    <a href="South-Island.php" class="nav-item nav-link" tabindex="-1">South Island</a>
+                    <a href="Paris.php" class="nav-item nav-link" tabindex="-1">Paris</a>
+                    <a href="Bora-Bora.php" class="nav-item nav-link" tabindex="-1">Bora Bora</a>
+                    <a href="Maui.php" class="nav-item nav-link active" tabindex="-1">Maui</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -69,7 +69,7 @@
     <!--------------------------------Content------------------------------------->
     <br>
     <h1>
-        <center>Maui</center>
+        <center>Maui, Hawaii</center>
     </h1>
     <br>
     <div>

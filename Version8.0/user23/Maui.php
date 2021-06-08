@@ -134,7 +134,7 @@
 
         <div>
             <center><strong>
-                    <p><a href="https://www.tripadvisor.com/Hotel_Review-g255118-d2465589-Reviews-Airport_Palms_Motel-Christchurch_Canterbury_Region_South_Island.html"
+                    <p><a href="https://www.tripadvisor.com/Hotel_Review-g60634-d90119-Reviews-Royal_Lahaina_Resort-Lahaina_Maui_Hawaii.html"
                             target="_blank" rel="noopener noreferrer">3. Royal Lahaina Resort</a></p>
                 </strong>
                 <p>
