@@ -56,6 +56,26 @@
   <link href='https://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Caesar+Dressing' rel='stylesheet' type='text/css'>s
 
+  <script src=
+  "https://code.jquery.com/jquery-1.12.4.min.js">
+      </script>
+   <script type="text/javascript">
+    function zoomin() {
+        var GFG = document.getElementById("myimage");
+        var currWidth = GFG.clientWidth;
+        GFG.style.width = (currWidth + 100) + "px";
+    }
+      
+    function zoomout() {
+        var GFG = document.getElementById("myimage");
+        var currWidth = GFG.clientWidth;
+        GFG.style.width = (currWidth - 100) + "px";
+    }
+</script>
+
+
+
+
   <head>
 
     <style>
@@ -122,7 +142,13 @@
           <figure>
             <div class="img-magnifier-container">
               <img id="myimage" src="images/panda.jpg" width="300" height="430" alt="panda and penguin mix">
- 
+              <button type="button" onclick="zoomin()">
+                Zoom-In
+            </button>
+              
+            <button type="button" onclick="zoomout()"> 
+                Zoom-Out
+            </button>
             <FIGCAPTION> <br> Ralph is our (former) resident pandguin. Big man must've taken a day off when he made this
               one. <br>
               <br> Name: Ralph <br>
@@ -130,6 +156,7 @@
               <br> Description: Ralph is a mix of a penguin and a panda. Ralph is nice but weird to be around. Do not
               allow
               near prisons <br>
+           
             </FIGCAPTION>
 
             
@@ -140,7 +167,14 @@
         <div class="inner">
           <figure>
 
-            <IMG SRC="images/blob.jpg" width="300 px" height="430 px" alt="blob">
+            <IMG id="myimage" SRC="images/blob.jpg" width="300 px" height="430 px" alt="blob">
+              <button type="button" onclick="zoomin()">
+                Zoom-In
+            </button>
+              
+            <button type="button" onclick="zoomout()"> 
+                Zoom-Out
+            </button>
             <FIGCAPTION>Blob. </FIGCAPTION>
 
           </figure>
@@ -150,7 +184,14 @@
         <div class="inner">
           <figure>
 
-            <IMG SRC="images/thatsew.jpg" width="300 px" height="430 px" alt="bird and frog mix">
+            <IMG id="myimage" SRC="images/thatsew.jpg" width="300 px" height="430 px" alt="bird and frog mix">
+              <button type="button" onclick="zoomin()">
+                Zoom-In
+            </button>
+              
+            <button type="button" onclick="zoomout()"> 
+                Zoom-Out
+            </button>
             <FIGCAPTION> <br> I hate this thing. We haven't named it but it was made in some human lab. What were you
               guys
               thinking? <br>
@@ -168,7 +209,14 @@
         <div class="inner">
           <figure>
 
-            <IMG SRC="images/piss.png" width="250 px" height="430 px" alt="piss penguin">
+            <IMG id="myimage" SRC="images/piss.png" width="250 px" height="430 px" alt="piss penguin">
+              <button type="button" onclick="zoomin()">
+                Zoom-In
+            </button>
+              
+            <button type="button" onclick="zoomout()"> 
+                Zoom-Out
+            </button>
             <FIGCAPTION> <br> Pfft piss penguin. <br>
               <br> Name: Piss penguin. <br>
               <br> Age: Who cares its a piss penguin <br>
@@ -185,7 +233,14 @@
         <div class="inner">
           <figure>
 
-            <IMG SRC="images/shark.jpg" width="300 px" height="430 px" alt="shark and horse mix">
+            <IMG id="myimage" SRC="images/shark.jpg" width="300 px" height="430 px" alt="shark and horse mix">
+              <button type="button" onclick="zoomin()">
+                Zoom-In
+            </button>
+              
+            <button type="button" onclick="zoomout()"> 
+                Zoom-Out
+            </button>
             <FIGCAPTION> <br> Disgusting yet weirdly elegant. <br>
               <br> Name: Alice <br>
               <br> Age: 23 <br>
@@ -201,7 +256,14 @@
         <div class="inner">
           <figure>
 
-            <IMG SRC="images/smoke.jpg" width="300 px" height="430 px" alt="frog smoking">
+            <IMG id="myimage" SRC="images/smoke.jpg" width="300 px" height="430 px" alt="frog smoking">
+              <button type="button" onclick="zoomin()">
+                Zoom-In
+            </button>
+              
+            <button type="button" onclick="zoomout()"> 
+                Zoom-Out
+            </button>
             <FIGCAPTION> <br> Gotta admit el frog is a homie, I love the guy. Just doesn't fit down here and his 4 story
               mansion takes up a lot of valuable space. <br>
               <br> Name: El Frog <br>
@@ -219,7 +281,14 @@
         <div class="inner">
           <figure>
 
-            <IMG SRC="images/igor.png" width="300 px" height="430 px" alt="small dog">
+            <IMG id="myimage" SRC="images/igor.png" width="300 px" height="430 px" alt="small dog">
+              <button type="button" onclick="zoomin()">
+                Zoom-In
+            </button>
+              
+            <button type="button" onclick="zoomout()"> 
+                Zoom-Out
+            </button>
             <FIGCAPTION> <br> We've got a couple million of these down here. The creation of chihuahuas was a prank by
               me by
               humans. Yes I created that annoying barking monster. <br>
@@ -237,7 +306,14 @@
         <div class="inner">
           <figure>
 
-            <IMG SRC="images/gerald.jpg" width="250 px" height="430 px" alt="duck">
+            <IMG id="myimage" SRC="images/gerald.jpg" width="250 px" height="430 px" alt="duck">
+              <button type="button" onclick="zoomin()">
+                Zoom-In
+            </button>
+              
+            <button type="button" onclick="zoomout()"> 
+                Zoom-Out
+            </button>
             <FIGCAPTION><br>Alright so Gerald. Basically Gerald is a homicidal maniac.<br>
               <br> Name: Gerald <br>
               <br> Age: He was able to conquer time itself. He no longer ages. <br>
