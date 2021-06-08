@@ -60,7 +60,10 @@
     <!---------------------------------- End the nav-bar ------------->
     <br>
     <main class="wideMargin" id="content">
-        <h1 class="text-left my-3">Top Places to Visit in Your Lifetime!</h1>
+        <center>
+            <h1 class="title" margin: 300px>Top Places to Visit in Your Lifetime!</h1>
+        </center>
+        <br>
         <!-- Edit this line for the title of your page -->
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
 
@@ -78,7 +81,7 @@
             <div class="cards">
                 <center>
                     <!--------------------------------South Island, New Zealand--------------------------------->
-                    <h4><b><a href="South-Island.html" target="_blank" rel="noopener noreferrer">South Island, New
+                    <h4><b><a href="South-Island.php" target="_blank" rel="noopener noreferrer">South Island, New
                                 Zealand</a></b></h4>
                     <p>#1 in World's Best Places to Visit</p>
                     <br>
@@ -90,7 +93,7 @@
             <!--------------------------------Paris, France--------------------------------->
             <div class="cards">
                 <center>
-                    <h4><b><a href="Paris.html" target="_blank" rel="noopener noreferrer">Paris, France</a></b></h4>
+                    <h4><b><a href="Paris.php" target="_blank" rel="noopener noreferrer">Paris, France</a></b></h4>
                     <p>#2 in World's Best Places to Visit</p>
                     <br>
                     <img src="images/Paris.jpeg" alt="Image of the Eiffel Tower in Paris" style="width:100%">
@@ -101,7 +104,7 @@
             <!--------------------------------Bora Bora--------------------------------->
             <div class="cards">
                 <center>
-                    <h4><b><a href="Bora-Bora.html" target="_blank" rel="noopener noreferrer">Bora Bora</a></b></h4>
+                    <h4><b><a href="Bora-Bora.php" target="_blank" rel="noopener noreferrer">Bora Bora</a></b></h4>
                     <p>#3 in World's Best Places to Visit</p>
                     <br>
                     <img src="images/Bora Bora.jpeg" alt="Image of Bora Bora's Landscape" style="width:100%">
@@ -115,7 +118,7 @@
             <!---------------------------------Maui------------------------------------------>
             <div class="cards">
                 <center>
-                    <h4><b><a href="Maui.html" target="_blank" rel="noopener noreferrer">Maui, Hawaii</a></b></h4>
+                    <h4><b><a href="Maui.php" target="_blank" rel="noopener noreferrer">Maui, Hawaii</a></b></h4>
                     <p>#4 in World's Best Places to Visit</p>
                     <br>
                     <img src="images/Maui.jpeg" alt="Image of Bora Bora's Landscape" style="width:100%">
