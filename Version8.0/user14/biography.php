@@ -12,9 +12,6 @@
     <meta name="description" content="SHS WebDev Version 3.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!----php-->
-    <link
-
-    <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -24,7 +21,7 @@
     <!-- Script -->
     <script type="text/javascript" src="JS/Script.js"> </script>
     <script>
-        listBtn.onclick = function (e) {
+        listBtn.onclick = function(e) {
             list.removeChild(listItem);
         }
     </script>
@@ -50,6 +47,7 @@
                 font-size: 40px;
 
             }
+
             .row {
                 display: flex;
                 flex-wrap: wrap;
@@ -106,7 +104,7 @@
             }
 
             .navbar {
-                overflow:auto;
+                overflow: auto;
                 background-color: rgb(42, 53, 52);
             }
 
@@ -142,7 +140,7 @@
 
             .dropdown-content {
                 display: none;
-                
+
                 background-color: #5d5c5e;
                 min-width: 160px;
                 box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -154,7 +152,7 @@
                 color: black;
                 padding: 12px 16px;
                 text-decoration: none;
-                display:block;
+                display: block;
                 text-align: left;
             }
 
@@ -163,7 +161,7 @@
             }
 
             .dropdown:hover .dropdown-content {
-                display:inline-table;
+                display: inline-table;
             }
         </style>
     </head>
@@ -203,8 +201,7 @@
 <div class="MagicSlideshow" data-options="" style="background-color: cornflowerblue;">
     <h2>About Abraham Lincoln</h2>
     <h5>Photo of Abraham Lincoln:</h5>
-    <img src="images/abraham Licoln.jpeg" style="height:200px;" class="animated heartBeat" alt="Transparent MDB Logo"
-        id="animated-img1">
+    <img src="images/abraham Licoln.jpeg" style="height:200px;" class="animated heartBeat" alt="Transparent MDB Logo" id="animated-img1">
     <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
     <div class="card-img">
         <h3>More photos</h3>
@@ -227,9 +224,9 @@
         <h5>Title description, Sep 2, 2017</h5>
         <img src="images/lincoln5.jpeg" class="img-thumbnail" alt="Cinque Terre">
         <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+        <article>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco.</p>
+            ullamco.</article>
     </div>
 </div>
 
@@ -241,15 +238,11 @@
         <center>
             <h3>Biography VIDEO</h3>
         </center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/L80_q2tPveo" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L80_q2tPveo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="col-sm-6" style="background-color:rgb(95, 86, 105);">
         <center>
-            <form onsubmit="confirmInput()" action="https://shakopee.instructure.com/courses/131334"
-                style="background-color:rgb(95, 86, 105);">
+            <form onsubmit="confirmInput()" action="https://shakopee.instructure.com/courses/131334" style="background-color:rgb(95, 86, 105);">
                 Enter your name: <input id="fname" type="text" size="20" style="background-color:yellow;">
                 <input type="submit" style="background-color:rgb(223, 168, 220);">
                 <center>
@@ -263,6 +256,10 @@
                         <option value="salmon">Salmon</option>
                         <option value="lightblue">Light Blue</option>
                         <option value="limegreen">Lime Green</option>
+                        <option value="blue">blue</option>
+                        <option value="cyan">Cyan</option>
+                        <option value="violet">Violet</option>
+                        <option value="red">Red</option>
                     </select>
     </div>
     </center>
@@ -288,8 +285,7 @@
         <aside class="col">
             <h3>sources</h3>
             <a href="https://www.w3schools.com/default.asp" class="nav-item nav-link active" tabindex="-1">W3Schools</a>
-            <a href="https://www.youtube.com/channel/UCiCPv2sV_D3FqMRzzUFA2Fg" class="nav-item nav-link active"
-                tabindex="-1">Biography Channel</a>
+            <a href="https://www.youtube.com/channel/UCiCPv2sV_D3FqMRzzUFA2Fg" class="nav-item nav-link active" tabindex="-1">Biography Channel</a>
         </aside>
     </div>
 </div>
