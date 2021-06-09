@@ -85,22 +85,20 @@
                     <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
                 </ol>
-                <div class="images">
-                    <div class="carousel-item active">
-                        <img src="images/Paris/Paris1.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/Paris/Paris2.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/Paris/Paris3.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/Paris/Paris4.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/Paris/Paris5.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
-                    </div>
+                <div class="carousel-item active">
+                    <img src="images/Paris/Paris1.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Paris/Paris2.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Paris/Paris3.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Paris/Paris4.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Paris/Paris5.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
