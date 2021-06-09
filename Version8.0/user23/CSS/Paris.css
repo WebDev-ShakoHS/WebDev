@@ -3,7 +3,7 @@
     margin: 1.2in;
 }
 
-#carouselExampleFade{
-    Height: 800px; 
-    Width: auto;
+.images{
+    width: 80%;
+    height: 80%;
 }

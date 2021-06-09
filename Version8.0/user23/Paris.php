@@ -63,9 +63,10 @@
     <!--------------------------------Button--------------------------------->
     <button onclick="topFunction()" id="topBtn" title="Go to top">Top of Page</button>
     <script>
-
         // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
+        window.onscroll = function() {
+            scrollFunction()
+        };
     </script>
 
     <!--------------------------------Content------------------------------------>
@@ -84,20 +85,22 @@
                     <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
                 </ol>
-                <div class="carousel-item active">
-                    <img src="images/Paris/Paris1.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/Paris/Paris2.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/Paris/Paris3.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/Paris/Paris4.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/Paris/Paris5.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
+                <div class="images">
+                    <div class="carousel-item active">
+                        <img src="images/Paris/Paris1.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Paris/Paris2.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Paris/Paris3.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Paris/Paris4.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Paris/Paris5.jpeg" class="d-block w-100" alt="Image of Paris's Skyline">
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -311,10 +314,17 @@
                 <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
 
                     <!-- Content -->
-                    <a class="weatherwidget-io" href="https://forecast7.com/en/48d862d35/paris/?unit=us"
-                        data-label_1="Paris" data-label_2="Weather" data-days="5" data-theme="gray">Paris Weather</a>
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/48d862d35/paris/?unit=us" data-label_1="Paris" data-label_2="Weather" data-days="5" data-theme="gray">Paris Weather</a>
                     <script>
-                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                        ! function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = 'https://weatherwidget.io/js/widget.min.js';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, 'script', 'weatherwidget-io-js');
                     </script>
 
 
@@ -332,27 +342,23 @@
                     <ul class="list-unstyled">
                         <li>
                             <p>
-                                <a id="links" href="http://shakonet.isd720.com/WebDev/" target="_blank"
-                                    rel="noopener noreferrer">PROJECTS</a>
+                                <a id="links" href="http://shakonet.isd720.com/WebDev/" target="_blank" rel="noopener noreferrer">PROJECTS</a>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <a id="links" href="https://www.shakopee.k12.mn.us/" target="_blank"
-                                    rel="noopener noreferrer">ABOUT
+                                <a id="links" href="https://www.shakopee.k12.mn.us/" target="_blank" rel="noopener noreferrer">ABOUT
                                     US</a>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <a id="links" href="https://www.smore.com/z45xm" target="_blank"
-                                    rel="noopener noreferrer">BLOG</a>
+                                <a id="links" href="https://www.smore.com/z45xm" target="_blank" rel="noopener noreferrer">BLOG</a>
                             </p>
                         </li>
                         <li>
                             <p>
-                                <a id="links" href="https://www.shakopeesabers.com/" target="_blank"
-                                    rel="noopener noreferrer">AWARDS</a>
+                                <a id="links" href="https://www.shakopeesabers.com/" target="_blank" rel="noopener noreferrer">AWARDS</a>
                             </p>
                         </li>
                     </ul>
