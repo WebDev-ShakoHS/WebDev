@@ -22,6 +22,7 @@
 
     <!-- Script -->
     <script type="text/javascript" src="JS/Script.js"> </script>
+    
     <script>
         listBtn.onclick = function(e) {
             list.removeChild(listItem);

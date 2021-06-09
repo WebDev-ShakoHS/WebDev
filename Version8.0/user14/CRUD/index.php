@@ -17,6 +17,66 @@
         table tr td:last-child a{
             margin-right: 15px;
         }
+        .navbar {
+                overflow: auto;
+                background-color: rgb(42, 53, 52);
+            }
+
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: rgb(85, 112, 201);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .dropdown {
+                float: left;
+                overflow: clip;
+            }
+
+            .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: skyblue;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+            .navbar a:hover,
+            .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+
+            .dropdown-content {
+                display: none;
+
+                background-color: #5d5c5e;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {
+                background-color: rgb(205, 233, 139);
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: list-item;
+            }
     </style>
     <script type="text/javascript">
         $(document).ready(function(){
@@ -24,7 +84,21 @@
         });
     </script>
 </head>
-<body>
+<body style="background-color: cornflowerblue;">
+<div class="navbar">
+        <a href="http://localhost:8080/WebDev/Version8.0/user14/biography.php">Home</a>
+        <a href="http://localhost:8080/WebDev/Version8.0/user14/login.php" class="nav-item nav-link active">Login</a>
+        <div class="dropdown">
+            <button class="dropbtn">page bar
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="http://localhost:8080/WebDev/Version8.0/user14/index.php">Page 2</a>
+                <a href="http://localhost:8080/WebDev/Version8.0/user14/presLincoln.php">Page 3</a>
+                <a href="http://localhost:8080/WebDev/Version8.0/user14/Lifeafterpres.php">Page 4</a>
+            </div>`
+        </div>
+    </div>
     <div class="wrapper">
         <div class="container-fluid">
             <div class="row">
