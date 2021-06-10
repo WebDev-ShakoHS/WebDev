@@ -99,11 +99,11 @@
 <header>
     <!--Start Navbar-->
     <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="clients.html" class="active">Clients</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li style="float:right"><a href="#">Underground Lawyer Societeé</a></li>
+        <li><a href="home.php">Home</a></li>
+        <li><a href="team.php">Our Team</a></li>
+        <li><a href="clients.php" class="active">Clients</a></li>
+        <li><a href="reviews.php">Reviews</a></li>
+        <li style="float:right"><a href="account.php">My ULS</a></li>
 
     </ul>
 </header>

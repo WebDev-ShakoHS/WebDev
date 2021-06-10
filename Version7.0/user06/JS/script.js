@@ -10,3 +10,4 @@ function changeText() {
 function textRevert() {
   document.getElementById("textRevert").innerHTML = "That's a lot of satisfied customers.Never before has a firm been so sucesssufl as we. Never before have so many innocent men walked free. You too, can be one of these men.";
 }
+

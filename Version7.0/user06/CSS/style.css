@@ -101,3 +101,24 @@
         opacity: 1;
     }
 }
+
+.lies {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+#content {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.Image1 {
+    margin-top: 60px;
+}
+.color{
+    background-color: #FFFAF5;
+}

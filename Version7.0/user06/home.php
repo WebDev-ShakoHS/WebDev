@@ -71,11 +71,11 @@
 
 
     <ul class="menu">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="clients.html">Perjury</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li style="float:right"><a href="#">Underground Lawyer Societeé</a></li>
+        <li><a href="home.php" class="active">Home</a></li>
+        <li><a href="team.php">Our Team</a></li>
+        <li><a href="clients.php">Perjury</a></li>
+        <li><a href="reviews.php">Reviews</a></li>
+        <li style="float:right"><a href="account.php">My ULS</a></li>
 
     </ul>
 
