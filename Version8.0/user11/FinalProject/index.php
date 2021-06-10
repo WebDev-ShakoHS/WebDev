@@ -53,6 +53,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     <a href="R6S.php" class="nav-item nav-link ">R6S</a>
                     <a href="BO3.php" class="nav-item nav-link">BO3</a>
                     <a href="GTAV.php" class="nav-item nav-link">GTAV</a>
+                    <a href="eBayAPI.php" class="nav-item nav-link">eBay</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -94,7 +95,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     </div>
     <div>
         <div class="card">
-            <a href="R6S.html"><img src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2015/09/30/1331750916642_2/tom-clancy%E2%80%99s-rainbow-six-siege"></img></a>
+            <a href="R6S.php"><img src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2015/09/30/1331750916642_2/tom-clancy%E2%80%99s-rainbow-six-siege"></img></a>
             <div class="nameplate">
                 <h4><b>Rainbow Six Siege</b></h4>
                 <p>It has been one of my favorite games for many years and it is very fun.</p>
@@ -102,7 +103,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         </div>
 
         <div class="card">
-            <a href="BO3.html"><img src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2015/11/09/1331758482843_2/what-were-you-exspectreing"></img></a>
+            <a href="BO3.php"><img src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2015/11/09/1331758482843_2/what-were-you-exspectreing"></img></a>
             <div class="nameplate">
                 <h4><b>Black Ops 3</b></h4>
                 <p>I have just recently gotten into it and the zombies is very fun.</p>
@@ -110,7 +111,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         </div>
 
         <div class="card">
-            <a href="GTAV.html"><img src="https://images.indianexpress.com/2020/08/GTA-Online-1200-1.jpg"></img></a>
+            <a href="GTAV.php"><img src="https://images.indianexpress.com/2020/08/GTA-Online-1200-1.jpg"></img></a>
             <div class="nameplate">
                 <h4><b>Grand Theft Auto V</b></h4>
                 <p>Very fun if you play with friends and still fun alone.</p>

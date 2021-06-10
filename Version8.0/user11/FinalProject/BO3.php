@@ -62,6 +62,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                     <a href="R6S.php" class="nav-item nav-link ">R6S</a>
                     <a href="BO3.php" class="nav-item nav-link active">BO3</a>
                     <a href="GTAV.php" class="nav-item nav-link">GTAV</a>
+                    <a href="eBayAPI.php" class="nav-item nav-link">eBay</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">

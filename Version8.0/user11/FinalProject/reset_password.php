@@ -113,7 +113,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 
-<body>
+<body ondblclick="whichElement(event)">
 <menu>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a href="#" class="nav-item nav-link disabled"><img src="images/favicon.ico" style="height: 40px;"></img></a>
@@ -127,6 +127,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <a href="R6S.php" class="nav-item nav-link ">R6S</a>
                     <a href="BO3.php" class="nav-item nav-link">BO3</a>
                     <a href="GTAV.php" class="nav-item nav-link">GTAV</a>
+                    <a href="eBayAPI.php" class="nav-item nav-link">eBay</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -156,7 +157,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
-                <a class="btn btn-link" href="welcome.php">Cancel</a>
+                <a class="btn btn-link" href="index.php">Cancel</a>
             </div>
         </form>
     </div>
