@@ -6,7 +6,7 @@ $endpoint = 'http://svcs.ebay.com/services/search/FindingService/v1';  // URL to
 $version = '1.0.0';  // API version supported by your application
 $appid = 'RobertMa-Shakopee-PRD-169ec6b8e-bb30ba02';  // Replace with your own AppID
 $globalid = 'EBAY-US';  // Global ID of the eBay site you want to search (e.g., EBAY-DE)
-$query = 'soccerballs';  // You may want to supply your own query
+$query = 'soccer';  // You may want to supply your own query
 $safequery = urlencode($query);  // Make the query URL-friendly
 $i = '0';  // Initialize the item filter index to 0
 // Create a PHP array of the item filters you want to use in your request
@@ -108,7 +108,7 @@ else {
 
     <h1>eBay Search Results for <?php echo $query; ?></h1>
 
-    <div class= "soccerball">
+    <div class= "soccer">
         <div class = "col">
                 <?php echo $results;?>
         </div>
