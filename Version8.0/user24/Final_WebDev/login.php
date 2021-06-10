@@ -1,77 +1,77 @@
 <?php
 // Initialize the session
 session_start();
- 
+
 // Check if the user is already logged in, if yes then redirect him to welcome page
 
- 
+
 // Include config file
 require_once "config.php";
- 
+
 // Define variables and initialize with empty values
 $username = $password = "";
 $username_err = $password_err = "";
- 
+
 // Processing form data when form is submitted
-if($_SERVER["REQUEST_METHOD"] == "POST"){
- 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     // Check if username is empty
-    if(empty(trim($_POST["username"]))){
+    if (empty(trim($_POST["username"]))) {
         $username_err = "Please enter username.";
-    } else{
+    } else {
         $username = trim($_POST["username"]);
     }
-    
+
     // Check if password is empty
-    if(empty(trim($_POST["password"]))){
+    if (empty(trim($_POST["password"]))) {
         $password_err = "Please enter your password.";
-    } else{
+    } else {
         $password = trim($_POST["password"]);
     }
-    
+
     // Validate credentials
-    if(empty($username_err) && empty($password_err)){
+    if (empty($username_err) && empty($password_err)) {
         // Prepare a select statement
         $sql = "SELECT id, username, password FROM users WHERE username = ?";
-        
-        if($stmt = mysqli_prepare($link, $sql)){
+
+        if ($stmt = mysqli_prepare($link, $sql)) {
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "s", $param_username);
-            
+
             // Set parameters
             $param_username = $username;
-            
+
             // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
+            if (mysqli_stmt_execute($stmt)) {
                 // Store result
                 mysqli_stmt_store_result($stmt);
-                
+
                 // Check if username exists, if yes then verify password
-                if(mysqli_stmt_num_rows($stmt) == 1){                    
+                if (mysqli_stmt_num_rows($stmt) == 1) {
                     // Bind result variables
                     mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
-                    if(mysqli_stmt_fetch($stmt)){
-                        if(password_verify($password, $hashed_password)){
+                    if (mysqli_stmt_fetch($stmt)) {
+                        if (password_verify($password, $hashed_password)) {
                             // Password is correct, so start a new session
                             session_start();
-                            
+
                             // Store data in session variables
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
-                            $_SESSION["username"] = $username;                            
-                            
+                            $_SESSION["username"] = $username;
+
                             // Redirect user to welcome page
                             header("location: index.php");
-                        } else{
+                        } else {
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
                         }
                     }
-                } else{
+                } else {
                     // Display an error message if username doesn't exist
                     $username_err = "No account found with that username.";
                 }
-            } else{
+            } else {
                 echo "Oops! Something went wrong. Please try again later.";
             }
 
@@ -79,17 +79,44 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             mysqli_stmt_close($stmt);
         }
     }
-    
+
     // Close connection
     mysqli_close($link);
 }
 ?>
+<?php
+$apiKey = "ebd65c93d2e951a2e0db3da4cb7b919f"; //You will need to add in the 
+$cityId = "5046997"; //5046997 Shakopee City Id
+$units = "imperial"; //metric-Celcius  imperial-Farhenheit
+if ($units == 'metric') { //Changes the $temp varaible to match 
+    $temp = "C";
+} else {
+    $temp = "F";
+}
+$googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
 
+
+
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_VERBOSE, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$response = curl_exec($ch);
+
+curl_close($ch);
+$data = json_decode($response);
+$currentTime = time();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/x-icon" href="../user24/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../Final_WebDev/images/favicon.ico" />
     <title>Shift Reviews</title>
 
     <!-- Meta -->
@@ -97,12 +124,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="SHS WebDev Version 3.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../Final_WebDev/CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -164,7 +190,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             }
         }
 
-        body div  {
+        body div {
             color: white;
 
         }
@@ -179,6 +205,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             color: white;
             margin-bottom: 185px;
         }
+
         .wrapper {
             width: 350px;
             padding: 20px;
@@ -187,33 +214,29 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         .res {
             color: rgb(62, 107, 137);
         }
-
     </style>
 </head>
 
 <menu>
-<nav class="navbar navbar-expand-md navbar-dark navbar2">
+    <nav class="navbar navbar-expand-md navbar-dark navbar2">
         <a href="index.php" class="navbar-brand"><img src="images/WebLogo_100x100.png"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ml-auto">
-                <a href="reviews.php" class="nav-item nav-link">Reviews</a>
-                <a href="news.php" class="nav-item nav-link">News</a>
-                <a href="registration.php" class="nav-item nav-link">Register</a>
+               
+                
 
             </div>
-            <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-                echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
-                } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
+
         </div>
     </nav>
     <!---------------------------------- End the nav-bar ------------------------------------->
 </menu>
 
 <body>
-<div class="wrapper">
+    <div class="wrapper">
         <h1>Login</h1>
         <p>Please fill in your credentials to login.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -297,16 +320,30 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <!-- Footer Links -->
 
     <hr>
+    <!-- API -->
+    <?php if ($data->main->temp_max > "55") {
+        echo ("<style> .report-container {background-color: rgba(255, 0, 0, 0.5);} </style>");
+    } else {
+        echo ("<style> .report-container {background-color: rgba(0, 0, 255, 0.5);} </style>");
+    }
 
-    <!-- Call to action -->
-    <ul class="list-unstyled list-inline text-center py-2">
-        <li class="list-inline-item">
-            <a href="registration.php">
-                <h5 class="mb-1" style="color: rgb(37, 78, 105);"><u>Register for free</u></h5>
-            </a>
-        </li>
 
-    </ul>
+    ?>
+    <div class="report-container">
+        <h2><?php echo $data->name; ?> Weather Status</h2>
+        <div class="time">
+            <div><?php echo date("l g:i a", $currentTime); ?></div>
+            <div><?php echo date("jS F, Y", $currentTime); ?></div>
+            <div><?php echo ucwords($data->weather[0]->description); ?></div>
+        </div>
+        <div class="weather-forecast">
+            <img src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png" class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
+        </div>
+        <div class="time">
+            <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
+            <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
+        </div>
+    </div>
     <!-- Call to action -->
 
     <hr>

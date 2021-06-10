@@ -1,86 +1,63 @@
 <?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header("location: login.php");
+    exit;
+}
+
 // Include config file
 require_once "config.php";
 
 // Define variables and initialize with empty values
-$username = $password = $confirm_password = "";
-$username_err = $password_err = $confirm_password_err = "";
+$new_password = $confirm_password = "";
+$new_password_err = $confirm_password_err = "";
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    // Validate username
-    if (empty(trim($_POST["username"]))) {
-        $username_err = "Please enter a username.";
+    // Validate new password
+    if (empty(trim($_POST["new_password"]))) {
+        $new_password_err = "Please enter the new password.";
+    } elseif (strlen(trim($_POST["new_password"])) < 6) {
+        $new_password_err = "Password must have atleast 6 characters.";
     } else {
-        // Prepare a select statement
-        $sql = "SELECT id FROM users WHERE username = ?";
-
-        if ($stmt = mysqli_prepare($link, $sql)) {
-            // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "s", $param_username);
-
-            // Set parameters
-            $param_username = trim($_POST["username"]);
-
-            // Attempt to execute the prepared statement
-            if (mysqli_stmt_execute($stmt)) {
-                /* store result */
-                mysqli_stmt_store_result($stmt);
-
-                if (mysqli_stmt_num_rows($stmt) == 1) {
-                    $username_err = "This username is already taken.";
-                } else {
-                    $username = trim($_POST["username"]);
-                }
-            } else {
-                echo "Oops! Something went wrong. Please try again later.";
-            }
-
-            // Close statement
-            mysqli_stmt_close($stmt);
-        }
-    }
-
-    // Validate password
-    if (empty(trim($_POST["password"]))) {
-        $password_err = "Please enter a password.";
-    } elseif (strlen(trim($_POST["password"])) < 6) {
-        $password_err = "Password must have atleast 6 characters.";
-    } else {
-        $password = trim($_POST["password"]);
+        $new_password = trim($_POST["new_password"]);
     }
 
     // Validate confirm password
     if (empty(trim($_POST["confirm_password"]))) {
-        $confirm_password_err = "Please confirm password.";
+        $confirm_password_err = "Please confirm the password.";
     } else {
         $confirm_password = trim($_POST["confirm_password"]);
-        if (empty($password_err) && ($password != $confirm_password)) {
+        if (empty($new_password_err) && ($new_password != $confirm_password)) {
             $confirm_password_err = "Password did not match.";
         }
     }
 
-    // Check input errors before inserting in database
-    if (empty($username_err) && empty($password_err) && empty($confirm_password_err)) {
-
-        // Prepare an insert statement
-        $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
+    // Check input errors before updating the database
+    if (empty($new_password_err) && empty($confirm_password_err)) {
+        // Prepare an update statement
+        $sql = "UPDATE users SET password = ? WHERE id = ?";
 
         if ($stmt = mysqli_prepare($link, $sql)) {
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
+            mysqli_stmt_bind_param($stmt, "si", $param_password, $param_id);
 
             // Set parameters
-            $param_username = $username;
-            $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+            $param_password = password_hash($new_password, PASSWORD_DEFAULT);
+            $param_id = $_SESSION["id"];
 
             // Attempt to execute the prepared statement
             if (mysqli_stmt_execute($stmt)) {
-                // Redirect to login page
+                // Password updated successfully. Destroy the session, and redirect to login page
+                session_destroy();
                 header("location: login.php");
+                exit();
             } else {
-                echo "Something went wrong. Please try again later.";
+                echo "Oops! Something went wrong. Please try again later.";
             }
 
             // Close statement
@@ -144,135 +121,75 @@ $currentTime = time();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="JS/script.js"></script>
+
     <style>
-        input[type=text],
-        input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: rgb(62, 107, 137);
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        button:hover {
-            opacity: 0.8;
-        }
-
-        .cancelbtn {
-            width: auto;
-            padding: 10px 18px;
-            background-color: #f44336;
-        }
-
-
-        .container {
-            padding: 16px;
-        }
-
-        span.psw {
-            float: right;
-            padding-top: 16px;
-        }
-
-        /* Change styles for span and cancel button on extra small screens */
-        @media screen and (max-width: 300px) {
-            span.psw {
-                display: block;
-                float: none;
-            }
-
-            .cancelbtn {
-                width: 100%;
-            }
-        }
-
-        body div {
-            color: white;
-
-        }
-
-        .title {
-            color: rgb(62, 107, 137);
-
-        }
-
-        form center h2 {
-
-            color: white;
-            margin-bottom: 185px;
-        }
-
         .wrapper {
             width: 350px;
             padding: 20px;
         }
 
-        .res {
+        .user {
             color: rgb(62, 107, 137);
+        }
+
+        label {
+            color: rgb(62, 107, 137);
+        }
+
+        p {
+            color: white;
         }
     </style>
 </head>
 
-<menu>
-    <nav class="navbar navbar-expand-md navbar-dark navbar2">
-        <a href="index.php" class="navbar-brand"><img src="images/WebLogo_100x100.png"></a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ml-auto">
-               
-               
-
-            </div>
-
-        </div>
-    </nav>
-    <!---------------------------------- End the nav-bar ------------------------------------->
-</menu>
-
 <body>
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark navbar2">
+            <a href="index.php" class="navbar-brand"><img src="images/WebLogo_100x100.png"></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="reviews.php" class="nav-item nav-link">Reviews</a>
+                    <a href="news.php" class="nav-item nav-link">News</a>
+                    
+
+                </div>
+                <div>
+                    <center> <a href="password_reset.php" class="user nav-item nav-link active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a> </center>
+
+                    <?php if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+                        echo "<center><a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a></center>";
+                    } else {
+                        echo "<a href='login.php' class='nav-item nav-link'> Login </a>";
+                    } ?>
+                </div>
+        </nav>
+        <!---------------------------------- End the nav-bar ------------------------------------->
+    </menu>
     <div class="wrapper">
-        <h1>Sign Up</h1>
-        <p>Please fill this form to create an account.</p>
+        <h1>Reset Password</h1>
+        <p>Please fill out this form to reset your password.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-                <span class="help-block"><?php echo $username_err; ?></span>
-            </div>
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
-                <span class="help-block"><?php echo $password_err; ?></span>
+            <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
+                <label>New Password</label>
+                <input type="password" name="new_password" class="form-control" value="<?php echo $new_password; ?>">
+                <span class="help-block"><?php echo $new_password_err; ?></span>
             </div>
             <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
                 <label>Confirm Password</label>
-                <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
+                <input type="password" name="confirm_password" class="form-control">
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
-                <input type="reset" class="btn btn-default res" value="Reset">
+                <a class="btn btn-link" href="welcome.php">Cancel</a>
+                <?php echo '<a href="delete.php?id=' . $_SESSION["id"] . '" title="Delete Account" data-toggle="tooltip"><span class="fa fa-2x fa-trash"></span></a>'; ?>
             </div>
-            <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>
     </div>
-
-
 </body>
-
 <!-- Footer -->
 <footer class="page-footer font-small stylish-color-dark pt-4">
 

@@ -44,9 +44,9 @@ body {
 
 .report-container {
     border: #E0E0E0 1px solid;
-    padding: 20px 40px 40px 40px;
+    padding: 10px 20px 20px 20px;
     border-radius: 2px;
-    width: 550px;
+    width: 150px;
     margin: 0 auto;
     background-color: darkgrey; 
 }
