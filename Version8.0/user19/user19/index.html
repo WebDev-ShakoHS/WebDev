@@ -30,8 +30,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <style>
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
 
-
+        .videoWrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <div class="menu">
@@ -58,6 +69,8 @@
         </div>
     </nav>
 </div>
+<style>
+</style>
 
 <body>
     <img src="images/Mtg.png" alt="the 5 elements of mtg" width="">
@@ -90,6 +103,12 @@
         </span></p1>
     <button type="button" class="btn btn-outline-secondary" onclick="mtg()" id="myBtn">Click here for more info about
         the game MTG</button>
+    <div class="videoWrapper">
+        <iframe width="700" height="315" src="https://www.youtube.com/embed/pGrcTK9VZ10" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
 </body>
 <footer class="page-footer font-small unique-color-dark pt-4">
 
