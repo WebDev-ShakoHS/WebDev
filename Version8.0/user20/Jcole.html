@@ -1,177 +1,71 @@
+<html>
+
 <head>
-    <!-- Bootstrap meta data -->
-             <meta charset="utf-8">
-             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-             <meta name="description" content="SHS WebDev JavaScript sample">
-         
-             <!-- CSS -->
-             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-             <link rel="stylesheet" href="CSS/style.css">
-         
-             <!-- JavaScript -->
-             <!-- These are needed to get the responsive menu to work -->
-             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-             <meta name="viewport" content="width=device-width, initial-scale=1">
-             
-             <script type="text/javascript">
-                writeRandomQuote = function () {
-                  var quotes = new Array();
-                  quotes[0] = "To appreciate the sun, you gotta know what rain is. – J Cole.";
-                  quotes[1] = " Anything's possible, you gotta dream like you never seen obstacles.” – J Cole.";
-                  quotes[2] = "“ Take a chance, because you never know how perfect something can turn out.” – J Cole.";
-                  quotes[3] = "I put a lot of pressure on myself. I think something’s not good enough, and I won’t stop until I feel like I’ve made it. I’m never satisfied.” - J cole.";
-                  var rand = Math.floor(Math.random()*quotes.length);
-                  document.write(quotes[rand]);
-                }
-                writeRandomQuote();
-              </script>
-              <link rel="icon" href="images/favicon4.ico" type="image/x-icon"/>
-              <link rel="shortcut icon" href="images/favicon4.ico" type="image/x-icon"/>
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+  <title>J cole</title>
+  <link rel="icon" href="images/favicon4.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/favicon4.ico" type="image/x-icon" />
+  <!-- Bootstrap meta data -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="SHS WebDev JavaScript sample">
 
-* {
-  box-sizing: border-box;
-}
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
 
-/* Style inputs */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid rgb(236, 129, 42);
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
+  <!-- JavaScript -->
+  <!-- These are needed to get the responsive menu to work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="JS/SampleJS.js"></script>
+</head>
 
-input[type=submit] {
-  background-color: #2c40f1;
-  color: rgb(36, 39, 211);
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
+<body>
+  <h2>Star Rating</h2>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
 
-input[type=submit]:hover {
-  background-color: #402edd;
-}
 
-/* Style the container/contact section */
-.container {
-  border-radius: 5px;
-  background-color: #2226e6;
-  padding: 10px;
-}
+  <h2>Frank Ocean</h2>
 
-/* Create two columns that float next to eachother */
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-</style>
-    </head>
-    <body>
-       
-		<h2>J cole</h2>
-        <p>Conversation about his new album. Also random quotes from him will display above</p>
-        
-        
-        
-        <div class="tab">
-            <a href="frankocean.html">Frank Ocean</a>
-            <a href="Tyler.html" class="tablinks" onclick="openCity(event, 'Tyler')">Tyler</a>
-            <a href="Jcole.html" class="tablinks" onclick="openCity(event, 'J cole')">J cole</a>
-            <a href="kanye.html" class="tablinks" onclick="openCity(event, 'Kanye')">Kanye</a>
-            <a href="index.php" class="tablinks" onclick="openCity(event, 'Index')">Index</a>
-            <a href="eBAY.API.PHP" class="tablinks" onclick="openCity(event, 'Yeezys')">Yeezy</a>
-        </div>
-        
-        <div id="Frank Ocean" class="tabcontent">
-         
-          <span onclick="this.parentElement.style.display='none'"></span>
-        </div>
-        
-        <div id="Tyler" class="tabcontent">
-          
-          <span onclick="this.parentElement.style.display='none'"></span>
-        </div>
-        
-        
-        <div id="J cole" class="tabcontent">
-          
-        `  <span onclick="this.parentElement.style.display='none'"></span>
-        
-        <div id="Kanye" class="tabcontent">
-            
-            <span onclick="this.parentElement.style.display='none'"></span>
-          </div>
-          <div id="INDEX" class="tabcontent">
-		
-            ` <span onclick="this.parentElement.style.display='none'"></span>
-        </div> 
-        <div id="Yeezy" class="tabcontent">
-		
-          ` <span onclick="this.parentElement.style.display='none'"></span>
-        <center><img src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/cb92744b24593767f561d54e96b8c2e2/57ac89f09be924fba5913a737ad04cdeccf61f3d01027444d0cd6d0f134a14571c84db605f947227_rw_1920.gif?h=ee8a98c6ea2c5a35b00a044c319f3975" width="900" height="600" alt="J cole coloring" /> </center>    
-    <style>
-        .tab {
-  overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.801);
-  background-color: #f4b223;
-}
-        h3  {
-            
-            animation-duration: 8s;
-            animation-name: slidein;
-            animation-iteration-count: infinite;
-        }
-        
-        @keyframes slidein {
-          0% {
-            margin-left: 0%;
-          }
-          50% {
-            margin-left: 300px;
-          }
-          100% {
-            margin-left: 0%;
-          }
-        }
-    </style>
-<script type="text/javascript">writeRandomQuote();</script>
-<div class="navbar navbar-default navbar-fixed-top">
+  <nav class="tab">
+    <a href="index.php" class="tablinks" onclick="openCity(event, 'Index')">Index</a>
+    <a href="frankocean.html">Frank Ocean</a>
+    <a href="Tyler.html" class="tablinks" onclick="openCity(event, 'Tyler')">Tyler</a>
+    <a href="Jcole.html" class="tablinks" onclick="openCity(event, 'J cole')">J cole</a>
+    <a href="kanye.html" class="tablinks" onclick="openCity(event, 'Kanye')">Kanye</a>
+    <a href="eBAY.API.PHP" class="tablinks" onclick="openCity(event, 'Yeezys')">Yeezy</a>
+  </nav>
+
+  <center><img
+      src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/cb92744b24593767f561d54e96b8c2e2/57ac89f09be924fba5913a737ad04cdeccf61f3d01027444d0cd6d0f134a14571c84db605f947227_rw_1920.gif?h=ee8a98c6ea2c5a35b00a044c319f3975"
+      width="900" height="600" alt="J cole coloring" /> </center>
+
+  <script type="text/javascript">writeRandomQuote();</script>
+
+
+  <!-- <-- <div class="collapse navbar-collapse">
+  div class="navbar navbar-default navbar-fixed-top">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="https://www.youtube.com/channel/UCnc6db-y3IU7CkT_yeVXdVg">J cole</a>
+    
+    
   </div>
-  <div class="collapse navbar-collapse">
+  <script>
+    
+  </script>
     <ul class="nav navbar-nav">
       <li><a href="#accueil">Home</a></li>
       <li><a href="#gallery">Gallery</a></li>
@@ -302,37 +196,14 @@ input[type=submit]:hover {
 </figure>
 </div>
 <form role="form" id="contact">
-<div class="form-group">
+<div class="form-group">  -->
 
 
-Resources
+  <footer>
+    <p>Author:Ritesh Prabhu<br>
+      <a href="mailto:228972@shakopeeschools.org">228972@shakopeeschools.org</a>
+    </p>
+  </footer>
+</body>
 
-<div class="container">
-  <div style="text-align:center">
-    <h2>Contact Me</h2>
-    <p>Swing by for a few questions or put it down below:</p>
-  </div>
-  <div class="row">
-    <div class="column">
-      <img src="https://static.highsnobiety.com/thumbor/qcCHrcaMUoQ4ncpKp51tXZhaUJ4=/1600x1067/static.highsnobiety.com/wp-content/uploads/2018/12/18144504/kanye-west-tyler-the-creator-style-main.jpg" style="width:100%">
-    </div>
-    <div class="column">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </div>
-</div>
-  </body>
+</html>

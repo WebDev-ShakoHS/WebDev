@@ -52,14 +52,39 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+ <!-- Bootstrap meta data -->
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="SHS WebDev JavaScript sample">
+  <title>Frank Ocean</title>
+  <link rel="shortcut icon" href="images/favicon3.ico" type="image/x-icon" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <!-- JavaScript -->
+  <!-- These are needed to get the responsive menu to work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>View Record</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+   
     <style type="text/css">
         .wrapper{
             width: 500px;
             margin: 0 auto;
         }
+
+        body {
+  background-color: rgb(238, 80, 80);
+  font-family: Arial;
+}
     </style>
 </head>
 <body>
