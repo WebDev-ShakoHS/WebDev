@@ -1,3 +1,40 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+$apiKey = "7c4c44b492486abe022028f0a0d17518"; //You will need to add in the 
+$cityId = "5046997"; //5046997 Shakopee City Id
+$units = "metric";//metric-Celcius  imperial-Farhenheit
+if ($units == 'metric'){//Changes the $temp varaible to match 
+    $temp = "C";
+}
+else {
+    $temp = "F";
+}
+if ($data->main->temp_max > 10)
+  echo "it is ht out";
+
+$googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
+
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_VERBOSE, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$response = curl_exec($ch);
+
+curl_close($ch);
+$data = json_decode($response);
+$currentTime = time();
+?>
 <html lang="en">
 <!--Version 7.0 
 	Name: Landon
@@ -25,6 +62,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="JS/script.js"></script>
+
     <style>
         body {
             background-image: url(images/mcdonalds-drive-through-restaurant.jpeg);
@@ -46,7 +84,7 @@
     <!---------------------------------- Begin the nav-bar ------------->
     <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="index.html" class="navbar-brand">McMonalds</a>
+            <a href="index.php" class="navbar-brand">McMonalds</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -54,13 +92,21 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
 
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="Menu.html" class="nav-item nav-link">Menu</a>
-                    <a href="Message.html" class="nav-item nav-link">Order</a>
+                    <a href="index.php" class="nav-item nav-link active">Home</a>
+                    <a href="Menu.php" class="nav-item nav-link">Menu</a>
+                    <a href="Message.php" class="nav-item nav-link">Order</a>
+                    </div>
+                                <div class="navbar-nav ml-auto">
+                    <a href="reset_password.php" class="nav-item nav-link active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
+
+                    <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                    echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+                    } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
+                    </div>
 
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="Sign.html" class="nav-item nav-link">Review</a>
+                    <a href="Sign.php" class="nav-item nav-link">Review</a>
                 </div>
             </div>
         </nav>
@@ -69,7 +115,7 @@
 
     <header>
         <center>
-            <h1>Welcome to McMonalds!</h1>
+            <h1><h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>, Welcome to McMonalds!</h1></h1>
         </center>
     </header>
     <div class="dropdown">
@@ -77,11 +123,36 @@
             <h3><strong>Locations</h3></strong>
         </button>
         <div id="myDropdown" class="dropdown-content">
-            <a href="Map.html">World Locations</a>
-            <a href="MiniMap.html">State Locations</a>
+            <a href="Map.php">World Locations</a>
+            <a href="MiniMap.php">State Locations</a>
         </div>
     </div>
-
+    
+    <div class="row marginwide">
+        <div class="col-lg-10" style="background-color:Red;">
+                    <center>
+                    <div class="report-container">
+        <h2><?php echo $data->name; ?> Weather Status</h2>
+        <h5> See if you can go to McMonalds <?php echo htmlspecialchars($_SESSION["username"]); ?>! <h5>
+        <div class="time">
+            <div><?php echo date("l g:i a", $currentTime); ?></div>
+            <div><?php echo date("jS F, Y",$currentTime); ?></div>
+            <div><?php echo ucwords($data->weather[0]->description); ?></div>
+        </div>
+        <div class="weather-forecast">
+            <img
+                src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
+                class="weather-icon" /><h1> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?></h1><span
+                class="min-temperature"><h1> <?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></h1></span>
+        </div>
+        <div class="time">
+            <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
+            <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
+        </div>
+    </div>
+                    </center>
+        </div>
+    </div>        
     <div class="row marginwide">
         <div class="col-lg-10" style="background-color:Red;">
             <center>
@@ -93,10 +164,10 @@
                     </p>
                 </strong>
                 <img src="images/1382539317193.jpeg" alt="Picture of Chicken Sandwich" style="height: 450px;">
-                <a href="Sign.html"><u>
+                <a href="Sign.php"><u>
                         <h1>Earn multiple rewards right here</h1>
                     </u></a>
-                <a href="Message.html"><u>Or click here to order the Sandwich on Takeout</u></a>
+                <a href="Message.php"><u>Or click here to order the Sandwich on Takeout</u></a>
             </center>
         </div>
     </div>
@@ -157,6 +228,9 @@
                 </td>
                 <td>
                     <H4> McMonalds 1883-2021, All rights reserved</H4>
+                </td>
+                <td>
+                    <H4> <a href="Order.php" class="nav-item nav-link"> Click here to add a new item on the menu</a></H4>
                 </td>
             </tr>
         </table>

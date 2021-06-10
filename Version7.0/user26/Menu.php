@@ -1,3 +1,6 @@
+<?php
+?>
+
 <html lang="en">
 <!--Version 7.0 
 	Name: Landon
@@ -37,21 +40,29 @@
     <!---------------------------------- Begin the nav-bar ------------->
     <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="index.html" class="navbar-brand">McMonalds</a>
+            <a href="index.php" class="navbar-brand">McMonalds</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="Menu.html" class="nav-item nav-link active">Menu</a>
-                    <a href="Message.html" class="nav-item nav-link">Order</a>
-                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+                    <a href="index.php" class="nav-item nav-link active">Home</a>
+                    <a href="Menu.php" class="nav-item nav-link">Menu</a>
+                    <a href="Message.php" class="nav-item nav-link">Order</a>
+                    </div>
+                                <div class="navbar-nav ml-auto">
+                    <a href="reset_password.php" class="nav-item nav-link active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
+
+                    <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
+                    echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+                    } else { echo "<a href='login.php' class='nav-item nav-link'> Login </a>";} ?>
+                    </div>
+
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="Sign.html" class="nav-item nav-link">Review</a>
+                    <a href="Sign.php" class="nav-item nav-link">Review</a>
                 </div>
             </div>
         </nav>
