@@ -1,5 +1,9 @@
 function changeText() {
-  document.getElementById("textChange").innerHTML = "Thanks for liking my Webpage";
+  document.getElementById("textChange").innerHTML = "All of these pets are actually beings of chaos. If you buy them and have them in your world they will tear it to shreads. Please do not buy. Gerald was able to write his own, that is why his is the only one to hold the truth. Please do not buy. Leave the site now. Don't even think about the site. The devil is an idiot so I was able to hide this right in front of him so please don't tell him. Leave the site now.";
+}
+
+function textRevert() {
+  document.getElementById("textRevert").innerHTML = "testing";
 }
 function zoomIn(event) {
   var element = document.getElementById("overlay");
@@ -15,7 +19,6 @@ function zoomOut() {
   var element = document.getElementById("overlay");
   element.style.display = "none";
 }
-<input type="button" onclick="location.href='home.html';" value="Go Home" />
 
 function magnify(imgID, zoom) {
   var img, glass, w, h, bw;
@@ -23,10 +26,3 @@ function magnify(imgID, zoom) {
 
 }
 
-function changeText() {
-  document.getElementById("textChange").innerHTML = "Hello"
-}
-
-function textRevert() {
-  document.getElementById("textRevert").innerHTML = "Hey yeah, I’m the devil, bow down yeah whatever. It’s getting way too cramped down here and I need to make some room but the big man isn’t letting me get rid of you idiots.So I’m giving the pet district of heck up to adoption. There’s only one computer down here and it only runs Windows 95 so it might take a while to update the site. Unsurprisingly I’m bad with coding myself but good thing a little friend decided to come down a few years ago.But hey we got it up and running.Anyways.We've got a lot of weird stuff down here so it would be great if ya guys bought a few.Thanks.I'll be seeing most of you very soon"
-}

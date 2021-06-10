@@ -56,22 +56,21 @@
   <link href='https://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Caesar+Dressing' rel='stylesheet' type='text/css'>s
 
-  <script src=
-  "https://code.jquery.com/jquery-1.12.4.min.js">
-      </script>
-   <script type="text/javascript">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+  </script>
+  <script type="text/javascript">
     function zoomin() {
-        var GFG = document.getElementById("myimage");
-        var currWidth = GFG.clientWidth;
-        GFG.style.width = (currWidth + 100) + "px";
+      var GFG = document.getElementById("myimage");
+      var currWidth = GFG.clientWidth;
+      GFG.style.width = (currWidth + 100) + "px";
     }
-      
+
     function zoomout() {
-        var GFG = document.getElementById("myimage");
-        var currWidth = GFG.clientWidth;
-        GFG.style.width = (currWidth - 100) + "px";
+      var GFG = document.getElementById("myimage");
+      var currWidth = GFG.clientWidth;
+      GFG.style.width = (currWidth - 100) + "px";
     }
-</script>
+  </script>
 
 
 
@@ -120,16 +119,20 @@
         text-align: center;
         font-size: 27px
       }
+
+      ul .navbar {
+        float: left;
+      }
     </style>
   </head>
 
 <body>
-  <ul>
+  <nav class="navbar">
     <li><a href="home.html">Home</a></li>
     <li><a href="aboutus.html">About Us</a></li>
     <li><a class="active" href="demons.html">Our Demon Spawn</a></li>
     <li><a href="adopt.html">Adopting Process</a></li>
-  </ul>
+  </nav>
   <figure>
 
 
@@ -144,22 +147,23 @@
               <img id="myimage" src="images/panda.jpg" width="300" height="430" alt="panda and penguin mix">
               <button type="button" onclick="zoomin()">
                 Zoom-In
-            </button>
-              
-            <button type="button" onclick="zoomout()"> 
-                Zoom-Out
-            </button>
-            <FIGCAPTION> <br> Ralph is our (former) resident pandguin. Big man must've taken a day off when he made this
-              one. <br>
-              <br> Name: Ralph <br>
-              <br> Age: 21 <br>
-              <br> Description: Ralph is a mix of a penguin and a panda. Ralph is nice but weird to be around. Do not
-              allow
-              near prisons <br>
-           
-            </FIGCAPTION>
+              </button>
 
-            
+              <button type="button" onclick="zoomout()">
+                Zoom-Out
+              </button>
+              <FIGCAPTION> <br> Ralph is our (former) resident pandguin. Big man must've taken a day off when he made
+                this
+                one. <br>
+                <br> Name: Ralph <br>
+                <br> Age: 21 <br>
+                <br> Description: Ralph is a mix of a penguin and a panda. Ralph is nice but weird to be around. Do not
+                allow
+                near prisons <br>
+
+              </FIGCAPTION>
+
+
           </figure>
         </div>
       </div>
@@ -168,12 +172,12 @@
           <figure>
 
             <IMG id="myimage" SRC="images/blob.jpg" width="300 px" height="430 px" alt="blob">
-              <button type="button" onclick="zoomin()">
-                Zoom-In
+            <button type="button" onclick="zoomin()">
+              Zoom-In
             </button>
-              
-            <button type="button" onclick="zoomout()"> 
-                Zoom-Out
+
+            <button type="button" onclick="zoomout()">
+              Zoom-Out
             </button>
             <FIGCAPTION>Blob. </FIGCAPTION>
 
@@ -185,12 +189,12 @@
           <figure>
 
             <IMG id="myimage" SRC="images/thatsew.jpg" width="300 px" height="430 px" alt="bird and frog mix">
-              <button type="button" onclick="zoomin()">
-                Zoom-In
+            <button type="button" onclick="zoomin()">
+              Zoom-In
             </button>
-              
-            <button type="button" onclick="zoomout()"> 
-                Zoom-Out
+
+            <button type="button" onclick="zoomout()">
+              Zoom-Out
             </button>
             <FIGCAPTION> <br> I hate this thing. We haven't named it but it was made in some human lab. What were you
               guys
@@ -210,12 +214,12 @@
           <figure>
 
             <IMG id="myimage" SRC="images/piss.png" width="250 px" height="430 px" alt="piss penguin">
-              <button type="button" onclick="zoomin()">
-                Zoom-In
+            <button type="button" onclick="zoomin()">
+              Zoom-In
             </button>
-              
-            <button type="button" onclick="zoomout()"> 
-                Zoom-Out
+
+            <button type="button" onclick="zoomout()">
+              Zoom-Out
             </button>
             <FIGCAPTION> <br> Pfft piss penguin. <br>
               <br> Name: Piss penguin. <br>
@@ -234,12 +238,12 @@
           <figure>
 
             <IMG id="myimage" SRC="images/shark.jpg" width="300 px" height="430 px" alt="shark and horse mix">
-              <button type="button" onclick="zoomin()">
-                Zoom-In
+            <button type="button" onclick="zoomin()">
+              Zoom-In
             </button>
-              
-            <button type="button" onclick="zoomout()"> 
-                Zoom-Out
+
+            <button type="button" onclick="zoomout()">
+              Zoom-Out
             </button>
             <FIGCAPTION> <br> Disgusting yet weirdly elegant. <br>
               <br> Name: Alice <br>
@@ -257,12 +261,12 @@
           <figure>
 
             <IMG id="myimage" SRC="images/smoke.jpg" width="300 px" height="430 px" alt="frog smoking">
-              <button type="button" onclick="zoomin()">
-                Zoom-In
+            <button type="button" onclick="zoomin()">
+              Zoom-In
             </button>
-              
-            <button type="button" onclick="zoomout()"> 
-                Zoom-Out
+
+            <button type="button" onclick="zoomout()">
+              Zoom-Out
             </button>
             <FIGCAPTION> <br> Gotta admit el frog is a homie, I love the guy. Just doesn't fit down here and his 4 story
               mansion takes up a lot of valuable space. <br>
@@ -282,12 +286,12 @@
           <figure>
 
             <IMG id="myimage" SRC="images/igor.png" width="300 px" height="430 px" alt="small dog">
-              <button type="button" onclick="zoomin()">
-                Zoom-In
+            <button type="button" onclick="zoomin()">
+              Zoom-In
             </button>
-              
-            <button type="button" onclick="zoomout()"> 
-                Zoom-Out
+
+            <button type="button" onclick="zoomout()">
+              Zoom-Out
             </button>
             <FIGCAPTION> <br> We've got a couple million of these down here. The creation of chihuahuas was a prank by
               me by
@@ -307,12 +311,12 @@
           <figure>
 
             <IMG id="myimage" SRC="images/gerald.jpg" width="250 px" height="430 px" alt="duck">
-              <button type="button" onclick="zoomin()">
-                Zoom-In
+            <button type="button" onclick="zoomin()">
+              Zoom-In
             </button>
-              
-            <button type="button" onclick="zoomout()"> 
-                Zoom-Out
+
+            <button type="button" onclick="zoomout()">
+              Zoom-Out
             </button>
             <FIGCAPTION><br>Alright so Gerald. Basically Gerald is a homicidal maniac.<br>
               <br> Name: Gerald <br>
