@@ -1,3 +1,14 @@
+<?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header("location: crewlogin.php");
+    exit;
+}
+?>
+
 <html lang="en">
 <!--Version 7.0 
 	Name:
@@ -35,39 +46,39 @@
 <body onload="myFunction()" style="margin:0;">
     <div id="loader"></div>
     <div style="display:none;" id="myDiv" class="animate-bottom">
-    
+
         <div class="menu">
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
                 <a href="http://shakonet.isd720.com" class="navbar-brand"><img scr="images/57px_Logo"></a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                         <a class="navbar-brand" href="#"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home <span
-                                            class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="travelPlans.html">Travel Plans</a>
+                                    <a class="nav-link" href="travelPlans.php">Travel Plans</a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="summerIdeas.html">Summer Goals<span
-                                            class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="summerIdeas.php">Summer Goals<span class="sr-only">(current)</span></a>
                                 </li>
 
                             </ul>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                    aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
+                            <div class="navbar-nav ml-auto">
+                                <a href="crewreset_password.php" class="nav-item nav-link active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
+
+                                <?php if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+                                    echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+                                } else {
+                                    echo "<a href='crewlogin.php' class='nav-item nav-link'> Login </a>";
+                                } ?>
+                            </div>
                         </div>
                     </nav>
         </div>
@@ -90,18 +101,14 @@
                 <!-- Section: Social media -->
                 <section class="mb-4">
                     <!-- Facebook -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fa fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-facebook-f"></i></a>
 
                     <!-- Twitter -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-twitter"></i></a>
                     <!--Snapchat-->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fa fa-snapchat-ghost"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-snapchat-ghost"></i></a>
                     <!-- Instagram -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-instagram"></i></a>
                 </section>
                 <!-- Section: Social media -->
 

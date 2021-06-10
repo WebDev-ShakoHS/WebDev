@@ -1,21 +1,23 @@
 <?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header("location: crewlogin.php");
+    exit;
+}
+
 $apiKey = "76a2b0628857ea2f292e5ad00c07a909"; //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
-$units = "imperial";//metric-Celcius  imperial-Farhenheit
-if ($units == 'metric'){//Changes the $temp varaible to match 
+$units = "imperial"; //metric-Celcius  imperial-Farhenheit
+if ($units == 'metric') { //Changes the $temp varaible to match 
     $temp = "C";
-}
-else {
+} else {
     $temp = "F";
 }
 
-if ($temp_max > '50'){
 
-    echo '<body style="background-color:white">';
-   }
-else {
-    echo '<body style="background-color:orange">';
-   }
 
 $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
 
@@ -197,38 +199,90 @@ $currentTime = time();
         .hover-shadow:hover {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
+
+        .report-container {
+            border: #E0E0E0 1px solid;
+            padding: 20px 40px 40px 40px;
+            border-radius: 2px;
+            width: 500px;
+            margin: 0 auto;
+            background-color: white;
+
+        }
+
+        .weather-icon {
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+
+        .weather-forecast {
+
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 0px;
+        }
+
+        span.min-temperature {
+            margin-left: 15px;
+
+        }
+
+        .time {
+            line-height: 25px;
+        }
+
+        .sidebyside-container {
+            border: 3px solid #fff;
+            padding: 20px;
+            margin-bottom: 300px;
+
+        }
+
+        .sidebyside {
+            width: 50%;
+            float: left;
+            padding: 20px;
+
+        }
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="summerIdeas.html"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="travelPlans.html">Travel Plans</a>
+                    <a class="nav-link" href="travelPlans.php">Travel Plans</a>
                 </li>
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="summerIdeas.html" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="summerIdeas.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Summer Goals
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="DressUp.html">Dress Up</a>
-                        <a class="dropdown-item" href="StateFair.html">State Fair</a>
+                        <a class="dropdown-item" href="DressUp.php">Dress Up</a>
+                        <a class="dropdown-item" href="StateFair.php">State Fair</a>
                     </div>
                 </li>
 
             </ul>
+            <div class="navbar-nav ml-auto">
+                <a href="crewreset_password.php" class="nav-item nav-link active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
+
+                <?php if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+                    echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+                } else {
+                    echo "<a href='crewlogin.php' class='nav-item nav-link'> Login </a>";
+                } ?>
+            </div>
         </div>
     </nav>
 
@@ -238,20 +292,16 @@ $currentTime = time();
         </center>
         <div class="row" style="margin-bottom: 20px;">
             <div class="column">
-                <img src="images/placeholder-image.png" style="width:100%" onclick="openModal();currentSlide(1)"
-                    class="hover-shadow cursor">
+                <img src="images/placeholder-image.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
             </div>
             <div class="column">
-                <img src="images/placeholder-image.png" style="width:100%" onclick="openModal();currentSlide(2)"
-                    class="hover-shadow cursor">
+                <img src="images/placeholder-image.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
             </div>
             <div class="column">
-                <img src="images/placeholder-image.png" style="width:100%" onclick="openModal();currentSlide(3)"
-                    class="hover-shadow cursor">
+                <img src="images/placeholder-image.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
             </div>
             <div class="column">
-                <img src="images/placeholder-image.png" style="width:100%" onclick="openModal();currentSlide(4)"
-                    class="hover-shadow cursor">
+                <img src="images/placeholder-image.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
             </div>
         </div>
 
@@ -288,50 +338,61 @@ $currentTime = time();
 
 
                 <div class="column">
-                    <img class="demo cursor" src="images/placeholder-image.png" style="width:100%"
-                        onclick="currentSlide(1)" alt="Nature and sunrise">
+                    <img class="demo cursor" src="images/placeholder-image.png" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="images/placeholder-image.png" style="width:100%"
-                        onclick="currentSlide(2)" alt="Snow">
+                    <img class="demo cursor" src="images/placeholder-image.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="images/placeholder-image.png" style="width:100%"
-                        onclick="currentSlide(3)" alt="Mountains and fjords">
+                    <img class="demo cursor" src="images/placeholder-image.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="images/placeholder-image.png" style="width:100%"
-                        onclick="currentSlide(4)" alt="Northern Lights">
+                    <img class="demo cursor" src="images/placeholder-image.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
                 </div>
             </div>
         </div>
-        <center>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Tristique senectus et netus et. Dui faucibus in ornare quam viverra orci sagittis.
-            </p>
-        </center>
+        <div class="sidebyside-container">
+            <div class="sidebyside">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Tristique senectus et netus et. Dui faucibus in ornare quam viverra orci sagittis.
+                </p>
+            </div>
+
+            <div class="report-container sidebyside">
+                <h2><?php echo $data->name; ?> Weather Status</h2>
+
+                <div class="time">
+                    <div><?php echo date("l g:i a", $currentTime); ?></div>
+                    <div><?php echo date("jS F, Y", $currentTime); ?></div>
+                    <div><?php echo ucwords($data->weather[0]->description); ?></div>
+                </div>
+                <div class="weather-forecast">
+                    <img src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png" class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
+                </div>
+                <div class="time">
+                    <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
+                    <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-center text-white" id="footer">
+    <footer class="bg-dark text-center text-white" id="footer" style="margin-top:0px;">
         <!-- Grid container -->
         <div class="container p-4">
             <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fa fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-facebook-f"></i></a>
 
                 <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fa fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-twitter"></i></a>
                 <!--Snapchat-->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fa fa-snapchat-ghost"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-snapchat-ghost"></i></a>
                 <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fa fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-instagram"></i></a>
             </section>
             <!-- Section: Social media -->
 
