@@ -1,3 +1,15 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
+<html lang="en">
+
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 4.0
@@ -41,12 +53,12 @@
 
 <body>
     <div class="bs-example">
-        <form action="index.html" method="post">
+        <form action="index.php" method="post">
             <div class="form-group row">
                 <header><label for="inputEmail" class="col-sm-2 col-form-label">McMonalds Acount name</label></header>
                 <div class="col-lg-10">
                     <input type="text" readonly class="form-control-plaintext" id="inputEmail"
-                        value="McMonaldsCustomer@Gmail.com">
+                        value="<?php echo htmlspecialchars($_SESSION["username"]); ?>@Gmail.com">
                 </div>
             </div>
             <div class="form-group row">
