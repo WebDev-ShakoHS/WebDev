@@ -7,7 +7,8 @@
 
 <head>
     <!--Favicon-->
-    <link rel="icon" type="image/png" sizes="16x16" href="/Users/237742/Applications/mampstack/apache2/htdocs/WebDev/Complete site/images/MessiHead.ico/favicon-16x16.png">    
+<link rel="icon" type="image/png" sizes="16x16"
+    href="images/MessiHead.ico/favicon-16x16.png"> 
     
     <title>MESSI Site</title>
 
@@ -24,6 +25,7 @@
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
+    <script src="JS/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -42,6 +44,7 @@
         footer {
             font-size: 12px;
             text-align: center;
+            height:0%;
         }
 
         .fullwidth {
@@ -58,7 +61,7 @@
     <!---------------------------------- Begin the nav-bar ------------->
     <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a href="http://shakonet.isd720.com" class="navbar-brand">Lionel Messi</a>
+        <a href="https://www.fcbarcelona.com/en/football/first-team/players/4974/lionel-messi" class="navbar-brand">The Messi Site</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -66,15 +69,17 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="Home-Page.html" class="nav-item nav-link active">Home</a>
-                    <a href="Biography.html" class="nav-item nav-link">Biography</a>
-                    <a href="statsAndGames.html" class="nav-item nav-link">Stats</a>
-                    <a href="Trophies.html" class="nav-item nav-link">Trophies</a>
-                    <a href="Conclusion.html" class="nav-item nav-link">Conclusion</a>
+                    <a href="index1.php" class="nav-item nav-link active">Home</a>
+                    <a href="Biography.php" class="nav-item nav-link">Biography</a>
+                    <a href="statsAndGames.php" class="nav-item nav-link">Stats</a>
+                    <a href="Trophies.php" class="nav-item nav-link">Trophies</a>
+                    <a href="SHOP.php" class="nav-item nav-link">Messi Shop</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                    <a href="index.php" class="nav-item nav-link active">CART</a>
+                    <a href="login.php" class="nav-item nav-link active">Login</a>
+                    <a href="logout.php" class="nav-item nav-link active">Logout</a> 
                 </div>
             </div>
         </nav>
@@ -83,91 +88,31 @@
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3 title" tabindex="0">Check out my work!</h1>
+        <h1 class="text-left my-3 title" tabindex="0">Hi, I'm Leo!!</h1>
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h3 id="topHeading">I'm a Web Developer</h3>
-        <div id="knowledge">
-            <li>CSS
-                <ul>
-                    <li>Classes</li>
-                    <li>Selectors</li>
-                    <li>ID's</li>
-                </ul>
-            </li>
-            <li>HTML
-                <ul>
-                    <li>Tables</li>
-                    <li>DIV's</li>
-                    <li>Nav Bar</li>
-                </ul>
-            </li>
-        </div>
-        <div id="javaScript">
-            <li>Java
-                <ul>
-                    <li>Images</li>
-                    <li>Animation</li>
-                    <li>User interface</li>
-                </ul>
-            </li>
-        </div>
-        <p>
-            These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
-        </p>
-        <div>
-            <table class="fullerg">
-                <tr id="gradient">
-                    <td class="background-red">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="background-orange">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="background-yellow">
-                    </td>
-                </tr>
-                    <td class="background-green">
-                    </td>
-                </tr>
-                    <td class="background-blue">
-                    </td>
-                </tr>
-                    <td class="background-indigo">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="background-violet">
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <p>
-            I will use my knowledge to create an amazing website for you and your needs.
-        </p>
-        <div>
-            <table class="fullwidth">
-                <tr id="rainbow">
-                    <td class="background-red">
-                    </td>
-                    <td class="background-orange">
-                    </td>
-                    <td class="background-yellow">
-                    </td>
-                    <td class="background-green">
-                    </td>
-                    <td class="background-blue">
-                    </td>
-                    <td class="background-indigo">
-                    </td>
-                    <td class="background-violet">
-                    </td>
-                </tr>
-            </table>
-        </div>
+        <h3 id="topHeading">Here are some interesting things about me.</h3>
+        <data class="container mt-3">
+            <div class="list-group">
+            <button onclick="myChild()"><a class="list-group-item list-group-item-action active">
+                    <i class="fa fa-home"></i> My Childhood
+                </a></button>
+                <p id="childhood"></p>
+            <button onclick="myCar()"><a class="list-group-item list-group-item-action active">
+                    <i class="fa fa-futbol-o" aria-hidden="true"></i> My Career
+                </a></button>
+                <p id="myCareer"></p>
+            <button onclick="myFam()"><a class="list-group-item list-group-item-action active">
+                    <i class="fa fa-users" aria-hidden="true"></i> My Family
+                </a></button>
+                <p id="myFamily"></p>
+            <button onclick="myFavs()"><a class="list-group-item list-group-item-action active">
+                    <i class="fa fa-star" aria-hidden="true"></i> Favorites
+                </a></button>
+                <p id="Favorites"></p>
+            </div>
+        </data> 
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 

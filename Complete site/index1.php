@@ -1,9 +1,13 @@
-<!DOCTYPE html>
+<?php
+  require_once "config.php";
+ ?>
+ 
+ <!DOCTYPE html>
 
 <title>MESSI Site</title>
 <!--Favicon-->
 <link rel="icon" type="image/png" sizes="16x16"
-    href="/Users/237742/Applications/mampstack/apache2/htdocs/WebDev/Complete site/images/MessiHead.ico/favicon-16x16.png">
+    href="images/MessiHead.ico/favicon-16x16.png">
 
 <!-- Meta -->
 <meta charset="utf-8">
@@ -24,6 +28,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <!-- Custom styles for this template -->
 <style type="text/css">
+    body{
+        background-color: blue;
+    }
+    }
     menu {
         margin: 0;
         padding: 0;
@@ -45,38 +53,25 @@
         margin: 0;
     }
 
-    .bg {
-        display: block;
-        /* The image used */
-        background-image: url("images/messig.jpg");
-
-        /* Full height */
-        height: 100%;
-
-        /*Color of Bg*/
-        background-color: rgba(152, 66, 211, 0.63);
-        opacity: .5;
-
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .foot {
+	position: absolute;
+	top: 80%;
+	left: 45%;
+	font-size: medium;
     }
 </style>
 
 </head>
-<div></div>
+<div>
+</div>
 
 <body>
-    <script>
-        document.head.bg = 'fade';
-      </script>
     <!---------------------------------- Begin the nav-bar ------------->
     <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="/Users/237742/Applications/mampstack/apache2/htdocs/WebDev/Complete site/images/Messi/favicon-96x96.png"
                 class="navbar-brand"></a>
-            <a href="http://shakonet.isd720.com" class="navbar-brand">The Messi Site</a>
+            <a href="https://www.fcbarcelona.com/en/football/first-team/players/4974/lionel-messi" class="navbar-brand">The Messi Site</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -84,42 +79,47 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="Biography.html" class="nav-item nav-link">Biography</a>
-                    <a href="statsAndGames.html" class="nav-item nav-link">Stats</a>
-                    <a href="Trophies.html" class="nav-item nav-link">Trophies</a>
-                    <a href="Conclusion.html" class="nav-item nav-link">Conclusion</a>
+                    <a href="index1.php" class="nav-item nav-link active">Home</a>
+                    <a href="Biography.php" class="nav-item nav-link">Biography</a>
+                    <a href="statsAndGames.php" class="nav-item nav-link">Stats</a>
+                    <a href="Trophies.php" class="nav-item nav-link">Trophies</a>
+                    <a href="SHOP.php" class="nav-item nav-link">Messi Shop</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="index.php" class="nav-item nav-link active">CART</a>
+                    <a href="login.php" class="nav-item nav-link active">Login</a>
+                    <a href="logout.php" class="nav-item nav-link active">Logout</a> 
                 </div>
             </div>
         </nav>
     </menu>
     <!---------------------------------- End the nav-bar ------------------------------------->
+
     <!--MEssi Banner-->
-    <div class="bg"></div>
-    <div class="bgimage"></div>
-    <div class="centered">Lionel Messi</div>
-    
-</body>
-<!---------------------------------- Begin the footer ------------->
-<footer>
-    <div class="foot">
-        <span class="title">Follow Messi Here!</span>
-        <table id="footerTable">
-            <tr>
-                <td>
-                    <a href="https://www.facebook.com/leomessi"><i class="fa fa-facebook fa-3x"
-                            aria-hidden="true"></i></a>
-                </td>
-                <td>
-                    <a href="https://twitter.com/TeamMessi"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
-                </td>
-                <td>
-                    <a href="https://www.instagram.com/leomessi/"><i class="fa fa-instagram fa-3x"
-                            aria-hidden="true"></i></a>
-                </td>
-            </tr>
-        </table>
-    </div>
-</footer>
+    <article>
+        <div class="centered">Lionel Messi</div>
+    </article>
+    <!---------------------------------- Begin the footer ------------->
+    <footer>
+        <div class="foot">
+            <span class="title">Follow Messi Here!</span>
+            <table id="footerTable">
+                <tr>
+                    <td>
+                        <a href="https://www.facebook.com/leomessi"><i class="fa fa-facebook fa-3x"
+                                aria-hidden="true"></i></a>
+                    </td>
+                    <td>
+                        <a href="https://twitter.com/TeamMessi"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                    </td>
+                    <td>
+                        <a href="https://www.instagram.com/leomessi/"><i class="fa fa-instagram fa-3x"
+                                aria-hidden="true"></i></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
 <!---------------------------------- End the footer ------------->
+</body>

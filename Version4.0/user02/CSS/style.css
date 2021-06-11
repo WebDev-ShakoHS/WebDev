@@ -119,3 +119,6 @@ div>li::marker {
 	color: rgb(0, 4, 255);
 	font-weight: bold;
 }
+*{
+    font-weight:bold;
+}

@@ -1,4 +1,8 @@
 @import url(rainbow.css);
+
+body{
+	background-color: blue;
+}
 /*-------------------------------------HomePage----------------------------------------------*/
 
 /*Banner*/
@@ -14,7 +18,7 @@
 	font-weight: 500;
 }/*footer*/
 .foot {
-	position: absolute;
+	position: sticky;
 	top: 80%;
 	left: 45%;
 	font-size: medium;
@@ -148,4 +152,10 @@ div>li::marker {
 #javaScript {
 	color: rgb(0, 4, 255);
 	font-weight: bold;
+}
+
+.btn-group {
+	margin: 0;
+  position: sticky;
+  left: 50%;
 }

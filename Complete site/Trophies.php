@@ -7,7 +7,8 @@
 
 <head>
      <!--Favicon-->
-     <link rel="icon" type="image/png" sizes="16x16" href="/Users/237742/Applications/mampstack/apache2/htdocs/WebDev/Complete site/images/MessiHead.ico/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+    href="images/MessiHead.ico/favicon-16x16.png">
 
     <title>MESSI Site</title>
 
@@ -89,16 +90,17 @@
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="Biography.html" class="nav-item nav-link">Biography</a>
-                    <a href="statsAndGames.html" class="nav-item nav-link">Stats</a>
-                    <a href="Trophies.html" class="nav-item nav-link">Trophies</a>
-                    <a href="Conclusion.html" class="nav-item nav-link">Conclusion</a>
+                    <a href="index1.php" class="nav-item nav-link active">Home</a>
+                    <a href="Biography.php" class="nav-item nav-link">Biography</a>
+                    <a href="statsAndGames.php" class="nav-item nav-link">Stats</a>
+                    <a href="Trophies.php" class="nav-item nav-link">Trophies</a>
+                    <a href="SHOP.php" class="nav-item nav-link">Messi Shop</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                    <a href="index.php" class="nav-item nav-link active">CART</a>
+                    <a href="login.php" class="nav-item nav-link active">Login</a>
+                    <a href="logout.php" class="nav-item nav-link active">Logout</a> 
                 </div>
             </div>
         </nav>
@@ -107,43 +109,32 @@
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3 title" tabindex="0">Hiring Page</h1>
+        <h1 class="text-left my-3 title" tabindex="0">Trophy Page</h1>
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <div class="paragraph">
-            <p>We at HireMe.com have one true belief. We believe in people. Since 1964, we have connected the best
-                people,
-                their talents, skills, career goals, and aspirations with the best companies. We are
-            <p class="orange">"Career Gurus."</p> We are <span class="orange">"People-People."</span> Let us introduce
-            you!
-            </p>
-        </div>
-
-        <h2>People</h2>
-
         <div class="card">
-            <img src="https://github.com/rmainhar/SHS_WebDevelopment/blob/master/Version4.0/user00/images/img_avatar.png?raw=true"
-                alt="Avatar John" style="width:100%;">
+            <img src="images/Champions league.jpeg"
+                alt="champions League" style="width:100%;">
             <div class="nameplate">
-                <h4><b>John Doe</b></h4>
-                <p>Architect & Engineer</p>
+                <h4><b>Champions League Trophy</b></h4>
+                <p>Messi has won this 4 times</p>
             </div>
         </div>
         <div class="card">
-            <img src="https://github.com/rmainhar/SHS_WebDevelopment/blob/master/Version4.0/user00/images/img_avatar2.png?raw=true"
-                alt="Avatar Jane" style="width:100%;">
+            <img src="images/Laliga.jpeg"
+                alt="La Liga" style="width:100%;">
             <div class="nameplate">
-                <h4><b>Jane Doe</b></h4>
-                <p>Computer Scientist</p>
+                <h4><b>La Liga</b></h4>
+                <p>Messi has won this 10 times</p>
             </div>
         </div>
         <div class="card">
-            <img src="https://github.com/rmainhar/SHS_WebDevelopment/blob/master/Version4.0/user00/images/img_avatar3.png?raw=true"
-                alt="Avatar Linux" style="width:100%;">
+            <img src="images/MessiTrophies.jpeg"
+                alt="All Trophies" style="width:100%;">
             <div class="nameplate">
-                <h4><b>Sir Linux Penguin</b></h4>
-                <p>Senior Computer Network Architect</p>
+                <h4><b>All Trophies</b></h4>
+                <p>This is a collage of all trophies Messi has won(as of 2020)</p>
             </div>
         </div>
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
