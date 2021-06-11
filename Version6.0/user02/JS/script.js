@@ -16,24 +16,24 @@ var space = " ";
    }
    Scroll();
 function myFunction() {
-    var x = document.getElementById("fname");
+    var x = document.getElementById("dream");
     x.value = x.value.toUpperCase();
 } 
 function preferedBrowser() {
     prefer = document.forms[0].browsers.value;
     alert("You prefer browsing internet with " + prefer);
 }
-function myFunction() {
+function myTrap() {
     document.getElementById("demo").innerHTML = "You selected some text";
 }
-function myFunction() {
+function myPress() {
     alert("You pressed a key inside the input field");
 }
 function confirmInput() {
     fname = document.forms[0].fname.value;
     alert("Hello " + fname + "! You will now be redirected to www.w3Schools.com");
 }
-function myFunction() {
-    var x = document.getElementById("fname");
+function myFam() {
+    var x = document.getElementById("taco");
     x.value = x.value.toUpperCase();
 }
