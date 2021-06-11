@@ -1,3 +1,14 @@
+<?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header("location: crewlogin.php");
+    exit;
+}
+?>
+
 <html lang="en">
 <!--Version 7.0 
 	Name:
@@ -51,21 +62,26 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="travelPlans.html">Travel Plans</a>
+                                <a class="nav-link" href="travelPlans.php">Travel Plans</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="summerIdeas.html">Summer Ideas<span
+                                <a class="nav-link" href="summerIdeas.php">Summer Ideas<span
                                         class="sr-only">(current)</span></a>
                             </li>
 
                         </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
+                        <div class="navbar-nav ml-auto">
+                            <a href="crewreset_password.php" class="nav-item nav-link active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a>
+
+                            <?php if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+                                echo "<a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a>";
+                            } else {
+                                echo "<a href='crewlogin.php' class='nav-item nav-link'> Login </a>";
+                            } ?>
+                        </div>
                     </div>
                 </nav>
     </div>
