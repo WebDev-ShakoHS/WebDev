@@ -13,3 +13,13 @@ if (pos > msg.length) pos = 0;
 window.setTimeout("Scroll()", 0);
 }
 Scroll();
+
+flag=1
+function f1()
+{
+	alert("Yup, Im awesome ")
+}
+function f()
+{
+    alert("Try again dummy ")
+}
