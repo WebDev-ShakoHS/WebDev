@@ -1,7 +1,7 @@
 <?php
-$apiKey = "API KEY"; //You will need to add in the 
+$apiKey = "31112822b9d9eebfe9fa8b03465a4b3f"; //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
-$units = "metric";//metric-Celcius  imperial-Farhenheit
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
 if ($units == 'metric'){//Changes the $temp varaible to match 
     $temp = "C";
 }
@@ -28,21 +28,22 @@ $currentTime = time();
 <!doctype html>
 <html>
 <head>
-<title>Forecast Weather using OpenWeatherMap with PHP</title>
+<title>Current <?php echo $data->name; ?> Weather</title>
 
 <style>
 body {
     font-family: Arial;
     font-size: 0.95em;
-    color: #929292;
+    color: #001f3f;
 }
 
 .report-container {
-    border: #E0E0E0 1px solid;
+    border: #001f3f 3px solid;
     padding: 20px 40px 40px 40px;
-    border-radius: 2px;
+    border-radius: 65px;
     width: 550px;
     margin: 0 auto;
+    color: #001f3f;
 }
 
 .weather-icon {
@@ -59,7 +60,7 @@ body {
 
 span.min-temperature {
     margin-left: 15px;
-    color: #929292;
+    color: #0074D9;
 }
 
 .time {
@@ -69,17 +70,23 @@ span.min-temperature {
 
 </head>
 <body>
-
+<?php
+if ($data->main->temp_max > "55")
+    {
+    echo ("<style> .report-container{ background-color: #7FDBFF;}</style>");
+    }
+?>
     <div class="report-container">
         <h2><?php echo $data->name; ?> Weather Status</h2>
         <div class="time">
             <div><?php echo date("l g:i a", $currentTime); ?></div>
-            <div><?php echo date("jS F, Y",$currentTime); ?></div>
+            <div><?php echo date("F jS, Y",$currentTime); ?></div>
             <div><?php echo ucwords($data->weather[0]->description); ?></div>
         </div>
         <div class="weather-forecast">
             <img
                 src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
+
                 class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span
                 class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
         </div>
