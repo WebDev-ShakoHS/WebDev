@@ -1,8 +1,46 @@
+<?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header("location: login.php");
+    exit;
+}
+?>
+<?php
+$apiKey = "ebd65c93d2e951a2e0db3da4cb7b919f"; //You will need to add in the 
+$cityId = "5046997"; //5046997 Shakopee City Id
+$units = "imperial"; //metric-Celcius  imperial-Farhenheit
+if ($units == 'metric') { //Changes the $temp varaible to match 
+    $temp = "C";
+} else {
+    $temp = "F";
+}
+$googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
+
+
+
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_VERBOSE, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$response = curl_exec($ch);
+
+curl_close($ch);
+$data = json_decode($response);
+$currentTime = time();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/x-icon" href="../user24/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../Final_WebDev/images/favicon.ico" />
     <title>Shift Reviews</title>
 
     <!-- Meta -->
@@ -14,7 +52,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../Final_WebDev/CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -24,11 +62,11 @@
     <script src="JS/script.js"></script>
 
     <style>
-
         header h1 {
-            margin-bottom: 10px ;
+            margin-bottom: 10px;
 
         }
+
         .jumbotron {
 
             margin-bottom: 0%;
@@ -68,35 +106,79 @@
 
 
         }
+
+        .user1 {
+            color: rgb(62, 107, 137);
+        }
+
+        .report-container {
+            border: #E0E0E0 1px solid;
+            padding: 10px 20px 20px 20px;
+            border-radius: 2px;
+            width: 300px;
+            margin: 0 auto;
+            background-color: darkgrey;
+        }
+
+        .weather-icon {
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+
+        .weather-forecast {
+            color: #212121;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 0px;
+        }
+
+        span.min-temperature {
+            margin-left: 15px;
+            color: black;
+        }
+
+        .time {
+            line-height: 25px;
+        }
     </style>
 </head>
 
 <menu>
     <nav class="navbar navbar-expand-md navbar-dark navbar2">
-        <a href="index.html" class="navbar-brand"><img src="images/WebLogo_100x100.png"></a>
+        <a href="index.php" class="navbar-brand"><img src="images/WebLogo_100x100.png"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ml-auto">
-                <a href="reviews.HTML" class="nav-item nav-link">Reviews</a>
-                <a href="news.HTML" class="nav-item nav-link">News</a>
-                <a href="registration.HTML" class="nav-item nav-link">Register</a>
+                <a href="reviews.php" class="nav-item nav-link">Reviews</a>
+                <a href="news.php" class="nav-item nav-link">News</a>
+              
 
             </div>
-        </div>
+            <div>
+                <center> <a href="password_reset.php" class="user1 nav-item nav-link active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><?php echo htmlspecialchars($_SESSION["username"]); ?></a> </center>
+
+                <?php if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+                    echo "<center><a href='logout.php' class='nav-item nav-link btn-danger' onclick='return confirm(\"Are you sure?\");'> Logout </a></center>";
+                } else {
+                    echo "<a href='login.php' class='nav-item nav-link'> Login </a>";
+                } ?>
+            </div>
     </nav>
     <!---------------------------------- End the nav-bar ------------------------------------->
 </menu>
 <header>
 
-   <h1><center>Shift Reviews</center></h1>
-      
-     
- 
+    <h1>
+        <center>Shift Reviews</center>
+    </h1>
+
+
+
     <div class="container">
         <div class="jumbotron">
-            <img id="bannerimg" src="images/20%offBanner1.png">
+            <img id="bannerimg" src="../Final_WebDev/images/offBanner.png">
         </div>
     </div>
 
@@ -114,7 +196,7 @@
 
 
     <div class="row">
-        <div class="card col-sm-3">
+        <div class="card col-md-3">
             <img class="Cardimg" src="images/Warthunderimg.png" alt="War Thunder title image" style="width:100%">
             <div class="container">
                 <a href="#" target="_blank" onclick="openwar()">
@@ -124,7 +206,7 @@
             </div>
 
         </div>
-        <div class="card col-sm-3">
+        <div class="card col-md-3">
 
             <img src="images/Rustimg.png" alt="Rust title image" style="width:100%">
             <div class="container">
@@ -135,7 +217,7 @@
             </div>
 
         </div>
-        <div class="card col-sm-3">
+        <div class="card col-md-3">
 
             <img src="images/Rainbow6img.png" alt="Rainbow six siege title image" style="width:100%">
             <div class="container">
@@ -146,7 +228,7 @@
             </div>
 
         </div>
-        <div class="card col-sm-3">
+        <div class="card col-md-3">
 
             <img src="images/Destiny2img.png" alt="Destiny two title image" style="width:100%">
             <div class="container">
@@ -207,39 +289,39 @@
 
     <div class="row">
 
-        <div class="card col-sm-2">
+        <div class="card col-md-2">
             <div class="container">
                 <h4><b>War Thunder</b></h4>
                 <p>(T34)</p>
             </div>
         </div>
-        <div class="card col-sm-2">
+        <div class="card col-md-2">
             <div class="container">
                 <h4><b>War Thunder</b></h4>
                 <p>(Bf 109 E4)</p>
             </div>
         </div>
 
-        <div class="card col-sm-2">
+        <div class="card col-md-2">
             <div class="container">
                 <h4><b>Rust</b></h4>
                 <p>(Hatchet)</p>
             </div>
         </div>
-        <div class="card col-sm-2">
+        <div class="card col-md-2">
             <div class="container">
                 <h4><b>Rust</b></h4>
                 <p>(Spear)</p>
             </div>
         </div>
 
-        <div class="card col-sm-2">
+        <div class="card col-md-2">
             <div class="container">
                 <h4><b>Siege</b></h4>
                 <p>(Bandit Elite Skin)</p>
             </div>
         </div>
-        <div class="card col-sm-2">
+        <div class="card col-md-2">
             <div class="container">
                 <h4><b>Siege</b></h4>
                 <p>(Season Pass)</p>
@@ -316,15 +398,30 @@
 
     <hr>
 
-    <!-- Call to action -->
-    <ul class="list-unstyled list-inline text-center py-2">
-        <li class="list-inline-item">
-            <a href="registration.HTML">
-                <h5 class="mb-1" style="color: rgb(37, 78, 105);"><u>Register for free</u></h5>
-            </a>
-        </li>
+    <!-- API -->
+    <?php if ($data->main->temp_max > "55") {
+        echo ("<style> .report-container {background-color: rgba(255, 0, 0, 0.5);} </style>");
+    } else {
+        echo ("<style> .report-container {background-color: rgba(0, 0, 255, 0.5);} </style>");
+    }
 
-    </ul>
+
+    ?>
+    <div class="report-container">
+        <h2><?php echo $data->name; ?> Weather Status</h2>
+        <div class="time">
+            <div><?php echo date("l g:i a", $currentTime); ?></div>
+            <div><?php echo date("jS F, Y", $currentTime); ?></div>
+            <div><?php echo ucwords($data->weather[0]->description); ?></div>
+        </div>
+        <div class="weather-forecast">
+            <img src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png" class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
+        </div>
+        <div class="time">
+            <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
+            <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
+        </div>
+    </div>
     <!-- Call to action -->
 
     <hr>
