@@ -1,161 +1,21 @@
-@import url(rainbow.css);
-.title {
-	color: red;
-	font-family: 'Trebuchet MS', sans-serif;
-}
-
-.title-large {
-	font-size: 2rem;
-}
-
-.title-small {
-	font-size: .5rem;
-}
-
-/*Buttons*/
-
-.button {
-	background-color: #4CAF50;
-	border: none;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-}
-
-.button1 {
-	border-radius: 8px;
-}
-
-.button2 {
-	border-radius: 30%;
-}
-
-.red {
-	background-color: #ff0000;
-}
-
-td {
-	padding: 20px;
-}
-
 table {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+tr {
+	border: 1px solid #ffffff;
 	text-align: center;
+	background-color:#9FB6CD; 
 }
 
-.coolbutton {
-	box-shadow: 0px 1px 0px 0px #1c1b18;
-	background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
-	background-color: #eae0c2;
-	border-radius: 15px;
-	border: 2px solid #333029;
-	display: inline-block;
-	cursor: pointer;
-	color: #505739;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: 14px;
-	font-weight: bold;
-	padding: 12px 16px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #ffffff;
-}
-
-.btn {
-	border: none;
-	font-family: inherit;
-	font-size: inherit;
-	color: inherit;
-	background: none;
-	cursor: pointer;
-	padding: 15px 40px;
-	display: inline-block;
-	margin: 15px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 700;
-	outline: none;
-	position: relative;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.btn:after {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.btn-6 {
-	color: #fff;
-	background: #226fbe;
-	-webkit-transition: none;
-	-moz-transition: none;
-	transition: none;
-}
-
-tn-6:active {
-	top: 2px;
-}
-
-.btn-6l {
-	border: 4px double #226fbe;
-	border-radius: 60px;
-}
-
-.btn-6l:hover {
-	background: transparent;
-	color: #226fbe;
-}
-
-.otherbutton {
-	box-shadow: inset 0px 0px 15px 3px #23395e;
-	background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
-	background-color: #2e466e;
-	border-radius: 17px;
-	border: 1px solid #1f2f47;
-	display: inline-block;
-	cursor: pointer;
+th {
+	text-align: center;
 	color: #ffffff;
-	font-family: Arial;
-	font-size: 15px;
-	padding: 6px 13px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #263666;
-}
-
-.otherbutton:active {
-	position: relative;
-	top: 1px;
-}
-
-#morecontent {
-	background-color: yellow;
-}
-
-#hireButtons {
-	background: linear-gradient(30deg, rgb(226, 162, 22) 20%, #ff5349 100%)
-}
-
-#footerTable {
-	border-color: thistle;
-	border-width: 20px;
-	border-style: groove;
-}
-
-* {
-	margin: 10px;
-	padding: left 3px;
+	background-color: #003366;
 }

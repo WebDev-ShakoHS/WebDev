@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 5.0
+<!--Version 6.0
     Name:
     Date Completed:
 -->
@@ -24,36 +24,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="JS/script.js"></script>
 
-    <script>
-        function alertFunction() {
-            alert("You pressed a key inside the input field");
-        }
-    </script>
-
-    <script>
-        function buttonPrint() {
-            document.getElementById("hello").innerHTML = "Hello World";
-        }
-    </script>
-    <script>
-        function pageLoad() {
-            alert("Page is loaded");
-        }
-    </script>
-    <script>
-        function whichButton(event) {
-            document.getElementById("demo").innerHTML = event.keyCode;
-        }
-    </script>
-    <script>
-        function show_coords(event) {
-            document.getElementById("cursor").innerHTML = "X= " + event.clientX + "<br>Y= " + event.clientY;
-        }
-    </script>
-
-
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-
+    
     <!-- Custom styles for this template -->
     <style type="text/css">
         .menu {
@@ -88,7 +60,7 @@
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
-                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
+                    <a href="script.html" class="nav-item nav-link active">JavaScript</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
@@ -101,67 +73,17 @@
     </div>
     <!---------------------------------- End the nav-bar ------------->
 
-    <main class="wideMargin" id="content">
+    <div class="wideMargin" id="content">
         <h1 class="text-left my-3">My JavaScript Examples</h1><!-- Edit this line for the title of your page -->
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" style="background-color:rgb(87, 218, 200);">
-                    <center>
-                        <p id="textchange"> <u>My name is User 10</u>
-                    </center>
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(255, 127, 104);">
-                    <center><button id="buttonText" type="button" onclick="changeText(textchange)">Click if you
-                            like</button></center>
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(87, 218, 200);">
-                    <center><button id="buttonColor" type="button" onclick="changeText(buttonColor)">Click to change
-                            color</button></center>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-sm-4" style="background-color:rgb(255, 127, 104);">
-                    <p>Click the button to trigger a function.</p><button onclick="buttonPrint()">Click me</button>
-                    <p id="hello"></p>
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(87, 218, 200);">
-                    <p>A function is triggered when the user is pressing a key in the input field.</p> <input
-                        type="text" onkeypress="alertFunction()">
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(255, 127, 104);">
-                    <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over this text</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4" style="background-color:rgb(87, 218, 200);">
-
-                    <body onload="pageLoad()">
-                        <h2>Welcome to my Webpage!</h2>
-                    </body>
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(255, 127, 104);">
-
-                    <body onkeyup="whichButton(event)">
-                        <p>Click on this page, and press a key on your keyboard.</p>
-
-                        <p id="demo"></p>
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(87, 218, 200);">
-
-                    <body>
-
-                        <p onmousedown="show_coords(event)">
-                            Click this paragraph to display the x and y coordinates of the mouse pointer.</p>
-
-                        <p id="cursor"></p>
-
-                    </body>
-                </div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-4" style="background-color:orange;">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
             </div>
         </div>
-    </main>
+    </div>
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
 

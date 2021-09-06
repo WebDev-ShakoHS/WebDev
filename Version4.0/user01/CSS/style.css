@@ -1,180 +1,21 @@
-@import url(rainbow.css);
-.button {
-	background-color: #4CAF50;
-	border: none;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-}
-
-.button-largeRadius {
-	border-radius: 8px;
-}
-
-.button-smallRadius {
-	border-radius: 30%;
-}
-
-.small-red-button {
-	box-shadow: inset 0px 1px 0px 0px #cf866c;
-	background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
-	background-color: #d0451b;
-	border-radius: 3px;
-	border: 1px solid #942911;
-	display: inline-block;
-	cursor: pointer;
-	color: #ffffff;
-	font-family: Arial;
-	font-size: 13px;
-	padding: 6px 24px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #854629;
-}
-
-.small-red-button:hover {
-	background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
-	background-color: #bc3315;
-}
-
-.small-red-button:active {
-	position: relative;
-	top: 1px;
-}
-
-.blue-rectangle-big-button {
-	box-shadow: 3px 4px 0px 0px #1564ad;
-	background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-	background-color: #79bbff;
-	border-radius: 5px;
-	border: 1px solid #337bc4;
-	display: inline-block;
-	cursor: pointer;
-	color: #ffffff;
-	font-family: Arial;
-	font-size: 17px;
-	font-weight: bold;
-	padding: 12px 44px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #528ecc;
-}
-
-.blue-rectangle-big-button:hover {
-	background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
-	background-color: #378de5;
-}
-
-.blue-rectangle-big-button:active {
-	position: relative;
-	top: 1px;
-}
-
-.tiny-darkblue-button {
-	box-shadow: inset 0px 0px 15px 3px #23395e;
-	background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
-	background-color: #2e466e;
-	border-radius: 17px;
-	border: 1px solid #1f2f47;
-	display: inline-block;
-	cursor: pointer;
-	color: #ffffff;
-	font-family: Arial;
-	font-size: 15px;
-	padding: 6px 13px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #263666;
-}
-
-.tiny-darkblue-button :hover {
-	background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
-	background-color: #415989;
-}
-
-.tiny-darkblue-button :active {
-	position: relative;
-	top: 1px;
-}
-
-.red {
-	background-color: #ff0000;
-}
-
-td {
-	padding: 20px;
-}
-
-.title {
-	color: red;
-	font-family: 'Trebuchet MS', sans-serif;
-}
-
-.title-large {
-	font-size: 2rem;
-}
-
-.title-small {
-	font-size: .5rem;
-}
-
-#morecontent {
-	background-color: yellow;
-}
-
-#hireButtons {
-	border: 5px dotted black;
-}
-
-#footerTable {
-	background-color: lightblue;
-}
-
 table {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
 }
 
-#knowledge>* {
-	border: 3px red solid;
-}
-
-ul>li::marker {
-	content: "💩 ";
-}
-
-p+p {
-	background-color: #FFFF00;
-}
-
-h1, h2, h3, h4, h5, h6 {
+tr {
+	border: 1px solid #ffffff;
 	text-align: center;
+	background-color:#9FB6CD; 
 }
 
-p:first-child {
-	color: chocolate
-}
-
-a:link {
-	color: blue;
-}
-
-/* visited link */
-
-a:visited {
-	color: blueviolet;
-}
-
-/* mouse over link */
-
-a:hover {
-	color: red;
-}
-
-/* selected link */
-
-a:active {
-	color: #0000FF;
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
 }

@@ -1,8 +1,4 @@
-html, body {
-  height: 100%;
-}
-
-body {
+.body-wideMargin {
   margin: 50px;
   font-size: 100%;
   line-height: 1.5;

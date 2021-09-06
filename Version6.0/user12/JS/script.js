@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 function changeText() {
     document.getElementById("textChange").innerHTML="Thanks for liking my Webpage";
    }
@@ -23,3 +24,5 @@ function f()
 {
     alert("Try again dummy ")
 }
+=======
+>>>>>>> Stashed changes

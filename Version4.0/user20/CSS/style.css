@@ -1,122 +1,21 @@
-@import url(rainbow.css);
- #rainbow
-
-.button {
-	background-color: #1aecec;
-	border: none;
-	color: rgb(44, 218, 194);
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-}
-
-td:hover {
-	background-color: black;
-  }
-
-.myButton {
-	box-shadow:inset 0px -3px 7px 0px #29bbff;
-	background:linear-gradient(to bottom, #2dabf9 5%, #d5e965 100%);
-	background-color:#df9c20;
-	border-radius:3px;
-	border:1px solid #0ef16d;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	padding:9px 23px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #263666;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
-	background-color:#0688fa;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
-	background-color:#0688fa;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
-p#hireButtons {
-    color: rgb(21, 165, 209);
-    font-weight: bold;
-    background: #27dae7; /* yellow */
-    padding: 1em;
-  }
-
-  p#footerTable {
-    color: rgb(25, 197, 219);
-    font-weight: bold;
-    background: #17d1c8; /* yellow */
-    border: 2px solid rgb(24, 243, 207);
-    padding: 1em;
-  }
-  
-.title{
-	color: rgb(39, 189, 209);
-	font-family: 'Times New Roman', serif; 
-  }
-  
-  .title-large {
-	font-size: 2rem;
-  }
-  
-  .title-small {
-	font-size: .5rem;
-  }
-
-.myButton:hover {
-	background-color:#19f1cd;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-.button1 {
-	border-radius: 8px;
-}
-
-.button2 {
-	border-radius: 30%;
-}
-
-.myButton:hover {
-	background-color:#eb675e;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
-.red {
-	background-color: #2ed1ae;
-}
-
-td{
-	padding:20px;
-}
-
-
- 
-
-table{
+table {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
 }
 
-h1, h2, h3, h4, h5, h6{
-	text-align:center;
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
 }

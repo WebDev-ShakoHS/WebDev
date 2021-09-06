@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 
 function changeText() {
@@ -27,3 +28,5 @@ function myElement(elmnt, clr) {
 function Pageload() {
   alert("Welcome to my Webpage");
 }
+=======
+>>>>>>> Stashed changes

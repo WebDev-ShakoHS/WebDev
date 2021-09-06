@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 function changeText() {
     document.getElementById("textChange").innerHTML = "<u>Thanks for liking my Webpage<u>";
 }
@@ -113,3 +114,5 @@ function Scroll() {
     window.setTimeout("Scroll()", 0);
 }
 Scroll();
+=======
+>>>>>>> Stashed changes

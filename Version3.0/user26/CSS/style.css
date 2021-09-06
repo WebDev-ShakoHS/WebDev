@@ -5,7 +5,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	border-spacing: 0px;
+	cellspacing: 0px;
 }
 
 tr {
@@ -18,10 +18,4 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
-}
-ul { 
-	list-style-image:url(../images/Football\ icon.png)
-}
-ol{
-	color: red;
 }

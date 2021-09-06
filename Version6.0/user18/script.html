@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Version 5.0
+<!--Version 6.0
     Name:
     Date Completed:
 -->
@@ -12,39 +12,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="SHS WebDev JavaScript Practice">
 
-<body onload="page()">
-    <h2>Hello World!</h2>
-</body>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 
-<!-- CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="CSS/style.css">
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
 
-<!-- JavaScript -->
-<!-- These are needed to get the responsive menu to work -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="JS/script.js"></script>
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+    
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
 
-<!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+        .wideMargin {
+            margin: 15px;
+        }
 
-<!-- Custom styles for this template -->
-<style type="text/css">
-    .menu {
-        margin: 0px;
-    }
-
-    .wideMargin {
-        margin: 15px;
-    }
-
-    #footer {
-        font-size: 12px;
-        text-align: center;
-    }
-</style>
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -64,7 +60,7 @@
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
-                    <a href="script.html" class="nav-item nav-link active" tabindex="-1">JavaScript</a>
+                    <a href="script.html" class="nav-item nav-link active">JavaScript</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
@@ -82,43 +78,9 @@
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" style="background-color:rgb(0, 255, 255);">
-                    <center>
-                        <p id="textChange"> My name is User 18</p>
-                    </center>
-
-                    Enter your name: <input type="welcome to my site" onfocus="highlight(this)">
-
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(119, 0, 255);">
-                    <center><button type="button" onclick="changeText()">Click if you love me</button></center>
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(0, 255, 255);">Enter your name: <input type="text"
-                        id="fname" onblur="uppercase()">
-
-                    <p>When you leave the input field, a function is triggered which transforms the input text to upper
-                        case.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4" style="background-color:rgb(119, 0, 255);">
-                    <p>Click the button to trigger a function.</p>
-
-                    <button onclick="botton()">Click me</button>
-
-                    <p id="demo"></p>
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(0, 225, 255);">
-                    <p ondblclick="paragraph()">Doubleclick this paragraph to trigger a function.</p>
-
-                    <p id="demo"></p>
-                </div>
-                <div class="col-sm-4" style="background-color:rgb(119, 0, 255);">
-                    <h2>My First JavaScript</h2>
-                    <p id="demo">This is a paragraph.</p>
-
-                    <button type="button" onclick="displayDate()">Display Date</button>
-                </div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-4" style="background-color:orange;">PUT YOUR HTML CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
             </div>
         </div>
     </div>
@@ -133,11 +95,5 @@
     </div>
     <!---------------------------------- End the footer ------------->
 </body>
-<form onsubmit="confirmInput()" action="https://www.w3schools.com/">
-    Enter your name: <input id="fname" type="text" size="20">
-    <input type="submit">
-</form>
-
-
 
 </html>

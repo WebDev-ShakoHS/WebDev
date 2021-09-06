@@ -1,13 +1,11 @@
-@import url(rainbow.css)
-
-{
+table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	letter-spacing: 0px;
+	cellspacing: 0px;
 }
 
 tr {
@@ -21,12 +19,3 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
-	#knowledge > * {
-		border: 3px red solid;
-	  }
-
-
-
-	p + * {
-	background-color: #FFFF00;
-  }

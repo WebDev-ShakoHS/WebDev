@@ -9,19 +9,13 @@ table {
 }
 
 tr {
-	border: 1px solid #ff0000;
+	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#0080ff; 
+	background-color:#9FB6CD; 
 }
 
 th {
 	text-align: center;
-	color: #00fff2;
-	background-color: #0e5700;
+	color: #ffffff;
+	background-color: #003366;
 }
-ul {
-	list-style-image: url(/images/Artofwar.jpeg);
-  }
-ol {
-	list-style-image: url(/images/Cash.jpeg);
-  }

@@ -1,6 +1,6 @@
 table {
-	font-family: "Arial", "Arial", sans-serif;
-	color: #000000;
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
@@ -18,12 +18,4 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
-}
-
-ol#Drinks {
-list-style-type: upper-roman;
-}
-
-ul#Floors {
-	list-style: circle;
 }

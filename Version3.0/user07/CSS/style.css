@@ -1,5 +1,3 @@
-
-
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -7,29 +5,17 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	border-spacing: 0px;
+	cellspacing: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color: #9FB6CD;
+	background-color:#9FB6CD; 
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
-}
-
-ul {
-	list-style-image: url(http://www.simpleimageresizer.com/_uploads/photos/80ed00a6/world_company_dot_16x16.png);
-	background-color: lightskyblue;
-	width: 200px
-}
-
-ol {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	background-color: lightsalmon;
-	width: 200px
 }

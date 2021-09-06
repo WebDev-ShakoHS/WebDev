@@ -1,7 +1,3 @@
-@import url(rainbow.css);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css);
-
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -27,43 +23,15 @@
 	background-color: #ff0000;
 }
 
-td {
-	padding: 20px;
+td{
+	padding:20px;
 }
 
-table {
+table{
 	margin-left: auto;
 	margin-right: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	text-align: center;
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
 }
-
-.title {
-	color: red;
-	font-family: 'Trebuchet MS', sans-serif;
-}
-
-.title-large {
-	font-size: 2rem;
-}
-
-.title-small {
-	font-size: .5rem;
-}
-
-#knowledge>* {
-	border: 3px red solid;
-}
-
-p + p{
-	background-color: #FFFF00;
-}
-
-div > li::marker{
-	content:"💍 ";
-  }
-
-
-
