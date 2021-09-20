@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 3.0
-        Name: Gavin Darr
-        Date Completed: Not yet
+        Name:
+        Date Completed:
     -->
 
 <head>
 
-    <title>VideoGames for WebDev user#09 </title>
+    <title>Web Dev User ## </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="My Favorite Music">
+    <meta name="description" content="SHS WebDev Version 3.0">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -28,6 +28,40 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
+
+
+p{
+padding: 5px 50px 30px 5px;
+background-color: lavender;
+margin-top: 25px;
+margin-bottom50px;
+}
+<h3>CSS Box Model Demonstration</h3>
+<p>
+Paragraphs are blocks too. <em>However</em> things like &lt;em&gt; and &lt;strong&gt; elements are not.
+They are <strong>inline</strong> elements. 
+</p>
+
+<div style='padding-top: 1px'></div>  <!-- Add this -->
+
+<p>Block elements define the flow of the HTML document, while inline elements
+do not.
+</p>
+    h3 {
+        padding:50px;
+  background-color: lavender;
+  display: inline-block;
+  border: 1px solid #5D6063;
+}
+strong {
+  padding: 50px;
+  background-color: lightblue;
+}
+p {
+    padding: 5px 50px 30px 5px;  /* Top  Right  Bottom  Left */
+  background-color: lavender; 
+}
+
         menu {
             margin: 0;
             padding: 0;
@@ -41,30 +75,24 @@
             font-size: 12px;
             text-align: center;
         }
-
-        td{
-            color:rgb(255, 255, 255)
-        }
-
     </style>
 </head>
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------->
+    <!---------------------------------- Begin the nav-bar ------------------------------------------>
     <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link active">About Me</a>
+                    <a href="#" class="nav-item nav-link">Music</a>
+                    <a href="#" class="nav-item nav-link">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
@@ -75,64 +103,28 @@
                 </div>
             </div>
         </nav>
+        <!---------------------------------- End the nav-bar ------------------------------------->
     </menu>
-    <!---------------------------------- End the nav-bar ------------------------------------->
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3" tabindex="0">VideoGames</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">About Me</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h2>My Top 5 Favorite VideoGames</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>:</th>
-                    <th>Creator</th>
-                    <th>Game poster</th>
-                </tr>
-            </thead>
-            <tr>
-                <td>1</td>
-                <td>Five Nights at freddy's 1</td>
-                <td>Scott cawthon</td>
-                <td><img src="music.jpeg" style="width:200px;height:125px;" alt="Picture of Fnaf logo"/></td>
+        <h3>Headings Are Block Elements</h3>
 
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Fortnite</td>
-                <td>Epic games</td>
-                <td><img src="fortnite poster.jpeg" style="width:200px;height:125px;" alt="Picture of Fortnite logo"/></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Minecraft</td>
-                <td>Mojang</td>
-                <td><img src="Minecraft.jpeg" style="width:200px;height:125px;" alt="Picture of Minecraft logo"/></td>
-            </tr>
-            <tr>
-                <td style="color: #00FF00; background-color: sienna;">4</td>
-                <td>Cuphead</td>
-                <td>Studio HDHR</td>
-                <td><img src="Cuphead.jpeg" style="width:200px;height:125px;" alt="Picture of Cuphead logo"/></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Roblox</td>
-                <td>Roblox</td>
-                <td><img src="Roblox logo.jpeg" style="width:200px;height:125px;" alt="Picture of Roblox logo"/></td>
-            </tr>
-        </table>
+        <p>Stuff and Stuff<em>However</em>, &lt;Stuff&gt; and &lt;Stuff&gt;
+        Stuff is not. They are <strong>Stuff</strong> elements.</p>
+        
+        <p>Block elements define the flow of the HTML document, while inline elements
+        do not.</p>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
     </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-
 
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
         <div>
-            Look up the games here <a href="https://google.com"> Google </a>
+            Webpage made by <a href="#" target="_blank">[your name]</a>
         </div>
     </footer>
     <!---------------------------------- End the footer ------------->
