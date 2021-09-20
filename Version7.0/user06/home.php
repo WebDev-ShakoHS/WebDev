@@ -7,7 +7,7 @@
 <head>
 
     <title>Undground Lawyer Societeé</title>
-    <link rel="shortcut icon" type="image/icon" href="/images/favicon.ico" />
+    <link rel="shortcut icon" type="image/icon" href="/images/baseball favicon.ico"/>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

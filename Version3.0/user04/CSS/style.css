@@ -9,9 +9,9 @@ table {
 }
 
 tr {
-	border: 1px solid #ffffff;
+	border: 5px solid black;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:white; 
 }
 
 th {
@@ -19,3 +19,14 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+td {
+	color: darkblue;
+   }
+   body  {
+	background-image: url("https://www.thecityceleb.com/wp-content/uploads/2021/01/top-5-albums-840x641-1.jpg");
+	background-color: #cccccc;
+  }
+
+   
+    
