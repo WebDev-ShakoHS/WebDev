@@ -7,7 +7,7 @@
 
 <head>
 
-    <title>Music for Web Dev User #26 </title>
+    <title>Music for Evan </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="images/music.ico" />
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -41,10 +42,19 @@
             font-size: 12px;
             text-align: center;
         }
+
+        td {
+            color: white;
+        }
+        body{
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
     </style>
 </head>
 
-<body style="background: rgb(27, 27, 27);" >
+<body style="background-image: url('images/SEN.JPG')";>
     <!---------------------------------- Begin the nav-bar ------------->
     <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -56,10 +66,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="music.html" class="nav-item nav-link active">Music</a>
+                    <a href="list.html" class="nav-item nav-link " tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
@@ -75,7 +85,8 @@
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3" tabindex="0" style="color: white;">Music</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3" tabindex="0" style="color: white;">Music</h1>
+        <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <h2 style="color: white;">My Top 5 Favorite Songs</h2>
@@ -88,11 +99,12 @@
                     <th>Album Art</th>
                 </tr>
             </thead>
-            <tr>
-                <td>1</td>
-                <td>Juice WRLD</td>
-                <td>Lucid Dreams</td>
-                <td><img src='https://upload.wikimedia.org/wikipedia/en/c/cf/Juice_WRLD_-_Lucid_Dreams.png' width="90" height="90"></td>
+            <tr style="background-color: #A12568;">
+                <td style="color: #FEC260;">1</td>
+                <td style="color: #FEC260;">Juice WRLD</td>
+                <td style="color: #FEC260;">Lucid Dreams</td>
+                <td><img src='https://upload.wikimedia.org/wikipedia/en/c/cf/Juice_WRLD_-_Lucid_Dreams.png' width="90"
+                        height="90"></td>
             </tr>
             <tr>
                 <td>2</td>
@@ -110,7 +122,8 @@
                 <td>4</td>
                 <td>Juice WRLD</td>
                 <td>Lean Wit Me</td>
-                <td><img src="images/leanwitme.jpg" width="90" height="90" alt='Goodbye & Good Riddance Album Cover'></td>
+                <td><img src="images/leanwitme.jpg" width="90" height="90" alt='Goodbye & Good Riddance Album Cover'>
+                </td>
             </tr>
             <tr>
                 <td>5</td>
@@ -124,9 +137,12 @@
 
 
     <!---------------------------------- Begin the footer ------------->
-    <footer class="wideMargin">
+    <footer class="wideMargin" style="color: white;">
         <div>
             Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
+            <p>
+                Hello
+            </p>
         </div>
     </footer>
     <!---------------------------------- End the footer ------------->
