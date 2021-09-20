@@ -8,6 +8,7 @@
 <head>
 
     <title>Music for Web Dev User 22 </title>
+    <link rel="shortcut icon" type="image" href="images/favicon.ico"
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -18,7 +19,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -41,6 +42,10 @@
             font-size: 12px;
             text-align: center;
         }
+
+        td {
+     color: darkred;
+    }
     </style>
 </head>
 
@@ -56,11 +61,11 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="#" class="nav-item nav-link">About Me</a>
-                    <a href="#" class="nav-item nav-link active">Music</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
-                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="music.html" class="nav-item nav-link active">Music</a>
+                    <a href="list.html" class="nav-item nav-link active" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
@@ -89,7 +94,7 @@
                 </tr>
             </thead>
             <tr>
-                <td>1</td>
+                <td style="color:whitesmoke; background-color:darkred">1</td>
                 <td>Cordae & Anderson .Paak</td>
                 <td>RNP</td>
                 <td><img height="120px" src="images/LostBoyCordae.jpeg" alt="Cordae The Lost Boy Album Cover - Person walking on a path"></td>
@@ -101,14 +106,14 @@
                 <td><img height="120px" src="images/AmineLimbo.jpeg" alt="Amine Limbo Album Cover - Amine with Tennis Ball"></td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>Dreamville</td>
-                <td>Wells Fargo</td>
-                <td><img height="120px" src="images/Revenge.png" alt="Dreamville Revenge of the Dreamers 3 Album Cover - Revenge Text"></td>
+                <td style="color:goldenrod; background-color:black">3</td>
+                <td style="color:goldenrod; background-color:black">Dreamville</td>
+                <td style="color:goldenrod; background-color:black">Wells Fargo</td>
+                <td style="color:goldenrod; background-color:black"><img height="120px" src="images/Revenge.png" alt="Dreamville Revenge of the Dreamers 3 Album Cover - Revenge Text"></td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>GoldLink</td>
+                <td>GoldLink, Brent Faiyaz & Shy Glizzy</td>
                 <td>Crew</td>
                 <td><img height="120px" src="images/GoldLinkCrew.jpeg" alt="GoldLink Crew Single Cover - 3 Men"></td>
             </tr>
