@@ -28,8 +28,9 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
-        .menu {
-            margin: 0px;
+        menu {
+            margin: 0;
+            padding: 0;
         }
 
         .wideMargin {
@@ -40,75 +41,81 @@
             font-size: 12px;
             text-align: center;
         }
-        /*ol {
-            list-style-image: url("https://variety.com/wp-content/uploads/2015/07/naruto_movie-lionsgate.jpg");
-            margin: auto;
-            margin-left: auto;
-            margin-right: auto;
-            list-style-position: inside;
-        }*/
+
+        h3 {
+            padding: 50px;
+            background-color: lavender;
+            display: inline-block;
+            border: 1px solid #5D6063;
+        }
+
+        p {
+            padding: 5px 50px 30px 5px;
+            background-color: lavender;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
     </style>
 </head>
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------->
-    <div class="menu">
+    <!---------------------------------- Begin the nav-bar ------------------------------------------>
+    <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="aboutMe.html" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link active">About Me</a>
                     <a href="music.html" class="nav-item nav-link">Music</a>
-                    <a href="#" class="nav-item nav-link active">Lists</a>
+                    <a href="list.html" class="nav-item nav-link">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
-                    <!----------------------------------^ Edit These Items in your Menu ^ ------------->
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
                     <a href="#" class="nav-item nav-link disabled">Login</a>
                 </div>
             </div>
         </nav>
-    </div>
-    <!---------------------------------- End the nav-bar ------------->
+        <!---------------------------------- End the nav-bar ------------------------------------->
+    </menu>
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3">My Lists</h1><!-- Edit this line for the title of your page -->
-        <h3>My Top 5 Anime</h3>
+        <h1 class="text-left my-3">About Me</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <ol start="1" type="1">
-            <li>Naruto</li>
-            <li>Oregairu</li>
-            <li>Re Zero</li>
-            <li>Attack On Titan</li>
-            <li>Your Lie in April</li>
-        </ol>
-        <h3>Favorite Video Games</h3>
-        <ul>
-            <li>Fortnite</li>
-            <li>Black Ops 2</li>
-            <li>Modern Warefare 2</li>
-            <li>Valorant</li>
-            <li>NBA 2K16</li>
-        </ul>
+        <h3>Headings Are Block Elements</h3>
 
+        <p>paragraphs are blocks, too.<em>However</em>, &lt;em&gt; and &lt;strong&gt;
+            elements are not. They are <strong>inline</strong> elements.</p>
 
-        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+        <p>Block elements define the flow of the HTML document, while inline elements
+            do not.</p>
+        <h3>CSS Box Model Demonstration</h3>
+        <p>
+            Paragraphs are blocks too. <em>However</em> things like &lt;em&gt; and &lt;strong&gt; elements are not.
+            They are <strong>inline</strong> elements.
+        </p>
+
+        <div style='padding-top: 1px'></div> <!-- Add this -->
+
+        <p>Block elements define the flow of the HTML document, while inline elements
+            do not.
+        </p>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
     </main>
 
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
         <div>
-            Webpage made by <a href="#" target="_blank"> Evan You</a>
+            Webpage made by <a href="#" target="_blank">Evan</a>
         </div>
     </footer>
     <!---------------------------------- End the footer ------------->
