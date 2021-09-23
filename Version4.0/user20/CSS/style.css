@@ -5,7 +5,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
@@ -19,3 +19,25 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+h3 {
+	padding: 50px;
+	background-color: lavender;
+	display: inline-block;
+  }
+
+
+  p {
+	padding-top: 5px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 5px;
+	background-color: lavender;
+  p }
+ 
+
+
+
+
+
+
