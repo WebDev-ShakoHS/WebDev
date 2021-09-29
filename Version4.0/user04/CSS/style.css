@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -108,3 +109,16 @@ h1, h2, h3, h4, h5, h6{
     text-align:right;
     border: 2px solid black;
 }
+#knowledge > * {
+	border: 3px red solid;
+  }
+  p + * {
+	background-color: #FFFF00;
+  }
+  
+  div li > * ::marker{
+	content:"😜";
+  }
+  div li::marker{
+	color: grey;
+  }
