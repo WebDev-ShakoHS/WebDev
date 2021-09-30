@@ -7,7 +7,7 @@
 
 <head>
 
-    <title>My Work as a Web Developer</title>
+    <title>Gallery</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -18,6 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
     <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
@@ -28,10 +29,6 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
-        td:first-child {
-            color: green
-        }
-
         menu {
             margin: 0;
             padding: 0;
@@ -48,34 +45,6 @@
 
         #rainbow {
             width: 100%;
-        }
-
-        #knowledge>* {
-            border: 3px red solid;
-        }
-
-        p+* {
-            background-color: #FFFF00;
-        }
-
-        div li::marker {
-            color: red;
-        }
-
-        #knowledge>*::marker {
-            content: "😜 ";
-        }
-
-        #rainbow td:hover {
-            background-color: black;
-        }
-
-        div li:hover {
-            background-color: yellow;
-        }
-
-        h1:first-child {
-            color: green;
         }
     </style>
 </head>
@@ -94,8 +63,8 @@
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="display.html" class="nav-item nav-link">Display</a>
-                    <a href="portfolio.html" class="nav-item nav-link active">Portfolio</a>
-                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                    <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -108,53 +77,59 @@
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3 title" tabindex="0">Check out my work!</h1>
+        <h1 class="text-left my-3 title" tabindex="0">Check out my favorite images</h1>
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h3 id="topHeading">I'm a Web Developer</h3>
-        <div id="knowledge">
-            <li>CSS
-                <ul>
-                    <li>Classes</li>
-                    <li>Selectors</li>
-                    <li>ID's</li>
-                </ul>
-            </li>
-            <li>HTML
-                <ul>
-                    <li>Tables</li>
-                    <li>DIV's</li>
-                    <li>Nav Bar</li>
-                </ul>
-            </li>
-        </div>
-        <p>
-            These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
-        </p>
-        <p>
-            I will use my knowledge to create an amazing website for you and your needs.
-        </p>
-        <div>
-            <table id="rainbow">
-                <tr>
-                    <td class="background-red">
-                    </td>
-                    <td class="background-orange">
-                    </td>
-                    <td class="background-yellow">
-                    </td>
-                    <td class="background-green">
-                    </td>
-                    <td class="background-blue">
-                    </td>
-                    <td class="background-indigo">
-                    </td>
-                    <td class="background-violet">
-                    </td>
-                </tr>
-            </table>
-        </div>
+
+        <div id="gallery">
+            <p>Hover over the images to get the answer</p>
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="https://www.axiomtek.com/Download/Ptype3/en-US/ATX_Motherboard.jpg" alt="ATX_Motherboard">
+                  <p class="caption">Computer Part</p>
+                </div>
+                <div class="back">
+                  <a href="https://en.wikipedia.org/wiki/Motherboard" target="_blank">
+                    <h1>Motherboard</h1>
+                  </a>
+                  <p class="description">A motherboard (also called mainboard, main circuit board, or mobo) is the main printed circuit board (PCB) in general-purpose computers and other expandable systems.</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="https://sc04.alicdn.com/kf/H2d9c1b6b8d5748efb5cc2fca2c0ae8e2U.jpg" alt="RAM Stick">
+                  <p class="caption">Computer Part</p>
+                </div>
+                <div class="back">
+                  <a href="https://en.wikipedia.org/wiki/Random-access_memory" target="_blank">
+                    <h1>RAM</h1>
+                  </a>
+                  <p class="description">Random-access memory is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="https://www.notebookcheck.net/fileadmin/Notebooks/NVIDIA/Turing/nvidia_TU117_chip.jpg" alt="NVIDIA GPU">
+                  <p class="caption">Computer Part</p>
+                </div>
+                <div class="back">
+                  <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank">
+                    <h1>GPU</h1>
+                  </a>
+                  <p class="description">A graphics processing unit (GPU) is a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 

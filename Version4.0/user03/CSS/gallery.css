@@ -1,0 +1,17 @@
+#gallery {
+    font-family: "Orbitron", sans-serif;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.container {
+    display: inline-block;
+    margin: 3%;
+    perspective: 1000px;
+}
+
+.flipper {
+    position: relative;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
