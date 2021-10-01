@@ -119,10 +119,6 @@ h6 {
     border: 3px red solid;
 }
 
-p+* {
-    background-color: #FFFF00;
-}
-
 div li::marker {
     color: red;
 }
