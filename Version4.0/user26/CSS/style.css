@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -141,7 +142,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 * {
-	text-align:center;
+	text-align: center;
 	margin: auto;
 	color: red;
 }
+
+.img {
+	width: 100%;
+
+}	
