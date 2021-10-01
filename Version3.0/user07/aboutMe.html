@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 3.0
-        Name:Andrew C
-        Date Completed: 09/16/21
+        Name: Andrew C
+        Date Completed: 09/30/2021
     -->
 
 <head>
 
-    <title>Music for Web Dev User 07 </title>
+    <title>Web Dev User 07 </title>
 
     <link href="images/favicon (1).ico" rel="shortcut icon" type="image/x-icon" />
 
@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="My Favorite Music">
+    <meta name="description" content="SHS WebDev Version 3.0">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -44,27 +44,47 @@
             text-align: center;
         }
 
-        td {
-            color: #000000;
+        h3 {
+            padding: 50px;
+            background-color: lavender;
+            display: inline-block;
+            border: 1px solid #5D6063;
+            border-bottom: 1px solid #5D6063;
+            border-right: 3px dotted #0000ff;
+            border-top: 5px inset;
+            border-left: 3px dashed #e9e9e9;
+        }
+
+        p {
+            padding: 5px 50px 30px 5px;
+            /* Top  Right  Bottom  Left */
+            background-color: lavender;
+            margin-top: 25px;
+            margin-bottom: 50px;
+            /* Add this */
+        }
+
+        strong {
+            padding: 50px;
+            background-color: lightblue;
         }
     </style>
 </head>
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------->
+    <!---------------------------------- Begin the nav-bar ------------------------------------------>
     <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="aboutMe.html" class="nav-item nav-link active">About Me</a>
-                    <a href="music.html" class="nav-item nav-link disabled">Music</a>
+                    <a href="aboutMe.html" class="nav-item nav-link disabled">About Me</a>
+                    <a href="music.html" class="nav-item nav-link active" tabindex="-1">Music</a>
                     <a href="list.html" class="nav-item nav-link active" tabindex="-1">Lists</a>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
@@ -76,69 +96,30 @@
                 </div>
             </div>
         </nav>
+        <!---------------------------------- End the nav-bar ------------------------------------->
     </menu>
-    <!---------------------------------- End the nav-bar ------------------------------------->
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3" tabindex="0">Music</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">About Me</h1><!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h2>My Top 5 Favorite Songs</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Artist</th>
-                    <th>Song</th>
-                    <th>Album Art</th>
-                </tr>
-            </thead>
-            <tr>
-                <td>1</td>
-                <td>Cepheid</td>
-                <td>Colours Fading</td>
-                <td><img src="images/Colours_Fading_img.png" alt="Colours Fading Cover Image - sad girl" width="320"
-                        height="180"></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td style ="color: crimson;">StringStorm</td>
-                <td>Black Rage</td>
-                <td><img src="images/Black_Rage_img.jpeg" alt="Black Rage Cover Image - angry guy screaming" width="320"
-                        height="180"></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>EMMP</td>
-                <td>This Quiet Offends Slaanesh</td>
-                <td><img src="images/This_Quiet_Offends_Slaanesh_img.jpeg"
-                        alt="This Quiet Offends Slaanesh Cover Image - rocking out on crashing plane" width="320"
-                        height="180"></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Aviators</td>
-                <td>Fading Light</td>
-                <td><img src="images/Fading_Light_img.jpeg" alt="Fading Light Cover Image - knight on edge of cliff"
-                        width="320" height="180"></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Mittsies</td>
-                <td>Vitality</td>
-                <td><img src="images/Vitality_img.jpeg" alt="Vitality Cover Image - overlaping circles" width="320"
-                        height="180"></td>
-            </tr>
-        </table>
-    </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+        <h3>Headings Are Block Elements</h3>
 
+        <p>paragraphs are blocks, too. <em>However</em>, &lt;em&gt; and &lt;strong&gt; elements are not. They are
+            <strong>inline</strong> elements.
+        </p>
+
+        <div style='padding-top: 1px'></div> <!-- Add this -->
+
+        <p>Block elements define the flow of the HTML document, while inline elements do not.</p>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+    </main>
 
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
         <div>
-            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
+            Webpage made by <a href="#" target="_blank">[your name]</a>
         </div>
     </footer>
     <!---------------------------------- End the footer ------------->
