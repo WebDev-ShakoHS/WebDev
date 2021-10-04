@@ -46,6 +46,32 @@
         #rainbow {
             width: 100%;
         }
+        .container, .front, .back {
+            width: 250px;
+            height: 320px;
+        }
+        .container:hover .flipper {
+            transform: rotateY(180deg);
+        }
+        .caption, .back h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.7em;
+  padding: 10px 10px 0 10px;
+  margin: 0;
+  text-align: center;
+}
+p.caption {
+  position: absolute;
+  bottom: 1vh;
+}
+
+.description {
+  font-size: 0.9em;
+  padding: 0 20px 20px 20px;
+  text-align: left;
+}
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap);
+
     </style>
 </head>
 
@@ -87,14 +113,14 @@
             <div class="container">
               <div class="flipper">
                 <div class="front">
-                  <img src="https://www.axiomtek.com/Download/Ptype3/en-US/ATX_Motherboard.jpg" alt="ATX_Motherboard">
+                  <img src="Motherboard.jpg" alt="ATX_Motherboard">
                   <p class="caption">Computer Part</p>
                 </div>
                 <div class="back">
-                  <a href="https://en.wikipedia.org/wiki/Motherboard" target="_blank">
+                  <a href="https://www.hp.com/us-en/shop/tech-takes/what-does-a-motherboard-do" target="_blank">
                     <h1>Motherboard</h1>
                   </a>
-                  <p class="description">A motherboard (also called mainboard, main circuit board, or mobo) is the main printed circuit board (PCB) in general-purpose computers and other expandable systems.</p>
+                  <p class="description">The official motherboard definition is that it's the main printed circuit board within a computer, which means it's the primary piece of circuitry that all of the other pieces plug into to create a cohesive whole. ... Without it, none of the computer pieces, such as the CPU, GPU, or hard drive, could interact.</p>
                 </div>
               </div>
             </div>
@@ -102,14 +128,14 @@
             <div class="container">
               <div class="flipper">
                 <div class="front">
-                  <img src="https://sc04.alicdn.com/kf/H2d9c1b6b8d5748efb5cc2fca2c0ae8e2U.jpg" alt="RAM Stick">
+                  <img src="RAM.jpg" alt="RAM Stick">
                   <p class="caption">Computer Part</p>
                 </div>
                 <div class="back">
-                  <a href="https://en.wikipedia.org/wiki/Random-access_memory" target="_blank">
+                  <a href="https://www.intel.com/content/www/us/en/tech-tips-and-tricks/computer-ram.html" target="_blank">
                     <h1>RAM</h1>
                   </a>
-                  <p class="description">Random-access memory is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code</p>
+                  <p class="description">RAM stands for random-access memory, but what does that mean? Your computer RAM is essentially short term memory where data is stored as the processor needs it. ... This is so that your processor can get to it quickly.</p>
                 </div>
             </div>
         </div>
@@ -117,14 +143,14 @@
         <div class="container">
           <div class="flipper">
             <div class="front">
-              <img src="https://www.notebookcheck.net/fileadmin/Notebooks/NVIDIA/Turing/nvidia_TU117_chip.jpg" alt="NVIDIA GPU">
+              <img src="GPU.jpg" alt="RTX 300 GPU">
               <p class="caption">Computer Part</p>
             </div>
             <div class="back">
-              <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank">
+              <a href="https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html" target="_blank">
                 <h1>GPU</h1>
               </a>
-              <p class="description">A graphics processing unit (GPU) is a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device.</p>
+              <p class="description">Graphics processing unit, a specialized processor originally designed to accelerate graphics rendering. ... GPUs may be integrated into the computer's CPU or offered as a discrete hardware unit.</p>
             </div>
           </div>
         </div>
@@ -133,18 +159,18 @@
       <div class="container">
         <div class="flipper">
           <div class="front">
-            <img src="Google.jpg" alt="Google logo (A capital G with red, yellow, blue and green)">
-            <p class="caption">Computer Part</p>
+            <img src="Google.jpg" alt="Google logo (A capital G with the colors red, yellow, blue and green)">
+            <p class="caption">Search Engine</p>
           </div>
           <div class="back">
-            <a href="https://en.wikipedia.org/wiki/Random-access_memory" target="_blank">
-              <h1>RAM</h1>
+            <a href="https://www.google.com" target="_blank">
+              <h1>GOOGLE</h1>
             </a>
-            <p class="description">Random-access memory is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code</p>
+            <p class="description">Search for information about (someone or something) on the internet using the search engine Google.</p>
           </div>
       </div>
   </div>
-
+  
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
 </main>
 
