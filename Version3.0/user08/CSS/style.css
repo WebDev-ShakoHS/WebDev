@@ -19,3 +19,16 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+body {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiMqSlR703ZHWyMDLKfI4p36UAOoAQ8qvb4Q&usqp=CAU")
+}
+
+ol {
+	list-style-image: style text; color: red
+	
+  }
+
+  ul {
+	  color:blue;
+  }
