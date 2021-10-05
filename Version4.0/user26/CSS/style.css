@@ -137,14 +137,12 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 
-#footerTable {
-	background-color: grey;
+#footerTable  {
+	background-color: rgba(0, 0, 0, 0.25);
+	color:white
 }
 
 * {
-	color: red;
+	color: black;
 }
 
-.img {
-	width: 100%;
-}	
