@@ -74,6 +74,15 @@
         u:hover {
             color: blue;
         }
+
+        #hidden {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+        #topHeading:hover #hidden {
+            display: block;
+        }
     </style>
 </head>
 
@@ -109,7 +118,9 @@
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h3 id="topHeading">I'm a Web Developer</h3>
+        <h3 id="topHeading">I'm a Web Developer
+            <p id="hidden">From Shakopee High School</p>
+        </h3>
 
         <div id="knowledge">
             <li>CSS
