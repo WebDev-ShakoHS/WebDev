@@ -12,6 +12,9 @@
 	cursor: pointer;
 }
 
+i {
+	color: white;
+}
 .button-square {
 	border-radius: 8px;
 }
