@@ -1,4 +1,9 @@
-table {
+@import url(rainbow.css);
+
+table { 
+
+
+	
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #0004ff;
 	margin-left: auto;
@@ -67,7 +72,8 @@ th {
 	text-decoration:none;
 	text-shadow:1px 5px 9px  #00ff00;
 
-
+	
+}
 .myButton:active {
 	position:relative;
 	top:1px;
@@ -166,7 +172,16 @@ h1, h2, h3, h4, h5, h6{
   #morecontent {
 	background-color:  #00ff00;
   }
-  *{
-    text-align:right;
-    border: 2px solid  #00ff00;
-}
+  #knowledge > * {
+	border: 3px red solid;
+  }
+  p + * {
+	background-color: #FFFF00;
+  }
+  div li::marker{
+	color: red;
+  }
+  div li::marker{
+	content:"😜 ";
+  }
+  
