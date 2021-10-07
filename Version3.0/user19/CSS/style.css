@@ -26,4 +26,38 @@ body {
 
    td {
 	color: #FF0000;
-   } <td style="color:#00FF00; background-color:sienna;">.
+<td style="color:#00FF00; background-color:sienna;">.
+} 
+
+h3 {
+	padding: 50px;
+	background-color: lavender;
+	display: inline-block;
+  }
+  p {
+	padding-top: 5px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 5px;
+	background-color: lavender;
+  }
+  p {
+	padding: 5px 50px 30px 5px;  /* Top  Right  Bottom  Left */
+	background-color: lavender; 
+  }p {
+	padding-top: 5px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 5px;
+	background-color: lavender;
+  }p {
+	padding: 5px 50px 30px 5px;  /* Top  Right  Bottom  Left */
+	background-color: lavender; 
+  }p {   
+	padding: 20px 10px;  /* Vertical  Horizontal */
+	}h3 {
+		padding:50px;
+		background-color: lavender;
+		display: inline-block;
+		border: 1px solid #5D6063;
+	  }
