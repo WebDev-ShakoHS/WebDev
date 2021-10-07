@@ -3,3 +3,21 @@
     line-height: 1.5em;
     text-align: center;
   }
+  .container {
+    display: inline-block;
+    margin: 3%;
+    perspective: 1000px;
+}
+.flipper {
+  position: relative;    
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
+.front{
+  z-index:2;
+}
+
+.back{
+  transform:rotateY(180deg);
+}
