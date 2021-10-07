@@ -1,7 +1,9 @@
-.button {
+@import url(rainbow.css);
+.button{
+	
 	background-color: #4CAF50;
 	border: none;
-	color: white;
+	color: rgb(11, 1, 1);
 	padding: 20px;
 	text-align: center;
 	text-decoration: none;
@@ -35,3 +37,16 @@ table{
 h1, h2, h3, h4, h5, h6{
 	text-align:center;
 }
+
+#knowledge > * {
+	border: 3px rgb(0, 255, 64) solid;
+
+}p + * {
+	background-color: #2b00ff;
+  }div li::marker{
+	color: rgb(146, 11, 11);
+  }
+  
+  div li::marker{
+	content:"😜 ";
+  }

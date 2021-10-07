@@ -1,10 +1,11 @@
-.background-red {
-    background-color: red;
+.background-red{
+    background-color: rgb(8, 2, 2);
 }
 
 .background-orange {
-    background-color: rgb(255, 111, 0);
+    background-color: blue;
 }
+
 
 .background-yellow {
     background-color: yellow;
