@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0 
-    Name:
+    Name: Evan You
     Date Completed: 
 -->
 
 <head>
+    <title>My Bootstrap Sample</title>
 
-<<<<<<< Updated upstream
     <!-- Bootstrap meta data -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,20 +15,26 @@
     <meta name="description" content="SHS WebDev Bootstrap sample">
 
     <!-- CSS -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <style>
         .demo-content {
             padding: 15px;
             font-size: 18px;
-            background: #2e2e2e;
+            background: #dbdfe5;
             margin-bottom: 15px;
         }
 
@@ -40,15 +46,196 @@
             margin: 20px;
         }
 
+        img {
+            width: 100%;
+        }
+
+        .table-striped tbody tr:nth-of-type(even) {
+            background-color: rgba(255, 0, 0, 0.25);
+        }
+
         .table-striped tbody tr:nth-of-type(odd) {
-            background-color: rgba(71, 255, 86, 0.226);
+            background-color: rgba(112, 20, 193, 0.25);
+        }
+
+        .btn-success:not(:disabled):not(.disabled).active,
+        .btn-success:not(:disabled):not(.disabled):active,
+        .show>.btn-success.dropdown-toggle {
+            color: #fff;
+            background-color: #4F2683;
+            border-color: #FFC62F;
         }
     </style>
-=======
->>>>>>> Stashed changes
 </head>
 
 <body>
+
+    <div class="jumbotron">
+        <h4> Bootstrap Examples</h4>
+        <p class="lead"> Let's look at the man different examples of how we can use bootstrap and what bootstrap can do!
+        </p>
+    </div>
+
+    <!---------Three Column Layouts--------->
+    <div class="container mt-3">
+        <!--Row with two equal columns-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="demo-content">.col-md-6</div>
+            </div>
+            <div class="col-md-6">
+                <div class="demo-content bg-alt">.col-md-6</div>
+            </div>
+        </div>
+        <!--Row with two columns divided in 1:2 ratio-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="demo-content">.col-md-4</div>
+            </div>
+            <div class="col-md-8">
+                <div class="demo-content bg-alt">.col-md-8</div>
+            </div>
+        </div>
+        <!--Row with two columns divided in 1:3 ratio-->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="demo-content">
+                    I like games
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-controller" viewBox="0 0 16 16">
+                        <path
+                            d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z" />
+                        <path
+                            d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z" />
+                    </svg>
+                    <img src="../../Version3.0/user26/images/Selfish.jpeg">
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="demo-content bg-alt"><img src="../../Version3.0/user26/images/Selfish.jpeg"></div>
+            </div>
+        </div>
+
+        <!---------Auto Layout Columns--------->
+        <div class="row">
+            <div class="col demo-content">Column one</div>
+            <div class="col demo-content bg-alt">Column two</div>
+            <div class="col demo-content">Column three</div>
+            <div class="col demo-content bg-alt">Column four</div>
+            <div class="col demo-content">Column five</div>
+            <div class="col demo-content bg-alt">Column six</div>
+            <div class="col demo-content">Column seven</div>
+        </div>
+
+        <!---------Flexible Layouts--------->
+        <div class="row">
+            <div class="col-md-4 col-lg-3">
+                <div class="demo-content">.col-md-4 .col-lg-3</div>
+            </div>
+            <div class="col-md-8 col-lg-6">
+                <div class="demo-content bg-alt">.col-md-8 .col-lg-6</div>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="demo-content">.col-md-12 .col-lg-3</div>
+            </div>
+        </div>
+    </div>
+    <div class="bs-example">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Row</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Clark</td>
+                    <td>Kent</td>
+                    <td>clarkkent@mail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John</td>
+                    <td>Carter</td>
+                    <td>johncarter@mail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Peter</td>
+                    <td>Parker</td>
+                    <td>peterparker@mail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="bs-example">
+        <table class="table table-striped cyan">
+            <thead>
+                <tr>
+                    <th>Row</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Clark</td>
+                    <td>Kent</td>
+                    <td>clarkkent@mail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John</td>
+                    <td>Carter</td>
+                    <td>johncarter@mail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Peter</td>
+                    <td>Parker</td>
+                    <td>peterparker@mail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container mt-3">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+                <i class="fa fa-home"></i> Home
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-camera"></i> Pictures <span class="badge badge-pill badge-primary pull-right">145</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-music"></i> Music <span class="badge badge-pill badge-primary pull-right">50</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-film"></i> Videos <span class="badge badge-pill badge-primary pull-right">8</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-podcast" aria-hidden="true"></i> Podcasts <span
+                    class="badge badge-pill badge-primary pull-right">19</span>
+            </a>
+            <a href="https://github.com/EvanxYou" target="_blank" class="list-group-item list-group-item-action">
+                <i class="fa fa-github-square" aria-hidden="true"></i>Github <span
+                    class="badge badge-pill badge-primary pull-right">19</span>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="demo-content alt">
+                <a href="form.html" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Form
+                    Page</a>
+            </div>
+        </div>
+    </div>
 
 </body>
 
