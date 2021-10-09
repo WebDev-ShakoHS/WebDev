@@ -34,3 +34,17 @@ h3 {
     padding: 20px 10px;  /* Vertical  Horizontal */
     }
     
+    .title{
+      color: red;
+      font-family: 'Trebuchet MS', sans-serif; 
+    }
+    
+    .title-large {
+      font-size: 2rem;
+    }
+    
+    .title-small {
+      font-size: .5rem;
+    }
+
+    
