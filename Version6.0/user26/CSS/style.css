@@ -1,15 +1,13 @@
 .body-wideMargin {
-  margin: 50px;
-  font-size: 100%;
-  line-height: 1.5;
-  font-family: Roboto;
+  margin: 0px;
+
 }
-button{
-  padding:5px;
+
+button {
+  padding: 5px;
 }
 
 ol {
-
   list-style-type: decimal-leading-zero;
 }
 
@@ -18,10 +16,8 @@ ol ol {
 }
 
 ol li {
-
   line-height: 1.5;
 }
-
 
 h1 {
   font-family: "Fjalla One", sans-serif;
@@ -30,4 +26,93 @@ h1 {
   font-weight: 400;
   border-bottom: 1px solid black;
   margin-bottom: 1em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+#gallery {
+  padding: 25px;
+  font-family: "Orbitron", sans-serif;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.container {
+  display: inline-block;
+  margin: 3%;
+  perspective: 1000px;
+}
+
+.flipper {
+  position: relative;
+  transition: .35s;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 320px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 5;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+img {
+  width: 100%;
+}
+
+.container, .front, .back {
+  width: 250px;
+  height: 320px;
+}
+
+.container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+a {
+  color: black;
+}
+
+.caption, .back h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.7em;
+  padding: 10px 10px 0 10px;
+  margin: 0;
+  text-align: center;
+  color: #f7f7f7;
+}
+
+p.caption {
+  position: absolute;
+  bottom: 1vh;
+  color: #f7f7f7;
+  text-align: center;
+}
+
+.description {
+  font-size: 0.8em;
+  margin: 0px 20px 20px 20px;
+  text-align: left;
+  color: #f7f7f7;
+}
+
+.drk {
+  background-color: #212121;
+}
+.navbar-drk{
+  color: #627d98;
+}
+
+.txt-drk{
+  color: #f7f7f7;
 }
