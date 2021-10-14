@@ -38,7 +38,7 @@ h1 {
 .container-cards {
   display: inline-block;
   margin: 3%;
-  perspective: 10000px;
+  perspective: 1000px;
 }
 
 .flipper {
