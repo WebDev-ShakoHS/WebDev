@@ -30,16 +30,15 @@ h1 {
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 #gallery {
-  padding: 25px;
   font-family: "Orbitron", sans-serif;
   line-height: 1.5em;
   text-align: center;
 }
 
-.container {
+.container-cards {
   display: inline-block;
   margin: 3%;
-  perspective: 1000px;
+  perspective: 10000px;
 }
 
 .flipper {
@@ -70,12 +69,12 @@ img {
   width: 100%;
 }
 
-.container, .front, .back {
+.container-cards, .front, .back {
   width: 250px;
   height: 320px;
 }
 
-.container:hover .flipper {
+.container-cards:hover .flipper {
   transform: rotateY(180deg);
 }
 
@@ -107,12 +106,15 @@ p.caption {
 }
 
 .drk {
-  background-color: #212121;
+  background-color: #000;
 }
 .navbar-drk{
-  color: #627d98;
+  color: #000;
 }
 
 .txt-drk{
+  color: #f7f7f7;
+}
+.navbar-brand{
   color: #f7f7f7;
 }
