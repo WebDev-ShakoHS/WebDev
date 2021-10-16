@@ -4,12 +4,12 @@
   line-height: 1.5;
   font-family: Roboto;
 }
-button{
-  padding:5px;
+
+button {
+  padding: 5px;
 }
 
 ol {
-
   list-style-type: decimal-leading-zero;
 }
 
@@ -18,16 +18,93 @@ ol ol {
 }
 
 ol li {
-
   line-height: 1.5;
 }
 
-
 h1 {
-  font-family: "Fjalla One", sans-serif;
+  font-family: Impact;
   font-size: 2em;
   text-transform: uppercase;
   font-weight: 400;
   border-bottom: 1px solid black;
   margin-bottom: 1em;
+}
+
+h4 {
+  font-family: 'Courier New';
+  font-size: 3vw;
+}
+
+bg-info {
+  background-color: rgb(191, 192, 191);
+}
+
+body {
+  background-image: url('https://www.schemecolor.com/wallpaper?i=36979&desktop');
+}
+
+#hover a:hover {
+  background-color: teal;
+}
+
+table {
+  font-family: Georgia;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border-collapse: collapse;
+  cellspacing: 0px;
+  position: absolute;
+  right: 0px;
+}
+
+tr {
+  border: 1px solid black;
+  text-align: center;
+  background-color: grey;
+}
+
+th {
+  text-align: center;
+  color: whitesmoke;
+  background-color: black;
+}
+
+.plzcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  size: 50%;
+}
+
+#footer {
+  position: relative;
+  right: 50px;
+  left: 0px;
+  text-align: center;
+  background-color: white;
+  padding-left: 40%;
+  padding-right: 40%;
+}
+
+#hover {
+
+}
+
+#circle {
+  background-color: black;
+  border: cornflowerblue;
+
+}
+
+footer {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+#circle>a {
+  size: 20px;
 }
