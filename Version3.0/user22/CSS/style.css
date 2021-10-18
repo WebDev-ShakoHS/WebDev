@@ -1,6 +1,6 @@
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	font-family: "Marker Felt", "", fantasy;
+	color: black;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
@@ -9,13 +9,24 @@ table {
 }
 
 tr {
-	border: 1px solid #ffffff;
+	border: 1px solid black;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:whitesmoke; 
 }
 
 th {
 	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+	color: whitesmoke;
+	background-color: darkred;
 }
+body {
+	background-image: url('https://www.color-hex.com/palettes/2539.png');
+  }
+
+ol {
+	list-style-type: upper-roman;
+  }
+
+ul {
+	list-style-type: square;
+  }
