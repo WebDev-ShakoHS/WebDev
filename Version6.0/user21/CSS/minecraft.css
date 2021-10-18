@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap);
-#gallery {
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Notable&family=Varela+Round&display=swap');
+#minecraft {
     font-family: "Orbitron", sans-serif;
     line-height: 1.5em;
     text-align: center;
   }
-  .container {
+  .container-cards {
     display: inline-block;
     margin: 3%;
     perspective: 1000px;
@@ -25,11 +25,11 @@
 img {
   width: 100%;
 }
-.container, .front, .back {
+.container-cards, .front, .back {
   width: 250px;
   height: 320px;
 }
-.container:hover .flipper {
+.container-cards :hover.flipper {
   transform: rotateY(180deg);
 }
 

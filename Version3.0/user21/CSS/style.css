@@ -8,6 +8,23 @@ table {
 	cellspacing: 0px;
 }
 
+
+
+
+tr {
+	border: 1px solid #f393fb;
+	text-align: center;
+	background-color:#6cacf1; 
+
+	
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+
 ol {
 	background: #ff02ab;
 	padding: 20px;
@@ -28,18 +45,3 @@ ol {
 	background: #6cacf1;
 	margin: 5px;
   }
-
-
-tr {
-	border: 1px solid #f393fb;
-	text-align: center;
-	background-color:#6cacf1; 
-
-	
-}
-
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
-}
