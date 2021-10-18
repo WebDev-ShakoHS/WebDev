@@ -1,18 +1,191 @@
+<!DOCTYPE html>
 <html lang="en">
-    <!--Version 6.0 
-	Name:
-	Date Completed:
-    -->
-    <head>
-        
-        <title>Web Development User #25</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #25</center>
-    
-    </body>
+<!--Version 5.0 
+    Name:
+    Date Completed: 
+-->
 
-</html>
+<head>
+    <title>Cracker Website</title>
+
+    <!-- Bootstrap meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cracker Page">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style6.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: rgba(27, 198, 250, 0.05);
+        }
+        
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #dbdfe5;
+            margin-bottom: 15px;
+        }
+        
+        .demo-content.bg-alt {
+            background: #abb1b8;
+        }
+        
+        .bs-example {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ----------------------------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!----------------------End the nav-bar--------------->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="top5.html"> <img class="d-block w-100" src="https://www.verywellfit.com/thmb/m-p5bH_gFpwzpLRAFaE_NX9JHTI=/3000x2002/filters:fill(FFDB5D,1)/crackers-crop-ee53c89d8ac9422a8af2385a12ab21c1.jpg" alt="Platter of Crackers"> </a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Top 5 Crackers</h5>
+                    <p>Click here to learn about some of the most popular crackers</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="facts.html"><img class="d-block w-100" src="https://static.independent.co.uk/2021/01/12/15/iStock-488201051.jpg?width=1200" alt="Assortment of Crackers"> </a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cracker Facts</h5>
+                    <p>Click here to learn interesting facts about crackers</p>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</body>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+                <!-- Content -->
+                <h5 class="text-uppercase">Footer Content</h5>
+                <p>Here you can use rows and columns to organize your footer content.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 4</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#!">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!">Link 4</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
