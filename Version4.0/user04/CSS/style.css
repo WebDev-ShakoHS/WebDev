@@ -105,16 +105,11 @@ h1, h2, h3, h4, h5, h6{
   #morecontent {
 	background-color: yellow;
   }
-  *{
-    text-align:right;
-    border: 2px solid black;
-}
-#knowledge > * {
+  
+	#knowledge > * {
 	border: 3px red solid;
   }
-  p + * {
-	background-color: #FFFF00;
-  }
+  
   
   div li > * ::marker{
 	content:"😜";
