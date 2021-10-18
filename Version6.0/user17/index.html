@@ -1,130 +1,275 @@
+<!DOCTYPE html>
 <html lang="en">
-    <!--Version 6.0 
-	Name:
-	Date Completed:
-    -->
+<!--Version 5.0
+    Name:Ahmed
+    Date Completed:
+-->
 
 <head>
-    <title>JavaScript Examples</title>
+    <title>Home</title>
 
-    <!-- Bootstrap meta data -->
+    <!-- Homepage meta data -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev JavaScript sample">
+    <meta name="description" content="Home Page">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
-
-    <!-- JavaScript -->
+    <!-- Bootstrap core JS -->
     <!-- These are needed to get the responsive menu to work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        .menu {
+            margin: 0px;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        #footer {
+            font-size: 12px;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-6-md">
-                    <h1>Heading for a long list</h1>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Aliquam tincidunt mauris eu risus.</li>
-                                        <li>Vestibulum auctor dapibus neque.</li>
-                                    </ol>
-                                </li>
-                                <li>Vestibulum auctor dapibus neque.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
-                            </ol>
-                        </li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.</li>
-                    </ol>
-                    <button class="btn btn-danger btn-lg" onclick="firstSelector()">Try it</button>
+    <!---------------------------------- Begin the nav-bar ----------------------------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <button class="btn btn-info btn-lg" onclick="secondSelector()">Try it</button>
-
-                    <button class="btn btn-dark btn-lg" onclick="thirdSelector()">Try it</button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="aboutMe.html" target="_blank" class="nav-item nav-link">About Me</a>
+                    <a href="Music.html" target="_blank" class="nav-item nav-link" tabindex="-1">Music</a>
+                    <a href="lists.html" target="_blank" class="nav-item nav-link" tabindex="-1">Lists</a>
+                    <a href="games.html" target="_blank" class="nav-item nav-link" tabindex="-1">Games</a>
+                    <a href="bootstrap.html" target="_blank" class="nav-item nav-link" tabindex="-1">Bootstrap</a>
+                    <a href="mailto:308378@shakopeeschools.org=?Subject=Hello" class="nav-item nav-link"
+                        tabindex="-1">Our Email</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
-                <div class="col-3-md">
-
+                <div class="navbar-nav ml-auto">
+                    <a href="login.html" class="nav-item nav-link">Login</a>
                 </div>
-
-                <div class="col-3-md">
-                    <h1>My shopping list</h1>
-
-                    <div>
-                        <label for="item">Enter a new item:</label>
-                        <input type="text" name="item" id="item">
-                        <button>Add item</button>
-                    </div>
-
-                    <ul>
-
-                    </ul>
-                </div>
-
             </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------------------------------->
 
-            <script id="lists">
-                function firstSelector() {
-                    document.querySelector("li").style.backgroundColor = "red";
-                }
-                function secondSelector() {
-                    var x = document.querySelectorAll("li");
-                    var i;
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.backgroundColor = "#004500";
-                    }
-                }
-                function thirdSelector() {
-                    document.querySelector("ol ol li").style.backgroundColor = "#a2a2a2";
-                }
-            </script>
-            <script id="shopping">
-                const list = document.querySelector('ul');
-                const input = document.querySelector('input');
-                const button = document.querySelector('button');
+    <div class="wideMargin" id="content">
 
-                button.onclick = function () {
-                    let myItem = input.value;
-                    input.value = '';
+        <h1 class="text-left my-3">Home</h1><!-- Edit this line for the title of your page -->
 
-                    const listItem = document.createElement('li');
-                    const listText = document.createElement('span');
-                    const listBtn = document.createElement('button');
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <p>
+            This is my Home page!
+        </p>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑-->
+    </div>
 
-                    listItem.appendChild(listText);
-                    listText.textContent = myItem;
-                    listItem.appendChild(listBtn);
-                    listBtn.textContent = 'Delete';
-                    list.appendChild(listItem);
+    <!---------------------------------- Begin the footer ------------------------------------->
+ <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
 
-                    listBtn.onclick = function (e) {
-                        list.removeChild(listItem);
-                    }
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
 
-                    input.focus();
-                }
-            </script>
-    </main>
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ahmed</a>
+  </div>
+</footer>
+<!-- Footer -->
+    <!---------------------------------- End the footer --------------------------------------->
 </body>
 
-</html>
+</ht
