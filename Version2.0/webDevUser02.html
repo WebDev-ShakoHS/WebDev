@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name:
-        Date Completed:
+        Name: Adrian Ayala
+        Date Completed: 9/13/21
     -->
 
 <head>
@@ -18,8 +18,82 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <style>
+    <div>
+        <h1>The time is 9:18 </h1>
+        <section>
+            <h2> A clock</h2>
+            <p>would you look at the time </p>
+        </section>
 
+        <section>
+            <h2>2nd Point</h2>
+            <p>Content in here that explains your 2nd point</p>
+        </section>
+    </div>
+
+    <style>
+        section {
+            background-color: rgba(224, 19, 207, 0.726);
+        }
+
+        #banner {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: rgb(245, 13, 13);
+            margin-top: 2rem;
+        }
+
+        div#face,
+        div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 60%;
+        }
+
+        .right.eye {
+            right: 60%;
+        }
+
+        .pupil {
+            background: #000;
+            width: 50%;
+            height: 100%;
+            position: relative;
+            left: 25%;
+            transform-origin: bottom;
+
+        }
+
+        #mouth {
+            position: relative;
+            width: 60%;
+            left: 20%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 60%;
+            top: 50%;
+            border-bottom-color: #000;
+        }
     </style>
 </head>
 
@@ -37,18 +111,38 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <h1> Im Tired</h1>
+            <h2> Sleep </h2>
+            <h3>;/</h3>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <del>Testing</del>
+            <ins> Giraffe pimp</ins>
+            <sub>Howdy there </sub>
+            <sup>shot the sun with a gun, my only friend</sup>
+            <small> Teeny tiny. tiny toons </small>
+            <progress value="22" max="100"> </progress>
+            <hr>
+            <abbr title="Not ONE Thing ">NOT </abbr>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
+            Your not alone
         </div>
         <div id="face">
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
 
         </div>
     </main>
