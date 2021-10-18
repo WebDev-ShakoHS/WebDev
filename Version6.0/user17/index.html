@@ -3,128 +3,16 @@
 	Name:
 	Date Completed:
     -->
-
-<head>
-    <title>JavaScript Examples</title>
-
-    <!-- Bootstrap meta data -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev JavaScript sample">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
-
-    <!-- JavaScript -->
-    <!-- These are needed to get the responsive menu to work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <style>
-    </style>
-</head>
-<body>
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-6-md">
-                    <h1>Heading for a long list</h1>
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                                <li>Aliquam tincidunt mauris eu risus.
-                                    <ol>
-                                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            <ol>
-                                                <li>Lorem ipsum dolor sit amet, consectetuer.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Aliquam tincidunt mauris eu risus.</li>
-                                        <li>Vestibulum auctor dapibus neque.</li>
-                                    </ol>
-                                </li>
-                                <li>Vestibulum auctor dapibus neque.</li>
-                                <li>Aliquam tincidunt mauris eu risus.</li>
-                            </ol>
-                        </li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                        <li>Vestibulum auctor dapibus neque.</li>
-                    </ol>
-                    <button class="btn btn-danger btn-lg" onclick="firstSelector()">Try it</button>
-
-                    <button class="btn btn-info btn-lg" onclick="secondSelector()">Try it</button>
-
-                    <button class="btn btn-dark btn-lg" onclick="thirdSelector()">Try it</button>
-                </div>
-                <div class="col-3-md">
-
-                </div>
-
-                <div class="col-3-md">
-                    <h1>My shopping list</h1>
-
-                    <div>
-                        <label for="item">Enter a new item:</label>
-                        <input type="text" name="item" id="item">
-                        <button>Add item</button>
-                    </div>
-
-                    <ul>
-
-                    </ul>
-                </div>
-
-            </div>
-
-            <script id="lists">
-                function firstSelector() {
-                    document.querySelector("li").style.backgroundColor = "red";
-                }
-                function secondSelector() {
-                    var x = document.querySelectorAll("li");
-                    var i;
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.backgroundColor = "#004500";
-                    }
-                }
-                function thirdSelector() {
-                    document.querySelector("ol ol li").style.backgroundColor = "#a2a2a2";
-                }
-            </script>
-            <script id="shopping">
-                const list = document.querySelector('ul');
-                const input = document.querySelector('input');
-                const button = document.querySelector('button');
-
-                button.onclick = function () {
-                    let myItem = input.value;
-                    input.value = '';
-
-                    const listItem = document.createElement('li');
-                    const listText = document.createElement('span');
-                    const listBtn = document.createElement('button');
-
-                    listItem.appendChild(listText);
-                    listText.textContent = myItem;
-                    listItem.appendChild(listBtn);
-                    listBtn.textContent = 'Delete';
-                    list.appendChild(listItem);
-
-                    listBtn.onclick = function (e) {
-                        list.removeChild(listItem);
-                    }
-
-                    input.focus();
-                }
-            </script>
-    </main>
-</body>
+    <head>
+        
+        <title>Web Development User #17</title>
+    
+    </head>
+    
+    <body>
+        
+        <center>My name is User #17</center>
+    
+    </body>
 
 </html>
