@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name:
-        Date Completed:
+        Name:Evan You
+        Date Completed:9/13/21
     -->
 
 <head>
 
-    <title>User ## Version 2.0 </title>
+    <title>User #26 Version 2.0 </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -19,7 +19,70 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner {
+            border: 5px inset rgba(234, 15, 35, 1);
+            background-color: lightblue;
+            text-align: center;
+            font-size: 300%;
+            font-family: Verdana;
+        }
 
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: yellow;
+            margin-top: 2rem;
+        }
+
+        div#face,
+        div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 10%;
+        }
+
+        .right.eye {
+            right: 25%;
+        }
+
+        .pupil {
+            background: #000;
+            width: 50%;
+            height: 40%;
+            position: relative;
+            left: 30%;
+            transform-origin: top;
+            top: 20%;
+        }
+
+        #mouth {
+            position: relative;
+            width: 60%;
+            left: 10%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 10%;
+            top: 60%;
+            border-bottom-color: #000;
+        }
+        section{
+            background-color: rgb(216, 216, 216);
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -37,18 +100,50 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+            <h1>Anything</h1>
+            <h2>My ankle hurts</h2>
+            <h3>Hello</h3>
+            <h4>We tired out here</h4>
+            <h5>Soccer is the better sport</h5>
+            <h6>WEB DEV</h6>
 
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+            There is <del>Something</del> <ins>Underlined</ins>
+            H<sub>2</sub>0
+            <sup>522</sup>
+            <small>Defines a small text</small>
+            <progress value="22" max="100"></progress>
+            <h1>Remembering 9/11</h1>
+            <section>
+                <h2>Introduction or 1st Point</h2>
+                <p>Content in here that explains your 1st point</p>
+            </section>
+
+            <section>
+                <h2>2nd Point</h2>
+                <p>Content in here that explains your 2nd point</p>
+            </section>
 
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
+            enter any text you wish
         </div>
         <div id="face">
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
 
         </div>
     </main>
@@ -57,7 +152,7 @@
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">Evan You</a></center>
         </p>
 
     </footer>

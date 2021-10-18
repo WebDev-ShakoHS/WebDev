@@ -1,51 +1,43 @@
-table {
-    border-collapse: collapse;
-    border: 1px solid black;
+.body-wideMargin {
+    margin: 50px;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: Roboto;
 }
 
-th, td {
-    border: 1px solid black;
+button {
+    padding: 5px;
 }
 
-table.a {
-    table-layout: auto;
-    width: 180px;
+ol {
+    list-style-type: decimal-leading-zero;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    margin: 10px;
+ol ol {
+    margin-left: 0.9em;
 }
 
-.power {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ol li {
+    line-height: 1.5;
 }
 
-#more {
-    display: none;
+li li {
+    list-style-type: lower-alpha;
 }
 
-.carousel-control-prev, .carousel-control-next {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    opacity: 0.5;
-    transition: opacity 0.15s ease;
+li li li {
+    list-style-type: square;
 }
 
-body {
-    background-color: black;
-    color: white;
+li li li li {
+    list-style-type: circle;
+}
+
+h1 {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
 }
