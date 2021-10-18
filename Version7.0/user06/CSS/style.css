@@ -1,124 +1,43 @@
-/*NAVBAR*/
-
-.menu {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px;
-    border-bottom-style: solid;
-    border-color: gray;
-    overflow: hidden;
-    background-color: #FFFAF5;
+.body-wideMargin {
+    margin: 50px;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: Roboto;
 }
 
-.menu li {
-    float: left;
+button {
+    padding: 5px;
 }
 
-.menu li a {
-    display: block;
-    color: #0d2666;
-    text-align: center;
-    padding: 25px 20px;
-    text-decoration: none;
-    font-family: 'Georgia', Times, serif;
+ol {
+    list-style-type: decimal-leading-zero;
 }
 
-.menu li a:hover {
-    background-color: #BEB7A4;
+ol ol {
+    margin-left: 0.9em;
 }
 
-.active {
-    background-color: #BEB7A4;
+ol li {
+    line-height: 1.5;
 }
 
-.listA {
-    font-family:'Georgia', Times, serif;
-    list-style-type: none;
+li li {
+    list-style-type: lower-alpha;
 }
 
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+li li li {
+    list-style-type: square;
 }
 
-.popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
+li li li li {
+    list-style-type: circle;
 }
 
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.lies {
-
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-}
-
-
-#content {
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.Image1 {
-    margin-top: 60px;
-}
-.color{
-    background-color: #FFFAF5;
+h1 {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
 }

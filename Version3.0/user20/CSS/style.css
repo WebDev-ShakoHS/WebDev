@@ -1,21 +1,34 @@
-table {
-    font-family: "Marker Felt", "Comic Sans MS", fantasy;
-    color: #003366;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    border-collapse: collapse;
-    border-spacing: 0px;
-}
-
-tr {
-    border: 1px solid #ffffff;
-    text-align: center;
-    background-color:#9FB6CD; 
-}
-
+table { font-family: "Marker Felt","Comic Sans MS",fantasy; color: #003366; margin-left: auto; margin-right: auto; text-align: left; border-collapse: collapse; border-spacing: 0px; }
+tr { border: 1px solid #ffffff; text-align: center; background-color: #9FB6CD; }
 th {
-    text-align: center;
-    color: #ffffff;
-    background-color: #003366;
+  text-align: center; color: #ffffff; background-color: #003366;
+  body { background-image: url("music.image.jpeg"); }
+  
+  <headstrong {
+    margin: 50px;
+    background-color: lightblue;
+  }
+h3{
+    
+    
+
+   
+   
+    margin-bottom: 50px; 
+    padding: 50px;
+    background-color: rgb(13, 13, 218);
+    display: inline-block;
+
+    padding-top: 5px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 5px;
+    background-color: rgb(238, 14, 14);
+ border-bottom: 1px solid #030d18;
+  border-right: 3px dotted #0000ff;
+  border-top: 5px inset;
+  border-left: 3px dashed #e9e9e9;
+
+  padding: 50px;
+
 }

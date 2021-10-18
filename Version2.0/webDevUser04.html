@@ -18,8 +18,66 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <style>
+    <style> 
+    section{border: 2px outset black  }
 
+        #banner{
+    border: 12px outset black;
+    background-color: red;
+    text-align: center;}
+    
+    div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: yellow;
+    margin-top: 2rem;
+}
+
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20
+%;
+}
+
+.left.eye {
+    left: 35%;
+}
+
+.right.eye. {
+    chc: 0%;
+}
+
+.pupil {
+    background: red;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: black;
+}
+}
     </style>
 </head>
 
@@ -37,19 +95,54 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
-            <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <h1>Anything</h1>
+            <h2>Something</h2>
+            <h3>Nothing</h3>
+            <h4>Anything</h4>
+            <h5>Something</h5>
+            <h6>Nothing</h6>
+                
+             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <del>Hello</del>
+            <ins>Underline</ins>
+            <sub>Sub</sub>
+            <sup>Sup</sup>
+            <small>Small</small>
+            <progress value="22" max="100" >Progress</progress>
+            <hr>HR
+            <abbr title="World Health Organization" > WHO </abbr>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
+        <div>
+            <h1>Remembering 911</h1>
+            <section>
+                <h3>Introduction</h3>
+                <p>Content in here that explains your 1st point</p>
+            </section>
+            
+            <section>
+                <h3>First hand accounts</h3>
+                <p>Content in here that explains your 2nd point</p>
+            </section>
+        </div>
         <div id="banner">
+            this is great
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div class="right eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div id="mouth">
+           </div>
         </div>
     </main>
 
@@ -57,7 +150,7 @@
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">[THE BEST]</a></center>
         </p>
 
     </footer>

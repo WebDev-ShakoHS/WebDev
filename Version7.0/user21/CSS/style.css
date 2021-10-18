@@ -1,51 +1,43 @@
-table {
-    font-family: "Marker Felt", "Comic Sans MS", fantasy;
-    color: #003366;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    border-collapse: collapse;
-    border-spacing: 0px;
-}
-body
-{ background-color: rgb(0, 132, 255);}
-
-
-tr {
-    border: 1px solid #ffffff;
-    text-align: center;
-    background-color: #0E2BFF;
+.body-wideMargin {
+    margin: 50px;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: Roboto;
 }
 
-th {
-    text-align: center;
-    color: #ffffff;
-    background-color: #565e66;
+button {
+    padding: 5px;
 }
 
-ul {
-    list-style-image: url('http://www.simpleimageresizer.com/_uploads/photos/f2692232/underrated-lipless-crankbaits-3_1_32x32.jpeg');
+ol {
+    list-style-type: decimal-leading-zero;
 }
 
-
-
-#fish div a img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-
-}
-.portrait {
-    height: 80px;
-    width: 30px;
+ol ol {
+    margin-left: 0.9em;
 }
 
-.landscape {
-    height: 30px;
-    width: 80px;
+ol li {
+    line-height: 1.5;
 }
 
-.square {
-    height: 75px;
-    width: 75px;
+li li {
+    list-style-type: lower-alpha;
+}
+
+li li li {
+    list-style-type: square;
+}
+
+li li li li {
+    list-style-type: circle;
+}
+
+h1 {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
 }

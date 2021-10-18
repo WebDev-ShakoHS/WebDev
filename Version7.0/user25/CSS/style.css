@@ -1,314 +1,43 @@
-header * {
-    display: inline;
+.body-wideMargin {
+    margin: 50px;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: Roboto;
 }
 
-header li {
-    margin: 20px;
+button {
+    padding: 5px;
 }
 
-header li a {
-    color: black;
-    text-decoration: none;
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+ol ol {
+    margin-left: 0.9em;
+}
+
+ol li {
+    line-height: 1.5;
+}
+
+li li {
+    list-style-type: lower-alpha;
+}
+
+li li li {
+    list-style-type: square;
+}
+
+li li li li {
+    list-style-type: circle;
 }
 
 h1 {
-    background-color: #111;
-    color: #FFF;
-    padding: 10px 0px 0px 0px;
-}
-
-h2 {
+    font-family: "Fjalla One", sans-serif;
     font-size: 2em;
-    font-family: 'Amethysta', serif;
-    text-align: center;
     text-transform: uppercase;
-    letter-spacing: .3em;
-    display: block;
-}
-
-span {
-    color: #000;
-    font-family: 'Caesar Dressing', cursive;
-    font-size: 5em;
-    text-transform: lowercase;
-    vertical-align: middle;
-    letter-spacing: .2em;
-}
-
-.fire {
-    animation: animation 1s ease-in-out infinite alternate;
-    -moz-animation: animation 1s ease-in-out infinite alternate;
-    -webkit-animation: animation 1s ease-in-out infinite alternate;
-    -o-animation: animation 1s ease-in-out infinite alternate;
-}
-
-.burn {
-    animation: animation .65s ease-in-out infinite alternate;
-    -moz-animation: animation .65s ease-in-out infinite alternate;
-    -webkit-animation: animation .65s ease-in-out infinite alternate;
-    -o-animation: animation .65s ease-in-out infinite alternate;
-}
-
-@keyframes animation {
-    0% {
-        text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
-    }
-    100% {
-        text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #fefcc9, -20px -20px 40px #feec85, 22px -42px 60px #ffae34, -22px -58px 50px #ec760c, 0 -82px 80px #cd4606, 10px -90px 80px #973716;
-    }
-}
-
-@-moz-keyframes animation {
-    0% {
-        text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
-    }
-    100% {
-        text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #fefcc9, -20px -20px 40px #feec85, 22px -42px 60px #ffae34, -22px -58px 50px #ec760c, 0 -82px 80px #cd4606, 10px -90px 80px #973716;
-    }
-}
-
-@-webkit-keyframes animation {
-    0% {
-        text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
-    }
-    100% {
-        text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #fefcc9, -20px -20px 40px #feec85, 22px -42px 60px #ffae34, -22px -58px 50px #ec760c, 0 -82px 80px #cd4606, 10px -90px 80px #973716;
-    }
-}
-
-@-o-keyframes animation {
-    0% {
-        text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
-    }
-    100% {
-        text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #fefcc9, -20px -20px 40px #feec85, 22px -42px 60px #ffae34, -22px -58px 50px #ec760c, 0 -82px 80px #cd4606, 10px -90px 80px #973716;
-    }
-}
-
-p {
-    text-align: left;
-    background-color: black;
-    font-size: 20px;
-    color: whitesmoke;
-    padding-right: 25px;
-    word-wrap: break-word;
-}
-
-.card-row {
-    background: lightsalmon;
-}
-
-@media screen and (max-width: 991px) {
-    .container {
-        width: 100%;
-    }
-    .card:nth-child(odd) {
-        background: orange;
-        padding-left: 0;
-    }
-    .card:nth-child(even) {
-        background: darkorange;
-        padding-right: 0;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .card:nth-child(odd), .card:nth-child(even) {
-        background: coral;
-        padding: 0;
-    }
-}
-
-HTML CSS Resources body {
-    font-family: 'Signika', sans-serif;
-}
-
-.bg-grey {
-    background: #292929;
-}
-
-.logo-footer {
-    margin-bottom: 40px;
-}
-
-footer {
-    color: grey;
-}
-
-footer p, a {
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-}
-
-footer h6 {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-footer h6:after {
-    position: absolute;
-    content: "";
-    background: grey;
-    width: 12%;
-    height: 1px;
-    left: 0;
-    bottom: -20px;
-}
-
-.btn-footer {
-    color: grey;
-    text-decoration: none;
-    border: 1px solid;
-    border-radius: 43px;
-    font-size: 13px;
-    padding: 7px 30px;
-    line-height: 47px;
-}
-
-.btn-footer:hover {
-    text-decoration: none;
-}
-
-.form-footer input[type="text"] {
-    border: none;
-    border-radius: 16px 0 0 16px;
-    outline: none;
-    padding-left: 10px;
-}
-
-::placeholder {
-    font-size: 10px;
-    padding-left: 10px;
-    font-style: italic;
-}
-
-.form-footer input[type="button"] {
-    border: none;
-    background: #232323;
-    margin-left: -5px;
-    color: #fff;
-    outline: none;
-    border-radius: 0 16px 16px 0;
-    padding: 2px 12px;
-}
-
-.social .fa {
-    color: grey;
-    font-size: 22px;
-    padding: 10px 15px;
-    background: #3c3c3c;
-}
-
-footer ul li {
-    list-style: none;
-    display: block;
-}
-
-footer ul {
-    padding-left: 0;
-}
-
-footer ul li a {
-    text-decoration: none;
-    color: grey;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #f5f5f5 !important;
-}
-
-.logo-part {
-    border-right: 1px solid grey;
-    height: 100%;
-}
-
-#overlay {
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    background-image: url('images/panda.jpg');
-    background-repeat: no-repeat;
-}
-
-/* The Modal (background) */
-
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
-    padding-top: 60px;
-}
-
-/* Modal Content/Box */
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 5px auto;
-    /* 15% from the top and centered */
-    border: 1px solid #888;
-    width: 80%;
-    /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-
-.close {
-    /* Position it in the top right corner outside of the modal */
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-/* Close button on hover */
-
-.close:hover, .close:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Add Zoom Animation */
-
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {
-        -webkit-transform: scale(0)
-    }
-    to {
-        -webkit-transform: scale(1)
-    }
-}
-
-@keyframes animatezoom {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
-    }
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
 }
