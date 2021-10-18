@@ -8,8 +8,13 @@ table {
 	cellspacing: 0px;
 }
 
+body {
+
+	background-image: url("/Users/231297/Applications/mampstack/apache2/htdocs/WebDev/Version3.0/user03/images/Square.png")
+}
+
 tr {
-	border: 1px solid #ffffff;
+	border: 20px groove #9e7676;
 	text-align: center;
 	background-color:#9FB6CD; 
 }
@@ -18,4 +23,14 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+ul {
+	list-style-image: url("/Users/231297/Applications/mampstack/apache2/htdocs/WebDev/Version3.0/user03/images/favicon.ico");
+	background-color: green;
+}
+
+ol {
+	list-style-type: style text; color:blue ;
+	background-color: green;
 }
