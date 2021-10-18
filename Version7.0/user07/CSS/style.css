@@ -1,108 +1,43 @@
-.narrowMargin {
-    margin-top: 5px;
+.body-wideMargin {
+    margin: 50px;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: Roboto;
 }
 
-/* unvisited link */
-
-a:link {
-    color: rgb(255, 154, 205);
-    font-size: 25px;
-}
-
-/* visited link */
-
-a:visited {
-    color: rgb(245, 255, 106);
-}
-
-/* mouse over link */
-
-a:hover {
-    color: white;
-}
-
-/* selected link */
-
-a:active {
-    color: rgb(77, 184, 255);
-}
-
-.footer {
-    background: rgb(131, 10, 34);
-    ;
-}
-
-table {
-    color: #003366;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    border-collapse: collapse;
-    border-spacing: 0px;
-}
-
-tr {
-    border: 1px solid #ffffff;
-    text-align: center;
-    background-color: #47a3ff;
-}
-
-th {
-    text-align: center;
-    color: #ffffff;
-    background-color: #003366;
+button {
+    padding: 5px;
 }
 
 ol {
-    background-color: lightsalmon;
-    width: 200px
+    list-style-type: decimal-leading-zero;
 }
 
-.py-3 {
-    color: white;
-    font-size: 25px;
+ol ol {
+    margin-left: 0.9em;
 }
 
-#more {
-    display: none;
+ol li {
+    line-height: 1.5;
 }
 
-#topBtn {
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 20px;
-    /* Place the button at the bottom of the page */
-    right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: red;
-    /* Set a background color */
-    color: white;
-    /* Text color */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 15px;
-    /* Some padding */
-    border-radius: 10px;
-    /* Rounded corners */
-    font-size: 18px;
-    /* Increase font size */
+li li {
+    list-style-type: lower-alpha;
 }
 
-#topBtn:hover {
-    background-color: #555;
-    /* Add a dark-grey background on hover */
+li li li {
+    list-style-type: square;
 }
 
-#moreLessBtn {
-    background-color: cornflowerblue;
-    color: indigo;
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
+li li li li {
+    list-style-type: circle;
+}
+
+h1 {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
 }

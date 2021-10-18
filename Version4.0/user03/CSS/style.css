@@ -1,3 +1,6 @@
+	
+@import url(rainbow.css);
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
@@ -11,11 +14,120 @@ table {
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #9FB6CD;
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button-SmallBorder {
+	border-radius: 8px;
+}
+
+.button-LargeBorder {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td {
+	padding: 20px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+.GradientButton {
+	background: linear-gradient(to bottom, #f24537 25%, #c62d1f 100%);
+	font-family: Arial;
+	font-weight: bold;
+	color: greenyellow;
+	text-shadow: 0px 1px 0px #3d8105;
+	border: 1px solid #e65f44
+}
+
+.OrangeButton {
+	box-shadow: inset 0px 1px 0px 0px #f9eca0;
+	background: linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+	background-color: #f0c911;
+	border-radius: 6px;
+	border: 1px solid #e65f44;
+	display: inline-block;
+	cursor: pointer;
+	color: #c92200;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-shadow: 0px 1px 0px #ded17c;
+}
+
+.BlueButton {
+	box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+	background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color: #79bbff;
+	border-radius: 6px;
+	border: 1px solid #84bbf3;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-shadow: 0px 1px 0px #528ecc;
+}
+
+.title {
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+	font-size: 2rem;
+}
+
+.title-small {
+	font-size: .5rem;
+}
+
+#morecontent {
+	background-color: yellow;
+}
+
+#hireButtons {
+	border-radius: 10px;
+	border-color: linear-gradient(to bottom, red 5%, green 100%);
+}
+
+#footerTable {
+	border-radius: 50px;
+}
+
+* {
+	text-shadow: 5px 5px 5px black;
 }
