@@ -3,15 +3,39 @@ table {
 	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
+	text-align: center;
 	border-collapse: collapse;
 	cellspacing: 0px;
 }
 
+ol {
+	background: #ff02ab;
+	padding: 20px;
+  }
+  
+  ul {
+	background: #3399ff;
+	padding: 20px;
+  }
+  
+  ol li {
+	background: #f393fb;
+	padding: 5px;
+	margin-left: 35px;
+  }
+  
+  ul li {
+	background: #6cacf1;
+	margin: 5px;
+  }
+
+
 tr {
-	border: 1px solid #ffffff;
+	border: 1px solid #f393fb;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#6cacf1; 
+
+	
 }
 
 th {

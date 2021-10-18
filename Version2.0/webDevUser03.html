@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name:
-        Date Completed:
+        Name: Lucas
+        Date Completed: 9/13/21
     -->
 
 <head>
@@ -19,7 +19,68 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        section {
+            background: rgb(186, 187, 184);
+            text-align: center;
+            border: 10px inset rgb(38, 0, 255);
+        }
+        div#face {
+            width: 80vw;
+            height: 80vw;
+            max-width: 800px;
+            max-height: 800px;
+            margin: 0 auto;
+            position: relative;
+            background: rgb(0, 255, 21);
+            margin-top: 2rem;
+        }
 
+        div#face,
+        div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 30%;
+        }
+
+        .left.eye {
+            left: 20%;
+        }
+
+        .right.eye {
+            right: 20%;
+        }
+
+        .pupil {
+            background: #000;
+            width: 50%;
+            height: 50%;
+            position: relative;
+            left: 25%;
+            transform-origin: bottom;
+        }
+
+        #mouth {
+            position: relative;
+            width: 60%;
+            left: 20%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: #000;
+        }
+
+        #banner {
+            border: 5px inset rgb(38, 0, 255);
+            background-color: rgba(173, 230, 181, 0.432);
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -37,19 +98,54 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <h1>This is heading one</h1>
+            <h2>This is heading two</h2>
+            <h3>This is heading three</h3>
+            <h4>This is heading four</h4>
+            <h5>This is heading five</h5>
+            <h6>This is heading six</h6>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <del>These words have a strike</del>
+            <ins>These words have an underline</ins>
+            <sub>Subscript</sub>
+            <sup>Superscript</sup>
+            <small>These words are small</small>
+            <progress value="22" max="100"> </progress>
+            <hr>
+            <abbr title="Meaning of abbreviation"> Abbreviation </abbr>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+
+        <div>
+            <h1>Article title</h1>
+            <section>
+                <h2>Introduction</h2>
+                <p>Content in here that explains your 1st point</p>
+                <h3>First hand accounts</h3>
+            </section>
+            
+            <section>
+                <h2>Conclusion</h2>
+                <p>Content in here that explains your 2nd point</p>
+            </section></div>
         </div>
         <div id="banner">
+            <strong>Editing the banner text</strong>
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
         </div>
     </main>
 
