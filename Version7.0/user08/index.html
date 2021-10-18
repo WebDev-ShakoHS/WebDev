@@ -37,10 +37,16 @@
 
 <body>
     <main>
-        <div id="built-in-methods">
-            <!-- ALERT Method-->
+        <div id="built-in-functions">
+            <!-- ALERT-->
             <script>
                 alert('Go Sabers!');
+            </script>
+            <!--PRINT-->
+            <script>
+                function printWindow(){
+                    window.print();
+                }
             </script>
             <!--LENGTH-->
             <script>
@@ -48,13 +54,13 @@
                     document.getElementById("length").innerHTML = document.title.length;
                 }
             </script>
-            <!-- FOCUS Method-->
+            <!-- FOCUS-->
             <script>
                 function getFocus() {
                     document.getElementById("focusButton").focus();
                 }
             </script>
-            <!-- CLICK Method-->
+            <!-- CLICK-->
             <script>
                 function clickSimulation() {
                     document.getElementById("Check").click();
@@ -70,7 +76,7 @@
                 <div class="row">
                     <!--PRINT-->
                     <div class="col-md-1">
-                        <button class="btn btn-dark btn-md" value="print this page" onclick="window.print()">Print this
+                        <button class="btn btn-dark btn-md" value="print this page" onclick="printWindow()">Print this
                             page</button>
                     </div>
                     <!--LENGTH-->
@@ -102,7 +108,7 @@
                 </div>
             </div>
         </div>
-    <hr>
+        <hr>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-5">
