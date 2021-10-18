@@ -1,21 +1,29 @@
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	color: #ffffff;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 50px;
+	position: relative;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #610094;
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #003366;
+	background-color: #150050;
+}
+
+ul {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+}
+ol {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 }

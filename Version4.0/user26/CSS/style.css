@@ -1,21 +1,147 @@
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button-square {
+	border-radius: 8px;
+}
+
+.button-round {
+	border-radius: 30%;
+}
+
+.red {
+	background-color: #ff0000;
+}
+
+td {
+	padding: 20px;
+}
+
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
 }
 
-tr {
-	border: 1px solid #ffffff;
+h1, h2, h3, h4, h5, h6 {
 	text-align: center;
-	background-color:#9FB6CD; 
 }
 
-th {
-	text-align: center;
+.myButton {
+	background-color: #599bb3;
+	border-radius: 23px;
+	border: 1px solid #29668f;
+	display: inline-block;
+	cursor: pointer;
 	color: #ffffff;
-	background-color: #003366;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	padding: 15px 14px;
+	text-decoration: none;
+	text-shadow: 0px 2px 0px #3d768a;
+}
+
+.myButton:hover {
+	background-color: #408c99;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.btn {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: inherit;
+	background: #599bb3;
+	cursor: pointer;
+	padding: 25px 40px;
+	display: inline-block;
+	margin: 15px 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	transition: all 0.3s;
+	border: 3px solid #29668f;
+	color: #fff;
+	overflow: hidden;
+}
+
+.gradbtn {
+	box-shadow: inset 0px 0px 15px 3px #23395e;
+	background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color: #2e466e;
+	border-radius: 17px;
+	border: 1px solid #1f2f47;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 15px;
+	padding: 6px 13px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #263666;
+}
+
+.gradbtn:hover {
+	background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color: #415989;
+	box-shadow: 0 13px 17px 0 rgba(0, 0, 0, 0.25);
+}
+
+.gradbtn:active {
+	position: relative;
+	top: 1px;
+}
+
+.title {
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+	font-size: 2rem;
+}
+
+.title-small {
+	font-size: .5rem;
+}
+
+#morecontent {
+	background-color: yellow;
+}
+
+#hireButtons {
+	background-color: violet;
+	color: rgb(255, 255, 255);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	border-spacing: 50px;
+	border-collapse: collapse;
+	position: relative;
+	width: 100%;
+}
+
+#footerTable {
+	background-color: grey;
+}
+
+* {
+	text-align:center;
+	margin: auto;
+	color: red;
 }
