@@ -1,3 +1,3 @@
 Version 6.0
 
-This assingment is all about JavaScript and how we can make our website more dynamic
+This assingment is the summative for you to showcase what you have learned about static websites.  
