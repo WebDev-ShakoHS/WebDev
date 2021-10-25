@@ -39,9 +39,7 @@
     <main>
         <div id="built-in-functions">
             <!-- ALERT-->
-            <script>
-                alert('Go Sabers!');
-            </script>
+
             <!--PRINT-->
             <script>
                 function printWindow(){
@@ -57,7 +55,7 @@
             <!-- FOCUS-->
             <script>
                 function getFocus() {
-                    document.getElementById("focusButton").focus();
+                    document.getElementById("focusButton").focus(preventscroll = true);
                 }
             </script>
             <!-- CLICK-->
@@ -108,6 +106,7 @@
                 </div>
             </div>
         </div>
+        <h1 style="display: inline-block" onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
         <hr>
         <div class="container-fluid">
             <div class="row">
@@ -178,7 +177,7 @@
             function secondSelector() {
                 var x = document.querySelectorAll("li");
                 var i;
-                for (i = 0; i < x.length; i++) {
+                for (i = 0; i < x.length; i=i+2) {
                     x[i].style.backgroundColor = "#17a2b8";
                 }
             }
