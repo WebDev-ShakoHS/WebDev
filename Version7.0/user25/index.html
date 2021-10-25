@@ -39,9 +39,7 @@
     <main>
         <div id="built-in-functions">
             <!-- ALERT-->
-            <script>
-                alert("Go Sabers!");
-            </script>
+            <h1 onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
             <!--PRINT-->
             <script>
                 function printWindow() {
@@ -181,7 +179,7 @@
             function secondSelector() {
                 var x = document.querySelectorAll("li");
                 var i;
-                for (i = 0; i < x.length; i++) {
+                for (i = 0; i < x.length; i = i + 2) {
                     x[i].style.backgroundColor = "#17a2b8";
                 }
             }
