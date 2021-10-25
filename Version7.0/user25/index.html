@@ -57,7 +57,9 @@
             <!-- FOCUS-->
             <script>
                 function getFocus() {
-                    document.getElementById("focusButton").focus();
+                    document.getElementById("focusButton").focus({
+                        preventScroll: true
+                    });
                 }
             </script>
             <!-- CLICK-->
