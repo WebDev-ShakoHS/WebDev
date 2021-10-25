@@ -57,7 +57,7 @@
             <!-- FOCUS-->
             <script>
                 function getFocus() {
-                    document.getElementById("focusButton").focus();
+                    document.getElementById("focusButton").focus({ preventScroll: false });
                 }
             </script>
             <!-- CLICK-->
@@ -94,8 +94,10 @@
                     <!-- CLICK-->
                     <div class="col-md-1">
                         <form>
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
+                            <input type="checkbox" id="Check" onmouseover="clickSimulation()"
+                                onmouseleave="clickSimulation()">
+                            <input type="checkbox" id="Check" onmouseover="clickSimulation()"
+                                onmouseleave="clickSimulation()">
                         </form>
                     </div>
                     <!--DATE-->
