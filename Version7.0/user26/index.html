@@ -193,8 +193,7 @@
             const list = document.querySelector('ul');
             const input = document.getElementById('item');
             const button = document.getElementById('aggregating-list');
-            input.onkeypress('enter')
-            button.onclick = function () {
+            button.onclick = function (e) {
                 let myItem = input.value;
                 input.value = '';
 
