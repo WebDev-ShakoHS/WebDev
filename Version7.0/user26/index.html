@@ -29,6 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+
     <style>
         /* Internal Styling Here */
     </style>
@@ -44,7 +45,7 @@
             </script>
             <!--PRINT-->
             <script>
-                function printWindow(){
+                function printWindow() {
                     window.print();
                 }
             </script>
@@ -180,7 +181,7 @@
             function secondSelector() {
                 var x = document.querySelectorAll("li");
                 var i;
-                for (i = 0; i < x.length; i++) {
+                for (i = 0; i < x.length; i = i + 2) {
                     x[i].style.backgroundColor = "#17a2b8";
                 }
             }
@@ -190,9 +191,9 @@
         </script>
         <script id="shopping">
             const list = document.querySelector('ul');
-            const input = document.querySelector('input');
+            const input = document.getElementById('item');
             const button = document.getElementById('aggregating-list');
-
+            input.onkeypress('enter')
             button.onclick = function () {
                 let myItem = input.value;
                 input.value = '';
@@ -214,6 +215,121 @@
                 input.focus();
             }
         </script>
+
+        <!-----Time Game----->
+        <script language="JavaScript">
+
+            var startTime = new Date();
+            var endTime = new Date();
+            var startPressed = false;
+            var bgChangeStarted = false;
+            var maxWait = 20;
+            var timerID;
+            var stopBtnX;
+            var stopBtnY;
+            var min = -200;
+            var max = 200;
+
+            function getRandomInt() {
+                min = Math.ceil(min);
+                max = Math.floor(max);
+                stopBtnX = Math.floor(Math.random() * (max - min) + min);
+                stopBtnY = Math.floor(Math.random() * (max - min) + min);
+                return Math.floor(Math.random() * (max - min) + min);
+
+                //The maximum is exclusive and the minimum is inclusive
+            }
+
+
+            function startTest() {
+                document.body.style.background = document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+                bgChangeStarted = true;
+                document.getElementById("stopBtn").innerHTML = '<input style="display:none;" type="button" value="stop" onClick="stopTest()">'
+                startTime = new Date();
+                document.getElementById("stopBtn").innerHTML = '<input style="position:relative; left:' + stopBtnX + 'px; top:' + stopBtnY + 'px;" type="button" value="stop" onClick="stopTest()">'
+            }
+
+            function remark(responseTime) {
+                var responseString = "";
+                if (responseTime < 0.20)
+                    responseString = "Well done!";
+                if (responseTime >= 0.20 && responseTime < 0.30)
+                    responseString = "Nice!";
+                if (responseTime >= 0.40 && responseTime < 0.50)
+                    responseString = "Could be better...";
+                if (responseTime >= 0.50 && responseTime < 0.80)
+                    responseString = "Keep practicing!";
+                if (responseTime >= 0.80 && responseTime < 1.1)
+                    responseString = "Have you been day dreaming again?";
+                if (responseTime >= 1.1)
+                    responseString = "Did you fall asleep?";
+                return responseString;
+            }
+
+            function stopTest() {
+                if (bgChangeStarted) {
+                    endTime = new Date();
+                    var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
+
+                    document.body.style.background = "white";
+                    alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+                    document.getElementById("stopBtn").innerHTML = '<input style="display:none;" type="button" value="stop" onClick="stopTest()">'
+                    startPressed = false;
+                    bgChangeStarted = false;
+                }
+                else {
+                    if (!startPressed) {
+                        alert("press start first to start test");
+                    }
+                    else {
+                        clearTimeout(timerID);
+                        startPressed = false;
+                        alert("cheater! you pressed too early!");
+                    }
+                }
+            }
+
+            var randMULTIPLIER = 0x015a4e35;
+            var randINCREMENT = 1;
+            var today = new Date();
+            var randSeed = today.getSeconds();
+
+            function randNumber() {
+                randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+                return ((randSeed >> 15) & 0x7fff) / 32767;
+            }
+
+            function startit() {
+                if (startPressed) {
+                    alert("Already started. Press stop to stop");
+                    return;
+                }
+                else {
+                    getRandomInt()
+                    document.getElementById("stopBtn").innerHTML = '<input style="display:none;" type="button" value="stop" onClick="stopTest()">'
+                    startPressed = true;
+                    timerID = setTimeout('startTest()', 6000 * randNumber());
+                }
+            }
+
+        </script>
+        <p>Test your Response time!</p>
+        Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+        <form name="response">
+            Change background color in:
+            <select name="bgColorChange">
+                <option selected>deeppink
+                <option>aliceblue
+                <option>crimson
+                <option>darkkhaki
+                <option>cadetblue
+                <option>darkorchid
+                <option>coral
+            </select>
+            <input type="button" value="start" onClick="startit()">
+            <span id="stopBtn"><input type="button" value="stop" onClick="stopTest()"></span>
+        </form>
     </main>
     <div id="container" style="height: 3000px; width: 1000px;">
         <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
