@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- Animate -->
+    <!--  -->
     <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
@@ -42,7 +42,7 @@
 
             <!--PRINT-->
             <script>
-                function printWindow(){
+                function printWindow() {
                     window.print();
                 }
             </script>
@@ -55,7 +55,7 @@
             <!-- FOCUS-->
             <script>
                 function getFocus() {
-                    document.getElementById("focusButton").focus(preventscroll = true);
+                    document.getElementById("focusButton").focus({ preventScroll: false });
                 }
             </script>
             <!-- CLICK-->
@@ -106,7 +106,7 @@
                 </div>
             </div>
         </div>
-        <h1 style="display: inline-block" onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
+        <h1 style="display:inline-block;" onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
         <hr>
         <div class="container-fluid">
             <div class="row">
@@ -177,7 +177,7 @@
             function secondSelector() {
                 var x = document.querySelectorAll("li");
                 var i;
-                for (i = 0; i < x.length; i=i+2) {
+                for (i = 0; i < x.length; i = i + 2) {
                     x[i].style.backgroundColor = "#17a2b8";
                 }
             }
@@ -187,7 +187,7 @@
         </script>
         <script id="shopping">
             const list = document.querySelector('ul');
-            const input = document.querySelector('input');
+            const input = document.getElementById('item');
             const button = document.getElementById('aggregating-list');
 
             button.onclick = function () {
@@ -211,10 +211,364 @@
                 input.focus();
             }
         </script>
+        <script language="JavaScript">
+
+            var startTime = new Date();
+            var endTime = new Date();
+            var startPressed = false;
+            var bgChangeStarted = false;
+            var maxWait = 20;
+            var timerID;
+            var stopBtnX;
+            var stopBtnY;
+
+            function getRandom(min, max) {
+                min = Math.ceil(-200);
+                max = Math.floor(200);
+                stopBtnX = Math.floor(Math.random() * (max - min + 1) + min);
+                stopBtnY = Math.floor(Math.random() * (max - min + 1) + min);
+            }
+
+            function startTest() {
+                document.body.style.background = document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+                bgChangeStarted = true;
+                startTime = new Date();
+
+                var i;
+                for (i = 1; i < 4; i++) {
+                    getRandom();
+                    document.getElementById("stopBtn" + i).innerHTML = '<input style="padding: 0 20px; position: relative; left:' + stopBtnX + 'px; top:'+ stopBtnY + 'px;" type="button" value="' + i + '" onClick="stopTest()">';
+                }
+                
+            }
+
+            function remark(responseTime) {
+                var responseString = "";
+                if (responseTime < 0.10)
+                    responseString = "Well done!";
+                if (responseTime >= 0.10 && responseTime < 0.20)
+                    responseString = "Nice!";
+                if (responseTime >= 0.20 && responseTime < 0.50)
+                    responseString = "Could be better...";
+                if (responseTime >= 0.50 && responseTime < 0.80)
+                    responseString = "Keep practicing!";
+                if (responseTime >= 0.80 && responseTime < 1.1)
+                    responseString = "Have you been day dreaming again?";
+                if (responseTime >= 1.1)
+                    responseString = "Did you fall asleep?";
+                return responseString;
+            }
+
+            function stopTest() {
+                if (bgChangeStarted) {
+                    endTime = new Date();
+                    var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
+                    document.body.style.background = "white";
+                    alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+                    startPressed = false;
+                    bgChangeStarted = false;
+                }
+                else {
+                    if (!startPressed) {
+                        alert("press start first to start test");
+                    }
+                    else {
+                        clearTimeout(timerID);
+                        startPressed = false;
+                        alert("cheater! you pressed too early!");
+                    }
+                }
+            }
+
+            var randMULTIPLIER = 0x015a4e35;
+            var randINCREMENT = 1;
+            var today = new Date();
+            var randSeed = today.getSeconds();
+
+            function randNumber() {
+                randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+                return ((randSeed >> 15) & 0x7fff) / 32767;
+            }
+
+            function startit() {
+                if (startPressed) {
+                    alert("Already started. Press stop to stop");
+                    return;
+                }
+                else 
+                {
+                    getRandom();
+                    startPressed = true;
+                    timerID = setTimeout('startTest()', 6000 * randNumber());
+                }
+            }
+
+        </script>
+        <p>Test your Response time!</p>
+        Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+        <form name="response">
+            Change background color in:
+            <select name="bgColorChange">
+                <option selected>deeppink
+                <option>aliceblue
+                <option>crimson
+                <option>darkkhaki
+                <option>cadetblue
+                <option>darkorchid
+                <option>coral
+            </select>
+            <input type="button" value="start" onClick="startit()">
+            <span id="stopBtn1"> <input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+            <span id="stopBtn2"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+            <span id="stopBtn3"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+        </form>
     </main>
+
+
     <div id="container" style="height: 3000px; width: 1000px;">
         <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
     </div>
+    <center>
+        <SCRIPT name = "JavaScript">
+        function variables(){
+            t = 1;
+            change = 1;    
+            empty1 = -1;
+            empty2 = -1;
+            empty3 = -1;
+            empty4 = -1;
+            empty5 = -1;
+            empty6 = -1;
+            empty7 = -1;
+            empty8 = -1;
+            empty9 = -1;
+            return;
+            whogoesnow = "Tour joueur 1"
+        }
+        
+        function win(){
+          if   (empty1==empty2 && empty2==empty3 && empty3==0 ||
+        empty4==empty5 && empty5==empty6 && empty6==0 ||    
+                empty7==empty8 && empty8==empty9 && empty9==0 ||
+                empty1==empty4 && empty4==empty7 && empty7==0 ||
+                empty2==empty5 && empty5==empty8 && empty8==0 ||
+                empty3==empty6 && empty6==empty9 && empty9==0 ||
+                empty1==empty5 && empty5==empty9 && empty9==0 ||
+                empty3==empty5 && empty5==empty7 && empty7==0 ){
+                alert (" Player 1: YOU WIN !!!")         
+                history.go(0)  
+          }
+          if   (empty1==empty2 && empty2==empty3 && empty3==1 ||
+        empty4==empty5 && empty5==empty6 && empty6==1 ||    
+                empty7==empty8 && empty8==empty9 && empty9==1 ||
+                empty1==empty4 && empty4==empty7 && empty7==1 ||
+                empty2==empty5 && empty5==empty8 && empty8==1 ||
+                empty3==empty6 && empty6==empty9 && empty9==1 ||
+                empty1==empty5 && empty5==empty9 && empty9==1 ||
+                empty3==empty5 && empty5==empty7 && empty7==1 ){
+                alert ("Player 2 YOU WIN!!!");
+            history.go(0)
+          }
+        }
+        
+        function turnchange(t){
+          if (change == 1)  {
+            if (t == 0){
+                t = 1;
+                whogoesnow = "Round: Player " + 1
+            }
+            else {
+                t = 0;
+            whogoesnow = "Round: Player " + 2
+            }
+            
+          }
+          else {
+            t = t;
+          }
+          change = 1  
+          return (t); 
+        }
+        
+        function changing(clicked){
+        if (clicked == 1){            
+           spot = empty1 ;}
+        if (clicked == 2){
+           spot = empty2 ;}
+        if (clicked == 3){
+           spot = empty3 ;}
+        if (clicked == 4){
+           spot = empty4 ;}
+        if (clicked == 5){
+           spot = empty5 ;}
+        if (clicked == 6){
+           spot = empty6 ;}
+        if (clicked == 7){
+           spot = empty7 ;}
+        if (clicked == 8){
+           spot = empty8 ;}
+        if (clicked == 9){
+           spot = empty9 ;}
+        
+        if (spot == -1){
+           if (t == 0){
+              xo = "  O  " ;	       	          
+              spot = 0             
+           }
+           else {
+              xo = "  X  "  ;              
+              spot = 1	     
+           }                              
+           if (clicked == 1){            
+              empty1 = spot;}
+           if (clicked == 2){
+              empty2 = spot ;}
+           if (clicked == 3){
+              empty3 = spot ;}
+           if (clicked == 4){
+              empty4 = spot ;}
+           if (clicked == 5){
+              empty5 = spot ;}
+           if (clicked == 6){
+              empty6 = spot ;}
+           if (clicked == 7){
+              empty7 = spot ;}
+           if (clicked == 8){
+              empty8 = spot ;}
+           if (clicked == 9){
+              empty9 = spot ;}
+        } 
+        else {
+           if (spot == 0){
+               xo = "  O  ";}
+           if (spot == 1){
+               xo = "  X  ";}
+           change = 0
+        }
+        return (xo) ;
+        }
+        
+        function change_b1(form){	
+            clicked = 1;    
+            changing(clicked) ;     
+            t = turnchange(t) ;  
+            form.b1.value = xo; 
+            form.whoseturn.value = whogoesnow        
+            win(); 
+           return;
+        }
+        function change_b2(form){	
+            clicked = 2;
+            changing(clicked) ;   
+            form.b2.value = xo;    
+            t = turnchange(t) ;
+            form.whoseturn.value = whogoesnow      
+            win();
+            return;
+        }
+        
+        function change_b3(form){	
+            clicked = 3;
+            changing(clicked) ;
+            form.b3.value = xo;         
+            t = turnchange(t) ;    
+            form.whoseturn.value = whogoesnow 
+            win();
+            return;   
+        }
+        
+        function change_b4(form){	
+            clicked = 4;
+            changing(clicked) ;
+            form.b4.value = xo;    
+            t = turnchange(t) ;    
+            form.whoseturn.value = whogoesnow     
+            win();
+            return;
+        }
+        
+        function change_b5(form){	
+            clicked = 5;
+            changing(clicked) ;
+            form.b5.value = xo;    
+            t = turnchange(t) ;
+            form.whoseturn.value = whogoesnow     
+            win();     
+            return;
+        }
+        
+        function change_b6(form){	
+            clicked = 6;
+            changing(clicked) ;
+            form.b6.value = xo;    
+            t = turnchange(t) ;
+            form.whoseturn.value = whogoesnow     
+            win();
+            return;
+        }
+        
+        function change_b7(form){	
+            clicked = 7;
+            changing(clicked) ;
+            form.b7.value = xo;    
+            t = turnchange(t) ; 
+            form.whoseturn.value = whogoesnow    
+            win();
+            return;
+        }
+        
+        function change_b8(form){	
+            clicked = 8;
+            changing(clicked) ;    
+            form.b8.value = xo;    
+            t = turnchange(t) ;
+            form.whoseturn.value = whogoesnow 
+            win();    
+            return;
+        }
+        
+        function change_b9(form){	
+            clicked = 9;
+            changing(clicked) ;
+            form.b9.value = xo;    
+            t = turnchange(t) ;
+            form.whoseturn.value = whogoesnow  
+            win();
+            return;
+        }
+        </SCRIPT>
+        
+        
+        <SCRIPT name = "JavaScript">
+        variables();
+        </SCRIPT>
+        
+        <FORM>
+        <input type = "button" name = "whoseturn" 
+         value = "Round: Player 1">	 
+        <br><br><br><br>
+        <table>
+        <tr><td><input type = "button" name = "b1" value = "      "		 onClick =
+        change_b1(this.form)>  
+            <td><input type = "button" name = "b2" value = "      "		 onClick = change_b2(this.form)> 
+            <td><input type = "button" name = "b3" value = "      "		 onClick =
+        change_b3(this.form)> 
+        <tr><td><input type = "button" name = "b4" value = "      "		 onClick =
+        change_b4(this.form)> 
+            <td><input type = "button" name = "b5" value = "      "		 onClick = change_b5(this.form)> 
+            <td><input type = "button" name = "b6" value = "      "		 onClick =
+        change_b6(this.form)> 
+        <tr><td><input type = "button" name = "b7" value = "      "		 onClick =
+        change_b7(this.form)> 
+            <td><input type = "button" name = "b8" value = "      "		 onClick = change_b8(this.form)>   
+            <td><input type = "button" name = "b9" value = "      "
+        onClick = change_b9(this.form)> 
+        </table>
+        <br><br>
+        
+        <INPUT TYPE="button" VALUE="New Game" onClick="history.go(0)">
+        </center>
 </body>
 
 </html>
