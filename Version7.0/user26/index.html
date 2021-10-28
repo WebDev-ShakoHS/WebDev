@@ -28,6 +28,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/SampleJS.js"></script>
 
 
     <style>
@@ -194,6 +195,7 @@
             const list = document.querySelector('ul');
             const input = document.getElementById('item');
             const button = document.getElementById('aggregating-list');
+            input.onkeypress('enter')
             button.onclick = function (e) {
                 let myItem = input.value;
                 input.value = '';
@@ -244,9 +246,14 @@
             function startTest() {
                 document.body.style.background = document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
                 bgChangeStarted = true;
-                document.getElementById("stopBtn").innerHTML = '<input style="display:none;" type="button" value="stop" onClick="stopTest()">'
                 startTime = new Date();
-                document.getElementById("stopBtn").innerHTML = '<input style="position:relative; left:' + stopBtnX + 'px; top:' + stopBtnY + 'px;" type="button" value="stop" onClick="stopTest()">'
+
+                var i;
+                for (i = 1; i < 4; i++) {
+                    getRandomInt();
+                    document.getElementById("stopBtn" + i).innerHTML = '<input style="padding 0 20px; position: relative; left: ' + stopBtnX + 'px; top: ' + stopBtnY + 'px;" type="button" value="' + i + '" onClick="stopTest()">';
+                }
+
             }
 
             function remark(responseTime) {
@@ -270,12 +277,15 @@
                 if (bgChangeStarted) {
                     endTime = new Date();
                     var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
-
                     document.body.style.background = "white";
                     alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
-                    document.getElementById("stopBtn").innerHTML = '<input style="display:none;" type="button" value="stop" onClick="stopTest()">'
                     startPressed = false;
                     bgChangeStarted = false;
+                    var i;
+                    for (i = 1; i < 4; i++) {
+                        document.getElementById("stopBtn" + i).innerHTML = '<input style="display:none;" type="button" value="' + i + '" onClick="stopTest()">';
+                    }
+
                 }
                 else {
                     if (!startPressed) {
@@ -306,7 +316,6 @@
                 }
                 else {
                     getRandomInt()
-                    document.getElementById("stopBtn").innerHTML = '<input style="display:none;" type="button" value="stop" onClick="stopTest()">'
                     startPressed = true;
                     timerID = setTimeout('startTest()', 6000 * randNumber());
                 }
@@ -328,12 +337,173 @@
                 <option>coral
             </select>
             <input type="button" value="start" onClick="startit()">
-            <span id="stopBtn"><input type="button" value="stop" onClick="stopTest()"></span>
+            <span id="stopBtn1"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+            <span id="stopBtn2"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+            <span id="stopBtn3"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
         </form>
+        <div class="my-2">
+            //calculates how old you are
+            <script>
+                function lifetimer() {
+
+                    today = new Date()
+
+                    BirthDay = new Date(document.live.age.value)
+
+                    timeold = (today.getTime() - BirthDay.getTime());
+
+                    sectimeold = timeold / 1000;
+
+                    secondsold = Math.floor(sectimeold);
+
+                    msPerDay = 24 * 60 * 60 * 1000;
+
+                    timeold = (today.getTime() - BirthDay.getTime());
+
+                    e_daysold = timeold / msPerDay;
+
+                    daysold = Math.floor(e_daysold);
+
+                    e_hrsold = (e_daysold - daysold) * 24;
+
+                    hrsold = Math.floor(e_hrsold);
+
+                    minsold = Math.floor((e_hrsold - hrsold) * 60);
+
+                    msPerYR = msPerDay * 365;
+
+                    e_yearsold = timeold / msPerYR;
+
+                    yrsold = Math.floor(e_yearsold);
+
+                    document.live.time1.value = daysold;
+
+                    document.live.time2.value = hrsold;
+
+                    document.live.time3.value = minsold;
+
+                    document.live.time4.value = yrsold;
+
+                    window.status = "Well at the moment you are " + secondsold + "............ seconds old.";
+
+                    timerID = setTimeout("lifetimer()", 1000)
+
+                }
+            </script>
+            <FORM name="live">
+
+                Please enter your birthdate::<INPUT TYPE="text" NAME="age" VALUE="" SIZE=20>
+                Example: (november 1,1966) <BR><BR><BR>
+                <INPUT TYPE="button" NAME="start" VALUE="Start Timer" ONCLICK="lifetimer(this.form)">
+
+                <INPUT TYPE="reset" NAME="resetb" VALUE="Reset Age">
+
+                <BR><BR>
+
+                <TABLE border=0>
+                    <TR>
+                        <TD>You are days old:</TD>
+
+                        <TD>
+
+                            <INPUT TYPE="text" NAME="time1" VALUE="" size=8>
+
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD>Plus hours old:</TD>
+
+                        <TD>
+
+                            <INPUT TYPE="text" NAME="time2" VALUE="" size=8>
+
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD>Plus minutes old:</TD>
+
+                        <TD><INPUT TYPE="text" NAME="time3" VALUE="" size=8></TD>
+
+                    </TR>
+
+                    <tr>
+                        <td>or Years Old</td>
+
+                        <td><input type="text" name="time4" value="" size="8"></td>
+                    </tr>
+                </TABLE>
+            </FORM>
+        </div>
+        <SCRIPT LANGUAGE="JavaScript">
+
+            // numberguess is by Lancer - written 4 Jan 1999
+            // lancer@kp.planet.gen.nz
+
+            var guessme = Math.round(Math.random() * (99) + 1);
+            var speech = 'Guess my number (from 1 to 100)';
+
+            function process(mystery) {
+                var guess = document.forms.guessquiz.guess.value;
+                var speech = '"' + guess + '" does not make sense to me.';
+                document.forms.guessquiz.guess.value = '';
+
+                if (guess == mystery) {
+                    document.forms.guessquiz.prompt.value = 'Congratulations! ' + mystery + ' is correct!';
+                    alert('Well done - the mystery number is ' + mystery + '! \n\nPress this button to reload the page for another game.');
+                    speech = '';
+                    document.location = document.location;
+                }
+
+                if (mystery < guess) {
+                    speech = 'Less than ' + guess;
+                }
+
+                if (mystery > guess) {
+                    speech = 'Greater than ' + guess;
+                }
+
+                if (guess == '') {
+                    speech = 'You didn\'t guess anything!'
+                }
+
+                document.forms.guessquiz.prompt.value = speech; document.forms.guessquiz.guess.focus();
+
+            }
+
+            // end hide -->
+        </SCRIPT>
+
+        <FORM onSubmit="" NAME="guessquiz">
+            <CENTER>
+                <TABLE ALIGN="CENTER" BGCOLOR="#888888" BORDER="3" CELLPADDING="5">
+                    <TR>
+                        <TD BGCOLOR="#004080">
+                            <FONT COLOR="#ffffff" FACE="Arial"><B>GUESS MY NUMBER (1 - 100)</B></FONT>
+                        </TD>
+                    </TR>
+                    <TR>
+                        <TD>
+                            <CENTER>
+                                <INPUT TYPE="text" NAME="prompt" SIZE="31" MAXLENGTH="40"
+                                    VALUE="Guess my number (from 1 to 100)"><BR>
+                                <INPUT TYPE="text" NAME="guess" SIZE="3" MAXLENGTH="3" VALUE="">
+                                <INPUT TYPE="button" VALUE="Guess" onClick='process(guessme)'>
+                            </CENTER>
+                        </TD>
+                    </TR>
+                </TABLE>
+            </CENTER>
+        </FORM>
     </main>
+
     <div id="container" style="height: 3000px; width: 1000px;">
         <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
     </div>
+
 </body>
 
 </html>
