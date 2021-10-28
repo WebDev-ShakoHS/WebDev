@@ -9,7 +9,7 @@ table {
 }
 
 tr {
-	border: 1px solid #ffffff;
+	border: 1px solid #000000;
 	text-align: center;
 	background-color:#9FB6CD; 
 }
@@ -18,4 +18,8 @@ th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+
+body {
+	background-image: url("../images/Kirby thanos.jpeg");
 }

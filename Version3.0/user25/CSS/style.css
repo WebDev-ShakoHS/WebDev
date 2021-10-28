@@ -1,5 +1,5 @@
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	font-family: "Helvetica", "sans-serif", fantasy;
 	color: #003366;
 	margin-left: auto;
 	margin-right: auto;
@@ -19,3 +19,7 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+body {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP1BW6m7D54kq8StMgsXX7-t_UbBEH2IzhNQ&usqp=CAU");
+   }

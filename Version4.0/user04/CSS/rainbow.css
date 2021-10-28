@@ -1,0 +1,44 @@
+.background-red {
+    background-color: red;
+}
+
+.background-orange {
+    background-color: orange;
+}
+
+.background-yellow {
+    background-color: yellow;
+}
+
+.background-green {
+    background-color: green;
+}
+
+.background-blue {
+    background-color: blue;
+}
+
+.background-indigo {
+    background-color: indigo;
+}
+
+.background-violet {
+    background-color: violet;
+}
+ #rainbow :hover {
+    background-color: black;
+  }
+  /* unvisited link */
+a:link {
+    color: darkblue;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: lightblue;
+  }
+  
+  /* selected link */
+  a:active {
+    color: Black;
+  }

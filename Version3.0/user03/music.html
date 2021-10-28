@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" type="image/ico" href="/Users/231297/Applications/mampstack/apache2/htdocs/WebDev/Version3.0/user03/images/favicon.ico">
+<!--Version 3.0
+        Name:
+        Date Completed:
+    -->
+
+<head>
+
+    <title>Table Website </title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My Favorite Music">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        menu {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        td {
+            color: #1100ff;
+        }
+
+        td {
+            color: #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="aboutMe.html" class="nav-item nav-link">About Me</a>
+                    <a href="music.html" class="nav-item nav-link active">Music</a>
+                    <a href="list.html" class="nav-item nav-link">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="wideMargin">
+
+        <h1 class="text-left my-3" tabindex="0">Games</h1><!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <h2>My Top 5 Favorite Videogames</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Creator</th>
+                    <th>Game</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tr>
+                <td style="color:beige">1</td>
+                <td>Valve</td>
+                <td>Team Fortress 2</td>
+                <td><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/7ad21446-0af2-4334-ac21-c5a0b6308d04/d78kp9s-07d61235-7c6a-4faf-a76f-1b0b1bf8dfc4.png"
+                        width=100 height=100 alt="Picture of Team Fortress icon"></td>
+                <!-- Absolute filepath doesn't work if live server extension
+                     is used to open in browser, I had to drag the html file 
+                     into the browser like normal -->
+            </tr>
+            <tr style="background-color:rgb(94, 255, 0)">
+                <td>2</td>
+                <td>Freehold</td>
+                <td>Caves of Qud</td>
+                <td><img src="images/2.png" width=100 height=100 alt="picture from Caves of Qud"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hopoo</td>
+                <td>Risk of Rain</td>
+                <td><img src="images/3.jpeg" width=100 height=100 alt="Picture of Risk of Rain cover, man on top of escape pod"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Chris Hunt</td>
+                <td>Kenshi</td>
+                <td><img src="images/4.jpeg" width=105 height=100 alt="Picture of Kenshi cover, character in desert">
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Behaviour</td>
+                <td>Dead by Daylight</td>
+                <td><img src="images/5.jpeg" width=190 height=100 alt="Picture of dbd cover, character from game"></td>
+            </tr>
+        </table>
+    </main>
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer class="wideMargin">
+        <div>
+            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
+        </div>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>
