@@ -1,81 +1,43 @@
-td {
-    background-color: rgb(248, 27, 27);
-    width: 180px;
+.body-wideMargin {
+    margin: 50px;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: Roboto;
 }
 
-table {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+button {
+    padding: 5px;
 }
 
-.navbar-nav {
-    overflow: hidden;
-    background-color: #333;
+ol {
+    list-style-type: decimal-leading-zero;
 }
 
-.navbar-nav a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+ol ol {
+    margin-left: 0.9em;
 }
 
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+ol li {
+    line-height: 1.5;
 }
 
-/* Dropdown button on hover & focus */
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+li li {
+    list-style-type: lower-alpha;
 }
 
-/* The container <div> - needed to position the dropdown content */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
+li li li {
+    list-style-type: square;
 }
 
-/* Dropdown Content (Hidden by Default) */
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+li li li li {
+    list-style-type: circle;
 }
 
-/* Links inside the dropdown */
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-
-.dropdown-content a:hover {
-    background-color: #ddd
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-
-.show {
-    display: block;
-}
-.bigM {
-    margin-left:25% ;
+h1 {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
 }

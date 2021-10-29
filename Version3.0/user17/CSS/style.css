@@ -5,11 +5,11 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
+	border: 1px hidden #ffffff;
 	text-align: center;
 	background-color:#9FB6CD; 
 }

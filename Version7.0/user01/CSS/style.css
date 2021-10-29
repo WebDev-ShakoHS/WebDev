@@ -1,369 +1,43 @@
-#footer {
-    position: bottom;
-    bottom: 0;
-    width: 100%;
-    /* Footer height */
+.body-wideMargin {
+    margin: 50px;
+    font-size: 100%;
+    line-height: 1.5;
+    font-family: Roboto;
 }
 
-.bg-image {
-    /* The image used */
-    background-image: url("../images/placeholder-image.png");
-    /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    /* Full height */
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+button {
+    padding: 5px;
 }
 
-.bg-text {
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
+ol {
+    list-style-type: decimal-leading-zero;
 }
 
-#size {
-    width: 100%;
+ol ol {
+    margin-left: 0.9em;
 }
 
-.content {
-    height: 400px;
-    width: 750px;
-    overflow: hidden;
-    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+ol li {
+    line-height: 1.5;
 }
 
-.content .images {
-    height: 100%;
-    width: 100%;
+li li {
+    list-style-type: lower-alpha;
 }
 
-.images img {
-    height: 100%;
-    width: 100%;
+li li li {
+    list-style-type: square;
 }
 
-.section-break {
-    height: 2px;
-    border-width: 0;
-    color: gray;
-    background-color: gray;
+li li li li {
+    list-style-type: circle;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 32%;
-    margin-bottom: .6em;
-    display: inline-block;
-    
+h1 {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
 }
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.nameplate {
-    padding: 2px 16px;
-    font-size: 2vw;
-    text-align: center;
-}
-
-.regText {
-    color: black;
-    text-decoration: none;
-}
-
-div.stars {
-    width: 270px;
-    display: inline-block
-}
-
-.mt-200 {
-    margin-top: 200px
-}
-
-input.star {
-    display: none
-}
-
-label.star {
-    float: right;
-    padding: 10px;
-    font-size: 36px;
-    color: #4A148C;
-    transition: all .2s
-}
-
-input.star:checked~label.star:before {
-    content: '\f005';
-    color: #FD4;
-    transition: all .25s
-}
-
-input.star-5:checked~label.star:before {
-    color: #FE7;
-    text-shadow: 0 0 20px #952
-}
-
-input.star-1:checked~label.star:before {
-    color: #F62
-}
-
-label.star:hover {
-    transform: rotate(-15deg) scale(1.3)
-}
-
-label.star:before {
-    content: '\f006';
-    font-family: FontAwesome
-}
-
-/* Center the loader */
-
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 120px;
-    height: 120px;
-    margin: -76px 0 0 -76px;
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #3498db;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-/* Add animation to "page content" */
-
-.animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-    to {
-        bottom: 0px;
-        opacity: 1
-    }
-}
-
-@keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-    to {
-        bottom: 0;
-        opacity: 1
-    }
-}
-
-#myDiv {
-    display: none;
-    text-align: center;
-}
-
-.open-button {
-    background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
-}
-
-/* The popup chat - hidden by default */
-
-.chat-popup {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
-}
-
-/* Add styles to the form container */
-
-.form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: white;
-}
-
-/* Full-width textarea */
-
-.form-container textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-    resize: none;
-    min-height: 200px;
-}
-
-/* When the textarea gets focus, do something */
-
-.form-container textarea:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-/* Set a style for the submit/send button */
-
-.form-container .btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 10px;
-    opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-
-.form-container .cancel {
-    background-color: red;
-}
-
-/* Add some hover effects to buttons */
-
-.form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-}
-
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  #myImg:hover {opacity: 0.7;}
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (image) */
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-  }
-  
-  /* Caption of Modal Image */
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-  }
-  
-  /* Add Animation */
-  .modal-content, #caption {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-  
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
-  }
