@@ -445,11 +445,13 @@
 
             var guessme = Math.round(Math.random() * (99) + 1);
             var speech = 'Guess my number (from 1 to 100)';
+            var guesses = 0;
 
             function process(mystery) {
                 var guess = document.forms.guessquiz.guess.value;
                 var speech = '"' + guess + '" does not make sense to me.';
                 document.forms.guessquiz.guess.value = '';
+                document.forms.guessquiz.guesses.value = guesses
 
                 if (guess == mystery) {
                     document.forms.guessquiz.prompt.value = 'Congratulations! ' + mystery + ' is correct!';
@@ -460,14 +462,20 @@
 
                 if (mystery < guess) {
                     speech = 'Less than ' + guess;
+                    guesses = guesses + 1
+                    document.forms.guessquiz.guesses.value = guesses
                 }
 
                 if (mystery > guess) {
                     speech = 'Greater than ' + guess;
+                    guesses = guesses + 1
+                    document.forms.guessquiz.guesses.value = guesses
                 }
 
                 if (guess == '') {
                     speech = 'You didn\'t guess anything!'
+                    guesses = guesses + 1
+                    document.forms.guessquiz.guesses.value = guesses
                 }
 
                 document.forms.guessquiz.prompt.value = speech; document.forms.guessquiz.guess.focus();
@@ -487,6 +495,7 @@
                     </TR>
                     <TR>
                         <TD>
+                            <span>Amount of Guesses: <input type="text" size="3" name="guesses" value=""></span>
                             <CENTER>
                                 <INPUT TYPE="text" NAME="prompt" SIZE="31" MAXLENGTH="40"
                                     VALUE="Guess my number (from 1 to 100)"><BR>
