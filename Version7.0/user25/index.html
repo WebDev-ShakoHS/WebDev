@@ -13,6 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Introduction to JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -20,7 +21,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- Animate -->
+    <!--  -->
     <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
@@ -30,7 +31,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <style>
-        /* Internal Styling Here */
+        p {
+            display: inline;
+            font-size: 40px;
+            margin-top: 0px;
+        }
     </style>
 
 </head>
@@ -39,7 +44,7 @@
     <main>
         <div id="built-in-functions">
             <!-- ALERT-->
-            <h1 onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
+
             <!--PRINT-->
             <script>
                 function printWindow() {
@@ -56,7 +61,7 @@
             <script>
                 function getFocus() {
                     document.getElementById("focusButton").focus({
-                        preventScroll: true
+                        preventScroll: false
                     });
                 }
             </script>
@@ -108,6 +113,7 @@
                 </div>
             </div>
         </div>
+        <h1 style="display:inline-block;" onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
         <hr>
         <div class="container-fluid">
             <div class="row">
@@ -190,7 +196,7 @@
         </script>
         <script id="shopping">
             const list = document.querySelector('ul');
-            const input = document.querySelector('input');
+            const input = document.getElementById('item');
             const button = document.getElementById('aggregating-list');
 
             button.onclick = function() {
@@ -214,7 +220,6 @@
                 input.focus();
             }
         </script>
-
         <script language="JavaScript">
             var startTime = new Date();
             var endTime = new Date();
@@ -222,20 +227,36 @@
             var bgChangeStarted = false;
             var maxWait = 20;
             var timerID;
+            var stopBtnX;
+            var stopBtnY;
+
+            function getRandom(min, max) {
+                min = Math.ceil(-200);
+                max = Math.floor(200);
+                stopBtnX = Math.floor(Math.random() * (max - min + 1) + min);
+                stopBtnY = Math.floor(Math.random() * (max - min + 1) + min);
+            }
 
             function startTest() {
                 document.body.style.background = document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
                 bgChangeStarted = true;
                 startTime = new Date();
+
+                var i;
+                for (i = 1; i < 4; i++) {
+                    getRandom();
+                    document.getElementById("stopBtn" + i).innerHTML = '<input style="padding: 0 20px; position: relative; left:' + stopBtnX + 'px; top:' + stopBtnY + 'px;" type="button" value="' + i + '" onClick="stopTest()">';
+                }
+
             }
 
             function remark(responseTime) {
                 var responseString = "";
-                if (responseTime < 0.20)
+                if (responseTime < 0.10)
                     responseString = "Well done!";
-                if (responseTime >= 0.20 && responseTime < 0.30)
+                if (responseTime >= 0.10 && responseTime < 0.20)
                     responseString = "Nice!";
-                if (responseTime >= 0.40 && responseTime < 0.50)
+                if (responseTime >= 0.20 && responseTime < 0.50)
                     responseString = "Could be better...";
                 if (responseTime >= 0.50 && responseTime < 0.80)
                     responseString = "Keep practicing!";
@@ -250,7 +271,6 @@
                 if (bgChangeStarted) {
                     endTime = new Date();
                     var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
-
                     document.body.style.background = "white";
                     alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
                     startPressed = false;
@@ -281,29 +301,11 @@
                     alert("Already started. Press stop to stop");
                     return;
                 } else {
+                    getRandom();
                     startPressed = true;
                     timerID = setTimeout('startTest()', 6000 * randNumber());
                 }
             }
-
-            function startTest() {
-                document.body
-
-            }
-
-            function getRandom(min, max) {
-                min = Math.ceil(-200);
-                max = Math.floor(200);
-                stopBtnX = Math.floor(Math.random() * (max - min + 1) + min);
-                stopBtnY = Math.floor(Math.random() * (max - min + 1) + min);
-            }
-
-            {
-                getRandom();
-                startPressed = true;
-                timerID = setTimeout('startTest' ()
-                    ', 6000'
-                }
         </script>
         <p>Test your Response time!</p>
         Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
@@ -311,21 +313,20 @@
         <form name="response">
             Change background color in:
             <select name="bgColorChange">
-    <option selected>deeppink
-    <option>aliceblue
-    <option>crimson
-    <option>darkkhaki
-    <option>cadetblue
-    <option>darkorchid
-    <option>coral
-    </select>
+                <option selected>deeppink
+                <option>aliceblue
+                <option>crimson
+                <option>darkkhaki
+                <option>cadetblue
+                <option>darkorchid
+                <option>coral
+            </select>
             <input type="button" value="start" onClick="startit()">
-            <input type="button" value="stop" onClick="stopTest()">
+            <span id="stopBtn1"> <input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+            <span id="stopBtn2"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+            <span id="stopBtn3"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
         </form>
     </main>
-    <div id="container" style="height: 3000px; width: 1000px;">
-        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
-    </div>
 </body>
 
 </html>
