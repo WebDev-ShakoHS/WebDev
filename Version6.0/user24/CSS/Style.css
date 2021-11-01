@@ -31,3 +31,5 @@ h1 {
   border-bottom: 1px solid black;
   margin-bottom: 1em;
 }
+* {box-sizing:border-box}
+
