@@ -1,25 +1,3 @@
-table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
-}
-
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color: #9FB6CD;
-}
-
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
-}
-
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -33,27 +11,103 @@ th {
 	cursor: pointer;
 }
 
-.button1 {
+.button-other-radius {
 	border-radius: 8px;
 }
 
-.button2 {
-	border-radius: 30%;
+.button-radius {
+	border-radius: 80%;
+}
+
+.button3 {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+    background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color:#ffec64;
+    border-radius:6px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+}
+
+.button4 {
+	box-shadow: 3px 4px 0px 0px #899599;
+    background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    background-color:#ededed;
+    border-radius:15px;
+    border:1px solid #d6bcd6;
+    display:inline-block;
+    cursor:pointer;
+    color:#3a8a9e;
+    font-family:Arial;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+}
+
+.button5 {
+	box-shadow:inset 0px 0px 14px -3px #f2fadc;
+    background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+    background-color:#dbe6c4;
+    border-radius:6px;
+    border:1px solid #b2b8ad;
+    display:inline-block;
+    cursor:pointer;
+    color:#757d6f;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ced9bf;
 }
 
 .red {
-	background-color: #ff0000;
+	background-color: #be0909;
 }
 
-td {
-	padding: 20px;
+.blue {
+	background-color: #1470da;
 }
 
-table {
+td{
+	padding:20px;
+}
+
+table{
 	margin-left: auto;
 	margin-right: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	text-align: center;
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
+}
+
+.title{
+	color: red;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: 1rem;
+  }
+ 
+.hireButtons {
+border-collapse: collapse; width:300px; 
+}
+
+.footerTable {
+	padding: 15px;
+	text-align: left;
 }
