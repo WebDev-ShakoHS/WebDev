@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -116,3 +118,37 @@ border-collapse: collapse; width:300px;
 max-width: 50px;
 height: auto;
 }
+
+#knowledge > * {
+	border: 3px rgb(255, 153, 69) solid;
+	padding: 10px
+  }
+
+  p + * {
+	background-color: #7375d8;
+  }
+
+  div li::marker{
+	color: rgb(247, 0, 255);
+  }
+
+  div li::marker{
+	content:"🐈 ";
+  }
+
+  td:hover {
+	background-color: black;
+  }
+
+a:link {
+	color: #04682a;
+  }
+
+  a:visited {
+	color: #7e61ff;
+  }
+  
+  a:hover {
+	color: #e2e97e;
+  }
+
