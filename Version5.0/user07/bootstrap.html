@@ -8,6 +8,8 @@
 <head>
     <title>My Bootstrap Sample</title>
 
+    <link href="images/favicon (1).ico" rel="shortcut icon" type="image/x-icon" />
+
     <!-- Bootstrap meta data -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,6 +47,10 @@
         .bs-example {
             margin: 20px;
         }
+
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: rgba(255, 0, 255, .75);
+        }
     </style>
 </head>
 
@@ -53,8 +59,56 @@
         <h4> Bootstrap Examples</h4>
         <p class="lead"> Let's look at the man different examples of how we can use bootstrap and what bootstrap can do!
         </p>
+        <a href="form.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Form Page</a>
     </div>
-
+    <div class="container mt-3">
+        <div class="list-group"> <!--couldn't figure out how to apply table striped to this-->
+            <a href="#" class="list-group-item list-group-item-action active">
+                <i class="fa fa-bug"></i> Bugs Squished
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-cogs"></i> Cult Mechanicus Acolytes <span class="badge badge-pill badge-primary pull-right">145</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action active">
+                <i class="fa fa-snowflake-o"></i> Frozen over cities <span class="badge badge-pill badge-dark pull-right">50</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-podcast"></i> Mind Controlled Citizens <span class="badge badge-pill badge-primary pull-right">8</span>
+            </a>
+        </div>
+    </div>
+    <div class="bs-example">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Row</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Occupation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Giles</td>
+                    <td>Corey</td>
+                    <td>Criminal</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John</td>
+                    <td>Smith</td>
+                    <td>Blacksmith</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Beatrix</td>
+                    <td>Hazel</td>
+                    <td>Witch</td>
+                </tr>            
+            </tbody>
+        </table>
+    </div>
     <!---------Three Column Layouts--------->
     <div class="container mt-3">
         <!--Row with two equal columns-->
@@ -86,14 +140,27 @@
         </div>
 
         <!---------Auto Layout Columns--------->
-        <div class="row"><!-- name="torch" value="8" also something about java script-->
-            <div class="col demo-content"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"></div>
-            <div class="col demo-content bg-alt"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"></div>
-            <div class="col demo-content"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"></div>
+        <div class="row">
+            <!-- name="torch" value="8" also something about java script-->
+            <div class="col demo-content"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img
+                    src="images/favicon (1).ico"><img src="images/favicon (1).ico"></div>
+            <div class="col demo-content bg-alt"><img src="images/favicon (1).ico"><img
+                    src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img
+                    src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img
+                    src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico">
+            </div>
+            <div class="col demo-content"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img
+                    src="images/favicon (1).ico"><img src="images/favicon (1).ico"></div>
             <div class="col demo-content bg-alt">By The Light</div>
-            <div class="col demo-content"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"></div>
-            <div class="col demo-content bg-alt"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"></div>
-            <div class="col demo-content"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"></div>
+            <div class="col demo-content"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img
+                    src="images/favicon (1).ico"><img src="images/favicon (1).ico"></div>
+            <div class="col demo-content bg-alt"><img src="images/favicon (1).ico"><img
+                    src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img
+                    src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img
+                    src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico">
+            </div>
+            <div class="col demo-content"><img src="images/favicon (1).ico"><img src="images/favicon (1).ico"><img
+                    src="images/favicon (1).ico"><img src="images/favicon (1).ico"></div>
         </div>
 
         <!---------Flexible Layouts--------->
