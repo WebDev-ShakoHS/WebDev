@@ -1,18 +1,276 @@
 <html lang="en">
     <!--Version 6.0 
-	Name:
-	Date Completed:
+	Name: Tony Nguyen
+	Date Completed: 
     -->
-    <head>
-        
-        <title>Web Development User #19</title>
+
+    <!DOCTYPE html>
+<html>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Fixed Width 1 Green</title>
+		<style type="text/css">
+			html, #page { padding:0; margin:0;}
+			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
+			h1, h2, h3, h4, h5, h6 {color:darkgreen;}
+			#page { background:#fff;}
+			#header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
+			
+	
+			#logo { padding:0; width:auto; float:left;}
+			#logo h1 a, h1 a:hover { color:darkgreen; text-decoration:none;}
+			#logo h1 span { color:#BCCE98;}
+
+			
+			#header { background:#fff; }
+			#header-inner { margin:0 auto; padding:0; width:970px;}
+			
+		
+			.feature { background:green;padding:18px;}
+			.feature-inner { margin:auto;width:970px; }
+			.feature-inner h1 {color:#DAE9BC;font-size:32px;}
+			
+		
+			#top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right;}
+			#top-nav ul { list-style:none; padding:0; height:37px; float:left;}
+			#top-nav ul li { margin:0; padding:0 0 0 8px; float:left;}
+			#top-nav ul li a { display:block; margin:0; padding:8px 20px; color:green; text-decoration:none;}
+			#top-nav ul li.active a, #top-nav ul li a:hover { color:#BCCE98;}
+			
+			#content-inner { margin:0 auto; padding:10px 0; width:970px;background:#fff;}
+			#content #contentbar { margin:0; padding:0; float:right; width:760px;}
+			#content #contentbar .article { margin:0 0 24px; padding:0 20px 0 15px; }
+			#content #sidebar { padding:0; float:left; width:200px;}
+			#content #sidebar .widget { margin:0 0 12px; padding:8px 8px 8px 13px;line-height:1.4em;}
+			#content #sidebar .widget h3 a { text-decoration:none;}
+			#content #sidebar .widget ul { margin:0; padding:0; list-style:none; color:#959595;}
+			#content #sidebar .widget ul li { margin:0;}
+			#content #sidebar .widget ul li { padding:4px 0; width:185px;}
+			#content #sidebar .widget ul li a { color:green; text-decoration:none; margin-left:-16px; padding:4px 8px 4px 16px;}
+			#content #sidebar .widget ul li a:hover { color:#BCCE98; font-weight:bold; text-decoration:none;}
+			
+			
+			#footerblurb { background:#DAE9BC;color:rgb(0, 0, 0);}
+			#footerblurb-inner { margin:0 auto; width:922px; padding:24px;}
+			#footerblurb .column { margin:0; text-align:justify; float:left;width:250px;padding:0 24px;}
+			
+
+			#footer { background:#fff;}
+			#footer-inner { margin:auto; text-align:center; padding:12px; width:922px;}
+			#footer a {color:green;text-decoration:none;}
+			
+			
+			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+		</style>
+		<script type="text/javascript">
+			
+			var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h2>XCards</h2><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
+			function generateText(sentenceCount){
+				for (var i=0; i<sentenceCount; i++)
+				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+			}
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<header id="header">
+				<div id="header-inner">	
+					<div id="logo">
+						<h1><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAACFElEQVR4nO3bu47TQBxG8RPEQ/BKW1JCx1aUSLwv21ABEqLnVkCxm3Uujufyzfgcyc0W/o/90yQrJwEzMzMzMzMzMzMzs2v6CPwA/hQ+7IZeAT8pjzEtyItJZtiKPgDfcYcM3zvgF4JEdAlDkIbd8xxjCccatLQzfgPvEaR55zCgHUiNf9GHe+m9hAHtLmT3INdgQLsL2TXItRjQ7kJ2C7IGA9pdSO05kSBrMUCQat2CAYJU6VYMEKR4WzBAkKJtxQBBilUCAwQpUikMEGRzJTEAHh6d51OJBZ5oSpBTj9DvN5zzDvj8/7jbusAzTQdSeme0biqQ0TFgIpAZMGASkFkwYAKQmTBgcJDZMGBgkBkxYFCQWTFgQJCZMWAwkNkxYCCQPWDAICB7wYABQFpjHC+49nFpfu3rW1WPnSHIiXq9TAmyUM/3DEGOekv5D5fW1PuG9J7/pAPwjX4Y0P+G9J7/pAPwlX4Y0P+G9J7/rNf8Q/kCvKmwoEv1viFd5x8qDNza8SJLr/HS+bvO90f9YQkSliBhCRKWIGEJEpYgYQkSliBhCRKWIGEJEpYgYb1c+FuNR87nSnzi3C13SFiChCVIWEvvIcfV/sTMHuUOCUuQsAQJS5CwBAlLkLAECUuQsAQJS5CwBAlLkLAECUuQsAQJS5CwBAlLkLAECUuQsAQJ65pvnfT+lsiu5rtDwhIkLEHC+gvJjk84/sd0ggAAAABJRU5ErkJggg=="><span>XCards</span></a></h1>
+					</div>
+					<div id="top-nav">
+						<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Help</a></li>
+						</ul>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</header>
+			<div class="feature">
+				<div class="feature-inner">
+				<h1>Welcome</h1>
+				</div>
+			</div>
+		
+	
+			<div id="content">
+				<div id="content-inner">
+				
+					<main id="contentbar">
+						<div class="article">
+							<p><script>generateText(12)</script></p>
+						</div>
+					</main>
+					
+					<nav id="sidebar">
+						<div class="widget">
+							<h3>Rare Cards</h3>
+							<ul>
+							<li><a href="https://tinyurl.com/322p7ajw">Kobe Bryant Gold Foil</a></li>
+							<li><a href="https://tinyurl.com/htnu964f">Michael Jordan Jumpman</a></li>
+							<li><a href="https://tinyurl.com/rrvj7jxu">Luka Doncic Chronicles</a></li>
+							<li><a href="https://tinyurl.com/8az4hhtc">Scottie Pippen Skybox</a></li>
+							<li><a href="https://tinyurl.com/3bbpzv9v">Jordan Poole Panini</a></li>
+							</ul>
+						</div>
+					</nav>
+					
+					<div class="clr"></div>
+				</div>
+			</div>
+		
+			<div id="footerblurb">
+				<div id="footerblurb-inner">
+				
+					<div class="column">
+						<h2><span>Heading</span></h2>
+						<p><script>generateText(2)</script></p>
+					</div>	
+					<div class="column">
+						<h2><span>Heading</span></h2>
+						<p><script>generateText(2)</script></p>
+					</div>
+					<div class="column">
+						<h2><span>Heading</span></h2>
+						<p><script>generateText(2)</script></p>
+					</div>	
+					
+					<div class="clr"></div>
+				</div>
+			</div>
+			<footer id="footer">
+				<div id="footer-inner">
+					<p>&copy; Copyright <a href="#">Your Site</a> &#124; <a href="#">Terms of Use</a> &#124; <a href="#">Privacy Policy</a></p>
+					<div class="clr"></div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
+
+      <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Carousel Example">
     
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- JavaScript -->
+        <!-- These are needed to get the responsive menu to work -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="JS/script.js"></script>
+    
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+        
+        <!-- Custom styles for this template -->
+        <style type="text/css">
+            .menu {
+                margin: 0px;
+            }
+    
+            .wideMargin {
+                margin: 15px;
+            }
+    
+            #footer {
+                font-size: 12px;
+                text-align: center;
+            }
+        </style>
     </head>
     
     <body>
-        
-        <center>My name is User #19</center>
+        <!---------------------------------- Begin the nav-bar ------------->
+        <div class="menu">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
     
-    </body>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="#" class="nav-item nav-link">About Me</a>
+                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                        <a href="#" class="nav-item nav-link disabled" tabindex="-1">Games</a>
+                        <a href="script.html" class="nav-item nav-link active">JavaScript</a>
+                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                            tabindex="-1">Contact</a>
+                        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="#" class="nav-item nav-link disabled">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!---------------------------------- End the nav-bar ------------->
+    
+        <div class="wideMargin" id="content">
+            <h1 class="text-left my-3">XCards</h1><!-- Edit this line for the title of your page -->
+            <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+			<h2>Limited Edition Cards In Stock!</h2>
+			<table>
+				<thead>
+					<tr>
+						<th></th>
+						<th></th>
+						<th></th
+						<th></th>
+					</tr>
+				</thead>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Stephen Curry Rookie Card </td>
+					<td> <img src="https://beckett-www.s3.amazonaws.com/news/news-content/uploads/2018/06/2009-10-Playoff-National-Treasures-Stephen-Curry-Rookie-Card.jpg" width="200" height="133"> </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Lebron James  Rookie Card</td>
+					<td> <img src="https://www.oldsportscards.com/wp-content/uploads/2019/02/2003-Ultimate-Collection-Ultimate-Logos-Signature-11-Lebron-James-Basketball-Card.jpg" width="200" height="133"></td>
+				</tr>
+				<td></td>
+                <td></td>
+                <td>Giannis Antetokounmpo Signature</td>
+                <td> <img src="https://sportscardsrock.com/wp-content/uploads/2021/01/2013-14-Panini-Spectra-Giannis-Antetokounmpo-Auto-Jersey-RC.jpg" width="200" height="133"></td>
+            </tr>
+            <div class="container-fluid"> 
+				 <div class="row">
+                    <div class="col-sm-4" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
+                    <div class="col-sm-4" style="background-color:orange;">PUT YOUR HTML CODE HERE</div>
+                    <div class="col-sm-4" style="background-color:yellow;">PUT YOUR HTML CODE HERE</div>
+                </div>
+            </div>
+        </div>
 
-</html>
+        <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
+    
+    
+        <!---------------------------------- Begin the footer ------------->
+        <div class="wideMargin" id="footer">
+            <p>
+                Webpage made by <a href="index.html" target="_blank">[Tony Nguyen]</a>
+            </p>
+        </div>
+        <!---------------------------------- End the footer ------------->
+    </body>
+    
+    </html>
+    
