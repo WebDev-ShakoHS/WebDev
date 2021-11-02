@@ -1,18 +1,144 @@
+<!DOCTYPE html>
 <html lang="en">
-    <!--Version 6.0 
-	Name:
-	Date Completed:
-    -->
-    <head>
-        
-        <title>Web Development User #03</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #03</center>
-    
-    </body>
+<link rel="icon" type="image/ico"
+    href="/Users/231297/Applications/mampstack/apache2/htdocs/WebDev/Version6.0/user03/images/computerfavicon.ico">
+
+<head>
+    <!-- Bootstrap meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Videogame Opinions">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <header class="row logo-color">
+        <div class="col-md-3" style="padding-left: 56px;"><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEX///8AAACGhobCwsIwMDDc3Nz09PT7+/vo6OjQ0NDJycnT09PNzc3ExMTt7e1LS0sbGxt7e3vi4uJzc3NjY2OmpqaoqKhZWVk/Pz+WlpYqKiqxsbE4ODhpaWmenp5/f3+4uLggICBEREQNDQ1QUFCMjIxaWlr+h5QeAAAEVUlEQVR4nO2d12LiMBBFbXpxQu+hZIH8/ycupCxjU7wyksZXuefNIgpzgjSaSE4cRYQQosFrUoXkJXn9D7vk2IuR6S26j/SaG+0ArTC5KxiG35nbjvW+dlwWWdavBSfaQVlmmhUcaUdknW3ognE8kIIV7WiccLwIrrRjcUT1R7ClHYkzGt+Gf65e6dcQuV7uZl+C1UzzoN2IMGm0BxmX5LP9PdVWaSqH+RzNbcpmfm5LUk3VvG9RenYpn3NtM5YNDwtzENqpKXf6WOX1Sjs6K0ylUhR1xNVBOzZLyMWhHi0ygzYE5DidRutM4gmC5UVqKy8W2oFZQ9TZhyioleIHUWgvpWEo0zA1EfdhGtblckFDSGiIDw3xoSE+NMSHhvjQEB8a4kNDfGiIDw3xoSE+NMSHhvjQEB8a4kNDfGiIDw3xoSE+NMSHhvjQEB8a4kNDfGiIDw3xoSE+NMSHhvjQEB8a4kNDfGiIDw3xoSE+NMSHhvjQEB8a4kNDfGiIDw3xoSE+NMSHhvjQEB8a4kNDfH6v4VA7MGsM7xiOKqEwumMYJjTEh4b40BAfGuLzuwzDr9rCr7zD/+2JhjjQEB8a4kNDfDwaNhv5OHi0qzfDVuoZp3cZt2y/sS/D7IOG72P7uYSeDE0ehm35U/RkmH2+8iMG+d/OBE+GBoKnOKxCQ0uEbxj+PAw/l4a/HpawpnHw6HilurQrDffuxooeYn70o9rlYqMdmDU2F6m5fLb6QTswa/QuUqNoIYas9RmvhFynFtGLuLK87qohjy06UUPmbQfZVIFEKjVSYzbeN7Sjs0DqM5udGnayof+qHd/TtPZS6HMFjFO8aEf4JOlScf/ZNkkrzqsOigxPNHdvaZnVV3s/zjBfax/iFmL9lhWpfZsn2ReC4d/aUNGOxBHHy/jt5X81IDM5Q5fa0Thgnk5C79rxWCcteGKmHZFl1tdrySa/FxDTW8vl8KAdljVm94rPbhg5dfxoS214vKoLwOhNcn95aHZ3i8KFk9w+NOoo+o2Lvvlxses6r6mnIlKjjqLfzSRRGsT+gdm+lshy5d5LEalqa9RxK2aSo9jsIAbbyqjjqujw9syriLNt1LMtepZ5J6Uj4jTb1JLbRx1H0dlAbIj0DbuKjYaJk9jsII59TfOFyFFlTqaiIKoYdhVr/puT2OwgJpPpul24VvCKPBExPSCQh5rlPSEqnkpRkqncWzbuLPqWN5mKqnSW/9UZxDZKeZNp4ar0DERlKgaaWVV6BqEylVWp+VmrTKZlrUw7T8Uofz6Jg+hsIPYj9wW6i5PNsibTJ6rSMwCV6RNV6RlRmV7tyJcEMZF2BbrLGwosR1aU6romkedXy5o5sn/6hbXSzQU+z3I+NAQ/PArePEpyje/Df/+3a5ncp26DY35IlvE7SON47N1wnR+UVfxPxEl+UFbxX8g1PRsq3IrWyY/KIipbN/W5N7+51p8o16t+COefrhBCAuUvr1RXhL8GMPwAAAAASUVORK5CYII="
+                alt="Website icon"></div>
+        <div class="col-md-9 name-color"><em><strong>My Game Opinions</strong></em></div>
+    </header>
+</head>
+
+<title>My Game Opinions</title>
+
+<body class="large-border">
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark main-background">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">Navigation:</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="aboutpage.html" class="nav-item nav-link">About page</a>
+                    <a href="index.html" class="nav-item nav-link active">Game opinions</a>
+                    <a href="write.html" class="nav-item nav-link">Write things</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+
+    <main>
+        <h1 class="heading-style">My favorite videogames:</h1>
+
+        <table class="main-table-styling">
+            <tr>
+                <td class="table-info" style="font-size: x-large;"><img
+                        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/14288655-a18c-4568-9bca-a05ab60f628c/d2bl6h0-f9efe524-840b-47cb-a286-e788cda020b6.jpg"
+                        style="width: 300px; height: 300px;"><strong> Team Fortress 2</strong></td>
+                <td class="table-info">Team Fortress 2 has been a popular game for a very long time, and I think this is
+                    because of how much fun it can be. It is a class-based movement shooter with teams and large maps
+                    filled with props. There are issues of weapon balance and some gameplay "mechanics" that are nearly
+                    unjustifiable, but these problems can be for the most part overlooked or played without entirely. I
+                    have gotten a lot of time out of this game for how simple it is to pick up, and I still enjoy it,
+                    not to mention that it is free. If the problems of annoying weapons or bad game design such as
+                    random crits were the extent of this game's problems, then I would highly recommend it.
+                    Unfortunately for Team Fortress 2, its development has stagnated and public servers have been
+                    plagued with cheaters and aimbots. I cannot say that this game is worth any time to new players in
+                    its current state.</td>
+            </tr>
+        </table>
+
+        <table class="main-table-styling">
+            <tr>
+                <td class="table-info" style="font-size: x-large;"><img
+                        src="https://cdn.images.express.co.uk/img/dynamic/143/590x/Dead-By-Daylight-Mobile-1249525.jpg?r=1583232883805"
+                        style="width: 300px; height: 215px;"><strong> Dead by Daylight</strong></td>
+                <td class="table-info" style="padding-top: 30px; padding-bottom: 30px;">This game is hosted by
+                    incompetent developers who lack a vision of what they want the game to be. Dead by Daylight is an
+                    asymetric pvp game with two roles, killer and survivor. Killer is a character-based role on defense
+                    in the match, while survivor is played on a team of four and plays offensively. The killer has to
+                    defend generators which the survivor repairs to power the escape. The developers seem to be confused
+                    about how their game is played. Even after several years of balance changes and additions, map and
+                    character reworks, this game is still marketed as an "immersive horror experience." The audience for
+                    this marketing doesn't seem to exist, however, and the illusion is sold after a few minutes of play.
+                    When the most interesting way for survivors to play is to run in the killer's face and shine
+                    flashlights at him, and the best killer is all about prediction and quick reaction rather than
+                    stealth, which happens to be arguably the worst way to play, the game is clearly not what it is
+                    marketed as. I do not think this is an issue, but it is the way the developers balance and talk
+                    about the game that this becomes confusing.</td>
+            </tr>
+            <table class="main-table-styling">
+                <tr>
+                    <td class="table-info" style="font-size: x-large;"><img
+                            src="data:image/jpeg;base64,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"
+                            style="width: 276px; height: 276px;"><strong> League of Legends</strong></td>
+                    <td class="table-info" style="padding-top: 30px; padding-bottom: 30px;">This game is very
+                        competitive and can be fun, but it is also very easy to become frusturated. Sometimes you can
+                        have a fun playing your favorite characters with friends in this fast-paced accessible moba.
+                        However, often times when playing you may be matched with inhuman creatures who speak, type, and
+                        look like people, but behave very much like animals. This game is all about feeling frustration
+                        over incomprehensible situations but continuing to play and later being surprised by something
+                        even more stupid, which can be funny.</td>
+                </tr>
+            </table>
+    </main>
+</body>
+
+<footer class="container footer-style" style="background: linear-gradient(rgb(153, 152, 152), rgb(63, 63, 63));">
+
+    <div class="row">
+        <div class="col-md-12 large-words">Web Development</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 large-words">Navigation:</div>
+        <div class="col-md-6 large-words">Contact:</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 middle-text"><a href="aboutpage.html" class="nav-item nav-link">About page</a></div>
+        <div class="col-md-6 middle-text">231297@shakopeeschools.org</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 middle-text"><a href="index.html" class="nav-item nav-link active">Game opinions</a></div>
+        <div class="col-md-6 middle-text">Call: 244-631-2807</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 middle-text"><a href="write.html" class="nav-item nav-link">Write things</a></div>
+        <div class="col-md-6 middle-text">-</div>
+    </div>
+
+    <div class="row final-row">
+        <div class="col-md-6 small text-left"><em>Lucas B. WebDev Footer</em></div>
+        <div class="col-md-6 small text-right"><em>Updated October 10th, 2021</em></div>
+    </div>
+</footer>
 
 </html>

@@ -150,6 +150,7 @@ document.forms.guessquiz.prompt.value=speech; document.forms.guessquiz.guess.foc
 </TABLE>
 </CENTER>
 </FORM>
+
     <title>Dynamic Webpage</title>
 
     <!-- Bootstrap meta data -->
@@ -164,7 +165,6 @@ document.forms.guessquiz.prompt.value=speech; document.forms.guessquiz.guess.foc
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!--  -->
     <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
@@ -187,6 +187,14 @@ document.forms.guessquiz.prompt.value=speech; document.forms.guessquiz.guess.foc
             <!--PRINT-->
             <script>
                 function printWindow() {
+
+            <script>
+                alert('Go Sabers!');
+            </script>
+            <!--PRINT-->
+            <script>
+                function printWindow(){
+
                     window.print();
                 }
             </script>
@@ -199,7 +207,11 @@ document.forms.guessquiz.prompt.value=speech; document.forms.guessquiz.guess.foc
             <!-- FOCUS-->
             <script>
                 function getFocus() {
+
                     document.getElementById("focusButton").focus({ preventScroll: false });
+
+                    document.getElementById("focusButton").focus();
+
                 }
             </script>
             <!-- CLICK-->
@@ -250,7 +262,9 @@ document.forms.guessquiz.prompt.value=speech; document.forms.guessquiz.guess.foc
                 </div>
             </div>
         </div>
+
         <h1 style="display:inline-block;" onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
+
         <hr>
         <div class="container-fluid">
             <div class="row">
@@ -297,6 +311,7 @@ document.forms.guessquiz.prompt.value=speech; document.forms.guessquiz.guess.foc
                         it
                         4</button>
                 </div>
+
 
                 <div class="col-md-5">
                     <h1>My shopping list</h1>
@@ -473,7 +488,67 @@ document.forms.guessquiz.prompt.value=speech; document.forms.guessquiz.guess.foc
     <div id="container" style="height: 3000px; width: 1000px;">
         <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
     </div>
+                <div class="col-md-5">
+                    <h1>My shopping list</h1>
 
+                    <div>
+                        <label for="item">Enter a new item:</label>
+                        <input type="text" name="item" id="item">
+                        <button id="aggregating-list">Add item</button>
+                    </div>
+
+                    <ul>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <script id="lists">
+            function firstSelector() {
+                document.querySelector("li").style.backgroundColor = "#dc3545";
+            }
+            function secondSelector() {
+                var x = document.querySelectorAll("li");
+                var i;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.backgroundColor = "#17a2b8";
+                }
+            }
+            function thirdSelector() {
+                document.querySelector("ol ol li").style.backgroundColor = "#6c757d";
+            }
+        </script>
+        <script id="shopping">
+            const list = document.querySelector('ul');
+            const input = document.querySelector('input');
+            const button = document.getElementById('aggregating-list');
+
+            button.onclick = function () {
+                let myItem = input.value;
+                input.value = '';
+
+                const listItem = document.createElement('li');
+                const listText = document.createElement('span');
+                const listBtn = document.createElement('button');
+
+                listItem.appendChild(listText);
+                listText.textContent = myItem;
+                listItem.appendChild(listBtn);
+                listBtn.textContent = 'Delete';
+                list.appendChild(listItem);
+
+                listBtn.onclick = function (e) {
+                    list.removeChild(listItem);
+                }
+
+                input.focus();
+            }
+        </script>
+    </main>
+    <div id="container" style="height: 3000px; width: 1000px;">
+        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
+    </div>
 </body>
 
 </html>

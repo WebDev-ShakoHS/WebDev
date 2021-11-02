@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 3.0
+        Name: Mason Rondeau
+        Date Completed: 9/15/21
+    -->
+
+<head>
+
+    <title>Music for Web Dev User 22 </title>
+    <link rel="shortcut icon" type="image" href="images/favicon.ico">
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My Favorite Music">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        menu {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        td {
+     color: darkred;
+    }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="aboutMe.html" class="nav-item nav-link active">About Me</a>
+                    <a href="music.html" class="nav-item nav-link active">Music</a>
+                    <a href="list.html" class="nav-item nav-link active" tabindex="-1">Lists</a>
+                    <a href="#" class="nav-item nav-link disabled tabindex="-1">Games</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
+                        tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="wideMargin">
+
+        <h1 class="text-left my-3" tabindex="0">Music</h1><!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <h2>My Top 5 Favorite Songs</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Artist</th>
+                    <th>Song</th>
+                    <th>Album Art</th>
+                </tr>
+            </thead>
+            <tr>
+                <td style="color:whitesmoke; background-color:darkred">1</td>
+                <td>Cordae & Anderson .Paak</td>
+                <td>RNP</td>
+                <td><img height="120px" src="images/LostBoyCordae.jpeg" alt="Cordae The Lost Boy Album Cover - Person walking on a path"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Amine & Young Thug</td>
+                <td>Compensating</td>
+                <td><img height="120px" src="images/AmineLimbo.jpeg" alt="Amine Limbo Album Cover - Amine with Tennis Ball"></td>
+            </tr>
+            <tr>
+                <td style="color:goldenrod; background-color:black">3</td>
+                <td style="color:goldenrod; background-color:black">Dreamville</td>
+                <td style="color:goldenrod; background-color:black">Wells Fargo</td>
+                <td style="color:goldenrod; background-color:black"><img height="120px" src="images/Revenge.png" alt="Dreamville Revenge of the Dreamers 3 Album Cover - Revenge Text"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>GoldLink, Brent Faiyaz & Shy Glizzy</td>
+                <td>Crew</td>
+                <td><img height="120px" src="images/GoldLinkCrew.jpeg" alt="GoldLink Crew Single Cover - 3 Men"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Trippie Redd</td>
+                <td>Topanga</td>
+                <td><img height="120px" src="https://upload.wikimedia.org/wikipedia/en/1/13/ALLTY3.png" alt="Trippie Redd A Love Letter to You 3 Mixtape Cover - Trippie Redd Illuminati"></td>
+            </tr>
+        </table>
+    </main>
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer class="wideMargin">
+        <div>
+            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
+        </div>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>
