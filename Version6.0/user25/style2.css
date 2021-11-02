@@ -1,0 +1,9 @@
+body h1 {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: large;
+    margin-bottom: 100px;
+}

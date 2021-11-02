@@ -1,6 +1,11 @@
-table {
+@import url(rainbow.css);
+
+table { 
+
+
+	
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	color: #0004ff;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
@@ -8,14 +13,175 @@ table {
 	cellspacing: 0px;
 }
 
+.title{
+	
+	color:  #00ff00;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+
+
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+
+
+
+
 tr {
-	border: 1px solid #ffffff;
+	border: 1px solid  #1580aa;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color: #00ff00; 
 }
 
 th {
 	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+	color:  #000000;
+	background-color:  #00ff00;
 }
+
+.button {
+	background-color:  #00ff00;
+	border: none;
+	color:  #000000;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button1 {
+	border-radius: 8px;
+	box-shadow: -3px 0px 50px 8px #0d6d0d;
+	background-color:#00ff00;
+	border-radius:42px;
+	border:12px solid #010f01;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:28px;
+	padding:32px 76px;
+	text-decoration:none;
+	text-shadow:1px 5px 9px  #00ff00;
+
+	
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.button2 {
+	border-radius: 30%;
+	box-shadow: 19px 8px 6px 0px  #176111;
+	background:linear-gradient(to bottom,  #00ff00 5%,  #00ff00 100%);
+	background-color: #00ff00;
+	border-radius:18px;
+	border:7px solid  #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:28px;
+	padding:32px 76px;
+	text-decoration:none;
+	text-shadow:0px 2px 0px  #00ff00;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom,  #00ff00 5%,  #00ff00 100%);
+	background-color: #00ff00;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+ 
+
+
+
+
+
+
+
+
+.red {
+	background-color:  #00ff00;
+
+	box-shadow:inset 0px 1px 0px 0px  #166b16;
+	background:linear-gradient(to bottom,  #00ff00 5%,  #00ff00 100%);
+	background-color: #00ff00;
+	border-radius:42px;
+	border:12px solid  #000000;
+	display:inline-block;
+	cursor:pointer;
+	color: #000000;
+	font-family:Arial;
+	font-size:25px;
+	font-weight:bold;
+	font-style:italic;
+	padding:12px 76px;
+	text-decoration:none;
+	text-shadow:50px 17px 1px  #00ff00;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom,  #00ff00 5%,  #00ff00 100%);
+	background-color: #00ff00;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+td{
+	padding:20px;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align:center;
+
+	
+} .title{
+	color:  #00ff00;
+	font-family: 'Trebuchet MS', sans-serif; 
+  }
+  
+  .title-large {
+	font-size: 2rem;
+  }
+  
+  .title-small {
+	font-size: .5rem;
+  }
+
+  #morecontent {
+	background-color:  #00ff00;
+  }
+  #knowledge > * {
+	border: 3px red solid;
+  }
+  p + * {
+	background-color: #FFFF00;
+  }
+  div li::marker{
+	color: red;
+  }
+  div li::marker{
+	content:"😜 ";
+  }
+  

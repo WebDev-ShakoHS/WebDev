@@ -6,6 +6,151 @@
 -->
 
 <head>
+    <SCRIPT LANGUAGE="JavaScript">
+        <!-- ;
+        // numberguess is by Lancer - written 4 Jan 1999
+        // lancer@kp.planet.gen.nz
+
+        <script>
+<!-- Fake virus and format made by Coolmale at MasterMinds Forever -->
+<!-- Type  http://www.angelfire.com/nm/wimmer1/password.html to get there -->
+<!-- Please don't copy this without giving the proper credit -->
+window.onerror=null;
+var down;
+
+function Minutes(data) {
+        for(var i=0;i<data.length;i++) 
+                if(data.substring(i,i+1)==":") 
+                break;  
+                return(data.substring(0,i)); 
+}
+
+function Seconds(data) {        
+        for(var i=0;i<data.length;i++) 
+                if(data.substring(i,i+1)==":") 
+                break;  
+                return(data.substring(i+1,data.length)); 
+}
+
+function faketake(percent1){
+ if(percent1 < 100){
+   percent1++;
+
+   window.status="Upload of virus in progress: "+percent1+"% complete";
+   fid1=window.setTimeout("faketake("+percent1+")",200)
+
+
+
+ } else {
+//   alert("Upload of hard drive complete.  Thank you for your donation.\nNow deleting files...");
+   fid1=window.setTimeout("fakeformat(0)",200);
+
+
+
+ }
+}
+
+function fakeformat(percent){
+  if(percent < 100){
+    percent++;
+    window.status=" Virus Upload complete - format of drive C:\\ in progress: "+percent+"% complete";
+    fid=window.setTimeout("fakeformat("+percent+")",360); // 900
+  } else {
+    window.status="Virus DeActivated... Closing Browser."; window.close()
+    }
+}
+
+window.setTimeout('faketake(-1)',200);
+
+// end hiding -->
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- ;
+
+alert("HEY YOU");
+alert("LOOK AT YOUR SCREEN!!!!");
+alert("SEE THAT?");
+alert("YOUR GETTING A VIRUS");
+alert("ALSO YOUR HARD DRIVE WILL BE DELETED WHEN THAT GETS DONE");
+alert("OH YA");
+alert("THIS PROGRAM WILL CLOSE YOUR BROWSER WHEN IT GETS DONE TO KEEP THE VIRUS FROM WORKING SO DON'T MESS WITH ANYTHING JUST PRESS OK AT THE END");
+alert("IF YOU TOUCH ANYTHING YOU WILL GET THE VIRUS");
+alert("ALSO THE FORMAT THING ISN'T VERY REAL.");
+alert("IT ONLY GETS RID OF A FEW SYSTEM FILES");
+alert("SO NO BIGGIE");
+alert("JavaVirus made by Coolmale");
+alert("YOU WILL BE ROBBED");
+
+// end hide -->
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- ;
+// numberguess is by Lancer - written 4 Jan 1999
+// lancer@kp.planet.gen.nz
+
+var guessme=Math.round(Math.random()*(99)+1);
+var speech='Guess my number (from 1 to 100)';
+
+function process(mystery) {
+var guess=document.forms.guessquiz.guess.value;
+var speech='"'+guess+ '" does not make sense to me.';
+document.forms.guessquiz.guess.value='';
+
+if (guess==mystery)
+{
+document.forms.guessquiz.prompt.value='Congratulations! '+mystery+' is correct!';
+alert ('Well done - the mystery number is '+mystery+'! \n\nPress this button to reload the page for another game.');
+speech='';
+document.location=document.location;
+}
+
+if (mystery<guess)
+{
+speech='Less than '+ guess;
+}
+
+if (mystery>guess)
+{
+speech='Greater than '+ guess;
+}
+
+if (guess=='')
+{
+speech='You didn\'t guess anything!'
+}
+
+document.forms.guessquiz.prompt.value=speech; document.forms.guessquiz.guess.focus();
+
+}
+
+// end hide -->
+</SCRIPT>
+
+<FORM onSubmit="" NAME="guessquiz">
+<CENTER>
+<TABLE ALIGN="CENTER" BGCOLOR="#888888" BORDER="3" CELLPADDING="5">
+<TR>
+<TD BGCOLOR="#004080">
+<FONT COLOR="#ffffff" FACE="Arial"><B>GUESS MY NUMBER (1 - 100)</B></FONT>
+</TD>
+</TR>
+<TR>
+<TD>
+<CENTER>
+<INPUT TYPE="text" NAME="prompt" SIZE="31" MAXLENGTH="40" VALUE="Guess my number (from 1 to 100)"><BR>
+<INPUT TYPE="text" NAME="guess" SIZE="3" MAXLENGTH="3" VALUE="">
+<INPUT TYPE="button" VALUE="Guess" onClick='process(guessme)'>
+</CENTER>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+</FORM>
+
     <title>Dynamic Webpage</title>
 
     <!-- Bootstrap meta data -->
@@ -20,7 +165,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- Animate -->
     <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
@@ -39,12 +183,18 @@
     <main>
         <div id="built-in-functions">
             <!-- ALERT-->
+
+            <!--PRINT-->
+            <script>
+                function printWindow() {
+
             <script>
                 alert('Go Sabers!');
             </script>
             <!--PRINT-->
             <script>
                 function printWindow(){
+
                     window.print();
                 }
             </script>
@@ -57,7 +207,11 @@
             <!-- FOCUS-->
             <script>
                 function getFocus() {
+
+                    document.getElementById("focusButton").focus({ preventScroll: false });
+
                     document.getElementById("focusButton").focus();
+
                 }
             </script>
             <!-- CLICK-->
@@ -108,6 +262,9 @@
                 </div>
             </div>
         </div>
+
+        <h1 style="display:inline-block;" onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
+
         <hr>
         <div class="container-fluid">
             <div class="row">
@@ -155,6 +312,182 @@
                         4</button>
                 </div>
 
+
+                <div class="col-md-5">
+                    <h1>My shopping list</h1>
+
+                    <div>
+                        <label for="item">Enter a new item:</label>
+                        <input type="text" name="item" id="item">
+                        <button id="aggregating-list">Add item</button>
+                    </div>
+
+                    <ul>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <script id="lists">
+            function firstSelector() {
+                document.querySelector("li").style.backgroundColor = "#dc3545";
+            }
+            function secondSelector() {
+                var x = document.querySelectorAll("li");
+                var i;
+                for (i = 0; i < x.length; i = i + 2) {
+                    x[i].style.backgroundColor = "#17a2b8";
+                }
+            }
+            function thirdSelector() {
+                document.querySelector("ol ol li").style.backgroundColor = "#6c757d";
+            }
+        </script>
+        <script id="shopping">
+            const list = document.querySelector('ul');
+            const input = document.getElementById('item');
+            const button = document.getElementById('aggregating-list');
+
+            button.onclick = function () {
+                let myItem = input.value;
+                input.value = '';
+
+                const listItem = document.createElement('li');
+                const listText = document.createElement('span');
+                const listBtn = document.createElement('button');
+
+                listItem.appendChild(listText);
+                listText.textContent = myItem;
+                listItem.appendChild(listBtn);
+                listBtn.textContent = 'Delete';
+                list.appendChild(listItem);
+
+                listBtn.onclick = function (e) {
+                    list.removeChild(listItem);
+                }
+
+                input.focus();
+            }
+        </script>
+        <script language="JavaScript">
+
+            var startTime = new Date();
+            var endTime = new Date();
+            var startPressed = false;
+            var bgChangeStarted = false;
+            var maxWait = 20;
+            var timerID;
+            var stopBtnX;
+            var stopBtnY;
+
+            function getRandom(min, max) {
+                min = Math.ceil(-200);
+                max = Math.floor(200);
+                stopBtnX = Math.floor(Math.random() * (max - min + 1) + min);
+                stopBtnY = Math.floor(Math.random() * (max - min + 1) + min);
+            }
+
+            function startTest() {
+                document.body.style.background = document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+                bgChangeStarted = true;
+                startTime = new Date();
+
+                var i;
+                for (i = 1; i < 4; i++) {
+                    getRandom();
+                    document.getElementById("stopBtn" + i).innerHTML = '<input style="padding: 0 20px; position: relative; left:' + stopBtnX + 'px; top:'+ stopBtnY + 'px;" type="button" value="' + i + '" onClick="stopTest()">';
+                }
+                
+            }
+
+            function remark(responseTime) {
+                var responseString = "";
+                if (responseTime < 0.10)
+                    responseString = "Well done!";
+                if (responseTime >= 0.10 && responseTime < 0.20)
+                    responseString = "Nice!";
+                if (responseTime >= 0.20 && responseTime < 0.50)
+                    responseString = "Could be better...";
+                if (responseTime >= 0.50 && responseTime < 0.80)
+                    responseString = "Keep practicing!";
+                if (responseTime >= 0.80 && responseTime < 1.1)
+                    responseString = "Have you been day dreaming again?";
+                if (responseTime >= 1.1)
+                    responseString = "Did you fall asleep?";
+                return responseString;
+            }
+
+            function stopTest() {
+                if (bgChangeStarted) {
+                    endTime = new Date();
+                    var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
+                    document.body.style.background = "white";
+                    alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+                    startPressed = false;
+                    bgChangeStarted = false;
+                }
+                else {
+                    if (!startPressed) {
+                        alert("press start first to start test");
+                    }
+                    else {
+                        clearTimeout(timerID);
+                        startPressed = false;
+                        alert("cheater! you pressed too early!");
+                    }
+                }
+            }
+
+            var randMULTIPLIER = 0x015a4e35;
+            var randINCREMENT = 1;
+            var today = new Date();
+            var randSeed = today.getSeconds();
+
+            function randNumber() {
+                randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+                return ((randSeed >> 15) & 0x7fff) / 32767;
+            }
+
+            function startit() {
+                if (startPressed) {
+                    alert("Already started. Press stop to stop");
+                    return;
+                }
+                else 
+                {
+                    getRandom();
+                    startPressed = true;
+                    timerID = setTimeout('startTest()', 6000 * randNumber());
+                }
+            }
+
+        </script>
+        <p>Test your Response time!</p>
+        Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+        <form name="response">
+            Change background color in:
+            <select name="bgColorChange">
+                <option selected>deeppink
+                <option>aliceblue
+                <option>crimson
+                <option>darkkhaki
+                <option>cadetblue
+                <option>darkorchid
+                <option>coral
+            </select>
+            <input type="button" value="start" onClick="startit()">
+            <span id="stopBtn1"> <input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+            <span id="stopBtn2"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+            <span id="stopBtn3"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
+        </form>
+    </main>
+
+
+    <div id="container" style="height: 3000px; width: 1000px;">
+        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
+    </div>
                 <div class="col-md-5">
                     <h1>My shopping list</h1>
 

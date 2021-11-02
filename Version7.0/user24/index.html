@@ -30,21 +30,242 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <style>
-        /* Internal Styling Here */
-    </style>
+        .body-wideMargin {
+            margin: 50px;
+            font-size: 100%;
+            line-height: 1.5;
+            font-family: Roboto;
+        }
 
+        button {
+            padding: 5px;
+        }
+
+        ol {
+            list-style-type: decimal-leading-zero;
+        }
+
+        ol ol {
+            margin-left: 0.9em;
+        }
+
+        ol li {
+            line-height: 1.5;
+        }
+
+        li li {
+            list-style-type: lower-alpha;
+        }
+
+        li li li {
+            list-style-type: square;
+        }
+
+        li li li li {
+            list-style-type: circle;
+        }
+
+        h1 {
+            font-family: "Fjalla One", sans-serif;
+            font-size: 2em;
+            text-transform: uppercase;
+            font-weight: 400;
+            border-bottom: 1px solid black;
+            margin-bottom: 1em;
+        }
+    </style>
+    <!--hide this script tag's contents from old browsers-->
+    <SCRIPT LANGUAGE="JAVASCRIPT">
+        var daysold;
+        function message() {
+            if (daysold > 5000)
+            alertMessage="god your old";
+            if (daysold <= 5000)
+            alertMessage="wow what are you a baby?";
+    
+        }
+
+        function lifetimer() {
+
+
+            today = new Date()
+
+            BirthDay = new Date(document.live.age.value)
+
+            timeold = (today.getTime() - BirthDay.getTime());
+
+            sectimeold = timeold / 1000;
+
+            secondsold = Math.floor(sectimeold);
+
+            msPerDay = 24 * 60 * 60 * 1000;
+
+            timeold = (today.getTime() - BirthDay.getTime());
+
+            e_daysold = timeold / msPerDay;
+
+            daysold = Math.floor(e_daysold);
+
+            message();
+            alert(alertMessage);
+
+            e_hrsold = (e_daysold - daysold) * 24;
+
+            hrsold = Math.floor(e_hrsold);
+
+            minsold = Math.floor((e_hrsold - hrsold) * 60);
+
+            document.live.time1.value = daysold
+
+            document.live.time2.value = hrsold
+
+            document.live.time3.value = minsold
+
+            window.status = "Well at the moment you are " + secondsold + "............ seconds old.";
+
+            timerID = setTimeout("lifetimer()", 1000)
+
+        }
+    // -- done hiding from old browsers -->
+
+    </script>
 </head>
 
 <body>
     <main>
         <div id="built-in-functions">
             <!-- ALERT-->
+
+            <style>
+                .button {
+                    background-color: #6a07f5;
+                    /* Green */
+                    border: none;
+                    color: rgb(234, 236, 240);
+                    padding: 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+                .button1 {
+                    border-radius: 2px;
+                }
+
+                .button2 {
+                    border-radius: 4px;
+                }
+
+                .button3 {
+                    border-radius: 8px;
+                }
+
+                .button4 {
+                    border-radius: 12px;
+                }
+
+                .button5 {
+                    border-radius: 50%;
+                }
+            </style>
             <script>
-                alert('Go Sabers!');
-            </script>
+
+
+                    // end hide -->
+
+            </SCRIPT>
+            <FORM name="live">
+
+
+                Please enter your age::<INPUT TYPE="text" NAME="age" VALUE="" SIZE=20>
+                Example: (november 1,1966) <BR><BR><BR>
+                <INPUT TYPE="button" NAME="start" VALUE="Start Timer" ONCLICK="lifetimer(this.form)" <button
+                    class="button button4"></button>>
+
+                <INPUT TYPE="reset" NAME="resetb" VALUE="Reset Age" <button class="button button4"></button>>
+
+                <BR><BR>
+
+                <TABLE border=0>
+                    <TR>
+                        <TD>You are days old:</TD>
+
+                        <TD>
+
+                            <INPUT TYPE="text" NAME="time1" VALUE="" size=56 <button class="button button3"></button>
+
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD>Plus hours old:</TD>
+
+                        <TD>
+
+                            <INPUT TYPE="text" NAME="time2" VALUE="" size=56 <button class="button button3"></button>
+
+                        </TD>
+
+                    </TR>
+
+                    <TR>
+                        <TD>Plus minutes old:</TD>
+
+                        <TD><INPUT TYPE="text" NAME="time3" VALUE="" size=56 <button class="button button3"></button>
+                        </TD>
+
+                    </TR>
+                </TABLE>
+            </FORM>
+            <table border="0" width="350" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td><img border="0"
+                            src="https://d.newsweek.com/en/full/1908472/young-girl-firing-two-guns.png?w=1600&h=1600&q=88&f=4d9ef5a595d5851fcc5a3b7f006de998"
+                            width="152" height="216"></td>
+                    <td>
+
+                        <form name="fire">
+                            number of bullets she shoots (1-6):<br /><input name="bullets" type="text" size=3
+                                value=1><br />
+
+                            <p>
+                                <input name="message" type="button" value="Test your Luck!" onClick="fireit()" button
+                                    class="button button5"></button>
+                            </p>
+
+                        </form>
+
+                        <script>
+
+                            //Russian Roulette Game- by javascriptkit.com
+                            //Visit JavaScript Kit (http://javascriptkit.com) for script
+                            //Credit must stay intact for use
+
+                            function fireit() {
+                                var theone = Math.floor(Math.random() * 6)
+
+                                if (theone <= document.fire.bullets.value - 1)
+                                    alert("hahaha loser you just got cucked by a little girl!")
+                                else {
+                                    document.fire.message.value = "Whew. she missed!"
+                                    setTimeout("document.fire.message.value='Play Roulette'", 500)
+                                }
+                            }
+
+                        </script>
+
+
+
+                    </td>
+                </tr>
+            </table>
             <!--PRINT-->
             <script>
-                function printWindow(){
+                function printWindow() {
                     window.print();
                 }
             </script>
@@ -57,7 +278,7 @@
             <!-- FOCUS-->
             <script>
                 function getFocus() {
-                    document.getElementById("focusButton").focus();
+                    document.getElementById("focusButton").focus(false);
                 }
             </script>
             <!-- CLICK-->
@@ -108,6 +329,7 @@
                 </div>
             </div>
         </div>
+        <h1 style="display:inline-block;" onmouseover="alert('GO Sabers');" value="click me" Shakopee highschool></h1>
         <hr>
         <div class="container-fluid">
             <div class="row">
@@ -178,7 +400,7 @@
             function secondSelector() {
                 var x = document.querySelectorAll("li");
                 var i;
-                for (i = 0; i < x.length; i++) {
+                for (i = 0; i < x.length; i = i + 1) {
                     x[i].style.backgroundColor = "#17a2b8";
                 }
             }
@@ -211,11 +433,8 @@
 
                 input.focus();
             }
-        </script>
-    </main>
-    <div id="container" style="height: 3000px; width: 1000px;">
-        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
-    </div>
-</body>
 
-</html>
+        </script>
+
+
+        <script>
