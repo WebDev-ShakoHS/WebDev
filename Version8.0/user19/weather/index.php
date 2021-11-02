@@ -1,5 +1,5 @@
 <?php
-$apiKey = "077ecf4fc6dd87ad0b6ccc6b584ccafc";
+$apiKey = "d44442221a3e53e5d3be05bdc27f4a09";
 //You will need to add in the 
 $cityId = "5046997"; //5046997 Shakopee City Id
 $units = "imperial"; //metric-Celsius  imperial-Farhenheit
