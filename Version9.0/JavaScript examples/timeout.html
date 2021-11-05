@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="hidden"><span style="background-color:aqua;">This message will self destruct in 5 seconds</span></p>
+    <script>     
+        setTimeout(function checkTime() {
+            document.getElementById("hidden").innerHTML = "<span>BOOM!</span>";
+        }, 5000);
+    </script>
+
+</body>
+
+</html>
