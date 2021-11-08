@@ -27,16 +27,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Custom styles for this template -->
-    <style type="text/css"> 
-    #knowledge > * {
-  border: 3px red solid; 
-} 
-div li::marker{
-  color: red;
-} 
-div li::marker{
-  content:"😜 ";
-}
+    <style type="text/css">
+        #knowledge > * {
+            border: 3px red solid;
+        }
+
+        div li::marker {
+            color: red;
+        }
+
+        div ul li::marker {
+            content: "😜 ";
+        }
+
         menu {
             margin: 0;
             padding: 0;
@@ -53,16 +56,19 @@ div li::marker{
 
         #rainbow {
             width: 100%;
-        } 
+        }
+
         td:hover {
-  color: #ff0000; 
-}  
-p i:first-child {
-  color: rgb(255, 0, 157);
-}  
-p:first-child i {
-  color: rgb(255, 51, 0);
-} 
+            color: #ff0000;
+        }
+
+        p span:first-child {
+            color: rgb(255, 0, 157);
+        }
+
+        p:first-child i {
+            color: rgb(255, 51, 0);
+        }
     </style>
 </head>
 
@@ -114,13 +120,13 @@ p:first-child i {
                     <li>Nav Bar</li>
                 </ul>
             </li>
-        </div> 
-        
-        <p> 
-            These are the <i>things</i> I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
+        </div>
+
+        <p>
+            These are the <span>things</span> I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
         </p>
         <p>
-            I will use my <i>knoloage</i> to create an amazing website for you and your needs.
+            I will use my <span>knoloage</span> to create an amazing website for you and your needs.
         </p>
         <div>
             <table id="rainbow">
