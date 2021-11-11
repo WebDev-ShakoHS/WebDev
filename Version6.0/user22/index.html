@@ -26,6 +26,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <title>Weather App - JavaScript</title>
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="CSS/weather.css">
     <style type="text/css">
         .menu {
             margin: 0px;
@@ -49,7 +53,7 @@
             width: 100%;
             border: 3px solid black;
             padding: 10px;
-            margin: 150px;
+            margin: 125px;
         }
 
         .bocks {
@@ -57,11 +61,19 @@
             width: 100%;
             border: 3px solid grey;
             padding: 10px;
-            margin: 150px;
+            margin: 125px;
         }
 
         i {
             text-align: center;
+        }
+
+        .move {
+            border: 1px dotted cornflowerblue;
+        }
+
+        .work {
+            border: 1px dotted cornflowerblue;
         }
     </style>
 </head>
@@ -157,9 +169,10 @@
                         <div class="row">
                             <div col-md-6>
                                 <ul style="list-style-type:none;" class="box">
-                                    <li>Sam Darnold RB</li>
+                                    <li>Sam Darnold QB</li>
                                     <li>Christian McCaffrey RB</li>
                                     <li>Chuba Hubbard RB</li>
+                                    <li>Ameer Abdullah RB</li>
                                     <li>Royce Freeman RB</li>
                                     <li>Tommy Tremble TE/FB</li>
                                     <li>Ian Thomas TE</li>
@@ -208,18 +221,44 @@
                     <h4>
                         <center>Joe Brady SUCKS, Matt Rhule is Okay and Phil Snow is the only professional on the staff
                         </center>
+                        <h2>
+                            <center>Other Information</center>
+                        </h2>
                     </h4>
                     </p>
                 </div>
+                
+                                <figure style="margin-left: 33%;">
+                                    <img src="https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/panthers/tzssokhceq2bhoisx22i"
+                                        alt="GM Scott Fitterer" style="width:50%">
+                                    <figcaption>GM Scott Fitterer</figcaption>
+                                </figure>
 
-                <center>
-                    <figure>
-                        <img src="https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/panthers/tzssokhceq2bhoisx22i"
-                            alt="GM Scott Fitterer" style="width:50%">
-                        <figcaption>GM Scott Fitterer</figcaption>
-                    </figure>
-                </center>
+                                        <div class="weather-outer-container">
+                                            <div class="app-title">
+                                                <p>Weather in Charlotte</p>
+                                            </div>
+                                            <div class="notification"> </div>
+                                            <div class="weather-container">
+                                                <div class="weather-icon">
+                                                    <img src="icons/unknown.png" alt="">
+                                                </div>
+                                                <div class="temperature-value">
+                                                    <p>- °<span>C</span></p>
+                                                </div>
+                                                <div class="temperature-description">
+                                                    <p> - </p>
+                                                </div>
+                                                <div class="location">
+                                                    <p>-</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script src="JS/app.js"></script>
+                                    </div>
         </article>
+
     </main>
 
     <footer class="page-footer font-small special-color-dark pt-4" id="footer">
