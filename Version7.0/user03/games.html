@@ -33,6 +33,11 @@
         /* Internal Styling Here */
     </style>
 
+    <meta charset="UTF-8">
+    <title>Weather App - JavaScript</title>
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -149,16 +154,12 @@
         }
     </style>
 
+    <div>
+        <h1>Your games played are: <span id="gamesCounter">0</span></h1>
+    </div>
+
     <SCRIPT>
 
-        /*
-        Code Written by Cory Fogliani (Email: cory@ijustdontcare.com)
-        Testers: Cory Fogliani, Chris Gordon
-        Featured on JavaScript Kit (http://javascriptkit.com)
-        For this and over 400+ free scripts, visit http://javascriptkit.com
-        */
-
-        //if IE4/NS6, apply style
         if (document.all || document.getElementById) {
             document.write('<style>.tictac{')
             document.write('width:50px;height:50px;')
@@ -186,6 +187,7 @@
         var moveCount = 0
         var turn = 0
         var mode = 1
+        var matches = 0
 
         function vari() {
             sqr1 = document.tic.sqr1.value
@@ -691,6 +693,11 @@
             check2()
         }
 
+        function updateGames() {
+            matches = matches + 1
+            document.getElementById("gamesCounter").innerHTML = matches;
+        }
+
         function reset() {
             document.tic.sqr1.value = "     "
             document.tic.sqr2.value = "     "
@@ -711,6 +718,7 @@
             sqr8T = 0
             sqr9T = 0
             vari()
+            updateGames()
             turn = 0
             moveCount = 0
         }
@@ -747,7 +755,6 @@
                 <p>Crystal Ball</p>
 
                 <p>Please enter a yes/no question and it will respond</p>
-                <p>Warning: the crystal ball has a tendency to be sarcastic!</p>
                 <table width="40%" border="0">
                     <tr>
                         <td>
@@ -769,10 +776,8 @@
 
                 <script language="JavaScript">
 
-                    //Crystal Ball Script - By Michael McDermott (mcdemf1@wfu.edu)
-                    //http://www.wfu.edu/~mcdemf1
-                    //Visit JavaScript Kit (http://javascriptkit.com) for script
-
+                    var answer;
+                    var question;
 
                     function getAnswers() {
 
@@ -780,21 +785,28 @@
                         randominteger = time.getSeconds()
 
                         if (document.input1.textfield.value == "") {
-                            alert("You dummy! You didn't enter anything into the Crystal Ball!!!")
+                            alert("Hello?")
+                            return
+                        } else {
+                            question = document.input1.textfield.value
+                        }
+
+                        if (document.input1.textfield.value == "Stupid") {
+                            alert("Sobbing uncontrollably")
                             return
                         }
 
-                        if (randominteger <= 3) answer = "No"
-                        if ((randominteger >= 4) && (randominteger <= 6)) answer = "No"
-                        if ((randominteger >= 7) && (randominteger <= 9)) answer = "No"
-                        if ((randominteger >= 10) && (randominteger <= 12)) answer = "No"
-                        if ((randominteger >= 13) && (randominteger <= 15)) answer = "No"
-                        if ((randominteger >= 16) && (randominteger <= 18)) answer = "No"
-                        if ((randominteger >= 19) && (randominteger <= 21)) answer = "No"
-                        if ((randominteger >= 22) && (randominteger <= 24)) answer = "No"
-                        if ((randominteger >= 25) && (randominteger <= 27)) answer = "No"
-                        if ((randominteger >= 28) && (randominteger <= 30)) answer = "No"
-                        if ((randominteger >= 31) && (randominteger <= 33)) answer = "No"
+                        if (randominteger <= 3) answer = "Yes"
+                        if ((randominteger >= 4) && (randominteger <= 6)) answer = "Yes"
+                        if ((randominteger >= 7) && (randominteger <= 9)) answer = "Yes"
+                        if ((randominteger >= 10) && (randominteger <= 12)) answer = "Yes"
+                        if ((randominteger >= 13) && (randominteger <= 15)) answer = "Yes"
+                        if ((randominteger >= 16) && (randominteger <= 18)) answer = "Yes"
+                        if ((randominteger >= 19) && (randominteger <= 21)) answer = "Yes"
+                        if ((randominteger >= 22) && (randominteger <= 24)) answer = "Yes"
+                        if ((randominteger >= 25) && (randominteger <= 27)) answer = "Yes"
+                        if ((randominteger >= 28) && (randominteger <= 30)) answer = "Yes"
+                        if ((randominteger >= 31) && (randominteger <= 33)) answer = "Yes"
                         if ((randominteger >= 34) && (randominteger <= 36)) answer = "No"
                         if ((randominteger >= 37) && (randominteger <= 39)) answer = "No"
                         if ((randominteger >= 40) && (randominteger <= 42)) answer = "No"
@@ -813,6 +825,8 @@
                         newWindow.document.write("")
                         newWindow.document.write("<P align='center'>" + answer + "</P>")
                         newWindow.document.write("<P></P><P></P><P align='center'><A HREF='javascript:window.close()'>Close Me</A></P>")
+
+                        document.getElementById("lastQuestion").innerHTML = question + ' - ' + answer
                     }
 
                 </script>
@@ -820,4 +834,40 @@
             </td>
         </tr>
     </table>
+    <div>
+        <h2>
+            Last inquiry:
+        </h2>
+        <div>
+            <span id="lastQuestion"></span>
+        </div>
+    </div>
+
+    <link href="/Users/231297/Applications/mampstack/apache2/htdocs/WebDev/Version8.0/user03/index.html" rel="import" />
+
+    <div class="weather-outer-container">
+        <div class="app-title">
+            <p>Weather</p>
+        </div>
+        <div class="notification"> </div>
+        <div class="weather-container">
+            <div class="weather-icon">
+                <img src="icons/unknown.png" alt="">
+            </div>
+            <div class="temperature-value">
+                <p>- °<span>C</span></p>
+            </div>
+            <div class="temperature-description">
+                <p> - </p>
+            </div>
+            <div class="location">
+                <p>-</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
 </body>
+
+<div class='col-md-12 buttonPaddingClass centeredElement';><input type='button' value='$title' onclick='appendItemList('$title')'></div>
