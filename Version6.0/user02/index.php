@@ -1,3 +1,30 @@
+<?php
+$apiKey = "7334105bc96a1bae5a0a2db5d516f0be"; //You will need to add in the 
+$cityId = "5046997"; //5046997 Shakopee City Id
+$units = "imperial";//metric-Celcius  imperial-Farhenheit
+if ($units == 'imperial'){//Changes the $temp varaible to match 
+    $temp = "C";
+}
+else {
+    $temp = "F";
+}
+$googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&units=" . $units . "&APPID=" . $apiKey;
+
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_URL, $googleApiUrl);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_VERBOSE, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$response = curl_exec($ch);
+
+curl_close($ch);
+$data = json_decode($response);
+$currentTime = time();
+?>
+
 <html lang="en">
 <!--Version 6.0 
 	Name: User # o2
@@ -40,9 +67,10 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="index.html" class="nav-item nav-link active"> Home </a>
+                <a href="index.php" class="nav-item nav-link active"> Home </a>
                 <a href="Link1.html" class="nav-item nav-link">Comics</a>
                 <a href="Link2.html" class="nav-item nav-link" tabindex="-1">Contact</a>
+                <a href="link3.html" class="nav-item nav-link"> Play a game</a>
             </div>
         </div>
     </nav>
@@ -57,21 +85,64 @@
     <img height="50%" width="30%" src="images/batman__cover.jpeg"> 
     <br> Use our contact page to learn more.
 </middle>
-</h3>
+</h3> 
+
+<!-- Start of Back/Forward Buttons Script-->
+<!-- Instructions: Just put this script anywhere on your webpage
+	and you will give your visitor 2 Back and Forward Navigation
+	buttons.  Designed for websites that have multiple webpages.
+-->
+<SCRIPT LANGUAGE="JavaScript">
+<!-- hide this script tag's contents from old browsers
+function goHist(a) 
+{
+   history.go(a);      // Go back one.
+}
+//<!-- done hiding from old browsers -->
+</script>
+<FORM METHOD="post">
+<INPUT TYPE="button" VALUE="  BACK " onClick="goHist(-1)">
+<INPUT TYPE="button" VALUE="FORWARD" onClick="goHist(1)">
+</form>
+
+<!-- End of Back/Forward Buttons Script -->
 </center>
 
 
 
 <!---------------------------------- End the Body ------------->
+<br>
+<hr>
+<br>
 <!---------------------------------- Begin the footer ------------->
 <footer> 
-    <a href="index.html" class="nav-item nav-link active"> Home </a>
+    <a href="index.php" class="nav-item nav-link active"> Home </a>
     <a href="Link1.html" class="nav-item nav-link">Comics</a>
     <a href="Link2.html" class="nav-item nav-link active" tabindex="-1">Contact</a> 
-    <center><img height="65" width="150" src="images/logo.jpg"></center>
+    <a href="link3.html" class="nav-item nav-link"> Play a game </a>
+    <center><img height="65" width="150" src="images/logo.jpg">
+
+    <div class="report-container">
+        <h2><?php echo $data->name; ?> Weather Status</h2>
+        <div class="time">
+            <div><?php echo date("l g:i a", $currentTime); ?></div>
+            <div><?php echo date("jS F, Y",$currentTime); ?></div>
+            <div><?php echo ucwords($data->weather[0]->description); ?></div>
+        </div>
+        <div class="weather-forecast">
+            <img
+                src="http://openweathermap.org/img/w/<?php echo $data->weather[0]->icon; ?>.png"
+                class="weather-icon" /> <?php echo $data->main->temp_max; ?>&deg;<?php echo $temp; ?><span
+                class="min-temperature"><?php echo $data->main->temp_min; ?>&deg;<?php echo $temp; ?></span>
+        </div>
+        <div class="time">
+            <div>Humidity: <?php echo $data->main->humidity; ?> %</div>
+            <div>Wind: <?php echo $data->wind->speed; ?> km/h</div>
+        </div>
+    </div>
 </footer>
 
-
+</center> 
 
 
 <!---------------------------------- End the footer ------------->

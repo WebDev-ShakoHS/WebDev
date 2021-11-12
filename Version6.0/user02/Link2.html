@@ -30,8 +30,8 @@
 <center><img src="images/logo.jpg"></center>
 
 <!---------------------------------- Emd Company Logo------------->
- <!---------------------------------- Begin the nav-bar ------------->
- <div class="menu">
+<!---------------------------------- Begin the nav-bar ------------->
+<div class="menu">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a href="http://shakonet.isd720.com" class="navbar-brand"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -40,9 +40,10 @@
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="index.html" class="nav-item nav-link"> Home </a>
+                <a href="index.php" class="nav-item nav-link"> Home </a>
                 <a href="Link1.html" class="nav-item nav-link">Comics</a>
                 <a href="Link2.html" class="nav-item nav-link active" tabindex="-1">Contact</a>
+                <a href="link3.html" class="nav-item nav-link"> Play a game </a>
             </div>
         </div>
     </nav>
@@ -50,21 +51,47 @@
 <!---------------------------------- End the nav-bar ------------->
 <!---------------------------------- Begin the body ------------->
 <center>
+    <h1>Contact Us</h1>
 <h3> 
 <middle> 
-    Contact us at Me@AdrianComicShop.com
+    Have Questions? Would like to place an order? Send us an email at Me@AdrianComicShop.com
 </middle>
-</h3>
+</h3> 
+
+
+<!-- Start of Back/Forward Buttons Script-->
+<!-- Instructions: Just put this script anywhere on your webpage
+	and you will give your visitor 2 Back and Forward Navigation
+	buttons.  Designed for websites that have multiple webpages.
+-->
+<SCRIPT LANGUAGE="JavaScript">
+    <!-- hide this script tag's contents from old browsers
+    function goHist(a) 
+    {
+       history.go(a);      // Go back one.
+    }
+    //<!-- done hiding from old browsers -->
+    </script>
+    <FORM METHOD="post">
+    <INPUT TYPE="button" VALUE="  BACK " onClick="goHist(-1)">
+    <INPUT TYPE="button" VALUE="FORWARD" onClick="goHist(1)">
+    </form>
+    
+    <!-- End of Back/Forward Buttons Script -->
 </center>
 
 
 
 <!---------------------------------- End the Body ------------->
+<br>
+<hr>
+<br>
 <!---------------------------------- Begin the footer ------------->
 <footer> 
-    <a href="index.html" class="nav-item nav-link active"> Home </a>
+    <a href="index.php" class="nav-item nav-link active"> Home </a>
     <a href="Link1.html" class="nav-item nav-link">Comics</a>
     <a href="Link2.html" class="nav-item nav-link active" tabindex="-1">Contact</a> 
+    <a href="link3.html" class="nav-item nav-link">Play a game</a>
     <center><img height="65" width="150" src="images/logo.jpg"></center>
 </footer>
 
