@@ -35,7 +35,7 @@ $currentTime = time();
             font-family: Arial;
             font-size: 0.95em;
             color: #fff;
-            
+
         }
 
         .report-container {
@@ -48,9 +48,9 @@ $currentTime = time();
                                 if ($data->main->temp >= 50) {
                                     echo "blue";
                                 }
-                                if ($data->main->temp < 50){
+                                if ($data->main->temp < 50) {
                                     echo "red";
-                                }?>;
+                                } ?>;
         }
 
         .weather-icon {
@@ -96,7 +96,31 @@ $currentTime = time();
         </div>
     </div>
 
+    <button onclick="myFunction()">Try it</button>
 
+    <p id="demo"></p>
+
+    <script>
+        var amount = 31;
+        function myFunction() {
+            var r = confirm("Press a button!\nEither OK or Cancel.\nThe button you pressed will be displayed in the result window.");
+            prompt()
+            if (r == true) {
+                if (amount == 31) {
+                    window.location.href = 'https://www.31.com';
+                }
+                if (amount == 32) {
+                    window.location.href = 'https://www.32.com';
+                }
+                if (amount == 33) {
+                    window.location.href = 'https://www.33.com'; {
+
+                    }
+
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
