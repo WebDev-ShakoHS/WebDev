@@ -1,0 +1,149 @@
+<html lang="en">
+    <!--Version 9.0 
+	Name:
+	Date Completed:
+    -->
+    <head>
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+    <!--menu-->
+
+    <div class="topnav">
+        <a href="index.html"><span style= "font-family:Georgia">HOME</span></a></th>
+        <a href="guess_number.html"><span style= "font-family:Georgia"></span>Guess Number</a></th>
+    </div>
+<!------>
+<center>
+<!---This is for randomNumGenerate function--->
+<p id="randomNumGenerate"></p>
+<h1>Please click on the guess the number button to get your random number</h1>
+<button onclick="random()"><h1>Guess the Number</h1></button>
+
+<img src="images/guess.jpeg" width="309" height="300" id="randomPicture" alt="some image">
+
+<!---This is for prompting dialog box function, getValue() function --->
+<p>Click the button below to enter your guess number.</p>
+<button onclick="getValue()">Click here to enter your guess answer</button>
+<p id="getValue"></p>
+
+<!---This is for get today date function--->
+<button onclick="get_Date()">Click here to get today date</button>
+<p id="getDate"></p>
+
+<!---This is for getValue1 function--->
+<p id="getValue1"></p>
+
+<script>
+////////// The API call 
+var joke, answer; 
+
+// function to handle success 
+function success() {
+    var data = JSON.parse(this.responseText); 
+    joke = data.setup;
+    answer = data.delivery;
+}
+
+// function to handle error
+function error(err) {
+    console.log('Request Failed', err); 
+}
+
+var xhr = new XMLHttpRequest(); 
+xhr.onload = success; 
+xhr.onerror = error;  
+xhr.open('GET', 'https://v2.jokeapi.dev/joke/Christmas?'); 
+xhr.send();
+
+///////////// The API call 
+
+// implementing this function, the users can get today date 
+function get_Date(){
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+    var yyyy = today.getFullYear();
+    today = mm + '/' + dd + '/' + yyyy;
+    document.getElementById ("getDate").innerHTML = "Today is " + today +   ".Thank you for visiting our website";
+
+}
+
+// Implementing this function to generate random number for the users to guess 
+ var randomNum1;
+ var guessNum;
+ function random(){
+    randomNum = Math.floor(Math.random() * 9);
+    alert("You have generate a random number, please click the button below to answer your guess number");
+    randomNum1 = randomNum;
+}
+
+// This function allows the user to enter their guessing answer, when the users finish with their input, then they 
+function getValue() {
+  var guessNum = prompt(" Your guess number is already generated,  Please enter your guess number: ");
+  if (guessNum == null) {
+    document.getElementById("getValue").innerHTML = "Please enter your guess number";
+  } else{
+    document.getElementById("getValue").innerHTML = "Your guess answer is " + guessNum;
+  }
+  matching(guessNum, randomNum1);
+}
+
+// This will allow the users to have 3 attempts
+function getValue1(count) {
+  var guessNum = prompt(" Please enter your guess number again, you have "+ count + " attempts left");
+  if (guessNum == null) {
+    document.getElementById("getValue1").innerHTML = "Please enter your guess number";
+  } else{
+    document.getElementById("getValue1").innerHTML = "Your guess answer is " + guessNum;
+  }
+}
+
+// this function will confirm if the users want to continue to play the game or not, return false if they click cancel, 
+// otherwise return true
+function getConfirmation() {
+    var retVal = confirm("Your guess is wrong, would you like to try again, click ok to try again");
+    if(retVal == true ) {
+        return true;
+    } else {
+        return false;
+    }
+ }
+
+ // this function will ensure the users guessing input match with the right number, if they get it the answer right then reward
+ // them with a funny joke of a day
+
+function matching(guessNum1, randomNum2){
+    if (randomNum2 == guessNum1){
+        alert ("Congrats, your guess is right!!!. As a reward for your winning, this is your joke of the day: " + joke + " " + answer);
+    }
+    else {
+        if (getConfirmation() == true) {        
+            for (var i = 0; i < 3; i++) {
+                var count = 3;
+                getValue1(count);
+                count--;
+                if (randomNum == guessNum){
+                    alert ("Congrats, your guess is right!!!. As a reward for your winning, this is your joke of the day: " + joke + " " + answer);
+                    break;
+                }
+            }
+            alert("You have reached your attempts, Sorry but the right answer is " + randomNum1 + " and you are not getting a joke of the date ");
+        } else {
+             alert("you exit the game successfully")
+        }
+    }
+   
+}  
+  
+</script>
+
+</body>
+
+<div id= "footer">
+    <p>© 2021</p>    
+</div>
+</center>
+
+</html>
