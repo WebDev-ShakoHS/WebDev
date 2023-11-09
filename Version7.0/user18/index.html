@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!--  -->
+    <!-- Animate -->
     <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
@@ -39,10 +39,12 @@
     <main>
         <div id="built-in-functions">
             <!-- ALERT-->
-
+            <script>
+                alert('Go Sabers!');
+            </script>
             <!--PRINT-->
             <script>
-                function printWindow() {
+                function printWindow(){
                     window.print();
                 }
             </script>
@@ -55,7 +57,7 @@
             <!-- FOCUS-->
             <script>
                 function getFocus() {
-                    document.getElementById("focusButton").focus({ preventScroll: false });
+                    document.getElementById("focusButton").focus();
                 }
             </script>
             <!-- CLICK-->
@@ -106,7 +108,6 @@
                 </div>
             </div>
         </div>
-        <h1 style="display:inline-block;" onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
         <hr>
         <div class="container-fluid">
             <div class="row">
@@ -177,7 +178,7 @@
             function secondSelector() {
                 var x = document.querySelectorAll("li");
                 var i;
-                for (i = 0; i < x.length; i = i + 2) {
+                for (i = 0; i < x.length; i++) {
                     x[i].style.backgroundColor = "#17a2b8";
                 }
             }
@@ -187,7 +188,7 @@
         </script>
         <script id="shopping">
             const list = document.querySelector('ul');
-            const input = document.getElementById('item');
+            const input = document.querySelector('input');
             const button = document.getElementById('aggregating-list');
 
             button.onclick = function () {
@@ -211,558 +212,10 @@
                 input.focus();
             }
         </script>
-        <script language="JavaScript">
-
-            var startTime = new Date();
-            var endTime = new Date();
-            var startPressed = false;
-            var bgChangeStarted = false;
-            var maxWait = 20;
-            var timerID;
-            var stopBtnX;
-            var stopBtnY;
-
-            function getRandom(min, max) {
-                min = Math.ceil(-200);
-                max = Math.floor(200);
-                stopBtnX = Math.floor(Math.random() * (max - min + 1) + min);
-                stopBtnY = Math.floor(Math.random() * (max - min + 1) + min);
-            }
-
-            function startTest() {
-                document.body.style.background = document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
-                bgChangeStarted = true;
-                startTime = new Date();
-
-                var i;
-                for (i = 1; i < 4; i++) {
-                    getRandom();
-                    document.getElementById("stopBtn" + i).innerHTML = '<input style="padding: 0 20px; position: relative; left:' + stopBtnX + 'px; top:'+ stopBtnY + 'px;" type="button" value="' + i + '" onClick="stopTest()">';
-                }
-                
-            }
-
-            function remark(responseTime) {
-                var responseString = "";
-                if (responseTime < 0.10)
-                    responseString = "Well done!";
-                if (responseTime >= 0.10 && responseTime < 0.20)
-                    responseString = "Nice!";
-                if (responseTime >= 0.20 && responseTime < 0.50)
-                    responseString = "Could be better...";
-                if (responseTime >= 0.50 && responseTime < 0.80)
-                    responseString = "Keep practicing!";
-                if (responseTime >= 0.80 && responseTime < 1.1)
-                    responseString = "Have you been day dreaming again?";
-                if (responseTime >= 1.1)
-                    responseString = "Did you fall asleep?";
-                return responseString;
-            }
-
-            function stopTest() {
-                if (bgChangeStarted) {
-                    endTime = new Date();
-                    var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
-                    document.body.style.background = "white";
-                    alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
-                    startPressed = false;
-                    bgChangeStarted = false;
-                }
-                else {
-                    if (!startPressed) {
-                        alert("press start first to start test");
-                    }
-                    else {
-                        clearTimeout(timerID);
-                        startPressed = false;
-                        alert("cheater! you pressed too early!");
-                    }
-                }
-            }
-
-            var randMULTIPLIER = 0x015a4e35;
-            var randINCREMENT = 1;
-            var today = new Date();
-            var randSeed = today.getSeconds();
-
-            function randNumber() {
-                randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
-                return ((randSeed >> 15) & 0x7fff) / 32767;
-            }
-
-            function startit() {
-                if (startPressed) {
-                    alert("Already started. Press stop to stop");
-                    return;
-                }
-                else 
-                {
-                    getRandom();
-                    startPressed = true;
-                    timerID = setTimeout('startTest()', 6000 * randNumber());
-                }
-            }
-
-        </script>
-        <p>Test your Response time!</p>
-        Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
-
-        <form name="response">
-            Change background color in:
-            <select name="bgColorChange">
-                <option selected>deeppink
-                <option>aliceblue
-                <option>crimson
-                <option>darkkhaki
-                <option>cadetblue
-                <option>darkorchid
-                <option>coral
-            </select>
-            <input type="button" value="start" onClick="startit()">
-            <span id="stopBtn1"> <input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
-            <span id="stopBtn2"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
-            <span id="stopBtn3"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
-        </form>
-        <script LANGUAGE="JavaScript">
-
-            /*
-            By Wee Family  psweesam@singnet.com.sg
-            Featured on JavaScript Kit (http://javascriptkit.com)
-            For this and over 400+ free scripts, visit http://javascriptkit.com
-            */
-            
-            function calc() {
-            first = document.loveform.name1.value.toUpperCase();
-            firstlength = document.loveform.name1.value.length;
-            second = document.loveform.name2.value.toUpperCase();
-            secondlength = document.loveform.name2.value.length;
-            var LoveCount=0;
-            
-            for (Count=0; Count < firstlength; Count++) {
-            
-            
-            
-            letter1=first.substring(Count,Count+1);
-            
-            if (letter1=='L') LoveCount+=2; 
-            if (letter1=='O') LoveCount+=2; 
-            if (letter1=='V') LoveCount+=2;
-            if (letter1=='E') LoveCount+=2; 
-            if (letter1=='Y') LoveCount+=3; 
-            if (letter1=='O') LoveCount+=1; 
-            if (letter1=='U') LoveCount+=3;
-            }
-            
-            
-            for (Count=0; Count < secondlength; Count++) {
-            letter2=second.substring(Count,Count+1);
-            if (letter2=='L') LoveCount+=2;
-            if (letter2=='O') LoveCount+=2; 
-            if (letter2=='V') LoveCount+=2; 
-            if (letter2=='E') LoveCount+=2;
-            if (letter2=='Y') LoveCount+=3;
-            if (letter2=='O') LoveCount+=1;
-            if (letter2=='U') LoveCount+=3;
-            }
-            
-            amount=0;
-            
-            if (LoveCount> 0) amount=  5-((firstlength+secondlength)/2)
-            if (LoveCount> 2) amount= 10-((firstlength+secondlength)/2)
-            if (LoveCount> 4) amount= 20-((firstlength+secondlength)/2)
-            if (LoveCount> 6) amount= 30-((firstlength+secondlength)/2)
-            if (LoveCount> 8) amount= 40-((firstlength+secondlength)/2)
-            
-            if (LoveCount>10) amount= 50-((firstlength+secondlength)/2)
-            
-            if (LoveCount>12) amount= 60-((firstlength+secondlength)/2)
-            if (LoveCount>14) amount= 70-((firstlength+secondlength)/2)
-            if (LoveCount>16) amount= 80-((firstlength+secondlength)/2)
-            if (LoveCount>18) amount= 90-((firstlength+secondlength)/2)
-            if (LoveCount>20) amount=100-((firstlength+secondlength)/2)
-            if (LoveCount>22) amount=110-((firstlength+secondlength)/2)
-            if (firstlength==0 || secondlength==0) amount= "Err";
-            if (amount < 0) amount= 0;
-            if (amount >99) amount=99;
-            
-            document.loveform.output.value=amount+"%";
-            
-            
-            
-            }
-            
-            
-            </script>
-            
-            
-            <center><table width=600 cellpadding=1 cellspacing=0 border=0><tr>
-            <td align=center valign=top>
-            </TD>
-            </TR></TABLE>
-            </CENTER> 
-            
-            <DIV align="center"><CENTER>
-            <P><STRONG>The love Test</p>
-            
-            
-            Test the love between two people by entering their names below and then calculate their compatibility.
-            
-            <FORM name="loveform">
-            
-              <P><INPUT value="Dear Daniel" name="name1" type="text" size="20">  + <INPUT
-            
-              value="Hello Kitty" name="name2" type="text" size="20">  = <INPUT value name="output" type="text" size="6"> <BR>
-            
-              <BR>
-            
-              <INPUT value="Calculate!" name="calculate" type="button" value="calculate"
-            
-              onclick="calc()"> </P>
-            
-            
-            
-            </FORM>
-            
-              </CENTER></DIV>
-            
-            <p align="center"><font face="arial" size="-2">This free script provided by</font><br>
-            <font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
-            Kit</a></font></p>
     </main>
-
-
     <div id="container" style="height: 3000px; width: 1000px;">
         <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
     </div>
-
 </body>
-<center>
-    <SCRIPT name = "JavaScript">
-    function variables(){
-        t = 1;
-        change = 1;    
-        empty1 = -1;
-        empty2 = -1;
-        empty3 = -1;
-        empty4 = -1;
-        empty5 = -1;
-        empty6 = -1;
-        empty7 = -1;
-        empty8 = -1;
-        empty9 = -1;
-        return;
-        whogoesnow = "Tour joueur 1"
-    }
-    
-    function win(){
-      if   (empty1==empty2 && empty2==empty3 && empty3==0 ||
-    empty4==empty5 && empty5==empty6 && empty6==0 ||    
-            empty7==empty8 && empty8==empty9 && empty9==0 ||
-            empty1==empty4 && empty4==empty7 && empty7==0 ||
-            empty2==empty5 && empty5==empty8 && empty8==0 ||
-            empty3==empty6 && empty6==empty9 && empty9==0 ||
-            empty1==empty5 && empty5==empty9 && empty9==0 ||
-            empty3==empty5 && empty5==empty7 && empty7==0 ){
-            alert ("Joueur 1: VOUS GAGNEZ !!!");          
-            history.go(0)  
-      }
-      if   (empty1==empty2 && empty2==empty3 && empty3==1 ||
-    empty4==empty5 && empty5==empty6 && empty6==1 ||    
-            empty7==empty8 && empty8==empty9 && empty9==1 ||
-            empty1==empty4 && empty4==empty7 && empty7==1 ||
-            empty2==empty5 && empty5==empty8 && empty8==1 ||
-            empty3==empty6 && empty6==empty9 && empty9==1 ||
-            empty1==empty5 && empty5==empty9 && empty9==1 ||
-            empty3==empty5 && empty5==empty7 && empty7==1 ){
-            alert ("Joueur 2: VOUS GAGNEZ !!!");
-        history.go(0)
-      }
-    }
-    
-    function turnchange(t){
-      if (change == 1)  {
-        if (t == 0){
-            t = 1;
-            whogoesnow = "Tour : Joueur " + 1
-        }
-        else {
-            t = 0;
-        whogoesnow = "Tour : Joueur " + 2
-        }
-        
-      }
-      else {
-        t = t;
-      }
-      change = 1  
-      return (t); 
-    }
-    
-    function changing(clicked){
-    if (clicked == 1){            
-       spot = empty1 ;}
-    if (clicked == 2){
-       spot = empty2 ;}
-    if (clicked == 3){
-       spot = empty3 ;}
-    if (clicked == 4){
-       spot = empty4 ;}
-    if (clicked == 5){
-       spot = empty5 ;}
-    if (clicked == 6){
-       spot = empty6 ;}
-    if (clicked == 7){
-       spot = empty7 ;}
-    if (clicked == 8){
-       spot = empty8 ;}
-    if (clicked == 9){
-       spot = empty9 ;}
-    
-    if (spot == -1){
-       if (t == 0){
-          xo = "  O  " ;	       	          
-          spot = 0             
-       }
-       else {
-          xo = "  X  "  ;              
-          spot = 1	     
-       }                              
-       if (clicked == 1){            
-          empty1 = spot;}
-       if (clicked == 2){
-          empty2 = spot ;}
-       if (clicked == 3){
-          empty3 = spot ;}
-       if (clicked == 4){
-          empty4 = spot ;}
-       if (clicked == 5){
-          empty5 = spot ;}
-       if (clicked == 6){
-          empty6 = spot ;}
-       if (clicked == 7){
-          empty7 = spot ;}
-       if (clicked == 8){
-          empty8 = spot ;}
-       if (clicked == 9){
-          empty9 = spot ;}
-    } 
-    else {
-       if (spot == 0){
-           xo = "  O  ";}
-       if (spot == 1){
-           xo = "  X  ";}
-       change = 0
-    }
-    return (xo) ;
-    }
-    
-    function change_b1(form){	
-        clicked = 1;    
-        changing(clicked) ;     
-        t = turnchange(t) ;  
-        form.b1.value = xo; 
-        form.whoseturn.value = whogoesnow        
-        win(); 
-       return;
-    }
-    function change_b2(form){	
-        clicked = 2;
-        changing(clicked) ;   
-        form.b2.value = xo;    
-        t = turnchange(t) ;
-        form.whoseturn.value = whogoesnow      
-        win();
-        return;
-    }
-    
-    function change_b3(form){	
-        clicked = 3;
-        changing(clicked) ;
-        form.b3.value = xo;         
-        t = turnchange(t) ;    
-        form.whoseturn.value = whogoesnow 
-        win();
-        return;   
-    }
-    
-    function change_b4(form){	
-        clicked = 4;
-        changing(clicked) ;
-        form.b4.value = xo;    
-        t = turnchange(t) ;    
-        form.whoseturn.value = whogoesnow     
-        win();
-        return;
-    }
-    
-    function change_b5(form){	
-        clicked = 5;
-        changing(clicked) ;
-        form.b5.value = xo;    
-        t = turnchange(t) ;
-        form.whoseturn.value = whogoesnow     
-        win();     
-        return;
-    }
-    
-    function change_b6(form){	
-        clicked = 6;
-        changing(clicked) ;
-        form.b6.value = xo;    
-        t = turnchange(t) ;
-        form.whoseturn.value = whogoesnow     
-        win();
-        return;
-    }
-    
-    function change_b7(form){	
-        clicked = 7;
-        changing(clicked) ;
-        form.b7.value = xo;    
-        t = turnchange(t) ; 
-        form.whoseturn.value = whogoesnow    
-        win();
-        return;
-    }
-    
-    function change_b8(form){	
-        clicked = 8;
-        changing(clicked) ;    
-        form.b8.value = xo;    
-        t = turnchange(t) ;
-        form.whoseturn.value = whogoesnow 
-        win();    
-        return;
-    }
-    
-    function change_b9(form){	
-        clicked = 9;
-        changing(clicked) ;
-        form.b9.value = xo;    
-        t = turnchange(t) ;
-        form.whoseturn.value = whogoesnow  
-        win();
-        return;
-    }
-    </SCRIPT>
-    
-    
-    <SCRIPT name = "JavaScript">
-    variables();
-    </SCRIPT>
-    
-    <FORM>
-    <input type = "button" name = "whoseturn" 
-     value = "Tour: Joueur  1">	 
-    <br><br><br><br>
-    <table>
-    <tr><td><input type = "button" name = "b1" value = "      "		 onClick =
-    change_b1(this.form)>  
-        <td><input type = "button" name = "b2" value = "      "		 onClick = change_b2(this.form)> 
-        <td><input type = "button" name = "b3" value = "      "		 onClick =
-    change_b3(this.form)> 
-    <tr><td><input type = "button" name = "b4" value = "      "		 onClick =
-    change_b4(this.form)> 
-        <td><input type = "button" name = "b5" value = "      "		 onClick = change_b5(this.form)> 
-        <td><input type = "button" name = "b6" value = "      "		 onClick =
-    change_b6(this.form)> 
-    <tr><td><input type = "button" name = "b7" value = "      "		 onClick =
-    change_b7(this.form)> 
-        <td><input type = "button" name = "b8" value = "      "		 onClick = change_b8(this.form)>   
-        <td><input type = "button" name = "b9" value = "      "
-    onClick = change_b9(this.form)> 
-    </table>
-    <br><br>
-    
-    <INPUT TYPE="button" VALUE="Nouvelle Partie" onClick="history.go(0)">
-    </center>
-<script language="javascript">
 
-    //Western & Chinese Astrological Sign Calculator- By Timothy Joko-Veltman
-    //Email: restlessperegrine@yahoo.com URL: http://openmind.digitalrice.com
-    //Visit JavaScript Kit (http://javascriptkit.com) for script
-    
-    function signs() {
-    var start = 1901, birthyear = document.zodiac.year.value, date=document.zodiac.date.value, month=document.zodiac.month.selectedIndex;
-    
-    with (document.zodiac.sign){
-    
-    if (month == 1 && date >=20 || month == 2 && date <=18) {value = "Aquarius";}
-    if (month == 1 && date > 31) {value = "Huh?";}
-    if (month == 2 && date >=19 || month == 3 && date <=20) {value = "Pisces";}
-    if (month == 2 && date > 29) {value = "Say what?";}
-    if (month == 3 && date >=21 || month == 4 && date <=19) {value = "Aries";}
-    if (month == 3 && date > 31) {value = "OK.  Whatever.";}
-    if (month == 4 && date >=20 || month == 5 && date <=20) {value = "Taurus";}
-    if (month == 4 && date > 30) {value = "I'm soooo sorry!";}
-    if (month == 5 && date >=21 || month == 6 && date <=21) {value = "Gemini";}
-    if (month == 5 && date > 31) {value = "Umm ... no.";}
-    if (month == 6 && date >=22 || month == 7 && date <=22) {value = "Cancer";}
-    if (month == 6 && date > 30) {value = "Sorry.";}
-    if (month == 7 && date >=23 || month == 8 && date <=22) {value = "Leo";}
-    if (month == 7 && date > 31) {value = "Excuse me?";}
-    if (month == 8 && date >=23 || month == 9 && date <=22) {value = "Virgo";}
-    if (month == 8 && date > 31) {value = "Yeah. Right.";}
-    if (month == 9 && date >=23 || month == 10 && date <=22) {value = "Libra";}
-    if (month == 9 && date > 30) {value = "Try Again.";}
-    if (month == 10 && date >=23 || month == 11 && date <=21) {value = "Scorpio";}
-    if (month == 10 && date > 31) {value = "Forget it!";}
-    if (month == 11 && date >=22 || month == 12 && date <=21) {value = "Sagittarius";}
-    if (month == 11 && date > 30) {value = "Invalid Date";}
-    if (month == 12 && date >=22 || month == 1 && date <=19) {value = "Capricorn";}
-    if (month == 12 && date > 31) {value = "No way!";}
-    }
-    x = (start - birthyear) % 12
-    with (document.zodiac.csign){
-    if (x == 1 || x == -11) {value = "Rat";}
-    if (x == 0) {value = "Ox";}
-    if (x == 11 || x == -1) {value = "Tiger";}
-    if (x == 10 || x == -2) {value = "Rabbit/Cat";}
-    if (x == 9 || x == -3)  {value = "Dragon";}
-    if (x == 8 || x == -4)  {value ="Snake";}
-    if (x == 7 || x == -5)  {value = "Horse";}
-    if (x == 6 || x == -6)  {value = "Sheep";}
-    if (x == 5 || x == -7)  {value = "Monkey";}
-    if (x == 4 || x == -8)  {value = "Cock/Phoenix";}
-    if (x == 3 || x == -9)  {value = "Dog";}
-    if (x == 2 || x == -10)  {value = "Boar";}  
-    
-    }
-    }
-    </script>
-    
-    <center><b>Calculate your Western and Chinese Astrological Signs</b></center>
-    <form name="zodiac">
-    <center>
-    <table bgcolor="#eeaa00" border="2" bordercolor="#000000" rules="none" cellspacing="0" cellpadding="4">
-        <tr><td><b><i>Year</i></b></td>
-        <td><div align="right"><input type="text" size="10" name="year" value="Birth Year" onClick=value=""></div></td>
-        <td><!--This empty field is just for appearance--></td>
-        <tr><td><b><i>Month</i></b></td>
-        <td><div align="right">
-    <select name="month">
-    <option value="x">Select Birth Month</option>
-    <option value="1">January</option><option value="2">February</option><option value="3">March</option>
-    <option value="4">April</option><option value="5">May</option><option value="6">June</option>
-    <option value="7">July</option><option value="8">August</option><option value="9">September</option>
-    <option value="10">October</option><option value="11">November</option>
-    <option value="12">December</option></select></div></td>
-        <td><!--This empty field is just for appearance--></td></tr>
-        <tr><td><b><i>Day</i></b></td>
-        <td><div align="right"><input type="text" name="date"value="Day" size="3" onClick=value=""></td>
-        <td><input type="button" value="Calculate" onClick="signs()"></div></td></tr>
-        <tr><td><b><i>Sun Sign:</i></b></td>
-        <td><div align="right"><input type="text" name="sign" size="12" value="" align="right"></div</td></tr>
-        <td><!--This empty field is just for appearance--></td></tr>
-        <tr><td><b><i>Chinese Sign:</i></b></td>
-        <td><div align="right"><input type="text" name="csign" size="12"></div></td>
-        <td><!--This empty field is just for appearance--></td></tr>
-    
-    </table>
-    </center>
-    </form>
-    
-    <p align="center">This free script provided by<br />
-    <a href="http://www.javascriptkit.com">JavaScript
-    Kit</a></p>
 </html>

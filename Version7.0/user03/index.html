@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!--  -->
+    <!-- Animate -->
     <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
@@ -39,10 +39,12 @@
     <main>
         <div id="built-in-functions">
             <!-- ALERT-->
-
+            <script>
+                alert('Go Sabers!');
+            </script>
             <!--PRINT-->
             <script>
-                function printWindow() {
+                function printWindow(){
                     window.print();
                 }
             </script>
@@ -55,7 +57,7 @@
             <!-- FOCUS-->
             <script>
                 function getFocus() {
-                    document.getElementById("focusButton").focus({ preventScroll: false });
+                    document.getElementById("focusButton").focus();
                 }
             </script>
             <!-- CLICK-->
@@ -106,7 +108,6 @@
                 </div>
             </div>
         </div>
-        <h1 style="display:inline-block;" onMouseover="alert('GO Sabers!');" value="Click Me!">Shakopee High School</h1>
         <hr>
         <div class="container-fluid">
             <div class="row">
@@ -177,7 +178,7 @@
             function secondSelector() {
                 var x = document.querySelectorAll("li");
                 var i;
-                for (i = 0; i < x.length; i = i + 2) {
+                for (i = 0; i < x.length; i++) {
                     x[i].style.backgroundColor = "#17a2b8";
                 }
             }
@@ -187,7 +188,7 @@
         </script>
         <script id="shopping">
             const list = document.querySelector('ul');
-            const input = document.getElementById('item');
+            const input = document.querySelector('input');
             const button = document.getElementById('aggregating-list');
 
             button.onclick = function () {
@@ -211,3 +212,10 @@
                 input.focus();
             }
         </script>
+    </main>
+    <div id="container" style="height: 3000px; width: 1000px;">
+        <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
+    </div>
+</body>
+
+</html>

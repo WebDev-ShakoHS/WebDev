@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 4.0
+        Name:
+        Date Completed:
+    -->
+
+<head>
+
+    <title>Gallery</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="WebDev Version 4.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        menu {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        #rainbow {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="display.html" class="nav-item nav-link">Display</a>
+                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                    <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="wideMargin">
+
+        <h1 class="text-left my-3 title" tabindex="0">Check out my favorite images</h1>
+        <!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
+        <div id="gallery">
+            <p>Hover over the images to get the answer</p>
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="https://www.axiomtek.com/Download/Ptype3/en-US/ATX_Motherboard.jpg" alt="ATX_Motherboard">
+                  <p class="caption">Computer Part</p>
+                </div>
+                <div class="back">
+                  <a href="https://en.wikipedia.org/wiki/Motherboard" target="_blank">
+                    <h1>Motherboard</h1>
+                  </a>
+                  <p class="description">A motherboard (also called mainboard, main circuit board, or mobo) is the main printed circuit board (PCB) in general-purpose computers and other expandable systems.</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="https://sc04.alicdn.com/kf/H2d9c1b6b8d5748efb5cc2fca2c0ae8e2U.jpg" alt="RAM Stick">
+                  <p class="caption">Computer Part</p>
+                </div>
+                <div class="back">
+                  <a href="https://en.wikipedia.org/wiki/Random-access_memory" target="_blank">
+                    <h1>RAM</h1>
+                  </a>
+                  <p class="description">Random-access memory is a form of computer memory that can be read and changed in any order, typically used to store working data and machine code</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="https://www.notebookcheck.net/fileadmin/Notebooks/NVIDIA/Turing/nvidia_TU117_chip.jpg" alt="NVIDIA GPU">
+                  <p class="caption">Computer Part</p>
+                </div>
+                <div class="back">
+                  <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank">
+                    <h1>GPU</h1>
+                  </a>
+                  <p class="description">A graphics processing unit (GPU) is a specialized electronic circuit designed to rapidly manipulate and alter memory to accelerate the creation of images in a frame buffer intended for output to a display device.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer>
+        <span class="title">Example of a Footer Title</span>
+        <table id="footerTable">
+            <tr>
+                <td>
+                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>

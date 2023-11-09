@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 7.0 
-    Name:  Evan You
+    Name:  
     Date Completed: 
 -->
 
@@ -28,8 +28,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="JS/SampleJS.js"></script>
-
 
     <style>
         /* Internal Styling Here */
@@ -46,7 +44,7 @@
             </script>
             <!--PRINT-->
             <script>
-                function printWindow() {
+                function printWindow(){
                     window.print();
                 }
             </script>
@@ -59,7 +57,7 @@
             <!-- FOCUS-->
             <script>
                 function getFocus() {
-                    document.getElementById("focusButton").focus({ preventScroll: false });
+                    document.getElementById("focusButton").focus();
                 }
             </script>
             <!-- CLICK-->
@@ -96,10 +94,8 @@
                     <!-- CLICK-->
                     <div class="col-md-1">
                         <form>
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()"
-                                onmouseleave="clickSimulation()">
-                            <input type="checkbox" id="Check" onmouseover="clickSimulation()"
-                                onmouseleave="clickSimulation()">
+                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
+                            <input type="checkbox" id="Check" onmouseover="clickSimulation()">
                         </form>
                     </div>
                     <!--DATE-->
@@ -182,7 +178,7 @@
             function secondSelector() {
                 var x = document.querySelectorAll("li");
                 var i;
-                for (i = 0; i < x.length; i = i + 2) {
+                for (i = 0; i < x.length; i++) {
                     x[i].style.backgroundColor = "#17a2b8";
                 }
             }
@@ -190,13 +186,12 @@
                 document.querySelector("ol ol li").style.backgroundColor = "#6c757d";
             }
         </script>
-        <!------- Shopping List ------->
         <script id="shopping">
             const list = document.querySelector('ul');
-            const input = document.getElementById('item');
+            const input = document.querySelector('input');
             const button = document.getElementById('aggregating-list');
-            input.onkeypress('enter')
-            button.onclick = function (e) {
+
+            button.onclick = function () {
                 let myItem = input.value;
                 input.value = '';
 
@@ -217,302 +212,10 @@
                 input.focus();
             }
         </script>
-
-        <!-----Time Game----->
-        <script language="JavaScript">
-
-            var startTime = new Date();
-            var endTime = new Date();
-            var startPressed = false;
-            var bgChangeStarted = false;
-            var maxWait = 20;
-            var timerID;
-            var stopBtnX;
-            var stopBtnY;
-            var min = -200;
-            var max = 200;
-
-            function getRandomInt() {
-                min = Math.ceil(min);
-                max = Math.floor(max);
-                stopBtnX = Math.floor(Math.random() * (max - min) + min);
-                stopBtnY = Math.floor(Math.random() * (max - min) + min);
-                return Math.floor(Math.random() * (max - min) + min);
-
-                //The maximum is exclusive and the minimum is inclusive
-            }
-
-
-            function startTest() {
-                document.body.style.background = document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
-                bgChangeStarted = true;
-                startTime = new Date();
-
-                var i;
-                for (i = 1; i < 4; i++) {
-                    getRandomInt();
-                    document.getElementById("stopBtn" + i).innerHTML = '<input style="padding 0 20px; position: relative; left: ' + stopBtnX + 'px; top: ' + stopBtnY + 'px;" type="button" value="' + i + '" onClick="stopTest()">';
-                }
-
-            }
-
-            function remark(responseTime) {
-                var responseString = "";
-                if (responseTime < 0.20)
-                    responseString = "Well done!";
-                if (responseTime >= 0.20 && responseTime < 0.30)
-                    responseString = "Nice!";
-                if (responseTime >= 0.40 && responseTime < 0.50)
-                    responseString = "Could be better...";
-                if (responseTime >= 0.50 && responseTime < 0.80)
-                    responseString = "Keep practicing!";
-                if (responseTime >= 0.80 && responseTime < 1.1)
-                    responseString = "Have you been day dreaming again?";
-                if (responseTime >= 1.1)
-                    responseString = "Did you fall asleep?";
-                return responseString;
-            }
-
-            function stopTest() {
-                if (bgChangeStarted) {
-                    endTime = new Date();
-                    var responseTime = (endTime.getTime() - startTime.getTime()) / 1000;
-                    document.body.style.background = "white";
-                    alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
-                    startPressed = false;
-                    bgChangeStarted = false;
-                    var i;
-                    for (i = 1; i < 4; i++) {
-                        document.getElementById("stopBtn" + i).innerHTML = '<input style="display:none;" type="button" value="' + i + '" onClick="stopTest()">';
-                    }
-
-                }
-                else {
-                    if (!startPressed) {
-                        alert("press start first to start test");
-                    }
-                    else {
-                        clearTimeout(timerID);
-                        startPressed = false;
-                        alert("cheater! you pressed too early!");
-                    }
-                }
-            }
-
-            var randMULTIPLIER = 0x015a4e35;
-            var randINCREMENT = 1;
-            var today = new Date();
-            var randSeed = today.getSeconds();
-
-            function randNumber() {
-                randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
-                return ((randSeed >> 15) & 0x7fff) / 32767;
-            }
-
-            function startit() {
-                if (startPressed) {
-                    alert("Already started. Press stop to stop");
-                    return;
-                }
-                else {
-                    getRandomInt()
-                    startPressed = true;
-                    timerID = setTimeout('startTest()', 6000 * randNumber());
-                }
-            }
-
-        </script>
-        <p>Test your Response time!</p>
-        Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
-
-        <form name="response">
-            Change background color in:
-            <select name="bgColorChange">
-                <option selected>deeppink
-                <option>aliceblue
-                <option>crimson
-                <option>darkkhaki
-                <option>cadetblue
-                <option>darkorchid
-                <option>coral
-            </select>
-            <input type="button" value="start" onClick="startit()">
-            <span id="stopBtn1"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
-            <span id="stopBtn2"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
-            <span id="stopBtn3"><input style="display:none;" type="button" value="stop" onClick="stopTest()"></span>
-        </form>
-        <div class="my-2">
-            //calculates how old you are
-            <script>
-                function lifetimer() {
-
-                    today = new Date()
-
-                    BirthDay = new Date(document.live.age.value)
-
-                    timeold = (today.getTime() - BirthDay.getTime());
-
-                    sectimeold = timeold / 1000;
-
-                    secondsold = Math.floor(sectimeold);
-
-                    msPerDay = 24 * 60 * 60 * 1000;
-
-                    timeold = (today.getTime() - BirthDay.getTime());
-
-                    e_daysold = timeold / msPerDay;
-
-                    daysold = Math.floor(e_daysold);
-
-                    e_hrsold = (e_daysold - daysold) * 24;
-
-                    hrsold = Math.floor(e_hrsold);
-
-                    minsold = Math.floor((e_hrsold - hrsold) * 60);
-
-                    msPerYR = msPerDay * 365;
-
-                    e_yearsold = timeold / msPerYR;
-
-                    yrsold = Math.floor(e_yearsold);
-
-                    document.live.time1.value = daysold;
-
-                    document.live.time2.value = hrsold;
-
-                    document.live.time3.value = minsold;
-
-                    document.live.time4.value = yrsold;
-
-                    window.status = "Well at the moment you are " + secondsold + "............ seconds old.";
-
-                    timerID = setTimeout("lifetimer()", 1000)
-
-                }
-            </script>
-            <FORM name="live">
-
-                Please enter your birthdate::<INPUT TYPE="text" NAME="age" VALUE="" SIZE=20>
-                Example: (november 1,1966) <BR><BR><BR>
-                <INPUT TYPE="button" NAME="start" VALUE="Start Timer" ONCLICK="lifetimer(this.form)">
-
-                <INPUT TYPE="reset" NAME="resetb" VALUE="Reset Age">
-
-                <BR><BR>
-
-                <TABLE border=0>
-                    <TR>
-                        <TD>You are days old:</TD>
-
-                        <TD>
-
-                            <INPUT TYPE="text" NAME="time1" VALUE="" size=8>
-
-                        </TD>
-
-                    </TR>
-
-                    <TR>
-                        <TD>Plus hours old:</TD>
-
-                        <TD>
-
-                            <INPUT TYPE="text" NAME="time2" VALUE="" size=8>
-
-                        </TD>
-
-                    </TR>
-
-                    <TR>
-                        <TD>Plus minutes old:</TD>
-
-                        <TD><INPUT TYPE="text" NAME="time3" VALUE="" size=8></TD>
-
-                    </TR>
-
-                    <tr>
-                        <td>or Years Old</td>
-
-                        <td><input type="text" name="time4" value="" size="8"></td>
-                    </tr>
-                </TABLE>
-            </FORM>
-        </div>
-        <SCRIPT LANGUAGE="JavaScript">
-
-            // numberguess is by Lancer - written 4 Jan 1999
-            // lancer@kp.planet.gen.nz
-
-            var guessme = Math.round(Math.random() * (99) + 1);
-            var speech = 'Guess my number (from 1 to 100)';
-            var guesses = 0;
-
-            function process(mystery) {
-                var guess = document.forms.guessquiz.guess.value;
-                var speech = '"' + guess + '" does not make sense to me.';
-                document.forms.guessquiz.guess.value = '';
-                document.forms.guessquiz.guesses.value = guesses
-
-                if (guess == mystery) {
-                    document.forms.guessquiz.prompt.value = 'Congratulations! ' + mystery + ' is correct!';
-                    alert('Well done - the mystery number is ' + mystery + '! \n\nPress this button to reload the page for another game.');
-                    speech = '';
-                    document.location = document.location;
-                }
-
-                if (mystery < guess) {
-                    speech = 'Less than ' + guess;
-                    guesses = guesses + 1
-                    document.forms.guessquiz.guesses.value = guesses
-                }
-
-                if (mystery > guess) {
-                    speech = 'Greater than ' + guess;
-                    guesses = guesses + 1
-                    document.forms.guessquiz.guesses.value = guesses
-                }
-
-                if (guess == '') {
-                    speech = 'You didn\'t guess anything!'
-                    guesses = guesses + 1
-                    document.forms.guessquiz.guesses.value = guesses
-                }
-
-                document.forms.guessquiz.prompt.value = speech; document.forms.guessquiz.guess.focus();
-
-            }
-
-            // end hide -->
-        </SCRIPT>
-
-        <FORM onSubmit="" NAME="guessquiz">
-            <CENTER>
-                <TABLE ALIGN="CENTER" BGCOLOR="#888888" BORDER="3" CELLPADDING="5">
-                    <TR>
-                        <TD BGCOLOR="#004080">
-                            <FONT COLOR="#ffffff" FACE="Arial"><B>GUESS MY NUMBER (1 - 100)</B></FONT>
-                        </TD>
-                    </TR>
-                    <TR>
-                        <TD>
-                            <span>Amount of Guesses: <input type="text" size="3" name="guesses" value=""></span>
-                            <CENTER>
-                                <INPUT TYPE="text" NAME="prompt" SIZE="31" MAXLENGTH="40"
-                                    VALUE="Guess my number (from 1 to 100)"><BR>
-                                <INPUT TYPE="text" NAME="guess" SIZE="3" MAXLENGTH="3" VALUE="">
-                                <INPUT TYPE="button" VALUE="Guess" onClick='process(guessme)'>
-                            </CENTER>
-                        </TD>
-                    </TR>
-                </TABLE>
-            </CENTER>
-        </FORM>
     </main>
-
     <div id="container" style="height: 3000px; width: 1000px;">
         <a href="#"><button type="button" id="focusButton" style="margin-top: 3000px;">You focused on me!</button></a>
     </div>
-
 </body>
 
 </html>

@@ -9,9 +9,9 @@ table {
 }
 
 tr {
-	border: 5px solid black;
+	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:white; 
+	background-color:#9FB6CD; 
 }
 
 th {
@@ -19,8 +19,3 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
-
-
-
-   
-    
