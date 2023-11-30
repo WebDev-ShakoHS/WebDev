@@ -11,7 +11,7 @@ table {
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#ffffff; 
 }
 
 th {
@@ -19,3 +19,21 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+/* style.css */
+
+/* Change background of the whole page */
+body {
+	background-image: url('https://www.agilitypr.com/wp-content/uploads/2018/04/popmusic.jpg');
+	/* Additional styles */
+	background-size: cover; /* Adjusts the image size to cover the entire background */
+	background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  
+  /* Add different style to a specific table row */
+  .special-row {
+	background-color: #f5f5f5; /* Example background color */
+	/* Additional styles */
+	font-weight: bold; /* Make text bold */
+	color: #ffffff; /* Change text color */
+  }
+  
