@@ -19,3 +19,8 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+ul {
+	list-style-image: url('Silver.gif');
+  }
+

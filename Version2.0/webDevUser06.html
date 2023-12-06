@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 2.0
-        Name:
-        Date Completed:
+        Name:Jayden martin
+        Date Completed: 11/27/23
     -->
 
 <head>
@@ -18,8 +18,56 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <style>
-
+    <style>div#face {
+        width: 40vw;
+        height: 40vw;
+        max-width: 400px;
+        max-height: 400px;
+        margin: 0 auto;
+        position: relative;
+        background: yellow;
+        margin-top: 2rem;
+    }
+    
+    div#face, div#face * {
+        border-radius: 50%;
+    }
+    
+    .eye {
+        width: 25%;
+        height: 25%;
+        background: #fff;
+        position: absolute;
+        top: 20%;
+    }
+    
+    .left.eye {
+        left: 20%;
+    }
+    
+    .right.eye {
+        right: 20%;
+    }
+    
+    .pupil {
+        background: #000;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        left: 25%;
+        transform-origin: bottom;
+    }
+    
+    #mouth {
+        position: relative;
+        width: 60%;
+        left: 20%;
+        height: 25%;
+        border: 1vw solid transparent;
+        border-radius: 50%;
+        top: 50%;
+        border-bottom-color: #000;
+    }
     </style>
 </head>
 
@@ -27,7 +75,7 @@
     <main class="wideMargin">
 
         <!-- Your 1st Heading-->
-        <h1>About Me</h1>
+        <h1>About Me and this super amazing website</h1>
         <div id="tags">
             <p>
                 This is my first webpage! I was able to code all the HTML and CSS in order to make it.
@@ -36,19 +84,34 @@
 
             <h2>Heading Examples</h2>
 
-            <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+            <h3> Heading exmaples</h3>
 
-            <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <h4> HEading examples</h4>>
 
             <h2>Examples of "Other" HTML elements</h2>
 
-            <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
-            <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+            <del>Spider Man</del> - puts a strike through the words
+            <ins>Important</ins> - adds underline 
+            <sub>Subscript</sub> -- subscript
+            <sup>superscript</sup> -- superscript
+            <small>super small</small> -- defines a small text
+            <progress value="75" max="100" > </progress > - represents the progress of a task
+                <hr> — will place a horizontal line (no closing tag needed)
+                <abbr title="World Health Organization" > NBA </abbr> -- used to show acronyms
         </div>
-        <div id="banner">
+        <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere sollicitudin aliquam ultrices sagittis orci a. Commodo viverra maecenas accumsan lacus vel. Commodo ullamcorper a lacus vestibulum sed arcu non. Vel orci porta non pulvinar neque laoreet. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Condimentum lacinia quis vel eros. Vehicula ipsum a arcu cursus vitae congue. Nulla facilisi nullam vehicula ipsum a arcu. Placerat orci nulla pellentesque dignissim enim sit amet venenatis urna. Eu nisl nunc mi ipsum faucibus vitae. Congue mauris rhoncus aenean vel. A cras semper auctor neque vitae tempus. Sagittis orci a scelerisque purus semper. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Eget mauris pharetra et ultrices neque ornare aenean.</section>
+        <div id="Flag">
         </div>
-        <div id="face">
+        <div class="left eye">
+            <div class="pupil">
+            </div>
+       </div>
+       <div class="right eye">
+            <div class="pupil">
+            </div>
+       </div>
+       <div id="mouth">
+       </div>
 
         </div>
     </main>
