@@ -32,16 +32,33 @@
             margin: 0;
             padding: 0;
         }
-
+        
         .wideMargin {
             margin: 15px;
         }
-
+        
         footer {
             font-size: 12px;
             text-align: center;
         }
+        
+        h3 {
+            padding: 50px;
+            background-color: lavender;
+            display: inline-block;
+            border-bottom: 1px solid #5D6063;
+            border-right: 3px dotted #0000ff;
+            border-top: 5px inset;
+            border-left: 3px dashed #e9e9e9;
+        }
+        
+        p {
+            padding: 20px 10px;
+            background-color: lavender;
+            display: inline-block;
+        }
     </style>
+
 </head>
 
 <body>
@@ -59,8 +76,7 @@
                     <a href="aboutMe.html" class="nav-item nav-link active">About Me</a>
                     <a href="music.html" class="nav-item nav-link">Music</a>
                     <a href="list.html" class="nav-item nav-link">Lists</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
-                        tabindex="-1">Contact</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -73,10 +89,15 @@
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3">About Me</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">About Me</h1>
+        <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <h3>Headings Are Block Elements</h3>
 
+        <p>Paragraphs are blocks, too.<em> However</em>, &lt;em&gt; and &lt;strong&gt; elements are not. They are <strong>inline</strong> elements.</p>
+
+        <p>Block elements define the flow of the HTML document, while inline elements do not.</p>
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
     </main>
 
