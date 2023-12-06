@@ -5,17 +5,28 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
 	border: 1px solid #ffffff;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#5c7b9b; 
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
 	background-color: #003366;
+}
+body {
+	background-image: url(https://t3.ftcdn.net/jpg/04/61/46/96/360_F_461469631_jIKgQcT3eMy86k6HUL2aWj3roLe3jrsT.jpg);
+	background-size: cover;
+	background-color: #cccccc;
+   }
+ul {
+	list-style-image: url(https://www.gifs.cc/anibul2c.gif);
+  }
+ol{
+	color: #c93a3a;
 }
