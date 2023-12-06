@@ -5,7 +5,7 @@ table {
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
@@ -19,3 +19,6 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+ul {
+     list-style-image: url('giphy.gif');
+  }
