@@ -1,21 +1,24 @@
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	margin-left: auto;
+	color: #ffffff;
+	margin-left: normal;
 	margin-right: auto;
 	text-align: left;
 	border-collapse: collapse;
-	cellspacing: 0px;
+	border-spacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
+	border: 1px solid #000000;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#4291e1; 
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #003366;
+	background-color: #1560ac;
 }
+ul {
+	list-style-image: url(https://www.gifs.cc/anibul1c.gif); 
+	   }
