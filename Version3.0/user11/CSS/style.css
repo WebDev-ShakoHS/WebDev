@@ -27,7 +27,7 @@ th {
 /* Change background of the whole page */
 
 body {
-    background-image: url('https://www.agilitypr.com/wp-content/uploads/2018/04/popmusic.jpg');
+    background-image: url(https://images.unsplash.com/photo-1619252584172-a83a949b6efd?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fHw%3D);
     /* Additional styles */
     background-size: cover;
     /* Adjusts the image size to cover the entire background */
