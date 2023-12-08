@@ -11,11 +11,11 @@
     cursor: pointer;
 }
 
-.button1 {
+.button-radius8 {
     border-radius: 8px;
 }
 
-.button2 {
+.button-radius30 {
     border-radius: 30%;
 }
 
@@ -87,4 +87,30 @@ h4,
 h5,
 h6 {
     text-align: center;
+}
+
+.title {
+    color: red;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+    font-size: 2rem;
+}
+
+.title-small {
+    font-size: .5rem;
+}
+
+#morecontent {
+    background-color: yellow;
+}
+
+#footerTable {
+    height: 30px;
+}
+
+#hireButtons {
+    background-color: #049caa;
+    font-size: 16px;
 }
