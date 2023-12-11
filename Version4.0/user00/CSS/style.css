@@ -1,3 +1,7 @@
+* {
+    font-family: Arial;
+}
+
 .button {
     background-color: #4CAF50;
     border: none;
@@ -15,7 +19,7 @@
     border-radius: 8px;
 }
 
-.button2 {
+.button-br30per {
     border-radius: 30%;
 }
 
@@ -50,8 +54,6 @@
     text-decoration: none;
 }
 
-. {}
-
 .red {
     background-color: #ff0000;
 }
@@ -73,3 +75,24 @@ h5,
 h6 {
     text-align: center;
 }
+
+.title {
+    color: red;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+    font-size: 2rem;
+}
+
+.title-small {
+    font-size: .5rem;
+}
+
+#morecontent {
+    background-color: yellow;
+}
+
+#footerTable {}
+
+#hireButtons {}
