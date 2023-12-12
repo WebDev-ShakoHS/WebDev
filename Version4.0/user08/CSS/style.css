@@ -11,10 +11,6 @@
     cursor: pointer;
 }
 
-::-ms-backdrop {
-    background-color: #40abf8;
-}
-
 .b8 {
     border-radius: 8px;
 }
