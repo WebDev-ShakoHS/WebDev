@@ -32,18 +32,38 @@
             margin: 0;
             padding: 0;
         }
-
+        
         .wideMargin {
             margin: 15px;
         }
-
+        
         footer {
             font-size: 12px;
             text-align: center;
         }
-
+        
         #rainbow {
             width: 100%;
+        }
+        
+        #knowledge>* {
+            border: 3px red solid;
+        }
+        
+        p+* {
+            background-color: #FFFF00;
+        }
+        
+        #knowledge>li::marker {
+            content: "😜 ";
+        }
+        
+        div li::marker {
+            color: red;
+        }
+        
+        table>tr>td:hover {
+            background-color: black;
         }
     </style>
 </head>
@@ -62,7 +82,7 @@
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="display.html" class="nav-item nav-link">Display</a>
-                    <a href="portfolio.html" class="nav-item nav-link active">Portfolio</a>
+                    <a href="#" class="nav-item nav-link active">Portfolio</a>
                     <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
@@ -98,7 +118,7 @@
             </li>
         </div>
         <p>
-            These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
+            These are the things I know in the<strong>WEB DEVELOPMENT</strong> <u>world</u>.
         </p>
         <p>
             I will use my knowledge to create an amazing website for you and your needs.
