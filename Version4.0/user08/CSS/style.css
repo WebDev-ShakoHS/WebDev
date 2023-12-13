@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
     background-color: #4CAF50;
     border: none;
@@ -135,4 +136,20 @@ h6 {
 
 #morecontent {
     background-color: yellow;
+}
+
+p+* {
+    background-color: #FFFF00;
+}
+
+div li::marker {
+    color: red;
+}
+
+#knowledge>li::marker {
+    content: "😜 ";
+}
+
+tr>td:hover {
+    background-color: black;
 }
