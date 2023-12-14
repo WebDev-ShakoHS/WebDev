@@ -54,16 +54,28 @@
             background-color: #FFFF00;
         }
         
+        #knowledge>lif::marker {
+            content: "😜 ";
+        }
+        
         div li::marker {
             color: red;
         }
         
-        #knowledge>::marker {
-            content: "😜 ";
+        #rainbow-row>td:hover {
+            background-color: black;
         }
         
-        #rainbow>tr>td:hover {
-            background-color: black;
+        p:first-child i {
+            color: blue;
+        }
+        
+        p i:first-child {
+            color: blue;
+        }
+        
+        p:first-child {
+            color: blue;
         }
     </style>
 </head>
@@ -124,7 +136,7 @@
         </p>
         <div>
             <table id="rainbow">
-                <tr>
+                <tr id="rainbow row">
                     <td class="background-red">
                     </td>
                     <td class="background-orange">
