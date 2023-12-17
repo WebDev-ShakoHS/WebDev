@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 4.0
-            Name:Arsenii Pivovar
-            Date Completed:12/07/2023
-        -->
+        Name: Arsenii
+        Date Completed:12/13/23
+    -->
 
 <head>
 
-    <title>Hire Me For Your Web Development Needs</title>
+    <title>My Work as a Web Developer</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -16,13 +16,8 @@
     <meta name="description" content="WebDev Version 4.0">
 
     <!-- CSS -->
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Animate -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!-- Custom -->
     <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
@@ -46,6 +41,42 @@
             font-size: 12px;
             text-align: center;
         }
+        
+        #rainbow {
+            width: 100%;
+        }
+        
+        #knowledge>* {
+            border: 3px red solid;
+        }
+        
+        p+* {
+            background-color: #FFFF00;
+        }
+        
+        div>li::marker {
+            content: "😜 ";
+        }
+        
+        div li::marker {
+            color: red;
+        }
+        
+        td:hover {
+            background-color: black;
+        }
+        
+        p:first-child {
+            color: rgb(58, 58, 213);
+        }
+        
+        div:hover {
+            background-color: rgb(255, 0, 0);
+        }
+        
+        a.highlight:hover {
+            color: #ff0000;
+        }
     </style>
 </head>
 
@@ -55,15 +86,15 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                    <a href="#" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="display.html" class="nav-item nav-link">Display</a>
-                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                    <a href="#" class="nav-item nav-link active">Portfolio</a>
                     <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
@@ -82,78 +113,64 @@
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <h3 id="topHeading">I'm a Web Developer</h3>
-        <table id="hireButtons">
-            <tr>
-                <td>
-                    <button>Hire me</button>
-                </td>
-                <td>
-                    <button class="button">Hire me</button>
-                </td>
-                <td>
-                    <button class="button button1">Hire me</button>
-                </td>
-                <td>
-                    <button class="button-br30per">Hire me</button>
-                </td>
-            </tr>
-            </td>
-            <tr>
-                <td>
-                    <button class="button button2 red">Hire me</button>
-                </td>
-                <td>
-                    <td>
-                        <button class="button button2 white">Hire me</button>
+        <div id="knowledge">
+            <li>CSS
+                <ul>
+                    <li>Classes</li>
+                    <li>Selectors</li>
+                    <li>ID's</li>
+                </ul>
+            </li>
+            <li>HTML
+                <ul>
+                    <li>Tables</li>
+                    <li>DIV's</li>
+                    <li>Nav Bar</li>
+                </ul>
+            </li>
+        </div>
+        <p>
+            These are the things I know in the <strong>WEB DEVELOPMENT</strong> <u>world</u>.
+        </p>
+        <p>
+            I will use my knowledge to create an amazing website for you and your needs.
+        </p>
+        <div>
+            <table id="rainbow">
+                <tr>
+                    <td class="background-red">
                     </td>
-                </td>
-                <td>
-                    <button class="button button2 blue">Hire me</button>
-                </td>
-                <td>
-                    <td>
-                        <button>WHITE</button>
+                    <td class="background-orange">
                     </td>
-                </td>
-            </tr>
-        </table>
-        <div style="padding-top: 5px;">
-            <!-- spacing div-->
-
-            <span class="title title-large ">Example of a Heading Title</span>
-
-            <div class="content ">
-
-                <p>
-                    Page content..
-                </p>
-
-                <p>
-                    Some more page content..
-                </p>
-
-            </div>
-
-            <p id="morecontent">
-                Even more content
-            </p>
-
-            <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+                    <td class="background-yellow">
+                    </td>
+                    <td class="background-green">
+                    </td>
+                    <td class="background-blue">
+                    </td>
+                    <td class="background-indigo">
+                    </td>
+                    <td class="background-violet">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
 
     <!---------------------------------- Begin the footer ------------->
     <footer>
-        <span class="title ">Example of a Footer Title</span>
-        <table id="footerTable ">
+        <span class="title">Example of a Footer Title</span>
+        <table id="footerTable">
             <tr>
                 <td>
-                    <i class="fa fa-facebook fa-3x " aria-hidden="true "></i>
+                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
                 </td>
                 <td>
-                    <i class="fa fa-twitter fa-3x " aria-hidden="true "></i>
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
                 </td>
                 <td>
-                    <i class="fa fa-instagram fa-3x " aria-hidden="true "></i>
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
                 </td>
             </tr>
         </table>
