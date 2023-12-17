@@ -1,8 +1,4 @@
 @import url(rainbow.css);
-* {
-    font-family: Arial;
-}
-
 .button {
     background-color: #4CAF50;
     border: none;
@@ -93,7 +89,3 @@ h6 {
 #morecontent {
     background-color: yellow;
 }
-
-#footerTable {}
-
-#hireButtons {}
