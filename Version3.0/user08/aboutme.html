@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="My Favorite Music">
+    <meta name="description" content="SHS WebDev Version 3.0">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -42,27 +42,71 @@
             text-align: center;
         }
         
-        td {
-            color: #ffffff;
+        p {
+            padding: 20px 10px;
+            /* Vertical  Horizontal */
+        }
+        
+        h3 {
+            padding: 50px;
+            background-color: rgb(66, 191, 245);
+            display: inline-block;
+            border: 1px solid #000000;
+        }
+        
+        h3 {
+            border-bottom: 1px solid rgb(0, 149, 255);
+            border-right: 3px dotted #000000;
+            border-top: 5px inset;
+            border-left: 3px dashed #ffffff;
+        }
+        
+        h3 {
+            padding: 50px;
+            background-color: rgb(66, 191, 245);
+            display: inline-block;
+        }
+        
+        p {
+            padding-top: 5px;
+            padding-bottom: 50px;
+            padding-left: 30px;
+            padding-right: 5px;
+            background-color: rgb(66, 191, 245);
+        }
+        
+        p {
+            padding: 5px 50px 30px 5px;
+            margin-bottom: 50px;
+            /* Add this */
+        }
+        
+        strong {
+            margin: 50px;
+            background-color: lightblue;
+        }
+        
+        strong {
+            padding: 50px;
+            background-color: lightblue;
         }
     </style>
 </head>
 
 <body>
-    <!---------------------------------- Begin the nav-bar ------------->
+    <!---------------------------------- Begin the nav-bar ------------------------------------------>
     <menu>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="aboutMe.html" class="nav-item nav-link">About Me</a>
-                    <a href="music.html" class="nav-item nav-link active">Music</a>
+                    <a href="aboutMe.html" class="nav-item nav-link active">About Me</a>
+                    <a href="music.html" class="nav-item nav-link">Music</a>
                     <a href="list.html" class="nav-item nav-link">Lists</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
@@ -72,70 +116,28 @@
                 </div>
             </div>
         </nav>
+        <!---------------------------------- End the nav-bar ------------------------------------->
     </menu>
-    <!---------------------------------- End the nav-bar ------------------------------------->
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3" tabindex="0">Music</h1>
+        <h1 class="text-left my-3">About Me</h1>
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h2>My Top 5 Favorite Songs</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Artist</th>
-                    <th>Song</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tr>
-                <td>1</td>
-                <td>Mike Morasky</td>
-                <td>Rocket Jump Waltz</td>
-                <td><img src="https://m.media-amazon.com/images/I/81+uPRnp1AL._UF1000,1000_QL80_.jpg" alt="The picture that you are looking at is the nine characters in the iconic series TF2, the song is named Rocket Jump Waltz, it was made by Mike Morasky, he is the conductor of Valves Orchestra.
-                    " width="400" height="375" alt=""> </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>AJR</td>
-                <td>The DJ is Crying for Help</td>
-                <td><img src="images/ajr-compressed.jpg" alt="The picture that you are looking at is three Giants being attacked by tiny people, the song name is The  DJ is crying for help, It was made by AJR, They are three brothers who started their own band.
-                    " width="400" height="375"> </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Tobymac</td>
-                <td>The Goodness</td>
-                <td><img src="images/ab67616d0000b27343fb2aaca81e77ee2af0ebbc.jpeg" alt="The picture that you are looking at is a vast amount of color, the name of the song is called The Goodness, it was made by Tobymac, he is a christian singer. 
-                    " width="400" height="375"> </td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>lovjoy</td>
-                <td>It's Golden Hour Somewere</td>
-                <td><img src="images/Screenshot 2023-11-28 at 9.29.38 AM.png" alt="The picture that you are looking at is a train on fire crashing off a bridge, the song is called It's Golden Hour Somewhere, It was made by lovejoy.
-                    " width="400" height="375"> </td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>bluehound</td>
-                <td>New York</td>
-                <td><img src="images/a3370123700_65.jpeg" alt="The picture that you are looking at is a floor covered with record players and guitars, the song is called New York, it was made by Bluehound.
-                    " width="400" height="375"> </td>
-            </tr>
 
-        </table>
+        <h3>what about me</h3>
+
+        <p>hey im uriah mccray some things that i like are MW2, TF2, and lego</strong> elements.</p>
+
+        <p>something to know about me is that i do a sport called rowwing, in rowwing you row a carbinfiber boat. </p>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
     </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-
 
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
         <div>
-            Music can be found here <a href="https://spotify.com"> spotify</a>
+            Webpage made by <a href="#" target="_blank">[your name]</a>
         </div>
     </footer>
     <!---------------------------------- End the footer ------------->
