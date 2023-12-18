@@ -33,7 +33,7 @@
 }
 
 .back {
-    transform: rotateY(180deg);
+    transform: rotateY(181deg);
 }
 
 img {
@@ -48,7 +48,7 @@ img {
 }
 
 .container:hover .flipper {
-    transform: rotateY(180deg);
+    transform: rotateY(200deg);
 }
 
 a {
@@ -73,4 +73,8 @@ p.caption {
     font-size: 0.9em;
     padding: 0 20px 20px 20px;
     text-align: left;
+}
+
+.container {
+    color: rgb(174, 255, 0);
 }
