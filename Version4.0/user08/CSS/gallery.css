@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
 #gallery {
-    font-family: "Orbitron", sans-serif;
+    font-family: "PT serif", sans-serif;
     line-height: 1.5em;
     text-align: center;
 }
