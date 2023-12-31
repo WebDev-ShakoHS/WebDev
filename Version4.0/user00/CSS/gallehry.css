@@ -15,12 +15,6 @@
     perspective: 1000px;
 }
 
-.container-card {
-    display: inline-block;
-    margin: 3%;
-    perspective: 1000px;
-}
-
 .flipper {
     position: relative;
     transition: 0.6s;
@@ -50,7 +44,7 @@ img {
     width: 100%;
 }
 
-.container-card,
+.container,
 .front,
 .back {
     width: 250px;
