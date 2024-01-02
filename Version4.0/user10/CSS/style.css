@@ -1,21 +1,117 @@
+@import url(rainbow.css);
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button-radius8 {
+    border-radius: 8px;
+}
+
+.button-radius30 {
+    border-radius: 30%;
+}
+
+.green_cool {
+    background-color: #44c767;
+    border-radius: 28px;
+    border: 3px solid #00940f;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 21px;
+    padding: 14px 39px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+.Gold_g {
+    box-shadow: 0px 1px 40px 0px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 22px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 16px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 18px #f8df23;
+}
+
+.Blue_ice {
+    box-shadow: 0px 2px 27px 0px #f0f7fa;
+    background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+    background-color: #33bdef;
+    border-radius: 14px;
+    border: 3px solid #057fd0;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 8px 7px;
+    text-decoration: none;
+    text-shadow: 40px -1px 50px #5b6178;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+td {
+    padding: 20px;
+}
+
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
 }
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+.title {
+    color: red;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+    font-size: 2rem;
+}
+
+.title-small {
+    font-size: .5rem;
+}
+
+#morecontent {
+    background-color: yellow;
+}
+
+#footerTable {
+    height: 30px;
+}
+
+#hireButtons {
+    background-color: #049caa;
+    font-size: 16px;
 }

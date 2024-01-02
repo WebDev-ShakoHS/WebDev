@@ -1,21 +1,150 @@
+@import url(rainbow.css);
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.b8 {
+    border-radius: 8px;
+}
+
+.b30 {
+    border-radius: 30%;
+}
+
+.icepop {
+    box-shadow: inset 0px 0px 0px -50px #000000;
+    background: linear-gradient(to bottom, #0091ff 5%, #ff0000 100%);
+    background-color: #0091ff;
+    border-radius: 20px;
+    border: 3px solid #000000;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-shadow: 0px -6px 2px #000000;
+}
+
+.icepop:hover {
+    background: linear-gradient(to bottom, #ff0000 5%, #0091ff 100%);
+    background-color: #ff0000;
+}
+
+.icepop:active {
+    position: relative;
+    top: 1px;
+}
+
+.red_shadow {
+    background: linear-gradient(to bottom, #e00000 5%, #000000 100%);
+    background-color: #e00000;
+    border-radius: 13px;
+    border: 5px solid #000000;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 28px;
+    padding: 18px 49px;
+    text-decoration: none;
+    text-shadow: 0px -2px 4px #ff0000;
+}
+
+.red_shadow:hover {
+    background: linear-gradient(to bottom, #000000 5%, #e00000 100%);
+    background-color: #000000;
+}
+
+.red_shadow:active {
+    position: relative;
+    top: 1px;
+}
+
+.Gold {
+    box-shadow: inset 0px 0px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ffd500 5%, #fff7d6 100%);
+    background-color: #ffd500;
+    border-radius: 11px;
+    border: 3px solid #f5d400;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 11px 31px;
+    text-decoration: none;
+    text-shadow: 5px -5px 2px #b3920e;
+}
+
+.Gold:hover {
+    background: linear-gradient(to bottom, #fff7d6 5%, #ffd500 100%);
+    background-color: #fff7d6;
+}
+
+.Gold:active {
+    position: relative;
+    top: 1px;
+}
+
+.red {
+    background-color: #ff0000;
+}
+
+td {
+    padding: 20px;
+}
+
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+h6 {
+    text-align: center;
 }
 
-th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+.title {
+    color: red;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+    font-size: 2rem;
+}
+
+.title-small {
+    font-size: .5rem;
+}
+
+#morecontent {
+    background-color: yellow;
+}
+
+p+* {
+    background-color: #ffffff;
+}
+
+div li::marker {
+    color: red;
+}
+
+#knowledge>li::marker {
+    content: "😜 ";
+}
+
+tr>td:hover {
+    background-color: black;
 }
