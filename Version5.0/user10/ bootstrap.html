@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Custom -->
     <link rel="stylesheet" href="CSS/style.css">
+    <a href="form.html" class="btn btn-success btn-lg" role="button" aria-pressed="true">Form Page</a>
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -40,6 +41,11 @@
         
         .demo-content.bg-alt {
             background: #abb1b8;
+        }
+        
+        .table-striped>tbody>tr:nth-of-type(odd)>* {
+            --bs-table-color-type: var(--bs-table-striped-color);
+            --bs-table-bg-type: rgba(50, 90, 1, 0.6)
         }
     </style>
 </head>
@@ -137,10 +143,58 @@
 
     <!---------Table-Striped------------------------------------------->
     <div class="container mt-3" name="table-striped">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Row</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Clark</td>
+                    <td>Kent</td>
+                    <td>clarkkent@mail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John</td>
+                    <td>Carter</td>
+                    <td>johncarter@mail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Peter</td>
+                    <td>Parker</td>
+                    <td>peterparker@mail.com</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+
 
     <!---------List-Group---------------------------------------------->
     <div class="container mt-3" name="list-group">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+                <i class="fa fa-home"></i> Home
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-camera"></i> Pictures <span class="badge badge-pill badge-primary pull-right">145</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-music"></i> Music <span class="badge badge-pill badge-primary pull-right">50</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-film"></i> Videos <span class="badge badge-pill badge-primary pull-right">8</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-fa-solid fa-egg"></i> Food - egg <span class="badge badge-pill badge-primary pull-right">8</span>
+            </a>
+        </div>
     </div>
 
     <!---------Form Button--------------------------------------------->
