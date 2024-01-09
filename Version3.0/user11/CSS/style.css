@@ -1,21 +1,49 @@
 table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	cellspacing: 0px;
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+    color: #003366;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+    cellspacing: 0px;
 }
 
 tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+    border: 1px solid #ffffff;
+    text-align: center;
+    background-color: #ffffff;
 }
 
 th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+    text-align: center;
+    color: #ffffff;
+    background-color: #003366;
+}
+
+
+/* style.css */
+
+
+/* Change background of the whole page */
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1619252584172-a83a949b6efd?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fHw%3D);
+    /* Additional styles */
+    background-size: cover;
+    /* Adjusts the image size to cover the entire background */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+}
+
+
+/* Add different style to a specific table row */
+
+.special-row {
+    background-color: #f5f5f5;
+    /* Example background color */
+    /* Additional styles */
+    font-weight: bold;
+    /* Make text bold */
+    color: #ffffff;
+    /* Change text color */
 }

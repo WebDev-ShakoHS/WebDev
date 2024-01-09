@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 4.0
+        Name:
+        Date Completed:
+    -->
+
+<head>
+
+    <title>Gallery</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="WebDev Version 4.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        menu {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wideMargin {
+            margin: 15px;
+        }
+        
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        #rainbow {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="display.html" class="nav-item nav-link">Display</a>
+                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                    <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="wideMargin">
+
+        <h1 class="text-left my-3 title" tabindex="0">Check out my favorite images</h1>
+        <!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
+        <div id="gallery">
+            <p>Hover over the images to get the answer</p>
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://smartmobilestudio.com/wp-content/uploads/2012/06/leather-book-preview.png" alt="ATX_Book">
+                        <p class="caption"> Knowledge</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://scratchtap.com/the-reading-experience/" target="_blank">
+                            <h1>Book</h1>
+                        </a>
+                        <p class="description"> a book is a physical object, a rectangular thing with pages held together with binding.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/150929101049-black-coffee-stock.jpg?q=w_1110,c_fill" alt="Coffee">
+                        <p class="caption">Liquid</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank">
+                            <h1>Coffee</h1>
+                        </a>
+                        <p class="description"> Coffee is a beverage brewed from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://i.ebayimg.com/images/g/pikAAOSwKQZgwkJR/s-l1200.jpg" alt="Peace">
+                        <p class="caption">Word</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://simple.wikipedia.org/wiki/Salam" target="_blank">
+                            <h1>Peace</h1>
+                        </a>
+                        <p class="description">An Arabic word that literally means "peace", but is also used as a general greeting. </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://thumbs.dreamstime.com/b/public-shcool-building-typical-new-school-89779424.jpg" alt="School">
+                        <p class="caption">Learning</p>
+                    </div>
+                    <div class="back">
+                        <a href="https://en.wikipedia.org/wiki/School" target="_blank">
+                            <h1>School</h1>
+                        </a>
+                        <p class="description">A school is both the educational institution and building designed to provide learning spaces and learning environments for the teaching of students under the direction of teachers. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer>
+        <span class="title">Example of a Footer Title</span>
+        <table id="footerTable">
+            <tr>
+                <td>
+                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>
