@@ -1,0 +1,6 @@
+<div class="menu">
+    <nav class="navbar navbar-expand-md p-2 navbar-dark fixed-top bg-dark">
+        <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WebDev</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>

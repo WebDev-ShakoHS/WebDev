@@ -1,0 +1,40 @@
+<!---------Table-Striped------------------------------------------->
+<div class="container mt-3" name="table-striped">
+    <table class="table table-striped">
+
+
+
+
+
+        <td>Clark Kent</td>
+        <td>clarkkent@mail.com</td>
+
+
+        <td>John Carter</td>
+        <td>johncarter@mail.com</td>
+
+
+        <td>Uriah McCray</td>
+        <td>uriahmccray@mail.com</td>
+
+
+
+</div>
+
+<!---------List-Group---------------------------------------------->
+<div class="container mt-3" name="list-group">
+    <div class="list-group">
+
+        <a href="https://www.facebook.com/" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fa-brands fa-facebook"></i> Facebook <span class="badge badge-pill badge-primary pull-right  list-group-item-action active">5897870</span>
+        </a>
+        <a href="https://twitter.com/?logout=1704388291623" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fa-brands fa-twitter"></i> Twitter <span class="badge badge-pill badge-primary pull-right  list-group-item-action active">9799898</span>
+        </a>
+        <a href="https://discord.com/" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fa-brands fa-discord"></i> Discord <span class="badge badge-pill badge-primary pull-right  list-group-item-action active">246597549</span>
+        </a>
+    </div>
+</div>
+
+<!---------Form Button--------------------------------------------->
