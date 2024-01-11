@@ -69,6 +69,7 @@ section p {
 
 aside {
     position: relative;
+    background-color: #962924;
     top: -535px;
     left: 640px;
     border: solid 8px rgb(72, 52, 52);
@@ -93,4 +94,9 @@ aside p {
 
 footer {
     background-color: #962924;
+}
+
+.card {
+    background-color: #962924;
+    border: solid 8px rgb(72, 52, 52);
 }
