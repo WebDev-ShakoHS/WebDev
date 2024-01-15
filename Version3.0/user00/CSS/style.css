@@ -27,3 +27,8 @@ ul {
 ol {
     color: #0076B6;
 }
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-color-type: var(--bs-table-striped-color);
+    --bs-table-bg-type: rgba(10, 90, 10, 0.1);
+}
