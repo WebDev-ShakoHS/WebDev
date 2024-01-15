@@ -34,20 +34,22 @@
     <meta name="description" content="WebDev Version 4.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "></script>
 
     <!-- Custom styles for this template -->
     <style type="text/css ">
-        .menu {
-            margin: 0px;
+        menu {
+            margin: 0;
+            padding: 0;
         }
         
         .wideMargin {
@@ -58,74 +60,111 @@
             font-size: 10px;
             text-align: center;
         }
-        
-        #rainbow {
-            width: 100%;
-        }
     </style>
 </head>
 
 <body>
 
     <!---------------------------------- Begin the nav-bar ------------->
-    <div class="menu ">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
-            <a href="http://shakonet.isd720.com " class="navbar-brand ">WIKI Food</a>
-            <button type="button " class="navbar-toggler " data-toggle="collapse " data-target="#navbarCollapse ">
-                <span class="navbar-toggler-icon "></span>
+    <div class="menu">
+        <nav class="navbar navbar-expand-md p-2 navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com/WebDev" class="navbar-brand">WikiFood</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <td><img src="https://static.wixstatic.com/media/60136c_614a677ef94a43aba16db23b947e105c~mv2.png/v1/fill/w_312,h_312,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/60136c_614a677ef94a43aba16db23b947e105c~mv2.png " width="50 " height="55 " alt="Logo "></td>
+            <a> <img src="https://static.wixstatic.com/media/60136c_614a677ef94a43aba16db23b947e105c~mv2.png/v1/fill/w_312,h_312,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/60136c_614a677ef94a43aba16db23b947e105c~mv2.png " width="50 " height="55 " alt="Logo "></a>
 
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-                <!-- Right -->
-                <div>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="" class="me-4 text-reset">
-                        <i class="fab fa-github"></i>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html " class="nav-item nav-link ">Home</a>
+                    <a href="Why to eat.html " class="nav-item nav-link">Why to eat</a>
+                    <a href="Seasons.html" class="nav-item nav-link active ">When to eat(seasons)</a>
+                    <a href="What to eat.html " class="nav-item nav-link ">What to eat</a>
+                    <a href="contact.html" class="nav-item nav-link " tabindex="-1 ">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+
+                        <!-- Toggle button -->
+                        <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <i class="fas fa-bars"></i>
+</button>
+                        <!-- Right elements -->
+                        <div class="d-flex align-items-center">
+                            <!-- Icon -->
+                            <a class="text-secondary me-3" href="" rel="nofollow" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <!-- Icon -->
+                            <a class="text-secondary me-3" href="" rel="nofollow" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <!-- Icon -->
+                            <a class="text-secondary me-3" href="" rel="nofollow" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                        </div>
+                        <!-- Right elements -->
+
+                        <!-- Left links -->
+
+                        <!-- Right elements -->
+                        <div class="d-flex align-items-center">
+                            <!-- Icon -->
+                            <a class="text-reset me-3" href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+
+
+
+                            <!-- Avatar -->
+                            <div class="dropdown">
+                                <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://lh3.googleusercontent.com/a/ACg8ocJFysF_Ga4BcEAJT_0uEqlloW_1wjpEQIbyxq4z66G52Q=s576-c-no" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy" />
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                                    <li>
+                                        <a class="dropdown-item" href="#">My profile</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Logout</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <!-- Right elements -->
+
                     </a>
                 </div>
-                <!-- Right -->
-                <div class="collapse navbar-collapse " id="navbarCollapse ">
-                    <div class="navbar-nav ">
-                        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-                        <a href="index.html " class="nav-item nav-link">Home</a>
-                        <a href="Why to eat.html " class="nav-item nav-link">Why to eat</a>
-                        <a href="Seasons.html" class="nav-item nav-link active">When to eat(seasons)</a>
-                        <a href="What to eat.html " class="nav-item nav-link ">What to eat</a>
-                        <a href="contact.html" class="nav-item nav-link " tabindex="-1 ">Contact</a>
-                        <!----------------------------------^ Edit These Items in your Menu ^ ------------->
-                    </div>
-                    <div class="navbar-nav ml-auto">
-                        <a href="#" class="nav-item nav-link disabled">Login</a>
-                    </div>
-                </div>
-            </nav>
-            </menu>
+            </div>
+        </nav>
+    </div>
 
-            <!---------------------------------- End the nav-bar ------------------------------------->
 
-            <main class="margin ">
+    <!---------------------------------- End the nav-bar ------------->
+
+    <main class="margin ">
 
 
 
 
-                <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
-            </main>
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
     </div>
     </div>
     <h3>Different Seasons Foods</h3>
@@ -170,32 +209,51 @@
 
         <!---------------------------------- Begin the footer ------------->
 
+        <footer class="bg-body-tertiary text-center text-lg-start">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">About us</h5>
+
+                        <p>
+                            <i class="fa-solid fa-school"></i> I am a student learning WEB DEVELOPMENT. This Is my WEBSITE
+                        </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Contact us</h5>
+
+                        <p>
+                            <i class="fa-solid fa-envelope"></i> 312352@shakopeeschools.org
+
+                    </div>
+
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
 
 
-        <footer class="bg-body-tertiary text-center text-lg-start ">
-            <!-- Copyright -->
-            <div class="text-center p-3 " style="background-color: rgba(200, 90, 10, 1.0); ">
-                © 2024 Copyright:
-                <a class="text-body " href="http://127.0.0.1:5500/Version6.0/user10/index.html ">WikiFood</a>
+
             </div>
             <!-- Copyright -->
+
+
+            <!-- Grid container -->
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgb(80, 167, 97);">
+                © 2024 Copyright:
+                <a class="text-body" href="http://127.0.0.1:5500/Version6.0/user10/index.html">http://127.0.0.1:5500/Version6.0/user10/index.html</a>
+
+
+            </div>
         </footer>
 
-        <span class="title ">Social media</span>
-        <table id="footerTable ">
-            <tr>
-                <td>
-                    <i class="fa fa-facebook fa-3x " aria-hidden="true "></i>
-                </td>
-                <td>
-                    <i class="fa fa-twitter fa-3x " aria-hidden="true "></i>
-                </td>
-                <td>
-                    <i class="fa fa-instagram fa-3x " aria-hidden="true "></i>
-                </td>
-            </tr>
-        </table>
-        </footer>
-
-
-        <!---------------------------------- End the footer ------------->
+</html>
+<!---------------------------------- End the footer ------------->

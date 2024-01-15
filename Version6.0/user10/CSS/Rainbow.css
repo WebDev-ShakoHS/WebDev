@@ -1,27 +1,8 @@
-.background-red {
-    background-color: rgb(166, 0, 0);
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
 }
 
-.background-orange {
-    background-color: orange;
-}
-
-.background-yellow {
-    background-color: yellow;
-}
-
-.background-green {
-    background-color: green;
-}
-
-.background-blue {
-    background-color: blue;
-}
-
-.background-indigo {
-    background-color: indigo;
-}
-
-.background-violet {
-    background-color: violet;
+div {
+    font-family: myFirstFont;
 }
