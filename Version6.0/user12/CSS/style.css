@@ -1,0 +1,74 @@
+#shadow {
+    box-shadow: 10px 10px 5px;
+    /* Applies box shadow to elements with ID "shadow"*/
+}
+
+.navbar {
+    background-color: #343a40;
+    /* Background color */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    /* Navbar brand font size */
+    font-weight: bold;
+    /* Navbar brand font weight */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+    /* Spacing between nav items */
+}
+
+.nav-link {
+    color: #ffffff;
+    /* Nav link color */
+    font-weight: bold;
+    /* Nav link font weight */
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #343a40;
+    /* Footer background color */
+    color: #ffffff;
+    /* Footer text color */
+}
+
+footer h5 {
+    color: #ffffff;
+    /* Footer heading color */
+}
+
+footer ul li {
+    margin-bottom: 5px;
+    /* Spacing between footer list items */
+}
+
+footer a {
+    color: #ffffff;
+    /* Footer link color */
+}
+
+footer a:hover {
+    color: #a5a5a5;
+    /* Footer link hover color */
+}
+
+
+/* Styles for the "aside" element */
+
+aside {
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    float: right;
+}
+
+.card {
+    margin-bottom: 20px;
+    /* Add margin between cards */
+}
