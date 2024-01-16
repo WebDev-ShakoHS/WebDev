@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fitlife - FAQ</title>
+
+    <!-- My Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Bootstrap meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Bootstrap sample">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--Style-->
+    <style>
+        aside {
+            width: 200px;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            float: right;
+        }
+        /* Add margin to the bottom of content and question box */
+        
+        .content {
+            margin-bottom: 20px;
+        }
+        
+        .accordion-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar/Header -->
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">FitLife</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fas fa-house"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fitness.html"><i class="fas fa-dumbbell"></i> Fitness Routines</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="eating.html"><i class="fas fa-apple-alt"></i> Healthy Eating</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-4 content">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Frequently Asked Questions</h1>
+
+                <!-- FAQ Section -->
+                <div class="accordion" id="faqAccordion">
+                    <!-- Question 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeading1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                Q: What is FitLife?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                FitLife is a dedicated community that focuses on helping individuals achieve their health and wellness goals. We provide valuable resources, workout routines, nutritional advice, and wellness tips to empower you on your journey towards a healthier lifestyle.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeading2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                Q: How can I join FitLife's community?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                FitLife Community is open to everyone! We encourage you to join FitLife's gym and become part of our vibrant community. Our gym offers state-of-the-art facilities, expert trainers, and a supportive environment to help you achieve your fitness goals. Sign
+                                up today and embark on a journey to a healthier and fitter lifestyle!
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeading3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                Q: What types of fitness routines do you offer?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We offer comprehensive workout routines suitable for various fitness levels. Whether you're a beginner or an experienced fitness enthusiast, you'll find routines that align with your goals.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                Q: Can you provide tips for healthy eating?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Absolutely! We offer a variety of healthy and delicious recipes to support balanced nutrition. Explore our resources to find tips and ideas for maintaining a nutritious diet.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeading5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                Q: How can I contact FitLife for more information?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                If you have further questions or need additional information, feel free to contact us via email at fitlife@mail.com or by phone at +123 456 7890. We're here to assist you!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End FAQ Section -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <h5>Navigation</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="index.html"><i class="fa-solid fa-house "></i>Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle "></i>About Us</a></li>
+                        <li><a href="faq.html"><i class="fas fa-question-circle "></i>FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <h5>Contact Information</h5>
+                    <ul class="list-unstyled ">
+                        <li>Email: fitlife@mail.com</li>
+                        <li>Phone: +123 456 7890</li>
+                        <li>Address: 1007 Mountain, Gotham City, NJ</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <h5>Connect With Us</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="#" class="text-decoration-none text-light"><i class="fa-brands fa-facebook "></i>Facebook</a></li>
+                        <li><a href="#" class="text-decoration-none text-light"><i class="fa-brands fa-twitter "></i>Twitter</a></li>
+                        <li><a href="#" class="text-decoration-none text-light"><i class="fa-brands fa-instagram "></i>Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3 ">
+            <div class="row ">
+                <div class="col text-center ">
+                    <p>&copy; 2024 Fitlife. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
