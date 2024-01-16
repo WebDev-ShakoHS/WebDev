@@ -1,16 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 5.0 
-    Name:
+    Name: Francis Sacdalan
     Date Completed: 
 -->
 
 <head>
+    <title>My Bootstrap Sample</title>
 
+    <!-- Bootstrap meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Bootstrap sample">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #dbdfe5;
+            margin-bottom: 15px;
+        }
+        
+        .demo-content.bg-alt {
+            background: #abb1b8;
+        }
+    </style>
 </head>
 
 <body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    CoolSite
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
 
+    <!---------Jumbotron---------------------------------------------->
+    <div class="p-5 bg-primary-subtle text-black" name="Jumbotron">
+        <h4> Bootstrap Examples</h4>
+        <p class="lead"> Let's look at the man different examples of how we can use bootstrap and what bootstrap can do!
+        </p>
+    </div>
+
+    <!---------Three Column Layouts------------------------------------>
+    <div class="container mt-3">
+        <!--Row with two equal columns-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="demo-content">.col-md-6</div>
+            </div>
+            <div class="col-md-6">
+                <div class="demo-content bg-alt">.col-md-6</div>
+            </div>
+        </div>
+        <!--Row with two columns divided in 1:2 ratio-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="demo-content">.col-md-4</div>
+            </div>
+            <div class="col-md-8">
+                <div class="demo-content bg-alt">.col-md-8</div>
+            </div>
+        </div>
+        <!--Row with two columns divided in 1:3 ratio-->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="demo-content">.col-md-3</div>
+            </div>
+            <div class="col-md-9">
+                <div class="demo-content bg-alt">.col-md-9</div>
+            </div>
+        </div>
+
+        <!---------Auto Layout Columns--------->
+        <div class="row">
+            <div class="col demo-content">Column one</div>
+            <div class="col demo-content bg-alt">Column two</div>
+            <div class="col demo-content">Column three</div>
+            <div class="col demo-content bg-alt">Column four</div>
+            <div class="col demo-content">Column five</div>
+            <div class="col demo-content bg-alt">Column six</div>
+        </div>
+
+        <!---------Flexible Layouts--------->
+        <div class="row">
+            <div class="col-md-4 col-lg-3">
+                <div class="demo-content">.col-md-4 .col-lg-3</div>
+            </div>
+            <div class="col-md-8 col-lg-6">
+                <div class="demo-content bg-alt">.col-md-8 .col-lg-6</div>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="demo-content">.col-md-12 .col-lg-3</div>
+            </div>
+        </div>
+    </div>
+
+    <!---------Table-Striped------------------------------------------->
+    <div class="container mt-3" name="table-striped">
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Row</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Clark</td>
+                <td>Kent</td>
+                <td>clarkkent@mail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>John</td>
+                <td>Carter</td>
+                <td>johncarter@mail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Peter</td>
+                <td>Parker</td>
+                <td>peterparker@mail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!---------List-Group---------------------------------------------->
+    <div class="container mt-3" name="list-group">
+    </div>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active">
+            <i class="fa fa-home"></i> Home
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <i class="fa fa-camera"></i> Pictures <span class="badge badge-pill badge-primary pull-right">145</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <i class="fa fa-music"></i> Music <span class="badge badge-pill badge-primary pull-right">50</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <i class="fa fa-film"></i> Videos <span class="badge badge-pill badge-primary pull-right">8</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+            <i class="fa-solid fa-music"></i> Music <span class="badge badge-pill badge-primary pull-right">8</span>
+        </a>
+    </div>
+
+    <!---------Form Button--------------------------------------------->
+    <div class="container mt-3 vstack" name="form-button">
+    </div>
 </body>
+
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Navigation</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Information</h5>
+                <ul class="list-unstyled">
+                    <li>Email: cool@mail.com</li>
+                    <li>Phone: +123 456 7890</li>
+                    <li>Address: 123 Cool Street, Cool City, Japan</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Connect With Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-decoration-none text-light">Facebook</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Twitter</a></li>
+                    <li><a href="#" class="text-decoration-none text-light">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="mt-4 mb-3">
+        <div class="row">
+            <div class="col text-center">
+                <p>&copy; 2024 Coolsite. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </html>
