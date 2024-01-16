@@ -6,6 +6,7 @@
 -->
 
 <head>
+<<<<<<< HEAD
 
 </head>
 
@@ -14,3 +15,274 @@
 </body>
 
 </html>
+=======
+    <title>My Bootstrap Sample</title>
+
+    <!-- Bootstrap meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SHS WebDev Bootstrap sample">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Custom -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .demo-content {
+            padding: 15px;
+            font-size: 18px;
+            background: #dbdfe5;
+            margin-bottom: 15px;
+        }
+        
+        .demo-content.bg-alt {
+            background: #abb1b8;
+        }
+        
+        .table-striped>tbody>tr:nth-of-type(odd)>* {
+            --bs-table-color-type: var(--bs-table-striped-color);
+            --bs-table-bg-type: rgba(255, 0, 0, 0.3)
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <div class="menu">
+        <nav class="navbar navbar-expand-md p-2 navbar-dark bg-primary">
+            <a href="#" class="navbar-brand">
+                <img src="https://www.shakopee.k12.mn.us/cms/lib/MN01909221/Centricity/Domain/36/Saber%20Head%20Emblem%20PNG.png" alt="Saber Logo" />
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Music</a>
+                    <a href="#" class="nav-item nav-link disabled" tabindex="-1">Lists</a>
+                    <a href="games.html" class="nav-item nav-link" tabindex="-1">Games</a>
+                    <a href="bootstrap.html" class="nav-item nav-link active" tabindex="-1">Bootstrap</a>
+                    <a href="script.html" class="nav-item nav-link" tabindex="-1">JavaScript</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link" href="#">
+                        <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    </a>
+                    <a class="nav-item nav-link" href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+
+        </nav>
+        </div>
+        <!---------------------------------- End the nav-bar ------------->
+
+        <!---------Jumbotron---------------------------------------------->
+        <div class="p-5 bg-primary-subtle text-black" name="Jumbotron">
+            <h4> Bootstrap Examples</h4>
+            <p class="lead"> Let's look at the man different examples of how we can use bootstrap and what bootstrap can do!
+            </p>
+        </div>
+
+        <!---------Three Column Layouts------------------------------------>
+        <div class="container mt-3">
+            <!--Row with two equal columns-->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="demo-content">.col-md-6</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="demo-content bg-alt">.col-md-6</div>
+                </div>
+            </div>
+            <!--Row with two columns divided in 1:2 ratio-->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="demo-content">.col-md-4</div>
+                </div>
+                <div class="col-md-8">
+                    <div class="demo-content bg-alt">.col-md-8</div>
+                </div>
+            </div>
+            <!--Row with two columns divided in 1:3 ratio-->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="demo-content">.col-md-3</div>
+                </div>
+                <div class="col-md-9">
+                    <div class="demo-content bg-alt">.col-md-9</div>
+                </div>
+            </div>
+
+            <!---------Auto Layout Columns--------->
+            <div class="row">
+                <div class="col demo-content">Column one</div>
+                <div class="col demo-content bg-alt">Column two</div>
+                <div class="col demo-content">Column three</div>
+                <div class="col demo-content bg-alt">Column four</div>
+                <div class="col demo-content">Column five</div>
+                <div class="col demo-content bg-alt">Column six</div>
+            </div>
+
+            <!---------Flexible Layouts--------->
+            <div class="row">
+                <div class="col-md-4 col-lg-3">
+                    <div class="demo-content">.col-md-4 .col-lg-3</div>
+                </div>
+                <div class="col-md-8 col-lg-6">
+                    <div class="demo-content bg-alt">.col-md-8 .col-lg-6</div>
+                </div>
+                <div class="col-md-12 col-lg-3">
+                    <div class="demo-content">.col-md-12 .col-lg-3</div>
+                </div>
+            </div>
+        </div>
+
+        <!---------Table-Striped------------------------------------------->
+        <div class="container mt-3" name="table-striped">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Row</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Clark</td>
+                        <td>Kent</td>
+                        <td>clarkkent@mail.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>John</td>
+                        <td>Carter</td>
+                        <td>johncarter@mail.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Peter</td>
+                        <td>Parker</td>
+                        <td>peterparker@mail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!---------List-Group---------------------------------------------->
+        <div class="container mt-3" name="list-group">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">
+                    <i class="fa fa-home"></i> Home
+                </a>
+                <a href="#" class="list-group-item list-group-item-action active">
+                    <i class="fa fa-camera"></i> Pictures <span class="badge badge-pill badge-primary pull-right">145</span>
+                </a>
+                <a href="https://www.spotify.com/" target="_blank" class="list-group-item list-group-item-action">
+                    <i class="fa fa-music"></i> Music <span class="badge badge-pill badge-primary pull-right">50</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-film"></i> Videos <span class="badge badge-pill badge-primary pull-right">8</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-trash"></i> Trash <span class="badge badge-pill badge-primary pull-right">8</span>
+                </a>
+            </div>
+        </div>
+
+        <!---------Form Button--------------------------------------------->
+        <div class="container mt-3 vstack" name="form-button">
+            <a href="form.html" class="btn btn-success btn-lg" role="button" aria-pressed="true">Form Page</a>
+        </div>
+</body>
+<!--------- Footer ------------------------------>
+<footer>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-2">
+                <a href="#!" class="text-reset">Home</a>
+            </div>
+            <div class="col-md-2">
+                <a href="#!" class="text-reset">About</a>
+            </div>
+            <div class="col-md-2">
+                <a href="#!" class="text-reset">Contact Info</a>
+            </div>
+            <div class="col-md-2">
+                <a href="#!" class="text-reset">Privacy</a>
+            </div>
+            <div class="col-md-2">
+                <a href="#!" class="text-reset">Terms</a>
+            </div>
+            <div class="col-md-2">
+                <a href="#!" class="text-reset">Settings</a>
+            </div>
+        </div>
+</footer>
+<!---- Sub Footer ---------------->
+<sub-footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i
+        ></a>
+
+            <!-- Twitter -->
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i
+        ></a>
+
+            <!-- Google -->
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i
+        ></a>
+
+            <!-- Instagram -->
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i
+        ></a>
+
+            <!-- Linkedin -->
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i
+        ></a>
+            <!-- Github -->
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i
+        ></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2020 Copyright:
+        <a class="text-body" href="#">This webpage</a>
+    </div>
+    <!-- Copyright -->
+</sub-footer>
+
+
+</html>
+>>>>>>> upstream/master
