@@ -35,17 +35,16 @@
     <style type="text/css">
 
     </style>
-    <!DOCTYPE html>
-    <html>
 
-    <body>
 
-        <h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
 
-    </body>
 
-    </html>
-    <button onclick="displayDate()">Try it</button><input type="text" id="fname" onchange="upperCase()">
+
+
+
+
+
+
 </head>
 
 <body>
@@ -84,16 +83,46 @@
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE </div>
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
+                </div>
                 <div class="col-sm-4" style="background-color:rgb(0, 255, 191);">
                     <center>
                         <p id="textChange"> My name is Yaqub</p>
                     </center>
                     <center><button type="button" onclick="changeText()">Click if you like</button></center>
                 </div>
-                <div class="col-sm-4" style="background-color:yellow;">PUT YOUR CODE HERE</div>
+                <div class="col-sm-4" style="background-color:yellow;"> <button onclick="displayDate()">Try it</button><input type="text" id="fname" onchange="upperCase()"></div>
             </div>
-        </div>
+
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <button onclick="clearInterval(myVar)">Stop time</button>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(0, 255, 191);">
+                    <div id="animation">Hello</div>
+                </div>
+                <div class="col-sm-4" style="background-color:yellow;"></div>
+                <button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+
+                <button onclick="clearTimeout(myVar)">Stop it</button>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-4" style="background-color:yellow;">
+                    <button onclick="setTimeout(myFunction, 3000)">Try it</button>
+
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(0, 255, 191);">
+
+                    <input type="button" value="Load new document" onclick="newDoc()">
+                </div>
+                <div class="col-sm-4" style="background-color:yellow;"></div>
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                    Name: <input type="text" name="fname">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
     </main>
     <!--↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑-->
 
