@@ -41,6 +41,11 @@
         .demo-content.bg-alt {
             background: #abb1b8;
         }
+        
+        .table-striped>tbody>tr:nth-of-type(odd)>* {
+            --bs-table-color-type: var(--bs-table-striped-color);
+            --bs-table-bg-type: rgba(10, 90, 10, 0.1);
+        }
     </style>
 </head>
 
@@ -137,15 +142,62 @@
 
     <!---------Table-Striped------------------------------------------->
     <div class="container mt-3" name="table-striped">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Row</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Clark</td>
+                    <td>Kent</td>
+                    <td>clarkkent@mail.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John</td>
+                    <td>Carter</td>
+                    <td>johncarter@mail.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Peter</td>
+                    <td>Parker</td>
+                    <td>peterparker@mail.com</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <!---------List-Group---------------------------------------------->
     <div class="container mt-3" name="list-group">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+                <i class="fa fa-home"></i> Home
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-camera"></i> Pictures <span class="badge bg-secondary badge-pill badge-primary pull-right active">145</span>
+            </a>
+            <a href="https://www.spotify.com/" target="_blank" class="list-group-item list-group-item-action">
+                <i class="fa fa-music"></i> Music <span class="badge bg-secondary badge-pill badge-primary pull-right active">50</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-film"></i> Videos <span class="badge bg-secondary badge-pill badge-primary pull-right">8</span>
+            </a>
+        </div>
     </div>
 
     <!---------Form Button--------------------------------------------->
     <div class="container mt-3 vstack" name="form-button">
     </div>
 </body>
+<footer>
+
+</footer>
 
 </html>

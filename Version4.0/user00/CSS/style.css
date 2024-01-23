@@ -1,37 +1,90 @@
+@import url(rainbow.css);
 .button {
-	background-color: #4CAF50;
-	border: none;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 .button1 {
-	border-radius: 8px;
+    border-radius: 8px;
 }
 
-.button2 {
-	border-radius: 30%;
+.button-br30per {
+    border-radius: 30%;
+}
+
+.green_shadow {
+    box-shadow: 17px 15px 0px -2px #3dc21b;
+    background-color: #44c767;
+    border-radius: 25px;
+    border: 8px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 10px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+.gold_blur_shadow {
+    box-shadow: 1px 4px 14px 18px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 19px;
+    border: 12px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 22px 41px;
+    text-decoration: none;
 }
 
 .red {
-	background-color: #ff0000;
+    background-color: #ff0000;
 }
 
-td{
-	padding:20px;
+td {
+    padding: 20px;
 }
 
-table{
-	margin-left: auto;
-	margin-right: auto;
+table {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-h1, h2, h3, h4, h5, h6{
-	text-align:center;
+h1,
+h2,
+h3,
+h5,
+h6 {
+    text-align: center;
+}
+
+.title {
+    color: red;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+    font-size: 2rem;
+}
+
+.title-small {
+    font-size: .5rem;
+}
+
+#morecontent {
+    background-color: yellow;
 }
