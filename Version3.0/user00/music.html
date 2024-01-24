@@ -8,6 +8,7 @@
 <head>
 
     <title>Music for Web Dev User ## </title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -18,7 +19,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -32,14 +33,18 @@
             margin: 0;
             padding: 0;
         }
-
+        
         .wideMargin {
             margin: 15px;
         }
-
+        
         footer {
             font-size: 12px;
             text-align: center;
+        }
+        
+        td {
+            color: #FF0000;
         }
     </style>
 </head>
@@ -58,10 +63,9 @@
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="aboutMe.html" class="nav-item nav-link">About Me</a>
-                    <a href="music.html" class="nav-item nav-link active">Music</a>
+                    <a href="#" class="nav-item nav-link active">Music</a>
                     <a href="list.html" class="nav-item nav-link">Lists</a>
-                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
-                        tabindex="-1">Contact</a>
+                    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled" tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </div>
                 <div class="navbar-nav ml-auto">
@@ -74,7 +78,8 @@
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3" tabindex="0">Music</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3" tabindex="0">Music</h1>
+        <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <h2>My Top 5 Favorite Songs</h2>
@@ -91,31 +96,31 @@
                 <td>1</td>
                 <td>Rush</td>
                 <td>Fly By Night</td>
-                <td></td>
+                <td> <img src="images/fly_by_nightAlbumCover.jpg" width="200" height="200" alt="Picture of Fly By Night Album - Large Owl with its wings spread"> </td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>BNL</td>
                 <td>One Week</td>
-                <td></td>
+                <td><img src="images/BNL_Stunt.jpeg" width="200" height="200" alt="Picture of Stunt Album - Funny looking cutout of person wearing dunce cap "></td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>Dave Matthews Band</td>
+                <td style="color:#00FF00; background-color:sienna;">Dave Matthews Band</td>
                 <td>Grey Street</td>
-                <td></td>
+                <td><img src="https://i1.sndcdn.com/artworks-000249752162-pwoair-t500x500.jpg" width="200" height="200" alt="Picture of Grey Street Single - Intersecting Street signs that say end of the world and Grey Street "></td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>Modest Mouse</td>
                 <td>One Chance</td>
-                <td></td>
+                <td><img src="images/ModestMouse_OneChance.jpeg" width="200" height="200" alt="Picture of Good News For People Who Like Bad News Album - Arrows shot into a wall and pink blood dripping down"></td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>New Radicals</td>
                 <td>Someday We'll Know</td>
-                <td></td>
+                <td><img src="images/NewRadicals_YouGetWhatYouGive.jpg" width="200" height="200" alt="Picture of New Radicals Album Cover - Gregg Alexander sitting down with a bucket hat covering his eyes"></td>
             </tr>
         </table>
     </main>
