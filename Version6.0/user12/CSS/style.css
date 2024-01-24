@@ -72,3 +72,22 @@ aside {
     margin-bottom: 20px;
     /* Add margin between cards */
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+h2 {
+    color: #343a40;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.routine-card {
+    margin-bottom: 20px;
+}
