@@ -14,3 +14,16 @@ Scroll();
 function changeText() {
     document.getElementById("textChange").innerHTML = "«span class='text-bg-success'>Thanks for liking my Webpage<span>"
 }
+
+function message() {
+    alert("This alert box was triggered by the onreset event handler");
+}
+
+function myFunction(elmnt, clr) {
+    elmnt.style.color = clr;
+}
+
+
+function show_coords(event) {
+    document.getElementById("demo").innerHTML = "X= " + event.clientX + "<br>Y= " + event.clientY;
+}
